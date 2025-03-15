@@ -2,15 +2,15 @@
 
 export const GLOBAL = {
   // Site metadata
-  username: "Zaggonaut",
-  rootUrl: "https://zaggonaut.dev",
-  shortDescription: "Retro-Inspired Theme &<br /> Built for Astro",
-  longDescription: "Zaggonaut is a retro-inspired theme for Astro, built using TypeScript, TailwindCSS, and Astro.",
+  username: "devjaime",
+  rootUrl: "https://devjaime.com",
+  shortDescription: "AI & Software Engineering | Founder of CodeIA | Cloud, Backend & Automation",
+  longDescription: "Jaime Hernández is a software engineer and founder of CodeIA, specializing in AI, cloud computing, and backend development. With expertise in Golang, PostgreSQL, LangChain, and microservices, he builds scalable and AI-driven solutions. His work spans AI automation, intelligent search, authentication with passkeys, and cloud-based architectures.",
   
   // Social media links
-  githubProfile: "https://github.com/RATIU5/zaggonaut",
-  twitterProfile: "https://twitter.com/",
-  linkedinProfile: "https://www.linkedin.com/",
+  githubProfile: "https://github.com/devjaime/",
+  twitterProfile: "https://twitter.com/hsjhernandez",
+  linkedinProfile: "https://www.linkedin.com/in/devjaime/",
   
   // Common text names used throughout the site
   articlesName: "Articles",
@@ -32,7 +32,7 @@ export const GLOBAL = {
   projectLongDescription: "All of my projects, including both frontend and full-stack applications.",
 
   // Profile image
-  profileImage: "michael-dam-unsplash.webp",
+  profileImage: "devjaime.webp",
 
   // Menu items
   menu: {
