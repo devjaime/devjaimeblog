@@ -11,7 +11,7 @@ filename: "2025-03-29_BFF-Golang-Parte2"
 
 # BFF con Go (Parte 2): Tests, Concurrencia y Resiliencia en APIs 🧪⚙️
 
-En la [primera parte](./2025-03-28_BFF-Golang-OpenAPI), construimos un BFF minimalista en Go usando OpenAPI, con estructura limpia y endpoints claros. En esta segunda entrega, vamos un paso más allá:
+En la [primera parte](../2025-03-28_BFF-Golang-OpenAPI), construimos un BFF minimalista en Go usando OpenAPI, con estructura limpia y endpoints claros. En esta segunda entrega, vamos un paso más allá:
 
 - ✅ Añadiremos tests
 - 🔁 Implementaremos concurrencia con goroutines y channels
