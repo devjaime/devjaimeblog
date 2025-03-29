@@ -5,7 +5,7 @@ description: "Extiende tu Backend For Frontend con pruebas, manejo de errores y 
 tags: ["golang", "openapi", "bff", "microservicios", "testing", "resiliencia"]
 time: 10
 featured: true
-timestamp: "2025-03-28T17:00:00-0300"
+timestamp: "2025-03-29T17:00:00-0300"
 filename: "2025-03-29_BFF-Golang-Parte2"
 ---
 
