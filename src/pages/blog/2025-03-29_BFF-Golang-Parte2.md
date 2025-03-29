@@ -6,7 +6,7 @@ tags: ["golang", "openapi", "bff", "microservicios", "testing", "resiliencia"]
 time: 10
 featured: true
 timestamp: "2025-03-28T17:00:00-0300"
-filename: "2025-03-28_BFF-Golang-Parte2"
+filename: "2025-03-29_BFF-Golang-Parte2"
 ---
 
 # BFF con Go (Parte 2): Tests, Concurrencia y Resiliencia en APIs 🧪⚙️
