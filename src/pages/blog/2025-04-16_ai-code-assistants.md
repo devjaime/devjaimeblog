@@ -70,6 +70,10 @@ Aunque no conocen los objetivos del negocio, estos agentes operan con una lógic
 
 Cuando los asistentes de código procesan un proyecto completo para entender su contexto, siguen una serie de pasos técnicos avanzados. A continuación, describimos un flujo generalizado:
 
+---
+import Mermaid from "@/components/Mermaid.astro";
+---
+
 <Mermaid code={`flowchart TD
   A[Escaneo del Proyecto] --> B[Extracción de Dependencias y Estructura]
   B --> C[Indexación de Archivos y Funciones]
