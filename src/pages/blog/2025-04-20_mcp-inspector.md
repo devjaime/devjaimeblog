@@ -15,11 +15,11 @@ filename: "2025-04-20_mcp-inspector"
 
 ### 🖼️ Vista previa del MCP Inspector
 
-![MCP Inspector en acción](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*Zkq5gB4g1qWz3k3YQk3k3A.png)
-*Fuente: [Understanding Model Context Protocol (MCP) - Medium](https://medium.com/predict/understanding-model-context-protocol-mcp-771f1cfb3c0a)*
+![MCP Inspector en acción](https://cdn-ak.f.st-hatena.com/images/fotolife/B/BioErrorLog/20250406/20250406162323.png)
+*Fuente: [https://en.bioerrorlog.work/entry/how-to-use-mcp-inspector](https://cdn-ak.f.st-hatena.com/images/fotolife/B/BioErrorLog/20250407/20250407094943.png)*
 
-![MCP Inspector oficial](https://outlore.dev/images/mcp-inspector.png)
-*Fuente: [Reflections on building with Model Context Protocol (MCP) - Outlore](https://outlore.dev/blog/model-context-protocol/)*
+![MCP Inspector oficial](https://mintlify.s3.us-west-1.amazonaws.com/mcp/images/mcp-inspector.png)
+
 
 ## 🧠 ¿Por qué es importante?
 
