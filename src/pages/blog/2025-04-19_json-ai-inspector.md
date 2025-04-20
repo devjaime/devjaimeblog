@@ -124,7 +124,7 @@ streamlit run app.py
 
 Este proyecto es **open source** y está en constante evolución. Si deseas colaborar, reportar un bug o proponer nuevas funcionalidades, ¡te invitamos a visitar el [repositorio en GitHub](https://github.com/json-ai-tools/json-ai-inspector)! 🌟
 
-¿Ideas para integrarlo con tus proyectos? Escríbeme en [LinkedIn](https://www.linkedin.com/in/jaime-hernandez-dev/) o visita [codeIA.cl](https://codeia.cl) para más soluciones impulsadas por IA.
+¿Ideas para integrarlo con tus proyectos? Escríbeme en [LinkedIn](https://www.linkedin.com/in/devjaime/) o visita [codeIA.cl](https://codeia.cl) para más soluciones impulsadas por IA.
 
 ---
 
