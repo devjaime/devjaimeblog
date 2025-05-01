@@ -48,6 +48,32 @@ Ejemplos populares:
 
 Estos desafíos no solo permiten mejorar habilidades técnicas, sino también comprender cómo resolver problemas complejos y reales con IA.
 
+## 📂 Datasets más populares y por qué usarlos
+
+Uno de los grandes atractivos de Kaggle es su enorme repositorio de datasets públicos. Aquí algunos de los más populares y qué puedes aprender con cada uno:
+
+- 📉 **[Titanic: Machine Learning from Disaster](https://www.kaggle.com/competitions/titanic/data)**
+  - ¿Por qué usarlo?: Ideal para principiantes. Enseña clasificación binaria, manejo de valores nulos y features categóricas.
+  - Aprendizaje: Predicción de supervivencia según variables demográficas y socioeconómicas.
+
+- 🏠 **[House Prices: Advanced Regression Techniques](https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques/data)**
+  - ¿Por qué usarlo?: Excelente para practicar regresión, manejo de outliers y normalización de datos.
+  - Aprendizaje: Predicción de precios a partir de características de viviendas.
+
+- 👨‍🏫 **[Student Performance Dataset](https://www.kaggle.com/datasets/spscientist/students-performance-in-exams)**
+  - ¿Por qué usarlo?: Bueno para clasificación y visualización de correlaciones.
+  - Aprendizaje: Relación entre hábitos de estudio y rendimiento escolar.
+
+- 🦠 **[COVID-19 Dataset](https://www.kaggle.com/datasets/imdevskp/corona-virus-report)**
+  - ¿Por qué usarlo?: Dataset real y relevante, útil para análisis de series de tiempo y visualización.
+  - Aprendizaje: Análisis de propagación, tasas de mortalidad y patrones regionales.
+
+- 🍔 **[Fast Food Nutrition](https://www.kaggle.com/datasets/mcdonalds/nutrition-facts)**
+  - ¿Por qué usarlo?: Simple y entretenido para explorar datos tabulares y limpieza de datos.
+  - Aprendizaje: Comparación nutricional entre cadenas de comida rápida.
+
+Estos datasets ofrecen un excelente punto de partida para probar modelos de machine learning, practicar análisis exploratorio y crear dashboards interactivos.
+
 ## Comparación: Aprender vs Competir
 
 | Característica              | Kaggle Learn                     | Competencias Kaggle                 |
@@ -69,17 +95,17 @@ Estos desafíos no solo permiten mejorar habilidades técnicas, sino también co
 
 ## 🎨 Ejemplos de Inteligencia Artificial Generativa en Kaggle
 
-La inteligencia artificial generativa ha tomado protagonismo en los últimos años, y Kaggle no se ha quedado atrás. Aquí algunos ejemplos de competencias y notebooks centrados en IA generativa:
+La inteligencia artificial generativa ha tomado protagonismo en los últimos años, y Kaggle no se ha quedado atrás. Aquí algunos ejemplos de notebooks centrados en IA generativa:
 
-- 🎭 **[Stable Diffusion - Image Generation](https://www.kaggle.com/code/amrrs/stable-diffusion-on-kaggle-gpu)**: Notebook que demuestra cómo correr Stable Diffusion en GPUs gratuitas de Kaggle para generar imágenes a partir de texto.
+- 🎭 **[Stable Diffusion - Image Generation](https://www.kaggle.com/code/amrrs/stable-diffusion-on-kaggle-gpu/notebook)**: Notebook que demuestra cómo correr Stable Diffusion en GPUs gratuitas de Kaggle para generar imágenes a partir de texto.
 
-- 🖼️ **[DALL·E Mini / Craiyon](https://www.kaggle.com/code/ankitnarang/dalle-mini-on-kaggle)**: Implementación compacta de generación de imágenes a partir de prompts con transformers.
+- 🖼️ **[Craiyon (DALL·E Mini) - Imagen desde texto](https://www.kaggle.com/code/sayakpaul/dalle-mini-from-huggingface-models)**: Implementación de generación de imágenes a partir de prompts con transformers usando Craiyon.
 
-- 🎧 **[Text-to-Audio with Bark by Suno](https://www.kaggle.com/code/danielgross/bark-text-to-audio-model)**: Demuestra cómo generar voces sintéticas realistas a partir de texto con un modelo de audio generativo.
+- 🎧 **[Text-to-Audio con Bark](https://www.kaggle.com/code/andrewmvd/text-to-audio-with-bark)**: Generación de voces sintéticas realistas con texto de entrada y el modelo Bark de Suno.
 
-- 📝 **[GPT-2 Text Generation Pipeline](https://www.kaggle.com/code/aaron7sun/gpt2-text-generation)**: Creación de textos originales a partir de un prompt, usando modelos GPT finetuneados.
+- 📝 **[Generación de Texto con GPT-2](https://www.kaggle.com/code/andradaolteanu/text-generation-with-gpt2)**: Ejemplo simple de cómo usar un modelo GPT-2 para producir contenido de texto a partir de un prompt.
 
-- 🧪 **[Diffusion Models - Intro and Training](https://www.kaggle.com/code/tanulsingh077/train-your-first-diffusion-model/notebook)**: Explicación completa sobre cómo entrenar tu propio modelo de difusión desde cero.
+- 🧪 **[Modelos de Difusión - Entrenamiento desde cero](https://www.kaggle.com/code/tanulsingh077/train-your-first-diffusion-model)**: Entrena tu propio modelo de difusión y entiende su funcionamiento paso a paso.
 
 Estas notebooks te permiten experimentar directamente con modelos generativos sin tener que instalar nada en tu máquina local. ¡Solo haz fork y comienza a crear!
 
@@ -98,6 +124,18 @@ Una de las mejores formas de aprender en Kaggle es revisando notebooks que han g
 - 📍 **[Smartphone Decimeter - Geolocalización Precisa](https://www.kaggle.com/code/jeongwoo27/final-solution-1st-place)**: Notebook ganador que combina filtros de Kalman y deep learning para posicionamiento satelital.
 
 Estos notebooks no solo son educativos, sino que además muestran buenas prácticas de codificación, análisis, y documentación. ¡Aprender leyendo soluciones de la comunidad es una estrategia poderosa!
+
+## 📚 Recursos adicionales para seguir aprendiendo
+
+Si te interesa seguir profundizando en ciencia de datos e inteligencia artificial fuera de Kaggle, aquí tienes algunas plataformas recomendadas:
+
+- **[Coursera](https://www.coursera.org)**: Cursos de universidades como Stanford y deeplearning.ai. Recomendado: *Machine Learning de Andrew Ng*.
+- **[fast.ai](https://www.fast.ai)**: Cursos prácticos gratuitos sobre deep learning aplicados al mundo real.
+- **[Google Cloud Skills Boost](https://www.cloudskillsboost.google/)**: Capacitación técnica gratuita sobre BigQuery, Vertex AI y herramientas en la nube de Google.
+- **[Papers with Code](https://www.paperswithcode.com)**: Explora investigaciones recientes con código disponible para reproducir modelos.
+- **[Hugging Face](https://huggingface.co/learn)**: Aprende sobre transformers y modelos de lenguaje con documentación práctica y notebooks.
+
+Complementar Kaggle con estos recursos te permitirá construir una base sólida en IA moderna, desde fundamentos hasta producción.
 
 ## Conclusión
 
