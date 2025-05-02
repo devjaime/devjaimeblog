@@ -53,9 +53,10 @@ pages:
   - /blog/2021-11-06_-Qu--hace-a-un-desarrollador-10x--49efa7c00ebf.md # ¿Qué hace a un desarrollador 10x?
   - /blog/2025-05-01_kaggle-ia-generativa.md # Kaggle IA Generativa
   - /blog/2025-05-01_llms-txt.md # LLMs TXT
+  - /blog/2025-05-02_uv-python # Descubre uv una alternativa escrita en Rust a pip
 
 # Contacto
-contact: /contacto.html
+contact: https://codeiaspa.github.io/contact/
 
 # Contexto del Proyecto Astro como Blog
 project-context:
@@ -70,7 +71,7 @@ project-context:
       - SEO optimizado
   - metadata:
       - username: devjaime
-      - rootUrl: https://devjaime.com
+      - rootUrl: https://jaimehernandez.dev
       - shortDescription: AI & Software Engineering | Founder of CodeIA | Cloud, Backend & Automation
       - longDescription: Jaime Hernández es un ingeniero de software especializado en IA, computación en la nube y desarrollo backend. Con experiencia en Golang, PostgreSQL, LangChain y microservicios, crea soluciones escalables impulsadas por IA.
 
