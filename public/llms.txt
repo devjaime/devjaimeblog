@@ -1,0 +1,77 @@
+# llms.txt
+
+# Este archivo está diseñado para facilitar la lectura de contenido clave por modelos de lenguaje de gran escala (LLMs).
+# Puedes personalizar este archivo para incluir información relevante de tu sitio web.
+
+# Ejemplo de contenido:
+# Título del sitio web
+site-title: DevJaime Blog
+
+# Descripción del sitio web
+description: Blog personal sobre desarrollo, tecnología y más.
+
+# Páginas clave
+pages:
+  - /index.html
+  - /blog/2018-06-21_Azure-CLI-usando-una-Mac-f2c620ae436f.html # Azure CLI usando una Mac
+  - /blog/2018-07-31_El-l-mite-de-la-nube-con-arquitectura-Serveless-y-Azure-Function-8512fe987ad3.html # El límite de la nube con arquitectura Serverless y Azure Function
+  - /blog/2018-07-31_Instalaci-n-de-Flutter-en-Mac-OS-e8378735f071.html # Instalación de Flutter en Mac OS
+  - /blog/2018-08-04_Dise-o-y-desarrollo-unidos-en-una-herramienta-para-Flutter-una-idea-genial--706fb5977d7c.html # Diseño y desarrollo unidos en una herramienta para Flutter: una idea genial
+  - /blog/2018-09-02_El-desarrollo-m-vil-nativo-est--muerto---83f3638de3de.html # El desarrollo móvil nativo está muerto
+  - /blog/2018-11-07_Creando-una-biblioteca-simple-usando-CLI-angular-7-y-desplegando-en-azure-d8c9d66668bd.html # Creando una biblioteca simple usando CLI Angular 7 y desplegando en Azure
+  - /blog/2019-03-10_Publicaci-n-de-una-app-Flutter-en-google-play-store-57b07092092c.html # Publicación de una app Flutter en Google Play Store
+  - /blog/2019-03-18_Hablemos-de-Test-Driver-Development-TDD-f191095baf0e.html # Hablemos de Test Driver Development (TDD)
+  - /blog/2019-03-26_Xamarin-Essentials-un-d-a-cada-sensor-398f864e225a.html # Xamarin Essentials: un día cada sensor
+  - /blog/2019-04-03_Lo-que-m-s-me-ha-gustado-de-visual-studio-2019-81cc74e757da.html # Lo que más me ha gustado de Visual Studio 2019
+  - /blog/2019-04-03_Visual-Studio-2019-algunos-detalles-interesantes-db20d60a36f4.html # Visual Studio 2019: algunos detalles interesantes
+  - /blog/2019-04-17_D-a-uno-Xamarin-Essential-Acelerometro-517507ef7615.html # Día uno: Xamarin Essential Acelerómetro
+  - /blog/2019-04-19_D-a-2-Bateria-En-Xamarin-Forms-con-Xamarin-Essentials-4d4f0ae8133.html # Día 2: Batería en Xamarin Forms con Xamarin Essentials
+  - /blog/2019-04-19_D-a-3-Geocoding-XamarinForms-con-Api-XamarinEssentials-f8b8b8f37c5d.html # Día 3: Geocoding en Xamarin Forms con API Xamarin Essentials
+  - /blog/2019-04-20_D-a-4-Geolocation-XamarinForms-con-Api-XamarinEssentials-fe79dbb3c9e5.html # Día 4: Geolocation en Xamarin Forms con API Xamarin Essentials
+  - /blog/2019-04-24_Scraping-Stack-Overflow-Usando-Python-22ad9e2af5a4.html # Scraping Stack Overflow usando Python
+  - /blog/2025-05-01_llms-txt.html
+  - /blog/2019-05-06_Microsoft-Build-2019-para-desarrolladores-Xamarin-ae39a9bb88eb.html # Microsoft Build 2019 para desarrolladores Xamarin
+  - /blog/2019-05-10_Flutter-Google-I-O-19-dise-o-material-y-pantallas-adaptativas-8d76e0888ef5.html # Flutter Google I/O 19: diseño material y pantallas adaptativas
+  - /blog/2019-05-11_Anuncios-de-productos-Google-I-O-2019-8af563af0b30.html # Anuncios de productos Google I/O 2019
+  - /blog/2019-05-11_Una-peque-a-reflexi-n-y-palabras-de-optimismo-de-un-desarrollador-80feb272a3a4.html # Una pequeña reflexión y palabras de optimismo de un desarrollador
+  - /blog/2019-05-17_Probando-FlutterWeb-en-windows-primera-parte-86a672b0b280.html # Probando FlutterWeb en Windows: primera parte
+  - /blog/2019-07-17_Flutter-Cloud-AWS-articulo-en-espa-ol-parte-1-de-3-ec31304ed06c.html # Flutter Cloud AWS: artículo en español (parte 1 de 3)
+  - /blog/2019-09-06_MicroFrontEnd-4eecf1498cd1.html # MicroFrontEnd
+  - /blog/2020-12-06_Mi-primer-API-en-Golang-9461996753dc.html # Mi primer API en Golang
+  - /blog/2020-12-06_My-first-API-in-Golang-ea9c3e707e13.html # My first API in Golang
+  - /blog/2021-03-21_-Listo-para-comenzar-a-codificar-con-Flutter-en-2021--73baf56d6b8c.html # ¿Listo para comenzar a codificar con Flutter en 2021?
+  - /blog/2021-03-21_D-a-1--instalaci-n-y-configuraci-n-de-Flutter-ea8bbc44e060.html # Día 1: instalación y configuración de Flutter
+  - /blog/2021-03-21_Dart-Null-Safety--una-gu-a-para-los-tipos-que-no-aceptan-valores-nulos-44767a116da0.html # Dart Null Safety: una guía para los tipos que no aceptan valores nulos
+  - /blog/2021-03-21_Mejores-consejos-y-trucos-de-Dart-que-todo-desarrollador-de-Flutter-debe-conocer-959e8daac7ba.html # Mejores consejos y trucos de Dart que todo desarrollador de Flutter debe conocer
+  - /blog/2021-03-22_D-a-2--Lenguaje-Dart-2b3ac415015f.html # Día 2: Lenguaje Dart
+  - /blog/2021-03-23_D-a-3--Arquitectura-Flutter-y-configuraci-n-del-proyecto-9307aa98b4fe.html # Día 3: Arquitectura Flutter y configuración del proyecto
+  - /blog/2021-03-27_kubernetes--para-inexpertos--introducci-n-9b28fe51dfe.md # Kubernetes para inexpertos: introducción
+  - /blog/2021-04-02_Aceptar-pagos-de-criptomonedas-para-tu-ecommerce-con-CoinBase-Commerce-a8f4bc4ea272.md # Aceptar pagos de criptomonedas para tu ecommerce con CoinBase Commerce
+  - /blog/2021-04-06_Angular-Arquitectura-Hexagonal---hipotesis--a2cfa0b94a07.md # Angular Arquitectura Hexagonal: hipótesis
+  - /blog/2021-10-11_D-a-4--widgets-Flutter---dise-os-b-sicos-y-responsivos-5468a0af808b.md # Día 4: widgets Flutter - diseños básicos y responsivos
+  - /blog/2021-10-12_Hojas-de-trucos-c75eba513a33.md # Hojas de trucos
+  - /blog/2021-11-06_-Qu--hace-a-un-desarrollador-10x--49efa7c00ebf.md # ¿Qué hace a un desarrollador 10x?
+  - /blog/2025-05-01_kaggle-ia-generativa.md # Kaggle IA Generativa
+  - /blog/2025-05-01_llms-txt.md # LLMs TXT
+
+# Contacto
+contact: /contacto.html
+
+# Contexto del Proyecto Astro como Blog
+project-context:
+  - framework: Astro
+  - description: Proyecto de blog personal construido con Astro, TailwindCSS y TypeScript.
+  - features:
+      - Modo oscuro y claro
+      - Colores personalizables
+      - Puntuación 100/100 en Lighthouse
+      - Totalmente accesible y responsivo
+      - Tipado seguro
+      - SEO optimizado
+  - metadata:
+      - username: devjaime
+      - rootUrl: https://devjaime.com
+      - shortDescription: AI & Software Engineering | Founder of CodeIA | Cloud, Backend & Automation
+      - longDescription: Jaime Hernández es un ingeniero de software especializado en IA, computación en la nube y desarrollo backend. Con experiencia en Golang, PostgreSQL, LangChain y microservicios, crea soluciones escalables impulsadas por IA.
+
+# Nota: Asegúrate de mantener este archivo actualizado con el contenido más relevante de tu sitio.
