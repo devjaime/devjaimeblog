@@ -42,7 +42,7 @@ Pero no se trata solo de automatización básica. Lo que realmente los vuelve �
 
 ---
 
-## 🛠️ L2: Construyendo un Agente Web Simple
+## 🛠️ Construyendo un Agente Web Simple
 
 ### ¿Por qué es importante?
 
@@ -86,7 +86,7 @@ Este enfoque evita tener que escribir miles de selectores CSS o XPath. El LLM en
 
 ---
 
-## 🤖 L3: Agentes Autónomos con MultiOn
+## 🤖 Agentes Autónomos con MultiOn
 
 ### ¿Por qué ir más allá del scraping?
 
@@ -123,7 +123,7 @@ MultiOn permite llevar los LLMs desde la teoría a la acción real en la web. Es
 
 ---
 
-## 🧠 L5: AgentQ y MCTS
+## 🧠 AgentQ y MCTS
 
 ### ¿Por qué MCTS en la web?
 
