@@ -6,7 +6,7 @@ tags: ["Go", "Programming", "Backend", "Learning", "Software Development", "Care
 time: 15 min read
 timestamp: 2025-07-06T14:30:00+00:00
 featured: true
-filename: go-journey-from-skeptic-to-believer
+filename: 2025-07--06_go-journey-from-skeptic-to-believer
 ---
 
 # My Go Journey: From Skeptic to Believer in Just a Few Weeks
