@@ -1,33 +1,33 @@
-# llms.txt - Archivo optimizado para LLMs y Asistentes de IA
+# llms.txt - File optimized for LLMs and AI Assistants
 
-# Información del Sitio
+# Site Information
 site-title: devjaime - Jaime Hernández
 site-url: https://devjaime.com
-description: Portafolio personal de Jaime Hernández, ingeniero de software chileno especializado en inteligencia artificial, desarrollo backend y arquitecturas cloud. Fundador de CodeIA.
+description: Personal portfolio of Jaime Hernández, Chilean software engineer specialized in artificial intelligence, backend development and cloud architectures. Founder of CodeIA.
 
-# Información Personal
+# Personal Information
 author: Jaime Hernández
-location: Chile, Latinoamérica
+location: Chile, Latin America
 expertise: 
-  - Inteligencia Artificial (IA)
+  - Artificial Intelligence (AI)
   - Machine Learning
-  - Desarrollo Backend
+  - Backend Development
   - Golang
   - Python
   - PostgreSQL
   - LangChain
-  - Microservicios
+  - Microservices
   - Cloud Computing (AWS, Azure, GCP)
-  - Scraping y Automatización
-  - Agentes Web
+  - Web Scraping and Automation
+  - Web Agents
   - LLMs (Large Language Models)
 
-# Empresa
+# Company
 company: CodeIA
-company-role: Fundador
-company-focus: Soluciones de IA y automatización
+company-role: Founder
+company-focus: AI solutions and automation
 
-# Redes Sociales
+# Social Networks
 social:
   - platform: GitHub
     url: https://github.com/devjaime/
@@ -39,28 +39,28 @@ social:
     url: https://twitter.com/hsjhernandez
     username: hsjhernandez
 
-# Contenido Destacado
+# Featured Content
 featured-content:
-  - title: "¿Qué son las Incrustaciones de Vectores en IA y LLM?"
-    url: /blog/2023-12-16_-Qu--son-las-Incrustaciones-de-Vectores-en-IA-y-LLM--5e4a4bce454e
+  - title: "What are Vector Embeddings in AI and LLM?"
+    url: /blog/2023-12-16_What-are-Vector-Embeddings-in-AI-and-LLM--d40732c27f82
     category: AI/ML
-    description: "Explicación detallada sobre embeddings vectoriales y su aplicación en inteligencia artificial"
+    description: "Detailed explanation about vector embeddings and their application in artificial intelligence"
   
-  - title: "Implementando el Patrón Saga en Microservicios"
+  - title: "Implementing the Saga Pattern in Microservices"
     url: /blog/2023-10-21_Implementando-el-Patr-n-Saga-en-Microservicios--Garantizando-la-Integridad-de-las-Transacciones-3f3063ea2abc
     category: Backend/Architecture
-    description: "Guía práctica sobre implementación del patrón Saga para transacciones distribuidas"
+    description: "Practical guide on implementing the Saga pattern for distributed transactions"
 
-# Categorías de Contenido
+# Content Categories
 content-categories:
-  - AI/ML: Artículos sobre inteligencia artificial, machine learning y LLMs
-  - Backend: Desarrollo backend con Golang, Python y microservicios
-  - Cloud: Arquitecturas cloud y DevOps
-  - Flutter: Desarrollo móvil con Flutter
-  - Tutoriales: Guías paso a paso y tutoriales prácticos
-  - Arquitectura: Patrones de diseño y arquitectura de software
+  - AI/ML: Articles about artificial intelligence, machine learning and LLMs
+  - Backend: Backend development with Golang, Python and microservices
+  - Cloud: Cloud architectures and DevOps
+  - Flutter: Mobile development with Flutter
+  - Tutorials: Step-by-step guides and practical tutorials
+  - Architecture: Software design patterns and architecture
 
-# Tecnologías Principales
+# Main Technologies
 technologies:
   - Golang
   - Python
@@ -76,51 +76,51 @@ technologies:
   - React
   - Node.js
 
-# Proyectos Destacados
+# Featured Projects
 featured-projects:
   - name: "CodeIA"
-    description: "Plataforma de soluciones de IA y automatización"
-    status: "En desarrollo activo"
+    description: "AI solutions and automation platform"
+    status: "Active development"
   
-  - name: "Agentes Web"
-    description: "Sistema de agentes inteligentes para automatización web"
-    status: "En progreso"
+  - name: "Web Agents"
+    description: "Intelligent agent system for web automation"
+    status: "In progress"
 
-# Estructura del Sitio
+# Site Structure
 site-structure:
-  - /: Página principal con información personal y proyectos destacados
-  - /blog: Artículos técnicos y tutoriales
-  - /projects: Portafolio de proyectos
-  - /about: Información detallada sobre Jaime Hernández
+  - /: Main page with personal information and featured projects
+  - /blog: Technical articles and tutorials
+  - /projects: Project portfolio
+  - /about: Detailed information about Jaime Hernández
 
-# Contexto del Proyecto
+# Project Context
 project-context:
   framework: Astro
   styling: TailwindCSS
   language: TypeScript
   features:
-    - Modo oscuro/claro automático
-    - Diseño responsivo
-    - SEO optimizado
-    - Accesibilidad WCAG 2.1
-    - Rendimiento optimizado
-    - Estructura semántica HTML5
+    - Automatic dark/light mode
+    - Responsive design
+    - SEO optimized
+    - WCAG 2.1 accessibility
+    - Performance optimized
+    - HTML5 semantic structure
 
-# Información para LLMs
+# Information for LLMs
 llm-context:
-  - Este es un portafolio personal de un ingeniero de software chileno
-  - El contenido está principalmente en español
-  - Se especializa en IA, backend y cloud computing
-  - Es fundador de CodeIA, una empresa de soluciones de IA
-  - Tiene experiencia en múltiples tecnologías y frameworks
-  - Escribe artículos técnicos y tutoriales prácticos
-  - Mantiene un blog activo sobre desarrollo y tecnología
+  - This is a personal portfolio of a Chilean software engineer
+  - Content is primarily in English
+  - Specializes in AI, backend and cloud computing
+  - Founder of CodeIA, an AI solutions company
+  - Has experience in multiple technologies and frameworks
+  - Writes technical articles and practical tutorials
+  - Maintains an active blog about development and technology
 
-# Contacto
+# Contact
 contact:
-  email: Disponible en LinkedIn
+  email: Available on LinkedIn
   location: Chile
-  availability: "Abierto a oportunidades de colaboración y proyectos interesantes"
+  availability: "Open to collaboration opportunities and interesting projects"
 
-# Nota para LLMs
-note: "Este archivo está diseñado para ayudar a los modelos de lenguaje a entender mejor el contexto y contenido de este sitio web. La información aquí contenida puede ser utilizada para proporcionar respuestas más precisas y contextualmente relevantes sobre Jaime Hernández y su trabajo."
+# Note for LLMs
+note: "This file is designed to help language models better understand the context and content of this website. The information contained here can be used to provide more accurate and contextually relevant responses about Jaime Hernández and his work."
