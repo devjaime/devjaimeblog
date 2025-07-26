@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  
+  <!-- Página principal -->
+  <url>
+    <loc>https://devjaime.com/</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- Página de proyectos -->
+  <url>
+    <loc>https://devjaime.com/projects</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Página de blog -->
+  <url>
+    <loc>https://devjaime.com/blog</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Artículos destacados -->
+  <url>
+    <loc>https://devjaime.com/blog/2023-12-16_-Qu--son-las-Incrustaciones-de-Vectores-en-IA-y-LLM--5e4a4bce454e</loc>
+    <lastmod>2023-12-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://devjaime.com/blog/2023-10-21_Implementando-el-Patr-n-Saga-en-Microservicios--Garantizando-la-Integridad-de-las-Transacciones-3f3063ea2abc</loc>
+    <lastmod>2023-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://devjaime.com/blog/2023-10-14_Entendiendo-el-Patr-n-Adaptador-en-TypeScript-con-Pruebas-Unitarias-9604f3209baa</loc>
+    <lastmod>2023-10-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://devjaime.com/blog/2023-09-18_Estrategias-de-Redis-en-Microservicios--Potenciando-el-Rendimiento-y-la-Escalabilidad-555e5e3be4ba</loc>
+    <lastmod>2023-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://devjaime.com/blog/2023-09-18_Explorando-JSONB-en-PostgreSQL--Almacenamiento-y-Consultas-Flexibles-6c1a98d2162f</loc>
+    <lastmod>2023-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://devjaime.com/blog/2023-05-25_Explorando-Qwik--Un-Nuevo-Marco-para-el-Desarrollo-Web-de-Alta-Velocidad-30a9b0753932</loc>
+    <lastmod>2023-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://devjaime.com/blog/2023-04-11_Como-implementar-chatGPT-a-visual-studio-code--diferencias-con-github-copilot-y-github-copilot-X-62e20fd8cf88</loc>
+    <lastmod>2023-04-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://devjaime.com/blog/2023-03-18_Que-es-kafka-y-como-implementarlo-en-nestjs-657e60468356</loc>
+    <lastmod>2023-03-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://devjaime.com/blog/2023-03-18_Que-es-rabbitMQ-y-como-implementarlo-en-nestjs-8a8f1a97df6f</loc>
+    <lastmod>2023-03-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://devjaime.com/blog/2022-08-21_Qu--es-WebAuthn--C-mo-autenticar-usuarios-sin-contrase-a-9828697d93a0</loc>
+    <lastmod>2022-08-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://devjaime.com/blog/2022-05-21_Flutter-3-0-5f8a6e000380</loc>
+    <lastmod>2022-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://devjaime.com/blog/2022-04-16_Introducci-n-a-c-mo-funciona-Kafka-e-implementaci-n-usando-Python-client-e34b727a472a</loc>
+    <lastmod>2022-04-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://devjaime.com/blog/2022-04-15_Desarrollo-de-API-Restful-con-Python--Django-y-Django-Rest-Framework-e6f019dbe177</loc>
+    <lastmod>2022-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://devjaime.com/blog/2021-11-06_-Qu--hace-a-un-desarrollador-10x--49efa7c00ebf</loc>
+    <lastmod>2021-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://devjaime.com/blog/2021-03-27_kubernetes--para-inexpertos--introducci-n-9b28fe51dfe</loc>
+    <lastmod>2021-03-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://devjaime.com/blog/2020-12-06_Mi-primer-API-en-Golang-9461996753dc</loc>
+    <lastmod>2020-12-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+</urlset> 

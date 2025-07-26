@@ -3,9 +3,37 @@
 export const GLOBAL = {
   // Site metadata
   username: "devjaime",
+  fullName: "Jaime Hernández",
   rootUrl: "https://devjaime.com",
   shortDescription: "AI & Software Engineering | Founder of CodeIA | Cloud, Backend & Automation",
-  longDescription: "Jaime Hernández is a software engineer and founder of CodeIA, specializing in AI, cloud computing, and backend development. With expertise in Golang, PostgreSQL, LangChain, and microservices, he builds scalable and AI-driven solutions. His work spans AI automation, intelligent search, authentication with passkeys, and cloud-based architectures.",
+  longDescription: "Jaime Hernández es un ingeniero de software chileno especializado en inteligencia artificial, computación en la nube y desarrollo backend. Con experiencia en Golang, PostgreSQL, LangChain y microservicios, crea soluciones escalables impulsadas por IA. Fundador de CodeIA, apasionado por la automatización y las tecnologías emergentes.",
+  
+  // SEO Keywords
+  keywords: [
+    "Jaime Hernández",
+    "software engineer",
+    "AI",
+    "artificial intelligence", 
+    "Golang",
+    "Python",
+    "backend development",
+    "cloud computing",
+    "microservices",
+    "PostgreSQL",
+    "LangChain",
+    "Chile",
+    "Latinoamérica",
+    "CodeIA",
+    "machine learning",
+    "web scraping",
+    "automation",
+    "AWS",
+    "Azure",
+    "GCP",
+    "Flutter",
+    "TypeScript",
+    "Node.js"
+  ],
   
   // Social media links
   githubProfile: "https://github.com/devjaime/",
@@ -13,23 +41,23 @@ export const GLOBAL = {
   linkedinProfile: "https://www.linkedin.com/in/devjaime/",
   
   // Common text names used throughout the site
-  articlesName: "Articles",
-  projectsName: "Projects",
-  viewAll: "View All",
+  articlesName: "Artículos",
+  projectsName: "Proyectos",
+  viewAll: "Ver Todo",
   
   // Common descriptions used throughout the site
-  noArticles: "No featured articles yet.",
-  noProjects: "No featured projects yet.",
+  noArticles: "Aún no hay artículos destacados.",
+  noProjects: "Aún no hay proyectos destacados.",
 
   // Blog metadata
-  blogTitle: "My Thoughts & Takes",
-  blogShortDescription: "Practical wisdom, unfiltered thoughts, and hot takes.",
-  blogLongDescription: "Web development, tech trends, and the occasional programming mishap.",
+  blogTitle: "Mis Pensamientos y Reflexiones",
+  blogShortDescription: "Sabiduría práctica, pensamientos sin filtro y opiniones sobre tecnología.",
+  blogLongDescription: "Desarrollo web, tendencias tecnológicas y ocasionalmente errores de programación. Artículos técnicos sobre IA, backend y desarrollo de software.",
 
   // Project metadata
-  projectTitle: "Projects and Code",
-  projectShortDescription: "A list of my web development projects and developer tools.",
-  projectLongDescription: "All of my projects, including both frontend and full-stack applications.",
+  projectTitle: "Proyectos y Código",
+  projectShortDescription: "Una lista de mis proyectos de desarrollo web y herramientas para desarrolladores.",
+  projectLongDescription: "Todos mis proyectos, incluyendo aplicaciones frontend y full-stack. Desde soluciones de IA hasta aplicaciones web modernas.",
 
   // Profile image
   profileImage: "devjaime.webp",
@@ -39,5 +67,23 @@ export const GLOBAL = {
     home: "/",
     projects: "/projects",
     blog: "/blog",
+  },
+
+  // Skills and expertise
+  skills: {
+    languages: ["Golang", "Python", "TypeScript", "JavaScript", "Dart"],
+    databases: ["PostgreSQL", "Redis", "MongoDB"],
+    cloud: ["AWS", "Azure", "GCP", "Docker", "Kubernetes"],
+    frameworks: ["Flutter", "React", "Node.js", "Django", "FastAPI"],
+    ai: ["LangChain", "OpenAI", "TensorFlow", "Scikit-learn"],
+    tools: ["Git", "VS Code", "Postman", "Jupyter"]
+  },
+
+  // Experience highlights
+  experience: {
+    currentRole: "Fundador de CodeIA",
+    yearsOfExperience: "8+ años",
+    focusAreas: ["Inteligencia Artificial", "Desarrollo Backend", "Arquitectura Cloud"],
+    location: "Chile, Latinoamérica"
   }
 };
