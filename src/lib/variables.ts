@@ -6,28 +6,13 @@ export const GLOBAL = {
   fullName: "Jaime Hernández",
   rootUrl: "https://devjaime.com",
   
-  // Multilingual content
-  languages: {
-    es: {
-      shortDescription: "AI & Software Engineering | Fundador de CodeIA | Cloud, Backend & Automatización",
-      longDescription: "Ingeniero de software chileno especializado en inteligencia artificial, computación en la nube y desarrollo backend. Con experiencia en Golang, PostgreSQL, LangChain y microservicios, crea soluciones escalables impulsadas por IA. Fundador de CodeIA, apasionado por la automatización y las tecnologías emergentes.",
-      heroDescription: "Ingeniero de software chileno especializado en inteligencia artificial, desarrollo backend y arquitecturas cloud. Fundador de CodeIA, apasionado por crear soluciones escalables y automatizadas.",
-      connectButton: "Conectar",
-      viewCodeButton: "Ver Código",
-      profileAlt: "Jaime Hernández - Ingeniero de Software especializado en IA"
-    },
-    en: {
-      shortDescription: "AI & Software Engineering | Founder of CodeIA | Cloud, Backend & Automation",
-      longDescription: "Chilean software engineer specialized in artificial intelligence, cloud computing and backend development. With experience in Golang, PostgreSQL, LangChain and microservices, creates scalable AI-driven solutions. Founder of CodeIA, passionate about automation and emerging technologies.",
-      heroDescription: "Chilean software engineer specialized in artificial intelligence, backend development and cloud architectures. Founder of CodeIA, passionate about creating scalable and automated solutions.",
-      connectButton: "Connect",
-      viewCodeButton: "View Code",
-      profileAlt: "Jaime Hernández - Software Engineer specialized in AI"
-    }
-  },
-
-  // Default language
-  defaultLanguage: "en",
+  // English content
+  shortDescription: "AI & Software Engineering | Founder of CodeIA | Cloud, Backend & Automation",
+  longDescription: "Chilean software engineer specialized in artificial intelligence, cloud computing and backend development. With experience in Golang, PostgreSQL, LangChain and microservices, creates scalable AI-driven solutions. Founder of CodeIA, passionate about automation and emerging technologies.",
+  heroDescription: "Chilean software engineer specialized in artificial intelligence, backend development and cloud architectures. Founder of CodeIA, passionate about creating scalable and automated solutions.",
+  connectButton: "Connect",
+  viewCodeButton: "View Code",
+  profileAlt: "Jaime Hernández - Software Engineer specialized in AI",
 
   // SEO Keywords
   keywords: [
@@ -62,23 +47,23 @@ export const GLOBAL = {
   linkedinProfile: "https://www.linkedin.com/in/devjaime/",
 
   // Common text names used throughout the site
-  articlesName: "Artículos",
-  projectsName: "Proyectos",
-  viewAll: "Ver Todo",
+  articlesName: "Articles",
+  projectsName: "Projects",
+  viewAll: "View All",
 
   // Common descriptions used throughout the site
-  noArticles: "Aún no hay artículos destacados.",
-  noProjects: "Aún no hay proyectos destacados.",
+  noArticles: "No featured articles yet.",
+  noProjects: "No featured projects yet.",
 
   // Blog metadata
-  blogTitle: "Mis Pensamientos y Reflexiones",
-  blogShortDescription: "Sabiduría práctica, pensamientos sin filtro y opiniones sobre tecnología.",
-  blogLongDescription: "Desarrollo web, tendencias tecnológicas y ocasionalmente errores de programación. Artículos técnicos sobre IA, backend y desarrollo de software.",
+  blogTitle: "My Thoughts and Reflections",
+  blogShortDescription: "Practical wisdom, unfiltered thoughts and opinions about technology.",
+  blogLongDescription: "Web development, technology trends and occasionally programming mistakes. Technical articles about AI, backend and software development.",
 
   // Project metadata
-  projectTitle: "Proyectos y Código",
-  projectShortDescription: "Una lista de mis proyectos de desarrollo web y herramientas para desarrolladores.",
-  projectLongDescription: "Todos mis proyectos, incluyendo aplicaciones frontend y full-stack. Desde soluciones de IA hasta aplicaciones web modernas.",
+  projectTitle: "Projects and Code",
+  projectShortDescription: "A list of my web development projects and developer tools.",
+  projectLongDescription: "All my projects, including frontend and full-stack applications. From AI solutions to modern web applications.",
 
   // Profile image
   profileImage: "devjaime.webp",
@@ -102,9 +87,9 @@ export const GLOBAL = {
 
   // Experience highlights
   experience: {
-    currentRole: "Fundador de CodeIA",
-    yearsOfExperience: "8+ años",
-    focusAreas: ["Inteligencia Artificial", "Desarrollo Backend", "Arquitectura Cloud"],
-    location: "Chile, Latinoamérica"
+    currentRole: "Founder of CodeIA",
+    yearsOfExperience: "8+ years",
+    focusAreas: ["Artificial Intelligence", "Backend Development", "Cloud Architecture"],
+    location: "Chile, Latin America"
   }
 };

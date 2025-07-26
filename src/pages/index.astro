@@ -6,17 +6,11 @@ import FeaturedProjects from "../components/home/FeaturedProjects.astro";
 import FeaturedArticles from "../components/home/FeaturedArticles.astro";
 import { GLOBAL } from "../lib/variables";
 import { featuredArticles, featuredProjects } from "../lib/featured";
-
-// Get language from URL params, localStorage, or default
-const url = new URL(Astro.request.url);
-const urlLang = url.searchParams.get('lang');
-const lang = urlLang || GLOBAL.defaultLanguage;
-const content = GLOBAL.languages[lang as keyof typeof GLOBAL.languages] || GLOBAL.languages.en;
 ---
 
 <Layout
-  title={`${GLOBAL.username} • ${content.shortDescription}`}
-  description={content.longDescription}
+  title={`${GLOBAL.username} • ${GLOBAL.shortDescription}`}
+  description={GLOBAL.longDescription}
   image={`${GLOBAL.rootUrl}/devjaime.webp`}
   canonical={GLOBAL.rootUrl}
   type="website"
