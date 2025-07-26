@@ -2,10 +2,11 @@
 import { GLOBAL } from "../../lib/variables";
 import LanguageToggle from "../common/LanguageToggle.astro";
 
-// Get language from URL params or localStorage
+// Get language from URL params, localStorage, or default
 const url = new URL(Astro.request.url);
-const lang = url.searchParams.get('lang') || GLOBAL.defaultLanguage;
-const content = GLOBAL.languages[lang as keyof typeof GLOBAL.languages] || GLOBAL.languages.es;
+const urlLang = url.searchParams.get('lang');
+const lang = urlLang || GLOBAL.defaultLanguage;
+const content = GLOBAL.languages[lang as keyof typeof GLOBAL.languages] || GLOBAL.languages.en;
 ---
 
 <section class="hero-section relative overflow-hidden">

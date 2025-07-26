@@ -27,7 +27,7 @@ export const GLOBAL = {
   },
 
   // Default language
-  defaultLanguage: "es",
+  defaultLanguage: "en",
 
   // SEO Keywords
   keywords: [

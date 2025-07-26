@@ -3,7 +3,7 @@ interface Props {
   currentLanguage?: string;
 }
 
-const { currentLanguage = "es" } = Astro.props;
+const { currentLanguage = "en" } = Astro.props;
 ---
 
 <div class="language-toggle relative inline-block">
@@ -32,23 +32,29 @@ const { currentLanguage = "es" } = Astro.props;
   >
     <button
       class="language-option w-full text-left px-4 py-2 text-sm hover:bg-emerald-600 hover:text-white transition-colors duration-150 rounded-t-lg"
-      data-lang="es"
-      role="menuitem"
-    >
-      🇪🇸 Español
-    </button>
-    <button
-      class="language-option w-full text-left px-4 py-2 text-sm hover:bg-emerald-600 hover:text-white transition-colors duration-150 rounded-b-lg"
       data-lang="en"
       role="menuitem"
     >
       🇺🇸 English
+    </button>
+    <button
+      class="language-option w-full text-left px-4 py-2 text-sm hover:bg-emerald-600 hover:text-white transition-colors duration-150 rounded-b-lg"
+      data-lang="es"
+      role="menuitem"
+    >
+      🇪🇸 Español
     </button>
   </div>
 </div>
 
 <script>
   class LanguageToggle {
+    private toggle: HTMLElement | null;
+    private dropdown: HTMLElement | null;
+    private currentLang: HTMLElement | null;
+    private options: NodeListOf<Element>;
+    private isOpen: boolean;
+
     constructor() {
       this.toggle = document.getElementById('language-toggle');
       this.dropdown = document.getElementById('language-dropdown');
@@ -60,9 +66,18 @@ const { currentLanguage = "es" } = Astro.props;
     }
     
     init() {
-      this.toggle?.addEventListener('click', () => this.toggleDropdown());
+      this.toggle?.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        this.toggleDropdown();
+      });
+      
       this.options.forEach(option => {
-        option.addEventListener('click', (e) => this.selectLanguage(e));
+        option.addEventListener('click', (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          this.selectLanguage(e);
+        });
       });
       
       // Close dropdown when clicking outside
@@ -119,21 +134,32 @@ const { currentLanguage = "es" } = Astro.props;
       localStorage.setItem('preferred-language', lang);
       
       // Update current language display
-      this.currentLang!.textContent = lang.toUpperCase();
+      if (this.currentLang) {
+        this.currentLang.textContent = lang.toUpperCase();
+      }
       
       // Update page content
       this.updatePageContent(lang);
     }
     
     updatePageContent(lang: string) {
-      // This will be implemented to update the page content
-      // For now, we'll just reload the page with the new language
-      const url = new URL(window.location.href);
-      url.searchParams.set('lang', lang);
-      window.location.href = url.toString();
+      // Get current URL
+      const currentUrl = new URL(window.location.href);
+      
+      // Update or add lang parameter
+      if (lang === 'en') {
+        currentUrl.searchParams.delete('lang');
+      } else {
+        currentUrl.searchParams.set('lang', lang);
+      }
+      
+      // Navigate to the new URL
+      window.location.href = currentUrl.toString();
     }
   }
   
-  // Initialize language toggle
-  new LanguageToggle();
+  // Initialize language toggle when DOM is loaded
+  document.addEventListener('DOMContentLoaded', () => {
+    new LanguageToggle();
+  });
 </script> 
