@@ -1,7 +1,6 @@
-@import "tailwindcss";
-@plugin "@tailwindcss/typography";
-
-@variant dark (&:where(.dark, .dark *));
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @font-face {
   font-family: "Literata Variable";
@@ -29,28 +28,22 @@
     U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-@theme {
-  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
-  --font-display: "press-start-2p", ui-monospace, monospace;
-  --font-serif: "Literata Variable", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-  --color-zag-dark: var(--color-neutral-900);
-  --color-zag-light: var(--color-neutral-100);
-  --color-zag-dark-muted: var(--color-neutral-600);
-  --color-zag-light-muted: var(--color-neutral-400);
-  --color-zag-accent-light: var(--color-emerald-400);
-  --color-zag-accent-light-muted: var(--color-emerald-300);
-  --color-zag-accent-dark: var(--color-emerald-600);
-  --color-zag-accent-dark-muted: var(--color-emerald-800);
+:root {
+  --zag-stroke: 2px;
+  --zag-offset: 6px;
+  --zag-transition-duration: 0.15s;
+  --zag-transition-timing-function: ease-in-out;
+  --color-zag-dark: #111827;
+  --color-zag-light: #ffffff;
+  --color-zag-dark-muted: #6b7280;
+  --color-zag-light-muted: #9ca3af;
+  --color-zag-accent-light: #34d399;
+  --color-zag-accent-light-muted: #6ee7b7;
+  --color-zag-accent-dark: #059669;
+  --color-zag-accent-dark-muted: #065f46;
 }
 
 @layer base {
-  :root {
-    --zag-stroke: 2px;
-    --zag-offset: 6px;
-    --zag-transition-duration: 0.15s;
-    --zag-transition-timing-function: ease-in-out;
-  }
-
   /* Mejoras de accesibilidad */
   * {
     box-sizing: border-box;
@@ -113,62 +106,70 @@
   /* Colores de fondo */
   .zag-bg {
     background-color: var(--color-zag-light);
-    :where(.dark, .dark *) & {
-      background-color: var(--color-zag-dark);
-    }
+  }
+
+  .dark .zag-bg {
+    background-color: var(--color-zag-dark);
   }
 
   .-zag-bg {
     background-color: var(--color-zag-dark);
-    :where(.dark, .dark *) & {
-      background-color: var(--color-zag-light);
-    }
+  }
+
+  .dark .-zag-bg {
+    background-color: var(--color-zag-light);
   }
   
   /* Colores de texto */
   .zag-text {
     color: var(--color-zag-dark);
-    :where(.dark, .dark *) & {
-      color: var(--color-zag-light);
-    }
+  }
+
+  .dark .zag-text {
+    color: var(--color-zag-light);
   }
 
   .-zag-text {
     color: var(--color-zag-light);
-    :where(.dark, .dark *) & {
-      color: var(--color-zag-dark);
-    }
+  }
+
+  .dark .-zag-text {
+    color: var(--color-zag-dark);
   }
 
   .zag-muted {
     color: var(--color-zag-dark-muted);
-    :where(.dark, .dark *) & {
-      color: var(--color-zag-light-muted);
-    }
+  }
+
+  .dark .zag-muted {
+    color: var(--color-zag-light-muted);
   }
 
   /* Colores de relleno */
   .zag-fill {
     fill: var(--color-zag-dark);
-    &:where(.dark, .dark *) {
-      fill: var(--color-zag-light);
-    }
+  }
+
+  .dark .zag-fill {
+    fill: var(--color-zag-light);
   }
 
   .zag-text-muted {
     color: var(--color-zag-dark-muted);
-    &:where(.dark, .dark *) {
-      color: var(--color-zag-light-muted);
-    }
+  }
+
+  .dark .zag-text-muted {
+    color: var(--color-zag-light-muted);
   }
 
   /* Bordes */
   .zag-border-b {
     border-bottom: var(--zag-stroke) solid;
     border-color: var(--color-zag-dark);
-    &:where(.dark, .dark *) {
-      border-color: var(--color-zag-light);
-    }
+  }
+
+  .dark .zag-border-b {
+    border-color: var(--color-zag-light);
   }
 
   /* Offset de subrayado */

@@ -1,6 +1,6 @@
 // @ts-check
 import { defineConfig } from "astro/config";
-import tailwindcss from "@tailwindcss/vite";
+import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
@@ -9,8 +9,8 @@ export default defineConfig({
   build: {
     inlineStylesheets: "auto",
   },
+  integrations: [tailwind()],
   vite: {
-    plugins: [tailwindcss()],
     build: {
       rollupOptions: {
         output: {
@@ -23,8 +23,5 @@ export default defineConfig({
     ssr: {
       noExternal: ['@astrojs/tailwind'],
     },
-  },
-  experimental: {
-    assets: true,
   },
 });
