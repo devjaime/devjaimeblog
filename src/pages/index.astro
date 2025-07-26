@@ -1,16 +1,21 @@
 ---
-import { featuredArticles, featuredProjects } from "../lib/featured";
-import { GLOBAL } from "../lib/variables";
 import Layout from "../layouts/Layout.astro";
-import Hero from "../components/home/Hero.astro";
 import Section from "../components/common/Section.astro";
+import Hero from "../components/home/Hero.astro";
 import FeaturedProjects from "../components/home/FeaturedProjects.astro";
 import FeaturedArticles from "../components/home/FeaturedArticles.astro";
+import { GLOBAL } from "../lib/variables";
+import { featuredArticles, featuredProjects } from "../lib/featured";
+
+// Get language from URL params or localStorage
+const url = new URL(Astro.request.url);
+const lang = url.searchParams.get('lang') || GLOBAL.defaultLanguage;
+const content = GLOBAL.languages[lang as keyof typeof GLOBAL.languages] || GLOBAL.languages.es;
 ---
 
-<Layout 
-  title={`${GLOBAL.username} • ${GLOBAL.shortDescription}`}
-  description={GLOBAL.longDescription}
+<Layout
+  title={`${GLOBAL.username} • ${content.shortDescription}`}
+  description={content.longDescription}
   image={`${GLOBAL.rootUrl}/devjaime.webp`}
   canonical={GLOBAL.rootUrl}
   type="website"
@@ -18,11 +23,11 @@ import FeaturedArticles from "../components/home/FeaturedArticles.astro";
   <Section class="my-16">
     <Hero />
   </Section>
-  
+
   <Section>
     <FeaturedProjects featuredProjects={featuredProjects} />
   </Section>
-  
+
   <Section>
     <FeaturedArticles featuredArticles={featuredArticles} />
   </Section>

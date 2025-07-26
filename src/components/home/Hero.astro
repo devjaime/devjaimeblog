@@ -1,57 +1,278 @@
 ---
 import { GLOBAL } from "../../lib/variables";
+import LanguageToggle from "../common/LanguageToggle.astro";
+
+// Get language from URL params or localStorage
+const url = new URL(Astro.request.url);
+const lang = url.searchParams.get('lang') || GLOBAL.defaultLanguage;
+const content = GLOBAL.languages[lang as keyof typeof GLOBAL.languages] || GLOBAL.languages.es;
 ---
 
-<section class="flex flex-col items-center sm:flex-row gap-8">
-  <img
-    src={GLOBAL.profileImage}
-    alt={`${GLOBAL.username} - Ingeniero de Software especializado en IA`}
-    class="rounded-full max-w-40 w-40 h-40 mb-4 z-0 grayscale hover:grayscale-0 transition-all duration-300"
-    loading="eager"
-    width="160"
-    height="160"
-  />
-  <div class="text-center sm:text-left">
-    <h1
-      class="text-3xl sm:text-4xl font-display font-semibold opsz mb-4"
-    >
-      {GLOBAL.username}
-    </h1>
-    <h2
-      class="text-center text-xl sm:text-2xl font-mono font-medium sm:text-left mb-4"
-    >
-      <p set:html={GLOBAL.shortDescription}/>
-    </h2>
-    <p class="text-lg zag-muted mb-6 max-w-2xl">
-      Ingeniero de software chileno especializado en inteligencia artificial, 
-      desarrollo backend y arquitecturas cloud. Fundador de CodeIA, 
-      apasionado por crear soluciones escalables y automatizadas.
-    </p>
-    <div class="flex flex-wrap gap-4 justify-center sm:justify-start">
-      <a 
-        href={GLOBAL.linkedinProfile} 
-        class="inline-flex items-center gap-2 px-4 py-2 bg-emerald-600 text-white rounded-md hover:bg-emerald-700 transition-colors"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Perfil de LinkedIn"
-      >
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11.12 19h-3.08v-9h3.08v9zm-1.54-10.29c-.99 0-1.79-.8-1.79-1.79s.8-1.79 1.79-1.79 1.79.8 1.79 1.79-.8 1.79-1.79 1.79zm13.16 10.29h-3.08v-4.89c0-1.16-.02-2.64-1.61-2.64s-1.86 1.26-1.86 2.57v4.96h-3.08v-9h2.96v1.23h.04c.41-.78 1.4-1.6 2.88-1.6 3.08 0 3.65 2.03 3.65 4.66v4.71z"/>
-        </svg>
-        Conectar
-      </a>
-      <a 
-        href={GLOBAL.githubProfile} 
-        class="inline-flex items-center gap-2 px-4 py-2 border border-emerald-600 text-emerald-600 rounded-md hover:bg-emerald-600 hover:text-white transition-colors"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Repositorio de GitHub"
-      >
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"/>
-        </svg>
-        Ver Código
-      </a>
+<section class="hero-section relative overflow-hidden">
+  <!-- Animated background elements -->
+  <div class="absolute inset-0 -z-10">
+    <div class="floating-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+  </div>
+
+  <div class="container mx-auto px-4 py-16">
+    <div class="flex flex-col items-center sm:flex-row gap-8 lg:gap-12">
+      
+      <!-- Profile Image with enhanced animations -->
+      <div class="profile-container relative group">
+        <div class="profile-glow absolute inset-0 bg-emerald-500/20 rounded-full blur-xl group-hover:bg-emerald-500/30 transition-all duration-500"></div>
+        <img
+          src={GLOBAL.profileImage}
+          alt={content.profileAlt}
+          class="profile-image relative rounded-full w-40 h-40 sm:w-48 sm:h-48 object-cover grayscale hover:grayscale-0 transition-all duration-700 ease-out transform hover:scale-105 hover:rotate-2 shadow-2xl border-4 border-zag-light/20 dark:border-zag-dark/20 hover:border-emerald-500/50"
+          loading="eager"
+          width="192"
+          height="192"
+        />
+        <div class="profile-ring absolute inset-0 rounded-full border-2 border-emerald-500/30 animate-pulse"></div>
+      </div>
+
+      <!-- Content with staggered animations -->
+      <div class="content-container text-center sm:text-left max-w-2xl">
+        
+        <!-- Language Toggle -->
+        <div class="mb-6 flex justify-center sm:justify-start">
+          <LanguageToggle currentLanguage={lang} />
+        </div>
+
+        <!-- Name with typing animation -->
+        <h1 class="hero-title text-4xl sm:text-5xl lg:text-6xl font-display font-bold mb-4 bg-gradient-to-r from-emerald-400 to-blue-500 bg-clip-text text-transparent animate-fade-in-up">
+          {GLOBAL.username}
+        </h1>
+
+        <!-- Short description with slide animation -->
+        <h2 class="hero-subtitle text-xl sm:text-2xl font-mono font-medium mb-4 text-zag-text animate-fade-in-up animation-delay-200">
+          <span class="typing-text">{content.shortDescription}</span>
+        </h2>
+
+        <!-- Long description with fade animation -->
+        <p class="hero-description text-lg zag-muted mb-8 leading-relaxed animate-fade-in-up animation-delay-400">
+          {content.heroDescription}
+        </p>
+
+        <!-- Action buttons with enhanced hover effects -->
+        <div class="hero-buttons flex flex-wrap gap-4 justify-center sm:justify-start animate-fade-in-up animation-delay-600">
+          <a 
+            href={GLOBAL.linkedinProfile} 
+            class="btn-primary group relative overflow-hidden"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Perfil de LinkedIn"
+          >
+            <span class="btn-background absolute inset-0 bg-emerald-600 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300"></span>
+            <span class="btn-content relative flex items-center gap-2 px-6 py-3 text-white font-medium">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="transition-transform group-hover:scale-110">
+                <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11.12 19h-3.08v-9h3.08v9zm-1.54-10.29c-.99 0-1.79-.8-1.79-1.79s.8-1.79 1.79-1.79 1.79.8 1.79 1.79-.8 1.79-1.79 1.79zm13.16 10.29h-3.08v-4.89c0-1.16-.02-2.64-1.61-2.64s-1.86 1.26-1.86 2.57v4.96h-3.08v-9h2.96v1.23h.04c.41-.78 1.4-1.6 2.88-1.6 3.08 0 3.65 2.03 3.65 4.66v4.71z"/>
+              </svg>
+              {content.connectButton}
+            </span>
+          </a>
+          
+          <a 
+            href={GLOBAL.githubProfile} 
+            class="btn-secondary group relative overflow-hidden"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Repositorio de GitHub"
+          >
+            <span class="btn-background absolute inset-0 bg-emerald-600 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300"></span>
+            <span class="btn-content relative flex items-center gap-2 px-6 py-3 border-2 border-emerald-600 text-emerald-600 group-hover:text-white font-medium transition-colors duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="transition-transform group-hover:scale-110">
+                <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"/>
+              </svg>
+              {content.viewCodeButton}
+            </span>
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
+
+<style>
+  /* Hero Section Styles */
+  .hero-section {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+  }
+
+  /* Floating Shapes Animation */
+  .floating-shapes {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .shape {
+    position: absolute;
+    background: linear-gradient(45deg, rgba(16, 185, 129, 0.1), rgba(59, 130, 246, 0.1));
+    border-radius: 50%;
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .shape-1 {
+    width: 80px;
+    height: 80px;
+    top: 20%;
+    left: 10%;
+    animation-delay: 0s;
+  }
+
+  .shape-2 {
+    width: 120px;
+    height: 120px;
+    top: 60%;
+    right: 10%;
+    animation-delay: 2s;
+  }
+
+  .shape-3 {
+    width: 60px;
+    height: 60px;
+    bottom: 20%;
+    left: 20%;
+    animation-delay: 4s;
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-20px) rotate(180deg);
+    }
+  }
+
+  /* Profile Image Styles */
+  .profile-container {
+    perspective: 1000px;
+  }
+
+  .profile-image {
+    transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .profile-ring {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  /* Button Styles */
+  .btn-primary, .btn-secondary {
+    position: relative;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+
+  .btn-primary:hover, .btn-secondary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(16, 185, 129, 0.3);
+  }
+
+  .btn-background {
+    background: linear-gradient(45deg, #10b981, #059669);
+  }
+
+  /* Animation Classes */
+  .animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  .animation-delay-200 {
+    animation-delay: 0.2s;
+  }
+
+  .animation-delay-400 {
+    animation-delay: 0.4s;
+  }
+
+  .animation-delay-600 {
+    animation-delay: 0.6s;
+  }
+
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Typing Animation */
+  .typing-text {
+    border-right: 2px solid #10b981;
+    animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+
+  @keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #10b981; }
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 640px) {
+    .hero-title {
+      font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+      font-size: 1.125rem;
+    }
+    
+    .profile-image {
+      width: 8rem;
+      height: 8rem;
+    }
+  }
+</style>
+
+<script>
+  // Intersection Observer for animations
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        (entry.target as HTMLElement).style.animationPlayState = 'running';
+      }
+    });
+  }, observerOptions);
+
+  // Observe all animated elements
+  document.querySelectorAll('.animate-fade-in-up').forEach(el => {
+    observer.observe(el);
+  });
+
+  // Profile image hover effect
+  const profileImage = document.querySelector('.profile-image');
+  if (profileImage) {
+    profileImage.addEventListener('mouseenter', () => {
+      profileImage.classList.add('animate-bounce');
+    });
+    
+    profileImage.addEventListener('mouseleave', () => {
+      profileImage.classList.remove('animate-bounce');
+    });
+  }
+</script>

@@ -5,15 +5,36 @@ export const GLOBAL = {
   username: "devjaime",
   fullName: "Jaime Hernández",
   rootUrl: "https://devjaime.com",
-  shortDescription: "AI & Software Engineering | Founder of CodeIA | Cloud, Backend & Automation",
-  longDescription: "Jaime Hernández es un ingeniero de software chileno especializado en inteligencia artificial, computación en la nube y desarrollo backend. Con experiencia en Golang, PostgreSQL, LangChain y microservicios, crea soluciones escalables impulsadas por IA. Fundador de CodeIA, apasionado por la automatización y las tecnologías emergentes.",
   
+  // Multilingual content
+  languages: {
+    es: {
+      shortDescription: "AI & Software Engineering | Fundador de CodeIA | Cloud, Backend & Automatización",
+      longDescription: "Ingeniero de software chileno especializado en inteligencia artificial, computación en la nube y desarrollo backend. Con experiencia en Golang, PostgreSQL, LangChain y microservicios, crea soluciones escalables impulsadas por IA. Fundador de CodeIA, apasionado por la automatización y las tecnologías emergentes.",
+      heroDescription: "Ingeniero de software chileno especializado en inteligencia artificial, desarrollo backend y arquitecturas cloud. Fundador de CodeIA, apasionado por crear soluciones escalables y automatizadas.",
+      connectButton: "Conectar",
+      viewCodeButton: "Ver Código",
+      profileAlt: "Jaime Hernández - Ingeniero de Software especializado en IA"
+    },
+    en: {
+      shortDescription: "AI & Software Engineering | Founder of CodeIA | Cloud, Backend & Automation",
+      longDescription: "Chilean software engineer specialized in artificial intelligence, cloud computing and backend development. With experience in Golang, PostgreSQL, LangChain and microservices, creates scalable AI-driven solutions. Founder of CodeIA, passionate about automation and emerging technologies.",
+      heroDescription: "Chilean software engineer specialized in artificial intelligence, backend development and cloud architectures. Founder of CodeIA, passionate about creating scalable and automated solutions.",
+      connectButton: "Connect",
+      viewCodeButton: "View Code",
+      profileAlt: "Jaime Hernández - Software Engineer specialized in AI"
+    }
+  },
+
+  // Default language
+  defaultLanguage: "es",
+
   // SEO Keywords
   keywords: [
     "Jaime Hernández",
     "software engineer",
     "AI",
-    "artificial intelligence", 
+    "artificial intelligence",
     "Golang",
     "Python",
     "backend development",
@@ -34,17 +55,17 @@ export const GLOBAL = {
     "TypeScript",
     "Node.js"
   ],
-  
+
   // Social media links
   githubProfile: "https://github.com/devjaime/",
   twitterProfile: "https://twitter.com/hsjhernandez",
   linkedinProfile: "https://www.linkedin.com/in/devjaime/",
-  
+
   // Common text names used throughout the site
   articlesName: "Artículos",
   projectsName: "Proyectos",
   viewAll: "Ver Todo",
-  
+
   // Common descriptions used throughout the site
   noArticles: "Aún no hay artículos destacados.",
   noProjects: "Aún no hay proyectos destacados.",
