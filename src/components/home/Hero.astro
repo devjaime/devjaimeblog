@@ -73,7 +73,7 @@ import { GLOBAL } from "../../lib/variables";
       </div>
 
       <!-- Content with staggered animations -->
-      <div class="content-container text-center sm:text-left max-w-2xl">
+      <div class="content-container text-center sm:text-left max-w-2xl w-full px-4">
         
         <!-- Name with AI gradient animation -->
         <h1 class="hero-title text-4xl sm:text-5xl lg:text-6xl font-display font-bold mb-4 ai-gradient-text animate-fade-in-up">
@@ -81,12 +81,12 @@ import { GLOBAL } from "../../lib/variables";
         </h1>
 
         <!-- Short description with AI typing animation -->
-        <h2 class="hero-subtitle text-xl sm:text-2xl font-mono font-medium mb-4 text-zag-text animate-fade-in-up animation-delay-200 overflow-visible">
+        <h2 class="hero-subtitle text-xl sm:text-2xl font-mono font-medium mb-4 text-zag-text animate-fade-in-up animation-delay-200 overflow-hidden break-words">
           <span class="ai-typing">{GLOBAL.shortDescription}</span>
         </h2>
 
         <!-- Long description with fade animation -->
-        <p class="hero-description text-lg zag-muted mb-8 leading-relaxed animate-fade-in-up animation-delay-400">
+        <p class="hero-description text-lg zag-muted mb-8 leading-relaxed animate-fade-in-up animation-delay-400 break-words">
           {GLOBAL.heroDescription}
         </p>
 
@@ -94,7 +94,7 @@ import { GLOBAL } from "../../lib/variables";
         <div class="hero-buttons flex flex-wrap gap-4 justify-center sm:justify-start animate-fade-in-up animation-delay-600">
           <a 
             href={GLOBAL.linkedinProfile} 
-            class="ai-button bg-emerald-600 text-white px-6 py-3 rounded-lg font-medium flex items-center gap-2"
+            class="ai-button bg-green-500 text-white px-6 py-3 rounded-lg font-medium flex items-center gap-2 hover:bg-green-600"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn Profile"
@@ -107,7 +107,7 @@ import { GLOBAL } from "../../lib/variables";
           
           <a 
             href={GLOBAL.githubProfile} 
-            class="ai-button border-2 border-emerald-600 text-emerald-600 px-6 py-3 rounded-lg font-medium flex items-center gap-2 hover:text-white"
+            class="ai-button border-2 border-green-500 text-green-500 px-6 py-3 rounded-lg font-medium flex items-center gap-2 hover:text-white hover:bg-green-500"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub Repository"
@@ -340,13 +340,87 @@ import { GLOBAL } from "../../lib/variables";
   }
 
   @media (max-width: 640px) {
+    .hero-section {
+      padding: 1rem;
+    }
+
+    .content-container {
+      padding: 0 1rem;
+      width: 100%;
+      max-width: 100%;
+    }
+
     .hero-subtitle {
       font-size: 1.125rem;
       line-height: 1.5;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      hyphens: auto;
     }
     
     .hero-description {
       font-size: 1rem;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      hyphens: auto;
+    }
+
+    .hero-title {
+      font-size: 2.5rem;
+      line-height: 1.2;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+    }
+
+    .hero-buttons {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+
+    .ai-button {
+      width: 100%;
+      max-width: 280px;
+      justify-content: center;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .hero-section {
+      padding: 0.5rem;
+    }
+
+    .content-container {
+      padding: 0 0.5rem;
+    }
+
+    .hero-title {
+      font-size: 1.75rem;
+      line-height: 1.1;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+    }
+
+    .hero-subtitle {
+      font-size: 0.875rem;
+      line-height: 1.4;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      hyphens: auto;
+    }
+
+    .hero-description {
+      font-size: 0.75rem;
+      line-height: 1.5;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      hyphens: auto;
+    }
+
+    .ai-button {
+      padding: 0.75rem 1rem;
+      font-size: 0.875rem;
+      white-space: nowrap;
     }
   }
 </style>
