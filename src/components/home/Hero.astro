@@ -772,7 +772,7 @@ import { GLOBAL } from "../../lib/variables";
   @keyframes streamFlow { 0% { opacity: 0; height: 0%; } 40% { opacity: 1; } 100% { opacity: 0; height: 45%; } }
 
   /* AI Chat */
-  .ai-chat { width: 420px; max-width: 90vw; background: rgba(15,23,42,0.85); border: 1px solid rgba(34,197,94,0.4); border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.4); backdrop-filter: blur(6px); margin-top: 1.5rem; overflow: hidden; }
+  .ai-chat { position: fixed; right: 16px; bottom: 16px; z-index: 40; width: 420px; max-width: 92vw; background: rgba(15,23,42,0.88); border: 1px solid rgba(34,197,94,0.4); border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.45); backdrop-filter: blur(6px); overflow: hidden; opacity: 0; transform: translateY(12px) scale(0.98); }
   .ai-chat.open { display: block; }
   .ai-chat.hidden { display: none; }
   .ai-chat-header { display: flex; align-items: center; gap: 10px; padding: 10px 12px; background: rgba(34,197,94,0.08); border-bottom: 1px solid rgba(34,197,94,0.25); }
@@ -787,9 +787,10 @@ import { GLOBAL } from "../../lib/variables";
   .ai-chat-input input { flex: 1; background: rgba(15,23,42,0.7); border: 1px solid rgba(148,163,184,0.3); border-radius: 8px; padding: 10px 12px; color: #e2e8f0; outline: none; }
   .ai-chat-input input::placeholder { color: #94a3b8; }
   .ai-chat-input .send { background: #22c55e; color: white; border: none; border-radius: 8px; padding: 10px 14px; cursor: pointer; }
-
+ 
   @media (max-width: 1024px) {
-    .ai-chat { display: none; }
+    .ai-chat { right: 0; left: 0; bottom: 0; margin: 0 auto; width: 100vw; max-width: 100vw; border-radius: 16px 16px 0 0; }
+    .ai-chat-messages { max-height: 40vh; }
   }
 </style>
 
@@ -816,66 +817,91 @@ import { GLOBAL } from "../../lib/variables";
     });
 
     // Profile image bounce effect
-    const profileImage = document.querySelector('.profile-image') as HTMLElement;
-    if (profileImage) {
-      profileImage.addEventListener('mouseenter', () => {
-        profileImage.style.transform = 'scale(1.05) rotate(2deg)';
+    const hoverImage = document.querySelector('.profile-image') as HTMLElement | null;
+    if (hoverImage) {
+      hoverImage.addEventListener('mouseenter', () => {
+        hoverImage.style.transform = 'scale(1.05) rotate(2deg)';
       });
       
-      profileImage.addEventListener('mouseleave', () => {
-        profileImage.style.transform = 'scale(1) rotate(0deg)';
+      hoverImage.addEventListener('mouseleave', () => {
+        hoverImage.style.transform = 'scale(1) rotate(0deg)';
       });
     }
 
-    // Auto-trigger photo animation periodically when visible
+    // Auto-trigger photo animation periodically when visible + dwell open after 5s (desktop y mobile)
     const profileContainer = document.getElementById('profile-auto-anim');
+    const profileImage = document.querySelector('.profile-image') as HTMLElement | null;
     if (profileContainer) {
       let isVisible = false;
       let isActive = !document.hidden;
+      let dwellTimer: number | null = null;
 
       const visibilityObserver = new IntersectionObserver(([entry]) => {
         isVisible = entry.isIntersecting;
-      }, { threshold: 0.4 });
+        if (isVisible && isActive) scheduleDwell(); else clearDwell();
+      }, { threshold: 0.6 });
       visibilityObserver.observe(profileContainer);
 
       document.addEventListener('visibilitychange', () => {
         isActive = !document.hidden;
+        if (isActive && isVisible) scheduleDwell(); else clearDwell();
       });
 
+      function clearDwell() { if (dwellTimer) { clearTimeout(dwellTimer); dwellTimer = null; } }
+      function scheduleDwell() {
+        clearDwell();
+        dwellTimer = window.setTimeout(() => {
+          profileContainer?.classList.add('ai-transfer-active');
+          openChatFromPhoto();
+          setTimeout(() => profileContainer?.classList.remove('ai-transfer-active'), 3000);
+        }, 5000);
+      }
+
+      // Efecto periódico suave
       setInterval(() => {
         if (!isActive || !isVisible) return;
-        profileContainer.classList.add('ai-auto');
-        setTimeout(() => {
-          profileContainer.classList.remove('ai-auto');
-        }, 2500);
+        profileContainer?.classList.add('ai-auto');
+        setTimeout(() => profileContainer?.classList.remove('ai-auto'), 2000);
       }, 8000);
 
-      // Trigger data transfer + chat after 5s of hover
-      let hoverTimer: number | null = null;
+      // Chat helpers
       const chatPanel = document.getElementById('ai-chat-panel') as HTMLElement | null;
-      const openChat = () => { if (chatPanel) { chatPanel.classList.remove('hidden'); chatPanel.classList.add('open'); } };
-      const closeChat = () => { if (chatPanel) { chatPanel.classList.add('hidden'); chatPanel.classList.remove('open'); } };
-
-      profileContainer.addEventListener('mouseenter', () => {
-        if (hoverTimer) clearTimeout(hoverTimer);
-        hoverTimer = window.setTimeout(() => {
-          profileContainer.classList.add('ai-transfer-active');
-          openChat();
-          setTimeout(() => profileContainer.classList.remove('ai-transfer-active'), 3000);
-        }, 5000);
-      });
-      profileContainer.addEventListener('mouseleave', () => {
-        if (hoverTimer) { clearTimeout(hoverTimer); hoverTimer = null; }
-      });
+      const closeBtn = document.getElementById('ai-chat-close');
+      function openChatFromPhoto() {
+        if (!chatPanel) return;
+        chatPanel.classList.remove('hidden');
+        // Preparar animación desde el centro de la foto
+        try {
+          if (profileImage) {
+            const imgRect = profileImage.getBoundingClientRect();
+            const panelRect = chatPanel.getBoundingClientRect();
+            const dx = (imgRect.left + imgRect.width/2) - (panelRect.left + panelRect.width/2);
+            const dy = (imgRect.top + imgRect.height/2) - (panelRect.top + panelRect.height/2);
+            chatPanel.style.transition = 'none';
+            chatPanel.style.opacity = '0';
+            chatPanel.style.transform = `translate(${dx}px, ${dy}px) scale(0.7)`;
+            requestAnimationFrame(() => {
+              chatPanel.style.transition = 'transform 400ms ease, opacity 400ms ease';
+              chatPanel.style.opacity = '1';
+              chatPanel.style.transform = 'translate(0,0) scale(1)';
+            });
+          }
+        } catch {}
+      }
+      function closeChat() {
+        if (!chatPanel) return;
+        chatPanel.classList.add('hidden');
+        chatPanel.style.transition = '';
+        chatPanel.style.transform = '';
+        chatPanel.style.opacity = '';
+      }
+      closeBtn?.addEventListener('click', () => closeChat());
 
       // Chat interactions (simple mock)
       if (chatPanel) {
-        const closeBtn = document.getElementById('ai-chat-close');
         const form = document.getElementById('ai-chat-form') as HTMLFormElement | null;
         const input = document.getElementById('ai-chat-text') as HTMLInputElement | null;
         const messages = document.getElementById('ai-chat-messages') as HTMLElement | null;
-
-        closeBtn?.addEventListener('click', () => closeChat());
 
         function botReply(text: string): string {
           const t = text.toLowerCase();
