@@ -1,0 +1,213 @@
+---
+// Componente de terminal de IA interactivo
+---
+
+<div class="ai-terminal-container ai-glow">
+  <div class="terminal-header">
+    <div class="terminal-buttons">
+      <div class="terminal-button close"></div>
+      <div class="terminal-button minimize"></div>
+      <div class="terminal-button maximize"></div>
+    </div>
+    <div class="terminal-title">
+      <span class="ai-gradient-text">AI Assistant Terminal</span>
+    </div>
+  </div>
+  
+  <div class="terminal-content">
+    <div class="terminal-line">
+      <span class="prompt">$</span>
+      <span class="command ai-typing">initializing AI system...</span>
+    </div>
+    <div class="terminal-line">
+      <span class="prompt">$</span>
+      <span class="command ai-typing">loading neural networks...</span>
+    </div>
+    <div class="terminal-line">
+      <span class="prompt">$</span>
+      <span class="command ai-typing">connecting to knowledge base...</span>
+    </div>
+    <div class="terminal-line">
+      <span class="prompt">$</span>
+      <span class="command ai-typing">analyzing user preferences...</span>
+    </div>
+    <div class="terminal-line">
+      <span class="prompt">$</span>
+      <span class="command ai-typing">✅ System ready!</span>
+    </div>
+    <div class="terminal-line">
+      <span class="prompt">$</span>
+      <span class="command ai-typing">Welcome to devjaime's AI-powered blog</span>
+    </div>
+    <div class="terminal-line">
+      <span class="prompt">$</span>
+      <span class="cursor">_</span>
+    </div>
+  </div>
+</div>
+
+<style>
+  .ai-terminal-container {
+    background: rgba(17, 24, 39, 0.95);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    font-family: 'IBM Plex Mono', monospace;
+    max-width: 500px;
+    margin: 2rem auto;
+  }
+
+  .terminal-header {
+    background: rgba(16, 185, 129, 0.1);
+    padding: 0.75rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-bottom: 1px solid rgba(16, 185, 129, 0.2);
+  }
+
+  .terminal-buttons {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .terminal-button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .terminal-button.close {
+    background: #ef4444;
+  }
+
+  .terminal-button.minimize {
+    background: #f59e0b;
+  }
+
+  .terminal-button.maximize {
+    background: #10b981;
+  }
+
+  .terminal-button:hover {
+    transform: scale(1.1);
+  }
+
+  .terminal-title {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #10b981;
+  }
+
+  .terminal-content {
+    padding: 1rem;
+    min-height: 200px;
+  }
+
+  .terminal-line {
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    opacity: 0;
+    animation: fadeInLine 0.5s ease-out forwards;
+  }
+
+  .terminal-line:nth-child(1) { animation-delay: 0.5s; }
+  .terminal-line:nth-child(2) { animation-delay: 1s; }
+  .terminal-line:nth-child(3) { animation-delay: 1.5s; }
+  .terminal-line:nth-child(4) { animation-delay: 2s; }
+  .terminal-line:nth-child(5) { animation-delay: 2.5s; }
+  .terminal-line:nth-child(6) { animation-delay: 3s; }
+  .terminal-line:nth-child(7) { animation-delay: 3.5s; }
+
+  .prompt {
+    color: #10b981;
+    font-weight: bold;
+  }
+
+  .command {
+    color: #e5e7eb;
+    font-size: 0.875rem;
+  }
+
+  .cursor {
+    color: #10b981;
+    animation: blink 1s infinite;
+    font-weight: bold;
+  }
+
+  @keyframes fadeInLine {
+    from {
+      opacity: 0;
+      transform: translateX(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    .ai-terminal-container {
+      margin: 1rem;
+      max-width: none;
+    }
+    
+    .terminal-content {
+      min-height: 150px;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .terminal-line {
+      animation: none;
+      opacity: 1;
+    }
+    
+    .cursor {
+      animation: none;
+    }
+  }
+</style>
+
+<script>
+  // Efectos interactivos para el terminal
+  document.addEventListener('DOMContentLoaded', () => {
+    const terminal = document.querySelector('.ai-terminal-container') as HTMLElement;
+    const buttons = document.querySelectorAll('.terminal-button');
+    
+    // Efectos hover para los botones del terminal
+    buttons.forEach(button => {
+      const btn = button as HTMLElement;
+      btn.addEventListener('mouseenter', () => {
+        btn.style.transform = 'scale(1.2)';
+      });
+      
+      btn.addEventListener('mouseleave', () => {
+        btn.style.transform = 'scale(1)';
+      });
+    });
+
+    // Efecto de glow al hacer hover en el terminal
+    if (terminal) {
+      terminal.addEventListener('mouseenter', () => {
+        terminal.style.boxShadow = '0 20px 40px rgba(16, 185, 129, 0.4)';
+      });
+      
+      terminal.addEventListener('mouseleave', () => {
+        terminal.style.boxShadow = '0 20px 40px rgba(0, 0, 0, 0.3)';
+      });
+    }
+  });
+</script>

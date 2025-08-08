@@ -1,6 +1,7 @@
 ---
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
+import AIParticles from "../components/AIParticles.astro";
 import "../styles/global.css";
 
 export interface Props {
@@ -152,6 +153,9 @@ const ogImage = new URL(image, Astro.url).href;
         async src="//gc.zgo.at/count.js"></script>
   </head>
   <body class="zag-bg zag-text zag-transition font-mono antialiased">
+    <!-- AI Particles Background -->
+    <AIParticles />
+    
     <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-emerald-600 text-white px-4 py-2 rounded-md z-50">
       Skip to main content
     </a>
@@ -180,5 +184,51 @@ const ogImage = new URL(image, Astro.url).href;
     </script>
     
     <Footer />
+
+    <!-- AI Animation Scripts -->
+    <script>
+      // Scroll-triggered animations
+      function initScrollAnimations() {
+        const observerOptions = {
+          threshold: 0.1,
+          rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('animate-in');
+            }
+          });
+        }, observerOptions);
+
+        // Observe elements with animate-on-scroll class
+        document.querySelectorAll('.animate-on-scroll').forEach(el => {
+          observer.observe(el);
+        });
+      }
+
+      // AI Glow effects on hover
+      function initAIGlowEffects() {
+        const aiElements = document.querySelectorAll('.ai-glow, .ai-card, .ai-button');
+        
+        aiElements.forEach(element => {
+          const el = element as HTMLElement;
+          el.addEventListener('mouseenter', () => {
+            el.style.transform = 'scale(1.02)';
+          });
+          
+          el.addEventListener('mouseleave', () => {
+            el.style.transform = 'scale(1)';
+          });
+        });
+      }
+
+      // Initialize all AI effects
+      document.addEventListener('DOMContentLoaded', () => {
+        initScrollAnimations();
+        initAIGlowEffects();
+      });
+    </script>
   </body>
 </html>

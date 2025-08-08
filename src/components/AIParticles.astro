@@ -1,0 +1,126 @@
+---
+// Componente de partículas de IA para efectos visuales
+---
+
+<div class="ai-particles-container" id="ai-particles">
+  <!-- Las partículas se generarán dinámicamente con JavaScript -->
+</div>
+
+<style>
+  .ai-particles-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+    overflow: hidden;
+  }
+
+  .ai-particle {
+    position: absolute;
+    background: linear-gradient(45deg, #10b981, #34d399);
+    border-radius: 50%;
+    opacity: 0.6;
+    animation: particleFloat 8s linear infinite;
+    box-shadow: 0 0 10px rgba(16, 185, 129, 0.5);
+  }
+
+  .ai-particle.neural {
+    background: linear-gradient(45deg, #3b82f6, #60a5fa);
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+  }
+
+  .ai-particle.data {
+    background: linear-gradient(45deg, #8b5cf6, #a78bfa);
+    box-shadow: 0 0 10px rgba(139, 92, 246, 0.5);
+  }
+
+  @keyframes particleFloat {
+    0% {
+      transform: translateY(100vh) translateX(0) scale(0);
+      opacity: 0;
+    }
+    10% {
+      opacity: 0.6;
+      transform: translateY(90vh) translateX(10px) scale(1);
+    }
+    90% {
+      opacity: 0.6;
+      transform: translateY(10vh) translateX(-10px) scale(1);
+    }
+    100% {
+      transform: translateY(-100px) translateX(0) scale(0);
+      opacity: 0;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .ai-particles-container {
+      display: none;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .ai-particle {
+      animation: none;
+    }
+  }
+</style>
+
+<script>
+  // Sistema simple de partículas de IA
+  function initAIParticles() {
+    const container = document.getElementById('ai-particles');
+    if (!container) return;
+
+    const maxParticles = 15;
+    let isActive = true;
+
+    function createParticle() {
+      const particle = document.createElement('div');
+      const types = ['default', 'neural', 'data'];
+      const type = types[Math.floor(Math.random() * types.length)];
+      const size = Math.random() * 4 + 2;
+      
+      particle.className = `ai-particle ${type}`;
+      particle.style.width = `${size}px`;
+      particle.style.height = `${size}px`;
+      particle.style.left = `${Math.random() * 100}%`;
+      particle.style.animationDelay = `${Math.random() * 8}s`;
+      particle.style.animationDuration = `${6 + Math.random() * 4}s`;
+      
+      if (container) {
+        container.appendChild(particle);
+      }
+
+      // Remover partícula después de la animación
+      setTimeout(() => {
+        if (particle.parentNode) {
+          particle.parentNode.removeChild(particle);
+        }
+      }, 10000);
+    }
+
+    // Crear partículas iniciales
+    for (let i = 0; i < maxParticles; i++) {
+      createParticle();
+    }
+
+    // Crear nuevas partículas periódicamente
+    setInterval(() => {
+      if (isActive) {
+        createParticle();
+      }
+    }, 2000);
+
+    // Pausar cuando la pestaña no está activa
+    document.addEventListener('visibilitychange', () => {
+      isActive = !document.hidden;
+    });
+  }
+
+  // Inicializar cuando el DOM esté listo
+  document.addEventListener('DOMContentLoaded', initAIParticles);
+</script>
