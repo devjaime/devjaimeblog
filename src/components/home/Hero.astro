@@ -2,7 +2,7 @@
 import { GLOBAL } from "../../lib/variables";
 ---
 
-<section class="hero-section relative overflow-hidden">
+<section class="hero-section relative">
   <!-- Animated background elements -->
   <div class="absolute inset-0 -z-10">
     <div class="floating-shapes">
@@ -110,7 +110,7 @@ import { GLOBAL } from "../../lib/variables";
         </h1>
 
         <!-- Short description with AI typing animation -->
-        <h2 class="hero-subtitle text-xl sm:text-2xl font-mono font-medium mb-4 text-zag-text animate-fade-in-up animation-delay-200 overflow-hidden break-words">
+        <h2 class="hero-subtitle text-xl sm:text-2xl font-mono font-medium mb-4 text-zag-text animate-fade-in-up animation-delay-200 break-words">
           <span class="ai-typing">{GLOBAL.shortDescription}</span>
         </h2>
 
@@ -154,7 +154,7 @@ import { GLOBAL } from "../../lib/variables";
     <div class="hidden lg:flex flex-col items-center gap-12">
       
       <!-- Profile Image with AI transformation animation - TOP -->
-      <div class="profile-container relative group">
+      <div class="profile-container relative group" id="profile-auto-anim">
         <div class="profile-glow absolute inset-0 bg-green-500/20 rounded-full blur-xl group-hover:bg-green-500/30 transition-all duration-500"></div>
         
         <!-- Human Profile Image -->
@@ -204,7 +204,7 @@ import { GLOBAL } from "../../lib/variables";
         </h1>
 
         <!-- Short description with AI typing animation -->
-        <h2 class="hero-subtitle text-xl xl:text-2xl 2xl:text-3xl font-mono font-medium mb-6 text-zag-text animate-fade-in-up animation-delay-200 overflow-hidden break-words">
+        <h2 class="hero-subtitle text-xl xl:text-2xl 2xl:text-3xl font-mono font-medium mb-6 text-zag-text animate-fade-in-up animation-delay-200 break-words">
           <span class="ai-typing">{GLOBAL.shortDescription}</span>
         </h2>
 
@@ -330,6 +330,33 @@ import { GLOBAL } from "../../lib/variables";
 
   .profile-ring {
     animation: ringPulse 2s ease-in-out infinite;
+  }
+
+  /* Auto trigger states (simulate hover) */
+  .profile-container.ai-auto .ai-brain-overlay {
+    opacity: 1;
+  }
+  .profile-container.ai-auto .ai-brain-icon svg {
+    opacity: 1;
+  }
+  .profile-container.ai-auto .transformation-text {
+    opacity: 1;
+  }
+  .profile-container.ai-auto .profile-image {
+    filter: grayscale(0);
+    transform: scale(1.05) rotate(2deg);
+  }
+  .profile-container.ai-auto .profile-glow {
+    background-color: rgba(34, 197, 94, 0.3);
+  }
+
+  /* Improve text wrapping to avoid clipping */
+  .hero-title, .hero-subtitle, .hero-description {
+    overflow: visible;
+    word-wrap: break-word;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    hyphens: auto;
   }
 
   /* AI Brain Transformation */
@@ -741,6 +768,30 @@ import { GLOBAL } from "../../lib/variables";
       profileImage.addEventListener('mouseleave', () => {
         profileImage.style.transform = 'scale(1) rotate(0deg)';
       });
+    }
+
+    // Auto-trigger photo animation periodically when visible
+    const profileContainer = document.getElementById('profile-auto-anim');
+    if (profileContainer) {
+      let isVisible = false;
+      let isActive = !document.hidden;
+
+      const visibilityObserver = new IntersectionObserver(([entry]) => {
+        isVisible = entry.isIntersecting;
+      }, { threshold: 0.4 });
+      visibilityObserver.observe(profileContainer);
+
+      document.addEventListener('visibilitychange', () => {
+        isActive = !document.hidden;
+      });
+
+      setInterval(() => {
+        if (!isActive || !isVisible) return;
+        profileContainer.classList.add('ai-auto');
+        setTimeout(() => {
+          profileContainer.classList.remove('ai-auto');
+        }, 2500);
+      }, 8000);
     }
   });
 </script>
