@@ -244,6 +244,11 @@
     margin-right: auto;
   }
 
+  /* Hero container specific */
+  .hero-section .container {
+    max-width: none;
+  }
+
   /* Main content improvements */
   #main-content {
     width: 100%;

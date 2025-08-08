@@ -13,7 +13,7 @@ import { GLOBAL } from "../../lib/variables";
   </div>
 
   <!-- AI Agent Animation -->
-  <div class="ai-agent-animation absolute top-8 right-8 hidden lg:block z-10">
+  <div class="ai-agent-animation absolute top-12 right-12 hidden lg:block z-10">
     <div class="ai-terminal-container ai-glow">
       <div class="terminal-header">
         <div class="terminal-buttons">
@@ -55,8 +55,8 @@ import { GLOBAL } from "../../lib/variables";
     </div>
   </div>
 
-  <div class="container mx-auto px-4 py-16">
-    <div class="flex flex-col items-center lg:flex-row gap-8 lg:gap-16 xl:gap-24">
+  <div class="container mx-auto px-4 py-16 max-w-7xl">
+    <div class="flex flex-col items-center lg:flex-row gap-8 lg:gap-20 xl:gap-32">
       
       <!-- Profile Image with AI transformation animation -->
       <div class="profile-container relative group lg:flex-shrink-0">
@@ -66,10 +66,10 @@ import { GLOBAL } from "../../lib/variables";
         <img
           src={GLOBAL.profileImage}
           alt={GLOBAL.profileAlt}
-          class="profile-image human-image relative rounded-full w-40 h-40 sm:w-48 sm:h-48 lg:w-56 lg:h-56 object-cover grayscale hover:grayscale-0 transition-all duration-700 ease-out transform hover:scale-105 hover:rotate-2 shadow-2xl border-4 border-zag-light/20 dark:border-zag-dark/20 hover:border-green-500/50 z-10"
+          class="profile-image human-image relative rounded-full w-40 h-40 sm:w-48 sm:h-48 lg:w-64 lg:h-64 xl:w-72 xl:h-72 object-cover grayscale hover:grayscale-0 transition-all duration-700 ease-out transform hover:scale-105 hover:rotate-2 shadow-2xl border-4 border-zag-light/20 dark:border-zag-dark/20 hover:border-green-500/50 z-10"
           loading="eager"
-          width="224"
-          height="224"
+          width="288"
+          height="288"
         />
         
         <!-- AI Brain Overlay -->
@@ -101,7 +101,7 @@ import { GLOBAL } from "../../lib/variables";
       </div>
 
       <!-- Content with staggered animations -->
-      <div class="content-container text-center lg:text-left flex-1 max-w-3xl">
+      <div class="content-container text-center lg:text-left flex-1 max-w-none lg:max-w-2xl xl:max-w-3xl">
         
         <!-- Name with AI gradient animation -->
         <h1 class="hero-title text-4xl sm:text-5xl lg:text-6xl font-display font-bold mb-4 ai-gradient-text animate-fade-in-up">
@@ -411,49 +411,120 @@ import { GLOBAL } from "../../lib/variables";
     }
 
     .container {
-      max-width: 1200px;
+      max-width: 1400px;
+      padding-left: 2rem;
+      padding-right: 2rem;
     }
 
     .content-container {
-      padding-left: 2rem;
+      padding-left: 0;
+      flex: 1;
     }
 
-    .hero-title {
-      font-size: 4rem;
-      line-height: 1.1;
-    }
-
-    .hero-subtitle {
-      font-size: 1.5rem;
-      line-height: 1.4;
-    }
-
-    .hero-description {
-      font-size: 1.125rem;
-      line-height: 1.6;
-    }
-
-    .hero-buttons {
-      gap: 1.5rem;
-    }
-
-    .ai-button {
-      padding: 1rem 2rem;
-      font-size: 1rem;
-    }
-  }
-
-  @media (min-width: 1280px) {
     .hero-title {
       font-size: 4.5rem;
+      line-height: 1.1;
+      margin-bottom: 1.5rem;
     }
 
     .hero-subtitle {
       font-size: 1.75rem;
+      line-height: 1.4;
+      margin-bottom: 1.5rem;
     }
 
     .hero-description {
       font-size: 1.25rem;
+      line-height: 1.7;
+      margin-bottom: 2rem;
+    }
+
+    .hero-buttons {
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .ai-button {
+      padding: 1.25rem 2.5rem;
+      font-size: 1.125rem;
+      min-width: 180px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .container {
+      max-width: 1600px;
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+
+    .hero-title {
+      font-size: 5rem;
+    }
+
+    .hero-subtitle {
+      font-size: 2rem;
+    }
+
+    .hero-description {
+      font-size: 1.375rem;
+    }
+
+    .ai-button {
+      padding: 1.5rem 3rem;
+      font-size: 1.25rem;
+      min-width: 200px;
+    }
+  }
+
+  @media (min-width: 1536px) {
+    .container {
+      max-width: 1800px;
+      padding-left: 4rem;
+      padding-right: 4rem;
+    }
+
+    .hero-title {
+      font-size: 5.5rem;
+    }
+
+    .hero-subtitle {
+      font-size: 2.25rem;
+    }
+
+    .hero-description {
+      font-size: 1.5rem;
+    }
+
+    .ai-agent-animation {
+      top: 16;
+      right: 16;
+    }
+  }
+
+  @media (min-width: 1920px) {
+    .container {
+      max-width: 2000px;
+      padding-left: 5rem;
+      padding-right: 5rem;
+    }
+
+    .hero-title {
+      font-size: 6rem;
+    }
+
+    .hero-subtitle {
+      font-size: 2.5rem;
+    }
+
+    .hero-description {
+      font-size: 1.625rem;
+    }
+
+    .ai-button {
+      padding: 1.75rem 3.5rem;
+      font-size: 1.375rem;
+      min-width: 220px;
     }
   }
 
