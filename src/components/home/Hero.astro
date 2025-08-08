@@ -60,7 +60,7 @@ import { GLOBAL } from "../../lib/variables";
     <div class="lg:hidden flex flex-col items-center gap-8">
       
       <!-- Profile Image with AI transformation animation -->
-      <div class="profile-container relative group">
+      <div class="profile-container relative group" id="profile-auto-anim-mobile">
         <div class="profile-glow absolute inset-0 bg-green-500/20 rounded-full blur-xl group-hover:bg-green-500/30 transition-all duration-500"></div>
         
         <!-- Human Profile Image -->
@@ -154,7 +154,7 @@ import { GLOBAL } from "../../lib/variables";
     <div class="hidden lg:flex flex-col items-center gap-12">
       
       <!-- Profile Image with AI transformation animation - TOP -->
-      <div class="profile-container relative group" id="profile-auto-anim">
+      <div class="profile-container relative group" id="profile-auto-anim-desktop">
         <div class="profile-glow absolute inset-0 bg-green-500/20 rounded-full blur-xl group-hover:bg-green-500/30 transition-all duration-500"></div>
         
         <!-- Human Profile Image -->
@@ -205,7 +205,7 @@ import { GLOBAL } from "../../lib/variables";
       </div>
 
       <!-- AI Chat Panel (aparece tras foco de 5s) -->
-      <div id="ai-chat-panel" class="ai-chat hidden lg:block">
+      <div id="ai-chat-panel" class="ai-chat hidden">
         <div class="ai-chat-header">
           <span class="dot"></span>
           <span class="title">Chat con DevJaime (IA)</span>
@@ -828,10 +828,47 @@ import { GLOBAL } from "../../lib/variables";
       });
     }
 
-    // Auto-trigger photo animation periodically when visible + dwell open after 5s (desktop y mobile)
-    const profileContainer = document.getElementById('profile-auto-anim');
-    const profileImage = document.querySelector('.profile-image') as HTMLElement | null;
-    if (profileContainer) {
+    const containers: HTMLElement[] = [];
+    const mobileC = document.getElementById('profile-auto-anim-mobile') as HTMLElement | null;
+    const desktopC = document.getElementById('profile-auto-anim-desktop') as HTMLElement | null;
+    if (mobileC) containers.push(mobileC);
+    if (desktopC) containers.push(desktopC);
+
+    const chatPanel = document.getElementById('ai-chat-panel') as HTMLElement | null;
+    const closeBtn = document.getElementById('ai-chat-close');
+
+    function openChatFromPhoto(img: HTMLElement | null) {
+      if (!chatPanel) return;
+      chatPanel.classList.remove('hidden');
+      try {
+        if (img) {
+          const imgRect = img.getBoundingClientRect();
+          const panelRect = chatPanel.getBoundingClientRect();
+          const dx = (imgRect.left + imgRect.width/2) - (panelRect.left + panelRect.width/2);
+          const dy = (imgRect.top + imgRect.height/2) - (panelRect.top + panelRect.height/2);
+          chatPanel.style.transition = 'none';
+          chatPanel.style.opacity = '0';
+          chatPanel.style.transform = `translate(${dx}px, ${dy}px) scale(0.7)`;
+          requestAnimationFrame(() => {
+            chatPanel.style.transition = 'transform 400ms ease, opacity 400ms ease';
+            chatPanel.style.opacity = '1';
+            chatPanel.style.transform = 'translate(0,0) scale(1)';
+          });
+        }
+      } catch {}
+    }
+
+    function closeChat() {
+      if (!chatPanel) return;
+      chatPanel.classList.add('hidden');
+      chatPanel.style.transition = '';
+      chatPanel.style.transform = '';
+      chatPanel.style.opacity = '';
+    }
+    closeBtn?.addEventListener('click', () => closeChat());
+
+    function setupDwell(container: HTMLElement) {
+      const img = container.querySelector('.profile-image') as HTMLElement | null;
       let isVisible = false;
       let isActive = !document.hidden;
       let dwellTimer: number | null = null;
@@ -840,7 +877,7 @@ import { GLOBAL } from "../../lib/variables";
         isVisible = entry.isIntersecting;
         if (isVisible && isActive) scheduleDwell(); else clearDwell();
       }, { threshold: 0.6 });
-      visibilityObserver.observe(profileContainer);
+      visibilityObserver.observe(container);
 
       document.addEventListener('visibilitychange', () => {
         isActive = !document.hidden;
@@ -851,87 +888,20 @@ import { GLOBAL } from "../../lib/variables";
       function scheduleDwell() {
         clearDwell();
         dwellTimer = window.setTimeout(() => {
-          profileContainer?.classList.add('ai-transfer-active');
-          openChatFromPhoto();
-          setTimeout(() => profileContainer?.classList.remove('ai-transfer-active'), 3000);
+          container.classList.add('ai-transfer-active');
+          openChatFromPhoto(img);
+          setTimeout(() => container.classList.remove('ai-transfer-active'), 3000);
         }, 5000);
       }
 
-      // Efecto periódico suave
+      // efecto periódico
       setInterval(() => {
         if (!isActive || !isVisible) return;
-        profileContainer?.classList.add('ai-auto');
-        setTimeout(() => profileContainer?.classList.remove('ai-auto'), 2000);
+        container.classList.add('ai-auto');
+        setTimeout(() => container.classList.remove('ai-auto'), 2000);
       }, 8000);
-
-      // Chat helpers
-      const chatPanel = document.getElementById('ai-chat-panel') as HTMLElement | null;
-      const closeBtn = document.getElementById('ai-chat-close');
-      function openChatFromPhoto() {
-        if (!chatPanel) return;
-        chatPanel.classList.remove('hidden');
-        // Preparar animación desde el centro de la foto
-        try {
-          if (profileImage) {
-            const imgRect = profileImage.getBoundingClientRect();
-            const panelRect = chatPanel.getBoundingClientRect();
-            const dx = (imgRect.left + imgRect.width/2) - (panelRect.left + panelRect.width/2);
-            const dy = (imgRect.top + imgRect.height/2) - (panelRect.top + panelRect.height/2);
-            chatPanel.style.transition = 'none';
-            chatPanel.style.opacity = '0';
-            chatPanel.style.transform = `translate(${dx}px, ${dy}px) scale(0.7)`;
-            requestAnimationFrame(() => {
-              chatPanel.style.transition = 'transform 400ms ease, opacity 400ms ease';
-              chatPanel.style.opacity = '1';
-              chatPanel.style.transform = 'translate(0,0) scale(1)';
-            });
-          }
-        } catch {}
-      }
-      function closeChat() {
-        if (!chatPanel) return;
-        chatPanel.classList.add('hidden');
-        chatPanel.style.transition = '';
-        chatPanel.style.transform = '';
-        chatPanel.style.opacity = '';
-      }
-      closeBtn?.addEventListener('click', () => closeChat());
-
-      // Chat interactions (simple mock)
-      if (chatPanel) {
-        const form = document.getElementById('ai-chat-form') as HTMLFormElement | null;
-        const input = document.getElementById('ai-chat-text') as HTMLInputElement | null;
-        const messages = document.getElementById('ai-chat-messages') as HTMLElement | null;
-
-        function botReply(text: string): string {
-          const t = text.toLowerCase();
-          if (t.includes('hola') || t.includes('buen') ) return '¡Hola! Soy Jaime-IA. ¿Buscas proyectos, blog o colaboración?';
-          if (t.includes('proyecto') || t.includes('servicio') ) return 'Construyo soluciones en IA, backend y automatización. ¿Qué idea tienes en mente?';
-          if (t.includes('contact') || t.includes('correo') || t.includes('email') ) return 'Puedes contactarme por LinkedIn o abrir un issue en GitHub. También puedo enviarte mi correo.';
-          if (t.includes('blog')) return 'Mi blog tiene artículos de IA, arquitectura y productividad. ¿Qué tema te interesa?';
-          return 'Interesante. Cuéntame un poco más y te ayudo con ideas y un plan rápido.';
-        }
-
-        form?.addEventListener('submit', (e) => {
-          e.preventDefault();
-          if (!input || !messages) return;
-          const text = input.value.trim();
-          if (!text) return;
-          const user = document.createElement('div');
-          user.className = 'msg user';
-          user.textContent = text;
-          messages.appendChild(user);
-          input.value = '';
-          messages.scrollTop = messages.scrollHeight;
-          setTimeout(() => {
-            const bot = document.createElement('div');
-            bot.className = 'msg bot';
-            bot.textContent = botReply(text);
-            messages.appendChild(bot);
-            messages.scrollTop = messages.scrollHeight;
-          }, 600);
-        });
-      }
     }
+
+    containers.forEach(setupDwell);
   });
 </script>
