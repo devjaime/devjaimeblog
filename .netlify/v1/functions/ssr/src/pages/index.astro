@@ -1,0 +1,29 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Section from "../components/common/Section.astro";
+import Hero from "../components/home/Hero.astro";
+import FeaturedProjects from "../components/home/FeaturedProjects.astro";
+import FeaturedArticles from "../components/home/FeaturedArticles.astro";
+import { GLOBAL } from "../lib/variables";
+import { featuredArticles, featuredProjects } from "../lib/featured";
+---
+
+<Layout
+  title={`${GLOBAL.username} • ${GLOBAL.shortDescription}`}
+  description={GLOBAL.longDescription}
+  image={`${GLOBAL.rootUrl}/devjaime.webp`}
+  canonical={GLOBAL.rootUrl}
+  type="website"
+>
+  <Section class="my-16">
+    <Hero />
+  </Section>
+
+  <Section>
+    <FeaturedProjects featuredProjects={featuredProjects} />
+  </Section>
+
+  <Section>
+    <FeaturedArticles featuredArticles={featuredArticles} />
+  </Section>
+</Layout>
