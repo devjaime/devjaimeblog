@@ -6,7 +6,7 @@ tags: ["LLM", "AI", "Serverless", "vLLM", "Ollama", "LM Studio", "MLOps", "Infra
 time: 12 min read
 timestamp: 2025-08-22T10:00:00+00:00
 featured: false
-filename: serverless-llm-options
+filename: 2025-08-22_serverless-llm-options
 ---
 
 # 3 Formas de Ejecutar Modelos LLM Open Source: de Local a Serverless
