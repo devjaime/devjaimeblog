@@ -5,7 +5,7 @@ description: Comprehensive AI development project showcasing advanced machine le
 tags: ["AI", "Machine Learning", "Python", "TensorFlow", "Neural Networks", "Deep Learning"]
 githubUrl: https://github.com/devjaime/ai-development-project
 timestamp: 2025-01-15T10:00:00+00:00
-featured: true
+featured: false
 filename: ai-development-project
 ---
 

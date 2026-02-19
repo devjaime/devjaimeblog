@@ -6,7 +6,7 @@ tags: ["Next.js", "React", "TypeScript", "E-commerce", "Stripe", "Prisma", "Verc
 githubUrl: https://github.com/devjaime/nextjs-ecommerce-platform
 liveUrl: https://nextjs-ecommerce-devjaime.vercel.app
 timestamp: 2025-01-25T16:00:00+00:00
-featured: true
+featured: false
 filename: nextjs-ecommerce-platform
 ---
 

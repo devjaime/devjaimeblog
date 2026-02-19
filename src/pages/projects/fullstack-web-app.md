@@ -5,7 +5,7 @@ description: Complete full-stack web application built with modern technologies,
 tags: ["Full Stack", "React", "Node.js", "TypeScript", "MongoDB", "WebSocket", "AWS"]
 githubUrl: https://github.com/devjaime/fullstack-web-app
 timestamp: 2025-01-20T14:30:00+00:00
-featured: true
+featured: false
 filename: fullstack-web-app
 ---
 

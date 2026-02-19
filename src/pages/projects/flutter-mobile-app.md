@@ -5,7 +5,7 @@ description: Cross-platform mobile application built with Flutter, featuring nat
 tags: ["Flutter", "Dart", "Mobile", "iOS", "Android", "Firebase", "API"]
 githubUrl: https://github.com/devjaime/flutter-mobile-app
 timestamp: 2025-01-10T09:00:00+00:00
-featured: true
+featured: false
 filename: flutter-mobile-app
 ---
 

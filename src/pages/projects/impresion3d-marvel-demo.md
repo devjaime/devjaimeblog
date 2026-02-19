@@ -6,7 +6,7 @@ tags: ["3D Printing", "Marvel", "Product Showcase", "Web Design", "Portfolio", "
 githubUrl: https://github.com/devjaime/impresion3d-marvel-demo
 liveUrl: https://impresion3d-demo.netlify.app/
 timestamp: 2024-11-20T14:30:00+00:00
-featured: true
+featured: false
 filename: impresion3d-marvel-demo
 ---
 

@@ -5,7 +5,7 @@ description: Comprehensive JSON analysis tool with AI-powered insights, data gen
 tags: ["Python", "Streamlit", "AI", "JSON", "Data Analysis", "Open Source", "Developer Tools"]
 githubUrl: https://github.com/json-ai-tools/json-ai-inspector
 timestamp: 2024-10-15T09:00:00+00:00
-featured: true
+featured: false
 filename: json-ai-inspector
 ---
 

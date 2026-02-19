@@ -2,7 +2,7 @@
 
 export const GLOBAL = {
   // Site metadata
-  username: "Jaime Hernández",
+  username: "Jaime",
   fullName: "Jaime Hernández",
   rootUrl: "https://jaimehernandez.dev",
   

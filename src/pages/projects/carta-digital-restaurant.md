@@ -6,7 +6,7 @@ tags: ["QR Code", "Restaurant", "Digital Menu", "Web App", "Business Solution", 
 githubUrl: https://github.com/devjaime/carta-digital-restaurant
 liveUrl: https://cartadigital-1.netlify.app/
 timestamp: 2024-12-15T10:00:00+00:00
-featured: true
+featured: false
 filename: carta-digital-restaurant
 ---
 

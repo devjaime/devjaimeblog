@@ -5,7 +5,7 @@ description: Comprehensive serverless architecture built on Microsoft Azure, fea
 tags: ["Azure", "Serverless", "Cloud", "Functions", "CosmosDB", "DevOps", "C#"]
 githubUrl: https://github.com/devjaime/azure-serverless-architecture
 timestamp: 2025-01-05T11:00:00+00:00
-featured: true
+featured: false
 filename: azure-serverless-architecture
 ---
 
