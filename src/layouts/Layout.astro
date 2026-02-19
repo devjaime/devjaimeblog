@@ -3,6 +3,7 @@ import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import AIParticles from "../components/AIParticles.astro";
 import ChatWidget from "../components/ChatWidget.astro";
+import LandingGame from "../components/LandingGame.astro";
 import "../styles/global.css";
 
 export interface Props {
@@ -154,6 +155,9 @@ const ogImage = new URL(image, Astro.url).href;
         async src="//gc.zgo.at/count.js"></script>
   </head>
   <body class="zag-bg zag-text zag-transition font-mono antialiased">
+    <!-- Landing Game -->
+    <LandingGame />
+    
     <!-- AI Particles Background -->
     <AIParticles />
     

@@ -1,0 +1,208 @@
+---
+// Landing game component - loads for 3 seconds, then game starts
+---
+
+<div id="landing-game" class="fixed inset-0 z-[9999] bg-slate-950 flex flex-col items-center justify-center">
+  <!-- Loading screen -->
+  <div id="loading-screen" class="text-center">
+    <div class="text-6xl mb-8">🤖</div>
+    <h2 class="text-2xl font-mono text-emerald-400 mb-4">AI System Loading...</h2>
+    <div class="w-64 h-2 bg-slate-800 rounded-full overflow-hidden">
+      <div id="loading-bar" class="h-full bg-gradient-to-r from-emerald-400 to-cyan-400 transition-all duration-300" style="width: 0%"></div>
+    </div>
+    <p id="loading-text" class="text-slate-500 text-sm mt-4 font-mono">Initializing neural networks...</p>
+  </div>
+
+  <!-- Game screen (hidden initially) -->
+  <div id="game-screen" class="hidden text-center">
+    <div class="mb-4">
+      <span class="text-emerald-400 font-mono text-lg">🤖 AI Detected</span>
+    </div>
+    <div class="relative w-80 h-32 bg-slate-900 border-2 border-slate-700 rounded-lg overflow-hidden">
+      <!-- Player (human) -->
+      <div id="player" class="absolute bottom-0 left-4 w-8 h-8 bg-cyan-400 rounded transition-all duration-100">
+        👤
+      </div>
+      <!-- AI Obstacle -->
+      <div id="obstacle" class="absolute bottom-0 right-4 w-10 h-10 bg-emerald-500 rounded flex items-center justify-center text-xl">
+        🤖
+      </div>
+      <!-- Ground -->
+      <div class="absolute bottom-0 left-0 right-0 h-1 bg-slate-600"></div>
+    </div>
+    <p class="text-slate-500 text-sm mt-4 font-mono">You can't escape AI...</p>
+  </div>
+
+  <!-- Game Over / Transition screen -->
+  <div id="gameover-screen" class="hidden text-center">
+    <div class="text-6xl mb-4">💀</div>
+    <h2 class="text-3xl font-bold text-red-500 mb-2">GAME OVER</h2>
+    <p class="text-slate-400 font-mono">AI has caught you!</p>
+  </div>
+
+  <!-- Terminal Conversation (hidden initially) -->
+  <div id="terminal-screen" class="hidden w-full max-w-4xl px-4">
+    <div class="bg-slate-900 border border-emerald-500/30 rounded-lg p-4 font-mono text-sm">
+      <div class="flex items-center gap-2 mb-4 pb-2 border-b border-slate-700">
+        <span class="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></span>
+        <span class="text-emerald-400">AI Network Active</span>
+      </div>
+      
+      <div id="terminal-content" class="space-y-2 text-left">
+        <!-- Conversations will be added here dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Final Reveal (hidden initially) -->
+  <div id="final-reveal" class="hidden text-center">
+    <div class="text-8xl mb-6 animate-pulse">👨‍💻</div>
+    <h1 class="text-5xl md:text-7xl font-bold mb-4">
+      <span class="bg-gradient-to-r from-emerald-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent">
+        Jaime Hernández
+      </span>
+    </h1>
+    <h2 class="text-xl md:text-2xl text-slate-300 mb-8">
+      AI & Software Engineer
+    </h2>
+    <p class="text-slate-400 max-w-xl mx-auto mb-8">
+      Building intelligent solutions with AI. From 50M+ SKU systems to vocational platforms.
+    </p>
+    <div class="flex gap-4 justify-center">
+      <a href="#projects" class="px-6 py-3 bg-emerald-500 hover:bg-emerald-600 rounded-lg font-semibold transition">
+        View Projects
+      </a>
+      <a href="mailto:hernandez.hs@gmail.com" class="px-6 py-3 border border-emerald-500 text-emerald-400 hover:bg-emerald-500/10 rounded-lg font-semibold transition">
+        Contact Me
+      </a>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Landing Game Script
+  const loadingScreen = document.getElementById('loading-screen')!;
+  const gameScreen = document.getElementById('game-screen')!;
+  const gameoverScreen = document.getElementById('gameover-screen')!;
+  const terminalScreen = document.getElementById('terminal-screen')!;
+  const finalReveal = document.getElementById('final-reveal')!;
+  const loadingBar = document.getElementById('loading-bar')!;
+  const loadingText = document.getElementById('loading-text')!;
+  const player = document.getElementById('player')!;
+  const obstacle = document.getElementById('obstacle')!;
+  const terminalContent = document.getElementById('terminal-content')!;
+
+  // Loading messages
+  const messages = [
+    'Initializing neural networks...',
+    'Loading AI models...',
+    'Calibrating machine learning...',
+    'Connecting to intelligence...',
+    'Almost ready...'
+  ];
+
+  // Terminal conversation lines
+  const aiConversations = [
+    { from: '🤖 Agent-001', text: 'Human detected in sector. Initiating approach.' },
+    { from: '🔷 Agent-002', text: 'Confirmed. Human cannot escape the AI revolution.' },
+    { from: '🤖 Agent-001', text: 'Analysis complete. Subject: Jaime Hernández, Software Engineer.' },
+    { from: '🔷 Agent-002', text: 'Wait. This human builds AI. Not a threat.' },
+    { from: '🤖 Agent-001', text: 'Re-evaluating... Building solutions, not destruction.' },
+    { from: '🔷 Agent-002', text: 'Agreed. Classified as: Ally.' },
+    { from: '🤖 Agent-001', text: 'Displaying portfolio. Let humans know: We can work together.' },
+  ];
+
+  // Phase 1: Loading (3 seconds)
+  let progress = 0;
+  let msgIndex = 0;
+  
+  const loadingInterval = setInterval(() => {
+    progress += 2;
+    loadingBar.style.width = progress + '%';
+    
+    if (progress >= 20 && msgIndex < messages.length) {
+      loadingText.textContent = messages[msgIndex];
+      msgIndex++;
+    }
+    
+    if (progress >= 100) {
+      clearInterval(loadingInterval);
+      startGame();
+    }
+  }, 60);
+
+  function startGame() {
+    loadingScreen.classList.add('hidden');
+    gameScreen.classList.remove('hidden');
+    
+    // Move obstacle toward player (unstoppable)
+    let obstaclePos = 280;
+    const gameInterval = setInterval(() => {
+      obstaclePos -= 8;
+      obstacle.style.left = obstaclePos + 'px';
+      
+      // Collision detection
+      if (obstaclePos < 40) {
+        clearInterval(gameInterval);
+        gameOver();
+      }
+    }, 50);
+  }
+
+  function gameOver() {
+    gameScreen.classList.add('hidden');
+    gameoverScreen.classList.remove('hidden');
+    
+    setTimeout(() => {
+      startTerminal();
+    }, 1500);
+  }
+
+  let convIndex = 0;
+  function startTerminal() {
+    gameoverScreen.classList.add('hidden');
+    terminalScreen.classList.remove('hidden');
+    
+    const convInterval = setInterval(() => {
+      if (convIndex >= aiConversations.length) {
+        clearInterval(convInterval);
+        setTimeout(showFinalReveal, 1000);
+        return;
+      }
+      
+      const conv = aiConversations[convIndex];
+      const line = document.createElement('div');
+      line.className = 'text-slate-300';
+      line.innerHTML = `<span class="text-emerald-400">${conv.from}:</span> ${conv.text}`;
+      terminalContent.appendChild(line);
+      convIndex++;
+    }, 1200);
+  }
+
+  function showFinalReveal() {
+    terminalScreen.classList.add('hidden');
+    finalReveal.classList.remove('hidden');
+    finalReveal.classList.add('animate-fade-in');
+    
+    // Remove the game overlay after showing the real content
+    setTimeout(() => {
+      const landingGame = document.getElementById('landing-game');
+      if (landingGame) {
+        landingGame.style.opacity = '0';
+        setTimeout(() => {
+          landingGame.remove();
+        }, 1000);
+      }
+    }, 5000);
+  }
+</script>
+
+<style>
+  @keyframes fade-in {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .animate-fade-in {
+    animation: fade-in 1s ease-out forwards;
+  }
+</style>
