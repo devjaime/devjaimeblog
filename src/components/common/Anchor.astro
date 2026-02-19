@@ -12,7 +12,7 @@ const { url, external, class: className } = Astro.props;
 <a
   href={url}
   class:list={[
-    "zag-offset underline font-medium flex items-center focus:outline-2 focus:outline-offset-2 focus:outline-zag-dark dark:focus:outline-zag-light",
+    "zag-offset underline font-medium flex items-center focus:outline-2 focus:outline-offset-2 focus:outline-zag-dark dark:focus:outline-zag-light transition-all duration-300 ease-out hover:text-emerald-600 dark:hover:text-emerald-400",
     className,
   ]}
   target={external ? "_blank" : "_self"}
