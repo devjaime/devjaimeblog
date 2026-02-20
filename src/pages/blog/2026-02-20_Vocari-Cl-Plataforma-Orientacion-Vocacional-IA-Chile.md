@@ -305,6 +305,11 @@ Una de las inovaciones más menarik de Vocari.cl es la generación automática d
 
 **Título:** "Cómo un Colegio Puede Integrar Vocari.cl"
 
+<div class="my-8 p-6 bg-gray-100 dark:bg-gray-800 rounded-lg text-center">
+  <p class="text-lg mb-4">🎬 Video en producción</p>
+  <p class="text-sm text-gray-600 dark:text-gray-400">Pronto disponible en YouTube</p>
+</div>
+
 **Descripción del video:**
 Este video explica cómo las instituciones educativas pueden adoptar Vocari.cl para mejorar su proceso de orientación vocacional.
 
@@ -326,6 +331,11 @@ Este video explica cómo las instituciones educativas pueden adoptar Vocari.cl p
 
 **Título:** "Comprar tu Informe Vocacional en 3 Pasos"
 
+<div class="my-8 p-6 bg-gray-100 dark:bg-gray-800 rounded-lg text-center">
+  <p class="text-lg mb-4">🎬 Video en producción</p>
+  <p class="text-sm text-gray-600 dark:text-gray-400">Pronto disponible en YouTube</p>
+</div>
+
 **Descripción del video:**
 Un video corto y directo que muestra el proceso de compra de un informe profesional.
 
@@ -345,6 +355,11 @@ Un video corto y directo que muestra el proceso de compra de un informe profesio
 #### 🎬 Video 3: Flujo de Orientación
 
 **Título:** "Tu Primera Sesión de Orientación con IA"
+
+<div class="my-8 p-6 bg-gray-100 dark:bg-gray-800 rounded-lg text-center">
+  <p class="text-lg mb-4">🎬 Video en producción</p>
+  <p class="text-sm text-gray-600 dark:text-gray-400">Pronto disponible en YouTube</p>
+</div>
 
 **Descripción del video:**
 Muestra cómo funciona el sistema de orientación vocacional assisted por inteligencia artificial.
@@ -367,6 +382,11 @@ Muestra cómo funciona el sistema de orientación vocacional assisted por inteli
 #### 🎬 Video 4: Asistencia con Inteligencia Artificial
 
 **Título:** "Conoce tu Asistente de Orientación IA"
+
+<div class="my-8 p-6 bg-gray-100 dark:bg-gray-800 rounded-lg text-center">
+  <p class="text-lg mb-4">🎬 Video en producción</p>
+  <p class="text-sm text-gray-600 dark:text-gray-400">Pronto disponible en YouTube</p>
+</div>
 
 **Descripción del video:**
 Demostración approfondida de las capacidades de IA en Vocari.cl.
