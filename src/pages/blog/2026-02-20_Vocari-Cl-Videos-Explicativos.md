@@ -22,12 +22,10 @@ Videos Explicativos de Vocari.cl
 
 En este video te mostramos cómo las instituciones educativas pueden adoptar Vocari.cl para mejorar su proceso de orientación vocacional.
 
-<div style="margin: 2rem 0; padding: 3rem; background: linear-gradient(135deg, #0B1A33 0%, #1E3A5F 100%); border-radius: 1rem; text-align: center; color: white;">
-  <div style="font-size: 4rem; margin-bottom: 1rem;">🎬</div>
-  <p style="font-size: 1.25rem; margin-bottom: 0.5rem;">Video en Producción</p>
-  <p style="font-size: 0.875rem; opacity: 0.7;">Pronto disponible en YouTube</p>
-  <p style="font-size: 0.75rem; margin-top: 1rem; opacity: 0.5;">Duración estimada: 2-3 minutos</p>
-</div>
+<video controls style="width: 100%; max-width: 100%; border-radius: 1rem; margin: 2rem 0;">
+  <source src="/videos/Video1Colegios.mp4" type="video/mp4">
+  Tu navegador no soporta el elemento de video.
+</video>
 
 **Lo que verás:**
 - Dashboard administrativo para colegios
@@ -43,12 +41,10 @@ En este video te mostramos cómo las instituciones educativas pueden adoptar Voc
 
 Un video corto y directo que muestra el proceso de compra de un informe profesional.
 
-<div style="margin: 2rem 0; padding: 3rem; background: linear-gradient(135deg, #0B1A33 0%, #1E3A5F 100%); border-radius: 1rem; text-align: center; color: white;">
-  <div style="font-size: 4rem; margin-bottom: 1rem;">🎬</div>
-  <p style="font-size: 1.25rem; margin-bottom: 0.5rem;">Video en Producción</p>
-  <p style="font-size: 0.875rem; opacity: 0.7;">Pronto disponible en YouTube</p>
-  <p style="font-size: 0.75rem; margin-top: 1rem; opacity: 0.5;">Duración estimada: 1.5-2 minutos</p>
-</div>
+<video controls style="width: 100%; max-width: 100%; border-radius: 1rem; margin: 2rem 0;">
+  <source src="/videos/Video2Compra.mp4" type="video/mp4">
+  Tu navegador no soporta el elemento de video.
+</video>
 
 **Lo que verás:**
 - Paso 1: Realiza el test vocacional (gratis)
@@ -64,12 +60,10 @@ Un video corto y directo que muestra el proceso de compra de un informe profesio
 
 Muestra cómo funciona el sistema de orientación vocacional asistido por inteligencia artificial.
 
-<div style="margin: 2rem 0; padding: 3rem; background: linear-gradient(135deg, #0B1A33 0%, #1E3A5F 100%); border-radius: 1rem; text-align: center; color: white;">
-  <div style="font-size: 4rem; margin-bottom: 1rem;">🎬</div>
-  <p style="font-size: 1.25rem; margin-bottom: 0.5rem;">Video en Producción</p>
-  <p style="font-size: 0.875rem; opacity: 0.7;">Pronto disponible en YouTube</p>
-  <p style="font-size: 0.75rem; margin-top: 1rem; opacity: 0.5;">Duración estimada: 3-4 minutos</p>
-</div>
+<video controls style="width: 100%; max-width: 100%; border-radius: 1rem; margin: 2rem 0;">
+  <source src="/videos/Video3Orientacion.mp4" type="video/mp4">
+  Tu navegador no soporta el elemento de video.
+</video>
 
 **Lo que verás:**
 - Test RIASEC (60 preguntas, ~10 minutos)
@@ -86,12 +80,10 @@ Muestra cómo funciona el sistema de orientación vocacional asistido por inteli
 
 Demostración aprofundida de las capacidades de IA en Vocari.cl.
 
-<div style="margin: 2rem 0; padding: 3rem; background: linear-gradient(135deg, #0B1A33 0%, #1E3A5F 100%); border-radius: 1rem; text-align: center; color: white;">
-  <div style="font-size: 4rem; margin-bottom: 1rem;">🎬</div>
-  <p style="font-size: 1.25rem; margin-bottom: 0.5rem;">Video en Producción</p>
-  <p style="font-size: 0.875rem; opacity: 0.7;">Pronto disponible en YouTube</p>
-  <p style="font-size: 0.75rem; margin-top: 1rem; opacity: 0.5;">Duración estimada: 4-5 minutos</p>
-</div>
+<video controls style="width: 100%; max-width: 100%; border-radius: 1rem; margin: 2rem 0;">
+  <source src="/videos/Video4AsistenciaIA.mp4" type="video/mp4">
+  Tu navegador no soporta el elemento de video.
+</video>
 
 **Lo que verás:**
 - Análisis de perfil con IA
@@ -102,15 +94,12 @@ Demostración aprofundida de las capacidades de IA en Vocari.cl.
 
 ---
 
-### 🚀 ¿Quieres Verlos Ahora?
+### 🚀 ¿Quieres probar Vocari.cl?
 
-Los videos están siendo renderizados con **Remotion** y pronto estarán disponibles en YouTube.
-
-**Mientras tanto:**
 - Prueba el test vocacional gratis en [vocari.cl](https://vocari.cl)
 - Explora las carreras con datos reales del MINEDUC
 - Descubre tu perfil RIASEC
 
 ---
 
-*¿Te gustaría ver una демо personalizada de Vocari.cl para tu colegio? Contáctanos en hola@vocari.cl*
+*¿Te gustaría ver una demo personalizada de Vocari.cl para tu colegio? Contáctanos en hola@vocari.cl*
