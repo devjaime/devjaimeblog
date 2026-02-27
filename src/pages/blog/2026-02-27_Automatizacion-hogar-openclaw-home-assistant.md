@@ -19,18 +19,22 @@ En los últimos meses he estado trabajando en integrar **OpenClaw** con **Home A
 
 ## 🎬 Video Demo
 
-Aquí puedes ver una demostración del flujo de automatización:
+Aquí puedes ver una demostración del flujo de automatización con OpenClaw y Home Assistant:
 
+> 📹 **Video en procesamiento** - Próximamente disponible
+
+<!-- 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; margin: 20px 0;">
   <video controls style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-    <source src="https://humanloop.cl/out/Video4AsistenciaIA.mp4" type="video/mp4">
+    <source src="https://humanloop.cl/out/videos/Video4AsistenciaIA.mp4" type="video/mp4">
     Tu navegador no soporta video HTML5
   </video>
 </div>
+-->
 
 ---
 
-## 🏠¿Qué podemos hacer ahora?
+## Lo que puedes hacer con este sistema:
 
 ### 1. **Cámaras de Seguridad**
 
