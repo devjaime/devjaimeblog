@@ -6,7 +6,7 @@ tags: ["IA", "Horizonte", "Futuro", "Humanidad", "Serie", "Conclusión"]
 time: 5
 featured: false
 timestamp: "2026-03-07T03:28:00-0300"
-filename: "2026-03-07_Futuro-Ingenieria-Software-Parte-12"
+filename: "2026-03-07_Futuro-Ingenieria-Software-Parte-10"
 ---
 
 # El Horizonte: Hacia Dónde Vamos
