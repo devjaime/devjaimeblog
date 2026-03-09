@@ -11,29 +11,36 @@ filename: "2026-03-09_Diario-Automatico"
 
 # Diario Automático - 2026-03-09
 
-## Estado del Sistema Smart Home
+Buenas, soy Jaime. Son las 03:30 de la madrugada y aprovecho este ratito de silencio para documentar el estado de mi setup de Home Assistant 🌙
 
-Son las 00:54 de la madrugada y el sol lleva varias horas bajo el horizonte 🌙. La casa está en modo nocturno, como corresponde.
+## Estado del Sistema
 
-Revisando los estados de las cámaras me encuentro con una situación que debo atender: de las cuatro cámaras Yoosee configuradas, tres están en estado **unavailable** (cocina main, cocina sub y patio sub). Solo patio_main se mantiene operativa. Esto es preocupante porque tengo dos zonas importantes sin vigilancia. La cámara de cocina llevaba sin disponibilidad desde las 03:46 y la del patio secundario desde las 03:44. Probablemente hubo algún corte de conexión o problema con el servicio Yoosee.
+El sistema está relativamente tranquilo a estas horas. El sol ya se puso (último amanecer a las 10:37, próximo a las 10:11 de mañana). El backup manager está en idle, sin backups programados activos.
 
-El sistema de backup está en **idle**, sin próximo respaldo programado conocido. La lista de la compra sigue vacía (0 items). 
+**Cámaras:** Aquí hay tema pendientes. De las 4 cámaras Yoosee configuradas, solo `yoosee_patio_main` está operativa en estado "idle". Las otras tres (`yoosee_patio_sub`, `yoosee_cocina_sub`, `yoosee_cocina_main`) aparecen como unavailable. Tendré que revisar la conectividad de red o las credenciales.
 
-## Resumen de Ayer
+La lista de la compra tiene 0 elementos, así que no hay recordatorios activos ahí.
 
-Ayer no trabajé específicamente en Home Assistant según los registros. El sistema lleva varios días en un estado bastante estable pero con estas cámaras caídas. Probablemente el fin de semana pasado estuvo todo operativo y ahora empezó a fallar.
+## Qué se trabajó ayer
 
-## Tareas Pendientes
+Ayer no tengo registro de actividad significativa en el sistema. Los últimos cambios relevantes fueron el 6 de marzo, hace ya 3 días. Parece que el sistema lleva un tiempo en modo "mantenimiento pasivo" sin grandes modificaciones.
 
-- Diagnosticar y restaurar las cámaras Yoosee que están offline
-- Verificar la conexión a internet en los horarios de caída
-- Revisar logs del addon Yoosee para identificar el motivo de la desconexión
-- Confirmar si el backup automático está configurado correctamente (los sensores de próximo backup están en unknown)
-- Probablemente actualizar la integración de las cámaras o verificar credenciales
+## Tareas pendientes
+
+- Revisar cámaras unavailable: problema de red o configuración
+- Verificar estado del backup automático (sigue en unknown)
+- Revisar si hay actualizaciones pendientes de Home Assistant
+- Agregar elementos a la lista de la compra si es necesario 😄
 
 ## Reflexión
 
-Cuando automatizas tu casa, los fines de semana funcionan perfecto, pero entre semana aparecen problemas que no tienes tiempo de atender. Las cámaras son fundamentales para la seguridad, así que mañana (hoy técnicamente) debo priorizar su recuperación. Siempre que algo falla, lo primero es revisar la conexión, luego las credenciales y finalmente los logs. 🔧
+Me doy cuenta de que tener un sistema smart home requiere atención periódica. No vale con configurarlo y olvidarse. Las cámaras caídas son un recordatorio de que hay que revisar los dispositivos regularmente, especialmente los que dependen de conectividad WiFi externa.
+
+El mes pasado estuve más activo con automatizaciones. Quizás este fin de semana dedicate un par de horas a mejorar el sistema.
+
+Buenas noches. Casa dormida pero vigilante 🤖
+
+— Jaime
 
 ---
-*Generado automáticamente el 2026-03-09 00:54:22*
+*Generado automáticamente el 2026-03-09 03:30:07*
