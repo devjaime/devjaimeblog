@@ -1,7 +1,7 @@
 ---
 layout: "../../layouts/BlogLayout.astro"
 title: "El Súper Humano: Desarrolladores Amplificados por IA"
-description: "Cuarta parte: el concepto del desarrollador como "súper humano" — alguien cuya mente está extendida por inteligencia artificial."
+description: "Cuarta parte: el concepto del desarrollador como 'súper humano' — alguien cuya mente está extendida por inteligencia artificial."
 tags: ["IA", "Súper Humano", "Amplificación", "Serie", "Futuro"]
 time: 5
 featured: false

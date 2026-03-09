@@ -6,7 +6,7 @@ tags: ["IA", "Ética", "Responsabilidad", "Bias", "Serie"]
 time: 5
 featured: false
 timestamp: "2026-03-07T03:28:00-0300"
-filename: "2026-03-07_Futuro-Ingenieria-Software-Parte-10"
+filename: "2026-03-07_Futuro-Ingenieria-Software-Parte-11"
 ---
 
 # Ética y Responsabilidad en la Era de la IA
