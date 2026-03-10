@@ -1,20 +1,12 @@
 ---
+layout: "../../layouts/BlogLayout.astro"
 title: "Spec-Driven Development: OpenSpec vs GitHub spec-kit - Análisis Completo"
 description: "Una guía exhaustiva sobre Spec-Driven Development comparando OpenSpec y GitHub spec-kit. Aprende cuándo usar cada uno y cómo implementarlos en tus proyectos."
-publishDate: 2026-03-09
-author: 
-  name: "Jaime Hernández"
-  url: "https://devjaime.cl"
-tags: 
-  - "Spec-Driven Development"
-  - "AI Development"
-  - "OpenSpec"
-  - "spec-kit"
-  - "Software Architecture"
-  - "Development Methodology"
-category: "Development"
-image: "/images/spec-driven-development-cover.png"
-draft: false
+tags: ["Spec-Driven Development", "AI Development", "OpenSpec", "spec-kit", "Software Architecture", "Development Methodology"]
+time: 15
+featured: true
+timestamp: "2026-03-09T01:00:00-0300"
+filename: "2026-03-09_spec-driven_development_openspec_vs_speckit"
 ---
 
 # Spec-Driven Development: OpenSpec vs GitHub spec-kit
@@ -94,40 +86,6 @@ Utiliza sintaxis similar a Gherkin (Cucumber) para escenarios:
 - Se centra en el documento de especificación
 - Compatible con cualquier flujo de trabajo
 
-### ¿Cómo Usar OpenSpec?
-
-#### Paso 1: Define tu Feature
-Escribe tus requerimientos usando la sintaxis de OpenSpec:
-
-```
-Feature: User Authentication
-
-### Requirement: Login
-- The system SHALL allow users to authenticate with email and password
-
-#### Scenario: Successful login
-- GIVEN a registered user exists
-- WHEN the user submits valid credentials
-- THEN the user SHALL be granted access
-- AND a session token SHALL be returned
-
-#### Scenario: Failed login
-- GIVEN a registered user exists
-- WHEN the user submits invalid credentials
-- THEN the user SHALL be denied access
-- AND an error message SHALL be displayed
-```
-
-#### Paso 2: Versiona los Cambios
-Cada modificación genera un delta legible:
-```diff
-### Requirement: Password reset
-+ The system SHALL support password reset via email
-```
-
-#### Paso 3: Implementa desde la Spec
-Usa la especificación como fuente de verdad para tu código.
-
 ### Ventajas de OpenSpec
 
 | Ventaja | Descripción |
@@ -165,119 +123,16 @@ spec-kit ofrece un flujo estructurado:
 specify → plan → tasks → implement
 ```
 
-##### `/speckit.constitution`
-Crea los principios rectores del proyecto:
-
-```
-/speckit.constitution Create principles focused on code quality, 
-testing standards, user experience consistency, and performance requirements
-```
-
-##### `/speckit.specify`
-Describe qué quieres construir (el qué, no el cómo):
-
-```
-/speckit.specify Build an application that can help me organize my photos 
-in separate photo albums. Albums are grouped by date and can be 
-re-organized by dragging and dropping on the main page.
-```
-
-##### `/speckit.plan`
-Proporciona stack tecnológico y decisiones arquitectónicas:
-
-```
-/speckit.plan The application uses Vite with minimal number of libraries. 
-Use vanilla HTML, CSS, and JavaScript. Images are stored locally 
-with metadata in SQLite.
-```
-
-##### `/speckit.tasks`
-Genera lista de tareas ejecutables desde el plan:
-
-```
-/speckit.tasks
-```
-
-##### `/speckit.implement`
-Ejecuta todas las tareas y construye el feature.
-
 #### 2. Soporte Multi-Agent
 
-| Agent | Estado | Notas |
-|-------|--------|-------|
-| Claude Code | ✅ | Completamente soportado |
-| Cursor | ✅ | IDE-based |
-| Windsurf | ✅ | IDE-based |
-| Codex CLI | ✅ | OpenAI |
-| Gemini CLI | ✅ | Google |
-| Qwen Code | ✅ | Alibaba |
-| GitHub Copilot | ✅ | VS Code extension |
-| And 15+ more | ✅ | Including Kiro, Amp, Roo, etc. |
-
-#### 3. Rama de feature automática
-- Número automático de features (001, 002...)
-- Creación de branches semánticos
-- Estructura de directorios `specs/[feature-name]/`
-
-#### 4. Documentación Automática
-Genera automáticamente:
-- `plan.md` - Plan de implementación
-- `data-model.md` - Modelos de datos
-- `contracts/` - Contratos de API
-- `quickstart.md` - Guía de validación
-- `tasks.md` - Lista de tareas
-
-### ¿Cómo Usar spec-kit?
-
-#### Instalación
-
-```bash
-# Instalación persistente (recomendado)
-uv tool install specify-cli --from git+https://github.com/github/spec-kit.git
-
-# O ejecutar directamente
-uvx --from git+https://github.com/github/spec-kit.git specify init <PROJECT_NAME>
-```
-
-#### Flujo Completo
-
-```bash
-# 1. Inicializar proyecto
-specify init my-project --ai claude
-
-# 2. Crear constitución (opcional)
-/speckit.constitution Create principles focused on code quality
-
-# 3. Definir feature
-/speckit.specify Real-time chat system with message history
-
-# 4. Definir plan técnico
-/speckit.plan PostgreSQL for history, Redis for presence, WebSocket
-
-# 5. Generar tareas
-/speckit.tasks
-
-# 6. Implementar
-/speckit.implement
-```
-
-En 15 minutos tienes:
-- ✅ Especificación completa con user stories
-- ✅ Plan de implementación con decisiones técnicas
-- ✅ Contratos de API y modelos de datos
-- ✅ Escenarios de test
-- ✅ Todo versionado en branch
-
-### Comparativa de Tiempo
-
-| Fase | Tradicional | spec-kit |
-|------|-------------|----------|
-| PRD | 2-3 horas | 5 min |
-| Diseño | 2-3 horas | 5 min |
-| Setup | 30 min | Automático |
-| Specs técnicas | 3-4 horas | 5 min |
-| Plan de tests | 2 horas | Incluido |
-| **Total** | ~12 horas | **15 min** |
+| Agent | Estado |
+|-------|--------|
+| Claude Code | ✅ |
+| Cursor | ✅ |
+| Windsurf | ✅ |
+| Codex CLI | ✅ |
+| Gemini CLI | ✅ |
+| +15 más | ✅ |
 
 ### Ventajas de spec-kit
 
@@ -288,14 +143,6 @@ En 15 minutos tienes:
 | **Generación automática** | Código, tests, docs desde spec |
 | **Constitución** | Principios de proyecto versionables |
 | **Comunidad activa** | GitHub respalda el proyecto |
-| **Documentación rica** | Plan, modelos, contratos automáticos |
-
-### Desventajas
-
-- Curva de aprendizaje mayor
-- Requiere AI agent configurado
-- Más opinionado (menos flexible)
-- Dependencia de herramientas específicas
 
 ---
 
@@ -307,89 +154,18 @@ En 15 minutos tienes:
 | **CLI** | No tiene | specify CLI completo |
 | **Generación de código** | Manual | Automática |
 | **Integración AI** | No nativa | 20+ agents |
-| **Curva de aprendizaje** | Baja | Media |
-| **Flexibilidad** | Alta | Media |
-| **Comunidad** | Pequeña | GitHub-backed |
-| **Best for** | Specs minimalistas | Desarrollo completo AI-first |
 
 ### ¿Cuándo Usar OpenSpec?
 
 - ✅ Proyectos donde las specs ya están bien definidas
 - ✅ Equipos que prefieren control manual
 - ✅ Cuando necesitas spec-deltas claros para reviews
-- ✅ Flujos de trabajo existentes que no quieres cambiar
-- ✅ Proyectos con requerimientos muy estables
 
 ### ¿Cuándo Usar spec-kit?
 
 - ✅ Nuevos proyectos desde cero
 - ✅ Desarrollo asistido por AI
-- ✅ Equipos que quieren automatizar el flujo completo
 - ✅ Prototipado rápido
-- ✅ Cuando necesitas generación automática de código
-
----
-
-## ¿Qué Empresas Usan Spec-Driven Development?
-
-### GitHub (Obvio)
-El propio spec-kit viene de GitHub. Lo usan internamente para:
-- Desarrollo de nuevos features
-- Documentación automática
-- Consistencia entre productos
-
-### Microsoft
-Han adoptado principios similares con:
-- **Copilot Studio** - Specs como fuente de verdad
-- **Azure AI Studio** - Prompts como especificaciones ejecutables
-
-### Anthropic
-- **Claude Code** - Integración nativa con spec-kit
-- El concepto de "artifacts" sigue principios de SDD
-
-### Startups y Proyectos Open Source
-
-**Casos documentados:**
-- **Linear** - Specs como fuente de verdad para features
-- **Vercel** - Next.js app dir sigue principios de spec
-- **Supabase** - Specifications para APIs
-
-### Demostraciones de la Comunidad
-
-spec-kit tiene demos disponibles:
-- [.NET CLI tool (Greenfield)](https://github.com/mnriem/spec-kit-dotnet-cli-demo)
-- [Spring Boot + React (Greenfield)](https://github.com/mnriem/spec-kit-spring-react-demo)
-- [ASP.NET CMS extension (Brownfield)](https://github.com/mnriem/spec-kit-aspnet-brownfield-demo)
-
----
-
-## Análisis: ¿Cuál Elegir?
-
-### Para Proyectos Personales o MVP
-
-**Recomendación: spec-kit**
-
-La automatización completa acelera significativamente el desarrollo. En 15 minutos tienes una base funcional.
-
-### Para Proyectos Empresariales
-
-**Recomendación: Híbrido**
-
-1. Usa **OpenSpec** para documentación de requisitos
-2. Integra con **spec-kit** para generación de código
-3. Mantén control manual donde sea necesario
-
-### Para Equipos con AI Agents Existentes
-
-**Recomendación: spec-kit**
-
-La integración nativa con Claude Code, Cursor, Windsurf, etc. hace el flujo natural.
-
-### Para Requisitos Muy Estables
-
-**Recomendación: OpenSpec**
-
-Los spec-deltas son perfectos cuando necesitas trackear cambios específicos sin regenerar código.
 
 ---
 
@@ -401,9 +177,7 @@ Spec-Driven Development representa un cambio de paradigma en cómo construimos s
 
 **spec-kit** proporciona un toolkit completo que automatiza el flujo completo, integrándose con los principales AI agents del mercado.
 
-Mi recomendación: **Empieza con spec-kit** para nuevos proyectos. La velocidad de desarrollo que ofrece es significativa. A medida que tu equipomadure, puedes adaptar el flujo a tus necesidades.
-
-El futuro del desarrollo de software será cada vez más "spec-first". Las herramientas evolucionan rápido - stay tuned para actualizaciones.
+Mi recomendación: **Empieza con spec-kit** para nuevos proyectos. La velocidad de desarrollo que ofrece es significativa.
 
 ---
 
@@ -411,11 +185,7 @@ El futuro del desarrollo de software será cada vez más "spec-first". Las herra
 
 - [OpenSpec Documentation](https://openspec.dev/docs)
 - [spec-kit Repository](https://github.com/github/spec-kit)
-- [Spec-Driven Development Guide](https://github.com/github/spec-kit/blob/main/spec-driven.md)
-- [Video Overview - spec-kit](https://www.youtube.com/watch?v=a9eR1xsfvHg)
 
 ---
 
 *¿Te ha gustado este análisis? ¿Tienes experiencia con alguna de estas herramientas? Déjame tus comentarios.*
-
-*Tags: #SpecDrivenDevelopment #OpenSpec #speckit #AIDevelopment #SoftwareArchitecture*
