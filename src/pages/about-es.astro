@@ -1,0 +1,215 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Section from "../components/common/Section.astro";
+import { GLOBAL } from "../lib/variables";
+---
+
+<Layout
+  title="Sobre Mí • Ingeniero de Software & AI"
+  description="Jaime Hernández - Ingeniero Backend especializado en IA, computación en la nube y automatización. 8+ años construyendo sistemas escalables."
+  type="website"
+>
+  <Section class="my-16">
+    <div class="max-w-4xl mx-auto">
+      
+      <!-- Hero -->
+      <div class="text-center mb-16">
+        <h1 class="text-4xl font-bold mb-4">Sobre Mí</h1>
+        <p class="text-xl zag-muted">Ingeniero Backend • Especialista en IA • Constructor de Soluciones</p>
+      </div>
+
+      <!-- Bio -->
+      <div class="prose prose-lg dark:prose-invert max-w-none mb-16">
+        <p class="text-lg leading-relaxed">
+          Soy <strong>Ingeniero Backend</strong> basado en <strong>Chile</strong> con más de 8 años de experiencia 
+          construyendo sistemas escalables para retail, logística y aplicaciones empresariales.
+        </p>
+        
+        <p class="leading-relaxed">
+          Mi enfoque es la <strong>automatización con IA</strong>: construyo agentes, pipelines y 
+          flujos de trabajo que transforman procesos manuales en sistemas inteligentes. Trabajo principalmente con 
+          <strong>Go</strong>, <strong>Python</strong> y arquitecturas cloud-native en 
+          <strong>GCP</strong> y <strong>AWS</strong>.
+        </p>
+
+        <p class="leading-relaxed">
+          Actualmente estoy construyendo <a href="https://vocari.cl" target="_blank" rel="noopener">Vocari.cl</a> 
+          — una plataforma de orientación vocacional con IA para estudiantes chilenos. También exploro agentes 
+          autónomos, sistemas RAG y orquestación de LLMs con LangGraph y CrewAI.
+        </p>
+      </div>
+
+      <!-- Skills Grid -->
+      <div class="mb-16">
+        <h2 class="text-2xl font-bold mb-8 text-center">Habilidades Técnicas</h2>
+        
+        <div class="grid md:grid-cols-2 gap-8">
+          
+          <!-- Lenguajes y Bases de Datos -->
+          <div class="bg-zag-light-bg dark:bg-zag-dark-bg p-6 rounded-lg">
+            <h3 class="font-semibold mb-4 flex items-center gap-2">
+              <span class="text-2xl">💻</span> Lenguajes y Bases de Datos
+            </h3>
+            <div class="flex flex-wrap gap-2">
+              {["Go", "Python", "TypeScript", "PL/SQL", "PostgreSQL", "Redis", "MongoDB", "Oracle"].map(skill => (
+                <span class="px-3 py-1 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 rounded-full text-sm">
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          <!-- Cloud y DevOps -->
+          <div class="bg-zag-light-bg dark:bg-zag-dark-bg p-6 rounded-lg">
+            <h3 class="font-semibold mb-4 flex items-center gap-2">
+              <span class="text-2xl">☁️</span> Cloud y DevOps
+            </h3>
+            <div class="flex flex-wrap gap-2">
+              {["GCP", "AWS", "Azure", "Docker", "Kubernetes", "BigQuery", "Cloud Run"].map(skill => (
+                <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full text-sm">
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          <!-- IA y ML -->
+          <div class="bg-zag-light-bg dark:bg-zag-dark-bg p-6 rounded-lg">
+            <h3 class="font-semibold mb-4 flex items-center gap-2">
+              <span class="text-2xl">🤖</span> IA y Machine Learning
+            </h3>
+            <div class="flex flex-wrap gap-2">
+              {["LangChain", "LangGraph", "CrewAI", "Claude API", "Ollama", "MCP", "n8n", "RAG"].map(skill => (
+                <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full text-sm">
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          <!-- Frameworks y Herramientas -->
+          <div class="bg-zag-light-bg dark:bg-zag-dark-bg p-6 rounded-lg">
+            <h3 class="font-semibold mb-4 flex items-center gap-2">
+              <span class="text-2xl">🛠️</span> Frameworks y Herramientas
+            </h3>
+            <div class="flex flex-wrap gap-2">
+              {["Next.js", "React", "Node.js", "FastAPI", "Flutter", "Git", "Linux"].map(skill => (
+                <span class="px-3 py-1 bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 rounded-full text-sm">
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Experiencia -->
+      <div class="mb-16">
+        <h2 class="text-2xl font-bold mb-8 text-center">Experiencia</h2>
+        
+        <div class="space-y-8">
+          <!-- Actual -->
+          <div class="flex gap-4">
+            <div class="flex-shrink-0 w-4 h-4 mt-2 rounded-full bg-emerald-500"></div>
+            <div>
+              <h3 class="font-semibold text-lg">Fundador — Vocari.cl</h3>
+              <p class="text-sm zag-muted mb-2">2024 - Presente</p>
+              <p class="text-sm">
+                Plataforma de orientación vocacional con IA para estudiantes chilenos. 
+                Construida con LLMs, sistemas RAG e infraestructura cloud escalable.
+              </p>
+            </div>
+          </div>
+
+          <!-- Falabella -->
+          <div class="flex gap-4">
+            <div class="flex-shrink-0 w-4 h-4 mt-2 rounded-full bg-blue-500"></div>
+            <div>
+              <h3 class="font-semibold text-lg">Ingeniero Backend — Falabella Chile</h3>
+              <p class="text-sm zag-muted mb-2">2018 - Presente</p>
+              <p class="text-sm">
+                Construyó sistemas de inventario y aprovisionamiento para <strong>50M+ SKUs</strong> en 5 países. 
+                Reconciliación de datos entre BigQuery y Oracle EBS. 
+                Optimizó queries monetarios críticos y cierres financieros mensuales.
+              </p>
+            </div>
+          </div>
+
+          <!-- Anterior -->
+          <div class="flex gap-4">
+            <div class="flex-shrink-0 w-4 h-4 mt-2 rounded-full bg-gray-400"></div>
+            <div>
+              <h3 class="font-semibold text-lg">Ingeniero de Software — various</h3>
+              <p class="text-sm zag-muted mb-2">2016 - 2018</p>
+              <p class="text-sm">
+                Desarrollo full-stack, APIs REST, optimización de bases de datos 
+                e integraciones de sistemas empresariales.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Qué hago -->
+      <div class="mb-16">
+        <h2 class="text-2xl font-bold mb-8 text-center">Qué Hago</h2>
+        
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="text-center p-6">
+            <div class="text-4xl mb-4">🚀</div>
+            <h3 class="font-semibold mb-2">Automatización con IA</h3>
+            <p class="text-sm zag-muted">
+              Construyo agentes autónomos y flujos de trabajo inteligentes que automatizan procesos de negocio complejos.
+            </p>
+          </div>
+          
+          <div class="text-center p-6">
+            <div class="text-4xl mb-4">⚡</div>
+            <h3 class="font-semibold mb-2">Sistemas Backend</h3>
+            <p class="text-sm zag-muted">
+              Diseño y escalo microservicios, APIs y pipelines de datos que manejan millones de solicitudes.
+            </p>
+          </div>
+          
+          <div class="text-center p-6">
+            <div class="text-4xl mb-4">📊</div>
+            <h3 class="font-semibold mb-2">Ingeniería de Datos</h3>
+            <p class="text-sm zag-muted">
+              Transformo datos crudos en información actionable con PostgreSQL, BigQuery y Python.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Conectar -->
+      <div class="text-center">
+        <h2 class="text-2xl font-bold mb-6">Conectemos</h2>
+        <div class="flex justify-center gap-4 flex-wrap">
+          <a 
+            href={GLOBAL.linkedinProfile}
+            class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+            target="_blank"
+            rel="noopener"
+          >
+            LinkedIn
+          </a>
+          <a 
+            href={GLOBAL.githubProfile}
+            class="px-6 py-3 border-2 border-emerald-500 text-emerald-500 rounded-lg hover:bg-emerald-500 hover:text-white transition-colors"
+            target="_blank"
+            rel="noopener"
+          >
+            GitHub
+          </a>
+          <a 
+            href="/cv"
+            class="px-6 py-3 bg-emerald-500 text-white rounded-lg hover:bg-emerald-600 transition-colors"
+          >
+            Descargar CV
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </Section>
+</Layout>

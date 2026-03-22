@@ -1,0 +1,215 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Section from "../components/common/Section.astro";
+import { GLOBAL } from "../lib/variables";
+---
+
+<Layout
+  title="About • AI & Software Engineer"
+  description="Jaime Hernández - Backend Engineer specializing in AI, cloud computing and automation. 8+ years building scalable systems."
+  type="website"
+>
+  <Section class="my-16">
+    <div class="max-w-4xl mx-auto">
+      
+      <!-- Hero -->
+      <div class="text-center mb-16">
+        <h1 class="text-4xl font-bold mb-4">About Me</h1>
+        <p class="text-xl zag-muted">Backend Engineer • AI Specialist • Problem Solver</p>
+      </div>
+
+      <!-- Bio -->
+      <div class="prose prose-lg dark:prose-invert max-w-none mb-16">
+        <p class="text-lg leading-relaxed">
+          I'm a <strong>Backend Engineer</strong> based in <strong>Chile</strong> with 8+ years of experience 
+          building scalable systems for retail, logistics, and enterprise applications.
+        </p>
+        
+        <p class="leading-relaxed">
+          My focus is on <strong>AI-powered automation</strong>: building agents, pipelines, and 
+          workflows that turn manual processes into intelligent systems. I work primarily with 
+          <strong>Go</strong>, <strong>Python</strong>, and cloud-native architectures on 
+          <strong>GCP</strong> and <strong>AWS</strong>.
+        </p>
+
+        <p class="leading-relaxed">
+          Currently building <a href="https://vocari.cl" target="_blank" rel="noopener">Vocari.cl</a> 
+          — an AI-powered vocational guide for Chilean students. Also exploring autonomous agents, 
+          RAG systems, and LLM orchestration with LangGraph and CrewAI.
+        </p>
+      </div>
+
+      <!-- Skills Grid -->
+      <div class="mb-16">
+        <h2 class="text-2xl font-bold mb-8 text-center">Technical Skills</h2>
+        
+        <div class="grid md:grid-cols-2 gap-8">
+          
+          <!-- Languages & Databases -->
+          <div class="bg-zag-light-bg dark:bg-zag-dark-bg p-6 rounded-lg">
+            <h3 class="font-semibold mb-4 flex items-center gap-2">
+              <span class="text-2xl">💻</span> Languages & Databases
+            </h3>
+            <div class="flex flex-wrap gap-2">
+              {["Go", "Python", "TypeScript", "PL/SQL", "PostgreSQL", "Redis", "MongoDB", "Oracle"].map(skill => (
+                <span class="px-3 py-1 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 rounded-full text-sm">
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          <!-- Cloud & DevOps -->
+          <div class="bg-zag-light-bg dark:bg-zag-dark-bg p-6 rounded-lg">
+            <h3 class="font-semibold mb-4 flex items-center gap-2">
+              <span class="text-2xl">☁️</span> Cloud & DevOps
+            </h3>
+            <div class="flex flex-wrap gap-2">
+              {["GCP", "AWS", "Azure", "Docker", "Kubernetes", "BigQuery", "Cloud Run"].map(skill => (
+                <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full text-sm">
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          <!-- AI & ML -->
+          <div class="bg-zag-light-bg dark:bg-zag-dark-bg p-6 rounded-lg">
+            <h3 class="font-semibold mb-4 flex items-center gap-2">
+              <span class="text-2xl">🤖</span> AI & Machine Learning
+            </h3>
+            <div class="flex flex-wrap gap-2">
+              {["LangChain", "LangGraph", "CrewAI", "Claude API", "Ollama", "MCP", "n8n", "RAG"].map(skill => (
+                <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full text-sm">
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          <!-- Frameworks & Tools -->
+          <div class="bg-zag-light-bg dark:bg-zag-dark-bg p-6 rounded-lg">
+            <h3 class="font-semibold mb-4 flex items-center gap-2">
+              <span class="text-2xl">🛠️</span> Frameworks & Tools
+            </h3>
+            <div class="flex flex-wrap gap-2">
+              {["Next.js", "React", "Node.js", "FastAPI", "Flutter", "Git", "Linux"].map(skill => (
+                <span class="px-3 py-1 bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 rounded-full text-sm">
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Experience Timeline -->
+      <div class="mb-16">
+        <h2 class="text-2xl font-bold mb-8 text-center">Experience</h2>
+        
+        <div class="space-y-8">
+          <!-- Current -->
+          <div class="flex gap-4">
+            <div class="flex-shrink-0 w-4 h-4 mt-2 rounded-full bg-emerald-500"></div>
+            <div>
+              <h3 class="font-semibold text-lg">Founder — Vocari.cl</h3>
+              <p class="text-sm zag-muted mb-2">2024 - Present</p>
+              <p class="text-sm">
+                AI-powered vocational guidance platform for Chilean students. 
+                Building with LLMs, RAG systems, and scalable cloud infrastructure.
+              </p>
+            </div>
+          </div>
+
+          <!-- Falabella -->
+          <div class="flex gap-4">
+            <div class="flex-shrink-0 w-4 h-4 mt-2 rounded-full bg-blue-500"></div>
+            <div>
+              <h3 class="font-semibold text-lg">Backend Engineer — Falabella Chile</h3>
+              <p class="text-sm zag-muted mb-2">2018 - Present</p>
+              <p class="text-sm">
+                Built inventory and provisioning systems handling 50M+ SKUs across 5 countries. 
+                Data reconciliation between BigQuery and Oracle EBS. 
+                Optimized critical monetary queries and financial month-end closes.
+              </p>
+            </div>
+          </div>
+
+          <!-- Previous -->
+          <div class="flex gap-4">
+            <div class="flex-shrink-0 w-4 h-4 mt-2 rounded-full bg-gray-400"></div>
+            <div>
+              <h3 class="font-semibold text-lg">Software Engineer — Various</h3>
+              <p class="text-sm zag-muted mb-2">2016 - 2018</p>
+              <p class="text-sm">
+                Full-stack development, REST APIs, database optimization, 
+                and enterprise system integrations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- What I Do -->
+      <div class="mb-16">
+        <h2 class="text-2xl font-bold mb-8 text-center">What I Do</h2>
+        
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="text-center p-6">
+            <div class="text-4xl mb-4">🚀</div>
+            <h3 class="font-semibold mb-2">AI Automation</h3>
+            <p class="text-sm zag-muted">
+              Build autonomous agents and intelligent workflows that automate complex business processes.
+            </p>
+          </div>
+          
+          <div class="text-center p-6">
+            <div class="text-4xl mb-4">⚡</div>
+            <h3 class="font-semibold mb-2">Backend Systems</h3>
+            <p class="text-sm zag-muted">
+              Design and scale microservices, APIs, and data pipelines that handle millions of requests.
+            </p>
+          </div>
+          
+          <div class="text-center p-6">
+            <div class="text-4xl mb-4">📊</div>
+            <h3 class="font-semibold mb-2">Data Engineering</h3>
+            <p class="text-sm zag-muted">
+              Transform raw data into actionable insights with PostgreSQL, BigQuery, and Python.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Connect -->
+      <div class="text-center">
+        <h2 class="text-2xl font-bold mb-6">Let's Connect</h2>
+        <div class="flex justify-center gap-4">
+          <a 
+            href={GLOBAL.linkedinProfile}
+            class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+            target="_blank"
+            rel="noopener"
+          >
+            LinkedIn
+          </a>
+          <a 
+            href={GLOBAL.githubProfile}
+            class="px-6 py-3 border-2 border-emerald-500 text-emerald-500 rounded-lg hover:bg-emerald-500 hover:text-white transition-colors"
+            target="_blank"
+            rel="noopener"
+          >
+            GitHub
+          </a>
+          <a 
+            href="/cv"
+            class="px-6 py-3 bg-emerald-500 text-white rounded-lg hover:bg-emerald-600 transition-colors"
+          >
+            Download CV
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </Section>
+</Layout>

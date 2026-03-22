@@ -71,6 +71,7 @@ export const GLOBAL = {
   // Menu items
   menu: {
     home: "/",
+    about: "/about",
     projects: "/projects",
     blog: "/blog",
   },

@@ -1,0 +1,260 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Section from "../components/common/Section.astro";
+import { GLOBAL } from "../lib/variables";
+---
+
+<Layout
+  title="CV • Jaime Hernández - AI & Backend Engineer"
+  description="Download my CV - Backend Engineer with 8+ years experience in AI, cloud computing, and scalable systems. Go, Python, PostgreSQL, LangChain."
+  type="website"
+>
+  <Section class="my-16">
+    <div class="max-w-4xl mx-auto">
+      
+      <!-- Print Button -->
+      <div class="text-center mb-8">
+        <button 
+          onclick="window.print()"
+          class="px-8 py-4 bg-emerald-500 text-white text-lg font-medium rounded-lg hover:bg-emerald-600 transition-colors shadow-lg"
+        >
+          📄 Download CV / Descargar CV
+        </button>
+        <p class="text-sm zag-muted mt-2">
+          Click to print or save as PDF • Haz clic para imprimir o guardar como PDF
+        </p>
+      </div>
+
+      <!-- CV Content - Print-optimized -->
+      <div id="cv-content" class="bg-white dark:bg-gray-900 p-8 md:p-12 shadow-xl print:shadow-none">
+        
+        <!-- Header -->
+        <header class="border-b-2 border-emerald-500 pb-8 mb-8">
+          <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-4">
+            <div>
+              <h1 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
+                Jaime Hernández
+              </h1>
+              <h2 class="text-xl text-emerald-600 dark:text-emerald-400 mt-1">
+                AI & Backend Engineer
+              </h2>
+            </div>
+            <div class="text-right text-sm text-gray-600 dark:text-gray-400">
+              <p>📍 Chile, South America</p>
+              <p>📧 Available on request</p>
+              <p>🔗 <a href="https://jaimehernandez.dev" class="text-emerald-600 hover:underline">jaimehernandez.dev</a></p>
+              <p>💼 <a href="https://linkedin.com/in/devjaime" class="text-emerald-600 hover:underline">linkedin.com/in/devjaime</a></p>
+            </div>
+          </div>
+        </header>
+
+        <!-- Professional Summary -->
+        <section class="mb-8">
+          <h3 class="text-lg font-bold text-gray-900 dark:text-white border-b border-gray-200 dark:border-gray-700 pb-2 mb-4">
+            Professional Summary / Resumen Profesional
+          </h3>
+          <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
+            Backend Engineer with <strong>8+ years of experience</strong> building scalable systems for retail and enterprise. 
+            Specialized in <strong>AI-powered automation</strong>, developing agents, RAG systems, and intelligent workflows. 
+            Expert in <strong>Go</strong>, <strong>Python</strong>, <strong>PostgreSQL</strong>, and cloud-native architectures on GCP and AWS. 
+            Track record of handling <strong>50M+ SKUs</strong> across multi-country deployments.
+          </p>
+        </section>
+
+        <!-- Core Competencies -->
+        <section class="mb-8">
+          <h3 class="text-lg font-bold text-gray-900 dark:text-white border-b border-gray-200 dark:border-gray-700 pb-2 mb-4">
+            Core Competencies / Competencias Principales
+          </h3>
+          <div class="grid md:grid-cols-2 gap-4 text-sm">
+            <div>
+              <h4 class="font-semibold text-gray-800 dark:text-gray-200 mb-2">AI & Machine Learning</h4>
+              <ul class="text-gray-600 dark:text-gray-400 space-y-1">
+                <li>• LangChain, LangGraph, CrewAI</li>
+                <li>• Claude API, Ollama, MCP</li>
+                <li>• RAG systems & vector databases</li>
+                <li>• Autonomous agents development</li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="font-semibold text-gray-800 dark:text-gray-200 mb-2">Backend & Systems</h4>
+              <ul class="text-gray-600 dark:text-gray-400 space-y-1">
+                <li>• Go, Python, TypeScript</li>
+                <li>• PostgreSQL, Oracle, Redis</li>
+                <li>• Microservices architecture</li>
+                <li>• API design (REST, GraphQL)</li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="font-semibold text-gray-800 dark:text-gray-200 mb-2">Cloud & DevOps</h4>
+              <ul class="text-gray-600 dark:text-gray-400 space-y-1">
+                <li>• GCP (Cloud Run, BigQuery, Logging)</li>
+                <li>• AWS, Azure</li>
+                <li>• Docker, Kubernetes</li>
+                <li>• CI/CD pipelines</li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="font-semibold text-gray-800 dark:text-gray-200 mb-2">Data Engineering</h4>
+              <ul class="text-gray-600 dark:text-gray-400 space-y-1">
+                <li>• BigQuery optimization</li>
+                <li>• Data reconciliation pipelines</li>
+                <li>• Financial month-end processes</li>
+                <li>• Query performance tuning</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Experience -->
+        <section class="mb-8">
+          <h3 class="text-lg font-bold text-gray-900 dark:text-white border-b border-gray-200 dark:border-gray-700 pb-2 mb-4">
+            Professional Experience / Experiencia Profesional
+          </h3>
+
+          <!-- Vocari -->
+          <div class="mb-6">
+            <div class="flex justify-between items-start">
+              <div>
+                <h4 class="font-semibold text-gray-800 dark:text-gray-200">Founder & Developer</h4>
+                <p class="text-emerald-600 dark:text-emerald-400">Vocari.cl — AI Vocational Platform</p>
+              </div>
+              <span class="text-sm text-gray-500">2024 - Present</span>
+            </div>
+            <ul class="mt-2 text-sm text-gray-600 dark:text-gray-400 space-y-1">
+              <li>• Building AI-powered vocational guidance platform for Chilean students</li>
+              <li>• Implementing RAG systems with LangChain and Claude API</li>
+              <li>• Designed scalable cloud architecture on GCP</li>
+            </ul>
+          </div>
+
+          <!-- Falabella -->
+          <div class="mb-6">
+            <div class="flex justify-between items-start">
+              <div>
+                <h4 class="font-semibold text-gray-800 dark:text-gray-200">Backend Engineer</h4>
+                <p class="text-emerald-600 dark:text-emerald-400">Falabella Chile — Retail & E-commerce</p>
+              </div>
+              <span class="text-sm text-gray-500">2018 - Present</span>
+            </div>
+            <ul class="mt-2 text-sm text-gray-600 dark:text-gray-400 space-y-1">
+              <li>• Built inventory and provisioning systems for <strong>50M+ SKUs</strong> across 5 countries</li>
+              <li>• Implemented data reconciliation pipelines (BigQuery ↔ Oracle EBS)</li>
+              <li>• Optimized critical N+1 queries reducing execution time by 70%</li>
+              <li>• Developed automated month-end close processes saving 15+ hours/month</li>
+              <li>• Reverse-engineered coupon/promotion systems for integration</li>
+            </ul>
+          </div>
+
+          <!-- Previous roles -->
+          <div class="mb-6">
+            <div class="flex justify-between items-start">
+              <div>
+                <h4 class="font-semibold text-gray-800 dark:text-gray-200">Software Engineer</h4>
+                <p class="text-emerald-600 dark:text-emerald-400">Enterprise Solutions</p>
+              </div>
+              <span class="text-sm text-gray-500">2016 - 2018</span>
+            </div>
+            <ul class="mt-2 text-sm text-gray-600 dark:text-gray-400 space-y-1">
+              <li>• Full-stack web development (React, Node.js, PostgreSQL)</li>
+              <li>• REST API design and implementation</li>
+              <li>• Database optimization and migration</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Education -->
+        <section class="mb-8">
+          <h3 class="text-lg font-bold text-gray-900 dark:text-white border-b border-gray-200 dark:border-gray-700 pb-2 mb-4">
+            Education / Educación
+          </h3>
+          <div class="flex justify-between items-start">
+            <div>
+              <h4 class="font-semibold text-gray-800 dark:text-gray-200">Computer Science / Software Engineering</h4>
+              <p class="text-gray-600 dark:text-gray-400">University in Chile</p>
+            </div>
+            <span class="text-sm text-gray-500">2012 - 2016</span>
+          </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="mb-8">
+          <h3 class="text-lg font-bold text-gray-900 dark:text-white border-b border-gray-200 dark:border-gray-700 pb-2 mb-4">
+            Notable Projects / Proyectos Destacados
+          </h3>
+          <div class="space-y-4 text-sm">
+            <div>
+              <h4 class="font-semibold text-gray-800 dark:text-gray-200">AI Agent Pipeline — n8n + LangGraph</h4>
+              <p class="text-gray-600 dark:text-gray-400">
+                Built multi-agent workflows orchestrating Claude API, Ollama, and custom tools for automated data processing.
+              </p>
+            </div>
+            <div>
+              <h4 class="font-semibold text-gray-800 dark:text-gray-200">Retail Inventory System — Go + PostgreSQL</h4>
+              <p class="text-gray-600 dark:text-gray-400">
+                Designed high-concurrency inventory system handling 50M+ SKUs with SKIP LOCKED and advisory locks.
+              </p>
+            </div>
+            <div>
+              <h4 class="font-semibold text-gray-800 dark:text-gray-200">Vocari.cl — AI Vocational Guide</h4>
+              <p class="text-gray-600 dark:text-gray-400">
+                RAG-based vocational guidance system helping Chilean students make informed career decisions.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Languages -->
+        <section class="mb-8">
+          <h3 class="text-lg font-bold text-gray-900 dark:text-white border-b border-gray-200 dark:border-gray-700 pb-2 mb-4">
+            Languages / Idiomas
+          </h3>
+          <div class="grid grid-cols-2 gap-4 text-sm">
+            <div class="flex justify-between">
+              <span class="text-gray-700 dark:text-gray-300">Spanish</span>
+              <span class="text-gray-500">Native</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-gray-700 dark:text-gray-300">English</span>
+              <span class="text-gray-500">Professional</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center text-xs text-gray-500 pt-4 border-t border-gray-200 dark:border-gray-700">
+          <p>This CV is available online at <a href="https://jaimehernandez.dev/cv" class="text-emerald-600 hover:underline">jaimehernandez.dev/cv</a></p>
+        </footer>
+      </div>
+
+    </div>
+  </Section>
+</Layout>
+
+<style>
+  @media print {
+    @page {
+      size: A4;
+      margin: 1cm;
+    }
+    
+    body {
+      print-color-adjust: exact;
+      -webkit-print-color-adjust: exact;
+    }
+    
+    button {
+      display: none !important;
+    }
+    
+    #cv-content {
+      padding: 0 !important;
+      box-shadow: none !important;
+    }
+    
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+</style>

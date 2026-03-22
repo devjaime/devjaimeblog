@@ -1,0 +1,40 @@
+---
+import Layout from "../layouts/Layout.astro";
+const siteUrl = "https://jaimehernandez.dev";
+
+// Get all blog posts
+const blogPosts = await Astro.glob("./blog/*.md");
+const blogUrls = blogPosts.map(post => ({
+  url: `${siteUrl}/blog/${post.frontmatter.filename || post.slug}`,
+  lastmod: post.frontmatter.timestamp || new Date().toISOString(),
+  priority: "0.8"
+}));
+
+// Get all projects
+const projects = await Astro.glob("./projects/*.md");
+const projectUrls = projects.map(project => ({
+  url: `${siteUrl}/projects/${project.frontmatter.slug}`,
+  lastmod: new Date().toISOString(),
+  priority: "0.7"
+}));
+
+const allUrls = [
+  { url: siteUrl, lastmod: new Date().toISOString(), priority: "1.0" },
+  { url: `${siteUrl}/about`, lastmod: new Date().toISOString(), priority: "0.9" },
+  { url: `${siteUrl}/cv`, lastmod: new Date().toISOString(), priority: "0.9" },
+  { url: `${siteUrl}/blog`, lastmod: new Date().toISOString(), priority: "0.9" },
+  { url: `${siteUrl}/projects`, lastmod: new Date().toISOString(), priority: "0.8" },
+  ...blogUrls,
+  ...projectUrls
+];
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {allUrls.map(item => (
+    <url>
+      <loc>{item.url}</loc>
+      <lastmod>{item.lastmod}</lastmod>
+      <priority>{item.priority}</priority>
+    </url>
+  ))}
+</urlset>
