@@ -41,7 +41,7 @@ import ThemeToggle from "./ThemeToggle.astro";
     >
     {Object.entries(GLOBAL.menu).map(([key, url]) => (
       <Anchor url={url} aria-current={Astro.url.pathname === url ? "page" : undefined}>
-        {key === "home" ? "Home" : key === "about" ? "About" : key === "projects" ? "Projects" : "Blog"}
+        {key === "home" ? "Home" : key === "about" ? "About" : key === "projects" ? "Projects" : key === "cv" ? "CV" : "Blog"}
       </Anchor>
     ))}
     </div>
