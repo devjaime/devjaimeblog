@@ -74,7 +74,11 @@ export const GLOBAL = {
     about: "/about",
     projects: "/projects",
     blog: "/blog",
+    cv: "/cv",
   },
+
+  // External links
+  youtubeChannel: "https://m.youtube.com/devjaime",
 
   // Skills and expertise
   skills: {
