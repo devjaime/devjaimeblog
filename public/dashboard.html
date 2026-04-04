@@ -17,6 +17,8 @@
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
         }
+        .loading { opacity: 0.5; }
+        .error-state { @apply text-red-500; }
     </style>
 </head>
 <body class="bg-gray-100 min-h-screen">
@@ -45,9 +47,9 @@
                     <span class="text-gray-500 text-sm">Valor Propiedad</span>
                     <span class="text-2xl">🏠</span>
                 </div>
-                <p class="text-3xl font-bold text-blue-600">$134.750.000</p>
-                <p class="text-sm text-gray-500 mt-1">3,500 UF × 38,500</p>
-                <p class="text-sm text-green-600 mt-2 font-semibold">📈 +45% plusvalía</p>
+                <p class="text-3xl font-bold text-blue-600" id="propertyValue">-</p>
+                <p class="text-sm text-gray-500 mt-1" id="propertyUF">- UF</p>
+                <p class="text-sm text-green-600 mt-2 font-semibold" id="plusvalia">-</p>
             </div>
 
             <!-- UF -->
@@ -56,9 +58,9 @@
                     <span class="text-gray-500 text-sm">UF Hoy</span>
                     <span class="text-2xl">💰</span>
                 </div>
-                <p class="text-3xl font-bold text-purple-600">$38.500</p>
-                <p class="text-sm text-gray-500 mt-1">Enero 2026</p>
-                <p class="text-sm text-green-500 mt-2">📈 +1.3% anual</p>
+                <p class="text-3xl font-bold text-purple-600" id="ufValue">-</p>
+                <p class="text-sm text-gray-500 mt-1">CLP</p>
+                <p class="text-sm mt-2" id="ufChange">-</p>
             </div>
 
             <!-- Arriendo -->
@@ -67,9 +69,9 @@
                     <span class="text-gray-500 text-sm">Arriendo Mensual</span>
                     <span class="text-2xl">💵</span>
                 </div>
-                <p class="text-3xl font-bold text-green-600">$500.000</p>
+                <p class="text-3xl font-bold text-green-600" id="rentalValue">-</p>
                 <p class="text-sm text-gray-500 mt-1">CLP/mes</p>
-                <p class="text-sm text-blue-600 mt-2">📊 4.45% rentabilidad</p>
+                <p class="text-sm text-blue-600 mt-2" id="rentabilidad">-</p>
             </div>
 
             <!-- Dividendos -->
@@ -78,9 +80,9 @@
                     <span class="text-gray-500 text-sm">Crédito Hipotecario</span>
                     <span class="text-2xl">🏦</span>
                 </div>
-                <p class="text-3xl font-bold text-orange-600">4/300</p>
+                <p class="text-3xl font-bold text-orange-600" id="dividendos">-</p>
                 <p class="text-sm text-gray-500 mt-1">Dividendos pagados</p>
-                <p class="text-sm text-gray-600 mt-2">~24 años restantes</p>
+                <p class="text-sm text-gray-600 mt-2" id="anosRestantes">-</p>
             </div>
         </section>
 
@@ -110,21 +112,21 @@
                 <h3 class="text-lg font-semibold mb-4">🎯 Meta: Segunda Propiedad</h3>
                 <div class="space-y-4">
                     <div class="flex justify-between items-center">
-                        <span class="text-gray-600">target</span>
-                        <span class="font-semibold">2028-2029</span>
+                        <span class="text-gray-600">Objetivo</span>
+                        <span class="font-semibold" id="metaObjetivo">2028-2029</span>
                     </div>
                     <div class="w-full bg-gray-200 rounded-full h-4">
-                        <div class="bg-blue-600 h-4 rounded-full transition-all duration-1000" style="width: 0%"></div>
+                        <div class="bg-blue-600 h-4 rounded-full transition-all duration-1000" id="metaProgress" style="width: 0%"></div>
                     </div>
-                    <p class="text-sm text-gray-500">Ahorro vs objetivo (meta: $60M)</p>
+                    <p class="text-sm text-gray-500">Ahorro vs objetivo (meta: <span id="metaMonto">$60M</span>)</p>
                     <div class="grid grid-cols-2 gap-4 mt-4">
                         <div class="text-center p-3 bg-blue-50 rounded-lg">
                             <p class="text-xs text-gray-500">Ahorrado</p>
-                            <p class="text-lg font-bold text-blue-600" id="ahorradoValue">$0</p>
+                            <p class="text-lg font-bold text-blue-600" id="metaAhorrado">$0</p>
                         </div>
                         <div class="text-center p-3 bg-gray-50 rounded-lg">
-                            <p class="text-xs text-gray-500">Objetivo</p>
-                            <p class="text-lg font-bold text-gray-600">$60M</p>
+                            <p class="text-xs text-gray-500">Restante</p>
+                            <p class="text-lg font-bold text-gray-600" id="metaRestante">$0</p>
                         </div>
                     </div>
                 </div>
@@ -136,20 +138,20 @@
                 <div class="space-y-4">
                     <div class="flex justify-between items-center">
                         <span class="text-gray-600">Dividendos</span>
-                        <span class="font-semibold">4/300</span>
+                        <span class="font-semibold" id="creditoProgress">-</span>
                     </div>
                     <div class="w-full bg-gray-200 rounded-full h-4">
-                        <div class="bg-green-500 h-4 rounded-full" style="width: 1.3%"></div>
+                        <div class="bg-green-500 h-4 rounded-full" id="creditoBar" style="width: 0%"></div>
                     </div>
-                    <p class="text-sm text-gray-500">1.3% completado</p>
+                    <p class="text-sm text-gray-500" id="creditoProgreso">-</p>
                     <div class="grid grid-cols-2 gap-4 mt-4">
                         <div class="text-center p-3 bg-green-50 rounded-lg">
                             <p class="text-xs text-gray-500">Total Pagado</p>
-                            <p class="text-lg font-bold text-green-600">$800K</p>
+                            <p class="text-lg font-bold text-green-600" id="creditoPagado">-</p>
                         </div>
                         <div class="text-center p-3 bg-orange-50 rounded-lg">
                             <p class="text-xs text-gray-500">Restante</p>
-                            <p class="text-lg font-bold text-orange-600">~$59M</p>
+                            <p class="text-lg font-bold text-orange-600" id="creditoRestante">-</p>
                         </div>
                     </div>
                 </div>
@@ -157,42 +159,15 @@
 
             <!-- Próximos Eventos -->
             <div class="card fade-in" style="animation-delay: 0.9s">
-                <h3 class="text-lg font-semibold mb-4">📅 Calendario 2026</h3>
-                <div class="space-y-3">
-                    <div class="flex items-center gap-3 p-3 bg-yellow-50 rounded-lg border-l-4 border-yellow-400">
-                        <span class="text-2xl">🔧</span>
-                        <div>
-                            <p class="font-semibold text-sm">Mantención Techumbre</p>
-                            <p class="text-xs text-gray-500">Junio 2026 | ~$80K</p>
-                        </div>
-                    </div>
-                    <div class="flex items-center gap-3 p-3 bg-orange-50 rounded-lg border-l-4 border-orange-400">
-                        <span class="text-2xl">🔥</span>
-                        <div>
-                            <p class="font-semibold text-sm">Mantención Calefacción</p>
-                            <p class="text-xs text-gray-500">Abril 2026 | ~$45K</p>
-                        </div>
-                    </div>
-                    <div class="flex items-center gap-3 p-3 bg-blue-50 rounded-lg border-l-4 border-blue-400">
-                        <span class="text-2xl">💰</span>
-                        <div>
-                            <p class="font-semibold text-sm">Subir Arriendo</p>
-                            <p class="text-xs text-gray-500">Enero 2027 → $520K (+4%)</p>
-                        </div>
-                    </div>
-                    <div class="flex items-center gap-3 p-3 bg-purple-50 rounded-lg border-l-4 border-purple-400">
-                        <span class="text-2xl">🎨</span>
-                        <div>
-                            <p class="font-semibold text-sm">Pintura Exterior</p>
-                            <p class="text-xs text-gray-500">Enero 2027 | ~$500K</p>
-                        </div>
-                    </div>
+                <h3 class="text-lg font-semibold mb-4">📅 Calendario</h3>
+                <div class="space-y-3" id="timelineContainer">
+                    <!-- Se llena dinámicamente -->
                 </div>
             </div>
         </section>
 
         <!-- Mantenciones Detalladas -->
-        <section class="card mb-8 fade-in" style="animation-delay: 1s">
+        <section class="card mb-8 fade-in" style="animation-delay: 1.0s">
             <h3 class="text-lg font-semibold mb-4">🔧 Programa de Mantenciones</h3>
             <div class="overflow-x-auto">
                 <table class="w-full text-sm">
@@ -206,47 +181,8 @@
                             <th class="px-4 py-3 text-left font-semibold">Estado</th>
                         </tr>
                     </thead>
-                    <tbody class="divide-y">
-                        <tr class="hover:bg-yellow-50">
-                            <td class="px-4 py-3">Revisión techumbre</td>
-                            <td class="px-4 py-3">Anual</td>
-                            <td class="px-4 py-3">Jun 2025</td>
-                            <td class="px-4 py-3 font-semibold">Jun 2026</td>
-                            <td class="px-4 py-3">$80,000</td>
-                            <td class="px-4 py-3"><span class="px-2 py-1 bg-yellow-100 text-yellow-800 rounded text-xs font-semibold">⚠️ Próxima</span></td>
-                        </tr>
-                        <tr class="hover:bg-orange-50">
-                            <td class="px-4 py-3">Mantención calefacción</td>
-                            <td class="px-4 py-3">Anual</td>
-                            <td class="px-4 py-3">Abr 2025</td>
-                            <td class="px-4 py-3 font-semibold">Abr 2026</td>
-                            <td class="px-4 py-3">$45,000</td>
-                            <td class="px-4 py-3"><span class="px-2 py-1 bg-orange-100 text-orange-800 rounded text-xs font-semibold">🔥 En Breve</span></td>
-                        </tr>
-                        <tr class="hover:bg-green-50">
-                            <td class="px-4 py-3">Limpieza alcantarillado</td>
-                            <td class="px-4 py-3">Bianual</td>
-                            <td class="px-4 py-3">Ene 2025</td>
-                            <td class="px-4 py-3">Ene 2027</td>
-                            <td class="px-4 py-3">$60,000</td>
-                            <td class="px-4 py-3"><span class="px-2 py-1 bg-green-100 text-green-800 rounded text-xs">✓ OK</span></td>
-                        </tr>
-                        <tr class="hover:bg-green-50">
-                            <td class="px-4 py-3">Revisión extintores</td>
-                            <td class="px-4 py-3">Anual</td>
-                            <td class="px-4 py-3">Dic 2025</td>
-                            <td class="px-4 py-3">Dic 2026</td>
-                            <td class="px-4 py-3">$25,000</td>
-                            <td class="px-4 py-3"><span class="px-2 py-1 bg-green-100 text-green-800 rounded text-xs">✓ OK</span></td>
-                        </tr>
-                        <tr class="hover:bg-gray-50">
-                            <td class="px-4 py-3">Pintura exterior</td>
-                            <td class="px-4 py-3">3 años</td>
-                            <td class="px-4 py-3">Ene 2024</td>
-                            <td class="px-4 py-3">Ene 2027</td>
-                            <td class="px-4 py-3">$500,000</td>
-                            <td class="px-4 py-3"><span class="px-2 py-1 bg-gray-100 text-gray-800 rounded text-xs">📅 Planificada</span></td>
-                        </tr>
+                    <tbody id="mantencionesTable">
+                        <!-- Se llena dinámicamente -->
                     </tbody>
                 </table>
             </div>
@@ -256,31 +192,8 @@
         <section class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
             <div class="card fade-in" style="animation-delay: 1.1s">
                 <h3 class="text-lg font-semibold mb-4">🏠 Datos Propiedad</h3>
-                <dl class="space-y-3">
-                    <div class="flex justify-between py-2 border-b">
-                        <dt class="text-gray-600">Ubicación</dt>
-                        <dd class="font-semibold">Coquimbo, Altos del Mirador</dd>
-                    </div>
-                    <div class="flex justify-between py-2 border-b">
-                        <dt class="text-gray-600">Tipo</dt>
-                        <dd class="font-semibold">Casa</dd>
-                    </div>
-                    <div class="flex justify-between py-2 border-b">
-                        <dt class="text-gray-600">Precio Compra</dt>
-                        <dd class="font-semibold">2,400 UF</dd>
-                    </div>
-                    <div class="flex justify-between py-2 border-b">
-                        <dt class="text-gray-600">Valor Actual</dt>
-                        <dd class="font-semibold text-green-600">3,500 UF</dd>
-                    </div>
-                    <div class="flex justify-between py-2 border-b">
-                        <dt class="text-gray-600">Plusvalía</dt>
-                        <dd class="font-semibold text-green-600">+1,100 UF (+45%)</dd>
-                    </div>
-                    <div class="flex justify-between py-2">
-                        <dt class="text-gray-600">Banco</dt>
-                        <dd class="font-semibold">Banco Estado</dd>
-                    </div>
+                <dl class="space-y-3" id="datosPropiedad">
+                    <!-- Se llena dinámicamente -->
                 </dl>
             </div>
 
@@ -301,11 +214,7 @@
                     </li>
                     <li class="flex items-start gap-3 p-2 bg-blue-50 rounded-lg">
                         <span class="text-blue-500 text-xl">💡</span>
-                        <span class="text-sm">Plusvalía va muy bien - 45% en 4 meses</span>
-                    </li>
-                    <li class="flex items-start gap-3 p-2 bg-purple-50 rounded-lg">
-                        <span class="text-purple-500 text-xl">📈</span>
-                        <span class="text-sm">Evaluar en 8 meses aumento de arriendo</span>
+                        <span class="text-sm">Plusvalía va muy bien - en camino</span>
                     </li>
                 </ul>
             </div>
@@ -316,23 +225,28 @@
             <h3 class="text-lg font-semibold mb-4">💰 Resumen Inversión Total</h3>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
                 <div>
-                    <p class="text-sm text-gray-500">Inversión Total</p>
-                    <p class="text-2xl font-bold text-blue-600">$134.75M</p>
+                    <p class="text-sm text-gray-500">Valor Actual</p>
+                    <p class="text-2xl font-bold text-blue-600" id="resumenValor">-</p>
                 </div>
                 <div>
-                    <p class="text-sm text-gray-500">Ganancia/Pérdida</p>
-                    <p class="text-2xl font-bold text-green-600">+$42.35M</p>
+                    <p class="text-sm text-gray-500">Ganancia</p>
+                    <p class="text-2xl font-bold text-green-600" id="resumenGanancia">-</p>
                 </div>
                 <div>
                     <p class="text-sm text-gray-500">Ingreso Anual</p>
-                    <p class="text-2xl font-bold text-green-600">$6M</p>
+                    <p class="text-2xl font-bold text-green-600" id="resumenIngreso">-</p>
                 </div>
                 <div>
                     <p class="text-sm text-gray-500">ROI</p>
-                    <p class="text-2xl font-bold text-green-600">4.45%</p>
+                    <p class="text-2xl font-bold text-green-600" id="resumenROI">-</p>
                 </div>
             </div>
         </section>
+
+        <!-- Error State -->
+        <div id="errorState" class="hidden card bg-red-50 border border-red-200">
+            <p class="text-red-600 text-center">⚠️ Error al cargar datos. Verificando...</p>
+        </div>
     </main>
 
     <!-- Footer -->
@@ -343,109 +257,229 @@
     </footer>
 
     <script>
-        // Actualizar fecha
-        document.getElementById('lastUpdate').textContent = new Date().toLocaleString('es-CL', {
-            day: '2-digit',
-            month: 'short',
-            year: 'numeric',
-            hour: '2-digit',
-            minute: '2-digit'
-        });
+        // Configuración
+        const API_URL = '/api/dashboard.json';
+        let plusvaliaChart = null;
+        let ufChart = null;
 
-        // Gráfico Plusvalía
-        const plusvaliaCtx = document.getElementById('plusvaliaChart').getContext('2d');
-        new Chart(plusvaliaCtx, {
-            type: 'line',
-            data: {
-                labels: ['Dic 2025', 'Ene 2026', 'Feb 2026', 'Mar 2026', 'Abr 2026'],
-                datasets: [{
-                    label: 'Valor UF',
-                    data: [3200, 3300, 3400, 3500, 3500],
-                    borderColor: '#3B82F6',
-                    backgroundColor: 'rgba(59, 130, 246, 0.1)',
-                    fill: true,
-                    tension: 0.4,
-                    pointRadius: 6,
-                    pointHoverRadius: 8
-                }]
-            },
-            options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                plugins: {
-                    legend: { display: false },
-                    tooltip: {
-                        callbacks: {
-                            label: function(context) {
-                                return context.parsed.y + ' UF';
-                            }
-                        }
-                    }
+        // Utilidades
+        function formatCurrency(num) {
+            return '$' + num.toLocaleString('es-CL');
+        }
+
+        function formatUF(valor) {
+            return valor.toLocaleString('es-CL') + ' UF';
+        }
+
+        // Cargar datos del API
+        async function loadData() {
+            try {
+                const response = await fetch(API_URL);
+                if (!response.ok) throw new Error('API Error');
+                const data = await response.json();
+                updateDashboard(data);
+                document.getElementById('errorState').classList.add('hidden');
+            } catch (error) {
+                console.error('Error cargando datos:', error);
+                document.getElementById('errorState').classList.remove('hidden');
+            }
+        }
+
+        // Actualizar dashboard con datos
+        function updateDashboard(data) {
+            // Fecha
+            document.getElementById('lastUpdate').textContent = new Date().toLocaleString('es-CL', {
+                day: '2-digit',
+                month: 'short',
+                year: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit'
+            });
+
+            // Valores principales
+            document.getElementById('propertyValue').textContent = formatCurrency(data.valorizacion.valorActualCLP);
+            document.getElementById('propertyUF').textContent = formatUF(data.valorizacion.valorActualUF);
+            document.getElementById('plusvalia').textContent = `📈 +${data.valorizacion.plusvaliaUF} UF (+${data.valorizacion.plusvaliaPorcentaje}%)`;
+            
+            document.getElementById('ufValue').textContent = '$' + data.uf.actual.toLocaleString('es-CL');
+            document.getElementById('ufChange').textContent = data.uf.cambio >= 0 ? '📈 +' + data.uf.cambio + '%' : '📉 ' + data.uf.cambio + '%';
+            document.getElementById('ufChange').className = data.uf.cambio >= 0 ? 'text-sm text-green-500 mt-2' : 'text-sm text-red-500 mt-2';
+
+            document.getElementById('rentalValue').textContent = formatCurrency(data.arriendo.actual);
+            document.getElementById('rentabilidad').textContent = `📊 ${data.arriendo.rentabilidadBruta}% rentabilidad`;
+
+            document.getElementById('dividendos').textContent = `${data.credito.dividendosPagados}/${data.credito.dividendosTotales}`;
+            document.getElementById('anosRestantes').textContent = `~${data.credito.anosRestantes} años restantes`;
+
+            // Metas
+            const meta = data.metas.segundaPropiedad;
+            document.getElementById('metaObjetivo').textContent = meta.objetivo;
+            document.getElementById('metaAhorrado').textContent = formatCurrency(meta.ahorradoCLP);
+            document.getElementById('metaRestante').textContent = formatCurrency(meta.objetivoCLP - meta.ahorradoCLP);
+            document.getElementById('metaMonto').textContent = formatCurrency(meta.objetivoCLP);
+            setTimeout(() => {
+                document.getElementById('metaProgress').style.width = meta.porcentaje + '%';
+            }, 500);
+
+            // Crédito
+            document.getElementById('creditoProgress').textContent = `${data.credito.dividendosPagados}/${data.credito.dividendosTotales}`;
+            document.getElementById('creditoProgreso').textContent = `${data.credito.progreso}% completado`;
+            document.getElementById('creditoBar').style.width = data.credito.progreso + '%';
+
+            // Timeline
+            const timelineContainer = document.getElementById('timelineContainer');
+            timelineContainer.innerHTML = data.timeline.map(event => {
+                const colors = {
+                    warning: 'bg-yellow-50 border-l-4 border-yellow-400',
+                    success: 'bg-green-50 border-l-4 border-green-400',
+                    info: 'bg-blue-50 border-l-4 border-blue-400',
+                    target: 'bg-purple-50 border-l-4 border-purple-400'
+                };
+                const icons = {
+                    warning: '🔧',
+                    success: '💰',
+                    info: '📈',
+                    target: '🎯'
+                };
+                return `
+                    <div class="flex items-center gap-3 p-3 ${colors[event.tipo] || 'bg-gray-50'} rounded-lg">
+                        <span class="text-2xl">${icons[event.tipo] || '📅'}</span>
+                        <div>
+                            <p class="font-semibold text-sm">${event.evento}</p>
+                            <p class="text-xs text-gray-500">${event.fecha}</p>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+
+            // Mantenciones
+            const mantTable = document.getElementById('mantencionesTable');
+            mantTable.innerHTML = data.mantenciones.map(m => {
+                const estado = m.proxima === '2026-04' || m.proxima === '2026-06' ? 
+                    { class: 'bg-yellow-100 text-yellow-800', text: '⚠️ Próxima' } :
+                    { class: 'bg-green-100 text-green-800', text: '✓ OK' };
+                return `
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-4 py-3">${m.nombre}</td>
+                        <td class="px-4 py-3">${m.frecuencia}</td>
+                        <td class="px-4 py-3">${m.ultima}</td>
+                        <td class="px-4 py-3 font-semibold">${m.proxima}</td>
+                        <td class="px-4 py-3">${formatCurrency(m.costo)}</td>
+                        <td class="px-4 py-3"><span class="px-2 py-1 ${estado.class} rounded text-xs font-semibold">${estado.text}</span></td>
+                    </tr>
+                `;
+            }).join('');
+
+            // Datos Propiedad
+            const datosProp = document.getElementById('datosPropiedad');
+            datosProp.innerHTML = `
+                <div class="flex justify-between py-2 border-b">
+                    <dt class="text-gray-600">Ubicación</dt>
+                    <dd class="font-semibold">${data.propiedad.direccion}</dd>
+                </div>
+                <div class="flex justify-between py-2 border-b">
+                    <dt class="text-gray-600">Tipo</dt>
+                    <dd class="font-semibold">${data.propiedad.tipo}</dd>
+                </div>
+                <div class="flex justify-between py-2 border-b">
+                    <dt class="text-gray-600">Precio Compra</dt>
+                    <dd class="font-semibold">${formatUF(data.valorizacion.precioCompraUF)}</dd>
+                </div>
+                <div class="flex justify-between py-2 border-b">
+                    <dt class="text-gray-600">Valor Actual</dt>
+                    <dd class="font-semibold text-green-600">${formatUF(data.valorizacion.valorActualUF)}</dd>
+                </div>
+                <div class="flex justify-between py-2 border-b">
+                    <dt class="text-gray-600">Plusvalía</dt>
+                    <dd class="font-semibold text-green-600">+${data.valorizacion.plusvaliaUF} UF (+${data.valorizacion.plusvaliaPorcentaje}%)</dd>
+                </div>
+                <div class="flex justify-between py-2">
+                    <dt class="text-gray-600">Banco</dt>
+                    <dd class="font-semibold">${data.propiedad.banco}</dd>
+                </div>
+            `;
+
+            // Resumen
+            document.getElementById('resumenValor').textContent = formatCurrency(data.valorizacion.valorActualCLP);
+            document.getElementById('resumenGanancia').textContent = '+' + formatCurrency(data.valorizacion.valorActualCLP - data.valorizacion.precioCompraCLP);
+            document.getElementById('resumenIngreso').textContent = formatCurrency(data.arriendo.ingresoAnualCLP);
+            document.getElementById('resumenROI').textContent = data.arriendo.rentabilidadBruta + '%';
+
+            // Gráficos
+            renderCharts(data);
+        }
+
+        // Renderizar gráficos
+        function renderCharts(data) {
+            // Gráfico Plusvalía
+            const plusvaliaCtx = document.getElementById('plusvaliaChart').getContext('2d');
+            if (plusvaliaChart) plusvaliaChart.destroy();
+            
+            plusvaliaChart = new Chart(plusvaliaCtx, {
+                type: 'line',
+                data: {
+                    labels: data.uf.historial.map(h => h.fecha),
+                    datasets: [{
+                        label: 'Valor UF',
+                        data: data.uf.historial.map(h => data.propiedad.precioCompraUF + (h.valor - data.uf.historial[0].valor) / data.uf.historial[0].valor * data.propiedad.precioCompraUF * 0.1),
+                        borderColor: '#3B82F6',
+                        backgroundColor: 'rgba(59, 130, 246, 0.1)',
+                        fill: true,
+                        tension: 0.4,
+                        pointRadius: 6,
+                        pointHoverRadius: 8
+                    }]
                 },
-                scales: {
-                    y: {
-                        beginAtZero: false,
-                        min: 3000,
-                        title: {
-                            display: true,
-                            text: 'UF'
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: { legend: { display: false } },
+                    scales: {
+                        y: {
+                            beginAtZero: false,
+                            suggestedMin: data.propiedad.precioCompraUF - 100
                         }
                     }
                 }
-            }
-        });
+            });
 
-        // Gráfico UF
-        const ufCtx = document.getElementById('ufChart').getContext('2d');
-        new Chart(ufCtx, {
-            type: 'bar',
-            data: {
-                labels: ['Ene 2026', 'Feb 2026', 'Mar 2026', 'Abr 2026'],
-                datasets: [{
-                    label: 'UF',
-                    data: [38000, 38200, 38400, 38500],
-                    backgroundColor: [
-                        'rgba(139, 92, 246, 0.7)',
-                        'rgba(139, 92, 246, 0.75)',
-                        'rgba(139, 92, 246, 0.85)',
-                        'rgba(139, 92, 246, 1)'
-                    ],
-                    borderRadius: 8
-                }]
-            },
-            options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                plugins: {
-                    legend: { display: false },
-                    tooltip: {
-                        callbacks: {
-                            label: function(context) {
-                                return '$' + context.parsed.y.toLocaleString('es-CL');
-                            }
-                        }
-                    }
+            // Gráfico UF
+            const ufCtx = document.getElementById('ufChart').getContext('2d');
+            if (ufChart) ufChart.destroy();
+            
+            ufChart = new Chart(ufCtx, {
+                type: 'bar',
+                data: {
+                    labels: data.uf.historial.map(h => h.fecha),
+                    datasets: [{
+                        label: 'UF',
+                        data: data.uf.historial.map(h => h.valor),
+                        backgroundColor: data.uf.historial.map((h, i) => 
+                            i === data.uf.historial.length - 1 ? 'rgba(139, 92, 246, 1)' : 'rgba(139, 92, 246, 0.7)'
+                        ),
+                        borderRadius: 8
+                    }]
                 },
-                scales: {
-                    y: {
-                        beginAtZero: false,
-                        min: 37500,
-                        title: {
-                            display: true,
-                            text: 'Valor UF'
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: { legend: { display: false } },
+                    scales: {
+                        y: {
+                            beginAtZero: false,
+                            suggestedMin: data.uf.historial[0].valor - 500
                         }
                     }
                 }
-            }
-        });
+            });
+        }
 
-        // Animar barra de progreso al cargar
-        setTimeout(() => {
-            const progressBar = document.querySelector('.bg-blue-600.h-4.rounded-full');
-            if (progressBar) {
-                progressBar.style.width = '25%';
-            }
-        }, 500);
+        // Inicializar
+        document.addEventListener('DOMContentLoaded', () => {
+            loadData();
+            // Recargar cada 5 minutos
+            setInterval(loadData, 5 * 60 * 1000);
+        });
     </script>
 </body>
 </html>
