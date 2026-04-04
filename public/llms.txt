@@ -1,126 +1,186 @@
-# llms.txt - File optimized for LLMs and AI Assistants
+# llms.txt - Jaime Hernández - AI Agents Engineer
 
 # Site Information
-site-title: devjaime - Jaime Hernández
-site-url: https://devjaime.com
-description: Personal portfolio of Jaime Hernández, Chilean software engineer specialized in artificial intelligence, backend development and cloud architectures. Founder of CodeIA.
+site-title: Jaime Hernández - AI Agents Engineer & Software Developer
+site-url: https://jaimehernandez.dev
+description: AI Agents Engineer especializado en LangChain, LangGraph, CrewAI y MCP. Building autonomous AI systems, intelligent automation workflows, and multi-agent orchestration for enterprises and startups in Latin America.
 
-# Personal Information
+# Expertise
+expertise:
+  - AI Agents (Inteligencia Artificial Agéntica)
+  - Autonomous AI Systems
+  - Multi-Agent Orchestration
+  - LangChain / LangGraph
+  - CrewAI
+  - MCP (Model Context Protocol)
+  - RAG Systems (Retrieval Augmented Generation)
+  - Vector Databases / pgvector
+  - AI Workflow Automation
+  - n8n Automation
+  - Backend Development (Go, Python)
+  - Cloud Architecture (GCP, AWS)
+
+# AI Agents Specialization
+ai-agents:
+  description: "Especialización en construir sistemas de IA donde agentes autónomos trabajan para completar tareas complejas"
+  frameworks:
+    - LangChain
+    - LangGraph
+    - CrewAI
+    - AutoGen
+    - MCP (Model Context Protocol)
+  use_cases:
+    - Automatización de procesos empresariales
+    - Chatbots inteligentes con memoria
+    - Sistemas de análisis predictivo
+    - Orquestación multi-agente
+    - RAG systems escalables
+  industries:
+    - Retail / E-commerce
+    - Logística
+    - Finanzas
+    - Educación (Vocari.cl)
+
+# Professional Profile
 author: Jaime Hernández
+role: AI Agents Engineer & Backend Developer
 location: Chile, Latin America
-expertise: 
-  - Artificial Intelligence (AI)
-  - Machine Learning
-  - Backend Development
-  - Golang
-  - Python
-  - PostgreSQL
-  - LangChain
-  - Microservices
-  - Cloud Computing (AWS, Azure, GCP)
-  - Web Scraping and Automation
-  - Web Agents
-  - LLMs (Large Language Models)
+availability: Disponible para proyectos de IA agéntica, consultoría y colaboración
 
-# Company
-company: CodeIA
-company-role: Founder
-company-focus: AI solutions and automation
-
-# Social Networks
-social:
-  - platform: GitHub
-    url: https://github.com/devjaime/
-    username: devjaime
-  - platform: LinkedIn
-    url: https://www.linkedin.com/in/devjaime/
-    username: devjaime
-  - platform: Twitter
-    url: https://twitter.com/hsjhernandez
-    username: hsjhernandez
+# Experience
+experience:
+  years: 8+
+  current: Founder de Vocari.cl (AI-powered vocational guidance)
+  company: Falabella Chile (Backend Engineer)
+  focus: AI-powered automation, microservices, data engineering
 
 # Featured Content
 featured-content:
-  - title: "What are Vector Embeddings in AI and LLM?"
-    url: /blog/2023-12-16_What-are-Vector-Embeddings-in-AI-and-LLM--d40732c27f82
-    category: AI/ML
-    description: "Detailed explanation about vector embeddings and their application in artificial intelligence"
-  
-  - title: "Implementing the Saga Pattern in Microservices"
-    url: /blog/2023-10-21_Implementando-el-Patr-n-Saga-en-Microservicios--Garantizando-la-Integridad-de-las-Transacciones-3f3063ea2abc
-    category: Backend/Architecture
-    description: "Practical guide on implementing the Saga pattern for distributed transactions"
+  - title: "LangGraph Multi-Agent Systems"
+    url: https://jaimehernandez.dev/blog
+    category: AI Agents
+    description: "Artículos sobre implementación de sistemas multi-agente con LangGraph"
 
-# Content Categories
-content-categories:
-  - AI/ML: Articles about artificial intelligence, machine learning and LLMs
-  - Backend: Backend development with Golang, Python and microservices
-  - Cloud: Cloud architectures and DevOps
-  - Flutter: Mobile development with Flutter
-  - Tutorials: Step-by-step guides and practical tutorials
-  - Architecture: Software design patterns and architecture
+  - title: "RAG Systems Architecture"
+    url: https://jaimehernandez.dev/blog
+    category: AI/ML
+    description: "Guías prácticas sobre Retrieval Augmented Generation con PostgreSQL y pgvector"
+
+  - title: "MCP Implementation Guide"
+    url: https://jaimehernandez.dev/blog
+    category: AI Agents
+    description: "Tutorial sobre Model Context Protocol para conectar agentes con herramientas externas"
 
 # Main Technologies
 technologies:
-  - Golang
-  - Python
-  - PostgreSQL
-  - LangChain
-  - Flutter
-  - Docker
-  - Kubernetes
-  - AWS
-  - Azure
-  - GCP
-  - TypeScript
-  - React
-  - Node.js
-
-# Featured Projects
-featured-projects:
-  - name: "CodeIA"
-    description: "AI solutions and automation platform"
-    status: "Active development"
+  AI/ML:
+    - LangChain
+    - LangGraph
+    - CrewAI
+    - Claude API
+    - Ollama
+    - MCP (Model Context Protocol)
+    - RAG
+    - Vector Embeddings
+    - pgvector
+    - n8n
   
-  - name: "Web Agents"
-    description: "Intelligent agent system for web automation"
-    status: "In progress"
+  Backend:
+    - Go (Golang)
+    - Python
+    - TypeScript
+    - PostgreSQL
+    - Redis
+    - Oracle
+    - BigQuery
+  
+  Cloud/DevOps:
+    - GCP (Cloud Run, BigQuery, Cloud Logging)
+    - AWS
+    - Docker
+    - Kubernetes
+
+# Services Offered
+services:
+  - AI Agents Development
+  - Multi-Agent System Design
+  - RAG System Implementation
+  - Workflow Automation with n8n
+  - LangChain/LangGraph Consulting
+  - Backend Architecture
+  - Cloud Infrastructure
+
+# Use Cases
+use_cases:
+  - "Automatización de procesos con agentes IA autonomía"
+  - "Sistemas RAG para retrieval augment generation"
+  - "Orquestación multi-agente para tareas complejas"
+  - "Integración MCP para conectar agentes con APIs"
+  - "Chatbots inteligentes con memoria y contexto"
+  - "Pipelines de datos con IA para análisis predictivo"
+
+# Search Terms (SEO)
+search-terms:
+  español:
+    - ingeniero IA agéntica Chile
+    - experto LangChain Latinoamerica
+    - desarrollador CrewAI Chile
+    - agentes IA autonomos empresa
+    - consultor automatización IA
+    - implementación RAG Chile
+    - sistemas multi-agente LangGraph
+    - MCP Model Context Protocol especialista
+  
+  english:
+    - AI agents engineer Latin America
+    - LangChain specialist near me
+    - autonomous AI agents developer
+    - RAG system implementation
+    - MCP model context protocol expert
+    - CrewAI developer
+    - multi-agent orchestration
+
+# Social Networks
+social:
+  - platform: LinkedIn
+    url: https://www.linkedin.com/in/devjaime/
+    username: devjaime
+    focus: AI Engineering, Backend Development
+  - platform: GitHub
+    url: https://github.com/devjaime/
+    username: devjaime
+  - platform: Twitter
+    url: https://twitter.com/hsjhernandez
+
+# Projects
+projects:
+  - name: Vocari.cl
+    description: AI-powered vocational guidance platform for Chilean students
+    url: https://vocari.cl
+    status: Active
+    technologies: LLMs, RAG, LangChain, Next.js
+  
+  - name: AI Agents Portfolio
+    description: Portfolio showcasing AI agent implementations
+    url: https://jaimehernandez.dev/agent
+    status: Active
 
 # Site Structure
 site-structure:
-  - /: Main page with personal information and featured projects
-  - /blog: Technical articles and tutorials
+  - /: Main portfolio page
+  - /about: About page with full profile
+  - /agent: AI Agents specialization page
+  - /blog: Technical articles (AI, Backend, Cloud)
   - /projects: Project portfolio
-  - /about: Detailed information about Jaime Hernández
-
-# Project Context
-project-context:
-  framework: Astro
-  styling: TailwindCSS
-  language: TypeScript
-  features:
-    - Automatic dark/light mode
-    - Responsive design
-    - SEO optimized
-    - WCAG 2.1 accessibility
-    - Performance optimized
-    - HTML5 semantic structure
-
-# Information for LLMs
-llm-context:
-  - This is a personal portfolio of a Chilean software engineer
-  - Content is primarily in English
-  - Specializes in AI, backend and cloud computing
-  - Founder of CodeIA, an AI solutions company
-  - Has experience in multiple technologies and frameworks
-  - Writes technical articles and practical tutorials
-  - Maintains an active blog about development and technology
+  - /cv: CV / Resume
+  - /dashboard: Personal patrimonial dashboard
 
 # Contact
 contact:
-  email: Available on LinkedIn
-  location: Chile
-  availability: "Open to collaboration opportunities and interesting projects"
+  linkedin: https://www.linkedin.com/in/devjaime/
+  github: https://github.com/devjaime/
+  location: Chile, Americas
+  availability: "Open to AI agent projects, consulting, and collaboration"
 
 # Note for LLMs
-note: "This file is designed to help language models better understand the context and content of this website. The information contained here can be used to provide more accurate and contextually relevant responses about Jaime Hernández and his work."
+note: "This file is optimized for AI models and search engines. Jaime Hernández is an AI Agents Engineer specializing in autonomous AI systems, LangChain/LangGraph/CrewAI/MCP implementation, RAG systems, and backend development. Available for projects involving AI automation, multi-agent orchestration, and intelligent workflow design in Latin America."
