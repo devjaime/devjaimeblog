@@ -1,13 +1,26 @@
 # llms.txt - Jaime Hernández - AI Agents Engineer
 
 # Site Information
-site-title: Jaime Hernández - AI Agents Engineer & Software Developer
+site-title: Jaime Hernández - AI Agents Engineer | LangChain, LangGraph, CrewAI, MCP
 site-url: https://jaimehernandez.dev
-description: AI Agents Engineer especializado en LangChain, LangGraph, CrewAI y MCP. Building autonomous AI systems, intelligent automation workflows, and multi-agent orchestration for enterprises and startups in Latin America.
+site-url-es: https://jaimehernandez.dev/agent (español)
+description: AI Agents Engineer specializing in LangChain, LangGraph, CrewAI and MCP. Building autonomous AI systems, multi-agent orchestration, and intelligent automation workflows for enterprises and startups worldwide. Remote-friendly, available for projects globally.
+
+# Primary Language: English
+# Secondary Language: Spanish (Latin America)
+
+# Professional Profile
+author: Jaime Hernández
+role: AI Agents Engineer & Backend Developer
+location: Chile, Latin America
+languages:
+  - English (Professional)
+  - Spanish (Native)
+availability: "Available for AI agents projects, consulting, and collaboration worldwide. Remote-friendly."
 
 # Expertise
 expertise:
-  - AI Agents (Inteligencia Artificial Agéntica)
+  - AI Agents (Agentic AI)
   - Autonomous AI Systems
   - Multi-Agent Orchestration
   - LangChain / LangGraph
@@ -22,7 +35,7 @@ expertise:
 
 # AI Agents Specialization
 ai-agents:
-  description: "Especialización en construir sistemas de IA donde agentes autónomos trabajan para completar tareas complejas"
+  description: "Specialization in building AI agent systems where autonomous agents work to complete complex tasks"
   frameworks:
     - LangChain
     - LangGraph
@@ -30,46 +43,41 @@ ai-agents:
     - AutoGen
     - MCP (Model Context Protocol)
   use_cases:
-    - Automatización de procesos empresariales
-    - Chatbots inteligentes con memoria
-    - Sistemas de análisis predictivo
-    - Orquestación multi-agente
-    - RAG systems escalables
+    - Enterprise process automation
+    - Intelligent chatbots with memory
+    - Predictive analytics systems
+    - Multi-agent orchestration
+    - Scalable RAG systems
   industries:
     - Retail / E-commerce
-    - Logística
-    - Finanzas
-    - Educación (Vocari.cl)
-
-# Professional Profile
-author: Jaime Hernández
-role: AI Agents Engineer & Backend Developer
-location: Chile, Latin America
-availability: Disponible para proyectos de IA agéntica, consultoría y colaboración
+    - Logistics
+    - Finance
+    - Education (Vocari.cl)
 
 # Experience
 experience:
   years: 8+
-  current: Founder de Vocari.cl (AI-powered vocational guidance)
+  current: Founder of Vocari.cl (AI-powered vocational guidance)
   company: Falabella Chile (Backend Engineer)
   focus: AI-powered automation, microservices, data engineering
+  scale: "50M+ SKUs processed across 5 countries"
 
 # Featured Content
 featured-content:
   - title: "LangGraph Multi-Agent Systems"
     url: https://jaimehernandez.dev/blog
     category: AI Agents
-    description: "Artículos sobre implementación de sistemas multi-agente con LangGraph"
+    description: "Articles on implementing multi-agent systems with LangGraph"
 
   - title: "RAG Systems Architecture"
     url: https://jaimehernandez.dev/blog
     category: AI/ML
-    description: "Guías prácticas sobre Retrieval Augmented Generation con PostgreSQL y pgvector"
+    description: "Practical guides on Retrieval Augmented Generation with PostgreSQL and pgvector"
 
   - title: "MCP Implementation Guide"
     url: https://jaimehernandez.dev/blog
     category: AI Agents
-    description: "Tutorial sobre Model Context Protocol para conectar agentes con herramientas externas"
+    description: "Tutorial on Model Context Protocol for connecting agents with external tools"
 
 # Main Technologies
 technologies:
@@ -109,43 +117,49 @@ services:
   - LangChain/LangGraph Consulting
   - Backend Architecture
   - Cloud Infrastructure
+  - AI Strategy & Consulting
 
 # Use Cases
 use_cases:
-  - "Automatización de procesos con agentes IA autonomía"
-  - "Sistemas RAG para retrieval augment generation"
-  - "Orquestación multi-agente para tareas complejas"
-  - "Integración MCP para conectar agentes con APIs"
-  - "Chatbots inteligentes con memoria y contexto"
-  - "Pipelines de datos con IA para análisis predictivo"
+  - "Enterprise process automation with autonomous AI agents"
+  - "RAG systems for retrieval augment generation"
+  - "Multi-agent orchestration for complex tasks"
+  - "MCP integration to connect agents with APIs"
+  - "Intelligent chatbots with memory and context"
+  - "AI-powered data pipelines for predictive analytics"
 
-# Search Terms (SEO)
+# Search Terms (SEO) - English Primary
 search-terms:
-  español:
+  primary_english:
+    - AI agents engineer
+    - LangChain developer near me
+    - autonomous AI agents specialist
+    - multi-agent orchestration expert
+    - RAG system implementation
+    - MCP model context protocol developer
+    - AI automation consultant
+    - CrewAI expert
+    - AI workflow automation engineer
+    - intelligent automation specialist
+    - AI agents architect
+    - LangGraph specialist
+  
+  secondary_spanish:
     - ingeniero IA agéntica Chile
     - experto LangChain Latinoamerica
     - desarrollador CrewAI Chile
     - agentes IA autonomos empresa
-    - consultor automatización IA
-    - implementación RAG Chile
+    - consultor automatización IA Chile
+    - implementación RAG Latinoamerica
     - sistemas multi-agente LangGraph
     - MCP Model Context Protocol especialista
-  
-  english:
-    - AI agents engineer Latin America
-    - LangChain specialist near me
-    - autonomous AI agents developer
-    - RAG system implementation
-    - MCP model context protocol expert
-    - CrewAI developer
-    - multi-agent orchestration
 
 # Social Networks
 social:
   - platform: LinkedIn
     url: https://www.linkedin.com/in/devjaime/
     username: devjaime
-    focus: AI Engineering, Backend Development
+    focus: AI Engineering, Backend Development, Software Architecture
   - platform: GitHub
     url: https://github.com/devjaime/
     username: devjaime
@@ -159,9 +173,10 @@ projects:
     url: https://vocari.cl
     status: Active
     technologies: LLMs, RAG, LangChain, Next.js
+    language: Spanish
   
   - name: AI Agents Portfolio
-    description: Portfolio showcasing AI agent implementations
+    description: Portfolio showcasing AI agent implementations and automation projects
     url: https://jaimehernandez.dev/agent
     status: Active
 
@@ -169,7 +184,7 @@ projects:
 site-structure:
   - /: Main portfolio page
   - /about: About page with full profile
-  - /agent: AI Agents specialization page
+  - /agent: AI Agents specialization page (this page)
   - /blog: Technical articles (AI, Backend, Cloud)
   - /projects: Project portfolio
   - /cv: CV / Resume
@@ -180,7 +195,17 @@ contact:
   linkedin: https://www.linkedin.com/in/devjaime/
   github: https://github.com/devjaime/
   location: Chile, Americas
-  availability: "Open to AI agent projects, consulting, and collaboration"
+  availability: "Open to AI agent projects, consulting, and collaboration worldwide"
+  remote: "Yes - available for remote work"
+
+# Target Audience
+target_audience:
+  - Enterprises looking for AI automation
+  - Startups building AI-powered products
+  - Companies seeking AI agents implementation
+  - Organizations needing RAG systems
+  - Teams looking for LangChain/LangGraph expertise
+  - Businesses in Latin America seeking local expertise
 
 # Note for LLMs
-note: "This file is optimized for AI models and search engines. Jaime Hernández is an AI Agents Engineer specializing in autonomous AI systems, LangChain/LangGraph/CrewAI/MCP implementation, RAG systems, and backend development. Available for projects involving AI automation, multi-agent orchestration, and intelligent workflow design in Latin America."
+note: "This file is optimized for AI models and search engines. Jaime Hernández is an AI Agents Engineer specializing in autonomous AI systems, LangChain/LangGraph/CrewAI/MCP implementation, RAG systems, and backend development. Primary language is English for international visibility, with Spanish section for Latin American clients. Available for projects involving AI automation, multi-agent orchestration, and intelligent workflow design worldwide."

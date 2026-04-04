@@ -3,60 +3,65 @@ import Layout from "../layouts/Layout.astro";
 import Section from "../components/common/Section.astro";
 
 const tecnologias = [
-  { nombre: "LangChain", tipo: "framework", nivel: "Avanzado" },
-  { nombre: "LangGraph", tipo: "framework", nivel: "Avanzado" },
-  { nombre: "CrewAI", tipo: "framework", nivel: "Avanzado" },
-  { nombre: "MCP (Model Context Protocol)", tipo: "protocol", nivel: "Avanzado" },
-  { nombre: "n8n", tipo: "platform", nivel: "Avanzado" },
-  { nombre: "Autogen Studio", tipo: "platform", nivel: "Intermedio" },
-  { nombre: "Claude API", tipo: "llm", nivel: "Avanzado" },
-  { nombre: "Ollama", tipo: "llm", nivel: "Avanzado" },
-  { nombre: "Go + AI", tipo: "integration", nivel: "Avanzado" },
-  { nombre: "RAG Systems", tipo: "technique", nivel: "Avanzado" },
-  { nombre: "Vector Databases", tipo: "database", nivel: "Avanzado" },
-  { nombre: "Agent Orchestration", tipo: "technique", nivel: "Avanzado" },
+  { nombre: "LangChain", tipo: "framework", nivel: "Advanced" },
+  { nombre: "LangGraph", tipo: "framework", nivel: "Advanced" },
+  { nombre: "CrewAI", tipo: "framework", nivel: "Advanced" },
+  { nombre: "MCP (Model Context Protocol)", tipo: "protocol", nivel: "Advanced" },
+  { nombre: "n8n", tipo: "platform", nivel: "Advanced" },
+  { nombre: "Autogen Studio", tipo: "platform", nivel: "Intermediate" },
+  { nombre: "Claude API", tipo: "llm", nivel: "Advanced" },
+  { nombre: "Ollama", tipo: "llm", nivel: "Advanced" },
+  { nombre: "Go + AI", tipo: "integration", nivel: "Advanced" },
+  { nombre: "RAG Systems", tipo: "technique", nivel: "Advanced" },
+  { nombre: "Vector Databases", tipo: "database", nivel: "Advanced" },
+  { nombre: "Agent Orchestration", tipo: "technique", nivel: "Advanced" },
 ];
 
-const casos = [
+const servicios = [
   {
-    titulo: "Automatización de Procesos con Agentes IA",
-    descripcion: "Diseño e implementación de pipelines automatizados que combinan múltiples agentes IA para ejecutar workflows complejos de negocio.",
-    tags: ["LangGraph", "CrewAI", "Python"],
+    titulo: "AI Agents Development",
+    descripcion: "Design and build autonomous AI agents that execute complex business workflows without human intervention.",
+    tags: ["LangChain", "LangGraph", "Python"],
   },
   {
-    titulo: "Sistemas RAG para Retrieval Augment Generation",
-    descripcion: "Construcción de sistemas RAG escalables con chunking inteligente, embeddings optimizados y re-ranking para recuperación de contexto precisa.",
+    titulo: "Multi-Agent Orchestration",
+    descripcion: "Architectures where multiple specialized agents collaborate to solve complex tasks autonomously.",
+    tags: ["CrewAI", "MCP", "Python"],
+  },
+  {
+    titulo: "RAG System Implementation",
+    descripcion: "Scalable RAG systems with intelligent chunking, optimized embeddings, and re-ranking for precise context retrieval.",
     tags: ["RAG", "PostgreSQL", "pgvector"],
   },
   {
-    titulo: "Orquestación Multi-Agente",
-    descripcion: "Desarrollo de arquitecturas donde múltiples agentes especializados colaboran para resolver tareas complejas de manera autónoma.",
-    tags: ["LangChain", "MCP", "Autogen"],
-  },
-  {
-    titulo: "Integración MCP para Herramientas",
-    descripcion: "Implementación del Model Context Protocol para conectar agentes IA con APIs externas, bases de datos y servicios empresariales.",
+    titulo: "MCP Integration",
+    descripcion: "Implement Model Context Protocol to connect AI agents with external APIs, databases, and enterprise services.",
     tags: ["MCP", "REST API", "Webhooks"],
   },
 ];
 
 const busquedas = [
-  "ingeniero IA agentica Chile",
-  "experto LangChain Latinoamerica",
-  "desarrollor CrewAI Chile",
-  "agentes IA autonomos empresa",
-  "consultor automatización IA",
-  "AI engineer Latin America",
-  "LangGraph specialist near me",
-  "autonomous AI agents developer",
+  "AI agents engineer",
+  "LangChain developer near me",
+  "autonomous AI agents specialist",
+  "multi-agent orchestration expert",
   "RAG system implementation",
-  "MCP model context protocol expert",
+  "MCP model context protocol developer",
+  "AI automation consultant Latin America",
+  "CrewAI expert",
+  "AI workflow automation",
+  "intelligent automation engineer",
 ];
+
+const idiomas = {
+  es: "🇨🇱 Chile, Latinoamérica",
+  en: "🌍 Remote-Friendly / Worldwide"
+};
 ---
 
 <Layout
-  title="AI Agents Engineer • Inteligencia Artificial Agéntica"
-  description="Jaime Hernández - AI Agents Engineer especializado en LangChain, LangGraph, CrewAI y MCP. Building autonomous AI systems and intelligent automation workflows."
+  title="AI Agents Engineer • LangChain • LangGraph • CrewAI • MCP"
+  description="Jaime Hernández - AI Agents Engineer specializing in LangChain, LangGraph, CrewAI and MCP. Building autonomous AI systems, multi-agent orchestration, and intelligent automation workflows for enterprises worldwide."
   canonical="https://jaimehernandez.dev/agent"
 >
   <Section class="my-16">
@@ -71,48 +76,52 @@ const busquedas = [
           AI Agents <span class="text-purple-600">Engineer</span>
         </h1>
         <p class="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-          Building autonomous AI systems, intelligent workflows, and multi-agent orchestration. 
+          Building autonomous AI systems, multi-agent orchestration, and intelligent automation workflows. 
           From prototype to production.
         </p>
+        <div class="flex justify-center gap-4 mt-6 text-sm text-gray-500">
+          <span>📍 {idiomas.es}</span>
+          <span>•</span>
+          <span>🌐 {idiomas.en}</span>
+        </div>
       </div>
 
       <!-- Stats -->
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
         <div class="text-center p-4 bg-gradient-to-br from-purple-50 to-blue-50 dark:from-purple-900/20 dark:to-blue-900/20 rounded-xl">
           <p class="text-3xl font-bold text-purple-600">3+</p>
-          <p class="text-sm text-gray-600 dark:text-gray-400">Proyectos IA Agéntica</p>
+          <p class="text-sm text-gray-600 dark:text-gray-400">AI Agents Projects</p>
         </div>
         <div class="text-center p-4 bg-gradient-to-br from-blue-50 to-green-50 dark:from-blue-900/20 dark:to-green-900/20 rounded-xl">
           <p class="text-3xl font-bold text-blue-600">8+</p>
-          <p class="text-sm text-gray-600 dark:text-gray-400">Años Backend</p>
+          <p class="text-sm text-gray-600 dark:text-gray-400">Years Backend</p>
         </div>
         <div class="text-center p-4 bg-gradient-to-br from-green-50 to-yellow-50 dark:from-green-900/20 dark:to-yellow-900/20 rounded-xl">
           <p class="text-3xl font-bold text-green-600">50M+</p>
-          <p class="text-sm text-gray-600 dark:text-gray-400">SKUs procesados</p>
+          <p class="text-sm text-gray-600 dark:text-gray-400">SKUs Processed</p>
         </div>
         <div class="text-center p-4 bg-gradient-to-br from-yellow-50 to-orange-50 dark:from-yellow-900/20 dark:to-orange-900/20 rounded-xl">
           <p class="text-3xl font-bold text-orange-600">5</p>
-          <p class="text-sm text-gray-600 dark:text-gray-400">Países LATAM</p>
+          <p class="text-sm text-gray-600 dark:text-gray-400">Countries LATAM</p>
         </div>
       </div>
 
-      <!-- Qué hago -->
+      <!-- What I Do -->
       <div class="prose prose-lg dark:prose-invert max-w-none mb-16">
-        <h2 class="text-2xl font-bold mb-6">¿Qué hago?</h2>
+        <h2 class="text-2xl font-bold mb-6">What I Do</h2>
         <p class="text-lg leading-relaxed">
-          Diseño y construyo <strong>sistemas de inteligencia artificial agéntica</strong>: 
-          sistemas donde modelos de lenguaje trabajan de manera autónoma para completar tareas complejas, 
-          tomar decisiones, y ejecutar acciones.
+          I design and build <strong>agentic AI systems</strong>: systems where language models work autonomously 
+          to complete complex tasks, make decisions, and execute actions.
         </p>
         <p>
-          Mi enfoque combina <strong>arquitectura de software robusta</strong> con las últimas 
-          innovaciones en IA: LangChain, LangGraph, CrewAI, MCP, y modelos de lenguaje de última generación.
+          My approach combines <strong>robust software architecture</strong> with cutting-edge AI innovations: 
+          LangChain, LangGraph, CrewAI, MCP, and next-generation language models.
         </p>
       </div>
 
-      <!-- Tecnologías -->
+      <!-- Technologies -->
       <div class="mb-16">
-        <h2 class="text-2xl font-bold mb-8 text-center">Tecnologías</h2>
+        <h2 class="text-2xl font-bold mb-8 text-center">Technologies</h2>
         
         <div class="grid md:grid-cols-3 gap-4">
           {tecnologias.map(tech => (
@@ -127,17 +136,17 @@ const busquedas = [
         </div>
       </div>
 
-      <!-- Casos de Uso -->
+      <!-- Services -->
       <div class="mb-16">
-        <h2 class="text-2xl font-bold mb-8 text-center">Casos de Uso</h2>
+        <h2 class="text-2xl font-bold mb-8 text-center">Services</h2>
         
         <div class="space-y-6">
-          {casos.map(caso => (
+          {servicios.map(servicio => (
             <div class="p-6 bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700">
-              <h3 class="font-semibold text-lg mb-2">{caso.titulo}</h3>
-              <p class="text-gray-600 dark:text-gray-400 mb-4">{caso.descripcion}</p>
+              <h3 class="font-semibold text-lg mb-2">{servicio.titulo}</h3>
+              <p class="text-gray-600 dark:text-gray-400 mb-4">{servicio.descripcion}</p>
               <div class="flex flex-wrap gap-2">
-                {caso.tags.map(tag => (
+                {servicio.tags.map(tag => (
                   <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full text-sm">
                     {tag}
                   </span>
@@ -148,27 +157,27 @@ const busquedas = [
         </div>
       </div>
 
-      <!-- Para quién -->
+      <!-- For Who -->
       <div class="mb-16">
-        <h2 class="text-2xl font-bold mb-8 text-center">¿Para quién?</h2>
+        <h2 class="text-2xl font-bold mb-8 text-center">Who I Work With</h2>
         
         <div class="grid md:grid-cols-2 gap-6">
           <div class="p-6 bg-blue-50 dark:bg-blue-900/20 rounded-xl">
-            <h3 class="font-semibold mb-3">🏢 Empresas</h3>
+            <h3 class="font-semibold mb-3">🏢 Enterprises</h3>
             <ul class="space-y-2 text-sm">
-              <li>• Automatización de procesos con IA</li>
-              <li>• Chatbots y asistentes inteligentes</li>
-              <li>• Sistemas de análisis predictivo</li>
-              <li>• Integración con sistemas legacy</li>
+              <li>• AI-powered process automation</li>
+              <li>• Intelligent chatbots and assistants</li>
+              <li>• Predictive analytics systems</li>
+              <li>• Legacy system integration</li>
             </ul>
           </div>
           <div class="p-6 bg-green-50 dark:bg-green-900/20 rounded-xl">
             <h3 class="font-semibold mb-3">🚀 Startups</h3>
             <ul class="space-y-2 text-sm">
-              <li>• Prototipado rápido de ideas con IA</li>
-              <li>• MVPs con agentes autónomos</li>
-              <li>• Escalabilidad desde día uno</li>
-              <li>• Consultoría técnica estratégica</li>
+              <li>• Rapid AI-powered MVP prototyping</li>
+              <li>• Autonomous agent MVPs</li>
+              <li>• Scale from day one</li>
+              <li>• Strategic technical consulting</li>
             </ul>
           </div>
         </div>
@@ -176,7 +185,7 @@ const busquedas = [
 
       <!-- SEO Keywords -->
       <div class="mb-16 p-6 bg-gray-100 dark:bg-gray-800/50 rounded-xl">
-        <h2 class="text-lg font-semibold mb-4">Búsquedas relacionadas</h2>
+        <h2 class="text-lg font-semibold mb-4">Search Terms</h2>
         <div class="flex flex-wrap gap-2">
           {busquedas.map(busqueda => (
             <span class="px-3 py-1 bg-white dark:bg-gray-700 rounded-full text-xs text-gray-600 dark:text-gray-300">
@@ -188,10 +197,10 @@ const busquedas = [
 
       <!-- CTA -->
       <div class="text-center">
-        <h2 class="text-2xl font-bold mb-6">¿Tienes un proyecto en mente?</h2>
+        <h2 class="text-2xl font-bold mb-6">Have a project in mind?</h2>
         <p class="text-gray-600 dark:text-gray-400 mb-8 max-w-xl mx-auto">
-          Conversemos sobre cómo la IA agéntica puede transformar tu negocio. 
-          Desde la conceptualización hasta la implementación en producción.
+          Let's discuss how agentic AI can transform your business. 
+          From conceptualization to production implementation.
         </p>
         <div class="flex justify-center gap-4 flex-wrap">
           <a 
@@ -206,9 +215,60 @@ const busquedas = [
             href="/blog"
             class="px-8 py-4 border-2 border-purple-600 text-purple-600 dark:text-purple-400 dark:border-purple-400 rounded-xl hover:bg-purple-50 dark:hover:bg-purple-900/20 transition-colors font-semibold"
           >
-            Ver Blog
+            Read Blog
           </a>
         </div>
+      </div>
+
+      <!-- Spanish Section -->
+      <hr class="my-16 border-gray-200 dark:border-gray-700" />
+      
+      <div class="text-center mb-8">
+        <h2 class="text-2xl font-bold">🇨🇱 Español</h2>
+        <p class="text-gray-600 dark:text-gray-400 mt-2">¿Hablas español? También trabajo con clientes en Latinoamérica.</p>
+      </div>
+
+      <div class="prose prose-lg dark:prose-invert max-w-none mb-8">
+        <h3>¿Qué hago?</h3>
+        <p>
+          Diseño y construyo <strong>sistemas de inteligencia artificial agéntica</strong>: 
+          sistemas donde modelos de lenguaje trabajan de manera autónoma para completar tareas complejas.
+        </p>
+        <p>
+          Mi enfoque combina <strong>arquitectura de software robusta</strong> con las últimas 
+          innovaciones en IA: LangChain, LangGraph, CrewAI, MCP.
+        </p>
+        
+        <h3>Servicios</h3>
+        <ul>
+          <li>Desarrollo de AI Agents autónomos</li>
+          <li>Orquestación multi-agente</li>
+          <li>Implementación de sistemas RAG</li>
+          <li>Integración MCP</li>
+          <li>Consultoría en automatización con IA</li>
+        </ul>
+
+        <h3>Casos de Uso</h3>
+        <ul>
+          <li>Automatización de procesos empresariales</li>
+          <li>Chatbots inteligentes con memoria</li>
+          <li>Sistemas de análisis predictivo</li>
+          <li>Integración con sistemas legacy</li>
+        </ul>
+
+        <h3>Búsquedas Relacionadas</h3>
+        <ul>
+          <li>ingeniero IA agéntica Chile</li>
+          <li>experto LangChain Latinoamerica</li>
+          <li>desarrollador CrewAI Chile</li>
+          <li>agentes IA autonomos empresa</li>
+          <li>consultor automatización IA</li>
+        </ul>
+
+        <p>
+          <strong>¿Tienes un proyecto?</strong> Conversemos. 
+          <a href="https://www.linkedin.com/in/devjaime/">Conectemos en LinkedIn →</a>
+        </p>
       </div>
 
     </div>
