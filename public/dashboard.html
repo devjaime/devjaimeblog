@@ -106,62 +106,68 @@
         </section>
 
         <!-- Progreso Metas -->
-        <section class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
-            <!-- Meta Segunda Propiedad -->
+        <section class="grid grid-cols-1 lg:grid-cols-4 gap-6 mb-8">
+            <!-- Meta Segunda Propiedad - Gráfico Dona -->
             <div class="card fade-in" style="animation-delay: 0.7s">
-                <h3 class="text-lg font-semibold mb-4">🎯 Meta: Segunda Propiedad</h3>
-                <div class="space-y-4">
-                    <div class="flex justify-between items-center">
-                        <span class="text-gray-600">Objetivo</span>
+                <h3 class="text-lg font-semibold mb-4">🎯 Meta: 2da Propiedad</h3>
+                <div class="relative" style="height: 180px;">
+                    <canvas id="metaChart"></canvas>
+                    <div class="absolute inset-0 flex items-center justify-center flex-col">
+                        <p class="text-3xl font-bold text-blue-600" id="metaPorcentaje">0%</p>
+                        <p class="text-xs text-gray-500">del objetivo</p>
+                    </div>
+                </div>
+                <div class="mt-4 space-y-2">
+                    <div class="flex justify-between text-sm">
+                        <span class="text-gray-600">Objetivo:</span>
                         <span class="font-semibold" id="metaObjetivo">2028-2029</span>
                     </div>
-                    <div class="w-full bg-gray-200 rounded-full h-4">
-                        <div class="bg-blue-600 h-4 rounded-full transition-all duration-1000" id="metaProgress" style="width: 0%"></div>
+                    <div class="flex justify-between text-sm">
+                        <span class="text-gray-600">Ahorrado:</span>
+                        <span class="font-semibold text-blue-600" id="metaAhorrado">$0</span>
                     </div>
-                    <p class="text-sm text-gray-500">Ahorro vs objetivo (meta: <span id="metaMonto">$60M</span>)</p>
-                    <div class="grid grid-cols-2 gap-4 mt-4">
-                        <div class="text-center p-3 bg-blue-50 rounded-lg">
-                            <p class="text-xs text-gray-500">Ahorrado</p>
-                            <p class="text-lg font-bold text-blue-600" id="metaAhorrado">$0</p>
-                        </div>
-                        <div class="text-center p-3 bg-gray-50 rounded-lg">
-                            <p class="text-xs text-gray-500">Restante</p>
-                            <p class="text-lg font-bold text-gray-600" id="metaRestante">$0</p>
-                        </div>
+                    <div class="flex justify-between text-sm">
+                        <span class="text-gray-600">Faltante:</span>
+                        <span class="font-semibold text-orange-600" id="metaRestante">$0</span>
                     </div>
                 </div>
             </div>
 
-            <!-- Progreso Crédito -->
-            <div class="card fade-in" style="animation-delay: 0.8s">
-                <h3 class="text-lg font-semibold mb-4">📊 Progreso Crédito</h3>
-                <div class="space-y-4">
-                    <div class="flex justify-between items-center">
-                        <span class="text-gray-600">Dividendos</span>
-                        <span class="font-semibold" id="creditoProgress">-</span>
-                    </div>
-                    <div class="w-full bg-gray-200 rounded-full h-4">
-                        <div class="bg-green-500 h-4 rounded-full" id="creditoBar" style="width: 0%"></div>
-                    </div>
-                    <p class="text-sm text-gray-500" id="creditoProgreso">-</p>
-                    <div class="grid grid-cols-2 gap-4 mt-4">
-                        <div class="text-center p-3 bg-green-50 rounded-lg">
-                            <p class="text-xs text-gray-500">Total Pagado</p>
-                            <p class="text-lg font-bold text-green-600" id="creditoPagado">-</p>
+            <!-- Barra de Progreso Grande -->
+            <div class="card fade-in lg:col-span-3" style="animation-delay: 0.75s">
+                <h3 class="text-lg font-semibold mb-4">📊 Progreso Acumulado</h3>
+                <div class="space-y-6">
+                    <!-- Meta Segunda Propiedad -->
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium">Meta: Segunda Propiedad</span>
+                            <span class="text-blue-600 font-semibold" id="metaBarPorcentaje">25%</span>
                         </div>
-                        <div class="text-center p-3 bg-orange-50 rounded-lg">
-                            <p class="text-xs text-gray-500">Restante</p>
-                            <p class="text-lg font-bold text-orange-600" id="creditoRestante">-</p>
+                        <div class="w-full bg-gray-200 rounded-full h-6 relative overflow-hidden">
+                            <div class="bg-gradient-to-r from-blue-500 to-blue-600 h-6 rounded-full transition-all duration-1000 flex items-center justify-end pr-2" id="metaProgress" style="width: 0%">
+                                <span class="text-white text-xs font-semibold" id="metaProgressText"></span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between text-xs text-gray-500 mt-1">
+                            <span id="metaMontoInicial">$15M</span>
+                            <span>target: $60M</span>
                         </div>
                     </div>
-                </div>
-            </div>
-
-            <!-- Próximos Eventos -->
-            <div class="card fade-in" style="animation-delay: 0.9s">
-                <h3 class="text-lg font-semibold mb-4">📅 Calendario</h3>
-                <div class="space-y-3" id="timelineContainer">
-                    <!-- Se llena dinámicamente -->
+                    
+                    <!-- Progreso Crédito -->
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium">Crédito Hipotecario</span>
+                            <span class="text-green-600 font-semibold" id="creditoProgresoText">1.3%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-4">
+                            <div class="bg-gradient-to-r from-green-400 to-green-500 h-4 rounded-full" id="creditoBar" style="width: 0%"></div>
+                        </div>
+                        <div class="flex justify-between text-xs text-gray-500 mt-1">
+                            <span id="creditoPagado">4 dividendos</span>
+                            <span id="creditoRestante">296 restantes</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -261,10 +267,17 @@
         const API_URL = '/api/dashboard.json';
         let plusvaliaChart = null;
         let ufChart = null;
+        let metaChart = null;
 
         // Utilidades
         function formatCurrency(num) {
             return '$' + num.toLocaleString('es-CL');
+        }
+
+        function formatCurrencyShort(num) {
+            if (num >= 1000000) return '$' + (num / 1000000).toFixed(1) + 'M';
+            if (num >= 1000) return '$' + (num / 1000).toFixed(0) + 'K';
+            return '$' + num;
         }
 
         function formatUF(valor) {
@@ -311,19 +324,29 @@
             document.getElementById('dividendos').textContent = `${data.credito.dividendosPagados}/${data.credito.dividendosTotales}`;
             document.getElementById('anosRestantes').textContent = `~${data.credito.anosRestantes} años restantes`;
 
-            // Metas
+            // Metas - Barra de progreso grande
             const meta = data.metas.segundaPropiedad;
             document.getElementById('metaObjetivo').textContent = meta.objetivo;
-            document.getElementById('metaAhorrado').textContent = formatCurrency(meta.ahorradoCLP);
-            document.getElementById('metaRestante').textContent = formatCurrency(meta.objetivoCLP - meta.ahorradoCLP);
-            document.getElementById('metaMonto').textContent = formatCurrency(meta.objetivoCLP);
+            document.getElementById('metaAhorrado').textContent = formatCurrencyShort(meta.ahorradoCLP);
+            document.getElementById('metaRestante').textContent = formatCurrencyShort(meta.objetivoCLP - meta.ahorradoCLP);
+            document.getElementById('metaPorcentaje').textContent = meta.porcentaje + '%';
+            document.getElementById('metaBarPorcentaje').textContent = meta.porcentaje + '%';
+            document.getElementById('metaMontoInicial').textContent = formatCurrencyShort(meta.ahorradoCLP);
+            
+            // Animar barra de meta
             setTimeout(() => {
-                document.getElementById('metaProgress').style.width = meta.porcentaje + '%';
+                const metaProgress = document.getElementById('metaProgress');
+                const progressText = document.getElementById('metaProgressText');
+                metaProgress.style.width = meta.porcentaje + '%';
+                if (meta.porcentaje > 15) {
+                    progressText.textContent = formatCurrencyShort(meta.ahorradoCLP);
+                }
             }, 500);
 
             // Crédito
-            document.getElementById('creditoProgress').textContent = `${data.credito.dividendosPagados}/${data.credito.dividendosTotales}`;
-            document.getElementById('creditoProgreso').textContent = `${data.credito.progreso}% completado`;
+            document.getElementById('creditoProgressText').textContent = data.credito.progreso + '%';
+            document.getElementById('creditoPagado').textContent = data.credito.dividendosPagados + ' dividendos';
+            document.getElementById('creditoRestante').textContent = data.credito.dividendosRestantes + ' restantes';
             document.getElementById('creditoBar').style.width = data.credito.progreso + '%';
 
             // Timeline
@@ -411,6 +434,32 @@
 
         // Renderizar gráficos
         function renderCharts(data) {
+            // Gráfico Meta Segunda Propiedad (Dona)
+            const metaCtx = document.getElementById('metaChart').getContext('2d');
+            if (metaChart) metaChart.destroy();
+            
+            const meta = data.metas.segundaPropiedad;
+            metaChart = new Chart(metaCtx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Ahorrado', 'Restante'],
+                    datasets: [{
+                        data: [meta.ahorradoCLP, meta.objetivoCLP - meta.ahorradoCLP],
+                        backgroundColor: ['#3B82F6', '#E5E7EB'],
+                        borderWidth: 0,
+                        cutout: '75%'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false },
+                        tooltip: { enabled: true }
+                    }
+                }
+            });
+
             // Gráfico Plusvalía
             const plusvaliaCtx = document.getElementById('plusvaliaChart').getContext('2d');
             if (plusvaliaChart) plusvaliaChart.destroy();
