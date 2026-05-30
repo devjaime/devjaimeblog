@@ -1,0 +1,33 @@
+{
+  "status": "online",
+  "agent": "main",
+  "lastUpdate": "2026-05-30T07:09:06Z",
+  "uptime": "up  8:36cpu averages: 3.05 3.10 2.97",
+  "metrics": {
+  "timestamp": "2026-05-30T07:04:01Z",
+  "system": {
+    "uptime": "  8:31",
+    "cpuLoad": "3.04 2.98 2.91"
+  },
+  "memory": {
+    "totalGB": "16",
+    "freePages": "7264",
+    "activePages": "265829",
+    "wiredPages": "140623"
+  },
+  "disk": {"total":"228Gi","used":"12Gi","free":"14Gi","percent":"46%"},
+  "topCPU": [],
+  "topMem": [],
+  "diskFolders": [{"size":"883G","path":"/"},{"size":"138G","path":"/Users/devjaime/.."},{"size":"138G","path":"/Users/devjaime/."},{"size":"13G","path":"/Users/devjaime/.openclaw"},{"size":"6.5G","path":"/Users/devjaime/.npm"},{"size":"5.8G","path":"/Users/devjaime/.cache"},{"size":"2.4G","path":"/Users/devjaime/.local"},{"size":"853M","path":"/Users/devjaime/.codex"},{"size":"503M","path":"/Users/devjaime/.rustup"},{"size":"407M","path":"/Users/devjaime/.vscode"}],
+  "docker": {
+    "running": 16,
+    "images": 29
+  },
+  "gitRepos": [{"name":"openclaw-homeassistant","branch":"main","unpushed":0,"dirty":14,"lastCommit":"2026-05-29"}
+{"name":".","branch":"master","unpushed":0,"dirty":16,"lastCommit":""}]
+},
+  "jobs": [
+    {"name": "Reporte Matutino 6AM", "schedule": "0 6 * * *", "enabled": true},
+    {"name": "Reporte Medio Día 12PM", "schedule": "0 12 * * *", "enabled": true}
+  ]
+}
