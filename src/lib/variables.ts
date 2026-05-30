@@ -61,7 +61,7 @@ export const GLOBAL = {
   blogLongDescription: "Desarrollo web, tendencias tecnológicas y ocasionalmente errores de programación. Artículos técnicos sobre IA, backend y desarrollo de software.",
 
   // Project metadata
-  blogTitle: "Proyectos y Código",
+  projectsTitle: "Proyectos y Código",
   projectShortDescription: "Una lista de mis proyectos de desarrollo web y herramientas.",
   projectLongDescription: "Todos mis proyectos, incluyendo aplicaciones frontend y full-stack. Desde soluciones de IA hasta aplicaciones web modernas.",
 

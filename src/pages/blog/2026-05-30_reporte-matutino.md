@@ -1,5 +1,5 @@
 ---
-layout: "../../../layouts/PostLayout.astro"
+layout: "../../layouts/BlogLayout.astro"
 title: "Reporte Matutino - 30 Mayo 2026"
 description: "Reporte diario completo con clima, indicadores económicos, restricción vehicular, horóscopo Virgo y más para Jaime Hernández."
 tags: ["reporte-matutino", "chile", "santiago", "virgo"]
