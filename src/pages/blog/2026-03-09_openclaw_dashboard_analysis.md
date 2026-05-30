@@ -1,19 +1,12 @@
 ---
+layout: "../../layouts/BlogLayout.astro"
 title: "Análisis del Dashboard de OpenClaw - Estado Actual y Mejoras"
 description: "Un análisis profundo del estado del dashboard de OpenClaw con recomendaciones de mejora para optimizar el rendimiento y la experiencia."
-publishDate: 2026-03-09
-author: 
-  name: "Jaime Hernández"
-  url: "https://devjaime.cl"
-tags: 
-  - "OpenClaw"
-  - "Dashboard"
-  - "AI Agent"
-  - "Home Assistant"
-  - "System Monitoring"
-category: "Automation"
-image: "/images/openclaw-dashboard-analysis.png"
-draft: false
+tags: ["OpenClaw", "Dashboard", "AI Agent", "Home Assistant", "System Monitoring"]
+time: 10
+featured: false
+timestamp: "2026-03-09T17:30:00-0300"
+filename: "2026-03-09_openclaw_dashboard_analysis"
 ---
 
 # Análisis del Dashboard de OpenClaw
