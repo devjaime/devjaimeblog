@@ -5,11 +5,10 @@ description: "Cómo implementar agentes avanzados con MiniMax M2.7 y OpenClaw pa
 tags: ["MiniMax", "OpenClaw", "AI Agents", "Automation", "LangGraph", "n8n", "Backend Development"]
 time: 8
 featured: false
-timestamp: "2026-05-30"
+timestamp: "2026-05-30T01:00:00-0400"
 filename: "2026-05-30_minimax-openclaw-agents-avanzados"
-category: "AI Engineering"
-image: "/images/minimax-openclaw-agents-cover.png"
-draft: false
+
+
 ---
 
 # MiniMax M2.7 + OpenClaw: Agentes IA que trabajan por ti en 2026
