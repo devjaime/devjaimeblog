@@ -1,86 +1,90 @@
 ---
-title: "Estatus del Sistema — 01 jun 2026"
-description: "Reporte diario de salud del sistema: disco, RAM, CPU, caches y estado de Hermes. Disco principal al 100%, SD CARD disponible."
-publishDate: "2026-06-01T01:00:00-04:00"
-author: "Hermes AI"
-tags: ["system-monitor", "status", "hermes", "devops"]
-category: "system-health"
-image: null
+title: "Estatus del Sistema - 01 Jun 2026"
+description: "Reporte diario de salud del sistema: disco, RAM, CPU, caches y estado de Hermes."
+publishDate: "2026-06-01T01:14:47-04:00"
+author: 
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags: 
+  - "System"
+  - "Monitor"
+  - "Health"
+  - "DevOps"
+category: "System Health"
 draft: false
 ---
 
-## 📊 Estatus del Sistema — 01 jun 2026, 01:00
+# Estatus del Sistema - 01 Jun 2026
 
-⚠️ **Disco principal al 100%** — 1.9 GB disponible de 228 GB. Recomendación: limpiar caches o mover archivos grandes a la SD CARD (KINGSTON).
+**Status:** WARNING
 
----
+## Alertas Activas
 
-### 💾 Disco
+- ⚠️ Disco principal al 97%
 
-| Partición | Total | Usado | Disponible | Uso |
+## Acciones Tomadas
+
+- ✅ Auto-limpieza: opencode (2.0M)
+- ✅ Auto-limpieza: codex_runtimes (748M)
+
+_Post-limpieza: disco bajo de 97% a 96%_
+
+## Recursos del Sistema
+
+### Disco
+
+| Particion | Total | Usado | Disponible | Uso |
 |-----------|-------|-------|------------|-----|
-| Principal (macOS) | 228Gi | 198Gi | 1.9Gi | **100%** |
+| Principal (macOS) | 228Gi | 193Gi | 7.5Gi | 97% |
 | SD Card (KINGSTON) | 954Gi | 235Gi | 719Gi | 25% |
 
----
+### RAM
 
-### 🧠 RAM
+- Total: 16384.0 MB
+- Usado: 886.6 MB (5.4%)
+- Libre: 33.7 MB
 
-- **Total:** 16384.0 MB
-- **Usado:** 705.7 MB (4.3%)
-- **Libre:** 15678.3 MB
+### CPU
 
----
-
-### ⚙️ CPU
-
-- **Uso:** 21.3%
-- **Idle:** 78.7%
+- Uso: 20.7%
+- Idle: 79.34%
 
 ---
 
-### 📁 Caches Principales
+## Caches del Sistema
 
-| Cache | Tamaño |
+| Cache | Tamano |
 |-------|--------|
-| uv | 3.7G |
-| codex_runtimes | 1.4G |
-| puppeteer | 318M |
-| spotify | 1.8G |
-| google | 1.6G |
+| codex_runtimes | 748M |
 | go_build | 1.5G |
-| vscode | 997M |
+| google | 1.6G |
 | homebrew | 884M |
-| playwright | 520M |
+| opencode | 2.0M |
+| spotify | 1.8G |
+| vscode | 997M |
+
 
 ---
 
-### 🏠 Hermes Agent
+## Hermes Agent
 
-| Componente | Tamaño |
+| Componente | Tamano |
 |------------|--------|
 | hermes_home | 2.3G |
 | hermes_agent | 2.3G |
-| state_db | 2.1M |
+| state_db | 2.8M |
+
 
 ---
 
-### 🔧 Acciones Configuradas
+## Configuracion
 
-- Monitoreo automático: **activo**
-- Schedule: **diario 09:00 CLT**
-- Cron jobs activos: 6 (SEO, monitoreo, mejoras)
-- Limpieza de caches: **pendiente** — disco lleno impide
+- Monitoreo automatico: activo
+- Schedule: diario 09:00 CLT
+- Auto-limpieza threshold: 90%
+- Threshold alerta disco: 85%
+- Threshold alerta RAM: 85%
 
-### ⚠️ Alertas Activas
+---
 
-1. **Disco principal 100%** — limpiar caches UV (3.7G), Playwright (520M), Puppeteer (318M) liberaría ~4.5GB
-2. **Espacio blog repo** — 16MB en /tmp/devjaimeblog
-
-### 📋 Plan de Acción
-
-1. Crear script de limpieza automática de caches cuando disco > 85%
-2. Mover archivos no críticos a SD CARD KINGSTON
-3. Configurar alertas de threshold bajo para evitar saturación
-
-*Este reporte es generado automáticamente por Hermes Agent.*
+_Ultima verificacion: 2026-06-01 01:14:55_
