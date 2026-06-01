@@ -1,19 +1,27 @@
 ---
 title: "Informe GCP + AI + Microservicios - 01 Jun 2026"
 description: "Reporte diario de tendencias en Google Cloud Platform, inteligencia artificial y microservicios. Comparativa con AWS y Azure."
-publishDate: "2026-06-01T00:48:30-04:00"
-author: "Hermes AI"
-tags: ["GCP", "Google Cloud", "AI", "microservices", "AWS", "Azure", "cloud", "trends"]
-category: "tech-research"
-image: null
+publishDate: 2026-06-01T01:14:43-04:00
+author: 
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags: 
+  - "GCP"
+  - "Google Cloud"
+  - "AI"
+  - "Microservices"
+  - "AWS"
+  - "Azure"
+  - "Cloud"
+  - "Trends"
+category: "AI Engineering"
 draft: false
 ---
 
-## Informe GCP + AI + Microservicios - 01 Jun 2026
+# Informe GCP + AI + Microservicios - 01 Jun 2026
 
-*Reporte automatizado basado en fuentes oficiales y comunidades tech.*
+Reporte diario de tendencias en Google Cloud Platform, inteligencia artificial y microservicios. Comparativa con AWS y Azure.
 
----
 
 ## Lo Mas Destacado de GCP Esta Semana
 
@@ -88,16 +96,23 @@ draft: false
 ## Tendencias Clave Mayo 2026
 
 ### 1. Agentic AI es el foco principal
-Los tres cloud providers estan compitiendo por dominar el espacio de AI agents.
+
+Los tres cloud providers estan compitiendo por dominar el espacio de AI agents:
+- **GCP:** Gemini Enterprise + Agent Platform
+- **AWS:** Bedrock AgentCore con dataset management
+- **Azure:** SAP on Azure AI announcements en Sapphire 2026
 
 ### 2. Kubernetes converge con AI
-GKE lidera con Agent Sandbox, Inference Gateway y storage optimizado para ML.
+
+GKE lidera con Agent Sandbox, Inference Gateway y storage optimizado para ML. AWS y Azure siguen con EKS y AKS pero con menos features nativas para AI.
 
 ### 3. Networking para AI
-Envoy se posiciona como foundation para agentic AI networking.
+
+Envoy se posiciona como foundation para agentic AI networking. Cloudflare introduce Workflows V2 con 50K concurrent workflows.
 
 ### 4. Edge & Distributed AI
-GKE con faster node startup y cross-cluster networking.
+
+GKE con faster node startup y cross-cluster networking para multi-cluster workloads (Azure Fleet Manager con Cilium).
 
 ---
 
@@ -106,9 +121,9 @@ GKE con faster node startup y cross-cluster networking.
 | Empresa | Sector | Tecnologia |
 |---------|--------|------------|
 | **Glance** | Media | AI para convertir horas de video en clips mobile-ready |
-| **Movix** | Healthcare | Agentic AI para skills dentales |
+| **Movix** | Healthcare | Agentic AI para skills dentales especializados |
 | **Monzo** | Fintech | Fraud detection con BigQuery + microservices |
-| **Reddit** | Social | Migracion de Python a Go microservice |
+| **Reddit** | Social | Migracion de Python a Go microservice para comentarios |
 | **Uber** | Tech | Uforwarder - Kafka consumer proxy |
 
 ---
@@ -128,18 +143,19 @@ GKE con faster node startup y cross-cluster networking.
 - **GKE** - Kubernetes enterprise-grade
 - **Apigee** - API management premium
 - **Cloud Build** - CI/CD nativo
-- **Cloud Spanner** - Database distribuida globally
+- **Cloud Spanner** - Database distribuida globalmente
 - **Cloud Armor** - Seguridad en Edge
 
 ---
 
 ## Fuentes Consultadas
 
-- Google Cloud Blog - AI & ML
-- Google Cloud Blog - Containers & Kubernetes
-- AWS Machine Learning Blog
-- Microsoft Azure Blog
-- InfoQ Microservices
-- Hacker News
+- Google Cloud Blog - AI & ML: cloud.google.com/blog/products/ai-machine-learning
+- Google Cloud Blog - Containers & Kubernetes: cloud.google.com/blog/products/containers-kubernetes
+- AWS Machine Learning Blog: aws.amazon.com/blogs/machine-learning/
+- Microsoft Azure Blog: azure.microsoft.com/en-us/blog/
+- InfoQ Microservices: infoq.com/microservices/
 
-*Este informe es generado automaticamente por Hermes Agent.*
+---
+
+*Este informe es generado automaticamente por Hermes Agent. Schedule: diario 08:00 CLT.*
