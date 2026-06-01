@@ -1,7 +1,7 @@
 ---
 title: "Informe GCP + AI + Microservicios - 01 Jun 2026"
 description: "Reporte diario de tendencias en Google Cloud Platform, inteligencia artificial y microservicios. Comparativa con AWS y Azure."
-publishDate: 2026-06-01T01:14:43-04:00
+publishDate: 2026-06-01T01:19:05-04:00
 author: 
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"
@@ -22,6 +22,7 @@ draft: false
 
 Reporte diario de tendencias en Google Cloud Platform, inteligencia artificial y microservicios. Comparativa con AWS y Azure.
 
+---
 
 ## Lo Mas Destacado de GCP Esta Semana
 
@@ -32,7 +33,7 @@ Reporte diario de tendencias en Google Cloud Platform, inteligencia artificial y
 **Vertex AI Updates:**
 - Nano Banana 2 y Nano Banana Pro ya disponibles generalmente
 - Andrea Sanin (Google Cloud) cubre las novedades mensuales de AI
-- Clientes mostrando casos de uso: algoritmos agentic para supply chains, APIs de virtual try-on, operadores de camara robóticos
+- Clientes mostrando casos de uso: algoritmos agentic para supply chains, APIs de virtual try-on, operadores de camara roboticos
 
 **Agentic AI en SRE** - Google desplegando agentic AI para mejorar operaciones SRE. Dave Wang publica guia para desarrolladores sobre integracion Gemini Enterprise + A2UI.
 
@@ -63,7 +64,7 @@ Reporte diario de tendencias en Google Cloud Platform, inteligencia artificial y
 
 ### AI & ML Services
 
-| Caracteristica | GCP | AWS | Azure |
+| caracteristica | GCP | AWS | Azure |
 |----------------|-----|-----|-------|
 | **LLM Platform** | Vertex AI + Gemini Enterprise | Bedrock + Amazon Nova | Azure OpenAI |
 | **AI Agents** | Agent Platform, AgentCore | Bedrock Agents | Azure AI Agents |
@@ -73,7 +74,7 @@ Reporte diario de tendencias en Google Cloud Platform, inteligencia artificial y
 
 ### Microservicios & Container
 
-| Caracteristica | GCP | AWS | Azure |
+| caracteristica | GCP | AWS | Azure |
 |----------------|-----|-----|-------|
 | **Kubernetes** | GKE (lider en innovacion) | EKS | AKS |
 | **Serverless** | Cloud Run | Lambda, ECS | Azure Functions |
@@ -84,7 +85,7 @@ Reporte diario de tendencias en Google Cloud Platform, inteligencia artificial y
 
 ### Datos & Analytics
 
-| Caracteristica | GCP | AWS | Azure |
+| caracteristica | GCP | AWS | Azure |
 |----------------|-----|-----|-------|
 | **Data Warehouse** | BigQuery | Redshift | Synapse |
 | **Streaming** | Dataflow, Pub/Sub | Kinesis | Event Hubs |
@@ -118,7 +119,7 @@ GKE con faster node startup y cross-cluster networking para multi-cluster worklo
 
 ## Casos de Uso Reales
 
-| Empresa | Sector | Tecnologia |
+| Empresa | Sector | Tecnologia GCP |
 |---------|--------|------------|
 | **Glance** | Media | AI para convertir horas de video en clips mobile-ready |
 | **Movix** | Healthcare | Agentic AI para skills dentales especializados |
@@ -158,4 +159,4 @@ GKE con faster node startup y cross-cluster networking para multi-cluster worklo
 
 ---
 
-*Este informe es generado automaticamente por Hermes Agent. Schedule: diario 08:00 CLT.*
+_Este informe es generado automaticamente por Hermes Agent. Schedule: diario 08:00 CLT._
