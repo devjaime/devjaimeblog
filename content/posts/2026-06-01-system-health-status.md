@@ -1,7 +1,7 @@
 ---
 title: "Estatus del Sistema - 01 Jun 2026"
 description: "Reporte diario de salud del sistema: disco, RAM, CPU, caches y estado de Hermes."
-publishDate: "2026-06-01T01:19:08-04:00"
+publishDate: "2026-06-01T09:00:53-04:00"
 author: 
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"
@@ -20,7 +20,14 @@ draft: false
 
 ## Alertas Activas
 
-- ⚠️ Disco principal al 96%
+- ⚠️ Disco principal al 94%
+
+## Acciones Tomadas
+
+- ✅ Auto-limpieza: opencode (2.0M)
+- ✅ Auto-limpieza: codex_runtimes (748M)
+
+_Post-limpieza: disco bajo de 94% a 93%_
 
 ## Recursos del Sistema
 
@@ -28,19 +35,19 @@ draft: false
 
 | Particion | Total | Usado | Disponible | Uso |
 |-----------|-------|-------|------------|-----|
-| Principal (macOS) | 228Gi | 192Gi | 8.3Gi | 96% |
+| Principal (macOS) | 228Gi | 187Gi | 14Gi | 94% |
 | SD Card (KINGSTON) | 954Gi | 235Gi | 719Gi | 25% |
 
 ### RAM
 
 - Total: 16384.0 MB
-- Usado: 859.8 MB (5.2%)
-- Libre: 33.8 MB
+- Usado: 818.6 MB (5.0%)
+- Libre: 23.5 MB
 
 ### CPU
 
-- Uso: 25.8%
-- Idle: 74.2%
+- Uso: 11.5%
+- Idle: 88.5%
 
 ---
 
@@ -48,9 +55,11 @@ draft: false
 
 | Cache | Tamano |
 |-------|--------|
+| codex_runtimes | 748M |
 | go_build | 1.5G |
 | google | 1.6G |
 | homebrew | 884M |
+| opencode | 2.0M |
 | spotify | 1.8G |
 | vscode | 997M |
 
@@ -63,7 +72,7 @@ draft: false
 |------------|--------|
 | hermes_home | 2.3G |
 | hermes_agent | 2.3G |
-| state_db | 3.3M |
+| state_db | 4.5M |
 
 
 ---
@@ -78,4 +87,4 @@ draft: false
 
 ---
 
-_Ultima verificacion: 2026-06-01 01:19:13_
+_Ultima verificacion: 2026-06-01 09:01:03_
