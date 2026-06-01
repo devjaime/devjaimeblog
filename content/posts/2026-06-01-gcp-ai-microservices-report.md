@@ -1,7 +1,7 @@
 ---
 title: "Informe GCP + AI + Microservicios - 01 Jun 2026"
 description: "Reporte diario de tendencias en Google Cloud Platform, inteligencia artificial y microservicios. Comparativa con AWS y Azure."
-publishDate: 2026-06-01T01:19:05-04:00
+publishDate: 2026-06-01T08:00:49-04:00
 author: 
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"
