@@ -1,5 +1,6 @@
 ---
 title: "Informe GCP + AI + Microservicios - 01 Jun 2026"
+layout: ../../layouts/BlogLayout.astro
 description: "Reporte diario de tendencias en Google Cloud Platform, inteligencia artificial y microservicios. Comparativa con AWS y Azure."
 publishDate: 2026-06-01T08:01:05-04:00
 timestamp: 2026-06-01T08:01:05-04:00

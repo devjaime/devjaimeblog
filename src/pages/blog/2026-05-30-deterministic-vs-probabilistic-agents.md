@@ -1,5 +1,6 @@
 ---
 title: "Why Your AI Agent Is Lying to You: The Deterministic vs Probabilistic Problem"
+layout: ../../layouts/BlogLayout.astro
 description: "Last month I ran a security audit tool 50 times against the same application. Same code, same context, same prompt. You know how many times it caught all vulnerabilities? 31 out of 50. Here's why that happens and how to fix it."
 publishDate: 2026-05-30
 author: 

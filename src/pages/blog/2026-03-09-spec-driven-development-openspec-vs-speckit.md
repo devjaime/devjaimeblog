@@ -1,5 +1,6 @@
 ---
 title: "Spec-Driven Development: OpenSpec vs GitHub spec-kit - Análisis Completo"
+layout: ../../layouts/BlogLayout.astro
 description: "Una guía exhaustiva sobre Spec-Driven Development comparando OpenSpec y GitHub spec-kit. Aprende cuándo usar cada uno y cómo implementarlos en tus proyectos."
 publishDate: 2026-03-09
 author: 

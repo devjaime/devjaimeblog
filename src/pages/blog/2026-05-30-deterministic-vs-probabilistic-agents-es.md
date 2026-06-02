@@ -1,5 +1,6 @@
 ---
 title: "Por qué tu AI Agent miente: El problema determinístico vs probabilístico"
+layout: ../../layouts/BlogLayout.astro
 description: "Ejecuté una herramienta de auditoría de seguridad 50 veces contra la misma aplicación. Mismo código, mismo contexto, mismo prompt. ¿Sabés cuántas veces detectó todas las vulnerabilidades? 31 de 50. Te explico por qué pasa y cómo solucionarlo."
 publishDate: 2026-05-30
 author: 

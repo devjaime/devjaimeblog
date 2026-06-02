@@ -1,5 +1,6 @@
 ---
 title: "LangGraph vs CrewAI vs AutoGen: Cómo Elegir un Framework de Agentes AI en 2026"
+layout: ../../layouts/BlogLayout.astro
 description: "Todo backend engineer que construye agentes AI en 2026 enfrenta el mismo dilema: CrewAI para velocidad, LangGraph para control, o AutoGen para ejecución de código. Aquí te explico cómo decidir."
 publishDate: 2026-05-30
 author: 

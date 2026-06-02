@@ -1,5 +1,6 @@
 ---
 title: "LangGraph vs CrewAI vs AutoGen: How to Actually Pick an AI Agent Framework in 2026"
+layout: ../../layouts/BlogLayout.astro
 description: "Every backend engineer building AI agents in 2026 faces the same fork: CrewAI for speed, LangGraph for control, or AutoGen for code execution. Here's how to actually decide."
 publishDate: 2026-05-30
 author: 

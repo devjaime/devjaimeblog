@@ -1,5 +1,6 @@
 ---
 title: "MiniMax M2.7 + OpenClaw: Agentes IA que trabajan por ti en 2026"
+layout: ../../layouts/BlogLayout.astro
 description: "Cómo implementar agentes avanzados con MiniMax M2.7 y OpenClaw para automatizar flujos de trabajo complejos. Guía práctica con ejemplos reales."
 publishDate: 2026-05-30
 author: 
