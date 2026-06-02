@@ -2,6 +2,7 @@
 title: "Estatus del Sistema - 01 Jun 2026"
 description: "Reporte diario de salud del sistema: disco, RAM, CPU, caches y estado de Hermes."
 publishDate: "2026-06-01T09:01:26-04:00"
+timestamp: "2026-06-01T09:01:26-04:00"
 author: 
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"
