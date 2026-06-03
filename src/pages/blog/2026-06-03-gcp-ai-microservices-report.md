@@ -1,5 +1,6 @@
 ---
 filename: "2026-06-03-gcp-ai-microservices-report"
+layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-03T12:00:00-0300"
 title: "Informe GCP + AI + Microservicios - 03 Jun 2026"

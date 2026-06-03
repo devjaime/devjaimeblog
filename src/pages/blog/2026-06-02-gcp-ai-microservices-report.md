@@ -1,4 +1,6 @@
 ---
+layout: "../../layouts/BlogLayout.astro"
+---
 filename: "2026-06-02-gcp-ai-microservices-report"
 
 timestamp: "2026-06-02T12:00:00-0300"
