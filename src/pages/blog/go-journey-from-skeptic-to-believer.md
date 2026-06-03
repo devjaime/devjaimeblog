@@ -1,1 +1,0 @@
-layout: ../../layouts/BlogLayout.astro

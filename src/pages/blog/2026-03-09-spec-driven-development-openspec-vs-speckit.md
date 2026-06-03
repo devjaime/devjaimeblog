@@ -1,6 +1,8 @@
 ---
+timestamp: "2026-03-09T12:00:00-0300"
 title: "Spec-Driven Development: OpenSpec vs GitHub spec-kit - Análisis Completo"
 layout: ../../layouts/BlogLayout.astro
+filename: "spec-driven-development-openspec-vs-speckit"
 description: "Una guía exhaustiva sobre Spec-Driven Development comparando OpenSpec y GitHub spec-kit. Aprende cuándo usar cada uno y cómo implementarlos en tus proyectos."
 publishDate: 2026-03-09
 author: 

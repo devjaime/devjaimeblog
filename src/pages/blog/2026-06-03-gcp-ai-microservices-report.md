@@ -1,4 +1,7 @@
 ---
+filename: "2026-03-gcp-ai-microservices-report"
+
+timestamp: "2026-06-03T12:00:00-0300"
 title: "Informe GCP + AI + Microservicios - 03 Jun 2026"
 description: "Reporte diario de tendencias en Google Cloud Platform, inteligencia artificial y microservicios. Comparativa con AWS y Azure."
 publishDate: 2026-06-03T08:00:52-04:00
