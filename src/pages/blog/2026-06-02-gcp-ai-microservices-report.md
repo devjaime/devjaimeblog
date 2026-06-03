@@ -1,5 +1,5 @@
 ---
-filename: "2026-02-gcp-ai-microservices-report"
+filename: "2026-06-02-gcp-ai-microservices-report"
 
 timestamp: "2026-06-02T12:00:00-0300"
 title: "Informe GCP + AI + Microservicios - 02 Jun 2026"
