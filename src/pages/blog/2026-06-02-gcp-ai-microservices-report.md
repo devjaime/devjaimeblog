@@ -1,12 +1,11 @@
 ---
-layout: "../../layouts/BlogLayout.astro"
----
 filename: "2026-06-02-gcp-ai-microservices-report"
+layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-02T12:00:00-0300"
 title: "Informe GCP + AI + Microservicios - 02 Jun 2026"
 description: "Reporte diario de tendencias en Google Cloud Platform, inteligencia artificial y microservicios. Comparativa con AWS y Azure."
-publishDate: 2026-06-02T08:02:03-04:00
+publishDate: "2026-06-02T08:02:03-04:00"
 author: 
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"
@@ -21,6 +20,8 @@ tags:
   - "Trends"
 category: "AI Engineering"
 draft: false
+time: 15
+featured: false
 ---
 
 # Informe GCP + AI + Microservicios - 02 Jun 2026

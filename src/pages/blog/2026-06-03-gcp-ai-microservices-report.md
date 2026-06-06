@@ -20,6 +20,8 @@ tags:
   - "Trends"
 category: "AI Engineering"
 draft: false
+time: 15
+featured: false
 ---
 
 # Informe GCP + AI + Microservicios - 03 Jun 2026
