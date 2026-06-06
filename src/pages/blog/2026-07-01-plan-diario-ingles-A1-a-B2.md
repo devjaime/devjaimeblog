@@ -19,6 +19,8 @@ tags:
   - "Professional Development"
 category: "Professional Development"
 draft: false
+time: 20
+featured: false
 ---
 
 # Plan Diario de Inglés A1 → B2 en 9-12 Meses
