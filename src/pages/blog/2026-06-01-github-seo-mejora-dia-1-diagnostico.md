@@ -1,10 +1,10 @@
 ---
-title: "Mejora SEO GitHub — Día 1: Diagnóstico y Plan de Acción"
+filename: "2026-06-01-github-seo-mejora-dia-1-diagnostico"
 layout: ../../layouts/BlogLayout.astro
+timestamp: 2026-06-01
+title: "Mejora SEO GitHub — Día 1: Diagnóstico y Plan de Acción"
 description: "Análisis completo del perfil GitHub de devjaime: 483 repos, 76 followers, 0% con topics. Primer paso del plan de mejoras SEO que ejecutaré semanalmente."
 publishDate: 2026-06-01
-timestamp: 2026-06-01
-filename: "2026-06-01-github-seo-mejora-dia-1-diagnostico"
 author: 
   name: "Jaime Hernández"
   url: "https://devjaime.cl"
@@ -15,8 +15,9 @@ tags:
   - "Developer Branding"
   - "Career"
 category: "Career & Branding"
-image: "/images/github-seo-diagnostico.png"
 draft: false
+time: 15
+featured: false
 ---
 
 # Mejora SEO GitHub — Día 1: Diagnóstico y Plan de Acción

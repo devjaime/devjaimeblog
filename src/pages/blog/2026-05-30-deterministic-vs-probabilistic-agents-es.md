@@ -1,8 +1,8 @@
 ---
+filename: "deterministic-vs-probabilistic-agents-es"
+layout: ../../layouts/BlogLayout.astro
 timestamp: "2026-05-30T12:00:00-0300"
 title: "Por qué tu AI Agent miente: El problema determinístico vs probabilístico"
-layout: ../../layouts/BlogLayout.astro
-filename: "deterministic-vs-probabilistic-agents-es"
 description: "Ejecuté una herramienta de auditoría de seguridad 50 veces contra la misma aplicación. Mismo código, mismo contexto, mismo prompt. ¿Sabés cuántas veces detectó todas las vulnerabilidades? 31 de 50. Te explico por qué pasa y cómo solucionarlo."
 publishDate: 2026-05-30
 author: 
@@ -16,6 +16,8 @@ tags:
   - "AI de Producción"
 category: "AI Engineering"
 draft: false
+time: 15
+featured: false
 ---
 
 # Por qué tu AI Agent miente: El problema determinístico vs probabilístico

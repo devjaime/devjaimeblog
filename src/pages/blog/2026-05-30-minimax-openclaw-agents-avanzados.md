@@ -1,8 +1,8 @@
 ---
+filename: "minimax-openclaw-agents-avanzados"
+layout: ../../layouts/BlogLayout.astro
 timestamp: "2026-05-30T12:00:00-0300"
 title: "MiniMax M2.7 + OpenClaw: Agentes IA que trabajan por ti en 2026"
-layout: ../../layouts/BlogLayout.astro
-filename: "minimax-openclaw-agents-avanzados"
 description: "Cómo implementar agentes avanzados con MiniMax M2.7 y OpenClaw para automatizar flujos de trabajo complejos. Guía práctica con ejemplos reales."
 publishDate: 2026-05-30
 author: 
@@ -18,8 +18,9 @@ tags:
   - "n8n"
   - "Backend Development"
 category: "AI Engineering"
-image: "/images/minimax-openclaw-agents-cover.png"
 draft: false
+time: 15
+featured: false
 ---
 
 # MiniMax M2.7 + OpenClaw: Agentes IA que trabajan por ti en 2026

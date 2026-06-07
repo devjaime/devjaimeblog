@@ -1,8 +1,8 @@
 ---
+filename: "deterministic-vs-probabilistic-agents"
+layout: ../../layouts/BlogLayout.astro
 timestamp: "2026-05-30T12:00:00-0300"
 title: "Why Your AI Agent Is Lying to You: The Deterministic vs Probabilistic Problem"
-layout: ../../layouts/BlogLayout.astro
-filename: "deterministic-vs-probabilistic-agents"
 description: "Last month I ran a security audit tool 50 times against the same application. Same code, same context, same prompt. You know how many times it caught all vulnerabilities? 31 out of 50. Here's why that happens and how to fix it."
 publishDate: 2026-05-30
 author: 
@@ -16,6 +16,8 @@ tags:
   - "Production AI"
 category: "AI Engineering"
 draft: false
+time: 15
+featured: false
 ---
 
 # Why Your AI Agent Is Lying to You: The Deterministic vs Probabilistic Problem
