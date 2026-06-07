@@ -1,4 +1,6 @@
-------
+---
+description: "Día 1: instalación y configuración de Flutter ============================================="
+---
 filename: "2021-03-21_D-a-1--instalaci-n-y-configuraci-n-de-Flutter-ea8bbc44e060"
 layout: "../../layouts/BlogLayout.astro"
 

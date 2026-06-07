@@ -1,4 +1,6 @@
-------
+---
+description: "Creando la Guía Definitiva para Escribir un Design Doc de Arquitectura de Microservicios: Pasos……"
+---
 filename: "2023-11-12_Creando-la-Gu-a-Definitiva-para-Escribir-un-Design-Doc-de-Arquitectura-de-Microservicios--Pasos--8c8203cbc762"
 layout: "../../layouts/BlogLayout.astro"
 

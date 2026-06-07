@@ -1,4 +1,6 @@
-------
+---
+description: "Día 3 Geocoding XamarinForms con Api XamarinEssentials ======================================================"
+---
 filename: "2019-04-19_D-a-3-Geocoding-XamarinForms-con-Api-XamarinEssentials-f8b8b8f37c5d"
 layout: "../../layouts/BlogLayout.astro"
 

@@ -1,4 +1,6 @@
-------
+---
+description: "Mi Experiencia con OpenClaw: Un Asistente de IA que Tiene Alma y Memoria ========================================================================"
+---
 filename: "2026-02-20_Mi-Experiencia-con-OpenClaw"
 layout: "../../layouts/BlogLayout.astro"
 

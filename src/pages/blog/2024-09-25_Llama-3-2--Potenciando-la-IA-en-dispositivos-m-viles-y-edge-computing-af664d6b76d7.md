@@ -1,4 +1,6 @@
-------
+---
+description: "Llama 3.2: Potenciando la IA en dispositivos móviles y edge computing ====================================================================="
+---
 filename: "2024-09-25_Llama-3-2--Potenciando-la-IA-en-dispositivos-m-viles-y-edge-computing-af664d6b76d7"
 layout: "../../layouts/BlogLayout.astro"
 

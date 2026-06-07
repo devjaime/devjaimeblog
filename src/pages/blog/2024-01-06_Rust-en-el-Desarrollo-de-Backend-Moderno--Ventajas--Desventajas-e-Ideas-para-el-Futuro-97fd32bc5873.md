@@ -1,4 +1,6 @@
-------
+---
+description: "Rust en el Desarrollo de Backend Moderno: Ventajas, Desventajas e Ideas para el Futuro…"
+---
 filename: "2024-01-06_Rust-en-el-Desarrollo-de-Backend-Moderno--Ventajas--Desventajas-e-Ideas-para-el-Futuro-97fd32bc5873"
 layout: "../../layouts/BlogLayout.astro"
 

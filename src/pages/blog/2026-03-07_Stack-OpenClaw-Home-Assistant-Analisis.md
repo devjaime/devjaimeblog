@@ -1,4 +1,6 @@
-------
+---
+description: "Lo que funciona, lo que no, y cuánto vale"
+---
 filename: "2026-03-07_Stack-OpenClaw-Home-Assistant-Analisis"
 layout: "../../layouts/BlogLayout.astro"
 

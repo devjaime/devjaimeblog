@@ -1,4 +1,6 @@
-------
+---
+description: "En el mundo actual de la Inteligencia Artificial, el foco a menudo se pone en el modelo más grande o más capaz. Sin embargo, la verdadera revolución no…"
+---
 filename: "2026-04-04_Gemma-4-El-ecosistema-de-modelos-abiertos-y-su-impacto-en-la-arquitectura-de-backend"
 layout: "../../layouts/BlogLayout.astro"
 

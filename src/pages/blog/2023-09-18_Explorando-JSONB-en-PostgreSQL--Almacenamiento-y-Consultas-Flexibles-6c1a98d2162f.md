@@ -1,4 +1,6 @@
-------
+---
+description: "Explorando JSONB en PostgreSQL: Almacenamiento y Consultas Flexibles ===================================================================="
+---
 filename: "2023-09-18_Explorando-JSONB-en-PostgreSQL--Almacenamiento-y-Consultas-Flexibles-6c1a98d2162f"
 layout: "../../layouts/BlogLayout.astro"
 

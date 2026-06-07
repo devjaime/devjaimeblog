@@ -1,4 +1,6 @@
-------
+---
+description: "Día 4: widgets Flutter + diseños básicos y responsivos ======================================================"
+---
 filename: "2021-10-11_D-a-4--widgets-Flutter---dise-os-b-sicos-y-responsivos-5468a0af808b"
 layout: "../../layouts/BlogLayout.astro"
 

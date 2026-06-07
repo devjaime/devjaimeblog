@@ -1,4 +1,6 @@
-------
+---
+description: "Implementación de un Sistema de Recomendaciones Personalizado en Retail usando IA con RAG, Google……"
+---
 filename: "2024-10-01_Implementaci-n-de-un-Sistema-de-Recomendaciones-Personalizado-en-Retail-usando-IA-con-RAG--Google--4b0ba349a82c"
 layout: "../../layouts/BlogLayout.astro"
 

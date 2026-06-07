@@ -1,4 +1,6 @@
-------
+---
+description: "Videos Explicativos de Vocari.cl ================================="
+---
 filename: "2026-02-20_Vocari-Cl-Videos-Explicativos"
 layout: "../../layouts/BlogLayout.astro"
 

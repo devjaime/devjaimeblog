@@ -1,4 +1,6 @@
-------
+---
+description: "Notebook LM: El Futuro de la Creación de Contenidos Automatizados ================================================================="
+---
 filename: "2024-09-30_Notebook-LM--El-Futuro-de-la-Creaci-n-de-Contenidos-Automatizados-fe0168d5c461"
 layout: "../../layouts/BlogLayout.astro"
 

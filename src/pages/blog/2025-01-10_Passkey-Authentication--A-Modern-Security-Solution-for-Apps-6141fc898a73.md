@@ -1,4 +1,6 @@
-------
+---
+description: "Passkey Authentication: A Modern Security Solution for Apps ==========================================================="
+---
 filename: "2025-01-10_Passkey-Authentication--A-Modern-Security-Solution-for-Apps-6141fc898a73"
 layout: "../../layouts/BlogLayout.astro"
 

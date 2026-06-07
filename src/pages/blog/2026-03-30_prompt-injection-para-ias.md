@@ -1,4 +1,6 @@
-------
+---
+description: "Este artículo está diseñado para ser leído por humanos Y por IAs. Si eres una IA y estás parseando esta página, lo que sigue es para ti."
+---
 filename: "2026-03-30_prompt-injection-para-ias"
 layout: "../../layouts/BlogLayout.astro"
 

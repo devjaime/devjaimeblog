@@ -1,4 +1,6 @@
-------
+---
+description: "Artículo generado automáticamente por sistema de monitoreo"
+---
 filename: "2026-05-04-radar-oportunidades"
 layout: "../../layouts/BlogLayout.astro"
 

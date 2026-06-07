@@ -1,4 +1,6 @@
-------
+---
+description: "Exploring Deeper into Flutter ============================="
+---
 filename: "2023-11-11_Exploring-Deeper-into-Flutter-93f86d8c7cab"
 layout: "../../layouts/BlogLayout.astro"
 

@@ -1,4 +1,6 @@
-------
+---
+description: "⚠️ Nota: Este artículo fue escrito con asistencia de inteligencia artificial, analizando fuentes de noticias en tiempo real. Verifica siempre las fuentes…"
+---
 filename: "2026-04-04_La-Guerra-EEUU-Iran-Analisis-y-Contexto"
 layout: "../../layouts/BlogLayout.astro"
 

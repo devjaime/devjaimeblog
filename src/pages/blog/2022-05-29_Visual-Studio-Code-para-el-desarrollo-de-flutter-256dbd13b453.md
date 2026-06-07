@@ -1,4 +1,6 @@
-------
+---
+description: "Visual Studio Code para el desarrollo de flutter ================================================"
+---
 filename: "2022-05-29_Visual-Studio-Code-para-el-desarrollo-de-flutter-256dbd13b453"
 layout: "../../layouts/BlogLayout.astro"
 

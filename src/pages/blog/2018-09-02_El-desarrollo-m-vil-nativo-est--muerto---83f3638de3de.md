@@ -1,4 +1,6 @@
-------
+---
+description: "El desarrollo móvil nativo está muerto!! ========================================"
+---
 filename: "2018-09-02_El-desarrollo-m-vil-nativo-est--muerto---83f3638de3de"
 layout: "../../layouts/BlogLayout.astro"
 

@@ -1,4 +1,6 @@
-------
+---
+description: "Volviendo a estudiar Frontend ============================="
+---
 filename: "2022-04-12_Volviendo-a-estudiar-Frontend-2fbb026d3c5"
 layout: "../../layouts/BlogLayout.astro"
 

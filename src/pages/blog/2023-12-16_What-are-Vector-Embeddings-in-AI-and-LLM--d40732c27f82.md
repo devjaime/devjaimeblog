@@ -1,4 +1,6 @@
-------
+---
+description: "What are Vector Embeddings in AI and LLM? ========================================="
+---
 filename: "2023-12-16_What-are-Vector-Embeddings-in-AI-and-LLM--d40732c27f82"
 layout: "../../layouts/BlogLayout.astro"
 

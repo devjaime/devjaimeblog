@@ -1,4 +1,6 @@
-------
+---
+description: "Mejorando la Búsqueda Semántica con Faiss, Pinecone y LangChain: Un Caso Real con Twitter…"
+---
 filename: "2024-09-23_Mejorando-la-B-squeda-Sem-ntica-con-Faiss--Pinecone-y-LangChain--Un-Caso-Real-con-Twitter-d656afb87e7b"
 layout: "../../layouts/BlogLayout.astro"
 

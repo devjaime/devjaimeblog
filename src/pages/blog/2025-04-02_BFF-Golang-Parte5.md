@@ -1,4 +1,6 @@
-------
+---
+description: "Después de asegurar, testear, documentar y desplegar nuestro BFF en Go, en esta quinta parte nos enfocamos en cómo mantenerlo operativo, flexible y…"
+---
 filename: "2025-04-02_BFF-Golang-Parte5"
 layout: "../../layouts/BlogLayout.astro"
 

@@ -1,4 +1,6 @@
-------
+---
+description: "Diario Automático - 2026-03-18"
+---
 filename: "2026-03-18_Diario-Automatico"
 layout: "../../layouts/BlogLayout.astro"
 

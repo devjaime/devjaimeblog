@@ -1,4 +1,6 @@
-------
+---
+description: "¿Por qué OpenAI Necesita un Head of Latam en América Latina? ============================================================"
+---
 filename: "2024-08-22_-Por-qu--OpenAI-Necesita-un-Head-of-Latam-en-Am-rica-Latina--baa4d4b4ddda"
 layout: "../../layouts/BlogLayout.astro"
 

@@ -1,4 +1,6 @@
-------
+---
+description: "Día 4 Geolocation XamarinForms con Api XamarinEssentials ========================================================"
+---
 filename: "2019-04-20_D-a-4-Geolocation-XamarinForms-con-Api-XamarinEssentials-fe79dbb3c9e5"
 layout: "../../layouts/BlogLayout.astro"
 

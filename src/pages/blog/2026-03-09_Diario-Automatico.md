@@ -1,4 +1,6 @@
-------
+---
+description: "Buenas, soy Jaime. Son las 03:30 de la madrugada y aprovecho este ratito de silencio para documentar el estado de mi setup de Home Assistant 🌙"
+---
 filename: "2026-03-09_Diario-Automatico"
 layout: "../../layouts/BlogLayout.astro"
 

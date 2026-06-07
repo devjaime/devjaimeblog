@@ -1,4 +1,6 @@
-------
+---
+description: "Sábado 4 de Abril, 2026"
+---
 filename: "2026-04-04_Cajon-del-Maipo-en-Familia"
 layout: "../../layouts/BlogLayout.astro"
 

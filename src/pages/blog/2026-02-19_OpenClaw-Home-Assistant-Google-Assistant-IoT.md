@@ -1,4 +1,6 @@
-------
+---
+description: "OpenClaw + Home Assistant + Google Assistant: La Nueva Era del Control IoT con IA…"
+---
 filename: "2026-02-19_OpenClaw-Home-Assistant-Google-Assistant-IoT"
 layout: "../../layouts/BlogLayout.astro"
 

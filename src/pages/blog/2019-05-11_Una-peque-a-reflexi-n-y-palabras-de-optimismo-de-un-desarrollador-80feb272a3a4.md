@@ -1,4 +1,6 @@
-------
+---
+description: "Una pequeña reflexión y palabras de optimismo de un desarrollador ================================================================="
+---
 filename: "2019-05-11_Una-peque-a-reflexi-n-y-palabras-de-optimismo-de-un-desarrollador-80feb272a3a4"
 layout: "../../layouts/BlogLayout.astro"
 

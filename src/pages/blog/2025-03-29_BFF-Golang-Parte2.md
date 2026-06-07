@@ -1,4 +1,6 @@
-------
+---
+description: "En la primera parte, construimos un BFF minimalista en Go usando OpenAPI, con estructura limpia y endpoints claros. En esta segunda entrega, vamos un paso…"
+---
 filename: "2025-03-29_BFF-Golang-Parte2"
 layout: "../../layouts/BlogLayout.astro"
 

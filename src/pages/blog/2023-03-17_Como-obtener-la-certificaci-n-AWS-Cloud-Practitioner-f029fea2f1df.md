@@ -1,4 +1,6 @@
-------
+---
+description: "Como obtener la certificación AWS Cloud Practitioner ===================================================="
+---
 filename: "2023-03-17_Como-obtener-la-certificaci-n-AWS-Cloud-Practitioner-f029fea2f1df"
 layout: "../../layouts/BlogLayout.astro"
 

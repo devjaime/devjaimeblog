@@ -1,4 +1,6 @@
-------
+---
+description: "Simplificando la Vida Diaria con Automatización y Python: Un Viaje por la Inteligencia Artificial…"
+---
 filename: "2023-11-12_Simplificando-la-Vida-Diaria-con-Automatizaci-n-y-Python--Un-Viaje-por-la-Inteligencia-Artificial-99e2a684cb63"
 layout: "../../layouts/BlogLayout.astro"
 

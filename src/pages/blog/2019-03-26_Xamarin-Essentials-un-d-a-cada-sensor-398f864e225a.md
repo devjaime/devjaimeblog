@@ -1,4 +1,6 @@
-------
+---
+description: "Xamarin Essentials un día cada sensor ====================================="
+---
 filename: "2019-03-26_Xamarin-Essentials-un-d-a-cada-sensor-398f864e225a"
 layout: "../../layouts/BlogLayout.astro"
 

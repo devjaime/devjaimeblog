@@ -1,4 +1,6 @@
-------
+---
+description: "Día 3: Arquitectura Flutter y configuración del proyecto ========================================================"
+---
 filename: "2021-03-23_D-a-3--Arquitectura-Flutter-y-configuraci-n-del-proyecto-9307aa98b4fe"
 layout: "../../layouts/BlogLayout.astro"
 

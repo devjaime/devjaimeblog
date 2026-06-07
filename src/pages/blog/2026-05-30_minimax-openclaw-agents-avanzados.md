@@ -1,4 +1,6 @@
-------
+---
+description: "El panorama de los agentes de IA ha cambiado drásticamente. Hace un año, tener un agente que ejecutara tareas complejas requería configuraciones en Langley,…"
+---
 filename: "2026-05-30_minimax-openclaw-agents-avanzados"
 layout: "../../layouts/BlogLayout.astro"
 

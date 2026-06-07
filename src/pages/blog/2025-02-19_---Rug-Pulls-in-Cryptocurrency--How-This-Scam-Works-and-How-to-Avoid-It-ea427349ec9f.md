@@ -1,4 +1,6 @@
-------
+---
+description: "🚨 Rug Pulls in Cryptocurrency: How This Scam Works and How to Avoid It ======================================================================="
+---
 filename: "2025-02-19_---Rug-Pulls-in-Cryptocurrency--How-This-Scam-Works-and-How-to-Avoid-It-ea427349ec9f"
 layout: "../../layouts/BlogLayout.astro"
 

@@ -1,4 +1,6 @@
-------
+---
+description: "En este artículo analizo el estado actual del dashboard de OpenClaw, las métricas principales y las oportunidades de mejora que podemos implementar."
+---
 filename: "2026-03-09_openclaw_dashboard_analysis"
 layout: "../../layouts/BlogLayout.astro"
 

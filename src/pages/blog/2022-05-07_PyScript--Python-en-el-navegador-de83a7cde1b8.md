@@ -1,4 +1,6 @@
-------
+---
+description: "PyScript: Python en el navegador ================================"
+---
 filename: "2022-05-07_PyScript--Python-en-el-navegador-de83a7cde1b8"
 layout: "../../layouts/BlogLayout.astro"
 

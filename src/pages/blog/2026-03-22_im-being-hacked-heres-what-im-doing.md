@@ -1,4 +1,6 @@
-------
+---
+description: "Let me be direct: someone is trying to compromise my accounts. Not once. Not twice. Consistently, across multiple platforms, with increasing sophistication."
+---
 filename: "2026-03-22_im-being-hacked-heres-what-im-doing"
 layout: "../../layouts/BlogLayout.astro"
 

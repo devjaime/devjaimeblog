@@ -1,4 +1,6 @@
-------
+---
+description: "Disclaimer: Esto es satire con base en observaciones de la industria. No soy periodista de investigación, soy developer con demasiados años en el juego."
+---
 filename: "2026-03-30_conspiraciones-tech-verdaderas"
 layout: "../../layouts/BlogLayout.astro"
 

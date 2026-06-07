@@ -1,4 +1,6 @@
-------
+---
+description: "Sometimes what seems like a simple "connect your app to the database" turns into an epic story of errors, frustration, coffee, and real technical learning.…"
+---
 filename: "2025-05-09_go-oracle-docker-debug-story-en"
 layout: "../../layouts/BlogLayout.astro"
 

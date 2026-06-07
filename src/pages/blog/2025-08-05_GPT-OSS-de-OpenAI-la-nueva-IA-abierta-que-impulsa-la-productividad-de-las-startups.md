@@ -1,4 +1,6 @@
-------
+---
+description: "GPT-OSS de OpenAI: la nueva IA abierta que impulsa la productividad de las startups…"
+---
 filename: "2025-08-05_GPT-OSS-de-OpenAI-la-nueva-IA-abierta-que-impulsa-la-productividad-de-las-startups"
 layout: "../../layouts/BlogLayout.astro"
 

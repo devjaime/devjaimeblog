@@ -1,4 +1,6 @@
-------
+---
+description: "Comparación de Características de Monitoreo: DataDog, New Relic y Dynatrace ==========================================================================="
+---
 filename: "2023-12-09_Comparaci-n-de-Caracter-sticas-de-Monitoreo--DataDog--New-Relic-y-Dynatrace-664447dd8260"
 layout: "../../layouts/BlogLayout.astro"
 

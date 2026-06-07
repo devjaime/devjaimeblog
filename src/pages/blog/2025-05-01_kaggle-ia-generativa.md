@@ -1,4 +1,6 @@
-------
+---
+description: "Kaggle es una plataforma en línea propiedad de Google que ofrece un entorno colaborativo para científicos de datos y entusiastas de la inteligencia…"
+---
 filename: "2025-05-01_kaggle-ia-generativa"
 layout: "../../layouts/BlogLayout.astro"
 

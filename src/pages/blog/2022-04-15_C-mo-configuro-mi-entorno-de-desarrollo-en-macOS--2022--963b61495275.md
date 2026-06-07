@@ -1,4 +1,6 @@
-------
+---
+description: "Cómo configuro mi entorno de desarrollo en macOS (2022) ======================================================="
+---
 filename: "2022-04-15_C-mo-configuro-mi-entorno-de-desarrollo-en-macOS--2022--963b61495275"
 layout: "../../layouts/BlogLayout.astro"
 

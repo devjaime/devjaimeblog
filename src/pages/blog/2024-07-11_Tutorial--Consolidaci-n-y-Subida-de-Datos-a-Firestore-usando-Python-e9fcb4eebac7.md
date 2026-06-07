@@ -1,4 +1,6 @@
-------
+---
+description: "Tutorial: Consolidación y Subida de Datos a Firestore usando Python ==================================================================="
+---
 filename: "2024-07-11_Tutorial--Consolidaci-n-y-Subida-de-Datos-a-Firestore-usando-Python-e9fcb4eebac7"
 layout: "../../layouts/BlogLayout.astro"
 

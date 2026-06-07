@@ -1,4 +1,6 @@
-------
+---
+description: "Publicación de una app Flutter en google play store ==================================================="
+---
 filename: "2019-03-10_Publicaci-n-de-una-app-Flutter-en-google-play-store-57b07092092c"
 layout: "../../layouts/BlogLayout.astro"
 

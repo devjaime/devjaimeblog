@@ -1,4 +1,6 @@
-------
+---
+description: "AWS Certified AI Practitioner (AIF-C01): Cómo aplicar sus conocimientos en casos prácticos…"
+---
 filename: "2024-12-12_AWS-Certified-AI-Practitioner--AIF-C01---C-mo-aplicar-sus-conocimientos-en-casos-pr-cticos-df270cffd3cb"
 layout: "../../layouts/BlogLayout.astro"
 

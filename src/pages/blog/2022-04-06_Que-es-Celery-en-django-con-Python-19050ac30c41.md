@@ -1,4 +1,6 @@
-------
+---
+description: "Que es Celery en django con Python =================================="
+---
 filename: "2022-04-06_Que-es-Celery-en-django-con-Python-19050ac30c41"
 layout: "../../layouts/BlogLayout.astro"
 

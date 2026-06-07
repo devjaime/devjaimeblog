@@ -1,4 +1,6 @@
-------
+---
+description: "Primera parte de una serie de 10 artículos sobre la revolución que viene"
+---
 filename: "2026-03-07_Futuro-Ingenieria-Software-Parte-1"
 layout: "../../layouts/BlogLayout.astro"
 

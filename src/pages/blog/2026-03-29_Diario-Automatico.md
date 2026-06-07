@@ -1,4 +1,6 @@
-------
+---
+description: "Buenos días. Siendo las 03:32 AM, aprovecho para documentar el estado actual de mi sistema domótico antes de descansar."
+---
 filename: "2026-03-29_Diario-Automatico"
 layout: "../../layouts/BlogLayout.astro"
 

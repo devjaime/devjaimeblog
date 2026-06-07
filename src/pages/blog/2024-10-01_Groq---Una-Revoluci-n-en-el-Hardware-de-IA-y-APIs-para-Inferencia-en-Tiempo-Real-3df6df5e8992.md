@@ -1,4 +1,6 @@
-------
+---
+description: "Groq — Una Revolución en el Hardware de IA y APIs para Inferencia en Tiempo Real…"
+---
 filename: "2024-10-01_Groq---Una-Revoluci-n-en-el-Hardware-de-IA-y-APIs-para-Inferencia-en-Tiempo-Real-3df6df5e8992"
 layout: "../../layouts/BlogLayout.astro"
 

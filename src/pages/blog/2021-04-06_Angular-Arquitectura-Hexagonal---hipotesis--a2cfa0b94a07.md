@@ -1,4 +1,6 @@
-------
+---
+description: "Angular Arquitectura Hexagonal: {hipotesis} ==========================================="
+---
 filename: "2021-04-06_Angular-Arquitectura-Hexagonal---hipotesis--a2cfa0b94a07"
 layout: "../../layouts/BlogLayout.astro"
 

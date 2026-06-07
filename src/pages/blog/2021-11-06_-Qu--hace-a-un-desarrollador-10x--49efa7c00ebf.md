@@ -1,4 +1,6 @@
-------
+---
+description: "¿Qué hace a un desarrollador 10x? ================================="
+---
 filename: "2021-11-06_-Qu--hace-a-un-desarrollador-10x--49efa7c00ebf"
 layout: "../../layouts/BlogLayout.astro"
 

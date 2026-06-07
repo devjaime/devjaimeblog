@@ -1,4 +1,6 @@
-------
+---
+description: "Custom E-commerce Development and Scalability: Building Your Unique Online Store…"
+---
 filename: "2023-11-05_Custom-E-commerce-Development-and-Scalability--Building-Your-Unique-Online-Store-8c242b2b6b9d"
 layout: "../../layouts/BlogLayout.astro"
 

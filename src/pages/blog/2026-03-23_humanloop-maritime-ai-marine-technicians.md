@@ -1,4 +1,6 @@
-------
+---
+description: "The maritime industry runs on critical equipment: Furuno radars, GMDSS systems, AIS transponders, GPS navigators, and fish finders. When these systems fail…"
+---
 filename: "2026-03-23_humanloop-maritime-ai-marine-technicians"
 layout: "../../layouts/BlogLayout.astro"
 

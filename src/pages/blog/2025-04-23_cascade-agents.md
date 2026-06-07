@@ -1,4 +1,6 @@
-------
+---
+description: ""The most powerful AI isn’t the one that does the most, but the one that understands how to help us best.""
+---
 filename: "2025-04-23_cascade-agents"
 layout: "../../layouts/BlogLayout.astro"
 

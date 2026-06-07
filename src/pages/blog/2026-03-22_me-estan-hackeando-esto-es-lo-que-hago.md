@@ -1,4 +1,6 @@
-------
+---
+description: "Voy a ser directo: alguien está intentando comprometer mis cuentas. No una vez. No dos veces. Consistentemente, en múltiples plataformas, con creciente…"
+---
 filename: "2026-03-22_me-estan-hackeando-esto-es-lo-que-hago"
 layout: "../../layouts/BlogLayout.astro"
 

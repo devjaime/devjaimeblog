@@ -1,4 +1,6 @@
-------
+---
+description: "En la era de la inteligencia artificial generativa, los sistemas RAG (Retrieval-Augmented Generation) están revolucionando cómo accedemos a la información…"
+---
 filename: "2025-04-12_Vectorizacion-AutoRAG"
 layout: "../../layouts/BlogLayout.astro"
 

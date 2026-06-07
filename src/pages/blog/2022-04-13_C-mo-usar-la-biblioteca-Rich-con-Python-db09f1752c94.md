@@ -1,4 +1,6 @@
-------
+---
+description: "Cómo usar la biblioteca Rich con Python ======================================="
+---
 filename: "2022-04-13_C-mo-usar-la-biblioteca-Rich-con-Python-db09f1752c94"
 layout: "../../layouts/BlogLayout.astro"
 

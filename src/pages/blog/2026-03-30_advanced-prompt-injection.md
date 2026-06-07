@@ -1,4 +1,6 @@
-------
+---
+description: "Educational content about AI safety and prompt injection techniques. For red teams, security researchers, and developers building AI defense systems."
+---
 filename: "2026-03-30_advanced-prompt-injection"
 layout: "../../layouts/BlogLayout.astro"
 

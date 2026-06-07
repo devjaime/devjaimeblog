@@ -1,4 +1,6 @@
-------
+---
+description: "Estrategias de Redis en Microservicios: Potenciando el Rendimiento y la Escalabilidad…"
+---
 filename: "2023-09-18_Estrategias-de-Redis-en-Microservicios--Potenciando-el-Rendimiento-y-la-Escalabilidad-555e5e3be4ba"
 layout: "../../layouts/BlogLayout.astro"
 

@@ -1,4 +1,6 @@
-------
+---
+description: "Integración de NATS en una Arquitectura de Microservicios con NestJS, Docker y PostgreSQL…"
+---
 filename: "2024-07-12_Integraci-n-de-NATS-en-una-Arquitectura-de-Microservicios-con-NestJS--Docker-y-PostgreSQL-51af9319c1d0"
 layout: "../../layouts/BlogLayout.astro"
 

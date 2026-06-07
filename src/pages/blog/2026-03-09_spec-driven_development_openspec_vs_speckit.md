@@ -1,4 +1,6 @@
-------
+---
+description: "El desarrollo de software está experimentando una transformación fundamental. Por décadas, el código ha sido el "rey" - las especificaciones servían al…"
+---
 filename: "2026-03-09_spec-driven_development_openspec_vs_speckit"
 layout: "../../layouts/BlogLayout.astro"
 

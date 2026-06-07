@@ -1,4 +1,6 @@
-------
+---
+description: "Entrenar tu propio modelo de lenguaje (LLM) ya no es exclusivo de grandes laboratorios de investigación. Gracias al trabajo de Imad Saddik, y el excelente…"
+---
 filename: "2025-04-13_Entrena-tu-LLM"
 layout: "../../layouts/BlogLayout.astro"
 

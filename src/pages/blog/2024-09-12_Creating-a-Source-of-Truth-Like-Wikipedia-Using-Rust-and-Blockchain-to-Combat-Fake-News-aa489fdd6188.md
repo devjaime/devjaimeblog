@@ -1,4 +1,6 @@
-------
+---
+description: "Creating a Source of Truth Like Wikipedia Using Rust and Blockchain to Combat Fake News…"
+---
 filename: "2024-09-12_Creating-a-Source-of-Truth-Like-Wikipedia-Using-Rust-and-Blockchain-to-Combat-Fake-News-aa489fdd6188"
 layout: "../../layouts/BlogLayout.astro"
 

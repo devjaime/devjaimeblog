@@ -1,4 +1,6 @@
-------
+---
+description: "Mi proceso de pensamiento de desarrollo para Frontend con Frontendmentor.io ==========================================================================="
+---
 filename: "2022-10-22_Mi-proceso-de-pensamiento-de-desarrollo-para-Frontend-con-Frontendmentor-io-6387837a90a6"
 layout: "../../layouts/BlogLayout.astro"
 

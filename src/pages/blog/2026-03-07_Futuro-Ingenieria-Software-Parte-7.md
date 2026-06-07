@@ -1,4 +1,6 @@
-------
+---
+description: "Sexta parte de una serie de 10 sobre el futuro de la ingeniería de software"
+---
 filename: "2026-03-07_Futuro-Ingenieria-Software-Parte-7"
 layout: "../../layouts/BlogLayout.astro"
 

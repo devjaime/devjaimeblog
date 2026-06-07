@@ -1,4 +1,6 @@
-------
+---
+description: "Comprendiendo la Diferencia entre PageRank y ArticleRank: Un Análisis en la Ciencia de Datos con……"
+---
 filename: "2025-01-17_Comprendiendo-la-Diferencia-entre-PageRank-y-ArticleRank--Un-An-lisis-en-la-Ciencia-de-Datos-con--e32c9f519d0b"
 layout: "../../layouts/BlogLayout.astro"
 

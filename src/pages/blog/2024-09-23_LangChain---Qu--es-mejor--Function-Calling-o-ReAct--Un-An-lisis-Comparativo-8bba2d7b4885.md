@@ -1,4 +1,6 @@
-------
+---
+description: "LangChain: ¿Qué es mejor, Function Calling o ReAct? Un Análisis Comparativo ==========================================================================="
+---
 filename: "2024-09-23_LangChain---Qu--es-mejor--Function-Calling-o-ReAct--Un-An-lisis-Comparativo-8bba2d7b4885"
 layout: "../../layouts/BlogLayout.astro"
 

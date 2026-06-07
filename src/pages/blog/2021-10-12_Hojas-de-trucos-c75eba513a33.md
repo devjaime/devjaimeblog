@@ -1,4 +1,6 @@
-------
+---
+description: "Hojas de trucos ==============="
+---
 filename: "2021-10-12_Hojas-de-trucos-c75eba513a33"
 layout: "../../layouts/BlogLayout.astro"
 

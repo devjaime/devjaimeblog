@@ -1,4 +1,6 @@
-------
+---
+description: "Si has estado evitando los sistemas multiagente debido a los costes de las API, esta semana lo ha cambiado todo."
+---
 filename: "2026-03-22_gpt-54-mini-nano-agents-economicos"
 layout: "../../layouts/BlogLayout.astro"
 

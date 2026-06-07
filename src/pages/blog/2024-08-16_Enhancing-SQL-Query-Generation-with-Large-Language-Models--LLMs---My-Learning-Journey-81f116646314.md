@@ -1,4 +1,6 @@
-------
+---
+description: "Enhancing SQL Query Generation with Large Language Models (LLMs): My Learning Journey…"
+---
 filename: "2024-08-16_Enhancing-SQL-Query-Generation-with-Large-Language-Models--LLMs---My-Learning-Journey-81f116646314"
 layout: "../../layouts/BlogLayout.astro"
 

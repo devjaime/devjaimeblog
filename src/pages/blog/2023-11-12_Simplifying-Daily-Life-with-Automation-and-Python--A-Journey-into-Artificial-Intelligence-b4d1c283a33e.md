@@ -1,4 +1,6 @@
-------
+---
+description: "Simplifying Daily Life with Automation and Python: A Journey into Artificial Intelligence…"
+---
 filename: "2023-11-12_Simplifying-Daily-Life-with-Automation-and-Python--A-Journey-into-Artificial-Intelligence-b4d1c283a33e"
 layout: "../../layouts/BlogLayout.astro"
 

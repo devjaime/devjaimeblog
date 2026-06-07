@@ -1,4 +1,6 @@
-------
+---
+description: "Cómo Funciona el Modelo O1: Principios, Ejemplos Reales y Código Funcional =========================================================================="
+---
 filename: "2024-12-20_C-mo-Funciona-el-Modelo-O1--Principios--Ejemplos-Reales-y-C-digo-Funcional-670e2d94c708"
 layout: "../../layouts/BlogLayout.astro"
 

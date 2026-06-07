@@ -1,4 +1,6 @@
-------
+---
+description: "Pinecone: Un Almacén de Vectores Optimizado para la Búsqueda de Similitudes ==========================================================================="
+---
 filename: "2024-09-21_Pinecone--Un-Almac-n-de-Vectores-Optimizado-para-la-B-squeda-de-Similitudes-ea747ae4762b"
 layout: "../../layouts/BlogLayout.astro"
 

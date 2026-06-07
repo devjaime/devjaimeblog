@@ -1,4 +1,6 @@
-------
+---
+description: "Vocari.cl: La Plataforma de Orientación Vocacional con IA que Está Transformando la Educación en Chile…"
+---
 filename: "2026-02-20_Vocari-Cl-Plataforma-Orientacion-Vocacional-IA-Chile"
 layout: "../../layouts/BlogLayout.astro"
 

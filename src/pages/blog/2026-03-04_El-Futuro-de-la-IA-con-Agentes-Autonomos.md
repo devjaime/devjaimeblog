@@ -1,4 +1,6 @@
-------
+---
+description: "Hace unos meses, la IA generativa era principalmente sobre chatbots que respondían preguntas. Hoy, estamos viviendo una transformación hacia algo mucho más…"
+---
 filename: "2026-03-04_El-Futuro-de-la-IA-con-Agentes-Autonomos"
 layout: "../../layouts/BlogLayout.astro"
 

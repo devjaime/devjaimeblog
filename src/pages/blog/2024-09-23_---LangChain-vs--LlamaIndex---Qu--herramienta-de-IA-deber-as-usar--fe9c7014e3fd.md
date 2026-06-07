@@ -1,4 +1,6 @@
-------
+---
+description: "💡 LangChain vs. LlamaIndex: ¿Qué herramienta de IA deberías usar? =================================================================="
+---
 filename: "2024-09-23_---LangChain-vs--LlamaIndex---Qu--herramienta-de-IA-deber-as-usar--fe9c7014e3fd"
 layout: "../../layouts/BlogLayout.astro"
 

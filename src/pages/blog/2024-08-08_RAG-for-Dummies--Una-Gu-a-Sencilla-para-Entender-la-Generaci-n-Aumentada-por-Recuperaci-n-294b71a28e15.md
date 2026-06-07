@@ -1,4 +1,6 @@
-------
+---
+description: "RAG for Dummies: Una Guía Sencilla para Entender la Generación Aumentada por Recuperación…"
+---
 filename: "2024-08-08_RAG-for-Dummies--Una-Gu-a-Sencilla-para-Entender-la-Generaci-n-Aumentada-por-Recuperaci-n-294b71a28e15"
 layout: "../../layouts/BlogLayout.astro"
 

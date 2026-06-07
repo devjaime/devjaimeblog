@@ -1,4 +1,6 @@
-------
+---
+description: "No es una lista de buenos propósitos. Es el plan concreto para consolidar ingresos, reducir burnout y avanzar hacia $10K USD/mes sin perderme en el camino."
+---
 filename: "2026-03-22_plan-2026-objetivos-reales"
 layout: "../../layouts/BlogLayout.astro"
 

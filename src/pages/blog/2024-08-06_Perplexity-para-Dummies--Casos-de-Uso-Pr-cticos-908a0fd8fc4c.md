@@ -1,4 +1,6 @@
-------
+---
+description: "Perplexity para Dummies: Casos de Uso Prácticos ==============================================="
+---
 filename: "2024-08-06_Perplexity-para-Dummies--Casos-de-Uso-Pr-cticos-908a0fd8fc4c"
 layout: "../../layouts/BlogLayout.astro"
 

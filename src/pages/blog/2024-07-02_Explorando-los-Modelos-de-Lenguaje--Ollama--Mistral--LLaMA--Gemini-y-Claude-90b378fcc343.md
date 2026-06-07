@@ -1,4 +1,6 @@
-------
+---
+description: "Explorando los Modelos de Lenguaje: Ollama, Mistral, LLaMA, Gemini y Claude ==========================================================================="
+---
 filename: "2024-07-02_Explorando-los-Modelos-de-Lenguaje--Ollama--Mistral--LLaMA--Gemini-y-Claude-90b378fcc343"
 layout: "../../layouts/BlogLayout.astro"
 

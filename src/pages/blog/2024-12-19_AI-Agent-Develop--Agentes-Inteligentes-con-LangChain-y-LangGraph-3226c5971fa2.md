@@ -1,4 +1,6 @@
-------
+---
+description: "AI Agent Develop: Agentes Inteligentes con LangChain y LangGraph ================================================================"
+---
 filename: "2024-12-19_AI-Agent-Develop--Agentes-Inteligentes-con-LangChain-y-LangGraph-3226c5971fa2"
 layout: "../../layouts/BlogLayout.astro"
 

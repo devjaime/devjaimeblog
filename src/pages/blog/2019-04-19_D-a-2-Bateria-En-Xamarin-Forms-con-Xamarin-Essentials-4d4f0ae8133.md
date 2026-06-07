@@ -1,4 +1,6 @@
-------
+---
+description: "Día 2 Bateria En Xamarin Forms con Xamarin Essentials ====================================================="
+---
 filename: "2019-04-19_D-a-2-Bateria-En-Xamarin-Forms-con-Xamarin-Essentials-4d4f0ae8133"
 layout: "../../layouts/BlogLayout.astro"
 

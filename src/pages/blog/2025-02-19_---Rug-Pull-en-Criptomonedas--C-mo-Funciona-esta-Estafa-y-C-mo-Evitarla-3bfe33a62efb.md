@@ -1,4 +1,6 @@
-------
+---
+description: "🚨 Rug Pull en Criptomonedas: Cómo Funciona esta Estafa y Cómo Evitarla ======================================================================="
+---
 filename: "2025-02-19_---Rug-Pull-en-Criptomonedas--C-mo-Funciona-esta-Estafa-y-C-mo-Evitarla-3bfe33a62efb"
 layout: "../../layouts/BlogLayout.astro"
 

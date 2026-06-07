@@ -1,4 +1,6 @@
-------
+---
+description: "Ruta de aprendizaje para las certificaciones GCP ================================================"
+---
 filename: "2023-04-11_Ruta-de-aprendizaje-para-las-certificaciones-GCP-5cf74c463589"
 layout: "../../layouts/BlogLayout.astro"
 

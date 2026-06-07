@@ -1,4 +1,6 @@
-------
+---
+description: "Metaprompting con O1: Optimizando Rutinas Basadas en LLMs ========================================================="
+---
 filename: "2024-12-29_Metaprompting-con-O1--Optimizando-Rutinas-Basadas-en-LLMs-ba41a6e3b55e"
 layout: "../../layouts/BlogLayout.astro"
 

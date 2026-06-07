@@ -1,4 +1,6 @@
-------
+---
+description: "Joi y Class-validator ====================="
+---
 filename: "2023-03-17_Joi-y-Class-validator-bd842fa59cb5"
 layout: "../../layouts/BlogLayout.astro"
 

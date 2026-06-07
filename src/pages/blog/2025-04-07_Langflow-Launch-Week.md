@@ -1,4 +1,6 @@
-------
+---
+description: "La comunidad de Langflow vivió una semana emocionante con el anuncio de varias funcionalidades que redefinen cómo construimos flujos de trabajo con agentes…"
+---
 filename: "2025-04-07_Langflow-Launch-Week"
 layout: "../../layouts/BlogLayout.astro"
 

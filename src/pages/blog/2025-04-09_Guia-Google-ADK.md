@@ -1,4 +1,6 @@
-------
+---
+description: "Google ha lanzado ADK (Agent Development Kit), un potente framework open source que te permite crear agentes de inteligencia artificial de forma modular,…"
+---
 filename: "2025-04-09_Guia-Google-ADK"
 layout: "../../layouts/BlogLayout.astro"
 

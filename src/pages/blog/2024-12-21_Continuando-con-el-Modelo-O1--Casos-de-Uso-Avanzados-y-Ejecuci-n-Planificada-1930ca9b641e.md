@@ -1,4 +1,6 @@
-------
+---
+description: "Continuando con el Modelo O1: Casos de Uso Avanzados y Ejecución Planificada ============================================================================"
+---
 filename: "2024-12-21_Continuando-con-el-Modelo-O1--Casos-de-Uso-Avanzados-y-Ejecuci-n-Planificada-1930ca9b641e"
 layout: "../../layouts/BlogLayout.astro"
 

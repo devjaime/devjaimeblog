@@ -1,4 +1,6 @@
-------
+---
+description: "Algunas de mis suscripciones de youtube que más recomiendo. (especial des ========================================================================="
+---
 filename: "2022-04-11_Algunas-de-mis-suscripciones-de-youtube-que-m-s-recomiendo---especial-des-f3522900ac6f"
 layout: "../../layouts/BlogLayout.astro"
 

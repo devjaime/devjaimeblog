@@ -1,4 +1,6 @@
-------
+---
+description: "Vercel AI para Developers Dummies: Una Introducción Sencilla con Next.js ========================================================================"
+---
 filename: "2024-08-07_Vercel-AI-para-Developers-Dummies--Una-Introducci-n-Sencilla-con-Next-js-8e38ca2ae813"
 layout: "../../layouts/BlogLayout.astro"
 

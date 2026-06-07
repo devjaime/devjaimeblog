@@ -1,4 +1,6 @@
-------
+---
+description: "Cutting-Edge Web Development with Next.js: Turning Ideas into Reality ====================================================================="
+---
 filename: "2023-11-11_Cutting-Edge-Web-Development-with-Next-js--Turning-Ideas-into-Reality-0468321b7a63"
 layout: "../../layouts/BlogLayout.astro"
 

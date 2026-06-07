@@ -1,4 +1,6 @@
-------
+---
+description: "Claude 3.5 y el Uso de Computadora: Un Salto Cuántico en la Automatización de Tareas…"
+---
 filename: "2024-11-16_Claude-3-5-y-el-Uso-de-Computadora--Un-Salto-Cu-ntico-en-la-Automatizaci-n-de-Tareas-ac4f6ec31d2f"
 layout: "../../layouts/BlogLayout.astro"
 

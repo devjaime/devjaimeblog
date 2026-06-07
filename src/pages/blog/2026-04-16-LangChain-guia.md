@@ -1,4 +1,6 @@
-------
+---
+description: "Artículo generado automáticamente | Tendencias actualizadas: 2026-04-16"
+---
 filename: "2026-04-16-LangChain-guia"
 layout: "../../layouts/BlogLayout.astro"
 

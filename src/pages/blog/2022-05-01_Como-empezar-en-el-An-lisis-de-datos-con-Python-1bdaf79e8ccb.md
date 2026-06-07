@@ -1,4 +1,6 @@
-------
+---
+description: "Como empezar en el Análisis de datos con Python ==============================================="
+---
 filename: "2022-05-01_Como-empezar-en-el-An-lisis-de-datos-con-Python-1bdaf79e8ccb"
 layout: "../../layouts/BlogLayout.astro"
 

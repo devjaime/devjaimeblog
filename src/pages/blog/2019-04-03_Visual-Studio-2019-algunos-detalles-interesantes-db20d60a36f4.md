@@ -1,4 +1,6 @@
-------
+---
+description: "Visual Studio 2019 algunos detalles interesantes ================================================"
+---
 filename: "2019-04-03_Visual-Studio-2019-algunos-detalles-interesantes-db20d60a36f4"
 layout: "../../layouts/BlogLayout.astro"
 

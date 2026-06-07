@@ -1,4 +1,6 @@
-------
+---
+description: "Son las 03:30 AM y el sistema está en modo nocturno. El sol está bajo el horizonte, así que las luces exteriores deberían estar apagadas. Respecto a las…"
+---
 filename: "2026-03-16_Diario-Automatico"
 layout: "../../layouts/BlogLayout.astro"
 

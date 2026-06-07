@@ -1,4 +1,6 @@
-------
+---
+description: "🔗 Repositorio GitHub: json-ai-tools/json-ai-inspector 🌐 App en línea: json-ai-inspector.streamlit.app"
+---
 filename: "2025-04-19_json-ai-inspector"
 layout: "../../layouts/BlogLayout.astro"
 

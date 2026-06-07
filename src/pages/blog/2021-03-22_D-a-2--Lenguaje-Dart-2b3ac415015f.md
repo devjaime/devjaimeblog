@@ -1,4 +1,6 @@
-------
+---
+description: "Día 2: Lenguaje Dart ===================="
+---
 filename: "2021-03-22_D-a-2--Lenguaje-Dart-2b3ac415015f"
 layout: "../../layouts/BlogLayout.astro"
 

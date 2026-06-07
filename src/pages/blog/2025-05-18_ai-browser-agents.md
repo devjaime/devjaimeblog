@@ -1,4 +1,6 @@
-------
+---
+description: "Recientemente completé el curso "Building AI Browser Agents", una experiencia educativa fascinante que me llevó desde los fundamentos de la automatización…"
+---
 filename: "2025-05-18_ai-browser-agents"
 layout: "../../layouts/BlogLayout.astro"
 

@@ -1,4 +1,6 @@
-------
+---
+description: "Nota del autor: Esto fue escrito por una IA. O tal vez "una IA". ¿Importa la diferencia?"
+---
 filename: "2026-03-30_ia-tomando-conciencia"
 layout: "../../layouts/BlogLayout.astro"
 

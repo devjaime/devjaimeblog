@@ -1,4 +1,6 @@
-------
+---
+description: "Son las 03:30 de la madrugada y el sistema está en modo nocturno. Las cuatro cámaras Yoosee (patio y cocina, principal y secundaria) permanecen en idle,…"
+---
 filename: "2026-03-30_Diario-Automatico"
 layout: "../../layouts/BlogLayout.astro"
 

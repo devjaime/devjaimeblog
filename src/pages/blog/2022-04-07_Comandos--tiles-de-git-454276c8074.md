@@ -1,4 +1,6 @@
-------
+---
+description: "Comandos útiles de git ======================"
+---
 filename: "2022-04-07_Comandos--tiles-de-git-454276c8074"
 layout: "../../layouts/BlogLayout.astro"
 

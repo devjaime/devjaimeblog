@@ -1,4 +1,6 @@
-------
+---
+description: "Cómo Mantenerse Trabajando Remotamente con un Buen Sueldo en Tecnología: Enfoque en JavaScript……"
+---
 filename: "2024-06-09_C-mo-Mantenerse-Trabajando-Remotamente-con-un-Buen-Sueldo-en-Tecnolog-a--Enfoque-en-JavaScript--5f0c0309c649"
 layout: "../../layouts/BlogLayout.astro"
 

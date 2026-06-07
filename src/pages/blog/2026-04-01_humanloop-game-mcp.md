@@ -1,4 +1,6 @@
-------
+---
+description: "🎮 Si puedes visualizarlo, puedes entenderlo."
+---
 filename: "2026-04-01_humanloop-game-mcp"
 layout: "../../layouts/BlogLayout.astro"
 

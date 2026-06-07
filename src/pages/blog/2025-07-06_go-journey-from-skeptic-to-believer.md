@@ -1,4 +1,6 @@
-------
+---
+description: "A candid story about discovering Go's elegance and power in real-world scenarios"
+---
 filename: "2025-07-06_go-journey-from-skeptic-to-believer"
 layout: "../../layouts/BlogLayout.astro"
 

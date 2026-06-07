@@ -1,4 +1,6 @@
-------
+---
+description: "Ya tienes un BFF en Go documentado, seguro y dockerizado. En esta cuarta parte, te mostraré cómo llevarlo al siguiente nivel:"
+---
 filename: "2025-04-01_BFF-Golang-Parte4"
 layout: "../../layouts/BlogLayout.astro"
 

@@ -1,4 +1,6 @@
-------
+---
+description: "Ruta de aprendizaje para ingles de A1 a B2 =========================================="
+---
 filename: "2023-04-11_Ruta-de-aprendizaje-para-ingles-de-A1-a-B2-8748aa01ed97"
 layout: "../../layouts/BlogLayout.astro"
 

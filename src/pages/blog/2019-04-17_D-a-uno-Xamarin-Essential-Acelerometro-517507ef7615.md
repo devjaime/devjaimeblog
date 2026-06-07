@@ -1,4 +1,6 @@
-------
+---
+description: "Día uno Xamarin Essential Acelerometro ======================================"
+---
 filename: "2019-04-17_D-a-uno-Xamarin-Essential-Acelerometro-517507ef7615"
 layout: "../../layouts/BlogLayout.astro"
 

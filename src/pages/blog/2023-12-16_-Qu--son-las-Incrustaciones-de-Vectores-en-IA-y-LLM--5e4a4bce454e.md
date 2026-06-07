@@ -1,4 +1,6 @@
-------
+---
+description: "¿Qué son las Incrustaciones de Vectores en IA y LLM? ===================================================="
+---
 filename: "2023-12-16_-Qu--son-las-Incrustaciones-de-Vectores-en-IA-y-LLM--5e4a4bce454e"
 layout: "../../layouts/BlogLayout.astro"
 

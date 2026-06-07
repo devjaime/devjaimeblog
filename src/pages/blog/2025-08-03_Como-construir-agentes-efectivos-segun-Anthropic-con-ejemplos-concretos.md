@@ -1,4 +1,6 @@
-------
+---
+description: "Cómo construir agentes efectivos según Anthropic (con ejemplos concretos) =========================================================================="
+---
 filename: "2025-08-03_Como-construir-agentes-efectivos-segun-Anthropic-con-ejemplos-concretos"
 layout: "../../layouts/BlogLayout.astro"
 

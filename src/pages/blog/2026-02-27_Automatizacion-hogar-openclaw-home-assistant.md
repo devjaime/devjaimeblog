@@ -1,4 +1,6 @@
-------
+---
+description: "En los últimos meses he estado trabajando en integrar OpenClaw con Home Assistant para crear un sistema de automatización del hogar controlado por IA. En…"
+---
 filename: "2026-02-27_Automatizacion-hogar-openclaw-home-assistant"
 layout: "../../layouts/BlogLayout.astro"
 

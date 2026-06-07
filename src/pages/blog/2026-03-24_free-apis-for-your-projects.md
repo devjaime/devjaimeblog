@@ -1,4 +1,6 @@
-------
+---
+description: "Based on your active projects (Vocari.cl, FlipReady, Humanloop Maritime, HealthAI), here's a curated list of APIs that can accelerate development."
+---
 filename: "2026-03-24_free-apis-for-your-projects"
 layout: "../../layouts/BlogLayout.astro"
 

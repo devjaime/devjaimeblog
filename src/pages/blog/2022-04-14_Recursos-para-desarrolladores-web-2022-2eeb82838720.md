@@ -1,4 +1,6 @@
-------
+---
+description: "Recursos para desarrolladores web 2022 ======================================"
+---
 filename: "2022-04-14_Recursos-para-desarrolladores-web-2022-2eeb82838720"
 layout: "../../layouts/BlogLayout.astro"
 

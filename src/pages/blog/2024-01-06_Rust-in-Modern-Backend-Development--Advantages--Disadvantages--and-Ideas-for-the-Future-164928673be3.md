@@ -1,4 +1,6 @@
-------
+---
+description: "Rust in Modern Backend Development: Advantages, Disadvantages, and Ideas for the Future…"
+---
 filename: "2024-01-06_Rust-in-Modern-Backend-Development--Advantages--Disadvantages--and-Ideas-for-the-Future-164928673be3"
 layout: "../../layouts/BlogLayout.astro"
 

@@ -1,4 +1,6 @@
-------
+---
+description: "Creando una biblioteca simple usando CLI angular 7 y desplegando en azure ========================================================================="
+---
 filename: "2018-11-07_Creando-una-biblioteca-simple-usando-CLI-angular-7-y-desplegando-en-azure-d8c9d66668bd"
 layout: "../../layouts/BlogLayout.astro"
 

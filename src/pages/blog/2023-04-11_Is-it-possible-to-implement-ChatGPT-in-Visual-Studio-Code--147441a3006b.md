@@ -1,4 +1,6 @@
-------
+---
+description: "Is it possible to implement ChatGPT in Visual Studio Code? =========================================================="
+---
 filename: "2023-04-11_Is-it-possible-to-implement-ChatGPT-in-Visual-Studio-Code--147441a3006b"
 layout: "../../layouts/BlogLayout.astro"
 

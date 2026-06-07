@@ -1,4 +1,6 @@
-------
+---
+description: "Ruta de aprendizaje para las certificaciones de AWS ==================================================="
+---
 filename: "2023-04-11_Ruta-de-aprendizaje-para-las-certificaciones-de-AWS-e28d8d5a8e65"
 layout: "../../layouts/BlogLayout.astro"
 

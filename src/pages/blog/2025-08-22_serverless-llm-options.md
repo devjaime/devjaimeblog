@@ -1,4 +1,6 @@
-------
+---
+description: "Ollama · LM Studio · vLLM (serverless con Runpod / infraestructura on‑demand)"
+---
 filename: "2025-08-22_serverless-llm-options"
 layout: "../../layouts/BlogLayout.astro"
 

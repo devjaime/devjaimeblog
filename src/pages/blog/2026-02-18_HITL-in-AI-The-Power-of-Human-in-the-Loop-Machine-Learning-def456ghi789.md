@@ -1,4 +1,6 @@
-------
+---
+description: "HITL in AI: The Power of Human-in-the-Loop Machine Learning ==========================================================="
+---
 filename: "2026-02-18_HITL-in-AI-The-Power-of-Human-in-the-Loop-Machine-Learning-def456ghi789"
 layout: "../../layouts/BlogLayout.astro"
 

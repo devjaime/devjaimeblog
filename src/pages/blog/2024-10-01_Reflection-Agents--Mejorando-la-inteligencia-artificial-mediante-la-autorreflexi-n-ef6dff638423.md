@@ -1,4 +1,6 @@
-------
+---
+description: "Reflection Agents: Mejorando la inteligencia artificial mediante la autorreflexión…"
+---
 filename: "2024-10-01_Reflection-Agents--Mejorando-la-inteligencia-artificial-mediante-la-autorreflexi-n-ef6dff638423"
 layout: "../../layouts/BlogLayout.astro"
 

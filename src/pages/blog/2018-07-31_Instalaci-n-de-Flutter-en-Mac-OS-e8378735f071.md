@@ -1,4 +1,6 @@
-------
+---
+description: "Instalación de Flutter en Mac OS ================================"
+---
 filename: "2018-07-31_Instalaci-n-de-Flutter-en-Mac-OS-e8378735f071"
 layout: "../../layouts/BlogLayout.astro"
 

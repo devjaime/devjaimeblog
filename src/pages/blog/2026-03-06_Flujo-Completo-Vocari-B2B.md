@@ -1,4 +1,6 @@
-------
+---
+description: "Tutorial detallado para implementar Vocari.cl en tu establecimiento educativo"
+---
 filename: "2026-03-06_Flujo-Completo-Vocari-B2B"
 layout: "../../layouts/BlogLayout.astro"
 

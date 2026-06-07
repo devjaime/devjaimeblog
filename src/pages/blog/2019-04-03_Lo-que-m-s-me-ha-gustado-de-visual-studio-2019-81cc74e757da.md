@@ -1,4 +1,6 @@
-------
+---
+description: "Lo que más me ha gustado de visual studio 2019 =============================================="
+---
 filename: "2019-04-03_Lo-que-m-s-me-ha-gustado-de-visual-studio-2019-81cc74e757da"
 layout: "../../layouts/BlogLayout.astro"
 

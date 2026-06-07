@@ -1,4 +1,6 @@
-------
+---
+description: "Construyendo Nuevas Ideas de Negocio para un desarrollo de software exitoso en un Contexto……"
+---
 filename: "2023-12-16_Construyendo-Nuevas-Ideas-de-Negocio-para-un-desarrollo-de-software-exitoso-en-un-Contexto--cf7fbc3b8363"
 layout: "../../layouts/BlogLayout.astro"
 

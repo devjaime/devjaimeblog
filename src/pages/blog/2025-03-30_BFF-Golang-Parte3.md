@@ -1,4 +1,6 @@
-------
+---
+description: "Luego de construir un Backend For Frontend con Go + OpenAPI y extenderlo con pruebas, concurrencia y resiliencia, es momento de prepararlo para producción."
+---
 filename: "2025-03-30_BFF-Golang-Parte3"
 layout: "../../layouts/BlogLayout.astro"
 

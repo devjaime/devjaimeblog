@@ -1,4 +1,6 @@
-------
+---
+description: "Scraping Stack Overflow Usando Python ====================================="
+---
 filename: "2019-04-24_Scraping-Stack-Overflow-Usando-Python-22ad9e2af5a4"
 layout: "../../layouts/BlogLayout.astro"
 

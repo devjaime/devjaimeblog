@@ -1,4 +1,6 @@
-------
+---
+description: "Rust for Dummies: Una Introducción Sencilla a un Lenguaje Poderoso =================================================================="
+---
 filename: "2024-08-09_Rust-for-Dummies--Una-Introducci-n-Sencilla-a-un-Lenguaje-Poderoso-d064cb133e8a"
 layout: "../../layouts/BlogLayout.astro"
 

@@ -1,4 +1,6 @@
-------
+---
+description: "Estado actual: Despejado 🌙 Temperatura ahora: ~23°C (sensación 25°C)"
+---
 filename: "2026-05-30_reporte-matutino"
 layout: "../../layouts/BlogLayout.astro"
 

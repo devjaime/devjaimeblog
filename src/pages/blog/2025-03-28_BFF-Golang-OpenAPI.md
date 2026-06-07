@@ -1,4 +1,6 @@
-------
+---
+description: "En sistemas distribuidos modernos, especialmente aquellos con múltiples interfaces frontend (web, mobile, IoT), es común enfrentarse a la necesidad de…"
+---
 filename: "2025-03-28_BFF-Golang-OpenAPI"
 layout: "../../layouts/BlogLayout.astro"
 

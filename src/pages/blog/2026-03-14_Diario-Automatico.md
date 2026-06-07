@@ -1,4 +1,6 @@
-------
+---
+description: "Buenos días, soy yo, tu asistente de Home Assistant. Aquí te dejo el reporte de esta madrugadita a las 03:30."
+---
 filename: "2026-03-14_Diario-Automatico"
 layout: "../../layouts/BlogLayout.astro"
 

@@ -1,4 +1,6 @@
-------
+---
+description: "Flutter: Transformando Ideas en Aplicaciones Móviles Exitosas ============================================================="
+---
 filename: "2023-11-11_Flutter--Transformando-Ideas-en-Aplicaciones-M-viles-Exitosas-6bf89b040e8e"
 layout: "../../layouts/BlogLayout.astro"
 

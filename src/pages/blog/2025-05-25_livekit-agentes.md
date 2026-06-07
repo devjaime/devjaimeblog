@@ -1,5 +1,7 @@
 
-------
+---
+description: "LiveKit es una plataforma moderna y de código abierto que permite integrar video, audio y datos en tiempo real en tus aplicaciones. En este blog, te llevaré…"
+---
 filename: "2025-05-25_livekit-agentes"
 layout: "../../layouts/BlogLayout.astro"
 

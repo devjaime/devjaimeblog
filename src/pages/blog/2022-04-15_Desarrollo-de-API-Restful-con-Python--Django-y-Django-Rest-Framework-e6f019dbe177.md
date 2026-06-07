@@ -1,4 +1,6 @@
-------
+---
+description: "Desarrollo de API Restful con Python, Django y Django Rest Framework ===================================================================="
+---
 filename: "2022-04-15_Desarrollo-de-API-Restful-con-Python--Django-y-Django-Rest-Framework-e6f019dbe177"
 layout: "../../layouts/BlogLayout.astro"
 

@@ -1,4 +1,6 @@
-------
+---
+description: "Que es kafka y como implementarlo en nestjs ==========================================="
+---
 filename: "2023-03-18_Que-es-kafka-y-como-implementarlo-en-nestjs-657e60468356"
 layout: "../../layouts/BlogLayout.astro"
 

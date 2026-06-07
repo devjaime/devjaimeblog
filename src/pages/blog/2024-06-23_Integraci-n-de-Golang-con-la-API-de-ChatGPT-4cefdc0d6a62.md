@@ -1,4 +1,6 @@
-------
+---
+description: "Integración de Golang con la API de ChatGPT ==========================================="
+---
 filename: "2024-06-23_Integraci-n-de-Golang-con-la-API-de-ChatGPT-4cefdc0d6a62"
 layout: "../../layouts/BlogLayout.astro"
 

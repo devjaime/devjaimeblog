@@ -1,4 +1,6 @@
-------
+---
+description: "Entendiendo el Patrón Adaptador en TypeScript con Pruebas Unitarias ==================================================================="
+---
 filename: "2023-10-14_Entendiendo-el-Patr-n-Adaptador-en-TypeScript-con-Pruebas-Unitarias-9604f3209baa"
 layout: "../../layouts/BlogLayout.astro"
 

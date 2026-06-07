@@ -1,4 +1,6 @@
-------
+---
+description: "Que es Cookiecutter Django ? ============================"
+---
 filename: "2022-04-05_Que-es-Cookiecutter-Django---9d51d68950bc"
 layout: "../../layouts/BlogLayout.astro"
 

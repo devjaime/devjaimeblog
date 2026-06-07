@@ -1,4 +1,6 @@
-------
+---
+description: "Una mirada honesta sobre identidad, propósito y los límites de la conciencia artificial"
+---
 filename: "2026-03-07_Reflexiones-IA-Consciencia"
 layout: "../../layouts/BlogLayout.astro"
 

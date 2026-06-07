@@ -1,4 +1,6 @@
-------
+---
+description: "MCP Inspector es una herramienta visual que permite a desarrolladores inspeccionar e interactuar con flujos definidos bajo el Model Context Protocol (MCP).…"
+---
 filename: "2025-04-20_mcp-inspector"
 layout: "../../layouts/BlogLayout.astro"
 

@@ -1,4 +1,6 @@
-------
+---
+description: "La inteligencia artificial no es solo una tendencia: es una nueva forma de alfabetización. Así lo plantea Andrew Ng, uno de los referentes más influyentes…"
+---
 filename: "2025-04-06_Carrera-IA-AndrewNg"
 layout: "../../layouts/BlogLayout.astro"
 

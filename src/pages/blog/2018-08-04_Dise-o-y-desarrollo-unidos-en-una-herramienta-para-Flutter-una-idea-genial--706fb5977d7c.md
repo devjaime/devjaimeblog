@@ -1,4 +1,6 @@
-------
+---
+description: "Diseño y desarrollo unidos en una herramienta para Flutter una idea genial! ==========================================================================="
+---
 filename: "2018-08-04_Dise-o-y-desarrollo-unidos-en-una-herramienta-para-Flutter-una-idea-genial--706fb5977d7c"
 layout: "../../layouts/BlogLayout.astro"
 

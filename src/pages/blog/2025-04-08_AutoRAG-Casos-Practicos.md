@@ -1,4 +1,6 @@
-------
+---
+description: "Cloudflare ha dado un paso decisivo al lanzar AutoRAG, un servicio que automatiza completamente la implementación de pipelines RAG (Generación Aumentada por…"
+---
 filename: "2025-04-08_AutoRAG-Casos-Practicos"
 layout: "../../layouts/BlogLayout.astro"
 

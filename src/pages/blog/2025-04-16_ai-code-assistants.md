@@ -1,4 +1,6 @@
-------
+---
+description: "La programación moderna está experimentando una revolución silenciosa gracias a los asistentes de código impulsados por IA. Estas herramientas no solo…"
+---
 filename: "2025-04-16_ai-code-assistants"
 layout: "../../layouts/BlogLayout.astro"
 

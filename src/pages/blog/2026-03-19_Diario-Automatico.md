@@ -1,4 +1,6 @@
-------
+---
+description: "Buenos días! Es Jaime Hernández desde Santiago de Chile 🌎"
+---
 filename: "2026-03-19_Diario-Automatico"
 layout: "../../layouts/BlogLayout.astro"
 

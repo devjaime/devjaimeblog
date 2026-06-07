@@ -1,4 +1,6 @@
-------
+---
+description: "Haystack: Construyendo Aplicaciones de IA con Componentes Modulares ==================================================================="
+---
 filename: "2024-08-28_Haystack--Construyendo-Aplicaciones-de-IA-con-Componentes-Modulares-02d1ae93a849"
 layout: "../../layouts/BlogLayout.astro"
 

@@ -1,4 +1,6 @@
-------
+---
+description: "Azure CLI usando una Mac"
+---
 filename: "2018-06-21_Azure-CLI-usando-una-Mac-f2c620ae436f"
 layout: "../../layouts/BlogLayout.astro"
 

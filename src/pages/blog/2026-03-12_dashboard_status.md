@@ -1,4 +1,6 @@
-------
+---
+description: "| Componente | Estado | Código HTTP | |------------|--------|-------------|"
+---
 filename: "2026-03-12_dashboard_status"
 layout: "../../layouts/BlogLayout.astro"
 

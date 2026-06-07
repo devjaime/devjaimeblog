@@ -1,4 +1,6 @@
-------
+---
+description: "Cómo construir un sistema de automatización inteligente sin quebrar"
+---
 filename: "2026-03-07_IoT-Domestico-IA-Guia-Completa"
 layout: "../../layouts/BlogLayout.astro"
 

@@ -1,4 +1,6 @@
-------
+---
+description: "La inteligencia artificial (IA) ha avanzado significativamente en los últimos años, pero uno de los desafíos persistentes ha sido la integración eficiente…"
+---
 filename: "2025-03-23_MCP-Model-Context-Protocol"
 layout: "../../layouts/BlogLayout.astro"
 

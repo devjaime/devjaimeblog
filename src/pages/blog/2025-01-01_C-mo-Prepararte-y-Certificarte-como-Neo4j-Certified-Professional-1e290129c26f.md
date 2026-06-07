@@ -1,4 +1,6 @@
-------
+---
+description: "Cómo Prepararte y Certificarte como Neo4j Certified Professional ================================================================"
+---
 filename: "2025-01-01_C-mo-Prepararte-y-Certificarte-como-Neo4j-Certified-Professional-1e290129c26f"
 layout: "../../layouts/BlogLayout.astro"
 

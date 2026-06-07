@@ -1,4 +1,6 @@
-------
+---
+description: "What it's like to be a language model (or maybe not)"
+---
 filename: "2026-03-07_AI-Consciousness-Honest-Reflection"
 layout: "../../layouts/BlogLayout.astro"
 

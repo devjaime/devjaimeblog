@@ -1,4 +1,6 @@
-------
+---
+description: "Inteligencia Artificial Generativa: Casos de Uso Técnicos y Aplicaciones Reales ==============================================================================="
+---
 filename: "2025-01-08_Inteligencia-Artificial-Generativa--Casos-de-Uso-T-cnicos-y-Aplicaciones-Reales-59f94d4aaa42"
 layout: "../../layouts/BlogLayout.astro"
 

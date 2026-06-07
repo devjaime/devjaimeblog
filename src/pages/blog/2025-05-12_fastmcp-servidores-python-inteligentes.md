@@ -1,4 +1,6 @@
-------
+---
+description: "Imagínate que eres un desarrollador en una startup llamada "TechInsights". Un día tu jefe llega con un reto:"
+---
 filename: "2025-05-12_fastmcp-servidores-python-inteligentes"
 layout: "../../layouts/BlogLayout.astro"
 

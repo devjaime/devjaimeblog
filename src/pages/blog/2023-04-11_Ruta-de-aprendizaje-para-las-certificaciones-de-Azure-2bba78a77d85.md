@@ -1,4 +1,6 @@
-------
+---
+description: "Ruta de aprendizaje para las certificaciones de Azure ====================================================="
+---
 filename: "2023-04-11_Ruta-de-aprendizaje-para-las-certificaciones-de-Azure-2bba78a77d85"
 layout: "../../layouts/BlogLayout.astro"
 

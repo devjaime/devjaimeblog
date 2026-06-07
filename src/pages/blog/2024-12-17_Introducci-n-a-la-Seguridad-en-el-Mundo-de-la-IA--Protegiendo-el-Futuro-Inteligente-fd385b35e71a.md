@@ -1,4 +1,6 @@
-------
+---
+description: "Introducción a la Seguridad en el Mundo de la IA: Protegiendo el Futuro Inteligente…"
+---
 filename: "2024-12-17_Introducci-n-a-la-Seguridad-en-el-Mundo-de-la-IA--Protegiendo-el-Futuro-Inteligente-fd385b35e71a"
 layout: "../../layouts/BlogLayout.astro"
 

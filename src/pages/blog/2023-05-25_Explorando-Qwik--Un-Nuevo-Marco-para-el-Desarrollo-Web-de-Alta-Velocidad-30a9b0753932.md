@@ -1,4 +1,6 @@
-------
+---
+description: "Explorando Qwik: Un Nuevo Marco para el Desarrollo Web de Alta Velocidad ========================================================================"
+---
 filename: "2023-05-25_Explorando-Qwik--Un-Nuevo-Marco-para-el-Desarrollo-Web-de-Alta-Velocidad-30a9b0753932"
 layout: "../../layouts/BlogLayout.astro"
 
