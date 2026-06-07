@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Explorando los Modelos de Lenguaje: Ollama, Mistral, LLaMA, Gemini y Claude"
-description: ""
-tags: ["code", "Ollama", "Mistral", "Gemini", "Claude"]
-time: 4
-featured: true
-timestamp: "2024-07-02T12:20:32-0300"
+------
 filename: "2024-07-02_Explorando-los-Modelos-de-Lenguaje--Ollama--Mistral--LLaMA--Gemini-y-Claude-90b378fcc343"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 Explorando los Modelos de Lenguaje: Ollama, Mistral, LLaMA, Gemini y Claude

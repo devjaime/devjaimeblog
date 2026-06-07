@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Explorando los Asistentes de Código con IA: Automatización, Colaboración y Análisis Inteligente"
-description: "Un recorrido por cómo los asistentes de código con inteligencia artificial están transformando el desarrollo de software, desde la creación automática de tests hasta el análisis colaborativo de grandes bases de código y Wikipedia."
-tags: ["IA", "Asistentes de Código", "DevTools", "Wikipedia", "Análisis de Datos"]
-time: 12
-timestamp: "2025-04-16T22:00:00-0400"
-featured: true
+------
 filename: "2025-04-16_ai-code-assistants"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 

@@ -1,12 +1,13 @@
----
-layout: ../../layouts/BlogLayout.astro
-title: My Go Journey - From Skeptic to Believer in Just a Few Weeks
-description: A personal story about diving deep into Go programming, discovering its elegance, and why it might be the perfect language for modern backend development.
-tags: ["Go", "Programming", "Backend", "Learning", "Software Development", "Career"]
-time: 15 min read
-timestamp: "2025-07-06T14:30:00+00:00"
-featured: true
+------
 filename: "2025-07-06_go-journey-from-skeptic-to-believer"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 # My Go Journey: From Skeptic to Believer in Just a Few Weeks

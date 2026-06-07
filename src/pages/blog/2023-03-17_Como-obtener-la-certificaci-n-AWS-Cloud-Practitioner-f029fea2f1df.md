@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Como obtener la certificación AWS Cloud Practitioner"
-description: ""
-tags: ["code", "AWS", "Cloud", "Cloud Practitioner"]
-time: 4
-featured: true
-timestamp: "2023-03-17T12:20:32-0300"
+------
 filename: "2023-03-17_Como-obtener-la-certificaci-n-AWS-Cloud-Practitioner-f029fea2f1df"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 Como obtener la certificación AWS Cloud Practitioner

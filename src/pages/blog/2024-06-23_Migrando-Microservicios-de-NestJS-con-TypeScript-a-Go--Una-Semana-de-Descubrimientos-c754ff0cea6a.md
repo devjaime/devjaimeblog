@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Migrando Microservicios de NestJS con TypeScript a Go: Una Semana de Descubrimientos"
-description: ""
-tags: ["code", "Microservicios", "NestJS", "Typescript", "Go"]
-time: 4
-featured: true
-timestamp: "2024-06-23T12:20:32-0300"
+------
 filename: "2024-06-23_Migrando-Microservicios-de-NestJS-con-TypeScript-a-Go--Una-Semana-de-Descubrimientos-c754ff0cea6a"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 Migrando Microservicios de NestJS con TypeScript a Go: Una Semana de Descubrimientos

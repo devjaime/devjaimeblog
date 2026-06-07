@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Spec-Driven Development: OpenSpec vs GitHub spec-kit - Análisis Completo"
-description: "Una guía exhaustiva sobre Spec-Driven Development comparando OpenSpec y GitHub spec-kit. Aprende cuándo usar cada uno y cómo implementarlos en tus proyectos."
-tags: ["Spec-Driven Development", "AI Development", "OpenSpec", "spec-kit", "Software Architecture", "Development Methodology"]
-time: 15
-featured: true
-timestamp: "2026-03-09T01:00:00-0300"
+------
 filename: "2026-03-09_spec-driven_development_openspec_vs_speckit"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 # Spec-Driven Development: OpenSpec vs GitHub spec-kit

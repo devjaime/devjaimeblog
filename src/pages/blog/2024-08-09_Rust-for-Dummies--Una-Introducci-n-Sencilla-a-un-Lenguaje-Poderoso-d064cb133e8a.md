@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Rust for Dummies: Una Introducción Sencilla a un Lenguaje Poderoso"
-description: ""
-tags: ["code", "Rust"]
-time: 4
-featured: true
-timestamp: "2024-08-09T12:20:32-0300"
+------
 filename: "2024-08-09_Rust-for-Dummies--Una-Introducci-n-Sencilla-a-un-Lenguaje-Poderoso-d064cb133e8a"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 Rust for Dummies: Una Introducción Sencilla a un Lenguaje Poderoso

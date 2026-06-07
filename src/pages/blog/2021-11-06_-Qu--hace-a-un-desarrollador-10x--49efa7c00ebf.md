@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "¿Qué hace a un desarrollador 10x?"
-description: ""
-tags: ["code", "html"]
-time: 4
-featured: true
-timestamp: "2021-11-06T12:20:31-0300"
+------
 filename: "2021-11-06_-Qu--hace-a-un-desarrollador-10x--49efa7c00ebf"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 

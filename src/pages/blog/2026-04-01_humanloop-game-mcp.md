@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Humanloop Game: Una Animación Interactiva que Explica MCP"
-description: "Un juego visual que muestra cómo los humanos y la IA trabajan juntos en un loop continuo, usando el concepto de MCP (Model Context Protocol)."
-tags: ["humanloop", "mcp", "ia", "automatización", "demo"]
-time: 6
-featured: false
-timestamp: "2026-04-01T02:30:00-0300"
+------
 filename: "2026-04-01_humanloop-game-mcp"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 # Humanloop Game: Una Animación Interactiva que Explica MCP

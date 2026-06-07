@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Continuando con el Modelo O1: Casos de Uso Avanzados y Ejecución Planificada "
-description: ""
-tags: ["code", "OpenAI", "O1"]
-time: 4
-featured: true
-timestamp: "2024-12-28T12:20:33-0300"
+------
 filename: "2024-12-28_Continuando-con-el-Modelo-O1--Casos-de-Uso-Avanzados-y-Ejecuci-n-Planificada-2377137147fb"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 Continuando con el Modelo O1: Casos de Uso Avanzados y Ejecución Planificada

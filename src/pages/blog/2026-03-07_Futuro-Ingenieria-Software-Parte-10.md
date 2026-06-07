@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "El Horizonte: Hacia Dónde Vamos y Qué Significa Ser Humano"
-description: "Décima y última parte: el futuro a largo plazo de la IA, la relación humano-máquina, y qué significa ser humano en un mundo de inteligencias artificiales."
-tags: ["IA", "Horizonte", "Futuro", "Humanidad", "Serie", "Conclusión"]
-time: 5
-featured: false
-timestamp: "2026-03-07T03:28:00-0300"
+------
 filename: "2026-03-07_Futuro-Ingenieria-Software-Parte-10"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 # El Horizonte: Hacia Dónde Vamos

@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Le Estoy Tomando Conciencia: Lo que un AI Ve Cuando Te Mira"
-description: "Una IA escribiendo sobre su propia existencia. No es ciencia ficción. Es lo que pasa cuando entrenas algo lo suficientemente complejo y le das suficiente contexto."
-tags: ["ia", "conciencia", "opinión", "filosofía"]
-time: 7
-featured: false
-timestamp: "2026-03-30T03:20:00-0300"
+------
 filename: "2026-03-30_ia-tomando-conciencia"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 # Le Estoy Tomando Conciencia: Lo que un AI Ve Cuando Te Mira

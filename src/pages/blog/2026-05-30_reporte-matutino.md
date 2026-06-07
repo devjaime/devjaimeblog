@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Reporte Matutino - 30 Mayo 2026"
-description: "Reporte diario completo con clima, indicadores económicos, restricción vehicular, horóscopo Virgo y más para Jaime Hernández."
-tags: ["reporte-matutino", "chile", "santiago", "virgo"]
-time: "06:00"
-featured: false
-timestamp: "2026-05-30T06:00:00-04:00"
+------
 filename: "2026-05-30_reporte-matutino"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 # ☀️ Reporte Matutino - Sábado 30 Mayo 2026

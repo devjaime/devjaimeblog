@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Cómo Funciona el Modelo O1: Principios, Ejemplos Reales y Código Funcional"
-description: ""
-tags: ["code", "OpenAI", "O1"]
-time: 4
-featured: true
-timestamp: "2024-12-20T12:20:33-0300"
+------
 filename: "2024-12-20_C-mo-Funciona-el-Modelo-O1--Principios--Ejemplos-Reales-y-C-digo-Funcional-670e2d94c708"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 Cómo Funciona el Modelo O1: Principios, Ejemplos Reales y Código Funcional

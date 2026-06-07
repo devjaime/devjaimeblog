@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Explorando más Profundamente en Flutter"
-description: ""
-tags: ["code", "Flutter"]
-time: 4
-featured: true
-timestamp: "2023-11-11T12:20:32-0300"
+------
 filename: "2023-11-11_Explorando-m-s-Profundamente-en-Flutter-29596ee9bcb5"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 Explorando más Profundamente en Flutter

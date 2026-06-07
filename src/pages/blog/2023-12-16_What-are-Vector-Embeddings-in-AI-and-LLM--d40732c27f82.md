@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "What are Vector Embeddings in AI and LLM?"
-description: ""
-tags: ["code", "AI", "LLM", "Vector"]
-time: 4
-featured: true
-timestamp: "2023-12-16T12:20:32-0300"
+------
 filename: "2023-12-16_What-are-Vector-Embeddings-in-AI-and-LLM--d40732c27f82"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 What are Vector Embeddings in AI and LLM?

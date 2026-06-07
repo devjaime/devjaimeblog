@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Actualizar Nestjs 8.x.x a 9.x.x"
-description: ""
-tags: ["code", "Nestjs"]
-time: 4
-featured: true
-timestamp: "2023-04-11T12:20:32-0300"
+------
 filename: "2023-04-11_Actualizar-Nestjs-8-x-x-a-9-x-x-eb5ec4c16135"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 

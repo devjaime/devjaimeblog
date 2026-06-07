@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "My first API in Golang"
-description: ""
-tags: ["code", "API", "Golang"]
-time: 4
-featured: true
-timestamp: "2020-12-06T12:20:31-0300"
+------
 filename: "2020-12-06_My-first-API-in-Golang-ea9c3e707e13"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 My first API in Golang

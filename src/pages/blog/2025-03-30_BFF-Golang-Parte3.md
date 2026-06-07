@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "BFF con Go (Parte 3): Documentación, Seguridad y Despliegue"
-description: "Explora cómo integrar Swagger UI, añadir autenticación JWT y preparar tu BFF en Go para producción con Docker."
-tags: ["golang", "openapi", "bff", "swagger", "jwt", "docker"]
-time: 10
-featured: true
-timestamp: "2025-03-30T11:00:00-0300"
+------
 filename: "2025-03-30_BFF-Golang-Parte3"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 # BFF con Go (Parte 3): Documentación, Seguridad y Despliegue 📄🔐📦

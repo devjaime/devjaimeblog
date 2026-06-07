@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Comandos útiles de git"
-description: ""
-tags: ["code", "git"]
-time: 4
-featured: true
-timestamp: "2022-04-07T12:20:31-0300"
+------
 filename: "2022-04-07_Comandos--tiles-de-git-454276c8074"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 

@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Que es Lens Kubernetes"
-description: ""
-tags: ["code", "Kubernetes", "Lens"]
-time: 4
-featured: true
-timestamp: "2023-03-17T12:20:32-0300"
+------
 filename: "2023-03-17_Que-es-Lens-Kubernetes-d1822b55e132"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 Que es Lens Kubernetes

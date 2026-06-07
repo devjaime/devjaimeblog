@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "El Futuro de la Ingeniería de Software: Una Introducción"
-description: "Primera parte de una serie de 10 artículos sobre cómo la IA transformará la ingeniería de software y nos convertirá en súper humanos."
-tags: ["IA", "Ingeniería de Software", "Futuro", "Serie", "AI Engineering"]
-time: 4
-featured: true
-timestamp: "2026-03-07T03:25:00-0300"
+------
 filename: "2026-03-07_Futuro-Ingenieria-Software-Parte-1"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 # El Futuro de la Ingeniería de Software

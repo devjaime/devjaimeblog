@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Simplifying Daily Life with Automation and Python: A Journey into Artificial Intelligence"
-description: ""
-tags: ["code", "python", "AI"]
-time: 4
-featured: true
-timestamp: "2023-11-12T12:20:32-0300"
+------
 filename: "2023-11-12_Simplifying-Daily-Life-with-Automation-and-Python--A-Journey-into-Artificial-Intelligence-b4d1c283a33e"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 Simplifying Daily Life with Automation and Python: A Journey into Artificial Intelligence

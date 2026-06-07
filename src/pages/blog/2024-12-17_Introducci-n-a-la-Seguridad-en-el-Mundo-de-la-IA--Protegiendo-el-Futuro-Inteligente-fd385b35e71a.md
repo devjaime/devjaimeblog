@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Introducción a la Seguridad en el Mundo de la IA: Protegiendo el Futuro Inteligente"
-description: ""
-tags: ["code", "AI", "Seguridad"]
-time: 4
-featured: true
-timestamp: "2024-12-17T12:20:33-0300"
+------
 filename: "2024-12-17_Introducci-n-a-la-Seguridad-en-el-Mundo-de-la-IA--Protegiendo-el-Futuro-Inteligente-fd385b35e71a"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 Introducción a la Seguridad en el Mundo de la IA: Protegiendo el Futuro Inteligente

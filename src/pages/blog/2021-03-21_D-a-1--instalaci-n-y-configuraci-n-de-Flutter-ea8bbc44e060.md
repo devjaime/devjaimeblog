@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Día 1: instalación y configuración de Flutter"
-description: ""
-tags: ["code", "Flutter"]
-time: 4
-featured: true
-timestamp: "2021-03-21T12:20:31-0300"
+------
 filename: "2021-03-21_D-a-1--instalaci-n-y-configuraci-n-de-Flutter-ea8bbc44e060"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 Día 1: instalación y configuración de Flutter

@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Llama 3.2: Potenciando la IA en dispositivos móviles y edge computing"
-description: ""
-tags: ["code", "Llama", "IA", "edge computing"]
-time: 4
-featured: true
-timestamp: "2024-09-25T12:20:32-0300"
+------
 filename: "2024-09-25_Llama-3-2--Potenciando-la-IA-en-dispositivos-m-viles-y-edge-computing-af664d6b76d7"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 Llama 3.2: Potenciando la IA en dispositivos móviles y edge computing

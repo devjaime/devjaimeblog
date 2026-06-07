@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "HITL in AI: The Power of Human-in-the-Loop Machine Learning"
-description: "Explore how Human-in-the-Loop (HITL) machine learning combines human intelligence with AI to create more accurate, reliable, and ethical AI systems."
-tags: ["AI", "Machine Learning", "HITL", "Human-in-the-Loop", "MLOps"]
-time: 7
-featured: true
-timestamp: "2026-02-18T21:05:00-0300"
+------
 filename: "2026-02-18_HITL-in-AI-The-Power-of-Human-in-the-Loop-Machine-Learning-def456ghi789"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 HITL in AI: The Power of Human-in-the-Loop Machine Learning

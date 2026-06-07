@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Rust en el Desarrollo de Backend Moderno: Ventajas, Desventajas e Ideas para el Futuro"
-description: ""
-tags: ["code", "Rust"]
-time: 4
-featured: true
-timestamp: "2024-01-06T12:20:32-0300"
+------
 filename: "2024-01-06_Rust-en-el-Desarrollo-de-Backend-Moderno--Ventajas--Desventajas-e-Ideas-para-el-Futuro-97fd32bc5873"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 Rust en el Desarrollo de Backend Moderno: Ventajas, Desventajas e Ideas para el Futuro

@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Cloudflare AutoRAG: Casos prácticos para transformar tu industria con IA"
-description: "Descubre cómo AutoRAG de Cloudflare revoluciona sectores como salud, retail e inmobiliaria al indexar información crítica para responder preguntas en tiempo real."
-tags: ["Cloudflare", "AutoRAG", "RAG", "IA", "industria", "sector salud", "retail", "inmobiliaria"]
-time: 10
-timestamp: "2025-04-08T10:00:00-0300"
-featured: true
+------
 filename: "2025-04-08_AutoRAG-Casos-Practicos"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 Cloudflare ha dado un paso decisivo al lanzar **AutoRAG**, un servicio que automatiza completamente la implementación de pipelines RAG (Generación Aumentada por Recuperación). Pero, más allá del tecnicismo, lo importante es: **¿Para qué sirve realmente?** Y la respuesta se encuentra en los **casos prácticos** que pueden transformar industrias enteras.

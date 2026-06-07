@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Día 2 Bateria En Xamarin Forms con Xamarin Essentials"
-description: ""
-tags: ["code", "Xamarin"]
-time: 4
-featured: true
-timestamp: "2019-04-19T12:20:31-0300"
+------
 filename: "2019-04-19_D-a-2-Bateria-En-Xamarin-Forms-con-Xamarin-Essentials-4d4f0ae8133"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 

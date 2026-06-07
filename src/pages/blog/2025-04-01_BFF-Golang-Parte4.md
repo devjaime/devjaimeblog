@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "BFF con Go (Parte 4): Métricas, CI/CD y Control de Acceso"
-description: "Completa tu Backend For Frontend con monitoreo, despliegue continuo y control de roles usando Go."
-tags: ["golang", "bff", "prometheus", "jwt", "ci/cd", "roles"]
-time: 10
-featured: true
-timestamp: "2025-04-01T10:00:00-0300"
+------
 filename: "2025-04-01_BFF-Golang-Parte4"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 # BFF con Go (Parte 4): Métricas, CI/CD y Control de Acceso 📊🔄🔐

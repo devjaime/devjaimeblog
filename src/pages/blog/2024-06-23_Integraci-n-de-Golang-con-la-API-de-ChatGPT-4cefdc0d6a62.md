@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Integración de Golang con la API de ChatGPT"
-description: ""
-tags: ["code", "Golang", "chatGPT"]
-time: 4
-featured: true
-timestamp: "2024-06-23T12:20:32-0300"
+------
 filename: "2024-06-23_Integraci-n-de-Golang-con-la-API-de-ChatGPT-4cefdc0d6a62"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 

@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Vercel AI para Developers Dummies: Una Introducción Sencilla con Next.js"
-description: ""
-tags: ["code", "Vercel", "NextJS"]
-time: 4
-featured: true
-timestamp: "2024-08-07T12:20:32-0300"
+------
 filename: "2024-08-07_Vercel-AI-para-Developers-Dummies--Una-Introducci-n-Sencilla-con-Next-js-8e38ca2ae813"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 

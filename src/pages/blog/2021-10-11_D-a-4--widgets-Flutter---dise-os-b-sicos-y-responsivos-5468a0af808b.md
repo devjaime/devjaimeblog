@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Día 4: widgets Flutter + diseños básicos y responsivos"
-description: ""
-tags: ["code", "Flutter"]
-time: 4
-featured: true
-timestamp: "2021-10-11T12:20:31-0300"
+------
 filename: "2021-10-11_D-a-4--widgets-Flutter---dise-os-b-sicos-y-responsivos-5468a0af808b"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 Día 4: widgets Flutter + diseños básicos y responsivos

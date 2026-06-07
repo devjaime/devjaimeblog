@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "AI Engineering: Building Production-Ready AI Systems"
-description: "A comprehensive guide to AI engineering, covering the principles, practices, and tools needed to build robust, scalable, and maintainable AI systems in production."
-tags: ["AI", "AI Engineering", "MLOps", "Production", "Software Engineering"]
-time: 10
-featured: true
-timestamp: "2026-02-18T21:10:00-0300"
+------
 filename: "2026-02-18_AI-Engineering-Building-Production-Ready-AI-Systems-ghi789jkl012"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 AI Engineering: Building Production-Ready AI Systems

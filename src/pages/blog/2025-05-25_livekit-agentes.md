@@ -1,13 +1,14 @@
 
----
-layout: "../../layouts/BlogLayout.astro"
-title: "🧠 LiveKit en Profundidad: Arquitectura, Conceptos Clave y Cómo Construir un Agente Conversacional"
-description: "Descubre cómo funciona LiveKit, su arquitectura escalable basada en WebRTC, y aprende paso a paso cómo construir un agente de voz con inteligencia artificial."
-tags: ["LiveKit", "Agentes de Voz", "WebRTC", "Inteligencia Artificial", "Python"]
-time: 20
-timestamp: "2025-05-25T00:00:00-0400"
-featured: true
+------
 filename: "2025-05-25_livekit-agentes"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 LiveKit es una plataforma moderna y de código abierto que permite integrar video, audio y datos en tiempo real en tus aplicaciones. En este blog, te llevaré por un recorrido técnico desde su arquitectura interna hasta la creación de un agente conversacional usando su sistema de agentes.

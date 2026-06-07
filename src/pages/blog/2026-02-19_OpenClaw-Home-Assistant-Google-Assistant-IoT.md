@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "OpenClaw + Home Assistant + Google Assistant: La Nueva Era del Control IoT con IA"
-description: "Aprende cómo integrar OpenClaw con Home Assistant para controlar tu hogar inteligente usando comandos de voz y IA. Automatizaciones prácticas con Google Assistant y Alexa."
-tags: ["OpenClaw", "Home Assistant", "IoT", "Google Assistant", "Automación", "Smart Home", "AI"]
-time: 8
-featured: true
-timestamp: "2026-02-19T18:30:00-0300"
+------
 filename: "2026-02-19_OpenClaw-Home-Assistant-Google-Assistant-IoT"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 OpenClaw + Home Assistant + Google Assistant: La Nueva Era del Control IoT con IA

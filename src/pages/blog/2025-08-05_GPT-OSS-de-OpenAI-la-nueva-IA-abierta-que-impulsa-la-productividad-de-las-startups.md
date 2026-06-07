@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "GPT-OSS de OpenAI: la nueva IA abierta que impulsa la productividad de las startups"
-description: "OpenAI ha sorprendido al ecosistema de IA con el lanzamiento de gpt-oss-20b y gpt-oss-120b, sus primeros modelos de lenguaje open-weight desde GPT-2 en 2019. Estos modelos de nueva generación no solo igualan el desempeño de algunos sistemas propietarios, sino que además se pueden descargar y ejecutar localmente incluso en hardware de consumo."
-tags: ["AI", "OpenAI", "GPT-OSS", "Startups", "Productividad", "Machine Learning", "Open Source"]
-time: 6
-featured: true
-timestamp: "2025-08-05T10:00:00-0300"
+------
 filename: "2025-08-05_GPT-OSS-de-OpenAI-la-nueva-IA-abierta-que-impulsa-la-productividad-de-las-startups"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 GPT-OSS de OpenAI: la nueva IA abierta que impulsa la productividad de las startups

@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Microsoft Build 2019 para desarrolladores Xamarin"
-description: ""
-tags: ["code", "Microsoft", "Xamarin"]
-time: 4
-featured: true
-timestamp: "2019-05-06T12:20:31-0300"
+------
 filename: "2019-05-06_Microsoft-Build-2019-para-desarrolladores-Xamarin-ae39a9bb88eb"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 Microsoft Build 2019 para desarrolladores Xamarin

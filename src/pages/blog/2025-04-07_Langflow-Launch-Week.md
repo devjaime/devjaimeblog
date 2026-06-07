@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Langflow Launch Week: Un salto en la creación de agentes con IA"
-description: "Descubre las novedades más potentes de Langflow durante su semana de lanzamientos: MCP, flujo de voz, Langflow Desktop y más."
-tags: ["Langflow", "IA", "MCP", "agentes", "aplicaciones con IA"]
-time: 9
-timestamp: "2025-04-07T10:00:00-0300"
-featured: true
+------
 filename: "2025-04-07_Langflow-Launch-Week"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 # Langflow Launch Week: Un salto en la creación de agentes con IA 🧠⚙️

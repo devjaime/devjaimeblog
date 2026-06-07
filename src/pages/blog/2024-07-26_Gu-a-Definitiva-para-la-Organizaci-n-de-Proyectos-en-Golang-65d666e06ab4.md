@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Guía Definitiva para la Organización de Proyectos en Golang"
-description: ""
-tags: ["code", "Golang"]
-time: 4
-featured: true
-timestamp: "2024-07-26T12:20:32-0300"
+------
 filename: "2024-07-26_Gu-a-Definitiva-para-la-Organizaci-n-de-Proyectos-en-Golang-65d666e06ab4"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 Guía Definitiva para la Organización de Proyectos en Golang

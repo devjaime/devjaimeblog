@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Custom E-commerce Development and Scalability: Building Your Unique Online Store"
-description: ""
-tags: ["code", "ecommerce"]
-time: 4
-featured: true
-timestamp: "2023-11-05T12:20:32-0300"
+------
 filename: "2023-11-05_Custom-E-commerce-Development-and-Scalability--Building-Your-Unique-Online-Store-8c242b2b6b9d"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 

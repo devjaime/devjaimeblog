@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Microservicios de Python con gRPC"
-description: ""
-tags: ["code", "python", "grpc", "microservicios"]
-time: 4
-featured: true
-timestamp: "2022-04-21T12:20:31-0300"
+------
 filename: "2022-04-21_Microservicios-de-Python-con-gRPC-3ff25126b6eb"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 Microservicios de Python con gRPC

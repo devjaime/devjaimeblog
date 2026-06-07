@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Cómo Prepararte y Certificarte como Neo4j Certified Professional"
-description: ""
-tags: ["code", "Neo4j", "Certified"]
-time: 4
-featured: true
-timestamp: "2025-01-01T12:20:33-0300"
+------
 filename: "2025-01-01_C-mo-Prepararte-y-Certificarte-como-Neo4j-Certified-Professional-1e290129c26f"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 Cómo Prepararte y Certificarte como Neo4j Certified Professional

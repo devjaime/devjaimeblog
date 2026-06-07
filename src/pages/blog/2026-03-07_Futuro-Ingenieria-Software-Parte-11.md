@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Ética y Responsabilidad en la Era de la IA"
-description: "Novena parte: quién decide qué es correcto cuando las máquinas pueden hacer casi todo — bias, responsabilidad y el futuro moral de la tecnología."
-tags: ["IA", "Ética", "Responsabilidad", "Bias", "Serie"]
-time: 5
-featured: false
-timestamp: "2026-03-07T03:28:00-0300"
+------
 filename: "2026-03-07_Futuro-Ingenieria-Software-Parte-11"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 # Ética y Responsabilidad en la Era de la IA

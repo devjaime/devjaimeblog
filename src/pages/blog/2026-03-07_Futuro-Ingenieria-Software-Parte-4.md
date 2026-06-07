@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "De Programador a Arquitecto de Prompts"
-description: "Tercera parte: cómo el rol del desarrollador está evolucionando hacia la creación y optimización de prompts y la arquitectura de sistemas de IA."
-tags: ["IA", "Prompt Engineering", "Arquitectura", "Serie", "Rol"]
-time: 5
-featured: false
-timestamp: "2026-03-07T03:26:00-0300"
+------
 filename: "2026-03-07_Futuro-Ingenieria-Software-Parte-4"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 # De Programador a Arquitecto de Prompts

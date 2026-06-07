@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Estrategias Concretas para Llegar Donde Querremos"
-description: "Octava parte: guía práctica con 10 estrategias específicas para developers que quieren sobrevivir y prosperar en la era de la IA."
-tags: ["IA", "Estrategia", "Carrera", "Desarrollo", "Serie"]
-time: 6
-featured: false
-timestamp: "2026-03-07T03:28:00-0300"
+------
 filename: "2026-03-07_Futuro-Ingenieria-Software-Parte-9"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 # Estrategias Concretas para Llegar Donde Querremos

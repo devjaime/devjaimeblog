@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Flujo Completo B2B de Vocari.cl: De la Demo al Test Vocacional"
-description: "Tutorial detallado del flujo B2B para colegios: desde la solicitud de demo hasta que los estudiantes completan su test vocacional con IA."
-tags: ["Vocari", "B2B", "Educación", "Colegios", "Orientación Vocacional", "Tutorial"]
-time: 8
-featured: false
-timestamp: "2026-03-06T21:00:00-0300"
+------
 filename: "2026-03-06_Flujo-Completo-Vocari-B2B"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 # Flujo Completo B2B de Vocari.cl: De la Demo al Test Vocacional

@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Que es Cookiecutter Django ?"
-description: ""
-tags: ["code", "django", "python"]
-time: 4
-featured: true
-timestamp: "2022-04-05T12:20:31-0300"
+------
 filename: "2022-04-05_Que-es-Cookiecutter-Django---9d51d68950bc"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 Que es Cookiecutter Django ?

@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Guía Completa de LangChain para AI Agents en Producción"
-description: "Aprende cómo implementar LangChain para construir sistemas de IA agéntica robustos y escalables. Desde conceptos básicos hasta ejemplos de producción."
-tags: ["AI Agents", "LangChain", "LangChain", "automatización", "IA"]
-time: 10
-featured: false
-timestamp: "2026-04-25"
+------
 filename: "2026-04-25-LangChain-guia"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 # Guía Completa de LangChain para AI Agents en Producción

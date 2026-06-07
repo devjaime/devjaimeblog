@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "La Guerra entre EE.UU. e Iran: Análisis y Contexto"
-description: "Análisis de la situación bélica actual entre Estados Unidos e Iran, las causas, el desarrollo y las implicaciones globales."
-tags: [" geopolitica", "guerra", "EE.UU.", "Iran", "analisis"]
-time: 5
-featured: true
-timestamp: "2026-04-04T11:40:00-0300"
+------
 filename: "2026-04-04_La-Guerra-EEUU-Iran-Analisis-y-Contexto"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 *⚠️ Nota: Este artículo fue escrito con asistencia de inteligencia artificial, analizando fuentes de noticias en tiempo real. Verifica siempre las fuentes originales para información más actualizada y precisa.*

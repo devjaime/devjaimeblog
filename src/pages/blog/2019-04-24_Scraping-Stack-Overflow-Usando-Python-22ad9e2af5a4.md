@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Scraping Stack Overflow Usando Python"
-description: ""
-tags: ["code", "scrapping", "python"]
-time: 4
-featured: true
-timestamp: "2019-04-24T12:20:31-0300"
+------
 filename: "2019-04-24_Scraping-Stack-Overflow-Usando-Python-22ad9e2af5a4"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 Scraping Stack Overflow Usando Python

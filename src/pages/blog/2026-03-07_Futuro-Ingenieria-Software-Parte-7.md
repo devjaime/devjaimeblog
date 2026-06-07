@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "La Energía: El Cuello de Botella Que Nadie Ve"
-description: "Sexta parte: el verdadero límite de la IA no es el software — es la energía. Análisis del consumo de los data centers y las alternativas renovables."
-tags: ["IA", "Energía", "Data Centers", "Sostenibilidad", "Serie"]
-time: 5
-featured: false
-timestamp: "2026-03-07T03:27:00-0300"
+------
 filename: "2026-03-07_Futuro-Ingenieria-Software-Parte-7"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 # La Energía: El Cuello de Botella Que Nadie Ve

@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Balancing Income and Well-being: How Software Engineers Can Earn Well While Taking Care of Their"
-description: ""
-tags: ["code", "html"]
-time: 4
-featured: true
-timestamp: "2024-10-12T12:20:33-0300"
+------
 filename: "2024-10-12_Balancing-Income-and-Well-being--How-Software-Engineers-Can-Earn-Well-While-Taking-Care-of-Their--9549b73b86b1"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 Balancing Income and Well-being: How Software Engineers Can Earn Well While Taking Care of Their…

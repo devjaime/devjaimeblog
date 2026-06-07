@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Análisis del Dashboard de OpenClaw - Estado Actual y Mejoras"
-description: "Un análisis profundo del estado del dashboard de OpenClaw con recomendaciones de mejora para optimizar el rendimiento y la experiencia."
-tags: ["OpenClaw", "Dashboard", "AI Agent", "Home Assistant", "System Monitoring"]
-time: 10
-featured: false
-timestamp: "2026-03-09T17:30:00-0300"
+------
 filename: "2026-03-09_openclaw_dashboard_analysis"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 # Análisis del Dashboard de OpenClaw

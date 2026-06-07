@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Desbloqueando el Potencial del Razonamiento en Modelos de Lenguaje: GPT-4, LLaMA 3.1"
-description: ""
-tags: ["code", "GPT", "LLaMA"]
-time: 4
-featured: true
-timestamp: "2024-09-23T12:20:32-0300"
+------
 filename: "2024-09-23_Desbloqueando-el-Potencial-del-Razonamiento-en-Modelos-de-Lenguaje--GPT-4--LLaMA-3-1--71d7a39eee96"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 Desbloqueando el Potencial del Razonamiento en Modelos de Lenguaje: GPT-4, LLaMA 3.1,

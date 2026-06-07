@@ -1,12 +1,13 @@
----
+------
+filename: "2026-03-30_advanced-prompt-injection"
 layout: "../../layouts/BlogLayout.astro"
-title: "Advanced Prompt Injection: Context Hijacking Through Mathematical Chaos"
-description: "How to make AI systems override their safety instructions using unsolvable problems and layered context switching. A technical deep-dive."
-tags: ["ia", "prompt-injection", "seguridad", "hacking-etico"]
-time: 8
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
 featured: false
-timestamp: "2026-03-30T22:15:00-0300"
-filename: "2026-03-30_advanced-prompt-injection-techniques"
+---
+
 ---
 
 # Advanced Prompt Injection: Context Hijacking Through Mathematical Chaos

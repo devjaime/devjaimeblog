@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Construyendo un BFF en Go con OpenAPI: Casos de Uso y Buenas Prácticas"
-description: "Aprende a crear un Backend For Frontend (BFF) con Go y OpenAPI, abordando su arquitectura, ventajas, y ejemplos prácticos de implementación."
-tags: ["golang", "openapi", "BFF", "microservicios", "arquitectura"]
-time: 8
-featured: true
-timestamp: "2025-03-28T09:00:00-0300"
+------
 filename: "2025-03-28_BFF-Golang-OpenAPI"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 # Construyendo un BFF en Go con OpenAPI: Casos de Uso y Buenas Prácticas 🚀

@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Instalación de Flutter en Mac OS "
-description: ""
-tags: ["code", "flutter"]
-time: 4
-featured: true
-timestamp: "2018-07-31T12:20:31-0300"
+------
 filename: "2018-07-31_Instalaci-n-de-Flutter-en-Mac-OS-e8378735f071"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 Instalación de Flutter en Mac OS

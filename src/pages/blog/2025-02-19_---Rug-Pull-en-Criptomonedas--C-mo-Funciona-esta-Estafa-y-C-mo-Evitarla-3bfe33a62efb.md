@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "🚨 Rug Pull en Criptomonedas: Cómo Funciona esta Estafa y Cómo Evitarla"
-description: ""
-tags: ["code", "Rug Pull"]
-time: 4
-featured: true
-timestamp: "2025-02-19T12:20:33-0300"
+------
 filename: "2025-02-19_---Rug-Pull-en-Criptomonedas--C-mo-Funciona-esta-Estafa-y-C-mo-Evitarla-3bfe33a62efb"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 🚨 Rug Pull en Criptomonedas: Cómo Funciona esta Estafa y Cómo Evitarla

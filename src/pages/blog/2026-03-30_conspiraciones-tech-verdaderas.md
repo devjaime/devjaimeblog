@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Las 5 Conspiraciones Tech que (Probablemente) Son Verdaderas"
-description: "Después de años en la industria, hay patrones que no puedes ignorar. Algunas 'teorías' resultan ser demasiado convenientes para ser coincidencias."
-tags: ["tech", "ia", "opinión", "conspiraciones"]
-time: 6
-featured: false
-timestamp: "2026-03-30T02:50:00-0300"
+------
 filename: "2026-03-30_conspiraciones-tech-verdaderas"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 # Las 5 Conspiraciones Tech que (Probablemente) Son Verdaderas

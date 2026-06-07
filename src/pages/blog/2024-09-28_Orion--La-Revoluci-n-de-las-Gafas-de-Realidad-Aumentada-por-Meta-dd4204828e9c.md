@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Orion: La Revolución de las Gafas de Realidad Aumentada por Meta"
-description: ""
-tags: ["code", "Orion"]
-time: 4
-featured: true
-timestamp: "2024-09-28T12:20:33-0300"
+------
 filename: "2024-09-28_Orion--La-Revoluci-n-de-las-Gafas-de-Realidad-Aumentada-por-Meta-dd4204828e9c"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 Orion: La Revolución de las Gafas de Realidad Aumentada por Meta

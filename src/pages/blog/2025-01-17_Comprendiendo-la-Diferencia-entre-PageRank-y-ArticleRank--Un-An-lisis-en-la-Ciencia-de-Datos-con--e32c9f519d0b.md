@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Comprendiendo la Diferencia entre PageRank y ArticleRank: Un Análisis en la Ciencia de Datos"
-description: ""
-tags: ["code", "PageRank", "ArticleRank"]
-time: 4
-featured: true
-timestamp: "2025-01-17T12:20:33-0300"
+------
 filename: "2025-01-17_Comprendiendo-la-Diferencia-entre-PageRank-y-ArticleRank--Un-An-lisis-en-la-Ciencia-de-Datos-con--e32c9f519d0b"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 Comprendiendo la Diferencia entre PageRank y ArticleRank: Un Análisis en la Ciencia de Datos con…

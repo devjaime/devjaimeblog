@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Comenzando con Hugging Face: Guía Completa para Modelos Open Source"
-description: ""
-tags: ["code", "HuggingFace"]
-time: 4
-featured: true
-timestamp: "2024-12-08T12:20:33-0300"
+------
 filename: "2024-12-08_Comenzando-con-Hugging-Face--Gu-a-Completa-para-Modelos-Open-Source-e45ba51be887"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 Comenzando con Hugging Face: Guía Completa para Modelos Open Source

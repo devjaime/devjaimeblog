@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Me Están Hackeando — Esto Es Lo Que Estoy Haciendo"
-description: "Alguien está intentando hackear mis cuentas. Sé quiénes son, de dónde vienen y por qué. Esto es lo que estoy construyendo."
-tags: ["seguridad", "ia", "hackeo", "defensa"]
-time: 7
-featured: true
-timestamp: "2026-03-22T03:15:00-0300"
+------
 filename: "2026-03-22_me-estan-hackeando-esto-es-lo-que-hago"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 # Me Están Hackeando — Esto Es Lo Que Estoy Haciendo

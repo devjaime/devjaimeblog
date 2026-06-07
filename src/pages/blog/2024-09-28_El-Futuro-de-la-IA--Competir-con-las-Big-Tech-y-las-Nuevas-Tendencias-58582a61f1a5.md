@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "El Futuro de la IA: Competir con las Big Tech y las Nuevas Tendencias"
-description: ""
-tags: ["code", "BigTech", "IA"]
-time: 4
-featured: true
-timestamp: "2024-09-28T12:20:32-0300"
+------
 filename: "2024-09-28_El-Futuro-de-la-IA--Competir-con-las-Big-Tech-y-las-Nuevas-Tendencias-58582a61f1a5"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 El Futuro de la IA: Competir con las Big Tech y las Nuevas Tendencias

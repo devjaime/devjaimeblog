@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Why Does OpenAI Need a Head of Latam in Latin America?"
-description: ""
-tags: ["code", "OpenAI"]
-time: 4
-featured: true
-timestamp: "2024-08-22T12:20:32-0300"
+------
 filename: "2024-08-22_Why-Does-OpenAI-Need-a-Head-of-Latam-in-Latin-America--fcd5406da369"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 Why Does OpenAI Need a Head of Latam in Latin America?

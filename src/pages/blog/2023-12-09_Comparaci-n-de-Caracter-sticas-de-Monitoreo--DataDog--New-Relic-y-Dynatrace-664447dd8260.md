@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Comparación de Características de Monitoreo: DataDog, New Relic y Dynatrace"
-description: ""
-tags: ["code", "Datadog", "New Relic", "Dynatrace"]
-time: 4
-featured: true
-timestamp: "2023-12-09T12:20:32-0300"
+------
 filename: "2023-12-09_Comparaci-n-de-Caracter-sticas-de-Monitoreo--DataDog--New-Relic-y-Dynatrace-664447dd8260"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 

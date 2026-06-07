@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Entendiendo el Patrón Adaptador en TypeScript con Pruebas Unitarias"
-description: ""
-tags: ["code", "TypeScript", "TestUnit"]
-time: 4
-featured: true
-timestamp: "2023-10-14T12:20:32-0300"
+------
 filename: "2023-10-14_Entendiendo-el-Patr-n-Adaptador-en-TypeScript-con-Pruebas-Unitarias-9604f3209baa"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 

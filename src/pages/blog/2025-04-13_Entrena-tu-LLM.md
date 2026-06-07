@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Entrena tu propio LLM paso a paso: conceptos, código y práctica"
-description: "Aprende cómo entrenar tu propio modelo de lenguaje (LLM) desde cero, comprendiendo cada componente: tokenización, entrenamiento, datasets, arquitectura, y más. Basado en el tutorial de freeCodeCamp e Imad Saddik."
-tags: ["LLM", "Machine Learning", "NLP", "Python", "Fine-Tuning", "Entrenamiento", "Tokenización", "Transformers", "IA"]
-time: 12
-timestamp: "2025-04-13T10:00:00-0300"
-featured: true
+------
 filename: "2025-04-13_Entrena-tu-LLM"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 ## 🌟 Introducción

@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Cómo construir agentes efectivos según Anthropic (con ejemplos concretos)"
-description: "Anthropic propone un enfoque simple y claro para desarrollar agentes inteligentes efectivos, basado en principios como simplicidad, transparencia y buena definición de interfaces. En este artículo explicaré estos conceptos y daré ejemplos concretos aplicados a diferentes modelos de negocio."
-tags: ["AI", "Anthropic", "Agentes", "Inteligencia Artificial", "Automatización"]
-time: 8
-featured: true
-timestamp: "2025-08-03T10:00:00-0300"
+------
 filename: "2025-08-03_Como-construir-agentes-efectivos-segun-Anthropic-con-ejemplos-concretos"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 Cómo construir agentes efectivos según Anthropic (con ejemplos concretos)

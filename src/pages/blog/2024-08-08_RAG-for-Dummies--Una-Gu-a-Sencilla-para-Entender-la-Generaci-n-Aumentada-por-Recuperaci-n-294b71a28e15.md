@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "RAG for Dummies: Una Guía Sencilla para Entender la Generación Aumentada por Recuperación"
-description: ""
-tags: ["code", "RAG"]
-time: 4
-featured: true
-timestamp: "2024-08-08T12:20:32-0300"
+------
 filename: "2024-08-08_RAG-for-Dummies--Una-Gu-a-Sencilla-para-Entender-la-Generaci-n-Aumentada-por-Recuperaci-n-294b71a28e15"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 

@@ -1,12 +1,13 @@
----
-layout: ../../layouts/BlogLayout.astro
-title: "3 Formas de Ejecutar Modelos LLM Open Source"
-description: "Guía práctica: pruebas locales con Ollama, GUI con LM Studio y despliegues serverless escalables con vLLM en infraestructura on-demand."
-tags: ["LLM", "AI", "Serverless", "vLLM", "Ollama", "LM Studio", "MLOps", "Infraestructura"]
-time: 12 min read
-timestamp: 2025-08-22T10:00:00+00:00
+------
+filename: "2025-08-22_serverless-llm-options"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
 featured: false
-filename: 2025-08-22_serverless-llm-options
+---
+
 ---
 
 # 3 Formas de Ejecutar Modelos LLM Open Source: de Local a Serverless

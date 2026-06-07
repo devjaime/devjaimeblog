@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "kubernetes para inexpertos— introducción"
-description: ""
-tags: ["code", "Kubernetes"]
-time: 4
-featured: true
-timestamp: "2021-03-27T12:20:31-0300"
+------
 filename: "2021-03-27_kubernetes--para-inexpertos--introducci-n-9b28fe51dfe"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 

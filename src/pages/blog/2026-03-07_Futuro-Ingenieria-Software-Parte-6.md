@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "El Valor del Dinero Cuando las Máquinas Trabajan"
-description: "Quinta parte: un análisis económico de qué sucede cuando la IA hace el trabajo — inflación de habilidades, cambio del valor del dinero y nuevas métricas."
-tags: ["IA", "Economía", "Dinero", "Trabajo", "Serie", "Futuro"]
-time: 5
-featured: false
-timestamp: "2026-03-07T03:27:00-0300"
+------
 filename: "2026-03-07_Futuro-Ingenieria-Software-Parte-6"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 # El Valor del Dinero Cuando las Máquinas Trabajan

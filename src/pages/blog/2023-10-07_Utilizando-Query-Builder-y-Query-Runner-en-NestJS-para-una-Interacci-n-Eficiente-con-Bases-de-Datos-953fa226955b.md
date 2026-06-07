@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Utilizando Query Builder y Query Runner en NestJS para una Interacción Eficiente con Bases de Datos"
-description: ""
-tags: ["code", "QueryBuilder", "Nestjs"]
-time: 4
-featured: true
-timestamp: "2023-10-07T12:20:32-0300"
+------
 filename: "2023-10-07_Utilizando-Query-Builder-y-Query-Runner-en-NestJS-para-una-Interacci-n-Eficiente-con-Bases-de-Datos-953fa226955b"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 

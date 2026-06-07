@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "📘 Technical Journey: How I Connected Go to Oracle XE in Docker and Debugged It in VSCode (Apple Silicon)"
-description: "A detailed and real story about the process, errors, solutions, and learnings of connecting a Go app to Oracle XE in Docker and debugging it from VSCode on a Mac M1."
-tags: ["Go", "Oracle", "Docker", "Story", "VSCode", "Apple Silicon"]
-time: 45
-timestamp: "2025-05-09T00:00:00-0400"
-featured: true
+------
 filename: "2025-05-09_go-oracle-docker-debug-story-en"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 ## 🛤️ Introduction

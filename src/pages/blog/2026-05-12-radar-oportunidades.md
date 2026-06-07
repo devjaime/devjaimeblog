@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Radar de Oportunidades - 2026-05-12"
-description: "Análisis de oportunidades detectadas en el ecosistema AI/Tech para May"
-tags: ["oportunidad", "AI", "radar", "mercado"]
-time: 5
-featured: false
-timestamp: "2026-05-12"
+------
 filename: "2026-05-12-radar-oportunidades"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 # 🎯 Radar de Oportunidades - 2026-05-12

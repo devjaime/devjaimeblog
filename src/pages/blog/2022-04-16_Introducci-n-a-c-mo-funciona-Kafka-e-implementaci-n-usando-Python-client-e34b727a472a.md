@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Introducción a cómo funciona Kafka e implementación usando Python-client"
-description: ""
-tags: ["code", "Kafka", "python"]
-time: 4
-featured: true
-timestamp: "2022-04-16T12:20:31-0300"
+------
 filename: "2022-04-16_Introducci-n-a-c-mo-funciona-Kafka-e-implementaci-n-usando-Python-client-e34b727a472a"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 

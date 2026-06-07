@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Cursor: El Futuro de la Programación con IA y Cómo Migrar desde VS Code"
-description: ""
-tags: ["code", "Cursor"]
-time: 4
-featured: true
-timestamp: "2024-09-23T12:20:32-0300"
+------
 filename: "2024-09-23_Cursor--El-Futuro-de-la-Programaci-n-con-IA-y-C-mo-Migrar-desde-VS-Code-0d3cfb18e712"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 Cursor: El Futuro de la Programación con IA y Cómo Migrar desde VS Code

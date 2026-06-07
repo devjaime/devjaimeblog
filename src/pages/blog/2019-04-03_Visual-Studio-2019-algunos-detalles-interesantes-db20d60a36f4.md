@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Visual Studio 2019 algunos detalles interesantes"
-description: ""
-tags: ["code", "visual studio"]
-time: 4
-featured: true
-timestamp: "2019-04-03T12:20:31-0300"
+------
 filename: "2019-04-03_Visual-Studio-2019-algunos-detalles-interesantes-db20d60a36f4"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 Visual Studio 2019 algunos detalles interesantes

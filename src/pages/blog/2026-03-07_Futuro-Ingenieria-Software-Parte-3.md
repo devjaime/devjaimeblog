@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Cómo la IA Ya Está Transformando el Coding"
-description: "Segunda parte: el estado actual de las herramientas de IA para desarrolladores y cómo están cambiando la forma de escribir código."
-tags: ["IA", "Coding", "Copilot", "Cursor", "Herramientas", "Serie"]
-time: 5
-featured: false
-timestamp: "2026-03-07T03:25:00-0300"
+------
 filename: "2026-03-07_Futuro-Ingenieria-Software-Parte-3"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 # Cómo la IA Ya Está Transformando el Coding

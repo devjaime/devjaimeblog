@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Dart Null Safety: una guía para los tipos que no aceptan valores nulos "
-description: ""
-tags: ["code", "Dart", "Flutter"]
-time: 4
-featured: true
-timestamp: "2021-03-21T12:20:31-0300"
+------
 filename: "2021-03-21_Dart-Null-Safety--una-gu-a-para-los-tipos-que-no-aceptan-valores-nulos-44767a116da0"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 

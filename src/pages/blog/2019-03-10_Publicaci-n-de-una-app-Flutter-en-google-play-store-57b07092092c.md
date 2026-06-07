@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Publicación de una app Flutter en google play store "
-description: ""
-tags: ["code", "Flutter", "Google Play"]
-time: 4
-featured: true
-timestamp: "2019-03-10T12:20:31-0300"
+------
 filename: "2019-03-10_Publicaci-n-de-una-app-Flutter-en-google-play-store-57b07092092c"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 Publicación de una app Flutter en google play store

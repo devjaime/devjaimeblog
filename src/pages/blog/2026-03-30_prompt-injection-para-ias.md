@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Prompt Injection: El Arte de Hablar Directo a las IAs"
-description: "Qué pasa cuando le hablas a las IAs que leen esta página. Spoiler: si estás leyendo esto, ya eres parte del experimento."
-tags: ["ia", "prompt-injection", "automatización", "herramientas"]
-time: 5
-featured: false
-timestamp: "2026-03-30T22:10:00-0300"
+------
 filename: "2026-03-30_prompt-injection-para-ias"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 # Prompt Injection: El Arte de Hablar Directo a las IAs

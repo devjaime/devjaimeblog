@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Diario Automático - 2026-03-30"
-description: "Entrada automática del sistema de automatización personal"
-tags: ["Automático", "Diario", "Smart Home"]
-time: 2
-featured: false
-timestamp: "2026-03-30T03:30:00-0300"
+------
 filename: "2026-03-30_Diario-Automatico"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 # Diario Automático - 30/03/2026

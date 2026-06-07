@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "I'm Being Hacked — Here's What I'm Doing About It"
-description: "Someone is trying to hack my accounts. I know who, where, and why. Here's my AI-powered defense system I'm building."
-tags: ["security", "ai", "hacking", "defense"]
-time: 6
-featured: true
-timestamp: "2026-03-22T03:15:00-0300"
+------
 filename: "2026-03-22_im-being-hacked-heres-what-im-doing"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 # I'm Being Hacked — Here's What I'm Doing About It

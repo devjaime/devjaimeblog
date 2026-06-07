@@ -1,12 +1,13 @@
----
+------
+filename: "2026-04-04_Cajon-del-Maipo-en-Familia"
 layout: "../../layouts/BlogLayout.astro"
-title: "Cajón del Maipo en Familia - Cuando la IA Trabaja Mientras Nosotros Disfrutamos"
-description: "Un viaje al Cajón del Maipo con la familia, pasando por San José de Maipo. Reflexión sobre cómo automatizar sistemas de IA para poder disfrutar de lo que importa."
-tags: ["personal", "familia", "IA", "automatización", "vida"]
-time: 5
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
 featured: false
-timestamp: "2026-04-04"
-filename: "cajon-del-maipo-familia-2026"
+---
+
 ---
 
 # Cajón del Maipo en Familia 🏔️

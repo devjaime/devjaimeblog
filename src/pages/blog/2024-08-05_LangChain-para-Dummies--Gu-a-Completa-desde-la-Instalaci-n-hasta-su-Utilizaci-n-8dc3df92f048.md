@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "LangChain para Dummies: Guía Completa desde la Instalación hasta su Utilización"
-description: ""
-tags: ["code", "LangChain"]
-time: 4
-featured: true
-timestamp: "2024-08-05T12:20:32-0300"
+------
 filename: "2024-08-05_LangChain-para-Dummies--Gu-a-Completa-desde-la-Instalaci-n-hasta-su-Utilizaci-n-8dc3df92f048"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 

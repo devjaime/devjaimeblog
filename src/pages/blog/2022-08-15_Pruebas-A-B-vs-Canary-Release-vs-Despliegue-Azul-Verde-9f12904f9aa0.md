@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Pruebas A/B vs Canary Release vs Despliegue Azul Verde"
-description: ""
-tags: ["code", "Release", "Canary"]
-time: 4
-featured: true
-timestamp: "2022-08-15T12:20:31-0300"
+------
 filename: "2022-08-15_Pruebas-A-B-vs-Canary-Release-vs-Despliegue-Azul-Verde-9f12904f9aa0"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 Pruebas A/B vs Canary Release vs Despliegue Azul Verde

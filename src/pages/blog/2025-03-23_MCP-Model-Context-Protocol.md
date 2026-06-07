@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Model Context Protocol (MCP): Elevando tus Agentes de IA a Nuevas Alturas"
-description: "Explora cómo el MCP está revolucionando la integración y eficiencia de los modelos de inteligencia artificial."
-tags: ["inteligencia artificial", "MCP", "integración de datos"]
-time: 5
-featured: true
-timestamp: "2025-03-23T01:26:37-0300"
+------
 filename: "2025-03-23_MCP-Model-Context-Protocol"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 

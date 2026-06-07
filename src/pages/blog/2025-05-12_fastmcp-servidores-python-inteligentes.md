@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "⚙️ Historia Técnica: Cómo Usé FastMCP para Crear Servidores MCP Inteligentes en Python (Casos Reales)"
-description: "Un relato práctico y entretenido sobre cómo FastMCP permitió construir servidores MCP conectados a inteligencia artificial, microservicios y reportes en tiempo real con Python, incluyendo ejemplos reales como FlipReady y CodeIA."
-tags: ["Python", "FastMCP", "Inteligencia Artificial", "Microservicios", "Historias Técnicas", "Langflow"]
-time: 12
-timestamp: "2025-05-12T00:00:00-0400"
-featured: true
+------
 filename: "2025-05-12_fastmcp-servidores-python-inteligentes"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 # FastMCP: Construye Servidores MCP en Python de Forma Inteligente 🚀

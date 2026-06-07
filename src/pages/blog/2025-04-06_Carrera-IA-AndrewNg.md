@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Cómo iniciar tu carrera en IA: aprendizajes clave de Andrew Ng"
-description: "Explora una guía práctica para comenzar tu carrera en inteligencia artificial, basada en el enfoque de aprendizaje, proyectos y comunidad propuesto por Andrew Ng."
-tags: ["inteligencia artificial", "carrera", "andrew ng", "aprendizaje continuo"]
-time: 8
-timestamp: "2025-04-06T10:00:00-0300"
-featured: true
+------
 filename: "2025-04-06_Carrera-IA-AndrewNg"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 # Cómo iniciar tu carrera en IA: aprendizajes clave de Andrew Ng 🧠🚀

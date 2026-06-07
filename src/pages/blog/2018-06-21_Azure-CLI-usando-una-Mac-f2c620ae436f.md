@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Azure CLI usando una Mac"
-description: ""
-tags: ["code", "azure"]
-time: 4
-featured: true
-timestamp: "2018-06-21T12:20:31-0300"
+------
 filename: "2018-06-21_Azure-CLI-usando-una-Mac-f2c620ae436f"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 Azure CLI usando una Mac

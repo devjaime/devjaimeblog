@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "AI Agent Develop: Agentes Inteligentes con LangChain y LangGraph"
-description: ""
-tags: ["code", "AI", "Langchain", "LangGraph"]
-time: 4
-featured: true
-timestamp: "2024-12-19T12:20:33-0300"
+------
 filename: "2024-12-19_AI-Agent-Develop--Agentes-Inteligentes-con-LangChain-y-LangGraph-3226c5971fa2"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 AI Agent Develop: Agentes Inteligentes con LangChain y LangGraph

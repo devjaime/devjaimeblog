@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "🤖 Cascade Agents: Modular AI Inspired by Human Teams"
-description: "Discover how cascade agents combine multi-agent architecture with agile-inspired workflows to power use cases in code review, real estate, and retail."
-tags: ["AI", "Multi-Agent Systems", "LangChain", "LangGraph", "Agile", "DevOps", "RetailTech", "PropTech"]
-time: 9
-timestamp: "2025-04-23T21:00:00-0400"
-featured: true
+------
 filename: "2025-04-23_cascade-agents"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 # 🤖 Cascade Agents: Modular AI Inspired by Human Teams

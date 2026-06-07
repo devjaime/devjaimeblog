@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Algunas de mis suscripciones de youtube que más recomiendo."
-description: ""
-tags: ["code", "youtube"]
-time: 4
-featured: true
-timestamp: "2022-04-11T12:20:31-0300"
+------
 filename: "2022-04-11_Algunas-de-mis-suscripciones-de-youtube-que-m-s-recomiendo---especial-des-f3522900ac6f"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 

@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "BFF con Go (Parte 2): Tests, Concurrencia y Resiliencia en APIs"
-description: "Extiende tu Backend For Frontend con pruebas, manejo de errores y uso de goroutines para llamadas concurrentes."
-tags: ["golang", "openapi", "bff", "microservicios", "testing", "resiliencia"]
-time: 10
-featured: true
-timestamp: "2025-03-29T17:00:00-0300"
+------
 filename: "2025-03-29_BFF-Golang-Parte2"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 # BFF con Go (Parte 2): Tests, Concurrencia y Resiliencia en APIs 🧪⚙️

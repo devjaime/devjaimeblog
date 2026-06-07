@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Desarrollo de API Restful con Python, Django y Django Rest Framework"
-description: ""
-tags: ["code", "API", "Python", "Django"]
-time: 4
-featured: true
-timestamp: "2022-04-15T12:20:31-0300"
+------
 filename: "2022-04-15_Desarrollo-de-API-Restful-con-Python--Django-y-Django-Rest-Framework-e6f019dbe177"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 

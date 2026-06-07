@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Que es kafka y como implementarlo en nestjs"
-description: ""
-tags: ["code", "Kafka", "Nestjs"]
-time: 4
-featured: true
-timestamp: "2023-03-18T12:20:32-0300"
+------
 filename: "2023-03-18_Que-es-kafka-y-como-implementarlo-en-nestjs-657e60468356"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 

@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "🚨 Rug Pulls in Cryptocurrency: How This Scam Works and How to Avoid It"
-description: ""
-tags: ["code", "Rug Pulls"]
-time: 4
-featured: true
-timestamp: "2025-02-19T12:20:33-0300"
+------
 filename: "2025-02-19_---Rug-Pulls-in-Cryptocurrency--How-This-Scam-Works-and-How-to-Avoid-It-ea427349ec9f"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 🚨 Rug Pulls in Cryptocurrency: How This Scam Works and How to Avoid It

@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Automatización del Hogar con OpenClaw + Home Assistant"
-description: "Cómo integrar OpenClaw con Home Assistant para controlar cámaras, sensores IoT y automatizar tareas del hogar"
-tags: ["openclaw", "home-assistant", "iot", "automacion", "chatgpt"]
-time: 8
-featured: true
-timestamp: "2026-02-27T13:00:00-0300"
+------
 filename: "2026-02-27_Automatizacion-hogar-openclaw-home-assistant"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 # Automatización del Hogar con OpenClaw + Home Assistant

@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "🧠 Cómo Aprendí a Construir Agentes Web Autónomos con Inteligencia Artificial"
-description: "Explora paso a paso cómo construir agentes que navegan sitios web, analizan contenido y toman decisiones por sí solos utilizando LLMs, MCTS y herramientas como Playwright, MultiOn y AgentQ."
-tags: ["AI Agents", "Python", "LangChain", "MCTS", "MultiOn", "AgentQ", "Web Automation"]
-time: 20
-timestamp: "2025-05-18T00:00:00-0400"
-featured: true
+------
 filename: "2025-05-18_ai-browser-agents"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 ## 🧠 Aprendiendo a Construir Agentes Inteligentes para Navegadores

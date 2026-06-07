@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Inteligencia Artificial Generativa: Casos de Uso Técnicos y Aplicaciones Reales"
-description: ""
-tags: ["code", "AI"]
-time: 4
-featured: true
-timestamp: "2025-01-08T12:20:33-0300"
+------
 filename: "2025-01-08_Inteligencia-Artificial-Generativa--Casos-de-Uso-T-cnicos-y-Aplicaciones-Reales-59f94d4aaa42"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 Inteligencia Artificial Generativa: Casos de Uso Técnicos y Aplicaciones Reales

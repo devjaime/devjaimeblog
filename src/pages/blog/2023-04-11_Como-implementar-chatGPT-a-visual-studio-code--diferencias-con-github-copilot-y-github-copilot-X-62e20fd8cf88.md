@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Como implementar chatGPT a visual studio code, diferencias con github copilot y github copilot"
-description: ""
-tags: ["code", "chatGPT", "copilot", "github"]
-time: 4
-featured: true
-timestamp: "2023-04-11T12:20:32-0300"
+------
 filename: "2023-04-11_Como-implementar-chatGPT-a-visual-studio-code--diferencias-con-github-copilot-y-github-copilot-X-62e20fd8cf88"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 

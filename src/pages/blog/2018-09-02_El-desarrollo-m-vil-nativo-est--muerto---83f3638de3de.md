@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "El desarrollo móvil nativo está muerto!"
-description: ""
-tags: ["code", "flutter"]
-time: 4
-featured: true
-timestamp: "2018-09-02T12:20:31-0300"
+------
 filename: "2018-09-02_El-desarrollo-m-vil-nativo-est--muerto---83f3638de3de"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 El desarrollo móvil nativo está muerto!! 

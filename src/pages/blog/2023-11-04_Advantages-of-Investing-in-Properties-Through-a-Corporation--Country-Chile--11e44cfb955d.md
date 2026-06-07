@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Advantages of Investing in Properties Through a Corporation (Country Chile) "
-description: ""
-tags: ["code", "html"]
-time: 4
-featured: true
-timestamp: "2023-11-04T12:20:32-0300"
+------
 filename: "2023-11-04_Advantages-of-Investing-in-Properties-Through-a-Corporation--Country-Chile--11e44cfb955d"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 Advantages of Investing in Properties Through a Corporation (Country Chile)

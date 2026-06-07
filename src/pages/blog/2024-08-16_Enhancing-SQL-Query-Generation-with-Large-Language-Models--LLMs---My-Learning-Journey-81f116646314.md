@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Enhancing SQL Query Generation with Large Language Models (LLMs): My Learning Journey"
-description: ""
-tags: ["code", "SQL", "LLMs"]
-time: 4
-featured: true
-timestamp: "2024-08-16T12:20:32-0300"
+------
 filename: "2024-08-16_Enhancing-SQL-Query-Generation-with-Large-Language-Models--LLMs---My-Learning-Journey-81f116646314"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 Enhancing SQL Query Generation with Large Language Models (LLMs): My Learning Journey

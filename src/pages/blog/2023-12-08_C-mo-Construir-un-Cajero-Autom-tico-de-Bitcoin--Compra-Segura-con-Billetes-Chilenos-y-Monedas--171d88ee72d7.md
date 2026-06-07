@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Cómo Construir un Cajero Automático de Bitcoin: Compra Segura con Billetes Chilenos y Monedas"
-description: ""
-tags: ["code", "Bitcoin"]
-time: 4
-featured: true
-timestamp: "2023-12-08T12:20:32-0300"
+------
 filename: "2023-12-08_C-mo-Construir-un-Cajero-Autom-tico-de-Bitcoin--Compra-Segura-con-Billetes-Chilenos-y-Monedas--171d88ee72d7"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 Cómo Construir un Cajero Automático de Bitcoin: Compra Segura con Billetes Chilenos y Monedas…

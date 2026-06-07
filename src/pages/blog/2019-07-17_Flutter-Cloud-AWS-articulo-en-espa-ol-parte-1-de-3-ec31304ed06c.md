@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Flutter Cloud AWS articulo en español parte 1 de 3"
-description: ""
-tags: ["code", "Flutter", "Cloud", "AWS"]
-time: 4
-featured: true
-timestamp: "2019-07-17T12:20:31-0300"
+------
 filename: "2019-07-17_Flutter-Cloud-AWS-articulo-en-espa-ol-parte-1-de-3-ec31304ed06c"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 Flutter Cloud AWS articulo en español parte 1 de 3

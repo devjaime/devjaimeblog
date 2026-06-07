@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Guía completa de Google ADK: Crea agentes inteligentes paso a paso"
-description: "Aprende a crear agentes de inteligencia artificial con Google ADK desde cero, integrando herramientas, desplegando en la nube y aplicando buenas prácticas de IA responsable."
-tags: ["Google ADK", "Agentes Inteligentes", "IA", "Despliegue en la nube", "Vertex AI", "Cloud Run", "Herramientas IA"]
-time: 8
-timestamp: "2025-04-09T10:00:00-0300"
-featured: true
+------
 filename: "2025-04-09_Guia-Google-ADK"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 Google ha lanzado [ADK (Agent Development Kit)](https://google.github.io/adk-docs/), un potente framework open source que te permite crear agentes de inteligencia artificial de forma modular, segura y escalable. ¿Quieres aprender desde lo más básico hasta construir sistemas complejos multiagente? Esta guía es para ti. 👇

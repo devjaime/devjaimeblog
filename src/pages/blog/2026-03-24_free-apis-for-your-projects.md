@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Free APIs for Your Projects - Jaime Hernández"
-description: "A curated list of free public APIs useful for AI projects, maritime tech, vocational platforms, and more. No API key required options included."
-tags: ["api", "development", "ai", "integrations", "tools"]
-time: 12
-featured: true
-timestamp: "2026-03-24T02:20:00-0300"
+------
 filename: "2026-03-24_free-apis-for-your-projects"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 # Free APIs for Your Projects

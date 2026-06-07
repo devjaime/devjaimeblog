@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "MicroFrontEnd"
-description: ""
-tags: ["code", "microfrontend"]
-time: 4
-featured: true
-timestamp: "2019-09-06T12:20:31-0300"
+------
 filename: "2019-09-06_MicroFrontEnd-4eecf1498cd1"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 MicroFrontEnd

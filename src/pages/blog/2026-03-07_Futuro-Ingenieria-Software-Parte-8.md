@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "La Brecha Digital: Quién Avanza y Quién Se Queda Atrás"
-description: "Séptima parte: análisis de la desigualdad en el acceso a la IA y cómo esta brecha puede profundizar las diferencias globales."
-tags: ["IA", "Brecha Digital", "Desigualdad", "Acceso", "Serie"]
-time: 5
-featured: false
-timestamp: "2026-03-07T03:27:00-0300"
+------
 filename: "2026-03-07_Futuro-Ingenieria-Software-Parte-8"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 # La Brecha Digital: Quién Avanza y Quién Se Queda Atrás

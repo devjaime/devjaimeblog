@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Gemma 4: El ecosistema de modelos abiertos y su impacto en la arquitectura de backend"
-description: "Análisis del ecosistema de Gemma 4, los modelos de pesos abiertos y cómo transforman la ingeniería de software backend."
-tags: ["AI", "LLM", "Gemma", "Backend", "Open Weights"]
-time: 8
-featured: false
-timestamp: "2026-04-04T11:00:00-0300"
+------
 filename: "2026-04-04_Gemma-4-El-ecosistema-de-modelos-abiertos-y-su-impacto-en-la-arquitectura-de-backend"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 # Gemma 4: El ecosistema de modelos abiertos y su impacto en la arquitectura de backend

@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Metaprompting con O1: Optimizando Rutinas Basadas en LLMs"
-description: ""
-tags: ["code", "Metaprompting", "O1", "OpenAI", "LLMs"]
-time: 4
-featured: true
-timestamp: "2024-12-29T12:20:33-0300"
+------
 filename: "2024-12-29_Metaprompting-con-O1--Optimizando-Rutinas-Basadas-en-LLMs-ba41a6e3b55e"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 Metaprompting con O1: Optimizando Rutinas Basadas en LLMs

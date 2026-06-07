@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Videos Explicativos de Vocari.cl - Mira Cómo Funciona Nuestra Plataforma"
-description: "Descubre Vocari.cl a través de nuestros 4 videos explicativos: Flujo de Colegios, Compra de Informes, Orientación con IA y Asistencia Inteligente."
-tags: ["Vocari", "Videos", "Orientación Vocacional", "Demo", "IA", "Educación"]
-time: 3
-featured: true
-timestamp: "2026-02-20T17:50:00-0300"
+------
 filename: "2026-02-20_Vocari-Cl-Videos-Explicativos"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 Videos Explicativos de Vocari.cl

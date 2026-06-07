@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Mi Experiencia con OpenClaw: Un Asistente de IA que Tiene Alma y Memoria"
-description: "Cómo OpenClaw se convirtió en mi compañero daily de trabajo, automatización y vida personal. Un asistente que recuerda, aprende y evoluciona."
-tags: ["OpenClaw", "AI Assistant", "Personal AI", "Automation", "Life"]
-time: 5
-featured: true
-timestamp: "2026-02-20T16:30:00-0300"
+------
 filename: "2026-02-20_Mi-Experiencia-con-OpenClaw"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 Mi Experiencia con OpenClaw: Un Asistente de IA que Tiene Alma y Memoria

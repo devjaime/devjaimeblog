@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Vocari.cl: La Plataforma de Orientación Vocacional con IA que Está Transformando la Educación en Chile"
-description: "Vocari.cl es una plataforma de orientación vocacional impulsada por IA que ayuda a estudiantes a descubrir su camino profesional. Con datos reales del MINEDUC, integración para colegios y metodologías científicas."
-tags: ["Vocari", "Orientación Vocacional", "IA", "Educación", "Chile", "Supabase", "RIASEC"]
-time: 12
-featured: true
-timestamp: "2026-02-20T17:00:00-0300"
+------
 filename: "2026-02-20_Vocari-Cl-Plataforma-Orientacion-Vocacional-IA-Chile"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 Vocari.cl: La Plataforma de Orientación Vocacional con IA que Está Transformando la Educación en Chile

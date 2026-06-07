@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Que es Vite y como funciona más rapido que webpack"
-description: ""
-tags: ["code", "vite", "javascript"]
-time: 4
-featured: true
-timestamp: "2022-04-25T12:20:31-0300"
+------
 filename: "2022-04-25_Que-es-Vite-y-como-funciona-m-s-rapido-que-webpack-132f45efa4e4"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 Que es Vite y como funciona más rapido que webpack

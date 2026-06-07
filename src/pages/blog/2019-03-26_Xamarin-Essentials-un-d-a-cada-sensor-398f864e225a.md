@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Xamarin Essentials un día cada sensor"
-description: ""
-tags: ["code", "Xamarin"]
-time: 4
-featured: true
-timestamp: "2019-03-26T12:20:31-0300"
+------
 filename: "2019-03-26_Xamarin-Essentials-un-d-a-cada-sensor-398f864e225a"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 Xamarin Essentials un día cada sensor

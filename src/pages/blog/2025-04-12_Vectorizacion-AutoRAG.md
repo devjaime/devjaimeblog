@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Vectorización e Indexación Inteligente con AutoRAG: PDF, Excel y CSV con LangChain, pgvector y más"
-description: "Aprende paso a paso cómo vectorizar e indexar documentos como PDF, Excel y CSV utilizando LangChain, pgvector, Neo4j, Langflow y herramientas cloud. Incluye flujos, ejemplos y mejores prácticas."
-tags: ["AutoRAG", "RAG", "LangChain", "pgvector", "Neo4j", "Langflow", "Documentos", "Vectorización", "Python", "Indexación"]
-time: 10
-timestamp: "2025-04-12T10:00:00-0300"
-featured: true
+------
 filename: "2025-04-12_Vectorizacion-AutoRAG"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 # 🧠 Vectorización e Indexación Inteligente con AutoRAG: PDF, Excel y CSV

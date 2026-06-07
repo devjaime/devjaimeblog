@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Vocari: Building Voice AI Assistants with Python and AssemblyAI"
-description: "Learn how to build intelligent voice assistants using Vocari, a powerful Python library powered by AssemblyAI's real-time speech recognition and LLM capabilities."
-tags: ["AI", "Voice AI", "Python", "AssemblyAI", "LLM", "Vocari"]
-time: 8
-featured: true
-timestamp: "2026-02-18T21:00:00-0300"
+------
 filename: "2026-02-18_Vocari-Building-Voice-AI-Assistants-with-Python-and-AssemblyAI-abc123def456"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 Vocari: Building Voice AI Assistants with Python and AssemblyAI

@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Mi Plan 2026: Objetivos Reales y Proyectos con Potencial"
-description: "No es una lista de buenos propósitos. Es el plan concreto para consolidar ingresos, reducir burnout y avanzar hacia $10K USD/mes sin perderme en el camino."
-tags: ["productividad", "ia", "carrera", "objetivos"]
-time: 8
-featured: true
-timestamp: "2026-03-22T03:02:00-0300"
+------
 filename: "2026-03-22_plan-2026-objetivos-reales"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 # Mi Plan 2026: Objetivos Reales y Proyectos con Potencial

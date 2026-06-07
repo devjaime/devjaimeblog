@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Perplexity para Dummies: Casos de Uso Prácticos"
-description: ""
-tags: ["code", "perplexity"]
-time: 4
-featured: true
-timestamp: "2024-08-06T12:20:32-0300"
+------
 filename: "2024-08-06_Perplexity-para-Dummies--Casos-de-Uso-Pr-cticos-908a0fd8fc4c"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 

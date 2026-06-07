@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Is it possible to implement ChatGPT in Visual Studio Code?"
-description: ""
-tags: ["code", "chatGPT", "vscode"]
-time: 4
-featured: true
-timestamp: "2023-04-11T12:20:32-0300"
+------
 filename: "2023-04-11_Is-it-possible-to-implement-ChatGPT-in-Visual-Studio-Code--147441a3006b"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 Is it possible to implement ChatGPT in Visual Studio Code?

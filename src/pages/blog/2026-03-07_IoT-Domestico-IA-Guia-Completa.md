@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "IoT Doméstico con IA: La Guía Definitiva para Automatizar tu Hogar"
-description: "Aprende a integrar dispositivos IoT con agentes de IA para crear un hogar inteligente. Análisis de costo-beneficio y casos de uso reales."
-tags: ["IoT", "Home Assistant", "Automatización", "IA", "Smart Home", "Alexa"]
-time: 10
-featured: true
-timestamp: "2026-03-07T01:50:00-0300"
+------
 filename: "2026-03-07_IoT-Domestico-IA-Guia-Completa"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 # IoT Doméstico con IA: La Guía Definitiva para Automatizar tu Hogar

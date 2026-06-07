@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "🔍 Explorando MCP Inspector: Tu Ventana al Protocolo de Componentes"
-description: "Descubre cómo MCP Inspector permite analizar y depurar flujos agentic y sistemas construidos con el Model Context Protocol. Una herramienta clave para desarrolladores de agentes de IA."
-tags: ["MCP", "Model Context Protocol", "Agentes de IA", "Herramientas de Desarrollo", "Depuración"]
-time: 8
-timestamp: "2025-04-20T20:00:00-0400"
-featured: true
+------
 filename: "2025-04-20_mcp-inspector"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 ## 🌐 ¿Qué es el MCP Inspector?

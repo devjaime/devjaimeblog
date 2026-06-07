@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Estado del Dashboard OpenClaw - 2026-03-12"
-description: "Análisis automático del estado del sistema OpenClaw y recomendaciones"
-tags: ["OpenClaw", "Dashboard", "Monitoring", "Automation"]
-time: 2
-featured: false
-timestamp: "2026-03-12T18:36:41-0300"
+------
 filename: "2026-03-12_dashboard_status"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 # Estado del Dashboard - 2026-03-12

@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Día uno Xamarin Essential Acelerometro"
-description: ""
-tags: ["code", "Xamarin"]
-time: 4
-featured: true
-timestamp: "2019-04-17T12:20:31-0300"
+------
 filename: "2019-04-17_D-a-uno-Xamarin-Essential-Acelerometro-517507ef7615"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 Día uno Xamarin Essential Acelerometro

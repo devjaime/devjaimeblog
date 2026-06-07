@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Visual Studio Code para el desarrollo de flutter"
-description: ""
-tags: ["code", "vscode", "Flutter"]
-time: 4
-featured: true
-timestamp: "2022-05-29T12:20:31-0300"
+------
 filename: "2022-05-29_Visual-Studio-Code-para-el-desarrollo-de-flutter-256dbd13b453"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 Visual Studio Code para el desarrollo de flutter

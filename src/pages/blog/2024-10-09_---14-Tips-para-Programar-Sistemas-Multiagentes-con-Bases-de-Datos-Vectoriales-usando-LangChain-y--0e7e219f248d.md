@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "🚀 14 Tips para Programar Sistemas Multiagentes con Bases de Datos Vectoriales usando LangChain"
-description: ""
-tags: ["code", "LangChain"]
-time: 4
-featured: true
-timestamp: "2024-10-09T12:20:33-0300"
+------
 filename: "2024-10-09_---14-Tips-para-Programar-Sistemas-Multiagentes-con-Bases-de-Datos-Vectoriales-usando-LangChain-y--0e7e219f248d"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 🚀 14 Tips para Programar Sistemas Multiagentes con Bases de Datos Vectoriales usando LangChain y…

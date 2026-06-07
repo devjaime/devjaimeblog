@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Mi proceso de pensamiento de desarrollo para Frontend con Frontendmentor.io"
-description: ""
-tags: ["code", "Frontend"]
-time: 4
-featured: true
-timestamp: "2022-10-22T12:20:32-0300"
+------
 filename: "2022-10-22_Mi-proceso-de-pensamiento-de-desarrollo-para-Frontend-con-Frontendmentor-io-6387837a90a6"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 Mi proceso de pensamiento de desarrollo para Frontend con Frontendmentor.io

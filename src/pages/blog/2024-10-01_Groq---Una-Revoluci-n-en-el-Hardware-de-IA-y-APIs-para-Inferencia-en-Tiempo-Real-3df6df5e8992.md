@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Groq — Una Revolución en el Hardware de IA y APIs para Inferencia en Tiempo Real"
-description: ""
-tags: ["code", "Groq", "IA", "APIS"]
-time: 4
-featured: true
-timestamp: "2024-10-01T12:20:33-0300"
+------
 filename: "2024-10-01_Groq---Una-Revoluci-n-en-el-Hardware-de-IA-y-APIs-para-Inferencia-en-Tiempo-Real-3df6df5e8992"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 Groq — Una Revolución en el Hardware de IA y APIs para Inferencia en Tiempo Real

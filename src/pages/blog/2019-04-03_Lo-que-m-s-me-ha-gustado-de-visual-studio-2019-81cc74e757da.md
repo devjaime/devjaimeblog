@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Lo que más me ha gustado de visual studio 2019"
-description: ""
-tags: ["code", "visual studio"]
-time: 4
-featured: true
-timestamp: "2019-04-03T12:20:31-0300"
+------
 filename: "2019-04-03_Lo-que-m-s-me-ha-gustado-de-visual-studio-2019-81cc74e757da"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 

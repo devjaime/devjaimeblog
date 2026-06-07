@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "GPT-5.4 Mini/Nano: Los agentes ahora son más asequibles"
-description: "OpenAI lanza GPT-5.4 mini y nano para subagentes. Costos reducidos 5-10x. El patrón: modelo caro para pensar, modelo barato para actuar."
-tags: ["ai", "openai", "agents", "gpt-5"]
-time: 6
-featured: true
-timestamp: "2026-03-22T01:51:00-0300"
+------
 filename: "2026-03-22_gpt-54-mini-nano-agents-economicos"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 # LA GRAN HISTORIA

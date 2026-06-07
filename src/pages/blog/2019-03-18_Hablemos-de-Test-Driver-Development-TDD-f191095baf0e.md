@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Hablemos de Test Driver Development TDD "
-description: ""
-tags: ["code", "TDD"]
-time: 4
-featured: true
-timestamp: "2019-03-18T12:20:31-0300"
+------
 filename: "2019-03-18_Hablemos-de-Test-Driver-Development-TDD-f191095baf0e"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 Hablemos de Test Driver Development TDD

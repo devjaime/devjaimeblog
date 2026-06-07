@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Cutting-Edge Web Development with Next.js: Turning Ideas into Reality"
-description: ""
-tags: ["code", "NextJS"]
-time: 4
-featured: true
-timestamp: "2023-11-11T12:20:32-0300"
+------
 filename: "2023-11-11_Cutting-Edge-Web-Development-with-Next-js--Turning-Ideas-into-Reality-0468321b7a63"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 

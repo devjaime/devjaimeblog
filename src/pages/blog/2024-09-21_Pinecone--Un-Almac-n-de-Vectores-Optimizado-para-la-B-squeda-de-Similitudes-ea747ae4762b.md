@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Pinecone: Un Almacén de Vectores Optimizado para la Búsqueda de Similitudes"
-description: ""
-tags: ["code", "Pinecone"]
-time: 4
-featured: true
-timestamp: "2024-09-21T12:20:32-0300"
+------
 filename: "2024-09-21_Pinecone--Un-Almac-n-de-Vectores-Optimizado-para-la-B-squeda-de-Similitudes-ea747ae4762b"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 Pinecone: Un Almacén de Vectores Optimizado para la Búsqueda de Similitudes

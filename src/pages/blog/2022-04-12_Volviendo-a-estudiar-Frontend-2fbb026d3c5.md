@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Volviendo a estudiar Frontend"
-description: ""
-tags: ["code", "Frontend"]
-time: 4
-featured: true
-timestamp: "2022-04-12T12:20:31-0300"
+------
 filename: "2022-04-12_Volviendo-a-estudiar-Frontend-2fbb026d3c5"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 Volviendo a estudiar Frontend

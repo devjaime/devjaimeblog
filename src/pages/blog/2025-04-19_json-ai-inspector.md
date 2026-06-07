@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "JSON AI Inspector: Inspección Inteligente de JSON con IA"
-description: "Explora JSON AI Inspector, una herramienta Open Source construida con Streamlit para analizar, comparar y generar datos JSON usando inteligencia artificial. Compatible con Python, Go y TypeScript."
-tags: ["JSON", "IA", "Groq", "Open Source", "Streamlit", "Python"]
-time: 8
-timestamp: "2025-04-19T20:00:00-0400"
-featured: true
+------
 filename: "2025-04-19_json-ai-inspector"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 # 🧠 JSON AI Inspector

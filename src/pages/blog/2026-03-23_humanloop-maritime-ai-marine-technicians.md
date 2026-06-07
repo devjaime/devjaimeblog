@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Humanloop Maritime — AI-Powered Marine Technical Services"
-description: "Building a marketplace for certified marine technicians using Human-in-the-Loop AI orchestration. Radar, GMDSS, AIS, GPS - when ships need experts, we connect them."
-tags: ["ai", "maritime", "humanloop", "agents", "mcp"]
-time: 8
-featured: true
-timestamp: "2026-03-23T01:00:00-0300"
+------
 filename: "2026-03-23_humanloop-maritime-ai-marine-technicians"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 # Humanloop Maritime — AI-Powered Marine Technical Services

@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Ruta de aprendizaje para las certificaciones GCP"
-description: ""
-tags: ["code", "GCP", "Certificaciones"]
-time: 4
-featured: true
-timestamp: "2023-04-11T12:20:32-0300"
+------
 filename: "2023-04-11_Ruta-de-aprendizaje-para-las-certificaciones-GCP-5cf74c463589"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 Ruta de aprendizaje para las certificaciones GCP

@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "El límite de la nube con arquitectura Serveless y Azure Function"
-description: ""
-tags: ["code", "serveless", "azure functions"]
-time: 4
-featured: true
-timestamp: "2018-07-31T12:20:31-0300"
+------
 filename: "2018-07-31_El-l-mite-de-la-nube-con-arquitectura-Serveless-y-Azure-Function-8512fe987ad3"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 # El límite de la nube con arquitectura Serveless y Azure Function 

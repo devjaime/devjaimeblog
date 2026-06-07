@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Construyendo Nuevas Ideas de Negocio para un desarrollo de software exitoso en un Contexto"
-description: ""
-tags: ["code", "html"]
-time: 4
-featured: true
-timestamp: "2023-12-16T12:20:32-0300"
+------
 filename: "2023-12-16_Construyendo-Nuevas-Ideas-de-Negocio-para-un-desarrollo-de-software-exitoso-en-un-Contexto--cf7fbc3b8363"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 Construyendo Nuevas Ideas de Negocio para un desarrollo de software exitoso en un Contexto…

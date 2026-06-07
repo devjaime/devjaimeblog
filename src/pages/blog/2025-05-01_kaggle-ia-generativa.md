@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "🚀 Explorando Kaggle en 2025: Aprende, Compite y Crea con IA Generativa"
-description: "Una guía actualizada sobre cómo aprovechar Kaggle para aprender, competir y desarrollar proyectos de inteligencia artificial generativa en 2025."
-tags: ["Kaggle", "IA Generativa", "Machine Learning", "Competencias", "Aprendizaje"]
-time: 10
-timestamp: "2025-05-01T00:00:00-0400"
-featured: true
+------
 filename: "2025-05-01_kaggle-ia-generativa"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 ## ¿Qué es Kaggle y por qué es relevante en 2025?

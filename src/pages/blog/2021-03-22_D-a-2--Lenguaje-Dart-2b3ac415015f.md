@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Día 2: Lenguaje Dart"
-description: ""
-tags: ["code", "Dart", "Flutter"]
-time: 4
-featured: true
-timestamp: "2021-03-22T12:20:31-0300"
+------
 filename: "2021-03-22_D-a-2--Lenguaje-Dart-2b3ac415015f"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 Día 2: Lenguaje Dart

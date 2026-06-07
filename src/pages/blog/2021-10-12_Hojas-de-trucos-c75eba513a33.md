@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Hojas de trucos"
-description: ""
-tags: ["code", "html"]
-time: 4
-featured: true
-timestamp: "2021-10-12T12:20:31-0300"
+------
 filename: "2021-10-12_Hojas-de-trucos-c75eba513a33"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 Hojas de trucos

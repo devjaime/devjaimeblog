@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Mejorando la Búsqueda Semántica con Faiss, Pinecone y LangChain: Un Caso Real con Twitter"
-description: ""
-tags: ["code", "Pinecone", "LangChain"]
-time: 4
-featured: true
-timestamp: "2024-09-23T12:20:32-0300"
+------
 filename: "2024-09-23_Mejorando-la-B-squeda-Sem-ntica-con-Faiss--Pinecone-y-LangChain--Un-Caso-Real-con-Twitter-d656afb87e7b"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 Mejorando la Búsqueda Semántica con Faiss, Pinecone y LangChain: Un Caso Real con Twitter

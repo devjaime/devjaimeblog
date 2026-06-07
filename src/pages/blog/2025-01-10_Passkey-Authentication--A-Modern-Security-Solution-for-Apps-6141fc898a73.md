@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Passkey Authentication: A Modern Security Solution for Apps"
-description: ""
-tags: ["code", "PassKey"]
-time: 4
-featured: true
-timestamp: "2025-01-10T12:20:33-0300"
+------
 filename: "2025-01-10_Passkey-Authentication--A-Modern-Security-Solution-for-Apps-6141fc898a73"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 Passkey Authentication: A Modern Security Solution for Apps

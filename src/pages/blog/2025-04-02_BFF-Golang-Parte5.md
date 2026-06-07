@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "BFF con Go (Parte 5): Observabilidad, Feature Flags y Entornos"
-description: "En esta quinta parte exploramos cómo mejorar la observabilidad de tu BFF en Go, manejar entornos de forma segura y aplicar feature flags."
-tags: ["golang", "bff", "observabilidad", "feature flags", "entornos", "configuración"]
-time: 10
-featured: true
-timestamp: "2025-04-02T10:00:00-0300"
+------
 filename: "2025-04-02_BFF-Golang-Parte5"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 # BFF con Go (Parte 5): Observabilidad, Feature Flags y Entornos 👁️‍🗨️🚩🌍

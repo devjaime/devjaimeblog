@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "El Futuro de la IA con Agentes Autónomos"
-description: "Cómo los agentes autónomos están transformando el desarrollo de software y qué significa para el futuro de los desarrolladores"
-tags: ["ia", "agentes-autonomos", "ai-agents", "autonomous-agents", "llm", "automation"]
-time: 10
-featured: true
-timestamp: "2026-03-04T00:30:00-0300"
+------
 filename: "2026-03-04_El-Futuro-de-la-IA-con-Agentes-Autonomos"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 # El Futuro de la IA con Agentes Autónomos

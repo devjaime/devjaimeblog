@@ -1,12 +1,13 @@
----
-layout: "../../layouts/BlogLayout.astro"
-title: "Cómo Construí un Asistente de IA para mi Casa: OpenClaw + Home Assistant"
-description: "Un análisis honesto del stack de automatización del hogar con IA: qué funciona, qué no, y cuánto valor realmente genera."
-tags: ["IA", "Home Assistant", "OpenClaw", "Automatización", "LinkedIn", "Proyectos"]
-time: 5
-featured: true
-timestamp: "2026-03-07T03:15:00-0300"
+------
 filename: "2026-03-07_Stack-OpenClaw-Home-Assistant-Analisis"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+draft: false
+time: 15
+featured: false
+---
+
 ---
 
 # Cómo Construí un Asistente de IA para mi Casa
