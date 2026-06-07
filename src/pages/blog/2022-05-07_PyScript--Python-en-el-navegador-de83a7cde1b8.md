@@ -1,16 +1,22 @@
 ---
-description: "PyScript: Python en el navegador ================================"
----
 filename: "2022-05-07_PyScript--Python-en-el-navegador-de83a7cde1b8"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "PyScript: Python en el navegador ==========================="
+description: "PyScript: Python en el navegador ================================"
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
 
 PyScript: Python en el navegador
 ================================

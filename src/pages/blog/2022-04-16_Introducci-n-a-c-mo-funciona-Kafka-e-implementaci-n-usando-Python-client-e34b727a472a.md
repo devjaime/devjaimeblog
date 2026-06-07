@@ -1,16 +1,22 @@
 ---
-description: "Introducción a cómo funciona Kafka e implementación usando Python-client ========================================================================"
----
 filename: "2022-04-16_Introducci-n-a-c-mo-funciona-Kafka-e-implementaci-n-usando-Python-client-e34b727a472a"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "Introducción a cómo funciona Kafka e implementación usando P"
+description: "Introducción a cómo funciona Kafka e implementación usando Python-client ========================================================================"
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
 
 
 Introducción a cómo funciona Kafka e implementación usando Python-client

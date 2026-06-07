@@ -1,16 +1,22 @@
 ---
-description: "Cutting-Edge Web Development with Next.js: Turning Ideas into Reality ====================================================================="
----
 filename: "2023-11-11_Cutting-Edge-Web-Development-with-Next-js--Turning-Ideas-into-Reality-0468321b7a63"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "Cutting-Edge Web Development with Next.js: Turning Ideas int"
+description: "Cutting-Edge Web Development with Next.js: Turning Ideas into Reality ====================================================================="
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
 
 
 Cutting-Edge Web Development with Next.js: Turning Ideas into Reality

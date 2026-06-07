@@ -1,16 +1,22 @@
 ---
-description: "Cómo usar la biblioteca Rich con Python ======================================="
----
 filename: "2022-04-13_C-mo-usar-la-biblioteca-Rich-con-Python-db09f1752c94"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "Cómo usar la biblioteca Rich con Python ===================="
+description: "Cómo usar la biblioteca Rich con Python ======================================="
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
 
 Cómo usar la biblioteca Rich con Python
 =======================================

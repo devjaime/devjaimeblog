@@ -1,16 +1,22 @@
 ---
-description: "Como implementar chatGPT a visual studio code, diferencias con github copilot y github copilot X…"
----
 filename: "2023-04-11_Como-implementar-chatGPT-a-visual-studio-code--diferencias-con-github-copilot-y-github-copilot-X-62e20fd8cf88"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "Como implementar chatGPT a visual studio code, diferencias c"
+description: "Como implementar chatGPT a visual studio code, diferencias con github copilot y github copilot X…"
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
 
 
 Como implementar chatGPT a visual studio code, diferencias con github copilot y github copilot X

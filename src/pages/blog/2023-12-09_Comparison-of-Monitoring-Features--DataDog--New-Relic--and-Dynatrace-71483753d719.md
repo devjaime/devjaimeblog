@@ -1,16 +1,22 @@
 ---
-description: "Comparison of Monitoring Features: DataDog, New Relic, and Dynatrace ===================================================================="
----
 filename: "2023-12-09_Comparison-of-Monitoring-Features--DataDog--New-Relic--and-Dynatrace-71483753d719"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "Comparison of Monitoring Features: DataDog, New Relic, and D"
+description: "Comparison of Monitoring Features: DataDog, New Relic, and Dynatrace ===================================================================="
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
 
 
 Comparison of Monitoring Features: DataDog, New Relic, and Dynatrace

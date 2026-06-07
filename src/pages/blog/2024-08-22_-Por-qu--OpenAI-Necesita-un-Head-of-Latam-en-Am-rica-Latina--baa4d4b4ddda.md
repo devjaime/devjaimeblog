@@ -1,16 +1,22 @@
 ---
-description: "¿Por qué OpenAI Necesita un Head of Latam en América Latina? ============================================================"
----
 filename: "2024-08-22_-Por-qu--OpenAI-Necesita-un-Head-of-Latam-en-Am-rica-Latina--baa4d4b4ddda"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "¿Por qué OpenAI Necesita un Head of Latam en América Latina?"
+description: "¿Por qué OpenAI Necesita un Head of Latam en América Latina? ============================================================"
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
 
 ¿Por qué OpenAI Necesita un Head of Latam en América Latina?
 ============================================================

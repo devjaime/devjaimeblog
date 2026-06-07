@@ -1,16 +1,22 @@
 ---
-description: "Haystack: Construyendo Aplicaciones de IA con Componentes Modulares ==================================================================="
----
 filename: "2024-08-28_Haystack--Construyendo-Aplicaciones-de-IA-con-Componentes-Modulares-02d1ae93a849"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "Haystack: Construyendo Aplicaciones de IA con Componentes Mo"
+description: "Haystack: Construyendo Aplicaciones de IA con Componentes Modulares ==================================================================="
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
 
 Haystack: Construyendo Aplicaciones de IA con Componentes Modulares
 ===================================================================

@@ -1,16 +1,22 @@
 ---
-description: "Comenzando con Hugging Face: Guía Completa para Modelos Open Source ==================================================================="
----
 filename: "2024-12-08_Comenzando-con-Hugging-Face--Gu-a-Completa-para-Modelos-Open-Source-e45ba51be887"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "Comenzando con Hugging Face: Guía Completa para Modelos Open"
+description: "Comenzando con Hugging Face: Guía Completa para Modelos Open Source ==================================================================="
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
 
 Comenzando con Hugging Face: Guía Completa para Modelos Open Source
 ===================================================================

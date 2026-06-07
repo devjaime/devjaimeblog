@@ -1,16 +1,22 @@
 ---
-description: "Comparación de Características de Monitoreo: DataDog, New Relic y Dynatrace ==========================================================================="
----
 filename: "2023-12-09_Comparaci-n-de-Caracter-sticas-de-Monitoreo--DataDog--New-Relic-y-Dynatrace-664447dd8260"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "Comparación de Características de Monitoreo: DataDog, New Re"
+description: "Comparación de Características de Monitoreo: DataDog, New Relic y Dynatrace ==========================================================================="
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
 
 
 Comparación de Características de Monitoreo: DataDog, New Relic y Dynatrace

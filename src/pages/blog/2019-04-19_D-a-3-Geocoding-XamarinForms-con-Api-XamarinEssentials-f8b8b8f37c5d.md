@@ -1,16 +1,22 @@
 ---
-description: "Día 3 Geocoding XamarinForms con Api XamarinEssentials ======================================================"
----
 filename: "2019-04-19_D-a-3-Geocoding-XamarinForms-con-Api-XamarinEssentials-f8b8b8f37c5d"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "Día 3 Geocoding XamarinForms con Api XamarinEssentials ====="
+description: "Día 3 Geocoding XamarinForms con Api XamarinEssentials ======================================================"
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
 
 Día 3 Geocoding XamarinForms con Api XamarinEssentials
 ======================================================

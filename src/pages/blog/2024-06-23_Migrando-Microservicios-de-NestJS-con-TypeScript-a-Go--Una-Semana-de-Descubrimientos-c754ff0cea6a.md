@@ -1,16 +1,22 @@
 ---
-description: "Migrando Microservicios de NestJS con TypeScript a Go: Una Semana de Descubrimientos…"
----
 filename: "2024-06-23_Migrando-Microservicios-de-NestJS-con-TypeScript-a-Go--Una-Semana-de-Descubrimientos-c754ff0cea6a"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "Migrando Microservicios de NestJS con TypeScript a Go: Una S"
+description: "Migrando Microservicios de NestJS con TypeScript a Go: Una Semana de Descubrimientos…"
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
 
 Migrando Microservicios de NestJS con TypeScript a Go: Una Semana de Descubrimientos
 ====================================================================================

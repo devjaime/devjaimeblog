@@ -1,16 +1,22 @@
 ---
-description: "El límite de la nube con arquitectura Serveless y Azure Function ================================================================"
----
 filename: "2018-07-31_El-l-mite-de-la-nube-con-arquitectura-Serveless-y-Azure-Function-8512fe987ad3"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "El límite de la nube con arquitectura Serveless y Azure Func"
+description: "El límite de la nube con arquitectura Serveless y Azure Function ================================================================"
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
 
 # El límite de la nube con arquitectura Serveless y Azure Function 
 

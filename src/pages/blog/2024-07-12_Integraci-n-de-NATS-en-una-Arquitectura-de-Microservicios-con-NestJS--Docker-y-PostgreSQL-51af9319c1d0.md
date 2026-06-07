@@ -1,16 +1,22 @@
 ---
-description: "Integración de NATS en una Arquitectura de Microservicios con NestJS, Docker y PostgreSQL…"
----
 filename: "2024-07-12_Integraci-n-de-NATS-en-una-Arquitectura-de-Microservicios-con-NestJS--Docker-y-PostgreSQL-51af9319c1d0"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "Integración de NATS en una Arquitectura de Microservicios co"
+description: "Integración de NATS en una Arquitectura de Microservicios con NestJS, Docker y PostgreSQL…"
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
 
 Integración de NATS en una Arquitectura de Microservicios con NestJS, Docker y PostgreSQL
 =========================================================================================

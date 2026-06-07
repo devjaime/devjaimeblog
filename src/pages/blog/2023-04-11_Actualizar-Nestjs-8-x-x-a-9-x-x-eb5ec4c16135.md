@@ -1,16 +1,22 @@
 ---
-description: "Actualizar Nestjs 8.x.x a 9.x.x ==============================="
----
 filename: "2023-04-11_Actualizar-Nestjs-8-x-x-a-9-x-x-eb5ec4c16135"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "Actualizar Nestjs 8.x.x a 9.x.x ============================"
+description: "Actualizar Nestjs 8.x.x a 9.x.x ==============================="
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
 
 
 Actualizar Nestjs 8.x.x a 9.x.x

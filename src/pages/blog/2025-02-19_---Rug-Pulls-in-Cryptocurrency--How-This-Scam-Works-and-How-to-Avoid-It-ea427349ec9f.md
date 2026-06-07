@@ -1,16 +1,22 @@
 ---
-description: "🚨 Rug Pulls in Cryptocurrency: How This Scam Works and How to Avoid It ======================================================================="
----
 filename: "2025-02-19_---Rug-Pulls-in-Cryptocurrency--How-This-Scam-Works-and-How-to-Avoid-It-ea427349ec9f"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "🚨 Rug Pulls in Cryptocurrency: How This Scam Works and How t"
+description: "🚨 Rug Pulls in Cryptocurrency: How This Scam Works and How to Avoid It ======================================================================="
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
 
 🚨 Rug Pulls in Cryptocurrency: How This Scam Works and How to Avoid It
 =======================================================================

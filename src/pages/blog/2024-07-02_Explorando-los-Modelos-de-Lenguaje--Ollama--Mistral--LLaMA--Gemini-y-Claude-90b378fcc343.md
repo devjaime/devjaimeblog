@@ -1,16 +1,22 @@
 ---
-description: "Explorando los Modelos de Lenguaje: Ollama, Mistral, LLaMA, Gemini y Claude ==========================================================================="
----
 filename: "2024-07-02_Explorando-los-Modelos-de-Lenguaje--Ollama--Mistral--LLaMA--Gemini-y-Claude-90b378fcc343"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "Explorando los Modelos de Lenguaje: Ollama, Mistral, LLaMA, "
+description: "Explorando los Modelos de Lenguaje: Ollama, Mistral, LLaMA, Gemini y Claude ==========================================================================="
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
 
 Explorando los Modelos de Lenguaje: Ollama, Mistral, LLaMA, Gemini y Claude
 ===========================================================================

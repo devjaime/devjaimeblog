@@ -1,16 +1,22 @@
 ---
-description: "Reflection Agents: Mejorando la inteligencia artificial mediante la autorreflexión…"
----
 filename: "2024-10-01_Reflection-Agents--Mejorando-la-inteligencia-artificial-mediante-la-autorreflexi-n-ef6dff638423"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "Reflection Agents: Mejorando la inteligencia artificial medi"
+description: "Reflection Agents: Mejorando la inteligencia artificial mediante la autorreflexión…"
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
 
 
 Reflection Agents: Mejorando la inteligencia artificial mediante la autorreflexión

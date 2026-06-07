@@ -1,16 +1,22 @@
 ---
-description: "Comandos útiles de git ======================"
----
 filename: "2022-04-07_Comandos--tiles-de-git-454276c8074"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "Comandos útiles de git ======================"
+description: "Comandos útiles de git ======================"
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
 
 
 Comandos útiles de git

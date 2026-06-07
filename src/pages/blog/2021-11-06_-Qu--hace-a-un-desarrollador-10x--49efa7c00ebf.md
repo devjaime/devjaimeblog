@@ -1,16 +1,22 @@
 ---
-description: "¿Qué hace a un desarrollador 10x? ================================="
----
 filename: "2021-11-06_-Qu--hace-a-un-desarrollador-10x--49efa7c00ebf"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "¿Qué hace a un desarrollador 10x? =========================="
+description: "¿Qué hace a un desarrollador 10x? ================================="
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
 
 
 ¿Qué hace a un desarrollador 10x?

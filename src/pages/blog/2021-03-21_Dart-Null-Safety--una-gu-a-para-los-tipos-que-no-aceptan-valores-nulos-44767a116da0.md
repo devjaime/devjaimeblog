@@ -1,16 +1,22 @@
 ---
-description: "Dart Null Safety: una guía para los tipos que no aceptan valores nulos ======================================================================"
----
 filename: "2021-03-21_Dart-Null-Safety--una-gu-a-para-los-tipos-que-no-aceptan-valores-nulos-44767a116da0"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "Dart Null Safety: una guía para los tipos que no aceptan val"
+description: "Dart Null Safety: una guía para los tipos que no aceptan valores nulos ======================================================================"
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
 
 
 Dart Null Safety: una guía para los tipos que no aceptan valores nulos

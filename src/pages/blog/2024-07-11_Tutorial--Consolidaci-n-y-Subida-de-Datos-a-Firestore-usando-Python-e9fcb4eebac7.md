@@ -1,16 +1,22 @@
 ---
-description: "Tutorial: Consolidación y Subida de Datos a Firestore usando Python ==================================================================="
----
 filename: "2024-07-11_Tutorial--Consolidaci-n-y-Subida-de-Datos-a-Firestore-usando-Python-e9fcb4eebac7"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "Tutorial: Consolidación y Subida de Datos a Firestore usando"
+description: "Tutorial: Consolidación y Subida de Datos a Firestore usando Python ==================================================================="
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
 
 Tutorial: Consolidación y Subida de Datos a Firestore usando Python
 ===================================================================

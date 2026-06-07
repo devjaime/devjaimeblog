@@ -1,16 +1,22 @@
 ---
-description: "Flutter: Transforming Ideas into Successful Mobile Applications ==============================================================="
----
 filename: "2023-11-11_Flutter--Transforming-Ideas-into-Successful-Mobile-Applications-a89626954a0d"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "Flutter: Transforming Ideas into Successful Mobile Applicati"
+description: "Flutter: Transforming Ideas into Successful Mobile Applications ==============================================================="
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
 
 
 Flutter: Transforming Ideas into Successful Mobile Applications

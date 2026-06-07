@@ -1,16 +1,22 @@
 ---
-description: "Probando FlutterWeb en windows primera parte ============================================"
----
 filename: "2019-05-17_Probando-FlutterWeb-en-windows-primera-parte-86a672b0b280"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "Probando FlutterWeb en windows primera parte ==============="
+description: "Probando FlutterWeb en windows primera parte ============================================"
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
 
 Probando FlutterWeb en windows primera parte
 ============================================

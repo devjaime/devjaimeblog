@@ -1,16 +1,22 @@
 ---
-description: "Exploring Deeper into Flutter ============================="
----
 filename: "2023-11-11_Exploring-Deeper-into-Flutter-93f86d8c7cab"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "Exploring Deeper into Flutter ============================="
+description: "Exploring Deeper into Flutter ============================="
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
 
 Exploring Deeper into Flutter
 =============================

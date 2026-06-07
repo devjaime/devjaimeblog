@@ -1,16 +1,22 @@
 ---
-description: "Flutter Cloud AWS articulo en español parte 1 de 3 =================================================="
----
 filename: "2019-07-17_Flutter-Cloud-AWS-articulo-en-espa-ol-parte-1-de-3-ec31304ed06c"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "Flutter Cloud AWS articulo en español parte 1 de 3 ========="
+description: "Flutter Cloud AWS articulo en español parte 1 de 3 =================================================="
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
 
 Flutter Cloud AWS articulo en español parte 1 de 3
 ==================================================

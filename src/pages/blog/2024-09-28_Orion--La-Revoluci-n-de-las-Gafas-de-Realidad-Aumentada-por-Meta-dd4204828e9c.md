@@ -1,16 +1,22 @@
 ---
-description: "Orion: La Revolución de las Gafas de Realidad Aumentada por Meta ================================================================"
----
 filename: "2024-09-28_Orion--La-Revoluci-n-de-las-Gafas-de-Realidad-Aumentada-por-Meta-dd4204828e9c"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "Orion: La Revolución de las Gafas de Realidad Aumentada por "
+description: "Orion: La Revolución de las Gafas de Realidad Aumentada por Meta ================================================================"
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
 
 Orion: La Revolución de las Gafas de Realidad Aumentada por Meta
 ================================================================

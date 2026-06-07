@@ -1,16 +1,22 @@
 ---
-description: "Introducción a la Seguridad en el Mundo de la IA: Protegiendo el Futuro Inteligente…"
----
 filename: "2024-12-17_Introducci-n-a-la-Seguridad-en-el-Mundo-de-la-IA--Protegiendo-el-Futuro-Inteligente-fd385b35e71a"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "Introducción a la Seguridad en el Mundo de la IA: Protegiend"
+description: "Introducción a la Seguridad en el Mundo de la IA: Protegiendo el Futuro Inteligente…"
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
 
 Introducción a la Seguridad en el Mundo de la IA: Protegiendo el Futuro Inteligente
 ===================================================================================

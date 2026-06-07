@@ -1,16 +1,22 @@
 ---
-description: "Rust in Modern Backend Development: Advantages, Disadvantages, and Ideas for the Future…"
----
 filename: "2024-01-06_Rust-in-Modern-Backend-Development--Advantages--Disadvantages--and-Ideas-for-the-Future-164928673be3"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "Rust in Modern Backend Development: Advantages, Disadvantage"
+description: "Rust in Modern Backend Development: Advantages, Disadvantages, and Ideas for the Future…"
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
 
 Rust in Modern Backend Development: Advantages, Disadvantages, and Ideas for the Future
 =======================================================================================

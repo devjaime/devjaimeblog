@@ -1,16 +1,22 @@
 ---
-description: "Anuncios de productos Google I/O 2019 ====================================="
----
 filename: "2019-05-11_Anuncios-de-productos-Google-I-O-2019-8af563af0b30"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "Anuncios de productos Google I/O 2019 ======================"
+description: "Anuncios de productos Google I/O 2019 ====================================="
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
 
 Anuncios de productos Google I/O 2019
 =====================================

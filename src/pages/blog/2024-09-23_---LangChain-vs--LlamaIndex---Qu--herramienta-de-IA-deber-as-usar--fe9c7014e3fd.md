@@ -1,16 +1,22 @@
 ---
-description: "💡 LangChain vs. LlamaIndex: ¿Qué herramienta de IA deberías usar? =================================================================="
----
 filename: "2024-09-23_---LangChain-vs--LlamaIndex---Qu--herramienta-de-IA-deber-as-usar--fe9c7014e3fd"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "💡 LangChain vs. LlamaIndex: ¿Qué herramienta de IA deberías "
+description: "💡 LangChain vs. LlamaIndex: ¿Qué herramienta de IA deberías usar? =================================================================="
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
 
 💡 LangChain vs. LlamaIndex: ¿Qué herramienta de IA deberías usar?
 ==================================================================

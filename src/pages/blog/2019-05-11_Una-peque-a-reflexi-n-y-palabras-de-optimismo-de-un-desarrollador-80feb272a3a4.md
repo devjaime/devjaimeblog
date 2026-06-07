@@ -1,16 +1,22 @@
 ---
-description: "Una pequeña reflexión y palabras de optimismo de un desarrollador ================================================================="
----
 filename: "2019-05-11_Una-peque-a-reflexi-n-y-palabras-de-optimismo-de-un-desarrollador-80feb272a3a4"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "Una pequeña reflexión y palabras de optimismo de un desarrol"
+description: "Una pequeña reflexión y palabras de optimismo de un desarrollador ================================================================="
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
 
 Una pequeña reflexión y palabras de optimismo de un desarrollador
 =================================================================

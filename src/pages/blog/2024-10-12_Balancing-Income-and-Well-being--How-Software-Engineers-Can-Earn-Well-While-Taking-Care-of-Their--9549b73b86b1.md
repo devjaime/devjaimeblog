@@ -1,16 +1,22 @@
 ---
-description: "Balancing Income and Well-being: How Software Engineers Can Earn Well While Taking Care of Their……"
----
 filename: "2024-10-12_Balancing-Income-and-Well-being--How-Software-Engineers-Can-Earn-Well-While-Taking-Care-of-Their--9549b73b86b1"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "Balancing Income and Well-being: How Software Engineers Can "
+description: "Balancing Income and Well-being: How Software Engineers Can Earn Well While Taking Care of Their……"
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
 
 Balancing Income and Well-being: How Software Engineers Can Earn Well While Taking Care of Their…
 =================================================================================================

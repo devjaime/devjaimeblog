@@ -1,16 +1,22 @@
 ---
-description: "My first API in Golang ======================"
----
 filename: "2020-12-06_My-first-API-in-Golang-ea9c3e707e13"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "My first API in Golang ======================"
+description: "My first API in Golang ======================"
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
 
 My first API in Golang
 ======================

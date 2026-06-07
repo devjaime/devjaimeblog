@@ -1,16 +1,22 @@
 ---
-description: "La inteligencia artificial (IA) ha avanzado significativamente en los últimos años, pero uno de los desafíos persistentes ha sido la integración eficiente…"
----
 filename: "2025-03-23_MCP-Model-Context-Protocol"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "La inteligencia artificial (IA) ha avanzado significativamen"
+description: "La inteligencia artificial (IA) ha avanzado significativamente en los últimos años, pero uno de los desafíos persistentes ha sido la integración eficiente…"
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
 
 
 # Model Context Protocol (MCP): Elevando tus Agentes de IA a Nuevas Alturas

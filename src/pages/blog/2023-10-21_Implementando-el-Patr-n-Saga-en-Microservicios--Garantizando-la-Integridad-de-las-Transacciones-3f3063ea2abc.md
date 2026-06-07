@@ -1,16 +1,22 @@
 ---
-description: "Implementando el Patrón Saga en Microservicios: Garantizando la Integridad de las Transacciones…"
----
 filename: "2023-10-21_Implementando-el-Patr-n-Saga-en-Microservicios--Garantizando-la-Integridad-de-las-Transacciones-3f3063ea2abc"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "Implementando el Patrón Saga en Microservicios: Garantizando"
+description: "Implementando el Patrón Saga en Microservicios: Garantizando la Integridad de las Transacciones…"
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
 
 Implementando el Patrón Saga en Microservicios: Garantizando la Integridad de las Transacciones
 ===============================================================================================

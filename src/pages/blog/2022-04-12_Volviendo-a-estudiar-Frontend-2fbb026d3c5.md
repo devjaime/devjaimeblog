@@ -1,16 +1,22 @@
 ---
-description: "Volviendo a estudiar Frontend ============================="
----
 filename: "2022-04-12_Volviendo-a-estudiar-Frontend-2fbb026d3c5"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "Volviendo a estudiar Frontend ============================="
+description: "Volviendo a estudiar Frontend ============================="
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
 
 Volviendo a estudiar Frontend
 =============================

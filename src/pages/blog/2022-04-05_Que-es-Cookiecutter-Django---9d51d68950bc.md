@@ -1,16 +1,22 @@
 ---
-description: "Que es Cookiecutter Django ? ============================"
----
 filename: "2022-04-05_Que-es-Cookiecutter-Django---9d51d68950bc"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "Que es Cookiecutter Django ? ============================"
+description: "Que es Cookiecutter Django ? ============================"
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
 
 Que es Cookiecutter Django ?
 ============================

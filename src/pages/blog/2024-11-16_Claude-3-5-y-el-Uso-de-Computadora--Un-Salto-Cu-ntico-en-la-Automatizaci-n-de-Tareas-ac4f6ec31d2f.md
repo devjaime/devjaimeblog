@@ -1,16 +1,22 @@
 ---
-description: "Claude 3.5 y el Uso de Computadora: Un Salto Cuántico en la Automatización de Tareas…"
----
 filename: "2024-11-16_Claude-3-5-y-el-Uso-de-Computadora--Un-Salto-Cu-ntico-en-la-Automatizaci-n-de-Tareas-ac4f6ec31d2f"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "Claude 3.5 y el Uso de Computadora: Un Salto Cuántico en la "
+description: "Claude 3.5 y el Uso de Computadora: Un Salto Cuántico en la Automatización de Tareas…"
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
 
 Claude 3.5 y el Uso de Computadora: Un Salto Cuántico en la Automatización de Tareas
 ====================================================================================

@@ -1,16 +1,22 @@
 ---
-description: "Comprendiendo la Diferencia entre PageRank y ArticleRank: Un Análisis en la Ciencia de Datos con……"
----
 filename: "2025-01-17_Comprendiendo-la-Diferencia-entre-PageRank-y-ArticleRank--Un-An-lisis-en-la-Ciencia-de-Datos-con--e32c9f519d0b"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "Comprendiendo la Diferencia entre PageRank y ArticleRank: Un"
+description: "Comprendiendo la Diferencia entre PageRank y ArticleRank: Un Análisis en la Ciencia de Datos con……"
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
 
 Comprendiendo la Diferencia entre PageRank y ArticleRank: Un Análisis en la Ciencia de Datos con…
 =================================================================================================

@@ -1,16 +1,22 @@
 ---
-description: "Algunas de mis suscripciones de youtube que más recomiendo. (especial des ========================================================================="
----
 filename: "2022-04-11_Algunas-de-mis-suscripciones-de-youtube-que-m-s-recomiendo---especial-des-f3522900ac6f"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "Algunas de mis suscripciones de youtube que más recomiendo. "
+description: "Algunas de mis suscripciones de youtube que más recomiendo. (especial des ========================================================================="
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
 
 
 Algunas de mis suscripciones de youtube que más recomiendo. (especial des

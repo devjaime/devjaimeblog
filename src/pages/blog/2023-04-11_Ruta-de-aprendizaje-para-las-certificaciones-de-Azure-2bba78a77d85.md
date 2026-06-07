@@ -1,16 +1,22 @@
 ---
-description: "Ruta de aprendizaje para las certificaciones de Azure ====================================================="
----
 filename: "2023-04-11_Ruta-de-aprendizaje-para-las-certificaciones-de-Azure-2bba78a77d85"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "Ruta de aprendizaje para las certificaciones de Azure ======"
+description: "Ruta de aprendizaje para las certificaciones de Azure ====================================================="
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
 
 Ruta de aprendizaje para las certificaciones de Azure
 =====================================================

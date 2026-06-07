@@ -1,16 +1,22 @@
 ---
-description: "Día 2 Bateria En Xamarin Forms con Xamarin Essentials ====================================================="
----
 filename: "2019-04-19_D-a-2-Bateria-En-Xamarin-Forms-con-Xamarin-Essentials-4d4f0ae8133"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "Día 2 Bateria En Xamarin Forms con Xamarin Essentials ======"
+description: "Día 2 Bateria En Xamarin Forms con Xamarin Essentials ====================================================="
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
 
 
 Día 2 Bateria En Xamarin Forms con Xamarin Essentials

@@ -1,16 +1,22 @@
 ---
-description: "Qué es WebAuthn? Cómo autenticar usuarios sin contraseña ========================================================"
----
 filename: "2022-08-21_Qu--es-WebAuthn--C-mo-autenticar-usuarios-sin-contrase-a-9828697d93a0"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "Qué es WebAuthn? Cómo autenticar usuarios sin contraseña ==="
+description: "Qué es WebAuthn? Cómo autenticar usuarios sin contraseña ========================================================"
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
 
 Qué es WebAuthn? Cómo autenticar usuarios sin contraseña
 ========================================================

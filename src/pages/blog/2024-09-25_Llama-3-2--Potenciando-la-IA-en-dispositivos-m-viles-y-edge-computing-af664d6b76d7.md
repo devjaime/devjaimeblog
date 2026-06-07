@@ -1,16 +1,22 @@
 ---
-description: "Llama 3.2: Potenciando la IA en dispositivos móviles y edge computing ====================================================================="
----
 filename: "2024-09-25_Llama-3-2--Potenciando-la-IA-en-dispositivos-m-viles-y-edge-computing-af664d6b76d7"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "Llama 3.2: Potenciando la IA en dispositivos móviles y edge "
+description: "Llama 3.2: Potenciando la IA en dispositivos móviles y edge computing ====================================================================="
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
 
 Llama 3.2: Potenciando la IA en dispositivos móviles y edge computing
 =====================================================================

@@ -1,16 +1,22 @@
 ---
-description: "Implementación de un Flujo de Trabajo Interactivo con LlamaIndex en Jupyter Notebook…"
----
 filename: "2025-03-12_Implementaci-n-de-un-Flujo-de-Trabajo-Interactivo-con-LlamaIndex-en-Jupyter-Notebook-2b9edf6b8586"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "Implementación de un Flujo de Trabajo Interactivo con LlamaI"
+description: "Implementación de un Flujo de Trabajo Interactivo con LlamaIndex en Jupyter Notebook…"
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
 
 Implementación de un Flujo de Trabajo Interactivo con LlamaIndex en Jupyter Notebook
 ====================================================================================
