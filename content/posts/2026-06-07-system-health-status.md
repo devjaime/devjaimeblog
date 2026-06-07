@@ -1,7 +1,7 @@
 ---
 title: "Estatus del Sistema - 07 Jun 2026"
 description: "Reporte diario de salud del sistema: disco, RAM, CPU, caches y estado de Hermes."
-publishDate: "2026-06-07T09:00:35-04:00"
+publishDate: "2026-06-07T09:00:55-04:00"
 author: 
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"
@@ -30,13 +30,13 @@ draft: false
 ### RAM
 
 - Total: 16384.0 MB
-- Usado: 840.4 MB (5.1%)
-- Libre: 19.2 MB
+- Usado: 709.4 MB (4.3%)
+- Libre: 13.9 MB
 
 ### CPU
 
-- Uso: 15.5%
-- Idle: 84.48%
+- Uso: 37.8%
+- Idle: 62.23%
 
 ---
 
@@ -76,4 +76,4 @@ draft: false
 
 ---
 
-_Ultima verificacion: 2026-06-07 09:00:42_
+_Ultima verificacion: 2026-06-07 09:00:57_
