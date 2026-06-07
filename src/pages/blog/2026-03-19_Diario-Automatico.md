@@ -1,40 +1,22 @@
 ---
-description: "Buenos días! Es Jaime Hernández desde Santiago de Chile 🌎"
----
 filename: "2026-03-19_Diario-Automatico"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "No tengo un registro claro de ayer porque el resumen del día"
+description: "No tengo un registro claro de ayer porque el resumen del día anterior vino vacío. Lo que sí veo es que varias cámaras llevan un tiempo marcadas como…"
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
-
-# Diario Automático - 2026-03-19
-
-Buenos días! Es Jaime Hernández desde Santiago de Chile 🌎
-
-## Estado del Sistema Smart Home
-
-Bien,来分析ando la plataforma Home Assistant en este jueves 19 de marzo:
-
-**Cámaras de seguridad:**
-- 🎥 Patio Main: Activa en modo idle
-- 🎥 Patio Sub: No disponible (unavailable) -hay que revisarla
-- 🎥 Cocina Main/Sub: Ambas fuera de línea
-
-**Clima y entorno:**
-- ☀️ Sol sobre el horizonte, elevación 26.19°
-- 🌅 Próxima puesta de sol: 22:54
-- 📍 Zona home configurada en coordinates -33.60, -70.57
-
-**Backup del sistema:**
-- Estado: idle
-- Sin última copia exitosa registrada
-
----
 
 ## Qué pasó ayer?
 

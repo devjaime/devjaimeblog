@@ -1,22 +1,22 @@
 ---
-description: "Sábado 4 de Abril, 2026"
----
 filename: "2026-04-04_Cajon-del-Maipo-en-Familia"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "Este sábado decidedimos hacer algo que se está convirtiendo "
+description: "Este sábado decidedimos hacer algo que se está convirtiendo en nuestra rutina: escapar de Santiago y disfrutar del Cajón del Maipo. La ruta es siempre la…"
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
-
-# Cajón del Maipo en Familia 🏔️
-
-*Sábado 4 de Abril, 2026*
-
----
 
 ## El Viaje
 

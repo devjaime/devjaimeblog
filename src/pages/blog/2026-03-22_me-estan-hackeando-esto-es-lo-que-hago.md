@@ -1,24 +1,22 @@
 ---
-description: "Voy a ser directo: alguien está intentando comprometer mis cuentas. No una vez. No dos veces. Consistentemente, en múltiples plataformas, con creciente…"
----
 filename: "2026-03-22_me-estan-hackeando-esto-es-lo-que-hago"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "Durante meses he estado rastreando actividad sospechosa en m"
+description: "Durante meses he estado rastreando actividad sospechosa en mis cuentas:"
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
-
-# Me Están Hackeando — Esto Es Lo Que Estoy Haciendo
-
-Voy a ser directo: **alguien está intentando comprometer mis cuentas.** No una vez. No dos veces. Consistentemente, en múltiples plataformas, con creciente sofisticación.
-
-Y sé exactamente lo que está pasando.
-
----
 
 ## La Situación
 

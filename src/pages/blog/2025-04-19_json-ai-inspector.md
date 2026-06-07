@@ -1,23 +1,22 @@
 ---
-description: "🔗 Repositorio GitHub: json-ai-tools/json-ai-inspector 🌐 App en línea: json-ai-inspector.streamlit.app"
----
 filename: "2025-04-19_json-ai-inspector"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "<a name="english"</a"
+description: "<a name="english"</a"
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
-
-# 🧠 JSON AI Inspector
-
-🔗 Repositorio GitHub: [json-ai-tools/json-ai-inspector](https://github.com/json-ai-tools/json-ai-inspector)  
-🌐 App en línea: [json-ai-inspector.streamlit.app](https://json-ai-inspector.streamlit.app/)
-
----
 
 ## 🌍 Multilingüe: [English](#english) | [Español](#español)
 

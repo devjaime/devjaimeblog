@@ -1,22 +1,22 @@
 ---
-description: "Artículo generado automáticamente por sistema de monitoreo"
----
 filename: "2026-04-27-radar-oportunidades"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "- LangChain - AI Startup"
+description: "- LangChain - AI Startup"
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
-
-# 🎯 Radar de Oportunidades - 2026-04-27
-
-*Artículo generado automáticamente por sistema de monitoreo*
-
----
 
 ## 📰 Noticias Relevantes Detectadas
 

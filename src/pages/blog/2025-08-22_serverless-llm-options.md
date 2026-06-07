@@ -1,34 +1,22 @@
 ---
-description: "Ollama · LM Studio · vLLM (serverless con Runpod / infraestructura on‑demand)"
----
 filename: "2025-08-22_serverless-llm-options"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "Cuándo usarlo: primeras pruebas, evaluar distintos modelos, "
+description: "Cuándo usarlo: primeras pruebas, evaluar distintos modelos, fine-tuning ligero (con extensiones), construir scripts locales."
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
-
-# 3 Formas de Ejecutar Modelos LLM Open Source: de Local a Serverless
-
-*Ollama · LM Studio · vLLM (serverless con Runpod / infraestructura on‑demand)*
-
-La adopción de modelos open source (Qwen, Llama 3, DeepSeek, Mistral, etc.) está explotando. Ya no dependes exclusivamente de APIs cerradas: puedes iterar localmente, empaquetar prototipos y finalmente escalar a producción **sin bloquearte a un proveedor**.
-
-En este post te cuento **tres enfoques complementarios** para ejecutar LLMs según tu etapa: experimentación, prototipado avanzado y producción serverless.
-
-## 🎯 Resumen Rápido
-
-| Caso de uso | Herramienta | Ventajas Clave | Trade-offs |
-|-------------|-------------|----------------|------------|
-| Aprender / Probar | Ollama | Instalación mínima, modelos cuantizados, CLI simple | Menos métricas y tooling visual |
-| Prototipar / Demo GUI | LM Studio | Interfaz gráfica, monitor de tokens/s, servidor HTTP, selección HF | Requiere más RAM/VRAM para fluidez |
-| Producción escalable | vLLM + infraestructura serverless (Runpod, Modal, etc.) | Throughput alto, batching, paged attention, escalado horizontal | Curva de configuración, costo si mal dimensionado |
-
----
 ## 1. 🖥️ Ollama: La Puerta de Entrada Simplicidad ➜ Iteración Inmediata
 
 **Cuándo usarlo:** primeras pruebas, evaluar distintos modelos, fine-tuning ligero (con extensiones), construir scripts locales.

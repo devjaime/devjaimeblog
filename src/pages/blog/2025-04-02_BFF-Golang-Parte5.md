@@ -1,28 +1,22 @@
 ---
-description: "Después de asegurar, testear, documentar y desplegar nuestro BFF en Go, en esta quinta parte nos enfocamos en cómo mantenerlo operativo, flexible y…"
----
 filename: "2025-04-02_BFF-Golang-Parte5"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "Usa logrus o zap para logging estructurado:"
+description: "Usa logrus o zap para logging estructurado:"
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
-
-# BFF con Go (Parte 5): Observabilidad, Feature Flags y Entornos 👁️‍🗨️🚩🌍
-
-Después de asegurar, testear, documentar y desplegar nuestro BFF en Go, en esta quinta parte nos enfocamos en **cómo mantenerlo operativo, flexible y adaptable en producción**.
-
-Veremos cómo:
-
-- 👁️‍🗨️ Añadir observabilidad con logs estructurados y trazas
-- 🚩 Aplicar feature flags sin redeploys
-- 🌍 Separar entornos de forma segura con archivos `.env` y variables de entorno
-
----
 
 ## 👁️‍🗨️ 1. Observabilidad con logs estructurados y trazabilidad
 

@@ -1,22 +1,22 @@
 ---
-description: "No es una lista de buenos propósitos. Es el plan concreto para consolidar ingresos, reducir burnout y avanzar hacia $10K USD/mes sin perderme en el camino."
----
 filename: "2026-03-22_plan-2026-objetivos-reales"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "Tengo 43 años, trabajo como Backend Engineer en Falabella Ch"
+description: "Tengo 43 años, trabajo como Backend Engineer en Falabella Chile, y llevo 10+ años con Carolina (matrimonio planeado). Compré mi primera propiedad en…"
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
-
-# Mi Plan 2026: Objetivos Reales y Proyectos con Potencial
-
-No es una lista de buenos propósitos. Es el plan concreto para consolidar ingresos, reducir burnout y avanzar hacia $10K USD/mes sin perderme en el camino.
-
----
 
 ## El punto de partida
 

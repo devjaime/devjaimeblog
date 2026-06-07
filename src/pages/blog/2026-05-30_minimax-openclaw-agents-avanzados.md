@@ -1,24 +1,22 @@
 ---
-description: "El panorama de los agentes de IA ha cambiado drásticamente. Hace un año, tener un agente que ejecutara tareas complejas requería configuraciones en Langley,…"
----
 filename: "2026-05-30_minimax-openclaw-agents-avanzados"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "MiniMax M2.7 es el modelo de razonamiento más capaz disponib"
+description: "MiniMax M2.7 es el modelo de razonamiento más capaz disponible en OpenClaw por default. Algunas razones para considerarlo:"
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
-
-# MiniMax M2.7 + OpenClaw: Agentes IA que trabajan por ti en 2026
-
-El panorama de los agentes de IA ha cambiado drásticamente. Hace un año, tener un agente que ejecutara tareas complejas requería configuraciones en Langley, LangChain, o infrastructuras de CrewAI. Hoy, con **MiniMax M2.7** y **OpenClaw**, la historia es diferente.
-
-En este artículo te muestro cómo implementar agentes avanzados en producción, sin la complejidad de antes.
-
----
 
 ## ¿Por qué MiniMax M2.7?
 

@@ -1,22 +1,22 @@
 ---
-description: "La comunidad de Langflow vivió una semana emocionante con el anuncio de varias funcionalidades que redefinen cómo construimos flujos de trabajo con agentes…"
----
 filename: "2025-04-07_Langflow-Launch-Week"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "Langflow ahora soporta MCP tanto como cliente como servidor,"
+description: "Langflow ahora soporta MCP tanto como cliente como servidor, lo que significa que puedes:"
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
-
-# Langflow Launch Week: Un salto en la creación de agentes con IA 🧠⚙️
-
-La comunidad de Langflow vivió una semana emocionante con el anuncio de varias funcionalidades que redefinen cómo construimos flujos de trabajo con agentes de inteligencia artificial. A continuación, te resumo en profundidad los puntos clave de cada día de la **Langflow Launch Week**, y cómo estas novedades pueden impulsar tu próximo proyecto.
-
----
 
 ## 🚀 Día 1: Soporte completo para MCP (Model Context Protocol)
 

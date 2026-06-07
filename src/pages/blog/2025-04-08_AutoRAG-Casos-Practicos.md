@@ -1,20 +1,22 @@
 ---
-description: "Cloudflare ha dado un paso decisivo al lanzar AutoRAG, un servicio que automatiza completamente la implementación de pipelines RAG (Generación Aumentada por…"
----
 filename: "2025-04-08_AutoRAG-Casos-Practicos"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "Un hospital universitario tiene miles de documentos: guías m"
+description: "Un hospital universitario tiene miles de documentos: guías médicas, protocolos de emergencia, papers clínicos, reportes de pacientes anonimizados, etc.…"
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
-
-Cloudflare ha dado un paso decisivo al lanzar **AutoRAG**, un servicio que automatiza completamente la implementación de pipelines RAG (Generación Aumentada por Recuperación). Pero, más allá del tecnicismo, lo importante es: **¿Para qué sirve realmente?** Y la respuesta se encuentra en los **casos prácticos** que pueden transformar industrias enteras.
-
----
 
 ## 🏥 Sector Salud: Diagnóstico y Soporte Clínico en Tiempo Real
 

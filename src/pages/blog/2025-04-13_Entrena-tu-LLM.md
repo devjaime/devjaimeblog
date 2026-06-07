@@ -1,29 +1,22 @@
 ---
-description: "Entrenar tu propio modelo de lenguaje (LLM) ya no es exclusivo de grandes laboratorios de investigación. Gracias al trabajo de Imad Saddik, y el excelente…"
----
 filename: "2025-04-13_Entrena-tu-LLM"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "Una red neuronal es una estructura computacional inspirada e"
+description: "Una red neuronal es una estructura computacional inspirada en el cerebro humano. Está formada por capas de neuronas artificiales que procesan datos…"
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
-
-## 🌟 Introducción
-
-Entrenar tu propio modelo de lenguaje (LLM) ya no es exclusivo de grandes laboratorios de investigación. Gracias al trabajo de Imad Saddik, y el excelente artículo de [freeCodeCamp](https://www.freecodecamp.org/news/train-your-own-llm/), hoy puedes aprender paso a paso cómo construir, entrenar y ajustar tu propio modelo.
-
-Este artículo es una guía detallada basada en:
-- El repositorio [Train_Your_Language_Model_Course](https://github.com/ImadSaddik/Train_Your_Language_Model_Course)
-- El video de YouTube [Train Your Own LLM – Tutorial](https://www.youtube.com/watch?v=9Ge0sMm65jo&t=2718s)
-- La explicación técnica de freeCodeCamp
-
-Además, te explicamos **por qué cada concepto es importante, cómo funciona el aprendizaje de los modelos, por qué requieren GPU y cómo especializarlos según casos de uso reales.**
-
----
 
 ## 🧠 ¿Qué es una red neuronal?
 

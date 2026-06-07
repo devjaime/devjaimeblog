@@ -1,24 +1,22 @@
 ---
-description: "En sistemas distribuidos modernos, especialmente aquellos con múltiples interfaces frontend (web, mobile, IoT), es común enfrentarse a la necesidad de…"
----
 filename: "2025-03-28_BFF-Golang-OpenAPI"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "Un BFF actúa como intermediario entre el frontend y los micr"
+description: "Un BFF actúa como intermediario entre el frontend y los microservicios del backend. Su objetivo es:"
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
-
-# Construyendo un BFF en Go con OpenAPI: Casos de Uso y Buenas Prácticas 🚀
-
-En sistemas distribuidos modernos, especialmente aquellos con múltiples interfaces frontend (web, mobile, IoT), es común enfrentarse a la necesidad de adaptar los datos y funcionalidades del backend para cada canal. Aquí es donde entra en juego el **Backend For Frontend (BFF)**, un patrón que separa la lógica de presentación y facilita la orquestación entre servicios y clientes.
-
-En este artículo, te mostraré cómo construir un BFF en **Golang** utilizando **OpenAPI**, compartiendo ejemplos bien estructurados, casos de uso y buenas prácticas para mantener tu proyecto limpio y escalable.
-
----
 
 ## 🧠 ¿Qué es un BFF y cuándo usarlo?
 

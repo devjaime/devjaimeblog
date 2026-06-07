@@ -1,22 +1,22 @@
 ---
-description: "En este artículo analizo el estado actual del dashboard de OpenClaw, las métricas principales y las oportunidades de mejora que podemos implementar."
----
 filename: "2026-03-09_openclaw_dashboard_analysis"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "Basado en la última revisión del dashboard (9 de Marzo, 2026"
+description: "Basado en la última revisión del dashboard (9 de Marzo, 2026):"
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
-
-# Análisis del Dashboard de OpenClaw
-
-En este artículo analizo el estado actual del dashboard de OpenClaw, las métricas principales y las oportunidades de mejora que podemos implementar.
-
----
 
 ## Estado Actual del Sistema
 

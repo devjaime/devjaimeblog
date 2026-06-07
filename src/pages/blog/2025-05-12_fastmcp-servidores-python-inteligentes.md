@@ -1,30 +1,22 @@
 ---
-description: "Imagínate que eres un desarrollador en una startup llamada "TechInsights". Un día tu jefe llega con un reto:"
----
 filename: "2025-05-12_fastmcp-servidores-python-inteligentes"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "FastMCP simplifica considerablemente la creación y gestión d"
+description: "FastMCP simplifica considerablemente la creación y gestión de contextos en aplicaciones inteligentes. Algunas razones para elegirlo:"
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
-
-# FastMCP: Construye Servidores MCP en Python de Forma Inteligente 🚀
-
-## 📖 Introducción: Una Historia sobre Componentes Inteligentes
-
-Imagínate que eres un desarrollador en una startup llamada "TechInsights". Un día tu jefe llega con un reto:
-
-> "Necesitamos una aplicación inteligente que pueda responder preguntas sobre el clima, generar reportes automáticos, y almacenar historial para consultas futuras. Ah, y por cierto, tiene que estar lista para ayer."
-
-¿Suena familiar? Este escenario, que podría parecer sacado de una serie de comedia techie, es parte de mi día a día en proyectos como los que desarrollo en [CodeIA.cl](https://codeia.cl), donde construimos soluciones basadas en inteligencia artificial, APIs conectadas y componentes que se pueden reutilizar y combinar como piezas de LEGO. 🌐🤖
-
-Aquí es donde entra FastMCP: una herramienta increíblemente útil que simplifica la creación de servidores MCP (Model Context Protocol), permitiéndote crear rápidamente aplicaciones inteligentes y modulares en Python.
-
----
 
 ## 🌟 ¿Por qué Elegir FastMCP?
 

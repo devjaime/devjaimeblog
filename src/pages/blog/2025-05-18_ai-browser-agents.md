@@ -1,22 +1,22 @@
 ---
-description: "Recientemente completé el curso "Building AI Browser Agents", una experiencia educativa fascinante que me llevó desde los fundamentos de la automatización…"
----
 filename: "2025-05-18_ai-browser-agents"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "1. Introducción a los agentes web 2. Construcción de un agen"
+description: "1. Introducción a los agentes web 2. Construcción de un agente simple con LLMs y Playwright"
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
-
-## 🧠 Aprendiendo a Construir Agentes Inteligentes para Navegadores
-
-Recientemente completé el curso "Building AI Browser Agents", una experiencia educativa fascinante que me llevó desde los fundamentos de la automatización web hasta el diseño de agentes autónomos capaces de razonar y ejecutar tareas en sitios web reales. En este blog, te compartiré un recorrido detallado por los temas del curso, mis aprendizajes, y cómo estos conocimientos se pueden aplicar en proyectos reales.
-
----
 
 ### 🎓 Temario del curso
 

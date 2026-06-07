@@ -1,31 +1,22 @@
 ---
-description: "Estado actual: Despejado 🌙 Temperatura ahora: ~23°C (sensación 25°C)"
----
 filename: "2026-05-30_reporte-matutino"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "| Indicador | Valor | |-----------|-------|"
+description: "| Indicador | Valor | |-----------|-------|"
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
-
-# ☀️ Reporte Matutino - Sábado 30 Mayo 2026
-
-## 🌤️ Clima Santiago
-
-**Estado actual:** Despejado 🌙
-**Temperatura ahora:** ~23°C (sensación 25°C)
-**Máx/Mín hoy:** 37°C / 22°C
-**Pronóstico:** Soleado toda la mañana, parcial nublado en la tarde
-**UV Index:** 13 (Muy alto - proteger piel)
-**Viento:** 5-10 km/h ESE
-**Humedad:** 67%
-**Lluvia:** 0% probabilidad
-
----
 
 ## 💰 Indicadores Económicos
 

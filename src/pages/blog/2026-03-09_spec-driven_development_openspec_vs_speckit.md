@@ -1,24 +1,22 @@
 ---
-description: "El desarrollo de software está experimentando una transformación fundamental. Por décadas, el código ha sido el "rey" - las especificaciones servían al…"
----
 filename: "2026-03-09_spec-driven_development_openspec_vs_speckit"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "Antes de profundizar en las herramientas, entendamos el conc"
+description: "Antes de profundizar en las herramientas, entendamos el concepto:"
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
-
-# Spec-Driven Development: OpenSpec vs GitHub spec-kit
-
-El desarrollo de software está experimentando una transformación fundamental. Por décadas, el código ha sido el "rey" - las especificaciones servían al código, no al revés. Pero con el auge de la IA, esta dinámica está cambiando.
-
-En este artículo exploraremos dos herramientas que lideran esta revolución: **OpenSpec** y **GitHub spec-kit**. Ambas prometen transformar cómo escribimos software, pero con enfoques distintos.
-
----
 
 ## ¿Qué es Spec-Driven Development (SDD)?
 

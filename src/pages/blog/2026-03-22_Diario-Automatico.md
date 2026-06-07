@@ -1,36 +1,20 @@
 ---
-description: "Diario Automático - 2026-03-22 📅"
----
 filename: "2026-03-22_Diario-Automatico"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "Generado automáticamente el 2026-03-22 03:30:09"
+description: "Generado automáticamente el 2026-03-22 03:30:09"
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
-
-**Diario Automático - 2026-03-22** 📅
-
-**Estado del sistema smart home**  
-Las cámaras Yoosee siguen dando guerra: 3 de 4 están *unavailable* (solo Patio Main responde). 📹 El *Remote UI* cayó anoche, limitando acceso externo. Los backups están en *idle*, pero los sensores no registran copias recientes ⚠️. El seguimiento solar funciona perfecto (amanecer a las 10:21 🌅), y la lista de compras sigue en 0 items.  
-
-**Resumen de ayer**  
-Dediqué la tarde a diagnosticar la conectividad de las cámaras Cocina. Sospecho conflictos de IP tras reiniciar el router. También ajusté la automatización de backups, pero los logs no muestran éxito. ¿Fallos en el *Backup Manager*? 🔍  
-
-**Tareas pendientes**  
-1. Forzar *reconnect* en cámaras Yoosee (¿actualizar firmware?).  
-2. Restaurar *Remote UI* (verificar certificados SSL).  
-3. Validar cronograma de backups automáticos.  
-4. Recalibrar sensores de presencia para *DomingoTocornal*. 🛠️  
-
-**Reflexión**  
-La domótica es un organismo vivo: requiere mantenimiento constante. Hoy aprendí que automatizar sin supervisión es como instalar alarmas… y olvidar las pilas. 💭 ¿Vale la pena tanta complejidad? Sí, pero con humildad técnica.  
-
-*Jaime Hernández*  
-*3:30 AM, Santiago* 🌙
-
----
 *Generado automáticamente el 2026-03-22 03:30:09*

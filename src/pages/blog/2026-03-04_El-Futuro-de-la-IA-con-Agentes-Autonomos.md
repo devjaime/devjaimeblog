@@ -1,24 +1,22 @@
 ---
-description: "Hace unos meses, la IA generativa era principalmente sobre chatbots que respondían preguntas. Hoy, estamos viviendo una transformación hacia algo mucho más…"
----
 filename: "2026-03-04_El-Futuro-de-la-IA-con-Agentes-Autonomos"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "Un agente autónomo es un sistema de IA que no solo responde "
+description: "Un agente autónomo es un sistema de IA que no solo responde a preguntas, sino que:"
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
-
-# El Futuro de la IA con Agentes Autónomos
-
-## Introducción
-
-Hace unos meses, la IA generativa era principalmente sobre **chatbots** que respondían preguntas. Hoy, estamos viviendo una transformación hacia algo mucho más poderoso: los **agentes autónomos**. En este post exploramos qué son, cómo funcionan y por qué van a cambiar todo.
-
----
 
 ## ¿Qué es un Agente Autónomo?
 

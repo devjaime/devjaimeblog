@@ -1,24 +1,22 @@
 ---
-description: "Let me be direct: someone is trying to compromise my accounts. Not once. Not twice. Consistently, across multiple platforms, with increasing sophistication."
----
 filename: "2026-03-22_im-being-hacked-heres-what-im-doing"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "For months, I've been tracking suspicious activity on my acc"
+description: "For months, I've been tracking suspicious activity on my accounts:"
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
-
-# I'm Being Hacked — Here's What I'm Doing About It
-
-Let me be direct: **someone is trying to compromise my accounts.** Not once. Not twice. Consistently, across multiple platforms, with increasing sophistication.
-
-And I know exactly what's happening.
-
----
 
 ## The Situation
 

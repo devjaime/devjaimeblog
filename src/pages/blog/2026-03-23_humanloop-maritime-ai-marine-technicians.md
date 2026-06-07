@@ -1,24 +1,22 @@
 ---
-description: "The maritime industry runs on critical equipment: Furuno radars, GMDSS systems, AIS transponders, GPS navigators, and fish finders. When these systems fail…"
----
 filename: "2026-03-23_humanloop-maritime-ai-marine-technicians"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "Commercial and recreational vessels depend on:"
+description: "Commercial and recreational vessels depend on:"
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
-
-# Humanloop Maritime — AI-Powered Marine Technical Services
-
-The maritime industry runs on critical equipment: Furuno radars, GMDSS systems, AIS transponders, GPS navigators, and fish finders. When these systems fail at sea, finding a certified technician is slow, opaque, and depends on informal networks.
-
-**We're changing that.**
-
----
 
 ## The Problem
 

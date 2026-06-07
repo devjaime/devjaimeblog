@@ -1,22 +1,22 @@
 ---
-description: "Disclaimer: Esto es satire con base en observaciones de la industria. No soy periodista de investigación, soy developer con demasiados años en el juego."
----
 filename: "2026-03-30_conspiraciones-tech-verdaderas"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "Todos sabemos. El modelo que dice ser "libre" y "comunitario"
+description: "Todos sabemos. El modelo que dice ser "libre" y "comunitario" suele venir con términos de uso que una corporación puede aprovechar mientras el desarrollador…"
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
-
-# Las 5 Conspiraciones Tech que (Probablemente) Son Verdaderas
-
-*Disclaimer: Esto es satire con base en observaciones de la industria. No soy periodista de investigación, soy developer con demasiados años en el juego.*
-
----
 
 ## 1. Los modelos de IA "open source" nunca son realmente open source
 

@@ -1,24 +1,22 @@
 ---
-description: ""The most powerful AI isn’t the one that does the most, but the one that understands how to help us best.""
----
 filename: "2025-04-23_cascade-agents"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "Cascade agents are a system design pattern where multiple in"
+description: "Cascade agents are a system design pattern where multiple intelligent agents:"
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
-
-# 🤖 Cascade Agents: Modular AI Inspired by Human Teams
-
-> _"The most powerful AI isn’t the one that does the most, but the one that understands how to help us best."_
-
-Imagine if artificial intelligence could function like a high-performing human team — with clearly defined roles, fast feedback loops, and iterative delivery. That’s the essence of **cascade agents**: a modular, sequential multi-agent architecture that mirrors the way great teams work together.
-
----
 
 ## 🧠 What Are Cascade Agents?
 

@@ -1,28 +1,22 @@
 ---
-description: "En la primera parte, construimos un BFF minimalista en Go usando OpenAPI, con estructura limpia y endpoints claros. En esta segunda entrega, vamos un paso…"
----
 filename: "2025-03-29_BFF-Golang-Parte2"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "Creamos un test para nuestro handler principal:"
+description: "Creamos un test para nuestro handler principal:"
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
-
-# BFF con Go (Parte 2): Tests, Concurrencia y Resiliencia en APIs 🧪⚙️
-
-En la [primera parte](../2025-03-28_BFF-Golang-OpenAPI), construimos un BFF minimalista en Go usando OpenAPI, con estructura limpia y endpoints claros. En esta segunda entrega, vamos un paso más allá:
-
-- ✅ Añadiremos tests
-- 🔁 Implementaremos concurrencia con goroutines y channels
-- 🧱 Incorporaremos resiliencia frente a errores de servicios remotos
-
-Todo manteniendo buenas prácticas y un diseño que pueda escalar con tu arquitectura hexagonal o basada en dependencias.
-
----
 
 ## 🧪 1. Agregando Tests con `httptest`
 

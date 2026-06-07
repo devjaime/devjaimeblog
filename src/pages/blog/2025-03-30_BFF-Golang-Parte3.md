@@ -1,28 +1,22 @@
 ---
-description: "Luego de construir un Backend For Frontend con Go + OpenAPI y extenderlo con pruebas, concurrencia y resiliencia, es momento de prepararlo para producción."
----
 filename: "2025-03-30_BFF-Golang-Parte3"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "Agrega Swagger UI como servidor embebido usando github.com/s"
+description: "Agrega Swagger UI como servidor embebido usando github.com/swaggo/http-swagger:"
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
-
-# BFF con Go (Parte 3): Documentación, Seguridad y Despliegue 📄🔐📦
-
-Luego de construir un Backend For Frontend con Go + OpenAPI y extenderlo con pruebas, concurrencia y resiliencia, es momento de prepararlo para producción.
-
-En esta tercera parte, te mostraré cómo:
-
-- 📄 Agregar Swagger UI embebido para documentar y testear tu API
-- 🔐 Incluir autenticación con JWT
-- 📦 Dockerizar tu BFF para desplegarlo en la nube
-
----
 
 ## 📄 1. Integrar Swagger UI
 

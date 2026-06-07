@@ -1,24 +1,22 @@
 ---
-description: "En los últimos meses he estado trabajando en integrar OpenClaw con Home Assistant para crear un sistema de automatización del hogar controlado por IA. En…"
----
 filename: "2026-02-27_Automatizacion-hogar-openclaw-home-assistant"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "Aquí puedes ver una demostración del flujo de automatización"
+description: "Aquí puedes ver una demostración del flujo de automatización con OpenClaw y Home Assistant:"
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
-
-# Automatización del Hogar con OpenClaw + Home Assistant
-
-## Introducción
-
-En los últimos meses he estado trabajando en integrar **OpenClaw** con **Home Assistant** para crear un sistema de automatización del hogar controlado por IA. En este post te cuento todo lo que hemos probado y lo que ahora funciona.
-
----
 
 ## 🎬 Video Demo
 

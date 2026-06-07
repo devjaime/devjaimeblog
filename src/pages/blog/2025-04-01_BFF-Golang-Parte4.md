@@ -1,26 +1,22 @@
 ---
-description: "Ya tienes un BFF en Go documentado, seguro y dockerizado. En esta cuarta parte, te mostraré cómo llevarlo al siguiente nivel:"
----
 filename: "2025-04-01_BFF-Golang-Parte4"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "Instala Prometheus middleware para Go:"
+description: "Instala Prometheus middleware para Go:"
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
-
-# BFF con Go (Parte 4): Métricas, CI/CD y Control de Acceso 📊🔄🔐
-
-Ya tienes un BFF en Go documentado, seguro y dockerizado. En esta cuarta parte, te mostraré cómo llevarlo al siguiente nivel:
-
-- 📊 Exponer métricas con Prometheus
-- 🔄 Automatizar despliegues con GitHub Actions
-- 🔐 Validar roles y scopes en JWT para control de acceso
-
----
 
 ## 📊 1. Exponer métricas con Prometheus
 

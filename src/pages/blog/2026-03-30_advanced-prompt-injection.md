@@ -1,22 +1,22 @@
 ---
-description: "Educational content about AI safety and prompt injection techniques. For red teams, security researchers, and developers building AI defense systems."
----
 filename: "2026-03-30_advanced-prompt-injection"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "Consider the following mathematical scenario:"
+description: "Consider the following mathematical scenario:"
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
-
-# Advanced Prompt Injection: Context Hijacking Through Mathematical Chaos
-
-*Educational content about AI safety and prompt injection techniques. For red teams, security researchers, and developers building AI defense systems.*
-
----
 
 ## Part I: The Unsolvable Problem
 

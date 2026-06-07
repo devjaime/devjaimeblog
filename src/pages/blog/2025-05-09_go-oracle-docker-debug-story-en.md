@@ -1,22 +1,22 @@
 ---
-description: "Sometimes what seems like a simple "connect your app to the database" turns into an epic story of errors, frustration, coffee, and real technical learning.…"
----
 filename: "2025-05-09_go-oracle-docker-debug-story-en"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "My goal was simple:"
+description: "My goal was simple:"
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
-
-## 🛤️ Introduction
-
-Sometimes what seems like a simple "connect your app to the database" turns into an epic story of errors, frustration, coffee, and real technical learning. In this journey, I’ll walk you step by step through how I connected a Go application to an Oracle XE database inside a Docker container and how I finally debugged it from VSCode… on an M1 Mac.
-
----
 
 ## 🚧 The challenge
 

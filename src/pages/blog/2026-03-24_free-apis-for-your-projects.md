@@ -1,22 +1,22 @@
 ---
-description: "Based on your active projects (Vocari.cl, FlipReady, Humanloop Maritime, HealthAI), here's a curated list of APIs that can accelerate development."
----
 filename: "2026-03-24_free-apis-for-your-projects"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "| API | Description | Free Tier | Auth | |-----|------------"
+description: "| API | Description | Free Tier | Auth | |-----|-------------|-----------|------|"
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
-
-# Free APIs for Your Projects
-
-Based on your active projects (Vocari.cl, FlipReady, Humanloop Maritime, HealthAI), here's a curated list of APIs that can accelerate development.
-
----
 
 ## 🤖 AI & Machine Learning APIs
 

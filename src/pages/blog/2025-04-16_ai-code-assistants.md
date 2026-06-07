@@ -1,24 +1,22 @@
 ---
-description: "La programación moderna está experimentando una revolución silenciosa gracias a los asistentes de código impulsados por IA. Estas herramientas no solo…"
----
 filename: "2025-04-16_ai-code-assistants"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "Uno de los grandes beneficios es la automatización de tests:"
+description: "Uno de los grandes beneficios es la automatización de tests:"
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
-
-
-
-## 🧠 Asistentes de Código con Inteligencia Artificial
-
-La programación moderna está experimentando una revolución silenciosa gracias a los **asistentes de código impulsados por IA**. Estas herramientas no solo sugieren líneas de código, sino que comprenden el contexto, ayudan a navegar grandes repositorios y automatizan tareas críticas como tests y refactorizaciones.
-
----
 
 ## ⚖️ Reparación y Generación Automática de Tests
 

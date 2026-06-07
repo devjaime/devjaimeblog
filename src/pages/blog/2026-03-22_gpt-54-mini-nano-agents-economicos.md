@@ -1,62 +1,22 @@
 ---
-description: "Si has estado evitando los sistemas multiagente debido a los costes de las API, esta semana lo ha cambiado todo."
----
 filename: "2026-03-22_gpt-54-mini-nano-agents-economicos"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "Junto con mini/nano, OpenAI anunció "Skills": flujos de trab"
+description: "Junto con mini/nano, OpenAI anunció "Skills": flujos de trabajo reutilizables y compartibles que ChatGPT puede aplicar automáticamente."
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
-
-# LA GRAN HISTORIA
-
-## GPT-5.4 Mini/Nano: Los agentes ahora son más asequibles
-
-Si has estado evitando los sistemas multiagente debido a los costes de las API, esta semana lo ha cambiado todo.
-
-OpenAI dejó de usar GPT-5.4 mini y nano, versiones diseñadas específicamente para subagentes. La situación económica acaba de cambiar. Vamos a empezar.
-
-### El problema: Sistemas multiagente son caros
-
-He aquí una realidad que la mayoría de los tutoriales no mencionan: **los sistemas multiagente son caros.**
-
-¿Cada agente "supervisor" que genera agentes trabajadores? Eso implica varias llamadas a la API por tarea. Implementa un sistema de 5 agentes en GPT-4o y observa cómo se disparan tus costes.
-
-He visto a desarrolladores abandonar proyectos de agentes por completo porque los cálculos no cuadraban.
-
-Esta semana, OpenAI solucionó ese problema.
-
-**GPT-5.4 mini y nano** son las variantes más pequeñas y rápidas, optimizadas específicamente para tareas de codificación y subagentes.
-
-### Esto es lo que importa:
-
-- **Mini supera a GPT-5 mini** en tareas de codificación, razonamiento y multimodales
-- **Funciona 2 veces más rápido** que los modelos anteriores de esta categoría
-- **Una fracción del costo**: diseñado para cargas de trabajo de agentes de alto volumen y baja latencia
-
-### El patrón que lo desbloquea:
-
-```
-Agente supervisor (GPT-5.4 o Claude Opus)
-        ↓
-Agentes de trabajo (GPT-5.4 mini/nano)
-        ↓
-Ejecución rápida y económica a gran escala
-```
-
-Utilice su costoso modelo para la planificación y la organización. Utilice mini/nano para las tareas más pesadas: operaciones con archivos, generación de código, llamadas a la API y procesamiento de datos.
-
-### Por qué esto te importa:
-
-Si estás desarrollando aplicaciones de IA, **los costes de los agentes se han reducido entre 5 y 10 veces** en la capa de ejecución. Ese proyecto paralelo que era "demasiado caro de mantener" ahora podría ser viable.
-
-> **En mi opinión:** Los distintos niveles de modelos están convergiendo en un patrón: **modelos caros para pensar, modelos baratos para actuar.** Aprende a diseñar sistemas que aprovechen ambos.
-
----
 
 # ESTA SEMANA EN IA
 

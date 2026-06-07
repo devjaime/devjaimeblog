@@ -1,42 +1,22 @@
 ---
-description: "Videos Explicativos de Vocari.cl ================================="
----
 filename: "2026-02-20_Vocari-Cl-Videos-Explicativos"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "Comprar tu Informe Vocacional en 4 Pasos"
+description: "Comprar tu Informe Vocacional en 4 Pasos"
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
-
-Videos Explicativos de Vocari.cl
-=================================
-
-*Mira cómo funciona Vocari.cl a través de nuestros 4 videos explicativos. Cada uno muestra un flujo diferente de nuestra plataforma.*
-
-* * *
-
-### 🎬 Video 1: Flujo de Colegios
-
-**Cómo un Colegio Puede Integrar Vocari.cl**
-
-En este video te mostramos cómo las instituciones educativas pueden adoptar Vocari.cl para mejorar su proceso de orientación vocacional.
-
-<video controls style="width: 100%; max-width: 100%; border-radius: 1rem; margin: 2rem 0;">
-  <source src="/videos/Video1Colegios.mp4" type="video/mp4">
-  Tu navegador no soporta el elemento de video.
-</video>
-
-**Lo que verás:**
-- Dashboard administrativo para colegios
-- Registro masivo de estudiantes
-- Configuración de orientadores
-- Reportes estadísticos
-
----
 
 ### 🎬 Video 2: Flujo de Compra de Informes
 

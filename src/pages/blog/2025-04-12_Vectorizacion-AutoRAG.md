@@ -1,22 +1,22 @@
 ---
-description: "En la era de la inteligencia artificial generativa, los sistemas RAG (Retrieval-Augmented Generation) están revolucionando cómo accedemos a la información…"
----
 filename: "2025-04-12_Vectorizacion-AutoRAG"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "AutoRAG automatiza el proceso de: - Carga de documentos"
+description: "AutoRAG automatiza el proceso de: - Carga de documentos"
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
-
-# 🧠 Vectorización e Indexación Inteligente con AutoRAG: PDF, Excel y CSV
-
-En la era de la inteligencia artificial generativa, los sistemas RAG (Retrieval-Augmented Generation) están revolucionando cómo accedemos a la información contenida en documentos. En esta guía aprenderás paso a paso cómo implementar AutoRAG con LangChain y Python para vectorizar e indexar documentos como PDF, Excel y CSV. Además, exploraremos cómo integrarlo con bases de datos como **pgvector** y **Neo4j AuraDB (Astra)**, así como herramientas como **Langflow**.
-
----
 
 ## 📘 ¿Qué es AutoRAG y por qué es importante?
 AutoRAG automatiza el proceso de:

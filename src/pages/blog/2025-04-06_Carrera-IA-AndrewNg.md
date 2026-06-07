@@ -1,22 +1,22 @@
 ---
-description: "La inteligencia artificial no es solo una tendencia: es una nueva forma de alfabetización. Así lo plantea Andrew Ng, uno de los referentes más influyentes…"
----
 filename: "2025-04-06_Carrera-IA-AndrewNg"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "Andrew compara la codificación en IA con la lectura y escrit"
+description: "Andrew compara la codificación en IA con la lectura y escritura. Así como la alfabetización transformó la sociedad, aprender a programar modelos de IA nos…"
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
-
-# Cómo iniciar tu carrera en IA: aprendizajes clave de Andrew Ng 🧠🚀
-
-La inteligencia artificial no es solo una tendencia: es una nueva forma de alfabetización. Así lo plantea **Andrew Ng**, uno de los referentes más influyentes en el mundo de la IA. En este artículo, resumo los puntos más poderosos de su guía *"How to Build Your Career in AI"*, y los adapto al contexto hispanohablante.
-
----
 
 ## 📘 AI como nueva alfabetización
 

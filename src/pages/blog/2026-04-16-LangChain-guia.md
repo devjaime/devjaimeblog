@@ -1,22 +1,22 @@
 ---
-description: "Artículo generado automáticamente | Tendencias actualizadas: 2026-04-16"
----
 filename: "2026-04-16-LangChain-guia"
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-06-07T08:00:00-0300"
+title: "LangChain se ha convertido en una tecnología clave para cons"
+description: "LangChain se ha convertido en una tecnología clave para construir sistemas de inteligencia artificial agéntica. En este artículo exploramos los fundamentos,…"
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
 draft: false
 time: 15
 featured: false
 ---
 
----
-
-# Guía Completa de LangChain para AI Agents en Producción
-
-*Artículo generado automáticamente | Tendencias actualizadas: 2026-04-16*
-
----
 
 ## ¿Por qué LangChain importa?
 
