@@ -1,17 +1,17 @@
 ---
-filename: "2021-11-06_-Qu--hace-a-un-desarrollador-10x--49efa7c00ebf"
-layout: "../../layouts/BlogLayout.astro"
+filename: '2021-11-06_-Qu--hace-a-un-desarrollador-10x--49efa7c00ebf'
+layout: '../../layouts/BlogLayout.astro'
 
-timestamp: "2021-11-06T08:00:00-0300"
-title: " Qu Hace A Un Desarrollador 10X "
-description: "¿Qué hace a un desarrollador 10x?"
-publishDate: "2021-11-06T08:00:00-0300"
+timestamp: '2021-11-06T08:00:00-0300'
+title: ' Qu Hace A Un Desarrollador 10X '
+description: '¿Qué hace a un desarrollador 10x?'
+publishDate: '2021-11-06T08:00:00-0300'
 author:
-  name: "Jaime Hernandez"
-  url: "https://devjaime.cl"
+name: 'Jaime Hernandez'
+url: 'https://devjaime.cl'
 tags:
   - "Blog"
-category: "Blog"
+category: 'Blog'
 draft: false
 time: 15
 featured: false

@@ -1,17 +1,17 @@
 ---
-filename: "2019-07-17_Flutter-Cloud-AWS-articulo-en-espa-ol-parte-1-de-3-ec31304ed06c"
-layout: "../../layouts/BlogLayout.astro"
+filename: '2019-07-17_Flutter-Cloud-AWS-articulo-en-espa-ol-parte-1-de-3-ec31304ed06c'
+layout: '../../layouts/BlogLayout.astro'
 
-timestamp: "2019-07-17T08:00:00-0300"
-title: "Flutter Cloud Aws Articulo En Espa Ol Parte 1 De 3"
-description: "Flutter Cloud AWS articulo en español parte 1 de 3"
-publishDate: "2019-07-17T08:00:00-0300"
+timestamp: '2019-07-17T08:00:00-0300'
+title: 'Flutter Cloud Aws Articulo En Espa Ol Parte 1 De 3'
+description: 'Flutter Cloud AWS articulo en español parte 1 de 3'
+publishDate: '2019-07-17T08:00:00-0300'
 author:
-  name: "Jaime Hernandez"
-  url: "https://devjaime.cl"
+name: 'Jaime Hernandez'
+url: 'https://devjaime.cl'
 tags:
   - "Blog"
-category: "Blog"
+category: 'Blog'
 draft: false
 time: 15
 featured: false
@@ -98,13 +98,13 @@ Para realizar esta acción debes desmarcar la casilla de verificación que se mu
 A continuación, vaya a la **política de Bucket** … y pegar a continuación
 
 {  
-    "Version": "2012-10-17",  
+"Version": '2012-10-17'
     "Statement": \[  
         {  
-            "Sid": "Stmt1405592139000",  
-            "Effect": "Allow",  
-            "Principal": "\*",  
-            "Action": "s3:\*",  
+"Sid": 'Stmt1405592139000'
+"Effect": 'Allow'
+"Principal": '\*'
+"Action": 's3:\*'
             "Resource": \[  
                 "arn:aws:s3:::nombredesucubo/\*",  
                 "arn:aws:s3:::nombredesucubo"  

@@ -1,17 +1,16 @@
 ---
-filename: "2024-10-09_---14-Tips-para-Programar-Sistemas-Multiagentes-con-Bases-de-Datos-Vectoriales-usando-LangChain-y--0e7e219f248d"
-layout: "../../layouts/BlogLayout.astro"
+layout: '../../layouts/BlogLayout.astro'
 
-timestamp: "2024-10-09T08:00:00-0300"
-title: " 14 Tips Para Programar Sistemas Multiagentes Con Bases De Datos Vectoriales Usando Langchain Y "
-description: "🚀 14 Tips para Programar Sistemas Multiagentes con Bases de Datos Vectoriales usando LangChain y…"
-publishDate: "2024-10-09T08:00:00-0300"
+timestamp: '2024-10-09T08:00:00-0300'
+title: ' 14 Tips Para Programar Sistemas Multiagentes Con Bases De Datos Vectoriales Usando Langchain Y '
+description: '🚀 14 Tips para Programar Sistemas Multiagentes con Bases de Datos Vectoriales usando LangChain y…'
+publishDate: '2024-10-09T08:00:00-0300'
 author:
-  name: "Jaime Hernandez"
-  url: "https://devjaime.cl"
+name: 'Jaime Hernandez'
+url: 'https://devjaime.cl'
 tags:
   - "Blog"
-category: "Blog"
+category: 'Blog'
 draft: false
 time: 15
 featured: false

@@ -1,17 +1,17 @@
 ---
-filename: "2024-06-09_How-to-Maintain-a-High-Paying-Remote-Job-in-Technology--Focus-on-JavaScript--Microservices--aec24df28a9e"
-layout: "../../layouts/BlogLayout.astro"
+filename: '2024-06-09_How-to-Maintain-a-High-Paying-Remote-Job-in-Technology--Focus-on-JavaScript--Microservices--aec24df28a9e'
+layout: '../../layouts/BlogLayout.astro'
 
-timestamp: "2024-06-09T08:00:00-0300"
-title: "How To Maintain A High Paying Remote Job In Technology Focus On Javascript Microservices "
-description: "How to Maintain a High-Paying Remote Job in Technology: Focus on JavaScript, Microservices…"
-publishDate: "2024-06-09T08:00:00-0300"
+timestamp: '2024-06-09T08:00:00-0300'
+title: 'How To Maintain A High Paying Remote Job In Technology Focus On Javascript Microservices '
+description: 'How to Maintain a High-Paying Remote Job in Technology: Focus on JavaScript, Microservices…'
+publishDate: '2024-06-09T08:00:00-0300'
 author:
-  name: "Jaime Hernandez"
-  url: "https://devjaime.cl"
+name: 'Jaime Hernandez'
+url: 'https://devjaime.cl'
 tags:
   - "Blog"
-category: "Blog"
+category: 'Blog'
 draft: false
 time: 15
 featured: false

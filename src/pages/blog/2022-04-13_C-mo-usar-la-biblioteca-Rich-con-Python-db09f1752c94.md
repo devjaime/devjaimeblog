@@ -1,17 +1,17 @@
 ---
-filename: "2022-04-13_C-mo-usar-la-biblioteca-Rich-con-Python-db09f1752c94"
-layout: "../../layouts/BlogLayout.astro"
+filename: '2022-04-13_C-mo-usar-la-biblioteca-Rich-con-Python-db09f1752c94'
+layout: '../../layouts/BlogLayout.astro'
 
-timestamp: "2022-04-13T08:00:00-0300"
-title: "C Mo Usar La Biblioteca Rich Con Python"
-description: "Cómo usar la biblioteca Rich con Python"
-publishDate: "2022-04-13T08:00:00-0300"
+timestamp: '2022-04-13T08:00:00-0300'
+title: 'C Mo Usar La Biblioteca Rich Con Python'
+description: 'Cómo usar la biblioteca Rich con Python'
+publishDate: '2022-04-13T08:00:00-0300'
 author:
-  name: "Jaime Hernandez"
-  url: "https://devjaime.cl"
+name: 'Jaime Hernandez'
+url: 'https://devjaime.cl'
 tags:
   - "Blog"
-category: "Blog"
+category: 'Blog'
 draft: false
 time: 15
 featured: false
@@ -195,7 +195,7 @@ Producción:
 
     from rich.console import Consolefrom rich.columns import Columnsfrom rich.panel import Panel
 
-    def get_content(user):    """Extract text from user dict."""    country = user["location"]["country"]    name = f"{user['name']['first']} {user['name']['last']}"    return f"[b]{name}[/b]\n[yellow]{country}"
+def get_content(user): '""Extract text from user dict."""    country = user["location"]["country"]    name = f"{user[''name''][''first'']} {user[''name''][''last'']}"    return f"[b]{name}[/b]\n[yellow]{country}'
 
     console = Console()
 

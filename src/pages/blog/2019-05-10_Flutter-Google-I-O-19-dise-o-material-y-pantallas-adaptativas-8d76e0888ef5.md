@@ -1,17 +1,17 @@
 ---
-filename: "2019-05-10_Flutter-Google-I-O-19-dise-o-material-y-pantallas-adaptativas-8d76e0888ef5"
-layout: "../../layouts/BlogLayout.astro"
+filename: '2019-05-10_Flutter-Google-I-O-19-dise-o-material-y-pantallas-adaptativas-8d76e0888ef5'
+layout: '../../layouts/BlogLayout.astro'
 
-timestamp: "2019-05-10T08:00:00-0300"
-title: "Flutter Google I O 19 Dise O Material Y Pantallas Adaptativas"
-description: "Flutter Google I/O’19 diseño material y pantallas adaptativas"
-publishDate: "2019-05-10T08:00:00-0300"
+timestamp: '2019-05-10T08:00:00-0300'
+title: 'Flutter Google I O 19 Dise O Material Y Pantallas Adaptativas'
+description: 'Flutter Google I/O’19 diseño material y pantallas adaptativas'
+publishDate: '2019-05-10T08:00:00-0300'
 author:
-  name: "Jaime Hernandez"
-  url: "https://devjaime.cl"
+name: 'Jaime Hernandez'
+url: 'https://devjaime.cl'
 tags:
   - "Blog"
-category: "Blog"
+category: 'Blog'
 draft: false
 time: 15
 featured: false

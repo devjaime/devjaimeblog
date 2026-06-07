@@ -1,17 +1,17 @@
 ---
-filename: "2024-08-05_LangChain-para-Dummies--Gu-a-Completa-desde-la-Instalaci-n-hasta-su-Utilizaci-n-8dc3df92f048"
-layout: "../../layouts/BlogLayout.astro"
+filename: '2024-08-05_LangChain-para-Dummies--Gu-a-Completa-desde-la-Instalaci-n-hasta-su-Utilizaci-n-8dc3df92f048'
+layout: '../../layouts/BlogLayout.astro'
 
-timestamp: "2024-08-05T08:00:00-0300"
-title: "Langchain Para Dummies Gu A Completa Desde La Instalaci N Hasta Su Utilizaci N"
-description: "LangChain para Dummies: Guía Completa desde la Instalación hasta su Utilización"
-publishDate: "2024-08-05T08:00:00-0300"
+timestamp: '2024-08-05T08:00:00-0300'
+title: 'Langchain Para Dummies Gu A Completa Desde La Instalaci N Hasta Su Utilizaci N'
+description: 'LangChain para Dummies: Guía Completa desde la Instalación hasta su Utilización'
+publishDate: '2024-08-05T08:00:00-0300'
 author:
-  name: "Jaime Hernandez"
-  url: "https://devjaime.cl"
+name: 'Jaime Hernandez'
+url: 'https://devjaime.cl'
 tags:
   - "Blog"
-category: "Blog"
+category: 'Blog'
 draft: false
 time: 15
 featured: false
@@ -92,7 +92,7 @@ prompt = Prompt(
     variables=\["specialty", "symptoms"\]  
 )  
 \# Usar el prompt con variables específicas  
-prompt\_text = prompt.generate({"specialty": "neurología", "symptoms": "dolor de cabeza intenso, visión borrosa y mareos"})  
+prompt\_text = prompt.generate({"specialty": 'neurología", "symptoms": "dolor de cabeza intenso, visión borrosa y mareos'
 print(prompt\_text)
 
 ### Retail: Descripciones de Productos

@@ -1,17 +1,17 @@
 ---
-filename: "2022-04-07_Comandos--tiles-de-git-454276c8074"
-layout: "../../layouts/BlogLayout.astro"
+filename: '2022-04-07_Comandos--tiles-de-git-454276c8074'
+layout: '../../layouts/BlogLayout.astro'
 
-timestamp: "2022-04-07T08:00:00-0300"
-title: "Comandos Tiles De Git 454276C8074"
-description: "Comandos útiles de git"
-publishDate: "2022-04-07T08:00:00-0300"
+timestamp: '2022-04-07T08:00:00-0300'
+title: 'Comandos Tiles De Git 454276C8074'
+description: 'Comandos útiles de git'
+publishDate: '2022-04-07T08:00:00-0300'
 author:
-  name: "Jaime Hernandez"
-  url: "https://devjaime.cl"
+name: 'Jaime Hernandez'
+url: 'https://devjaime.cl'
 tags:
   - "Blog"
-category: "Blog"
+category: 'Blog'
 draft: false
 time: 15
 featured: false

@@ -1,17 +1,17 @@
 ---
-filename: "2025-03-28_BFF-Golang-OpenAPI"
-layout: "../../layouts/BlogLayout.astro"
+filename: '2025-03-28_BFF-Golang-OpenAPI'
+layout: '../../layouts/BlogLayout.astro'
 
-timestamp: "2025-03-28T08:00:00-0300"
-title: "Bff Golang Openapi"
-description: "```bash bff-service/ ├── api/"
-publishDate: "2025-03-28T08:00:00-0300"
+timestamp: '2025-03-28T08:00:00-0300'
+title: 'Bff Golang Openapi'
+description: '```bash bff-service/ ├── api/'
+publishDate: '2025-03-28T08:00:00-0300'
 author:
-  name: "Jaime Hernandez"
-  url: "https://devjaime.cl"
+name: 'Jaime Hernandez'
+url: 'https://devjaime.cl'
 tags:
   - "Blog"
-category: "Blog"
+category: 'Blog'
 draft: false
 time: 15
 featured: false
@@ -38,7 +38,7 @@ bff-service/
 openapi: 3.0.0
 info:
   title: User BFF API
-  version: "1.0"
+version: '1.0'
 paths:
   /users/{id}:
     get:
@@ -99,8 +99,8 @@ type UserHandler struct{}
 func (h *UserHandler) GetUserById(ctx context.Context, w http.ResponseWriter, r *http.Request, id string) {
   user := api.User{
     Id:    id,
-    Name:  "Jane Doe",
-    Email: "jane@example.com",
+Name: 'Jane Doe'
+Email: 'jane@example.com'
   }
   api.JSONResponse(w, http.StatusOK, user)
 }

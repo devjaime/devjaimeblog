@@ -1,17 +1,17 @@
 ---
-filename: "2026-03-07_IoT-Domestico-IA-Guia-Completa"
-layout: "../../layouts/BlogLayout.astro"
+filename: '2026-03-07_IoT-Domestico-IA-Guia-Completa'
+layout: '../../layouts/BlogLayout.astro'
 
-timestamp: "2026-03-07T08:00:00-0300"
-title: "Iot Domestico Ia Guia Completa"
-description: "*Cómo construir un sistema de automatización inteligente sin quebrar*"
-publishDate: "2026-03-07T08:00:00-0300"
+timestamp: '2026-03-07T08:00:00-0300'
+title: 'Iot Domestico Ia Guia Completa'
+description: '*Cómo construir un sistema de automatización inteligente sin quebrar*'
+publishDate: '2026-03-07T08:00:00-0300'
 author:
-  name: "Jaime Hernandez"
-  url: "https://devjaime.cl"
+name: 'Jaime Hernandez'
+url: 'https://devjaime.cl'
 tags:
   - "Blog"
-category: "Blog"
+category: 'Blog'
 draft: false
 time: 15
 featured: false
@@ -131,7 +131,7 @@ Aquí es donde las cosas se ponen interesantes. No basta con tener dispositivos 
 
 **1. Asistente Conversacional**
 ```
-Usuario: "¿qué pasó en casa hoy?"
+Usuario: '¿qué pasó en casa hoy?'
 Agente: "3 detecciones de movimiento (patio 2x, cocina 1x), 
         temperatura 22°C, todo normal. La puerta está cerrada."
 ```
@@ -162,7 +162,7 @@ Agente: "3 detecciones de movimiento (patio 2x, cocina 1x),
 
 ### Morning Routine (7:00 AM)
 ```
-- Alexa dice: "Buenos días. Clima: 18°C, máximo 24°C"
+- Alexa dice: 'Buenos días. Clima: 18°C, máximo 24°C'
 - Encender luces del living (invierno)
 - Resumen del día
 ```

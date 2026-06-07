@@ -1,17 +1,17 @@
 ---
-filename: "2024-11-16_Claude-3-5-y-el-Uso-de-Computadora--Un-Salto-Cu-ntico-en-la-Automatizaci-n-de-Tareas-ac4f6ec31d2f"
-layout: "../../layouts/BlogLayout.astro"
+filename: '2024-11-16_Claude-3-5-y-el-Uso-de-Computadora--Un-Salto-Cu-ntico-en-la-Automatizaci-n-de-Tareas-ac4f6ec31d2f'
+layout: '../../layouts/BlogLayout.astro'
 
-timestamp: "2024-11-16T08:00:00-0300"
-title: "Claude 3 5 Y El Uso De Computadora Un Salto Cu Ntico En La Automatizaci N De Tareas"
-description: "Claude 3.5 y el Uso de Computadora: Un Salto Cuántico en la Automatización de Tareas"
-publishDate: "2024-11-16T08:00:00-0300"
+timestamp: '2024-11-16T08:00:00-0300'
+title: 'Claude 3 5 Y El Uso De Computadora Un Salto Cu Ntico En La Automatizaci N De Tareas'
+description: 'Claude 3.5 y el Uso de Computadora: Un Salto Cuántico en la Automatización de Tareas'
+publishDate: '2024-11-16T08:00:00-0300'
 author:
-  name: "Jaime Hernandez"
-  url: "https://devjaime.cl"
+name: 'Jaime Hernandez'
+url: 'https://devjaime.cl'
 tags:
   - "Blog"
-category: "Blog"
+category: 'Blog'
 draft: false
 time: 15
 featured: false

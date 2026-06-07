@@ -1,17 +1,17 @@
 ---
-filename: "2018-06-21_Azure-CLI-usando-una-Mac-f2c620ae436f"
-layout: "../../layouts/BlogLayout.astro"
+filename: '2018-06-21_Azure-CLI-usando-una-Mac-f2c620ae436f'
+layout: '../../layouts/BlogLayout.astro'
 
-timestamp: "2018-06-21T08:00:00-0300"
-title: "Azure Cli Usando Una Mac"
-description: "Azure CLI usando una Mac"
-publishDate: "2018-06-21T08:00:00-0300"
+timestamp: '2018-06-21T08:00:00-0300'
+title: 'Azure Cli Usando Una Mac'
+description: 'Azure CLI usando una Mac'
+publishDate: '2018-06-21T08:00:00-0300'
 author:
-  name: "Jaime Hernandez"
-  url: "https://devjaime.cl"
+name: 'Jaime Hernandez'
+url: 'https://devjaime.cl'
 tags:
   - "Blog"
-category: "Blog"
+category: 'Blog'
 draft: false
 time: 15
 featured: false

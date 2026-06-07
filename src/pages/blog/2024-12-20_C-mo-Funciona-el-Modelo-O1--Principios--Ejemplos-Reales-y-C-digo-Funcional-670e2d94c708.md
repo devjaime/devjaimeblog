@@ -1,17 +1,17 @@
 ---
-filename: "2024-12-20_C-mo-Funciona-el-Modelo-O1--Principios--Ejemplos-Reales-y-C-digo-Funcional-670e2d94c708"
-layout: "../../layouts/BlogLayout.astro"
+filename: '2024-12-20_C-mo-Funciona-el-Modelo-O1--Principios--Ejemplos-Reales-y-C-digo-Funcional-670e2d94c708'
+layout: '../../layouts/BlogLayout.astro'
 
-timestamp: "2024-12-20T08:00:00-0300"
-title: "C Mo Funciona El Modelo O1 Principios Ejemplos Reales Y C Digo Funcional"
-description: "Cómo Funciona el Modelo O1: Principios, Ejemplos Reales y Código Funcional"
-publishDate: "2024-12-20T08:00:00-0300"
+timestamp: '2024-12-20T08:00:00-0300'
+title: 'C Mo Funciona El Modelo O1 Principios Ejemplos Reales Y C Digo Funcional'
+description: 'Cómo Funciona el Modelo O1: Principios, Ejemplos Reales y Código Funcional'
+publishDate: '2024-12-20T08:00:00-0300'
 author:
-  name: "Jaime Hernandez"
-  url: "https://devjaime.cl"
+name: 'Jaime Hernandez'
+url: 'https://devjaime.cl'
 tags:
   - "Blog"
-category: "Blog"
+category: 'Blog'
 draft: false
 time: 15
 featured: false
@@ -72,7 +72,7 @@ para todas las moléculas relacionadas con la insulina.
 \# Hacer la solicitud al modelo  
 response = client.chat.completions.create(  
     model="o1-mini",  
-    messages=\[{"role": "user", "content": good\_prompt}\]  
+messages=\[{"role": 'user", "content'
 )  
 \# Mostrar la respuesta  
 print(response.choices\[0\].message.content)
@@ -105,7 +105,7 @@ structured\_prompt = """
   
 response = client.chat.completions.create(  
     model="o1-mini",  
-    messages=\[{"role": "user", "content": structured\_prompt}\]  
+messages=\[{"role": 'user", "content'
 )  
 print(response.choices\[0\].message.content)
 
@@ -142,7 +142,7 @@ example\_prompt = """
   
 response = client.chat.completions.create(  
     model="o1-mini",  
-    messages=\[{"role": "user", "content": example\_prompt}\]  
+messages=\[{"role": 'user", "content'
 )  
 print(response.choices\[0\].message.content)
 

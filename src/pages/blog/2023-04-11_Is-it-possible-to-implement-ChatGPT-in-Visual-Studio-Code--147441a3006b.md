@@ -1,17 +1,17 @@
 ---
-filename: "2023-04-11_Is-it-possible-to-implement-ChatGPT-in-Visual-Studio-Code--147441a3006b"
-layout: "../../layouts/BlogLayout.astro"
+filename: '2023-04-11_Is-it-possible-to-implement-ChatGPT-in-Visual-Studio-Code--147441a3006b'
+layout: '../../layouts/BlogLayout.astro'
 
-timestamp: "2023-04-11T08:00:00-0300"
-title: "Is It Possible To Implement Chatgpt In Visual Studio Code "
-description: "Is it possible to implement ChatGPT in Visual Studio Code?"
-publishDate: "2023-04-11T08:00:00-0300"
+timestamp: '2023-04-11T08:00:00-0300'
+title: 'Is It Possible To Implement Chatgpt In Visual Studio Code '
+description: 'Is it possible to implement ChatGPT in Visual Studio Code?'
+publishDate: '2023-04-11T08:00:00-0300'
 author:
-  name: "Jaime Hernandez"
-  url: "https://devjaime.cl"
+name: 'Jaime Hernandez'
+url: 'https://devjaime.cl'
 tags:
   - "Blog"
-category: "Blog"
+category: 'Blog'
 draft: false
 time: 15
 featured: false

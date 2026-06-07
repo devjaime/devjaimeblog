@@ -1,17 +1,17 @@
 ---
-filename: "2024-08-06_Perplexity-para-Dummies--Casos-de-Uso-Pr-cticos-908a0fd8fc4c"
-layout: "../../layouts/BlogLayout.astro"
+filename: '2024-08-06_Perplexity-para-Dummies--Casos-de-Uso-Pr-cticos-908a0fd8fc4c'
+layout: '../../layouts/BlogLayout.astro'
 
-timestamp: "2024-08-06T08:00:00-0300"
-title: "Perplexity Para Dummies Casos De Uso Pr Cticos"
-description: "Perplexity para Dummies: Casos de Uso Prácticos"
-publishDate: "2024-08-06T08:00:00-0300"
+timestamp: '2024-08-06T08:00:00-0300'
+title: 'Perplexity Para Dummies Casos De Uso Pr Cticos'
+description: 'Perplexity para Dummies: Casos de Uso Prácticos'
+publishDate: '2024-08-06T08:00:00-0300'
 author:
-  name: "Jaime Hernandez"
-  url: "https://devjaime.cl"
+name: 'Jaime Hernandez'
+url: 'https://devjaime.cl'
 tags:
   - "Blog"
-category: "Blog"
+category: 'Blog'
 draft: false
 time: 15
 featured: false
@@ -61,7 +61,7 @@ import requests
 api\_url = "https://api.perplexity.ai/pplx/predict"  
 query = "¿Cuál es el horario de atención al cliente?"  
 data = {  
-    "model": "customer-support",  
+"model": 'customer-support'
     "input": query  
 }  
 response = requests.post(api\_url, json=data)  
@@ -78,7 +78,7 @@ import requests
 api\_url = "https://api.perplexity.ai/pplx/predict"  
 task = "Clasificar correos electrónicos"  
 data = {  
-    "model": "task-automation",  
+"model": 'task-automation'
     "input": task  
 }  
 response = requests.post(api\_url, json=data)  
@@ -98,7 +98,7 @@ data\_analysis = {
     "metrics": \["crecimiento", "caída", "estabilidad"\]  
 }  
 data = {  
-    "model": "data-analysis",  
+"model": 'data-analysis'
     "input": data\_analysis  
 }  
 response = requests.post(api\_url, json=data)  
@@ -114,11 +114,11 @@ import requests
   
 api\_url = "https://api.perplexity.ai/pplx/predict"  
 decision\_data = {  
-    "scenario": "Lanzar un nuevo producto",  
+"scenario": 'Lanzar un nuevo producto'
     "factors": \["costo", "demanda", "competencia"\]  
 }  
 data = {  
-    "model": "decision-support",  
+"model": 'decision-support'
     "input": decision\_data  
 }  
 response = requests.post(api\_url, json=data)  
@@ -134,12 +134,12 @@ print("Recomendaciones para la toma de decisiones:", recommendations)
 
 api\_url = "https://api.perplexity.ai/pplx/predict"  
 customer\_data = {  
-    "customer\_id": "12345",  
+"customer\_id": '12345'
     "purchase\_history": \["producto1", "producto2", "producto3"\],  
     "preferences": \["electronica", "gadgets"\]  
 }  
 data = {  
-    "model": "retail-recommender",  
+"model": 'retail-recommender'
     "input": customer\_data  
 }  
 response = requests.post(api\_url, json=data)  
@@ -153,13 +153,13 @@ print("Recomendaciones personalizadas:", recommendations)
 import requests  
 api\_url = "https://api.perplexity.ai/pplx/predict"  
 transaction\_data = {  
-    "transaction\_id": "98765",  
+"transaction\_id": '98765'
     "amount": 1000,  
-    "location": "New York",  
-    "timestamp": "2024-08-06T12:00:00Z"  
+"location": 'New York'
+"timestamp": '2024-08-06T12:00:00Z'
 }  
 data = {  
-    "model": "fraud-detector",  
+"model": 'fraud-detector'
     "input": transaction\_data  
 }  
 response = requests.post(api\_url, json=data)  
@@ -173,12 +173,12 @@ print("Predicción de fraude:", fraud\_prediction)
 import requests  
 api\_url = "https://api.perplexity.ai/pplx/predict"  
 patient\_data = {  
-    "patient\_id": "56789",  
+"patient\_id": '56789'
     "symptoms": \["fiebre", "tos", "dolor de cabeza"\],  
     "medical\_history": \["diabetes", "hipertensión"\]  
 }  
 data = {  
-    "model": "medical-diagnosis",  
+"model": 'medical-diagnosis'
     "input": patient\_data  
 }  
 response = requests.post(api\_url, json=data)  

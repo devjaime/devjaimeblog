@@ -1,17 +1,17 @@
 ---
-filename: "2024-10-01_Implementaci-n-de-un-Sistema-de-Recomendaciones-Personalizado-en-Retail-usando-IA-con-RAG--Google--4b0ba349a82c"
-layout: "../../layouts/BlogLayout.astro"
+filename: '2024-10-01_Implementaci-n-de-un-Sistema-de-Recomendaciones-Personalizado-en-Retail-usando-IA-con-RAG--Google--4b0ba349a82c'
+layout: '../../layouts/BlogLayout.astro'
 
-timestamp: "2024-10-01T08:00:00-0300"
-title: "Implementaci N De Un Sistema De Recomendaciones Personalizado En Retail Usando Ia Con Rag Google "
-description: "Implementación de un Sistema de Recomendaciones Personalizado en Retail usando IA con RAG, Google…"
-publishDate: "2024-10-01T08:00:00-0300"
+timestamp: '2024-10-01T08:00:00-0300'
+title: 'Implementaci N De Un Sistema De Recomendaciones Personalizado En Retail Usando Ia Con Rag Google '
+description: 'Implementación de un Sistema de Recomendaciones Personalizado en Retail usando IA con RAG, Google…'
+publishDate: '2024-10-01T08:00:00-0300'
 author:
-  name: "Jaime Hernandez"
-  url: "https://devjaime.cl"
+name: 'Jaime Hernandez'
+url: 'https://devjaime.cl'
 tags:
   - "Blog"
-category: "Blog"
+category: 'Blog'
 draft: false
 time: 15
 featured: false

@@ -1,17 +1,17 @@
 ---
-filename: "2025-01-17_Comprendiendo-la-Diferencia-entre-PageRank-y-ArticleRank--Un-An-lisis-en-la-Ciencia-de-Datos-con--e32c9f519d0b"
-layout: "../../layouts/BlogLayout.astro"
+filename: '2025-01-17_Comprendiendo-la-Diferencia-entre-PageRank-y-ArticleRank--Un-An-lisis-en-la-Ciencia-de-Datos-con--e32c9f519d0b'
+layout: '../../layouts/BlogLayout.astro'
 
-timestamp: "2025-01-17T08:00:00-0300"
-title: "Comprendiendo La Diferencia Entre Pagerank Y Articlerank Un An Lisis En La Ciencia De Datos Con "
-description: "Comprendiendo la Diferencia entre PageRank y ArticleRank: Un Análisis en la Ciencia de Datos con…"
-publishDate: "2025-01-17T08:00:00-0300"
+timestamp: '2025-01-17T08:00:00-0300'
+title: 'Comprendiendo La Diferencia Entre Pagerank Y Articlerank Un An Lisis En La Ciencia De Datos Con '
+description: 'Comprendiendo la Diferencia entre PageRank y ArticleRank: Un Análisis en la Ciencia de Datos con…'
+publishDate: '2025-01-17T08:00:00-0300'
 author:
-  name: "Jaime Hernandez"
-  url: "https://devjaime.cl"
+name: 'Jaime Hernandez'
+url: 'https://devjaime.cl'
 tags:
   - "Blog"
-category: "Blog"
+category: 'Blog'
 draft: false
 time: 15
 featured: false

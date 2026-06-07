@@ -1,17 +1,17 @@
 ---
-filename: "2023-11-11_Explorando-m-s-Profundamente-en-Flutter-29596ee9bcb5"
-layout: "../../layouts/BlogLayout.astro"
+filename: '2023-11-11_Explorando-m-s-Profundamente-en-Flutter-29596ee9bcb5'
+layout: '../../layouts/BlogLayout.astro'
 
-timestamp: "2023-11-11T08:00:00-0300"
-title: "Explorando M S Profundamente En Flutter"
-description: "Explorando más Profundamente en Flutter"
-publishDate: "2023-11-11T08:00:00-0300"
+timestamp: '2023-11-11T08:00:00-0300'
+title: 'Explorando M S Profundamente En Flutter'
+description: 'Explorando más Profundamente en Flutter'
+publishDate: '2023-11-11T08:00:00-0300'
 author:
-  name: "Jaime Hernandez"
-  url: "https://devjaime.cl"
+name: 'Jaime Hernandez'
+url: 'https://devjaime.cl'
 tags:
   - "Blog"
-category: "Blog"
+category: 'Blog'
 draft: false
 time: 15
 featured: false

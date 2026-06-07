@@ -1,17 +1,17 @@
 ---
-filename: "2019-04-03_Lo-que-m-s-me-ha-gustado-de-visual-studio-2019-81cc74e757da"
-layout: "../../layouts/BlogLayout.astro"
+filename: '2019-04-03_Lo-que-m-s-me-ha-gustado-de-visual-studio-2019-81cc74e757da'
+layout: '../../layouts/BlogLayout.astro'
 
-timestamp: "2019-04-03T08:00:00-0300"
-title: "Lo Que M S Me Ha Gustado De Visual Studio 2019"
-description: "Lo que más me ha gustado de visual studio 2019"
-publishDate: "2019-04-03T08:00:00-0300"
+timestamp: '2019-04-03T08:00:00-0300'
+title: 'Lo Que M S Me Ha Gustado De Visual Studio 2019'
+description: 'Lo que más me ha gustado de visual studio 2019'
+publishDate: '2019-04-03T08:00:00-0300'
 author:
-  name: "Jaime Hernandez"
-  url: "https://devjaime.cl"
+name: 'Jaime Hernandez'
+url: 'https://devjaime.cl'
 tags:
   - "Blog"
-category: "Blog"
+category: 'Blog'
 draft: false
 time: 15
 featured: false

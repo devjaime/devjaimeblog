@@ -1,17 +1,16 @@
 ---
-filename: "2024-08-16_Enhancing-SQL-Query-Generation-with-Large-Language-Models--LLMs---My-Learning-Journey-81f116646314"
-layout: "../../layouts/BlogLayout.astro"
+layout: '../../layouts/BlogLayout.astro'
 
-timestamp: "2024-08-16T08:00:00-0300"
-title: "Enhancing Sql Query Generation With Large Language Models Llms My Learning Journey"
-description: "Enhancing SQL Query Generation with Large Language Models (LLMs): My Learning Journey"
-publishDate: "2024-08-16T08:00:00-0300"
+timestamp: '2024-08-16T08:00:00-0300'
+title: 'Enhancing Sql Query Generation With Large Language Models Llms My Learning Journey'
+description: 'Enhancing SQL Query Generation with Large Language Models (LLMs): My Learning Journey'
+publishDate: '2024-08-16T08:00:00-0300'
 author:
-  name: "Jaime Hernandez"
-  url: "https://devjaime.cl"
+name: 'Jaime Hernandez'
+url: 'https://devjaime.cl'
 tags:
   - "Blog"
-category: "Blog"
+category: 'Blog'
 draft: false
 time: 15
 featured: false
@@ -50,7 +49,7 @@ Consider the nba\_roster table with the following schema:
 question = "What is the average weight in the NBA?"  
 prompt = make\_llama\_3\_prompt(question, system)  
 \# Generate the SQL query  
-result = llm.generate(prompt, output\_type={"sqlite\_query": "str"}, max\_new\_tokens=200)  
+result = llm.generate(prompt, output\_type={"sqlite\_query": 'str'
 print(result\['sqlite\_query'\])
 
 In this example, the model generates an SQL query based on the schema of an NBA roster and the provided question. This type of automation can significantly speed up data extraction tasks, making it easier for analysts to focus on insights rather than writing complex queries manually.

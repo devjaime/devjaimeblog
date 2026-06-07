@@ -1,17 +1,16 @@
 ---
-filename: "2018-09-02_El-desarrollo-m-vil-nativo-est--muerto---83f3638de3de"
-layout: "../../layouts/BlogLayout.astro"
+layout: '../../layouts/BlogLayout.astro'
 
-timestamp: "2018-09-02T08:00:00-0300"
-title: "El Desarrollo M Vil Nativo Est Muerto "
-description: "El desarrollo móvil nativo está muerto!!"
-publishDate: "2018-09-02T08:00:00-0300"
+timestamp: '2018-09-02T08:00:00-0300'
+title: 'El Desarrollo M Vil Nativo Est Muerto '
+description: 'El desarrollo móvil nativo está muerto!!'
+publishDate: '2018-09-02T08:00:00-0300'
 author:
-  name: "Jaime Hernandez"
-  url: "https://devjaime.cl"
+name: 'Jaime Hernandez'
+url: 'https://devjaime.cl'
 tags:
   - "Blog"
-category: "Blog"
+category: 'Blog'
 draft: false
 time: 15
 featured: false

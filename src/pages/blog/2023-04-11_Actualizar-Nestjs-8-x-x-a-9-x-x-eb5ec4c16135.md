@@ -1,17 +1,17 @@
 ---
-filename: "2023-04-11_Actualizar-Nestjs-8-x-x-a-9-x-x-eb5ec4c16135"
-layout: "../../layouts/BlogLayout.astro"
+filename: '2023-04-11_Actualizar-Nestjs-8-x-x-a-9-x-x-eb5ec4c16135'
+layout: '../../layouts/BlogLayout.astro'
 
-timestamp: "2023-04-11T08:00:00-0300"
-title: "Actualizar Nestjs 8 X X A 9 X X"
-description: "Actualizar Nestjs 8.x.x a 9.x.x"
-publishDate: "2023-04-11T08:00:00-0300"
+timestamp: '2023-04-11T08:00:00-0300'
+title: 'Actualizar Nestjs 8 X X A 9 X X'
+description: 'Actualizar Nestjs 8.x.x a 9.x.x'
+publishDate: '2023-04-11T08:00:00-0300'
 author:
-  name: "Jaime Hernandez"
-  url: "https://devjaime.cl"
+name: 'Jaime Hernandez'
+url: 'https://devjaime.cl'
 tags:
   - "Blog"
-category: "Blog"
+category: 'Blog'
 draft: false
 time: 15
 featured: false
@@ -52,13 +52,13 @@ El caracter `^` se utiliza en el archivo `package.json` para indicar que se perm
 Cuando se define una dependencia en el archivo `package.json`, se puede especificar una versión exacta o un rango de versiones que se permiten. Por ejemplo, si se desea instalar la versión 1.2.3 de una dependencia, se puede escribir:
 
 "dependencies": {  
-  "nombre-dependencia": "1.2.3"  
+"nombre-dependencia": '1.2.3'
 }
 
 Sin embargo, si se utiliza el caracter `^` antes del número de versión, se permite que se actualice a cualquier versión que sea compatible con la versión especificada, pero no se permite una actualización mayor. Por ejemplo:
 
 "dependencies": {  
-  "nombre-dependencia": "^1.2.3"  
+"nombre-dependencia": '^1.2.3'
 }
 
 En este caso, se permite cualquier versión que sea mayor o igual a 1.2.3 pero menor que 2.0.0. Si se ejecuta el comando `npm update`, se actualizará a la versión más reciente que sea compatible con esta restricción.

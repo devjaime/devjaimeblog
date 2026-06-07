@@ -1,17 +1,17 @@
 ---
-filename: "2026-03-23_Diario-Automatico"
-layout: "../../layouts/BlogLayout.astro"
+filename: '2026-03-23_Diario-Automatico'
+layout: '../../layouts/BlogLayout.astro'
 
-timestamp: "2026-03-23T08:00:00-0300"
-title: "Diario Automatico"
-description: "*Generado automáticamente el 2026-03-23 03:30:09*"
-publishDate: "2026-03-23T08:00:00-0300"
+timestamp: '2026-03-23T08:00:00-0300'
+title: 'Diario Automatico'
+description: '*Generado automáticamente el 2026-03-23 03:30:09*'
+publishDate: '2026-03-23T08:00:00-0300'
 author:
-  name: "Jaime Hernandez"
-  url: "https://devjaime.cl"
+name: 'Jaime Hernandez'
+url: 'https://devjaime.cl'
 tags:
   - "Blog"
-category: "Blog"
+category: 'Blog'
 draft: false
 time: 15
 featured: false

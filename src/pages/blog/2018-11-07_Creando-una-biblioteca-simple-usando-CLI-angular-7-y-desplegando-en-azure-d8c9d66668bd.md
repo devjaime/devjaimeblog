@@ -1,17 +1,17 @@
 ---
-filename: "2018-11-07_Creando-una-biblioteca-simple-usando-CLI-angular-7-y-desplegando-en-azure-d8c9d66668bd"
-layout: "../../layouts/BlogLayout.astro"
+filename: '2018-11-07_Creando-una-biblioteca-simple-usando-CLI-angular-7-y-desplegando-en-azure-d8c9d66668bd'
+layout: '../../layouts/BlogLayout.astro'
 
-timestamp: "2018-11-07T08:00:00-0300"
-title: "Creando Una Biblioteca Simple Usando Cli Angular 7 Y Desplegando En Azure"
-description: "Creando una biblioteca simple usando CLI angular 7 y desplegando en azure"
-publishDate: "2018-11-07T08:00:00-0300"
+timestamp: '2018-11-07T08:00:00-0300'
+title: 'Creando Una Biblioteca Simple Usando Cli Angular 7 Y Desplegando En Azure'
+description: 'Creando una biblioteca simple usando CLI angular 7 y desplegando en azure'
+publishDate: '2018-11-07T08:00:00-0300'
 author:
-  name: "Jaime Hernandez"
-  url: "https://devjaime.cl"
+name: 'Jaime Hernandez'
+url: 'https://devjaime.cl'
 tags:
   - "Blog"
-category: "Blog"
+category: 'Blog'
 draft: false
 time: 15
 featured: false
@@ -97,11 +97,11 @@ Lo siguiente que queremos hacer es crear un par de modelos para nuestra bibliote
 
 `"id": 1,`
 
-`"first_name": "George",`
+`"first_name": 'George'
 
-`"last_name": "Bluth",`
+`"last_name": 'Bluth'
 
-`"avatar": "[https://s3.amazonaws.com/uifaces/faces/twitter/calebogden/128.jpg](https://s3.amazonaws.com/uifaces/faces/twitter/calebogden/128.jpg)"`
+`"avatar": '[https://s3.amazonaws.com/uifaces/faces/twitter/calebogden/128.jpg](https://s3.amazonaws.com/uifaces/faces/twitter/calebogden/128.jpg)'
 
 `},`
 
@@ -109,11 +109,11 @@ Lo siguiente que queremos hacer es crear un par de modelos para nuestra bibliote
 
 `"id": 2,`
 
-`"first_name": "Janet",`
+`"first_name": 'Janet'
 
-`"last_name": "Weaver",`
+`"last_name": 'Weaver'
 
-`"avatar": "[https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg](https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg)"`
+`"avatar": '[https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg](https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg)'
 
 `},`
 
@@ -121,11 +121,11 @@ Lo siguiente que queremos hacer es crear un par de modelos para nuestra bibliote
 
 `"id": 3,`
 
-`"first_name": "Emma",`
+`"first_name": 'Emma'
 
-`"last_name": "Wong",`
+`"last_name": 'Wong'
 
-`"avatar": "[https://s3.amazonaws.com/uifaces/faces/twitter/olegpogodaev/128.jpg](https://s3.amazonaws.com/uifaces/faces/twitter/olegpogodaev/128.jpg)"`
+`"avatar": '[https://s3.amazonaws.com/uifaces/faces/twitter/olegpogodaev/128.jpg](https://s3.amazonaws.com/uifaces/faces/twitter/olegpogodaev/128.jpg)'
 
 `}`
 

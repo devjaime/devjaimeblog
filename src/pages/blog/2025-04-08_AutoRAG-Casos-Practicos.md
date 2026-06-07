@@ -1,17 +1,17 @@
 ---
-filename: "2025-04-08_AutoRAG-Casos-Practicos"
-layout: "../../layouts/BlogLayout.astro"
+filename: '2025-04-08_AutoRAG-Casos-Practicos'
+layout: '../../layouts/BlogLayout.astro'
 
-timestamp: "2025-04-08T08:00:00-0300"
-title: "Autorag Casos Practicos"
-description: "Cloudflare AutoRAG no es solo una herramienta. Es una puerta de entrada a sistemas inteligentes, personalizados y actualizados, capaces de **responder pregun..."
-publishDate: "2025-04-08T08:00:00-0300"
+timestamp: '2025-04-08T08:00:00-0300'
+title: 'Autorag Casos Practicos'
+description: 'Cloudflare AutoRAG no es solo una herramienta. Es una puerta de entrada a sistemas inteligentes, personalizados y actualizados, capaces de **responder pregun...'
+publishDate: '2025-04-08T08:00:00-0300'
 author:
-  name: "Jaime Hernandez"
-  url: "https://devjaime.cl"
+name: 'Jaime Hernandez'
+url: 'https://devjaime.cl'
 tags:
   - "Blog"
-category: "Blog"
+category: 'Blog'
 draft: false
 time: 15
 featured: false

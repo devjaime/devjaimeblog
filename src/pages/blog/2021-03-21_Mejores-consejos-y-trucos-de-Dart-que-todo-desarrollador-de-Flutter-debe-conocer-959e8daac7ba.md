@@ -1,17 +1,17 @@
 ---
-filename: "2021-03-21_Mejores-consejos-y-trucos-de-Dart-que-todo-desarrollador-de-Flutter-debe-conocer-959e8daac7ba"
-layout: "../../layouts/BlogLayout.astro"
+filename: '2021-03-21_Mejores-consejos-y-trucos-de-Dart-que-todo-desarrollador-de-Flutter-debe-conocer-959e8daac7ba'
+layout: '../../layouts/BlogLayout.astro'
 
-timestamp: "2021-03-21T08:00:00-0300"
-title: "Mejores Consejos Y Trucos De Dart Que Todo Desarrollador De Flutter Debe Conocer"
-description: "Mejores consejos y trucos de Dart que todo desarrollador de Flutter debe conocer"
-publishDate: "2021-03-21T08:00:00-0300"
+timestamp: '2021-03-21T08:00:00-0300'
+title: 'Mejores Consejos Y Trucos De Dart Que Todo Desarrollador De Flutter Debe Conocer'
+description: 'Mejores consejos y trucos de Dart que todo desarrollador de Flutter debe conocer'
+publishDate: '2021-03-21T08:00:00-0300'
 author:
-  name: "Jaime Hernandez"
-  url: "https://devjaime.cl"
+name: 'Jaime Hernandez'
+url: 'https://devjaime.cl'
 tags:
   - "Blog"
-category: "Blog"
+category: 'Blog'
 draft: false
 time: 15
 featured: false

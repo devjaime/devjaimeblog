@@ -1,17 +1,17 @@
 ---
-filename: "2025-05-25_livekit-agentes"
-layout: "../../layouts/BlogLayout.astro"
+filename: '2025-05-25_livekit-agentes'
+layout: '../../layouts/BlogLayout.astro'
 
-timestamp: "2025-05-25T08:00:00-0300"
-title: "Livekit Agentes"
-description: "El repositorio oficial de LiveKit Agents proporciona una base para construir agentes multimodales. Aquí el proceso paso a paso:"
-publishDate: "2025-05-25T08:00:00-0300"
+timestamp: '2025-05-25T08:00:00-0300'
+title: 'Livekit Agentes'
+description: 'El repositorio oficial de LiveKit Agents proporciona una base para construir agentes multimodales. Aquí el proceso paso a paso:'
+publishDate: '2025-05-25T08:00:00-0300'
 author:
-  name: "Jaime Hernandez"
-  url: "https://devjaime.cl"
+name: 'Jaime Hernandez'
+url: 'https://devjaime.cl'
 tags:
   - "Blog"
-category: "Blog"
+category: 'Blog'
 draft: false
 time: 15
 featured: false

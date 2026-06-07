@@ -1,17 +1,17 @@
 ---
-filename: "2024-12-19_AI-Agent-Develop--Agentes-Inteligentes-con-LangChain-y-LangGraph-3226c5971fa2"
-layout: "../../layouts/BlogLayout.astro"
+filename: '2024-12-19_AI-Agent-Develop--Agentes-Inteligentes-con-LangChain-y-LangGraph-3226c5971fa2'
+layout: '../../layouts/BlogLayout.astro'
 
-timestamp: "2024-12-19T08:00:00-0300"
-title: "Ai Agent Develop Agentes Inteligentes Con Langchain Y Langgraph"
-description: "AI Agent Develop: Agentes Inteligentes con LangChain y LangGraph"
-publishDate: "2024-12-19T08:00:00-0300"
+timestamp: '2024-12-19T08:00:00-0300'
+title: 'Ai Agent Develop Agentes Inteligentes Con Langchain Y Langgraph'
+description: 'AI Agent Develop: Agentes Inteligentes con LangChain y LangGraph'
+publishDate: '2024-12-19T08:00:00-0300'
 author:
-  name: "Jaime Hernandez"
-  url: "https://devjaime.cl"
+name: 'Jaime Hernandez'
+url: 'https://devjaime.cl'
 tags:
   - "Blog"
-category: "Blog"
+category: 'Blog'
 draft: false
 time: 15
 featured: false
@@ -66,12 +66,12 @@ class Agent:
         self.system = system  
         self.messages = \[\]  
         if system:  
-            self.messages.append({"role": "system", "content": system})
+self.messages.append({"role": 'system", "content'
 
     def \_\_call\_\_(self, message):  
-        self.messages.append({"role": "user", "content": message})  
+self.messages.append({"role": 'user", "content'
         result = self.execute()  
-        self.messages.append({"role": "assistant", "content": result})  
+self.messages.append({"role": 'assistant", "content'
         return result
 
     def execute(self):  
@@ -115,7 +115,7 @@ openai\_key = os.getenv("OPENAI\_API\_KEY")
 model = ChatOpenAI(api\_key=openai\_key, model="gpt-4.0")
 
 def financial\_analysis(prompt):  
-    return model.chat(\[{"role": "user", "content": prompt}\])
+return model.chat(\[{"role": 'user", "content'
 
 \# Crear un grafo de estados  
 graph = StateGraph()

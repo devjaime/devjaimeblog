@@ -1,17 +1,17 @@
 ---
-filename: "2025-05-18_ai-browser-agents"
-layout: "../../layouts/BlogLayout.astro"
+filename: '2025-05-18_ai-browser-agents'
+layout: '../../layouts/BlogLayout.astro'
 
-timestamp: "2025-05-18T08:00:00-0300"
-title: "Ai Browser Agents"
-description: "Te invito a escribirme por [LinkedIn](https://www.linkedin.com/in/devjaime) o revisar más experimentos que compartiré en mi blog."
-publishDate: "2025-05-18T08:00:00-0300"
+timestamp: '2025-05-18T08:00:00-0300'
+title: 'Ai Browser Agents'
+description: 'Te invito a escribirme por [LinkedIn](https://www.linkedin.com/in/devjaime) o revisar más experimentos que compartiré en mi blog.'
+publishDate: '2025-05-18T08:00:00-0300'
 author:
-  name: "Jaime Hernandez"
-  url: "https://devjaime.cl"
+name: 'Jaime Hernandez'
+url: 'https://devjaime.cl'
 tags:
   - "Blog"
-category: "Blog"
+category: 'Blog'
 draft: false
 time: 15
 featured: false

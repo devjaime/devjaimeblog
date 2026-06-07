@@ -1,17 +1,16 @@
 ---
-filename: "2021-10-11_D-a-4--widgets-Flutter---dise-os-b-sicos-y-responsivos-5468a0af808b"
-layout: "../../layouts/BlogLayout.astro"
+layout: '../../layouts/BlogLayout.astro'
 
-timestamp: "2021-10-11T08:00:00-0300"
-title: "D A 4 Widgets Flutter Dise Os B Sicos Y Responsivos"
-description: "Día 4: widgets Flutter + diseños básicos y responsivos"
-publishDate: "2021-10-11T08:00:00-0300"
+timestamp: '2021-10-11T08:00:00-0300'
+title: 'D A 4 Widgets Flutter Dise Os B Sicos Y Responsivos'
+description: 'Día 4: widgets Flutter + diseños básicos y responsivos'
+publishDate: '2021-10-11T08:00:00-0300'
 author:
-  name: "Jaime Hernandez"
-  url: "https://devjaime.cl"
+name: 'Jaime Hernandez'
+url: 'https://devjaime.cl'
 tags:
   - "Blog"
-category: "Blog"
+category: 'Blog'
 draft: false
 time: 15
 featured: false

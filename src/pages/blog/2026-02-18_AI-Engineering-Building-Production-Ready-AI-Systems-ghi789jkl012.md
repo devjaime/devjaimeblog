@@ -1,17 +1,17 @@
 ---
-filename: "2026-02-18_AI-Engineering-Building-Production-Ready-AI-Systems-ghi789jkl012"
-layout: "../../layouts/BlogLayout.astro"
+filename: '2026-02-18_AI-Engineering-Building-Production-Ready-AI-Systems-ghi789jkl012'
+layout: '../../layouts/BlogLayout.astro'
 
-timestamp: "2026-02-18T08:00:00-0300"
-title: "Ai Engineering Building Production Ready Ai Systems Ghi789Jkl012"
-description: "AI Engineering: Building Production-Ready AI Systems"
-publishDate: "2026-02-18T08:00:00-0300"
+timestamp: '2026-02-18T08:00:00-0300'
+title: 'Ai Engineering Building Production Ready Ai Systems Ghi789Jkl012'
+description: 'AI Engineering: Building Production-Ready AI Systems'
+publishDate: '2026-02-18T08:00:00-0300'
 author:
-  name: "Jaime Hernandez"
-  url: "https://devjaime.cl"
+name: 'Jaime Hernandez'
+url: 'https://devjaime.cl'
 tags:
   - "Blog"
-category: "Blog"
+category: 'Blog'
 draft: false
 time: 15
 featured: false
@@ -46,13 +46,13 @@ experiment:
   name: sentiment_analysis_v2
   tracking:
     tool: mlflow
-    experiment_id: "sentiment-001"
+experiment_id: 'sentiment-001'
   environment:
-    python: "3.11"
-    requirements: "requirements.lock"
+python: '3.11'
+requirements: 'requirements.lock'
   data:
-    version: "2026-02-18"
-    source: "feature_store"
+version: '2026-02-18'
+source: 'feature_store'
 ```
 
 #### 2. Modularity

@@ -1,17 +1,17 @@
 ---
-filename: "2022-04-14_Comprender-los-webhooks-25dcf883f698"
-layout: "../../layouts/BlogLayout.astro"
+filename: '2022-04-14_Comprender-los-webhooks-25dcf883f698'
+layout: '../../layouts/BlogLayout.astro'
 
-timestamp: "2022-04-14T08:00:00-0300"
-title: "Comprender Los Webhooks"
-description: "Comprender los webhooks"
-publishDate: "2022-04-14T08:00:00-0300"
+timestamp: '2022-04-14T08:00:00-0300'
+title: 'Comprender Los Webhooks'
+description: 'Comprender los webhooks'
+publishDate: '2022-04-14T08:00:00-0300'
 author:
-  name: "Jaime Hernandez"
-  url: "https://devjaime.cl"
+name: 'Jaime Hernandez'
+url: 'https://devjaime.cl'
 tags:
   - "Blog"
-category: "Blog"
+category: 'Blog'
 draft: false
 time: 15
 featured: false

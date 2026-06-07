@@ -1,17 +1,17 @@
 ---
-filename: "2026-05-30_minimax-openclaw-agents-avanzados"
-layout: "../../layouts/BlogLayout.astro"
+filename: '2026-05-30_minimax-openclaw-agents-avanzados'
+layout: '../../layouts/BlogLayout.astro'
 
-timestamp: "2026-05-30T08:00:00-0300"
-title: "Minimax Openclaw Agents Avanzados"
-description: "*¿Ya estás usando agentes en tu workflow? ¿Cuál ha sido tu experiencia? Compartamos ideas.*"
-publishDate: "2026-05-30T08:00:00-0300"
+timestamp: '2026-05-30T08:00:00-0300'
+title: 'Minimax Openclaw Agents Avanzados'
+description: '*¿Ya estás usando agentes en tu workflow? ¿Cuál ha sido tu experiencia? Compartamos ideas.*'
+publishDate: '2026-05-30T08:00:00-0300'
 author:
-  name: "Jaime Hernandez"
-  url: "https://devjaime.cl"
+name: 'Jaime Hernandez'
+url: 'https://devjaime.cl'
 tags:
   - "Blog"
-category: "Blog"
+category: 'Blog'
 draft: false
 time: 15
 featured: false

@@ -1,17 +1,17 @@
 ---
-filename: "2023-09-18_Estrategias-de-Redis-en-Microservicios--Potenciando-el-Rendimiento-y-la-Escalabilidad-555e5e3be4ba"
-layout: "../../layouts/BlogLayout.astro"
+filename: '2023-09-18_Estrategias-de-Redis-en-Microservicios--Potenciando-el-Rendimiento-y-la-Escalabilidad-555e5e3be4ba'
+layout: '../../layouts/BlogLayout.astro'
 
-timestamp: "2023-09-18T08:00:00-0300"
-title: "Estrategias De Redis En Microservicios Potenciando El Rendimiento Y La Escalabilidad"
-description: "Estrategias de Redis en Microservicios: Potenciando el Rendimiento y la Escalabilidad"
-publishDate: "2023-09-18T08:00:00-0300"
+timestamp: '2023-09-18T08:00:00-0300'
+title: 'Estrategias De Redis En Microservicios Potenciando El Rendimiento Y La Escalabilidad'
+description: 'Estrategias de Redis en Microservicios: Potenciando el Rendimiento y la Escalabilidad'
+publishDate: '2023-09-18T08:00:00-0300'
 author:
-  name: "Jaime Hernandez"
-  url: "https://devjaime.cl"
+name: 'Jaime Hernandez'
+url: 'https://devjaime.cl'
 tags:
   - "Blog"
-category: "Blog"
+category: 'Blog'
 draft: false
 time: 15
 featured: false
@@ -138,7 +138,7 @@ import (
 func main() {  
     ctx := context.Background()  
     client := redis.NewClient(&redis.Options{  
-        Addr: "localhost:6379",  
+Addr: 'localhost:6379'
     })  
     // Almacenar en caché un valor  
     err := client.Set(ctx, "clave", "valor", 0).Err()  
@@ -167,7 +167,7 @@ import (
 func main() {  
     ctx := context.Background()  
     client := redis.NewClient(&redis.Options{  
-        Addr: "localhost:6379",  
+Addr: 'localhost:6379'
     })  
     // Productor: Agregar un mensaje a la cola  
     cola := "mi-cola"  

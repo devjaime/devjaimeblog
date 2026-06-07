@@ -1,17 +1,17 @@
 ---
-filename: "2025-01-01_C-mo-Prepararte-y-Certificarte-como-Neo4j-Certified-Professional-1e290129c26f"
-layout: "../../layouts/BlogLayout.astro"
+filename: '2025-01-01_C-mo-Prepararte-y-Certificarte-como-Neo4j-Certified-Professional-1e290129c26f'
+layout: '../../layouts/BlogLayout.astro'
 
-timestamp: "2025-01-01T08:00:00-0300"
-title: "C Mo Prepararte Y Certificarte Como Neo4J Certified Professional"
-description: "Cómo Prepararte y Certificarte como Neo4j Certified Professional"
-publishDate: "2025-01-01T08:00:00-0300"
+timestamp: '2025-01-01T08:00:00-0300'
+title: 'C Mo Prepararte Y Certificarte Como Neo4J Certified Professional'
+description: 'Cómo Prepararte y Certificarte como Neo4j Certified Professional'
+publishDate: '2025-01-01T08:00:00-0300'
 author:
-  name: "Jaime Hernandez"
-  url: "https://devjaime.cl"
+name: 'Jaime Hernandez'
+url: 'https://devjaime.cl'
 tags:
   - "Blog"
-category: "Blog"
+category: 'Blog'
 draft: false
 time: 15
 featured: false

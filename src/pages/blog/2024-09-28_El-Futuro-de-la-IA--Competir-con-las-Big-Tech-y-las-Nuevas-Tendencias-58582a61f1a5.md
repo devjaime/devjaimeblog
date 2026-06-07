@@ -1,17 +1,17 @@
 ---
-filename: "2024-09-28_El-Futuro-de-la-IA--Competir-con-las-Big-Tech-y-las-Nuevas-Tendencias-58582a61f1a5"
-layout: "../../layouts/BlogLayout.astro"
+filename: '2024-09-28_El-Futuro-de-la-IA--Competir-con-las-Big-Tech-y-las-Nuevas-Tendencias-58582a61f1a5'
+layout: '../../layouts/BlogLayout.astro'
 
-timestamp: "2024-09-28T08:00:00-0300"
-title: "El Futuro De La Ia Competir Con Las Big Tech Y Las Nuevas Tendencias"
-description: "El Futuro de la IA: Competir con las Big Tech y las Nuevas Tendencias"
-publishDate: "2024-09-28T08:00:00-0300"
+timestamp: '2024-09-28T08:00:00-0300'
+title: 'El Futuro De La Ia Competir Con Las Big Tech Y Las Nuevas Tendencias'
+description: 'El Futuro de la IA: Competir con las Big Tech y las Nuevas Tendencias'
+publishDate: '2024-09-28T08:00:00-0300'
 author:
-  name: "Jaime Hernandez"
-  url: "https://devjaime.cl"
+name: 'Jaime Hernandez'
+url: 'https://devjaime.cl'
 tags:
   - "Blog"
-category: "Blog"
+category: 'Blog'
 draft: false
 time: 15
 featured: false

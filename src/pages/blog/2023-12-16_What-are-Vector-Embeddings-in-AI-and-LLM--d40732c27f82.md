@@ -1,17 +1,17 @@
 ---
-filename: "2023-12-16_What-are-Vector-Embeddings-in-AI-and-LLM--d40732c27f82"
-layout: "../../layouts/BlogLayout.astro"
+filename: '2023-12-16_What-are-Vector-Embeddings-in-AI-and-LLM--d40732c27f82'
+layout: '../../layouts/BlogLayout.astro'
 
-timestamp: "2023-12-16T08:00:00-0300"
-title: "What Are Vector Embeddings In Ai And Llm "
-description: "What are Vector Embeddings in AI and LLM?"
-publishDate: "2023-12-16T08:00:00-0300"
+timestamp: '2023-12-16T08:00:00-0300'
+title: 'What Are Vector Embeddings In Ai And Llm '
+description: 'What are Vector Embeddings in AI and LLM?'
+publishDate: '2023-12-16T08:00:00-0300'
 author:
-  name: "Jaime Hernandez"
-  url: "https://devjaime.cl"
+name: 'Jaime Hernandez'
+url: 'https://devjaime.cl'
 tags:
   - "Blog"
-category: "Blog"
+category: 'Blog'
 draft: false
 time: 15
 featured: false

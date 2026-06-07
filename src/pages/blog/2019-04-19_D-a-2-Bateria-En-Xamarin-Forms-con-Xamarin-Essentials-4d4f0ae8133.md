@@ -1,17 +1,17 @@
 ---
-filename: "2019-04-19_D-a-2-Bateria-En-Xamarin-Forms-con-Xamarin-Essentials-4d4f0ae8133"
-layout: "../../layouts/BlogLayout.astro"
+filename: '2019-04-19_D-a-2-Bateria-En-Xamarin-Forms-con-Xamarin-Essentials-4d4f0ae8133'
+layout: '../../layouts/BlogLayout.astro'
 
-timestamp: "2019-04-19T08:00:00-0300"
-title: "D A 2 Bateria En Xamarin Forms Con Xamarin Essentials 4D4F0Ae8133"
-description: "Día 2 Bateria En Xamarin Forms con Xamarin Essentials"
-publishDate: "2019-04-19T08:00:00-0300"
+timestamp: '2019-04-19T08:00:00-0300'
+title: 'D A 2 Bateria En Xamarin Forms Con Xamarin Essentials 4D4F0Ae8133'
+description: 'Día 2 Bateria En Xamarin Forms con Xamarin Essentials'
+publishDate: '2019-04-19T08:00:00-0300'
 author:
-  name: "Jaime Hernandez"
-  url: "https://devjaime.cl"
+name: 'Jaime Hernandez'
+url: 'https://devjaime.cl'
 tags:
   - "Blog"
-category: "Blog"
+category: 'Blog'
 draft: false
 time: 15
 featured: false

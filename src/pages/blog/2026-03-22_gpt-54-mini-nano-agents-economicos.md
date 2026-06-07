@@ -1,17 +1,17 @@
 ---
-filename: "2026-03-22_gpt-54-mini-nano-agents-economicos"
-layout: "../../layouts/BlogLayout.astro"
+filename: '2026-03-22_gpt-54-mini-nano-agents-economicos'
+layout: '../../layouts/BlogLayout.astro'
 
-timestamp: "2026-03-22T08:00:00-0300"
-title: "Gpt 54 Mini Nano Agents Economicos"
-description: "Si la infraestructura RAG ha sido un obstáculo para usted, esto cambia las cosas."
-publishDate: "2026-03-22T08:00:00-0300"
+timestamp: '2026-03-22T08:00:00-0300'
+title: 'Gpt 54 Mini Nano Agents Economicos'
+description: 'Si la infraestructura RAG ha sido un obstáculo para usted, esto cambia las cosas.'
+publishDate: '2026-03-22T08:00:00-0300'
 author:
-  name: "Jaime Hernandez"
-  url: "https://devjaime.cl"
+name: 'Jaime Hernandez'
+url: 'https://devjaime.cl'
 tags:
   - "Blog"
-category: "Blog"
+category: 'Blog'
 draft: false
 time: 15
 featured: false

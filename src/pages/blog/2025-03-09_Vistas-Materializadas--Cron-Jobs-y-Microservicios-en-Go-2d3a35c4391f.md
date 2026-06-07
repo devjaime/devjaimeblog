@@ -1,17 +1,17 @@
 ---
-filename: "2025-03-09_Vistas-Materializadas--Cron-Jobs-y-Microservicios-en-Go-2d3a35c4391f"
-layout: "../../layouts/BlogLayout.astro"
+filename: '2025-03-09_Vistas-Materializadas--Cron-Jobs-y-Microservicios-en-Go-2d3a35c4391f'
+layout: '../../layouts/BlogLayout.astro'
 
-timestamp: "2025-03-09T08:00:00-0300"
-title: "Vistas Materializadas Cron Jobs Y Microservicios En Go"
-description: "Vistas Materializadas, Cron Jobs y Microservicios en Go"
-publishDate: "2025-03-09T08:00:00-0300"
+timestamp: '2025-03-09T08:00:00-0300'
+title: 'Vistas Materializadas Cron Jobs Y Microservicios En Go'
+description: 'Vistas Materializadas, Cron Jobs y Microservicios en Go'
+publishDate: '2025-03-09T08:00:00-0300'
 author:
-  name: "Jaime Hernandez"
-  url: "https://devjaime.cl"
+name: 'Jaime Hernandez'
+url: 'https://devjaime.cl'
 tags:
   - "Blog"
-category: "Blog"
+category: 'Blog'
 draft: false
 time: 15
 featured: false
@@ -96,7 +96,7 @@ kind: CronJob
 metadata:  
   name: refrescar-vista  
 spec:  
-  schedule: "0 \* \* \* \*" \# Cada hora  
+schedule: '0 \* \* \* \*'
   jobTemplate:  
     spec:  
       template:  

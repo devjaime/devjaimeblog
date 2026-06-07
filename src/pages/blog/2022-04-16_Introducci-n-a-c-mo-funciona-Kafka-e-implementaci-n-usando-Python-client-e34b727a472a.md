@@ -1,17 +1,17 @@
 ---
-filename: "2022-04-16_Introducci-n-a-c-mo-funciona-Kafka-e-implementaci-n-usando-Python-client-e34b727a472a"
-layout: "../../layouts/BlogLayout.astro"
+filename: '2022-04-16_Introducci-n-a-c-mo-funciona-Kafka-e-implementaci-n-usando-Python-client-e34b727a472a'
+layout: '../../layouts/BlogLayout.astro'
 
-timestamp: "2022-04-16T08:00:00-0300"
-title: "Introducci N A C Mo Funciona Kafka E Implementaci N Usando Python Client"
-description: "Introducción a cómo funciona Kafka e implementación usando Python-client"
-publishDate: "2022-04-16T08:00:00-0300"
+timestamp: '2022-04-16T08:00:00-0300'
+title: 'Introducci N A C Mo Funciona Kafka E Implementaci N Usando Python Client'
+description: 'Introducción a cómo funciona Kafka e implementación usando Python-client'
+publishDate: '2022-04-16T08:00:00-0300'
 author:
-  name: "Jaime Hernandez"
-  url: "https://devjaime.cl"
+name: 'Jaime Hernandez'
+url: 'https://devjaime.cl'
 tags:
   - "Blog"
-category: "Blog"
+category: 'Blog'
 draft: false
 time: 15
 featured: false

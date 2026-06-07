@@ -1,17 +1,17 @@
 ---
-filename: "2019-04-03_Visual-Studio-2019-algunos-detalles-interesantes-db20d60a36f4"
-layout: "../../layouts/BlogLayout.astro"
+filename: '2019-04-03_Visual-Studio-2019-algunos-detalles-interesantes-db20d60a36f4'
+layout: '../../layouts/BlogLayout.astro'
 
-timestamp: "2019-04-03T08:00:00-0300"
-title: "Visual Studio 2019 Algunos Detalles Interesantes"
-description: "Visual Studio 2019 algunos detalles interesantes"
-publishDate: "2019-04-03T08:00:00-0300"
+timestamp: '2019-04-03T08:00:00-0300'
+title: 'Visual Studio 2019 Algunos Detalles Interesantes'
+description: 'Visual Studio 2019 algunos detalles interesantes'
+publishDate: '2019-04-03T08:00:00-0300'
 author:
-  name: "Jaime Hernandez"
-  url: "https://devjaime.cl"
+name: 'Jaime Hernandez'
+url: 'https://devjaime.cl'
 tags:
   - "Blog"
-category: "Blog"
+category: 'Blog'
 draft: false
 time: 15
 featured: false

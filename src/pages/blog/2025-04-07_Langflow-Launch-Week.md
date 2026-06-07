@@ -1,17 +1,17 @@
 ---
-filename: "2025-04-07_Langflow-Launch-Week"
-layout: "../../layouts/BlogLayout.astro"
+filename: '2025-04-07_Langflow-Launch-Week'
+layout: '../../layouts/BlogLayout.astro'
 
-timestamp: "2025-04-07T08:00:00-0300"
-title: "Langflow Launch Week"
-description: "- 🧵 Resumen general de la semana: https://blog.langflow.org/langflow-launch-week-wrap-up/ - Día 1: MCP — https://blog.langflow.org/launch-week-day-1-mcp/ - D..."
-publishDate: "2025-04-07T08:00:00-0300"
+timestamp: '2025-04-07T08:00:00-0300'
+title: 'Langflow Launch Week'
+description: '- 🧵 Resumen general de la semana: https://blog.langflow.org/langflow-launch-week-wrap-up/ - Día 1: MCP — https://blog.langflow.org/launch-week-day-1-mcp/ - D...'
+publishDate: '2025-04-07T08:00:00-0300'
 author:
-  name: "Jaime Hernandez"
-  url: "https://devjaime.cl"
+name: 'Jaime Hernandez'
+url: 'https://devjaime.cl'
 tags:
   - "Blog"
-category: "Blog"
+category: 'Blog'
 draft: false
 time: 15
 featured: false

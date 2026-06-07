@@ -1,17 +1,17 @@
 ---
-filename: "2023-11-11_Flutter--Transforming-Ideas-into-Successful-Mobile-Applications-a89626954a0d"
-layout: "../../layouts/BlogLayout.astro"
+filename: '2023-11-11_Flutter--Transforming-Ideas-into-Successful-Mobile-Applications-a89626954a0d'
+layout: '../../layouts/BlogLayout.astro'
 
-timestamp: "2023-11-11T08:00:00-0300"
-title: "Flutter Transforming Ideas Into Successful Mobile Applications"
-description: "Flutter: Transforming Ideas into Successful Mobile Applications"
-publishDate: "2023-11-11T08:00:00-0300"
+timestamp: '2023-11-11T08:00:00-0300'
+title: 'Flutter Transforming Ideas Into Successful Mobile Applications'
+description: 'Flutter: Transforming Ideas into Successful Mobile Applications'
+publishDate: '2023-11-11T08:00:00-0300'
 author:
-  name: "Jaime Hernandez"
-  url: "https://devjaime.cl"
+name: 'Jaime Hernandez'
+url: 'https://devjaime.cl'
 tags:
   - "Blog"
-category: "Blog"
+category: 'Blog'
 draft: false
 time: 15
 featured: false

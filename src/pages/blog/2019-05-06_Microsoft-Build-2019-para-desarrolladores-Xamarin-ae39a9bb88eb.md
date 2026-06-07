@@ -1,17 +1,17 @@
 ---
-filename: "2019-05-06_Microsoft-Build-2019-para-desarrolladores-Xamarin-ae39a9bb88eb"
-layout: "../../layouts/BlogLayout.astro"
+filename: '2019-05-06_Microsoft-Build-2019-para-desarrolladores-Xamarin-ae39a9bb88eb'
+layout: '../../layouts/BlogLayout.astro'
 
-timestamp: "2019-05-06T08:00:00-0300"
-title: "Microsoft Build 2019 Para Desarrolladores Xamarin"
-description: "Microsoft Build 2019 para desarrolladores Xamarin"
-publishDate: "2019-05-06T08:00:00-0300"
+timestamp: '2019-05-06T08:00:00-0300'
+title: 'Microsoft Build 2019 Para Desarrolladores Xamarin'
+description: 'Microsoft Build 2019 para desarrolladores Xamarin'
+publishDate: '2019-05-06T08:00:00-0300'
 author:
-  name: "Jaime Hernandez"
-  url: "https://devjaime.cl"
+name: 'Jaime Hernandez'
+url: 'https://devjaime.cl'
 tags:
   - "Blog"
-category: "Blog"
+category: 'Blog'
 draft: false
 time: 15
 featured: false

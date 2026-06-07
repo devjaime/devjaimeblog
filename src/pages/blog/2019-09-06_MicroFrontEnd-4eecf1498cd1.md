@@ -1,17 +1,17 @@
 ---
-filename: "2019-09-06_MicroFrontEnd-4eecf1498cd1"
-layout: "../../layouts/BlogLayout.astro"
+filename: '2019-09-06_MicroFrontEnd-4eecf1498cd1'
+layout: '../../layouts/BlogLayout.astro'
 
-timestamp: "2019-09-06T08:00:00-0300"
-title: "Microfrontend"
-description: "MicroFrontEnd"
-publishDate: "2019-09-06T08:00:00-0300"
+timestamp: '2019-09-06T08:00:00-0300'
+title: 'Microfrontend'
+description: 'MicroFrontEnd'
+publishDate: '2019-09-06T08:00:00-0300'
 author:
-  name: "Jaime Hernandez"
-  url: "https://devjaime.cl"
+name: 'Jaime Hernandez'
+url: 'https://devjaime.cl'
 tags:
   - "Blog"
-category: "Blog"
+category: 'Blog'
 draft: false
 time: 15
 featured: false
@@ -211,13 +211,13 @@ Este ejemplo muestra cómo las micro frontends no son necesariamente una técnic
 Un enfoque que a veces vemos es publicar cada micro interfaz como un paquete y hacer que la aplicación contenedor los incluya a todos como dependencias de la biblioteca. Así es como `package.json`podrían verse los contenedores para nuestra aplicación de ejemplo:
 
 {  
-  "name": "@feed-me/container",  
-  "version": "1.0.0",  
-  "description": "A food delivery web app",  
+"name": '@feed-me/container'
+"version": '1.0.0'
+"description": 'A food delivery web app'
   "dependencies": {  
-    "@feed-me/browse-restaurants": "^1.2.3",  
-    "@feed-me/order-food": "^4.5.6",  
-    "@feed-me/user-profile": "^7.8.9"  
+"@feed-me/browse-restaurants": '^1.2.3'
+"@feed-me/order-food": '^4.5.6'
+"@feed-me/user-profile": '^7.8.9'
   }  
 }
 
@@ -400,27 +400,27 @@ La demostración está construida utilizando React.js, por lo que vale la pena m
 Comenzaremos con [el contenedor](https://github.com/micro-frontends-demo/container) , ya que es el punto de entrada para nuestros clientes. Veamos qué podemos aprender al respecto de su `package.json`:
 
 {  
-  "name": "@micro-frontends-demo/container",  
-  "description": "Entry point and container for a micro frontends demo",  
+"name": '@micro-frontends-demo/container'
+"description": 'Entry point and container for a micro frontends demo'
   "scripts": {  
-    "start": "PORT=3000 react-app-rewired start",  
-    "build": "react-app-rewired build",  
-    "test": "react-app-rewired test"  
+"start": 'PORT=3000 react-app-rewired start'
+"build": 'react-app-rewired build'
+"test": 'react-app-rewired test'
   },  
   "dependencies": {  
-    "react": "^16.4.0",  
-    "react-dom": "^16.4.0",  
-    "react-router-dom": "^4.2.2",  
-    "react-scripts": "^2.1.8"  
+"react": '^16.4.0'
+"react-dom": '^16.4.0'
+"react-router-dom": '^4.2.2'
+"react-scripts": '^2.1.8'
   },  
   "devDependencies": {  
-    "enzyme": "^3.3.0",  
-    "enzyme-adapter-react-16": "^1.1.1",  
-    "jest-enzyme": "^6.0.2",  
-    "react-app-rewire-micro-frontends": "^0.0.1",  
-    "react-app-rewired": "^2.1.1"  
+"enzyme": '^3.3.0'
+"enzyme-adapter-react-16": '^1.1.1'
+"jest-enzyme": '^6.0.2'
+"react-app-rewire-micro-frontends": '^0.0.1'
+"react-app-rewired": '^2.1.1'
   },  
-  "config-overrides-path": "node\_modules/react-app-rewire-micro-frontends"  
+"config-overrides-path": 'node\_modules/react-app-rewire-micro-frontends'
 }
 
 En la versión 1 `react-scripts`, era posible tener múltiples aplicaciones coexistiendo en una sola página sin conflictos, pero la versión 2 usa algunas características de paquete web que causan errores cuando dos o más aplicaciones intentan mostrarse en una página. Por esta razón, usamos `react-app-rewired`para anular algunas de las configuraciones internas del paquete web `react-scripts`. Esto corrige esos errores y nos permite seguir confiando `react-scripts`para administrar nuestras herramientas de compilación.

@@ -1,17 +1,17 @@
 ---
-filename: "2024-08-22_Why-Does-OpenAI-Need-a-Head-of-Latam-in-Latin-America--fcd5406da369"
-layout: "../../layouts/BlogLayout.astro"
+filename: '2024-08-22_Why-Does-OpenAI-Need-a-Head-of-Latam-in-Latin-America--fcd5406da369'
+layout: '../../layouts/BlogLayout.astro'
 
-timestamp: "2024-08-22T08:00:00-0300"
-title: "Why Does Openai Need A Head Of Latam In Latin America "
-description: "Why Does OpenAI Need a Head of Latam in Latin America?"
-publishDate: "2024-08-22T08:00:00-0300"
+timestamp: '2024-08-22T08:00:00-0300'
+title: 'Why Does Openai Need A Head Of Latam In Latin America '
+description: 'Why Does OpenAI Need a Head of Latam in Latin America?'
+publishDate: '2024-08-22T08:00:00-0300'
 author:
-  name: "Jaime Hernandez"
-  url: "https://devjaime.cl"
+name: 'Jaime Hernandez'
+url: 'https://devjaime.cl'
 tags:
   - "Blog"
-category: "Blog"
+category: 'Blog'
 draft: false
 time: 15
 featured: false

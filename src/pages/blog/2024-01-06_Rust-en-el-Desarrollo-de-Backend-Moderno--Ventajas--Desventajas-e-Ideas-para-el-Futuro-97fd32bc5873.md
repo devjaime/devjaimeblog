@@ -1,17 +1,17 @@
 ---
-filename: "2024-01-06_Rust-en-el-Desarrollo-de-Backend-Moderno--Ventajas--Desventajas-e-Ideas-para-el-Futuro-97fd32bc5873"
-layout: "../../layouts/BlogLayout.astro"
+filename: '2024-01-06_Rust-en-el-Desarrollo-de-Backend-Moderno--Ventajas--Desventajas-e-Ideas-para-el-Futuro-97fd32bc5873'
+layout: '../../layouts/BlogLayout.astro'
 
-timestamp: "2024-01-06T08:00:00-0300"
-title: "Rust En El Desarrollo De Backend Moderno Ventajas Desventajas E Ideas Para El Futuro"
-description: "Rust en el Desarrollo de Backend Moderno: Ventajas, Desventajas e Ideas para el Futuro"
-publishDate: "2024-01-06T08:00:00-0300"
+timestamp: '2024-01-06T08:00:00-0300'
+title: 'Rust En El Desarrollo De Backend Moderno Ventajas Desventajas E Ideas Para El Futuro'
+description: 'Rust en el Desarrollo de Backend Moderno: Ventajas, Desventajas e Ideas para el Futuro'
+publishDate: '2024-01-06T08:00:00-0300'
 author:
-  name: "Jaime Hernandez"
-  url: "https://devjaime.cl"
+name: 'Jaime Hernandez'
+url: 'https://devjaime.cl'
 tags:
   - "Blog"
-category: "Blog"
+category: 'Blog'
 draft: false
 time: 15
 featured: false

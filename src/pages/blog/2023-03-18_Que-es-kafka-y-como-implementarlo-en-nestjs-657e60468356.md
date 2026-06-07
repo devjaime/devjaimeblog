@@ -1,17 +1,17 @@
 ---
-filename: "2023-03-18_Que-es-kafka-y-como-implementarlo-en-nestjs-657e60468356"
-layout: "../../layouts/BlogLayout.astro"
+filename: '2023-03-18_Que-es-kafka-y-como-implementarlo-en-nestjs-657e60468356'
+layout: '../../layouts/BlogLayout.astro'
 
-timestamp: "2023-03-18T08:00:00-0300"
-title: "Que Es Kafka Y Como Implementarlo En Nestjs"
-description: "Que es kafka y como implementarlo en nestjs"
-publishDate: "2023-03-18T08:00:00-0300"
+timestamp: '2023-03-18T08:00:00-0300'
+title: 'Que Es Kafka Y Como Implementarlo En Nestjs'
+description: 'Que es kafka y como implementarlo en nestjs'
+publishDate: '2023-03-18T08:00:00-0300'
 author:
-  name: "Jaime Hernandez"
-  url: "https://devjaime.cl"
+name: 'Jaime Hernandez'
+url: 'https://devjaime.cl'
 tags:
   - "Blog"
-category: "Blog"
+category: 'Blog'
 draft: false
 time: 15
 featured: false

@@ -1,17 +1,16 @@
 ---
-filename: "2021-04-06_Angular-Arquitectura-Hexagonal---hipotesis--a2cfa0b94a07"
-layout: "../../layouts/BlogLayout.astro"
+layout: '../../layouts/BlogLayout.astro'
 
-timestamp: "2021-04-06T08:00:00-0300"
-title: "Angular Arquitectura Hexagonal Hipotesis "
-description: "Angular Arquitectura Hexagonal: {hipotesis}"
-publishDate: "2021-04-06T08:00:00-0300"
+timestamp: '2021-04-06T08:00:00-0300'
+title: 'Angular Arquitectura Hexagonal Hipotesis '
+description: 'Angular Arquitectura Hexagonal: {hipotesis}'
+publishDate: '2021-04-06T08:00:00-0300'
 author:
-  name: "Jaime Hernandez"
-  url: "https://devjaime.cl"
+name: 'Jaime Hernandez'
+url: 'https://devjaime.cl'
 tags:
   - "Blog"
-category: "Blog"
+category: 'Blog'
 draft: false
 time: 15
 featured: false

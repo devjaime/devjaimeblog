@@ -1,17 +1,16 @@
 ---
-filename: "2024-09-23_LangChain---Qu--es-mejor--Function-Calling-o-ReAct--Un-An-lisis-Comparativo-8bba2d7b4885"
-layout: "../../layouts/BlogLayout.astro"
+layout: '../../layouts/BlogLayout.astro'
 
-timestamp: "2024-09-23T08:00:00-0300"
-title: "Langchain Qu Es Mejor Function Calling O React Un An Lisis Comparativo"
-description: "LangChain: ¿Qué es mejor, Function Calling o ReAct? Un Análisis Comparativo"
-publishDate: "2024-09-23T08:00:00-0300"
+timestamp: '2024-09-23T08:00:00-0300'
+title: 'Langchain Qu Es Mejor Function Calling O React Un An Lisis Comparativo'
+description: 'LangChain: ¿Qué es mejor, Function Calling o ReAct? Un Análisis Comparativo'
+publishDate: '2024-09-23T08:00:00-0300'
 author:
-  name: "Jaime Hernandez"
-  url: "https://devjaime.cl"
+name: 'Jaime Hernandez'
+url: 'https://devjaime.cl'
 tags:
   - "Blog"
-category: "Blog"
+category: 'Blog'
 draft: false
 time: 15
 featured: false

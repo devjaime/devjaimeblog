@@ -1,17 +1,17 @@
 ---
-filename: "2024-09-23_Desbloqueando-el-Potencial-del-Razonamiento-en-Modelos-de-Lenguaje--GPT-4--LLaMA-3-1--71d7a39eee96"
-layout: "../../layouts/BlogLayout.astro"
+filename: '2024-09-23_Desbloqueando-el-Potencial-del-Razonamiento-en-Modelos-de-Lenguaje--GPT-4--LLaMA-3-1--71d7a39eee96'
+layout: '../../layouts/BlogLayout.astro'
 
-timestamp: "2024-09-23T08:00:00-0300"
-title: "Desbloqueando El Potencial Del Razonamiento En Modelos De Lenguaje Gpt 4 Llama 3 1 "
-description: "Desbloqueando el Potencial del Razonamiento en Modelos de Lenguaje: GPT-4, LLaMA 3.1,"
-publishDate: "2024-09-23T08:00:00-0300"
+timestamp: '2024-09-23T08:00:00-0300'
+title: 'Desbloqueando El Potencial Del Razonamiento En Modelos De Lenguaje Gpt 4 Llama 3 1 '
+description: 'Desbloqueando el Potencial del Razonamiento en Modelos de Lenguaje: GPT-4, LLaMA 3.1,'
+publishDate: '2024-09-23T08:00:00-0300'
 author:
-  name: "Jaime Hernandez"
-  url: "https://devjaime.cl"
+name: 'Jaime Hernandez'
+url: 'https://devjaime.cl'
 tags:
   - "Blog"
-category: "Blog"
+category: 'Blog'
 draft: false
 time: 15
 featured: false

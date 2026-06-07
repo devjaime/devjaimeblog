@@ -1,17 +1,17 @@
 ---
-filename: "2024-07-26_Gu-a-Definitiva-para-la-Organizaci-n-de-Proyectos-en-Golang-65d666e06ab4"
-layout: "../../layouts/BlogLayout.astro"
+filename: '2024-07-26_Gu-a-Definitiva-para-la-Organizaci-n-de-Proyectos-en-Golang-65d666e06ab4'
+layout: '../../layouts/BlogLayout.astro'
 
-timestamp: "2024-07-26T08:00:00-0300"
-title: "Gu A Definitiva Para La Organizaci N De Proyectos En Golang"
-description: "Guía Definitiva para la Organización de Proyectos en Golang"
-publishDate: "2024-07-26T08:00:00-0300"
+timestamp: '2024-07-26T08:00:00-0300'
+title: 'Gu A Definitiva Para La Organizaci N De Proyectos En Golang'
+description: 'Guía Definitiva para la Organización de Proyectos en Golang'
+publishDate: '2024-07-26T08:00:00-0300'
 author:
-  name: "Jaime Hernandez"
-  url: "https://devjaime.cl"
+name: 'Jaime Hernandez'
+url: 'https://devjaime.cl'
 tags:
   - "Blog"
-category: "Blog"
+category: 'Blog'
 draft: false
 time: 15
 featured: false

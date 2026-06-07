@@ -1,17 +1,17 @@
 ---
-filename: "2025-05-01_kaggle-ia-generativa"
-layout: "../../layouts/BlogLayout.astro"
+filename: '2025-05-01_kaggle-ia-generativa'
+layout: '../../layouts/BlogLayout.astro'
 
-timestamp: "2025-05-01T08:00:00-0300"
-title: "Kaggle Ia Generativa"
-description: "Kaggle es una plataforma en línea propiedad de Google que ofrece un entorno colaborativo para científicos de datos y entusiastas de la inteligencia artificia..."
-publishDate: "2025-05-01T08:00:00-0300"
+timestamp: '2025-05-01T08:00:00-0300'
+title: 'Kaggle Ia Generativa'
+description: 'Kaggle es una plataforma en línea propiedad de Google que ofrece un entorno colaborativo para científicos de datos y entusiastas de la inteligencia artificia...'
+publishDate: '2025-05-01T08:00:00-0300'
 author:
-  name: "Jaime Hernandez"
-  url: "https://devjaime.cl"
+name: 'Jaime Hernandez'
+url: 'https://devjaime.cl'
 tags:
   - "Blog"
-category: "Blog"
+category: 'Blog'
 draft: false
 time: 15
 featured: false

@@ -1,17 +1,17 @@
 ---
-filename: "2023-11-12_Creando-la-Gu-a-Definitiva-para-Escribir-un-Design-Doc-de-Arquitectura-de-Microservicios--Pasos--8c8203cbc762"
-layout: "../../layouts/BlogLayout.astro"
+filename: '2023-11-12_Creando-la-Gu-a-Definitiva-para-Escribir-un-Design-Doc-de-Arquitectura-de-Microservicios--Pasos--8c8203cbc762'
+layout: '../../layouts/BlogLayout.astro'
 
-timestamp: "2023-11-12T08:00:00-0300"
-title: "Creando La Gu A Definitiva Para Escribir Un Design Doc De Arquitectura De Microservicios Pasos "
-description: "Creando la Guía Definitiva para Escribir un Design Doc de Arquitectura de Microservicios: Pasos…"
-publishDate: "2023-11-12T08:00:00-0300"
+timestamp: '2023-11-12T08:00:00-0300'
+title: 'Creando La Gu A Definitiva Para Escribir Un Design Doc De Arquitectura De Microservicios Pasos '
+description: 'Creando la Guía Definitiva para Escribir un Design Doc de Arquitectura de Microservicios: Pasos…'
+publishDate: '2023-11-12T08:00:00-0300'
 author:
-  name: "Jaime Hernandez"
-  url: "https://devjaime.cl"
+name: 'Jaime Hernandez'
+url: 'https://devjaime.cl'
 tags:
   - "Blog"
-category: "Blog"
+category: 'Blog'
 draft: false
 time: 15
 featured: false

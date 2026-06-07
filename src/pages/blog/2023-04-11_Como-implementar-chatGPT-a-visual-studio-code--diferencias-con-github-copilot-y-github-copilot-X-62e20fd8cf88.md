@@ -1,17 +1,17 @@
 ---
-filename: "2023-04-11_Como-implementar-chatGPT-a-visual-studio-code--diferencias-con-github-copilot-y-github-copilot-X-62e20fd8cf88"
-layout: "../../layouts/BlogLayout.astro"
+filename: '2023-04-11_Como-implementar-chatGPT-a-visual-studio-code--diferencias-con-github-copilot-y-github-copilot-X-62e20fd8cf88'
+layout: '../../layouts/BlogLayout.astro'
 
-timestamp: "2023-04-11T08:00:00-0300"
-title: "Como Implementar Chatgpt A Visual Studio Code Diferencias Con Github Copilot Y Github Copilot X"
-description: "Como implementar chatGPT a visual studio code, diferencias con github copilot y github copilot X"
-publishDate: "2023-04-11T08:00:00-0300"
+timestamp: '2023-04-11T08:00:00-0300'
+title: 'Como Implementar Chatgpt A Visual Studio Code Diferencias Con Github Copilot Y Github Copilot X'
+description: 'Como implementar chatGPT a visual studio code, diferencias con github copilot y github copilot X'
+publishDate: '2023-04-11T08:00:00-0300'
 author:
-  name: "Jaime Hernandez"
-  url: "https://devjaime.cl"
+name: 'Jaime Hernandez'
+url: 'https://devjaime.cl'
 tags:
   - "Blog"
-category: "Blog"
+category: 'Blog'
 draft: false
 time: 15
 featured: false

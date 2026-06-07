@@ -1,17 +1,17 @@
 ---
-filename: "2022-04-06_Que-es-Celery-en-django-con-Python-19050ac30c41"
-layout: "../../layouts/BlogLayout.astro"
+filename: '2022-04-06_Que-es-Celery-en-django-con-Python-19050ac30c41'
+layout: '../../layouts/BlogLayout.astro'
 
-timestamp: "2022-04-06T08:00:00-0300"
-title: "Que Es Celery En Django Con Python"
-description: "Que es Celery en django con Python"
-publishDate: "2022-04-06T08:00:00-0300"
+timestamp: '2022-04-06T08:00:00-0300'
+title: 'Que Es Celery En Django Con Python'
+description: 'Que es Celery en django con Python'
+publishDate: '2022-04-06T08:00:00-0300'
 author:
-  name: "Jaime Hernandez"
-  url: "https://devjaime.cl"
+name: 'Jaime Hernandez'
+url: 'https://devjaime.cl'
 tags:
   - "Blog"
-category: "Blog"
+category: 'Blog'
 draft: false
 time: 15
 featured: false

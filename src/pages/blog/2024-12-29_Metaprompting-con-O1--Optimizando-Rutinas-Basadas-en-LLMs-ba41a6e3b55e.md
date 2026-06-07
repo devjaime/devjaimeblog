@@ -1,17 +1,17 @@
 ---
-filename: "2024-12-29_Metaprompting-con-O1--Optimizando-Rutinas-Basadas-en-LLMs-ba41a6e3b55e"
-layout: "../../layouts/BlogLayout.astro"
+filename: '2024-12-29_Metaprompting-con-O1--Optimizando-Rutinas-Basadas-en-LLMs-ba41a6e3b55e'
+layout: '../../layouts/BlogLayout.astro'
 
-timestamp: "2024-12-29T08:00:00-0300"
-title: "Metaprompting Con O1 Optimizando Rutinas Basadas En Llms"
-description: "Metaprompting con O1: Optimizando Rutinas Basadas en LLMs"
-publishDate: "2024-12-29T08:00:00-0300"
+timestamp: '2024-12-29T08:00:00-0300'
+title: 'Metaprompting Con O1 Optimizando Rutinas Basadas En Llms'
+description: 'Metaprompting con O1: Optimizando Rutinas Basadas en LLMs'
+publishDate: '2024-12-29T08:00:00-0300'
 author:
-  name: "Jaime Hernandez"
-  url: "https://devjaime.cl"
+name: 'Jaime Hernandez'
+url: 'https://devjaime.cl'
 tags:
   - "Blog"
-category: "Blog"
+category: 'Blog'
 draft: false
 time: 15
 featured: false
@@ -65,7 +65,7 @@ with open('originalPolicy/flightCancellationsPolicy.md', 'r') as file:
     flight\_cancellation\_policy = file.read()  
 messages = \[  
     {  
-        "role": "user",  
+"role": 'user'
         "content": f"""{CONVERSION\_PROMPT}\\nPOLICY:\\n{flight\_cancellation\_policy}"""  
     }  
 \]  
@@ -136,7 +136,7 @@ Iteramos sobre la rutina usando un bucle de metaprompting para incorporar cambio
 for i in range(3):  
     messages = \[  
         {  
-            "role": "user",  
+"role": 'user'
             "content": f"""# Data\\nRoutine: {current\_routine}\\nResults: {eval\_results.to\_json()}"""  
         }  
     \]  

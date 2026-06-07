@@ -1,17 +1,17 @@
 ---
-filename: "2022-05-01_Como-empezar-en-el-An-lisis-de-datos-con-Python-1bdaf79e8ccb"
-layout: "../../layouts/BlogLayout.astro"
+filename: '2022-05-01_Como-empezar-en-el-An-lisis-de-datos-con-Python-1bdaf79e8ccb'
+layout: '../../layouts/BlogLayout.astro'
 
-timestamp: "2022-05-01T08:00:00-0300"
-title: "Como Empezar En El An Lisis De Datos Con Python"
-description: "Como empezar en el Análisis de datos con Python"
-publishDate: "2022-05-01T08:00:00-0300"
+timestamp: '2022-05-01T08:00:00-0300'
+title: 'Como Empezar En El An Lisis De Datos Con Python'
+description: 'Como empezar en el Análisis de datos con Python'
+publishDate: '2022-05-01T08:00:00-0300'
 author:
-  name: "Jaime Hernandez"
-  url: "https://devjaime.cl"
+name: 'Jaime Hernandez'
+url: 'https://devjaime.cl'
 tags:
   - "Blog"
-category: "Blog"
+category: 'Blog'
 draft: false
 time: 15
 featured: false

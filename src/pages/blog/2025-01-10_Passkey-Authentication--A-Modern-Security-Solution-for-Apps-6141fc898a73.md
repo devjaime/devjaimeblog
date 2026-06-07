@@ -1,17 +1,17 @@
 ---
-filename: "2025-01-10_Passkey-Authentication--A-Modern-Security-Solution-for-Apps-6141fc898a73"
-layout: "../../layouts/BlogLayout.astro"
+filename: '2025-01-10_Passkey-Authentication--A-Modern-Security-Solution-for-Apps-6141fc898a73'
+layout: '../../layouts/BlogLayout.astro'
 
-timestamp: "2025-01-10T08:00:00-0300"
-title: "Passkey Authentication A Modern Security Solution For Apps"
-description: "Passkey Authentication: A Modern Security Solution for Apps"
-publishDate: "2025-01-10T08:00:00-0300"
+timestamp: '2025-01-10T08:00:00-0300'
+title: 'Passkey Authentication A Modern Security Solution For Apps'
+description: 'Passkey Authentication: A Modern Security Solution for Apps'
+publishDate: '2025-01-10T08:00:00-0300'
 author:
-  name: "Jaime Hernandez"
-  url: "https://devjaime.cl"
+name: 'Jaime Hernandez'
+url: 'https://devjaime.cl'
 tags:
   - "Blog"
-category: "Blog"
+category: 'Blog'
 draft: false
 time: 15
 featured: false

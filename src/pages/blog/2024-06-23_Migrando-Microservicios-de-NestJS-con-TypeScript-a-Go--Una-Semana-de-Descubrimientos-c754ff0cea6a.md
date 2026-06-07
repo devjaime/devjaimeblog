@@ -1,17 +1,17 @@
 ---
-filename: "2024-06-23_Migrando-Microservicios-de-NestJS-con-TypeScript-a-Go--Una-Semana-de-Descubrimientos-c754ff0cea6a"
-layout: "../../layouts/BlogLayout.astro"
+filename: '2024-06-23_Migrando-Microservicios-de-NestJS-con-TypeScript-a-Go--Una-Semana-de-Descubrimientos-c754ff0cea6a'
+layout: '../../layouts/BlogLayout.astro'
 
-timestamp: "2024-06-23T08:00:00-0300"
-title: "Migrando Microservicios De Nestjs Con Typescript A Go Una Semana De Descubrimientos"
-description: "Migrando Microservicios de NestJS con TypeScript a Go: Una Semana de Descubrimientos"
-publishDate: "2024-06-23T08:00:00-0300"
+timestamp: '2024-06-23T08:00:00-0300'
+title: 'Migrando Microservicios De Nestjs Con Typescript A Go Una Semana De Descubrimientos'
+description: 'Migrando Microservicios de NestJS con TypeScript a Go: Una Semana de Descubrimientos'
+publishDate: '2024-06-23T08:00:00-0300'
 author:
-  name: "Jaime Hernandez"
-  url: "https://devjaime.cl"
+name: 'Jaime Hernandez'
+url: 'https://devjaime.cl'
 tags:
   - "Blog"
-category: "Blog"
+category: 'Blog'
 draft: false
 time: 15
 featured: false
@@ -81,8 +81,8 @@ import (
 )  
   
 type User struct {  
-    Name string \`validate:"required"\`  
-    Age  int    \`validate:"gte=0"\`  
+Name string \`validate: 'required'
+Age  int    \`validate: 'gte=0'
 }  
   
 validate := validator.New()  

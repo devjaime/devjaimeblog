@@ -1,17 +1,17 @@
 ---
-filename: "2024-06-23_Integraci-n-de-Golang-con-la-API-de-ChatGPT-4cefdc0d6a62"
-layout: "../../layouts/BlogLayout.astro"
+filename: '2024-06-23_Integraci-n-de-Golang-con-la-API-de-ChatGPT-4cefdc0d6a62'
+layout: '../../layouts/BlogLayout.astro'
 
-timestamp: "2024-06-23T08:00:00-0300"
-title: "Integraci N De Golang Con La Api De Chatgpt"
-description: "Integración de Golang con la API de ChatGPT"
-publishDate: "2024-06-23T08:00:00-0300"
+timestamp: '2024-06-23T08:00:00-0300'
+title: 'Integraci N De Golang Con La Api De Chatgpt'
+description: 'Integración de Golang con la API de ChatGPT'
+publishDate: '2024-06-23T08:00:00-0300'
 author:
-  name: "Jaime Hernandez"
-  url: "https://devjaime.cl"
+name: 'Jaime Hernandez'
+url: 'https://devjaime.cl'
 tags:
   - "Blog"
-category: "Blog"
+category: 'Blog'
 draft: false
 time: 15
 featured: false
@@ -84,21 +84,21 @@ import (
   
 // Estructura para la solicitud a la API de ChatGPT  
 type ChatGPTRequest struct {  
- Model    string \`json:"model"\`  
- Messages \[\]Message \`json:"messages"\`  
+Model    string \`json: 'model'
+Messages \[\]Message \`json: 'messages'
 }  
   
 // Estructura para los mensajes en la solicitud  
 type Message struct {  
- Role    string \`json:"role"\`  
- Content string \`json:"content"\`  
+Role    string \`json: 'role'
+Content string \`json: 'content'
 }  
   
 // Estructura para la respuesta de la API de ChatGPT  
 type ChatGPTResponse struct {  
  Choices \[\]struct {  
-  Message Message \`json:"message"\`  
- } \`json:"choices"\`  
+Message Message \`json: 'message'
+} \`json: 'choices'
 }  
   
 func main() {  
@@ -114,15 +114,15 @@ func main() {
   
  // Crear la solicitud  
  requestBody := ChatGPTRequest{  
-  Model: "gpt-4",  
+Model: 'gpt-4'
   Messages: \[\]Message{  
    {  
-    Role:    "system",  
-    Content: "Eres un asistente útil.",  
+Role: 'system'
+Content: 'Eres un asistente útil.'
    },  
    {  
-    Role:    "user",  
-    Content: "Hola, ¿cómo estás?",  
+Role: 'user'
+Content: 'Hola, ¿cómo estás?'
    },  
   },  
  }  

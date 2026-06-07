@@ -1,17 +1,17 @@
 ---
-filename: "2024-09-11_Astra-DB--La-Base-de-Datos-en-la-Nube-Basada-en-Apache-Cassandra-8d570ecc4a6c"
-layout: "../../layouts/BlogLayout.astro"
+filename: '2024-09-11_Astra-DB--La-Base-de-Datos-en-la-Nube-Basada-en-Apache-Cassandra-8d570ecc4a6c'
+layout: '../../layouts/BlogLayout.astro'
 
-timestamp: "2024-09-11T08:00:00-0300"
-title: "Astra Db La Base De Datos En La Nube Basada En Apache Cassandra"
-description: "Astra DB: La Base de Datos en la Nube Basada en Apache Cassandra"
-publishDate: "2024-09-11T08:00:00-0300"
+timestamp: '2024-09-11T08:00:00-0300'
+title: 'Astra Db La Base De Datos En La Nube Basada En Apache Cassandra'
+description: 'Astra DB: La Base de Datos en la Nube Basada en Apache Cassandra'
+publishDate: '2024-09-11T08:00:00-0300'
 author:
-  name: "Jaime Hernandez"
-  url: "https://devjaime.cl"
+name: 'Jaime Hernandez'
+url: 'https://devjaime.cl'
 tags:
   - "Blog"
-category: "Blog"
+category: 'Blog'
 draft: false
 time: 15
 featured: false
