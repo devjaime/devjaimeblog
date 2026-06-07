@@ -2,10 +2,10 @@
 filename: "2025-03-28_BFF-Golang-OpenAPI"
 layout: "../../layouts/BlogLayout.astro"
 
-timestamp: "2026-06-07T08:00:00-0300"
-title: "Un BFF actúa como intermediario entre el frontend y los micr"
-description: "Un BFF actúa como intermediario entre el frontend y los microservicios del backend. Su objetivo es:"
-publishDate: "2026-06-07T08:00:00-0300"
+timestamp: "2025-03-28T08:00:00-0300"
+title: "Bff Golang Openapi"
+description: "```bash bff-service/ ├── api/"
+publishDate: "2025-03-28T08:00:00-0300"
 author:
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"
@@ -15,36 +15,6 @@ category: "Blog"
 draft: false
 time: 15
 featured: false
----
-
-
-## 🧠 ¿Qué es un BFF y cuándo usarlo?
-
-Un **BFF** actúa como intermediario entre el frontend y los microservicios del backend. Su objetivo es:
-
-- Agregar, adaptar o transformar datos desde distintos servicios.
-- Proveer seguridad (autenticación/autorización).
-- Exponer una API optimizada para cada tipo de cliente.
-
-**📌 Casos de uso típicos:**
-
-- Una app móvil que requiere datos más livianos o en otro formato.
-- Evitar que el frontend conozca detalles de múltiples microservicios.
-- Centralizar la autenticación o la gestión de sesiones.
-- Minimizar llamadas de red agregando o preprocesando datos en el BFF.
-
----
-
-## 🧰 ¿Por qué usar Go y OpenAPI para un BFF?
-
-**Go** es eficiente, rápido, con tipado estático y perfecto para construir APIs. Su ecosistema incluye herramientas robustas para definir contratos con OpenAPI, como:
-
-- [`go-swagger`](https://github.com/go-swagger/go-swagger)
-- [`oapi-codegen`](https://github.com/deepmap/oapi-codegen)
-- [`kin-openapi`](https://github.com/getkin/kin-openapi)
-
-OpenAPI permite definir tu contrato de API primero (spec-first), o bien generarlo desde tu código (code-first), asegurando documentación clara, validación automática y generación de clientes.
-
 ---
 
 ## ✨ Estructura del Proyecto

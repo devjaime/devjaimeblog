@@ -2,10 +2,10 @@
 filename: "2022-05-04_Que-es-Github-Actions--6266b6f5846b"
 layout: "../../layouts/BlogLayout.astro"
 
-timestamp: "2026-06-07T08:00:00-0300"
-title: "Que es Github Actions? ======================"
-description: "Que es Github Actions? ======================"
-publishDate: "2026-06-07T08:00:00-0300"
+timestamp: "2022-05-04T08:00:00-0300"
+title: "Que Es Github Actions "
+description: "Que es Github Actions?"
+publishDate: "2022-05-04T08:00:00-0300"
 author:
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"

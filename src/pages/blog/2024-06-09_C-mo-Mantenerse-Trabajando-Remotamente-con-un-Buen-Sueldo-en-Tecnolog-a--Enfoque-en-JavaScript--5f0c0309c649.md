@@ -2,10 +2,10 @@
 filename: "2024-06-09_C-mo-Mantenerse-Trabajando-Remotamente-con-un-Buen-Sueldo-en-Tecnolog-a--Enfoque-en-JavaScript--5f0c0309c649"
 layout: "../../layouts/BlogLayout.astro"
 
-timestamp: "2026-06-07T08:00:00-0300"
-title: "Cómo Mantenerse Trabajando Remotamente con un Buen Sueldo en"
-description: "Cómo Mantenerse Trabajando Remotamente con un Buen Sueldo en Tecnología: Enfoque en JavaScript……"
-publishDate: "2026-06-07T08:00:00-0300"
+timestamp: "2024-06-09T08:00:00-0300"
+title: "C Mo Mantenerse Trabajando Remotamente Con Un Buen Sueldo En Tecnolog A Enfoque En Javascript "
+description: "Cómo Mantenerse Trabajando Remotamente con un Buen Sueldo en Tecnología: Enfoque en JavaScript…"
+publishDate: "2024-06-09T08:00:00-0300"
 author:
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"

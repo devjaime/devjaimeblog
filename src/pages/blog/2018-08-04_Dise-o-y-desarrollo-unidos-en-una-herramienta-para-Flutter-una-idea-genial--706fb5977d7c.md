@@ -2,10 +2,10 @@
 filename: "2018-08-04_Dise-o-y-desarrollo-unidos-en-una-herramienta-para-Flutter-una-idea-genial--706fb5977d7c"
 layout: "../../layouts/BlogLayout.astro"
 
-timestamp: "2026-06-07T08:00:00-0300"
-title: "Diseño y desarrollo unidos en una herramienta para Flutter u"
-description: "Diseño y desarrollo unidos en una herramienta para Flutter una idea genial! ==========================================================================="
-publishDate: "2026-06-07T08:00:00-0300"
+timestamp: "2018-08-04T08:00:00-0300"
+title: "Dise O Y Desarrollo Unidos En Una Herramienta Para Flutter Una Idea Genial "
+description: "Diseño y desarrollo unidos en una herramienta para Flutter una idea genial!"
+publishDate: "2018-08-04T08:00:00-0300"
 author:
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"

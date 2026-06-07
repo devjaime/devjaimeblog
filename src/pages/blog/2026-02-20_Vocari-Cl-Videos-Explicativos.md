@@ -2,10 +2,10 @@
 filename: "2026-02-20_Vocari-Cl-Videos-Explicativos"
 layout: "../../layouts/BlogLayout.astro"
 
-timestamp: "2026-06-07T08:00:00-0300"
-title: "Comprar tu Informe Vocacional en 4 Pasos"
-description: "Comprar tu Informe Vocacional en 4 Pasos"
-publishDate: "2026-06-07T08:00:00-0300"
+timestamp: "2026-02-20T08:00:00-0300"
+title: "Vocari Cl Videos Explicativos"
+description: "*¿Te gustaría ver una demo personalizada de Vocari.cl para tu colegio? Contáctanos en hola@vocari.cl*"
+publishDate: "2026-02-20T08:00:00-0300"
 author:
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"
@@ -15,74 +15,6 @@ category: "Blog"
 draft: false
 time: 15
 featured: false
----
-
-
-### 🎬 Video 2: Flujo de Compra de Informes
-
-**Comprar tu Informe Vocacional en 4 Pasos**
-
-Un video corto y directo que muestra el proceso de compra de un informe profesional.
-
-<video controls style="width: 100%; max-width: 100%; border-radius: 1rem; margin: 2rem 0;">
-  <source src="/videos/Video2Compra.mp4" type="video/mp4">
-  Tu navegador no soporta el elemento de video.
-</video>
-
-**Lo que verás:**
-- Paso 1: Realiza el test vocacional (gratis)
-- Paso 2: Elige tu informe (Esencial $10.990 / Premium $14.990)
-- Paso 3: Pago seguro con PayPal
-- Paso 4: Recibe tu informe por email
-
----
-
-### 🎬 Video 3: Flujo de Orientación
-
-**Tu Primera Sesión de Orientación con IA**
-
-Muestra cómo funciona el sistema de orientación vocacional asistido por inteligencia artificial.
-
-<video controls style="width: 100%; max-width: 100%; border-radius: 1rem; margin: 2rem 0;">
-  <source src="/videos/Video3Orientacion.mp4" type="video/mp4">
-  Tu navegador no soporta el elemento de video.
-</video>
-
-**Lo que verás:**
-- Test RIASEC (60 preguntas, ~10 minutos)
-- Tu perfil vocacional instantáneo
-- Carreras recomendadas con datos MINEDUC
-- Chat con asistente de IA
-- Revisión con orientador humano
-
----
-
-### 🎬 Video 4: Asistencia con Inteligencia Artificial
-
-**Conoce tu Asistente de Orientación IA**
-
-Demostración aprofundida de las capacidades de IA en Vocari.cl.
-
-<video controls style="width: 100%; max-width: 100%; border-radius: 1rem; margin: 2rem 0;">
-  <source src="/videos/Video4AsistenciaIA.mp4" type="video/mp4">
-  Tu navegador no soporta el elemento de video.
-</video>
-
-**Lo que verás:**
-- Análisis de perfil con IA
-- Recomendaciones personalizadas
-- Chat interactivo (preguntas sobre carreras)
-- Generación automática de informes
-- Derivación inteligente a orientadores humanos
-
----
-
-### 🚀 ¿Quieres probar Vocari.cl?
-
-- Prueba el test vocacional gratis en [vocari.cl](https://vocari.cl)
-- Explora las carreras con datos reales del MINEDUC
-- Descubre tu perfil RIASEC
-
 ---
 
 *¿Te gustaría ver una demo personalizada de Vocari.cl para tu colegio? Contáctanos en hola@vocari.cl*

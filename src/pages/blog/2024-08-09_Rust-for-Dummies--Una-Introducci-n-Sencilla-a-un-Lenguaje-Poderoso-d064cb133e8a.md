@@ -2,10 +2,10 @@
 filename: "2024-08-09_Rust-for-Dummies--Una-Introducci-n-Sencilla-a-un-Lenguaje-Poderoso-d064cb133e8a"
 layout: "../../layouts/BlogLayout.astro"
 
-timestamp: "2026-06-07T08:00:00-0300"
-title: "Rust for Dummies: Una Introducción Sencilla a un Lenguaje Po"
-description: "Rust for Dummies: Una Introducción Sencilla a un Lenguaje Poderoso =================================================================="
-publishDate: "2026-06-07T08:00:00-0300"
+timestamp: "2024-08-09T08:00:00-0300"
+title: "Rust For Dummies Una Introducci N Sencilla A Un Lenguaje Poderoso"
+description: "Rust for Dummies: Una Introducción Sencilla a un Lenguaje Poderoso"
+publishDate: "2024-08-09T08:00:00-0300"
 author:
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"

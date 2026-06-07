@@ -2,10 +2,10 @@
 filename: "2022-05-29_Visual-Studio-Code-para-el-desarrollo-de-flutter-256dbd13b453"
 layout: "../../layouts/BlogLayout.astro"
 
-timestamp: "2026-06-07T08:00:00-0300"
-title: "Visual Studio Code para el desarrollo de flutter ==========="
-description: "Visual Studio Code para el desarrollo de flutter ================================================"
-publishDate: "2026-06-07T08:00:00-0300"
+timestamp: "2022-05-29T08:00:00-0300"
+title: "Visual Studio Code Para El Desarrollo De Flutter"
+description: "Visual Studio Code para el desarrollo de flutter"
+publishDate: "2022-05-29T08:00:00-0300"
 author:
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"

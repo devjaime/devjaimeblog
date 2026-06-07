@@ -2,10 +2,10 @@
 filename: "2026-03-22_gpt-54-mini-nano-agents-economicos"
 layout: "../../layouts/BlogLayout.astro"
 
-timestamp: "2026-06-07T08:00:00-0300"
-title: "Junto con mini/nano, OpenAI anunció "Skills": flujos de trab"
-description: "Junto con mini/nano, OpenAI anunció "Skills": flujos de trabajo reutilizables y compartibles que ChatGPT puede aplicar automáticamente."
-publishDate: "2026-06-07T08:00:00-0300"
+timestamp: "2026-03-22T08:00:00-0300"
+title: "Gpt 54 Mini Nano Agents Economicos"
+description: "Si la infraestructura RAG ha sido un obstáculo para usted, esto cambia las cosas."
+publishDate: "2026-03-22T08:00:00-0300"
 author:
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"
@@ -15,41 +15,6 @@ category: "Blog"
 draft: false
 time: 15
 featured: false
----
-
-
-# ESTA SEMANA EN IA
-
-## Habilidades de OpenAI = Flujos de trabajo de agentes reutilizables
-
-Junto con mini/nano, OpenAI anunció **"Skills"**: flujos de trabajo reutilizables y compartibles que ChatGPT puede aplicar automáticamente.
-
-Piensa en esto: plantillas para patrones de agentes comunes que puedes agrupar y compartir. Esto demuestra la fuerte apuesta de OpenAI por los agentes como interfaz.
-
----
-
-## 12,5 millones de dólares para defender el software de código abierto del spam de IA
-
-La Fundación Linux anunció que **Anthropic, AWS, GitHub, Google, Microsoft y OpenAI** están reuniendo 12,5 millones de dólares.
-
-¿La razón? La IA está generando tantos informes de seguridad falsos que los responsables del mantenimiento del software de código abierto no dan abasto.
-
----
-
-## Google Gemini se vuelve empresarial
-
-Google integró Gemini en **Hojas de cálculo** (edición de hojas de cálculo en lenguaje natural, con un 70% de éxito en SpreadsheetBench) y **Mapas** (consultas conversacionales con navegación inmersiva en 3D).
-
-Además: Google está proporcionando agentes de IA a los **3 millones de empleados del Pentágono** para tareas no clasificadas. La IA empresarial avanza a pasos agigantados.
-
----
-
-## Antropología contra el Pentágono
-
-Anthropic está luchando contra la designación de "riesgo para la cadena de suministro" por parte del gobierno estadounidense debido al uso militar de la IA. Empleados de Google y OpenAI respaldan públicamente a Anthropic.
-
-**Este caso definirá los límites de la IA en el gobierno.** Merece la pena seguirlo de cerca.
-
 ---
 
 # HERRAMIENTA DE LA SEMANA

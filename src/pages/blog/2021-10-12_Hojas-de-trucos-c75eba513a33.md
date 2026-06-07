@@ -2,10 +2,10 @@
 filename: "2021-10-12_Hojas-de-trucos-c75eba513a33"
 layout: "../../layouts/BlogLayout.astro"
 
-timestamp: "2026-06-07T08:00:00-0300"
-title: "Hojas de trucos ==============="
-description: "Hojas de trucos ==============="
-publishDate: "2026-06-07T08:00:00-0300"
+timestamp: "2021-10-12T08:00:00-0300"
+title: "Hojas De Trucos"
+description: "Hojas de trucos"
+publishDate: "2021-10-12T08:00:00-0300"
 author:
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"

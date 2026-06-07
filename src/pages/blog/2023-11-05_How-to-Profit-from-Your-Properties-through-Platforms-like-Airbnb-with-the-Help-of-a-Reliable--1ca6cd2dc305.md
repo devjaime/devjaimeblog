@@ -2,10 +2,10 @@
 filename: "2023-11-05_How-to-Profit-from-Your-Properties-through-Platforms-like-Airbnb-with-the-Help-of-a-Reliable--1ca6cd2dc305"
 layout: "../../layouts/BlogLayout.astro"
 
-timestamp: "2026-06-07T08:00:00-0300"
-title: "How to Profit from Your Properties through Platforms like Ai"
-description: "How to Profit from Your Properties through Platforms like Airbnb with the Help of a Reliable……"
-publishDate: "2026-06-07T08:00:00-0300"
+timestamp: "2023-11-05T08:00:00-0300"
+title: "How To Profit From Your Properties Through Platforms Like Airbnb With The Help Of A Reliable "
+description: "How to Profit from Your Properties through Platforms like Airbnb with the Help of a Reliable…"
+publishDate: "2023-11-05T08:00:00-0300"
 author:
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"

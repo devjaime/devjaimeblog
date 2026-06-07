@@ -2,10 +2,10 @@
 filename: "2023-11-05_Custom-E-commerce-Development-and-Scalability--Building-Your-Unique-Online-Store-8c242b2b6b9d"
 layout: "../../layouts/BlogLayout.astro"
 
-timestamp: "2026-06-07T08:00:00-0300"
-title: "Custom E-commerce Development and Scalability: Building Your"
-description: "Custom E-commerce Development and Scalability: Building Your Unique Online Store…"
-publishDate: "2026-06-07T08:00:00-0300"
+timestamp: "2023-11-05T08:00:00-0300"
+title: "Custom E Commerce Development And Scalability Building Your Unique Online Store"
+description: "Custom E-commerce Development and Scalability: Building Your Unique Online Store"
+publishDate: "2023-11-05T08:00:00-0300"
 author:
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"

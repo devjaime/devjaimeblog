@@ -2,10 +2,10 @@
 filename: "2024-12-29_Metaprompting-con-O1--Optimizando-Rutinas-Basadas-en-LLMs-ba41a6e3b55e"
 layout: "../../layouts/BlogLayout.astro"
 
-timestamp: "2026-06-07T08:00:00-0300"
-title: "Metaprompting con O1: Optimizando Rutinas Basadas en LLMs =="
-description: "Metaprompting con O1: Optimizando Rutinas Basadas en LLMs ========================================================="
-publishDate: "2026-06-07T08:00:00-0300"
+timestamp: "2024-12-29T08:00:00-0300"
+title: "Metaprompting Con O1 Optimizando Rutinas Basadas En Llms"
+description: "Metaprompting con O1: Optimizando Rutinas Basadas en LLMs"
+publishDate: "2024-12-29T08:00:00-0300"
 author:
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"

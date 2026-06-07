@@ -2,10 +2,10 @@
 filename: "2022-08-15_Pruebas-A-B-vs-Canary-Release-vs-Despliegue-Azul-Verde-9f12904f9aa0"
 layout: "../../layouts/BlogLayout.astro"
 
-timestamp: "2026-06-07T08:00:00-0300"
-title: "Pruebas A/B vs Canary Release vs Despliegue Azul Verde ====="
-description: "Pruebas A/B vs Canary Release vs Despliegue Azul Verde ======================================================"
-publishDate: "2026-06-07T08:00:00-0300"
+timestamp: "2022-08-15T08:00:00-0300"
+title: "Pruebas A B Vs Canary Release Vs Despliegue Azul Verde"
+description: "Pruebas A/B vs Canary Release vs Despliegue Azul Verde"
+publishDate: "2022-08-15T08:00:00-0300"
 author:
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"

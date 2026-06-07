@@ -2,10 +2,10 @@
 filename: "2022-04-11_Certificaciones-gratuitas-a2bdc684ac61"
 layout: "../../layouts/BlogLayout.astro"
 
-timestamp: "2026-06-07T08:00:00-0300"
-title: "Certificaciones gratuitas ========================="
-description: "Certificaciones gratuitas ========================="
-publishDate: "2026-06-07T08:00:00-0300"
+timestamp: "2022-04-11T08:00:00-0300"
+title: "Certificaciones Gratuitas"
+description: "Certificaciones gratuitas"
+publishDate: "2022-04-11T08:00:00-0300"
 author:
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"

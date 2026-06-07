@@ -2,10 +2,10 @@
 filename: "2024-09-23_Mejorando-la-B-squeda-Sem-ntica-con-Faiss--Pinecone-y-LangChain--Un-Caso-Real-con-Twitter-d656afb87e7b"
 layout: "../../layouts/BlogLayout.astro"
 
-timestamp: "2026-06-07T08:00:00-0300"
-title: "Mejorando la Búsqueda Semántica con Faiss, Pinecone y LangCh"
-description: "Mejorando la Búsqueda Semántica con Faiss, Pinecone y LangChain: Un Caso Real con Twitter…"
-publishDate: "2026-06-07T08:00:00-0300"
+timestamp: "2024-09-23T08:00:00-0300"
+title: "Mejorando La B Squeda Sem Ntica Con Faiss Pinecone Y Langchain Un Caso Real Con Twitter"
+description: "Mejorando la Búsqueda Semántica con Faiss, Pinecone y LangChain: Un Caso Real con Twitter"
+publishDate: "2024-09-23T08:00:00-0300"
 author:
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"

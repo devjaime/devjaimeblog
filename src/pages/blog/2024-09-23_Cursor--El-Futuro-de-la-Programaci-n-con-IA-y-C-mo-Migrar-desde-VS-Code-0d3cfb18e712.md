@@ -2,10 +2,10 @@
 filename: "2024-09-23_Cursor--El-Futuro-de-la-Programaci-n-con-IA-y-C-mo-Migrar-desde-VS-Code-0d3cfb18e712"
 layout: "../../layouts/BlogLayout.astro"
 
-timestamp: "2026-06-07T08:00:00-0300"
-title: "Cursor: El Futuro de la Programación con IA y Cómo Migrar de"
-description: "Cursor: El Futuro de la Programación con IA y Cómo Migrar desde VS Code ======================================================================="
-publishDate: "2026-06-07T08:00:00-0300"
+timestamp: "2024-09-23T08:00:00-0300"
+title: "Cursor El Futuro De La Programaci N Con Ia Y C Mo Migrar Desde Vs Code"
+description: "Cursor: El Futuro de la Programación con IA y Cómo Migrar desde VS Code"
+publishDate: "2024-09-23T08:00:00-0300"
 author:
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"

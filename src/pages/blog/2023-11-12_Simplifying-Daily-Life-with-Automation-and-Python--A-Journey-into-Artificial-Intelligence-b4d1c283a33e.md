@@ -2,10 +2,10 @@
 filename: "2023-11-12_Simplifying-Daily-Life-with-Automation-and-Python--A-Journey-into-Artificial-Intelligence-b4d1c283a33e"
 layout: "../../layouts/BlogLayout.astro"
 
-timestamp: "2026-06-07T08:00:00-0300"
-title: "Simplifying Daily Life with Automation and Python: A Journey"
-description: "Simplifying Daily Life with Automation and Python: A Journey into Artificial Intelligence…"
-publishDate: "2026-06-07T08:00:00-0300"
+timestamp: "2023-11-12T08:00:00-0300"
+title: "Simplifying Daily Life With Automation And Python A Journey Into Artificial Intelligence"
+description: "Simplifying Daily Life with Automation and Python: A Journey into Artificial Intelligence"
+publishDate: "2023-11-12T08:00:00-0300"
 author:
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"

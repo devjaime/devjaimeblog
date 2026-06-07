@@ -2,10 +2,10 @@
 filename: "2021-03-21_D-a-1--instalaci-n-y-configuraci-n-de-Flutter-ea8bbc44e060"
 layout: "../../layouts/BlogLayout.astro"
 
-timestamp: "2026-06-07T08:00:00-0300"
-title: "Día 1: instalación y configuración de Flutter =============="
-description: "Día 1: instalación y configuración de Flutter ============================================="
-publishDate: "2026-06-07T08:00:00-0300"
+timestamp: "2021-03-21T08:00:00-0300"
+title: "D A 1 Instalaci N Y Configuraci N De Flutter"
+description: "Día 1: instalación y configuración de Flutter"
+publishDate: "2021-03-21T08:00:00-0300"
 author:
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"

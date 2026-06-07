@@ -2,10 +2,10 @@
 filename: "2024-06-23_Integraci-n-de-Golang-con-la-API-de-ChatGPT-4cefdc0d6a62"
 layout: "../../layouts/BlogLayout.astro"
 
-timestamp: "2026-06-07T08:00:00-0300"
-title: "Integración de Golang con la API de ChatGPT ================"
-description: "Integración de Golang con la API de ChatGPT ==========================================="
-publishDate: "2026-06-07T08:00:00-0300"
+timestamp: "2024-06-23T08:00:00-0300"
+title: "Integraci N De Golang Con La Api De Chatgpt"
+description: "Integración de Golang con la API de ChatGPT"
+publishDate: "2024-06-23T08:00:00-0300"
 author:
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"

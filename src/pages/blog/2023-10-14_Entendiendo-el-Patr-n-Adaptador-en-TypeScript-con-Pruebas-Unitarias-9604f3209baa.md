@@ -2,10 +2,10 @@
 filename: "2023-10-14_Entendiendo-el-Patr-n-Adaptador-en-TypeScript-con-Pruebas-Unitarias-9604f3209baa"
 layout: "../../layouts/BlogLayout.astro"
 
-timestamp: "2026-06-07T08:00:00-0300"
-title: "Entendiendo el Patrón Adaptador en TypeScript con Pruebas Un"
-description: "Entendiendo el Patrón Adaptador en TypeScript con Pruebas Unitarias ==================================================================="
-publishDate: "2026-06-07T08:00:00-0300"
+timestamp: "2023-10-14T08:00:00-0300"
+title: "Entendiendo El Patr N Adaptador En Typescript Con Pruebas Unitarias"
+description: "Entendiendo el Patrón Adaptador en TypeScript con Pruebas Unitarias"
+publishDate: "2023-10-14T08:00:00-0300"
 author:
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"

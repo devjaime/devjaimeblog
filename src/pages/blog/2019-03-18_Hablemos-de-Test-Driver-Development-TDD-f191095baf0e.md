@@ -2,10 +2,10 @@
 filename: "2019-03-18_Hablemos-de-Test-Driver-Development-TDD-f191095baf0e"
 layout: "../../layouts/BlogLayout.astro"
 
-timestamp: "2026-06-07T08:00:00-0300"
-title: "Hablemos de Test Driver Development TDD ===================="
-description: "Hablemos de Test Driver Development TDD ======================================="
-publishDate: "2026-06-07T08:00:00-0300"
+timestamp: "2019-03-18T08:00:00-0300"
+title: "Hablemos De Test Driver Development Tdd"
+description: "Hablemos de Test Driver Development TDD"
+publishDate: "2019-03-18T08:00:00-0300"
 author:
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"

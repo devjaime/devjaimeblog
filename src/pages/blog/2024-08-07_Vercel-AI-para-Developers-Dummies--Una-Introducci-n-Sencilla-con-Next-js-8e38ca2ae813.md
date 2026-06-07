@@ -2,10 +2,10 @@
 filename: "2024-08-07_Vercel-AI-para-Developers-Dummies--Una-Introducci-n-Sencilla-con-Next-js-8e38ca2ae813"
 layout: "../../layouts/BlogLayout.astro"
 
-timestamp: "2026-06-07T08:00:00-0300"
-title: "Vercel AI para Developers Dummies: Una Introducción Sencilla"
-description: "Vercel AI para Developers Dummies: Una Introducción Sencilla con Next.js ========================================================================"
-publishDate: "2026-06-07T08:00:00-0300"
+timestamp: "2024-08-07T08:00:00-0300"
+title: "Vercel Ai Para Developers Dummies Una Introducci N Sencilla Con Next Js"
+description: "Vercel AI para Developers Dummies: Una Introducción Sencilla con Next.js"
+publishDate: "2024-08-07T08:00:00-0300"
 author:
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"

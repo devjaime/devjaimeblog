@@ -2,10 +2,10 @@
 filename: "2026-04-05-radar-oportunidades"
 layout: "../../layouts/BlogLayout.astro"
 
-timestamp: "2026-06-07T08:00:00-0300"
-title: "- LangChain"
-description: "- LangChain"
-publishDate: "2026-06-07T08:00:00-0300"
+timestamp: "2026-04-05T08:00:00-0300"
+title: "2026 04 05 Radar Oportunidades"
+description: "*🤖 Generado automáticamente | 2026-04-05 09:00:04*"
+publishDate: "2026-04-05T08:00:00-0300"
 author:
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"
@@ -15,64 +15,6 @@ category: "Blog"
 draft: false
 time: 15
 featured: false
----
-
-
-## 📰 Noticias Relevantes Detectadas
-
-- LangChain
-
-### Detalle de Títulos
-
-```
-"AI OR LangChain OR openai OR LLM OR startup" - Google News
-Google News
-Opinion | A journalist who uses AI? The internet was not pleased. - The Washington Post
-AI vs. idealology - Denver Gazette
-American-Made Challenges: Perovskite Startup Prize - Department of Energy (.gov)
-Weekend vote: What are your feelings about 'Artificial Intelligence' (AI)? - Violinist.com
-I’m Worried About the Helpless AI Disruptors of the Future - Gizmodo
-What should you be teaching your kids right now to prepare them for an AI-scrambled job market? - Vox
-I quit tech, bought 22 acres, and didn't look at my computer for years — until AI brought me back - Business Insider
-We Asked A.I. to Build Us a Video Game. The Result Was Strange. - Slate
-Poilievre on AI - inFocus with David Coletto
-AI boldface lied to me about the Golden ticket! - The Trek
-Gemma 4 and what makes an open model succeed - Interconnects AI
-The Human Element Is The Real AI Revolution - Forbes
-'Silent killers': How AI start-ups are trying to solve one of the retail industry's biggest problems - CNBC
-```
-
----
-
-## 🎯 Oportunidades para Ja
-
-Conceptos detectados que hacen match con proyectos:
-
-### LangChain
-- Revisar integración con proyectos existentes
-- Evaluar como feature para **Vocari.cl**
-- Considerar para **Orienta-AI**
-
----
-
-## 📊 Análisis de Mercado
-
-### Tendencias observadas:
-
-- "AI OR LangChain OR openai OR LLM OR startup" - Google News
-- Google News
-- Opinion | A journalist who uses AI? The internet was not pleased. - The Washington Post
-- AI vs. idealology - Denver Gazette
-- American-Made Challenges: Perovskite Startup Prize - Department of Energy (.gov)
-
----
-
-## ⚡ Próximos Pasos Recomendados
-
-1. Investigar más sobre los conceptos detectados
-2. Evaluar viabilidad técnica para proyectos existentes
-3. Priorizar según impacto y esfuerzo
-
 ---
 
 *🤖 Generado automáticamente | 2026-04-05 09:00:04*

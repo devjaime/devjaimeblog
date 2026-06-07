@@ -2,10 +2,10 @@
 filename: "2023-04-11_Ruta-de-aprendizaje-para-las-certificaciones-GCP-5cf74c463589"
 layout: "../../layouts/BlogLayout.astro"
 
-timestamp: "2026-06-07T08:00:00-0300"
-title: "Ruta de aprendizaje para las certificaciones GCP ==========="
-description: "Ruta de aprendizaje para las certificaciones GCP ================================================"
-publishDate: "2026-06-07T08:00:00-0300"
+timestamp: "2023-04-11T08:00:00-0300"
+title: "Ruta De Aprendizaje Para Las Certificaciones Gcp"
+description: "Ruta de aprendizaje para las certificaciones GCP"
+publishDate: "2023-04-11T08:00:00-0300"
 author:
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"

@@ -2,10 +2,10 @@
 filename: "2023-03-17_Que-es-Lens-Kubernetes-d1822b55e132"
 layout: "../../layouts/BlogLayout.astro"
 
-timestamp: "2026-06-07T08:00:00-0300"
-title: "Que es Lens Kubernetes ======================"
-description: "Que es Lens Kubernetes ======================"
-publishDate: "2026-06-07T08:00:00-0300"
+timestamp: "2023-03-17T08:00:00-0300"
+title: "Que Es Lens Kubernetes"
+description: "Que es Lens Kubernetes"
+publishDate: "2023-03-17T08:00:00-0300"
 author:
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"

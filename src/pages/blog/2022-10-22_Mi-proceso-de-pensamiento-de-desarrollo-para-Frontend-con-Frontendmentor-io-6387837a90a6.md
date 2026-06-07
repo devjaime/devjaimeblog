@@ -2,10 +2,10 @@
 filename: "2022-10-22_Mi-proceso-de-pensamiento-de-desarrollo-para-Frontend-con-Frontendmentor-io-6387837a90a6"
 layout: "../../layouts/BlogLayout.astro"
 
-timestamp: "2026-06-07T08:00:00-0300"
-title: "Mi proceso de pensamiento de desarrollo para Frontend con Fr"
-description: "Mi proceso de pensamiento de desarrollo para Frontend con Frontendmentor.io ==========================================================================="
-publishDate: "2026-06-07T08:00:00-0300"
+timestamp: "2022-10-22T08:00:00-0300"
+title: "Mi Proceso De Pensamiento De Desarrollo Para Frontend Con Frontendmentor Io"
+description: "Mi proceso de pensamiento de desarrollo para Frontend con Frontendmentor.io"
+publishDate: "2022-10-22T08:00:00-0300"
 author:
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"

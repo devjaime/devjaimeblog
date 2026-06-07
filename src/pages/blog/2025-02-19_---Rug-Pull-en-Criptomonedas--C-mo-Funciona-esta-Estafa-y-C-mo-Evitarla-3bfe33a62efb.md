@@ -2,10 +2,10 @@
 filename: "2025-02-19_---Rug-Pull-en-Criptomonedas--C-mo-Funciona-esta-Estafa-y-C-mo-Evitarla-3bfe33a62efb"
 layout: "../../layouts/BlogLayout.astro"
 
-timestamp: "2026-06-07T08:00:00-0300"
-title: "🚨 Rug Pull en Criptomonedas: Cómo Funciona esta Estafa y Cóm"
-description: "🚨 Rug Pull en Criptomonedas: Cómo Funciona esta Estafa y Cómo Evitarla ======================================================================="
-publishDate: "2026-06-07T08:00:00-0300"
+timestamp: "2025-02-19T08:00:00-0300"
+title: " Rug Pull En Criptomonedas C Mo Funciona Esta Estafa Y C Mo Evitarla"
+description: "🚨 Rug Pull en Criptomonedas: Cómo Funciona esta Estafa y Cómo Evitarla"
+publishDate: "2025-02-19T08:00:00-0300"
 author:
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"

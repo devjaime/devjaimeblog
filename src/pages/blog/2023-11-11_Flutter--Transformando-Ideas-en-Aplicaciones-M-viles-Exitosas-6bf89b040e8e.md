@@ -2,10 +2,10 @@
 filename: "2023-11-11_Flutter--Transformando-Ideas-en-Aplicaciones-M-viles-Exitosas-6bf89b040e8e"
 layout: "../../layouts/BlogLayout.astro"
 
-timestamp: "2026-06-07T08:00:00-0300"
-title: "Flutter: Transformando Ideas en Aplicaciones Móviles Exitosa"
-description: "Flutter: Transformando Ideas en Aplicaciones Móviles Exitosas ============================================================="
-publishDate: "2026-06-07T08:00:00-0300"
+timestamp: "2023-11-11T08:00:00-0300"
+title: "Flutter Transformando Ideas En Aplicaciones M Viles Exitosas"
+description: "Flutter: Transformando Ideas en Aplicaciones Móviles Exitosas"
+publishDate: "2023-11-11T08:00:00-0300"
 author:
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"

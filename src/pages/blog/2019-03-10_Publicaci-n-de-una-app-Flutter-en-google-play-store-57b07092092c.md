@@ -2,10 +2,10 @@
 filename: "2019-03-10_Publicaci-n-de-una-app-Flutter-en-google-play-store-57b07092092c"
 layout: "../../layouts/BlogLayout.astro"
 
-timestamp: "2026-06-07T08:00:00-0300"
-title: "Publicación de una app Flutter en google play store ========"
-description: "Publicación de una app Flutter en google play store ==================================================="
-publishDate: "2026-06-07T08:00:00-0300"
+timestamp: "2019-03-10T08:00:00-0300"
+title: "Publicaci N De Una App Flutter En Google Play Store"
+description: "Publicación de una app Flutter en google play store"
+publishDate: "2019-03-10T08:00:00-0300"
 author:
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"

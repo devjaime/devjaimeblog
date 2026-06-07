@@ -2,10 +2,10 @@
 filename: "2023-09-18_Explorando-JSONB-en-PostgreSQL--Almacenamiento-y-Consultas-Flexibles-6c1a98d2162f"
 layout: "../../layouts/BlogLayout.astro"
 
-timestamp: "2026-06-07T08:00:00-0300"
-title: "Explorando JSONB en PostgreSQL: Almacenamiento y Consultas F"
-description: "Explorando JSONB en PostgreSQL: Almacenamiento y Consultas Flexibles ===================================================================="
-publishDate: "2026-06-07T08:00:00-0300"
+timestamp: "2023-09-18T08:00:00-0300"
+title: "Explorando Jsonb En Postgresql Almacenamiento Y Consultas Flexibles"
+description: "Explorando JSONB en PostgreSQL: Almacenamiento y Consultas Flexibles"
+publishDate: "2023-09-18T08:00:00-0300"
 author:
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"

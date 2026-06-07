@@ -2,10 +2,10 @@
 filename: "2023-12-16_-Qu--son-las-Incrustaciones-de-Vectores-en-IA-y-LLM--5e4a4bce454e"
 layout: "../../layouts/BlogLayout.astro"
 
-timestamp: "2026-06-07T08:00:00-0300"
-title: "¿Qué son las Incrustaciones de Vectores en IA y LLM? ======="
-description: "¿Qué son las Incrustaciones de Vectores en IA y LLM? ===================================================="
-publishDate: "2026-06-07T08:00:00-0300"
+timestamp: "2023-12-16T08:00:00-0300"
+title: " Qu Son Las Incrustaciones De Vectores En Ia Y Llm "
+description: "¿Qué son las Incrustaciones de Vectores en IA y LLM?"
+publishDate: "2023-12-16T08:00:00-0300"
 author:
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"

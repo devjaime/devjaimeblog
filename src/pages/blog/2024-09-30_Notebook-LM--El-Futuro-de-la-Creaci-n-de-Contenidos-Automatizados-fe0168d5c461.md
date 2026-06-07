@@ -2,10 +2,10 @@
 filename: "2024-09-30_Notebook-LM--El-Futuro-de-la-Creaci-n-de-Contenidos-Automatizados-fe0168d5c461"
 layout: "../../layouts/BlogLayout.astro"
 
-timestamp: "2026-06-07T08:00:00-0300"
-title: "Notebook LM: El Futuro de la Creación de Contenidos Automati"
-description: "Notebook LM: El Futuro de la Creación de Contenidos Automatizados ================================================================="
-publishDate: "2026-06-07T08:00:00-0300"
+timestamp: "2024-09-30T08:00:00-0300"
+title: "Notebook Lm El Futuro De La Creaci N De Contenidos Automatizados"
+description: "Notebook LM: El Futuro de la Creación de Contenidos Automatizados"
+publishDate: "2024-09-30T08:00:00-0300"
 author:
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"

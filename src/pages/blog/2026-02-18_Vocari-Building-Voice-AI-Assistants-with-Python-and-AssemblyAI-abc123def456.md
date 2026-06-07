@@ -2,10 +2,10 @@
 filename: "2026-02-18_Vocari-Building-Voice-AI-Assistants-with-Python-and-AssemblyAI-abc123def456"
 layout: "../../layouts/BlogLayout.astro"
 
-timestamp: "2026-06-07T08:00:00-0300"
-title: "Vocari: Building Voice AI Assistants with Python and Assembl"
-description: "Vocari: Building Voice AI Assistants with Python and AssemblyAI ==============================================================="
-publishDate: "2026-06-07T08:00:00-0300"
+timestamp: "2026-02-18T08:00:00-0300"
+title: "Vocari Building Voice Ai Assistants With Python And Assemblyai"
+description: "Vocari: Building Voice AI Assistants with Python and AssemblyAI"
+publishDate: "2026-02-18T08:00:00-0300"
 author:
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"

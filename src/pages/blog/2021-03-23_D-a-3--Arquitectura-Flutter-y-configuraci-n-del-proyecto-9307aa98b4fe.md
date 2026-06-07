@@ -2,10 +2,10 @@
 filename: "2021-03-23_D-a-3--Arquitectura-Flutter-y-configuraci-n-del-proyecto-9307aa98b4fe"
 layout: "../../layouts/BlogLayout.astro"
 
-timestamp: "2026-06-07T08:00:00-0300"
-title: "Día 3: Arquitectura Flutter y configuración del proyecto ==="
-description: "Día 3: Arquitectura Flutter y configuración del proyecto ========================================================"
-publishDate: "2026-06-07T08:00:00-0300"
+timestamp: "2021-03-23T08:00:00-0300"
+title: "D A 3 Arquitectura Flutter Y Configuraci N Del Proyecto"
+description: "Día 3: Arquitectura Flutter y configuración del proyecto"
+publishDate: "2021-03-23T08:00:00-0300"
 author:
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"

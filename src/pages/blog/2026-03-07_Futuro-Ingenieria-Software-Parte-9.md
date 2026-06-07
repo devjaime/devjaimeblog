@@ -2,10 +2,10 @@
 filename: "2026-03-07_Futuro-Ingenieria-Software-Parte-9"
 layout: "../../layouts/BlogLayout.astro"
 
-timestamp: "2026-06-07T08:00:00-0300"
-title: "¿Cuál de estas estrategias vas a aplicar primero?"
-description: "¿Cuál de estas estrategias vas a aplicar primero?"
-publishDate: "2026-06-07T08:00:00-0300"
+timestamp: "2026-03-07T08:00:00-0300"
+title: "Futuro Ingenieria Software Parte 9"
+description: "*¿Cuál de estas estrategias vas a aplicar primero?*"
+publishDate: "2026-03-07T08:00:00-0300"
 author:
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"

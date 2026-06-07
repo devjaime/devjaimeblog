@@ -2,10 +2,10 @@
 filename: "2021-03-27_kubernetes--para-inexpertos--introducci-n-9b28fe51dfe"
 layout: "../../layouts/BlogLayout.astro"
 
-timestamp: "2026-06-07T08:00:00-0300"
-title: "kubernetes para inexpertos— introducción ==================="
-description: "kubernetes para inexpertos— introducción ========================================"
-publishDate: "2026-06-07T08:00:00-0300"
+timestamp: "2021-03-27T08:00:00-0300"
+title: "Kubernetes Para Inexpertos Introducci N 9B28Fe51Dfe"
+description: "kubernetes para inexpertos— introducción"
+publishDate: "2021-03-27T08:00:00-0300"
 author:
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"

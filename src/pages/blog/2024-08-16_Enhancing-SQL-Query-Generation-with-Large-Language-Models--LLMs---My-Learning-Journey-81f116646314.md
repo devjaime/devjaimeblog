@@ -2,10 +2,10 @@
 filename: "2024-08-16_Enhancing-SQL-Query-Generation-with-Large-Language-Models--LLMs---My-Learning-Journey-81f116646314"
 layout: "../../layouts/BlogLayout.astro"
 
-timestamp: "2026-06-07T08:00:00-0300"
-title: "Enhancing SQL Query Generation with Large Language Models (L"
-description: "Enhancing SQL Query Generation with Large Language Models (LLMs): My Learning Journey…"
-publishDate: "2026-06-07T08:00:00-0300"
+timestamp: "2024-08-16T08:00:00-0300"
+title: "Enhancing Sql Query Generation With Large Language Models Llms My Learning Journey"
+description: "Enhancing SQL Query Generation with Large Language Models (LLMs): My Learning Journey"
+publishDate: "2024-08-16T08:00:00-0300"
 author:
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"

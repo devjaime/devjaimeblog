@@ -2,10 +2,10 @@
 filename: "2018-11-07_Creando-una-biblioteca-simple-usando-CLI-angular-7-y-desplegando-en-azure-d8c9d66668bd"
 layout: "../../layouts/BlogLayout.astro"
 
-timestamp: "2026-06-07T08:00:00-0300"
-title: "Creando una biblioteca simple usando CLI angular 7 y despleg"
-description: "Creando una biblioteca simple usando CLI angular 7 y desplegando en azure ========================================================================="
-publishDate: "2026-06-07T08:00:00-0300"
+timestamp: "2018-11-07T08:00:00-0300"
+title: "Creando Una Biblioteca Simple Usando Cli Angular 7 Y Desplegando En Azure"
+description: "Creando una biblioteca simple usando CLI angular 7 y desplegando en azure"
+publishDate: "2018-11-07T08:00:00-0300"
 author:
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"

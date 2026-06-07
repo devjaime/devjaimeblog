@@ -2,10 +2,10 @@
 filename: "2023-10-07_Utilizando-Query-Builder-y-Query-Runner-en-NestJS-para-una-Interacci-n-Eficiente-con-Bases-de-Datos-953fa226955b"
 layout: "../../layouts/BlogLayout.astro"
 
-timestamp: "2026-06-07T08:00:00-0300"
-title: "Utilizando Query Builder y Query Runner en NestJS para una I"
-description: "Utilizando Query Builder y Query Runner en NestJS para una Interacción Eficiente con Bases de Datos…"
-publishDate: "2026-06-07T08:00:00-0300"
+timestamp: "2023-10-07T08:00:00-0300"
+title: "Utilizando Query Builder Y Query Runner En Nestjs Para Una Interacci N Eficiente Con Bases De Datos"
+description: "Utilizando Query Builder y Query Runner en NestJS para una Interacción Eficiente con Bases de Datos"
+publishDate: "2023-10-07T08:00:00-0300"
 author:
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"

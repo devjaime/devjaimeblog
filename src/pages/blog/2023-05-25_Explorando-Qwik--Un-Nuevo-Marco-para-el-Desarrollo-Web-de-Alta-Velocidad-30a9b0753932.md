@@ -2,10 +2,10 @@
 filename: "2023-05-25_Explorando-Qwik--Un-Nuevo-Marco-para-el-Desarrollo-Web-de-Alta-Velocidad-30a9b0753932"
 layout: "../../layouts/BlogLayout.astro"
 
-timestamp: "2026-06-07T08:00:00-0300"
-title: "Explorando Qwik: Un Nuevo Marco para el Desarrollo Web de Al"
-description: "Explorando Qwik: Un Nuevo Marco para el Desarrollo Web de Alta Velocidad ========================================================================"
-publishDate: "2026-06-07T08:00:00-0300"
+timestamp: "2023-05-25T08:00:00-0300"
+title: "Explorando Qwik Un Nuevo Marco Para El Desarrollo Web De Alta Velocidad"
+description: "Explorando Qwik: Un Nuevo Marco para el Desarrollo Web de Alta Velocidad"
+publishDate: "2023-05-25T08:00:00-0300"
 author:
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"

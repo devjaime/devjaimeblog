@@ -2,10 +2,10 @@
 filename: "2026-02-18_HITL-in-AI-The-Power-of-Human-in-the-Loop-Machine-Learning-def456ghi789"
 layout: "../../layouts/BlogLayout.astro"
 
-timestamp: "2026-06-07T08:00:00-0300"
-title: "HITL in AI: The Power of Human-in-the-Loop Machine Learning "
-description: "HITL in AI: The Power of Human-in-the-Loop Machine Learning ==========================================================="
-publishDate: "2026-06-07T08:00:00-0300"
+timestamp: "2026-02-18T08:00:00-0300"
+title: "Hitl In Ai The Power Of Human In The Loop Machine Learning Def456Ghi789"
+description: "HITL in AI: The Power of Human-in-the-Loop Machine Learning"
+publishDate: "2026-02-18T08:00:00-0300"
 author:
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"

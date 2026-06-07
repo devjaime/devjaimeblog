@@ -2,10 +2,10 @@
 filename: "2022-04-25_Que-es-Vite-y-como-funciona-m-s-rapido-que-webpack-132f45efa4e4"
 layout: "../../layouts/BlogLayout.astro"
 
-timestamp: "2026-06-07T08:00:00-0300"
-title: "Que es Vite y como funciona más rapido que webpack ========="
-description: "Que es Vite y como funciona más rapido que webpack =================================================="
-publishDate: "2026-06-07T08:00:00-0300"
+timestamp: "2022-04-25T08:00:00-0300"
+title: "Que Es Vite Y Como Funciona M S Rapido Que Webpack"
+description: "Que es Vite y como funciona más rapido que webpack"
+publishDate: "2022-04-25T08:00:00-0300"
 author:
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"

@@ -2,10 +2,10 @@
 filename: "2022-04-15_C-mo-configuro-mi-entorno-de-desarrollo-en-macOS--2022--963b61495275"
 layout: "../../layouts/BlogLayout.astro"
 
-timestamp: "2026-06-07T08:00:00-0300"
-title: "Cómo configuro mi entorno de desarrollo en macOS (2022) ===="
-description: "Cómo configuro mi entorno de desarrollo en macOS (2022) ======================================================="
-publishDate: "2026-06-07T08:00:00-0300"
+timestamp: "2022-04-15T08:00:00-0300"
+title: "C Mo Configuro Mi Entorno De Desarrollo En Macos 2022 "
+description: "Cómo configuro mi entorno de desarrollo en macOS (2022)"
+publishDate: "2022-04-15T08:00:00-0300"
 author:
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"

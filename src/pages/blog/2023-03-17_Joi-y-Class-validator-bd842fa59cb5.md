@@ -2,10 +2,10 @@
 filename: "2023-03-17_Joi-y-Class-validator-bd842fa59cb5"
 layout: "../../layouts/BlogLayout.astro"
 
-timestamp: "2026-06-07T08:00:00-0300"
-title: "Joi y Class-validator ====================="
-description: "Joi y Class-validator ====================="
-publishDate: "2026-06-07T08:00:00-0300"
+timestamp: "2023-03-17T08:00:00-0300"
+title: "Joi Y Class Validator"
+description: "Joi y Class-validator"
+publishDate: "2023-03-17T08:00:00-0300"
 author:
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"

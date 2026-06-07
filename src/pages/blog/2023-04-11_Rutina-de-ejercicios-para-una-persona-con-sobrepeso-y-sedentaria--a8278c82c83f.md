@@ -2,10 +2,10 @@
 filename: "2023-04-11_Rutina-de-ejercicios-para-una-persona-con-sobrepeso-y-sedentaria--a8278c82c83f"
 layout: "../../layouts/BlogLayout.astro"
 
-timestamp: "2026-06-07T08:00:00-0300"
-title: "Rutina de ejercicios para una persona con sobrepeso y sedent"
-description: "Rutina de ejercicios para una persona con sobrepeso y sedentaria: ================================================================="
-publishDate: "2026-06-07T08:00:00-0300"
+timestamp: "2023-04-11T08:00:00-0300"
+title: "Rutina De Ejercicios Para Una Persona Con Sobrepeso Y Sedentaria "
+description: "Rutina de ejercicios para una persona con sobrepeso y sedentaria:"
+publishDate: "2023-04-11T08:00:00-0300"
 author:
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"

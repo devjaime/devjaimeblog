@@ -2,10 +2,10 @@
 filename: "2019-09-06_MicroFrontEnd-4eecf1498cd1"
 layout: "../../layouts/BlogLayout.astro"
 
-timestamp: "2026-06-07T08:00:00-0300"
-title: "MicroFrontEnd ============="
-description: "MicroFrontEnd ============="
-publishDate: "2026-06-07T08:00:00-0300"
+timestamp: "2019-09-06T08:00:00-0300"
+title: "Microfrontend"
+description: "MicroFrontEnd"
+publishDate: "2019-09-06T08:00:00-0300"
 author:
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"

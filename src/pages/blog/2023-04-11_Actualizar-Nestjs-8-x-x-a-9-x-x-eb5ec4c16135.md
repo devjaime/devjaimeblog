@@ -2,10 +2,10 @@
 filename: "2023-04-11_Actualizar-Nestjs-8-x-x-a-9-x-x-eb5ec4c16135"
 layout: "../../layouts/BlogLayout.astro"
 
-timestamp: "2026-06-07T08:00:00-0300"
-title: "Actualizar Nestjs 8.x.x a 9.x.x ============================"
-description: "Actualizar Nestjs 8.x.x a 9.x.x ==============================="
-publishDate: "2026-06-07T08:00:00-0300"
+timestamp: "2023-04-11T08:00:00-0300"
+title: "Actualizar Nestjs 8 X X A 9 X X"
+description: "Actualizar Nestjs 8.x.x a 9.x.x"
+publishDate: "2023-04-11T08:00:00-0300"
 author:
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"

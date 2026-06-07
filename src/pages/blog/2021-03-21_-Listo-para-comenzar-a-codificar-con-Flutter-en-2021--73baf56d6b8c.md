@@ -2,10 +2,10 @@
 filename: "2021-03-21_-Listo-para-comenzar-a-codificar-con-Flutter-en-2021--73baf56d6b8c"
 layout: "../../layouts/BlogLayout.astro"
 
-timestamp: "2026-06-07T08:00:00-0300"
-title: "¿Listo para comenzar a codificar con Flutter en 2021? ======"
-description: "¿Listo para comenzar a codificar con Flutter en 2021? ====================================================="
-publishDate: "2026-06-07T08:00:00-0300"
+timestamp: "2021-03-21T08:00:00-0300"
+title: " Listo Para Comenzar A Codificar Con Flutter En 2021 "
+description: "¿Listo para comenzar a codificar con Flutter en 2021?"
+publishDate: "2021-03-21T08:00:00-0300"
 author:
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"

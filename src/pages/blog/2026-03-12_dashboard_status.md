@@ -2,10 +2,10 @@
 filename: "2026-03-12_dashboard_status"
 layout: "../../layouts/BlogLayout.astro"
 
-timestamp: "2026-06-07T08:00:00-0300"
-title: "Análisis generado automáticamente el 2026-03-12"
-description: "Análisis generado automáticamente el 2026-03-12"
-publishDate: "2026-06-07T08:00:00-0300"
+timestamp: "2026-03-12T08:00:00-0300"
+title: "Dashboard Status"
+description: "*Análisis generado automáticamente el 2026-03-12*"
+publishDate: "2026-03-12T08:00:00-0300"
 author:
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"

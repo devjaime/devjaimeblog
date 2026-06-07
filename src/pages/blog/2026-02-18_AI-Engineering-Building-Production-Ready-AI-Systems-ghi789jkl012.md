@@ -2,10 +2,10 @@
 filename: "2026-02-18_AI-Engineering-Building-Production-Ready-AI-Systems-ghi789jkl012"
 layout: "../../layouts/BlogLayout.astro"
 
-timestamp: "2026-06-07T08:00:00-0300"
-title: "AI Engineering: Building Production-Ready AI Systems ======="
-description: "AI Engineering: Building Production-Ready AI Systems ====================================================="
-publishDate: "2026-06-07T08:00:00-0300"
+timestamp: "2026-02-18T08:00:00-0300"
+title: "Ai Engineering Building Production Ready Ai Systems Ghi789Jkl012"
+description: "AI Engineering: Building Production-Ready AI Systems"
+publishDate: "2026-02-18T08:00:00-0300"
 author:
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"

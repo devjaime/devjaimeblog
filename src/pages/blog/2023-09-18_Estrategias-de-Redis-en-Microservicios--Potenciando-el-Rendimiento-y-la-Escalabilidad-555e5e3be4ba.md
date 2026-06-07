@@ -2,10 +2,10 @@
 filename: "2023-09-18_Estrategias-de-Redis-en-Microservicios--Potenciando-el-Rendimiento-y-la-Escalabilidad-555e5e3be4ba"
 layout: "../../layouts/BlogLayout.astro"
 
-timestamp: "2026-06-07T08:00:00-0300"
-title: "Estrategias de Redis en Microservicios: Potenciando el Rendi"
-description: "Estrategias de Redis en Microservicios: Potenciando el Rendimiento y la Escalabilidad…"
-publishDate: "2026-06-07T08:00:00-0300"
+timestamp: "2023-09-18T08:00:00-0300"
+title: "Estrategias De Redis En Microservicios Potenciando El Rendimiento Y La Escalabilidad"
+description: "Estrategias de Redis en Microservicios: Potenciando el Rendimiento y la Escalabilidad"
+publishDate: "2023-09-18T08:00:00-0300"
 author:
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"

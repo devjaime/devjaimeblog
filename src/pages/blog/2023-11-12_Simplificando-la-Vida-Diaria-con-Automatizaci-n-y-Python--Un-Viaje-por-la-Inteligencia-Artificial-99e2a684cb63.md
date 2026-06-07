@@ -2,10 +2,10 @@
 filename: "2023-11-12_Simplificando-la-Vida-Diaria-con-Automatizaci-n-y-Python--Un-Viaje-por-la-Inteligencia-Artificial-99e2a684cb63"
 layout: "../../layouts/BlogLayout.astro"
 
-timestamp: "2026-06-07T08:00:00-0300"
-title: "Simplificando la Vida Diaria con Automatización y Python: Un"
-description: "Simplificando la Vida Diaria con Automatización y Python: Un Viaje por la Inteligencia Artificial…"
-publishDate: "2026-06-07T08:00:00-0300"
+timestamp: "2023-11-12T08:00:00-0300"
+title: "Simplificando La Vida Diaria Con Automatizaci N Y Python Un Viaje Por La Inteligencia Artificial"
+description: "Simplificando la Vida Diaria con Automatización y Python: Un Viaje por la Inteligencia Artificial"
+publishDate: "2023-11-12T08:00:00-0300"
 author:
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"

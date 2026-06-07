@@ -2,10 +2,10 @@
 filename: "2019-03-26_Xamarin-Essentials-un-d-a-cada-sensor-398f864e225a"
 layout: "../../layouts/BlogLayout.astro"
 
-timestamp: "2026-06-07T08:00:00-0300"
-title: "Xamarin Essentials un día cada sensor ======================"
-description: "Xamarin Essentials un día cada sensor ====================================="
-publishDate: "2026-06-07T08:00:00-0300"
+timestamp: "2019-03-26T08:00:00-0300"
+title: "Xamarin Essentials Un D A Cada Sensor"
+description: "Xamarin Essentials un día cada sensor"
+publishDate: "2019-03-26T08:00:00-0300"
 author:
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"

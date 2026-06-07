@@ -2,10 +2,10 @@
 filename: "2022-04-15_Desarrollo-de-API-Restful-con-Python--Django-y-Django-Rest-Framework-e6f019dbe177"
 layout: "../../layouts/BlogLayout.astro"
 
-timestamp: "2026-06-07T08:00:00-0300"
-title: "Desarrollo de API Restful con Python, Django y Django Rest F"
-description: "Desarrollo de API Restful con Python, Django y Django Rest Framework ===================================================================="
-publishDate: "2026-06-07T08:00:00-0300"
+timestamp: "2022-04-15T08:00:00-0300"
+title: "Desarrollo De Api Restful Con Python Django Y Django Rest Framework"
+description: "Desarrollo de API Restful con Python, Django y Django Rest Framework"
+publishDate: "2022-04-15T08:00:00-0300"
 author:
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"

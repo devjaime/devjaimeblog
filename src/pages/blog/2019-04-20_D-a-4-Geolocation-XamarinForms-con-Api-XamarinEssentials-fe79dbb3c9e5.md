@@ -2,10 +2,10 @@
 filename: "2019-04-20_D-a-4-Geolocation-XamarinForms-con-Api-XamarinEssentials-fe79dbb3c9e5"
 layout: "../../layouts/BlogLayout.astro"
 
-timestamp: "2026-06-07T08:00:00-0300"
-title: "Día 4 Geolocation XamarinForms con Api XamarinEssentials ==="
-description: "Día 4 Geolocation XamarinForms con Api XamarinEssentials ========================================================"
-publishDate: "2026-06-07T08:00:00-0300"
+timestamp: "2019-04-20T08:00:00-0300"
+title: "D A 4 Geolocation Xamarinforms Con Api Xamarinessentials"
+description: "Día 4 Geolocation XamarinForms con Api XamarinEssentials"
+publishDate: "2019-04-20T08:00:00-0300"
 author:
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"

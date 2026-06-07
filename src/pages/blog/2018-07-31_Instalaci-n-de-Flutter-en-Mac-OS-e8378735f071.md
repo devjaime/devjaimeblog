@@ -2,10 +2,10 @@
 filename: "2018-07-31_Instalaci-n-de-Flutter-en-Mac-OS-e8378735f071"
 layout: "../../layouts/BlogLayout.astro"
 
-timestamp: "2026-06-07T08:00:00-0300"
-title: "Instalación de Flutter en Mac OS ==========================="
-description: "Instalación de Flutter en Mac OS ================================"
-publishDate: "2026-06-07T08:00:00-0300"
+timestamp: "2018-07-31T08:00:00-0300"
+title: "Instalaci N De Flutter En Mac Os"
+description: "Instalación de Flutter en Mac OS"
+publishDate: "2018-07-31T08:00:00-0300"
 author:
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"

@@ -2,10 +2,10 @@
 filename: "2022-04-21_Microservicios-de-Python-con-gRPC-3ff25126b6eb"
 layout: "../../layouts/BlogLayout.astro"
 
-timestamp: "2026-06-07T08:00:00-0300"
-title: "Microservicios de Python con gRPC =========================="
-description: "Microservicios de Python con gRPC ================================="
-publishDate: "2026-06-07T08:00:00-0300"
+timestamp: "2022-04-21T08:00:00-0300"
+title: "Microservicios De Python Con Grpc"
+description: "Microservicios de Python con gRPC"
+publishDate: "2022-04-21T08:00:00-0300"
 author:
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"

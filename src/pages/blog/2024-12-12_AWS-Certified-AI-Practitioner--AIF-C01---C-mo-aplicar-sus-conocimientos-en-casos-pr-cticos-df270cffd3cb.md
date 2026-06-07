@@ -2,10 +2,10 @@
 filename: "2024-12-12_AWS-Certified-AI-Practitioner--AIF-C01---C-mo-aplicar-sus-conocimientos-en-casos-pr-cticos-df270cffd3cb"
 layout: "../../layouts/BlogLayout.astro"
 
-timestamp: "2026-06-07T08:00:00-0300"
-title: "AWS Certified AI Practitioner (AIF-C01): Cómo aplicar sus co"
-description: "AWS Certified AI Practitioner (AIF-C01): Cómo aplicar sus conocimientos en casos prácticos…"
-publishDate: "2026-06-07T08:00:00-0300"
+timestamp: "2024-12-12T08:00:00-0300"
+title: "Aws Certified Ai Practitioner Aif C01 C Mo Aplicar Sus Conocimientos En Casos Pr Cticos"
+description: "AWS Certified AI Practitioner (AIF-C01): Cómo aplicar sus conocimientos en casos prácticos"
+publishDate: "2024-12-12T08:00:00-0300"
 author:
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"

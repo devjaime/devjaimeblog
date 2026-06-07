@@ -2,10 +2,10 @@
 filename: "2021-03-22_D-a-2--Lenguaje-Dart-2b3ac415015f"
 layout: "../../layouts/BlogLayout.astro"
 
-timestamp: "2026-06-07T08:00:00-0300"
-title: "Día 2: Lenguaje Dart ===================="
-description: "Día 2: Lenguaje Dart ===================="
-publishDate: "2026-06-07T08:00:00-0300"
+timestamp: "2021-03-22T08:00:00-0300"
+title: "D A 2 Lenguaje Dart"
+description: "Día 2: Lenguaje Dart"
+publishDate: "2021-03-22T08:00:00-0300"
 author:
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"

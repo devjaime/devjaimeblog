@@ -2,10 +2,10 @@
 filename: "2024-08-08_RAG-for-Dummies--Una-Gu-a-Sencilla-para-Entender-la-Generaci-n-Aumentada-por-Recuperaci-n-294b71a28e15"
 layout: "../../layouts/BlogLayout.astro"
 
-timestamp: "2026-06-07T08:00:00-0300"
-title: "RAG for Dummies: Una Guía Sencilla para Entender la Generaci"
-description: "RAG for Dummies: Una Guía Sencilla para Entender la Generación Aumentada por Recuperación…"
-publishDate: "2026-06-07T08:00:00-0300"
+timestamp: "2024-08-08T08:00:00-0300"
+title: "Rag For Dummies Una Gu A Sencilla Para Entender La Generaci N Aumentada Por Recuperaci N"
+description: "RAG for Dummies: Una Guía Sencilla para Entender la Generación Aumentada por Recuperación"
+publishDate: "2024-08-08T08:00:00-0300"
 author:
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"

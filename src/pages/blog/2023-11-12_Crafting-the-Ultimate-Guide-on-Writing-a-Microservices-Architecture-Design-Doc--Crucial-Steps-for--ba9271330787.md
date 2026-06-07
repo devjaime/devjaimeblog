@@ -2,10 +2,10 @@
 filename: "2023-11-12_Crafting-the-Ultimate-Guide-on-Writing-a-Microservices-Architecture-Design-Doc--Crucial-Steps-for--ba9271330787"
 layout: "../../layouts/BlogLayout.astro"
 
-timestamp: "2026-06-07T08:00:00-0300"
-title: "Crafting the Ultimate Guide on Writing a Microservices Archi"
-description: "Crafting the Ultimate Guide on Writing a Microservices Architecture Design Doc: Crucial Steps for……"
-publishDate: "2026-06-07T08:00:00-0300"
+timestamp: "2023-11-12T08:00:00-0300"
+title: "Crafting The Ultimate Guide On Writing A Microservices Architecture Design Doc Crucial Steps For "
+description: "Crafting the Ultimate Guide on Writing a Microservices Architecture Design Doc: Crucial Steps for…"
+publishDate: "2023-11-12T08:00:00-0300"
 author:
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"
