@@ -1,4 +1,5 @@
 ---
+filename: "Enhancing-SQL-Query-Generation-with-Large-Language-Models-LLMs_My-Learning-Journey"
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2024-08-16T08:00:00-0300'

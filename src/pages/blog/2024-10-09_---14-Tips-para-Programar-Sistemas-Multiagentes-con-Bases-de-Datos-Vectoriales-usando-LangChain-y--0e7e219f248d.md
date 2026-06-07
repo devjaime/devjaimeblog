@@ -1,4 +1,5 @@
 ---
+filename: "_14-Tips-para-Programar-Sistemas-Multiagentes-con-Bases-de-Datos-Vectoriales-usando-LangChain-y"
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2024-10-09T08:00:00-0300'

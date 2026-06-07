@@ -1,4 +1,5 @@
 ---
+filename: "LangChain_Qu-es-mejor-Function-Calling-o-ReAct-Un-An-lisis-Comparativo"
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2024-09-23T08:00:00-0300'

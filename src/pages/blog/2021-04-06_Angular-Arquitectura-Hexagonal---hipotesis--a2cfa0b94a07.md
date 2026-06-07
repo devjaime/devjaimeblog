@@ -1,4 +1,5 @@
 ---
+filename: "Angular-Arquitectura-Hexagonal_hipotesis"
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2021-04-06T08:00:00-0300'

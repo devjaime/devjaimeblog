@@ -1,4 +1,5 @@
 ---
+filename: "_Rug-Pull-en-Criptomonedas-C-mo-Funciona-esta-Estafa-y-C-mo-Evitarla"
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2025-02-19T08:00:00-0300'

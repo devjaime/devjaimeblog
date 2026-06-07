@@ -1,4 +1,5 @@
 ---
+filename: "AWS-Certified-AI-Practitioner-AIF-C01_C-mo-aplicar-sus-conocimientos-en-casos-pr-cticos"
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2024-12-12T08:00:00-0300'
