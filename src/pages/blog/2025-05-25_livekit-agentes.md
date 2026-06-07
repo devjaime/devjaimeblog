@@ -1,6 +1,20 @@
-
 ---
-description: "LiveKit es una plataforma moderna y de código abierto que permite integrar video, audio y datos en tiempo real en tus aplicaciones. En este blog, te llevaré…"
+filename: "2025-05-25_livekit-agentes"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-07T08:00:00-0300"
+title: "2025-05-25_livekit-agentes"
+description: "El repositorio oficial de LiveKit Agents proporciona una base para construir agentes multimodales. Aquí el proceso paso a paso:"
+publishDate: "2026-06-07T08:00:00-0300"
+author:
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
+tags:
+  - "Blog"
+category: "Blog"
+draft: false
+time: 15
+featured: false
 ---
 filename: "2025-05-25_livekit-agentes"
 layout: "../../layouts/BlogLayout.astro"
