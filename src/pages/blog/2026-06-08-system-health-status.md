@@ -2,10 +2,10 @@
 filename: "2026-06-08-system-health-status"
 layout: "../../layouts/BlogLayout.astro"
 
-timestamp: "2026-06-08T09:00:39-04:00"
+timestamp: "2026-06-08T09:01:00-04:00"
 title: "Estatus del Sistema - 08 Jun 2026"
 description: "Reporte diario de salud del sistema: disco, RAM, CPU, caches y estado de Hermes."
-publishDate: "2026-06-08T09:00:39-04:00"
+publishDate: "2026-06-08T09:01:00-04:00"
 author: 
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"
@@ -36,13 +36,13 @@ featured: false
 ### RAM
 
 - Total: 16384.0 MB
-- Usado: 1075.1 MB (6.6%)
-- Libre: 33.4 MB
+- Usado: 884.8 MB (5.4%)
+- Libre: 15.9 MB
 
 ### CPU
 
-- Uso: 14.2%
-- Idle: 85.8%
+- Uso: 19.8%
+- Idle: 80.24%
 
 ---
 
@@ -82,4 +82,4 @@ featured: false
 
 ---
 
-_Ultima verificacion: 2026-06-08 09:00:46_
+_Ultima verificacion: 2026-06-08 09:01:02_
