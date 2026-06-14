@@ -2,10 +2,10 @@
 filename: "2026-06-14-system-health-status"
 layout: "../../layouts/BlogLayout.astro"
 
-timestamp: "2026-06-14T09:00:29-04:00"
+timestamp: "2026-06-14T09:00:47-04:00"
 title: "Estatus del Sistema - 14 Jun 2026"
 description: "Reporte diario de salud del sistema: disco, RAM, CPU, caches y estado de Hermes."
-publishDate: "2026-06-14T09:00:29-04:00"
+publishDate: "2026-06-14T09:00:47-04:00"
 author: 
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"
@@ -28,10 +28,6 @@ featured: false
 
 - ⚠️ Disco principal al 94%
 
-## Acciones Tomadas
-
-- ✅ Auto-limpieza: opencode (3.2M)
-
 ## Recursos del Sistema
 
 ### Disco
@@ -44,13 +40,13 @@ featured: false
 ### RAM
 
 - Total: 16384.0 MB
-- Usado: 1117.0 MB (6.8%)
-- Libre: 17.5 MB
+- Usado: 1026.5 MB (6.3%)
+- Libre: 32.9 MB
 
 ### CPU
 
-- Uso: 20.1%
-- Idle: 79.87%
+- Uso: 50.2%
+- Idle: 49.75%
 
 ---
 
@@ -61,7 +57,6 @@ featured: false
 | go_build | 1.5G |
 | google | 1.6G |
 | homebrew | 907M |
-| opencode | 3.2M |
 | spotify | 1.9G |
 | vscode | 32K |
 
@@ -89,4 +84,4 @@ featured: false
 
 ---
 
-_Ultima verificacion: 2026-06-14 09:00:34_
+_Ultima verificacion: 2026-06-14 09:00:52_
