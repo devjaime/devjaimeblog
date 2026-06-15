@@ -55,20 +55,41 @@ const sourceUrl = generateSourceUrl(frontmatter.filename, "blog");
     })} />
   </Fragment>
   <Section class="pt-8">
-    <div class="flex flex-col gap-4 mt-8 mb-16">
+    <!-- Article header with glassmorphism -->
+    <header class="glass-card p-8 mb-12 animate-on-scroll">
       <h1
-        class="text-3xl sm:text-4xl leading-normal sm:leading-normal font-display"
+        class="text-3xl sm:text-4xl leading-normal sm:leading-normal mb-6"
+        style="font-family: 'Geist', system-ui, sans-serif; color: var(--on-surface);"
       >
         {frontmatter.title}
       </h1>
-      <div class="flex justify-between">
-        <span>{articleDate}</span>
-        <span>{frontmatter.time} min</span>
+      <div class="flex justify-between items-center text-sm" style="color: var(--on-surface-variant);">
+        <span class="label-caps">{articleDate}</span>
+        <span class="label-caps">{frontmatter.time} min read</span>
       </div>
-    </div>
-    <Prose>
-      <slot />
-    </Prose>
-    <p class="pt-8">~{GLOBAL.username}</p>
+      <!-- Gradient accent line -->
+      <div 
+        class="h-0.5 w-full mt-6"
+        style="background: linear-gradient(90deg, var(--electric-blue), var(--neural-violet), transparent);"
+      ></div>
+    </header>
+    
+    <!-- Article content -->
+    <article class="animate-on-scroll stagger-2">
+      <Prose>
+        <slot />
+      </Prose>
+    </article>
+    
+    <!-- Author signature -->
+    <footer class="pt-8 mt-8 border-t" style="border-color: var(--surface-stroke);">
+      <p class="flex items-center gap-3" style="color: var(--on-surface-variant);">
+        <span class="label-caps">~{GLOBAL.username}</span>
+        <span 
+          class="h-px flex-1 max-w-[60px]"
+          style="background: linear-gradient(90deg, var(--neural-violet), transparent);"
+        ></span>
+      </p>
+    </footer>
   </Section>
 </Layout>
