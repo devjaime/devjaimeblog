@@ -225,206 +225,169 @@ const ogImage = new URL(image, Astro.url).href;
     <!-- UFO Invasion WebGL Shader -->
     <script>
       (function() {
-        const canvas = document.getElementById('neural-shader');
+        var canvas = document.getElementById('neural-shader');
         if (!canvas) return;
 
         function syncSize() {
-          const w = canvas.clientWidth;
-          const h = canvas.clientHeight;
+          var w = canvas.clientWidth;
+          var h = canvas.clientHeight;
           if (canvas.width !== w || canvas.height !== h) {
             canvas.width = w;
             canvas.height = h;
           }
         }
-        
         if (typeof ResizeObserver !== 'undefined') {
           new ResizeObserver(syncSize).observe(canvas);
         }
         syncSize();
 
-        const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+        var gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
         if (!gl) return;
 
-        const vs = `
-          attribute vec2 a_position;
-          void main() {
-            gl_Position = vec4(a_position, 0.0, 1.0);
-          }
-        `;
+        var vs = [
+          'attribute vec2 a_position;',
+          'void main() {',
+          '  gl_Position = vec4(a_position, 0.0, 1.0);',
+          '}'
+        ].join('\n');
 
-        const fs = `
-          precision mediump float;
-          uniform float u_time;
-          uniform vec2 u_resolution;
-          uniform vec2 u_mouse;
-          
-          float hash(float n) { return fract(sin(n) * 43758.5453); }
-          float hash2(vec2 p) { return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453; }
-          
-          float noise(vec2 p) {
-            vec2 i = floor(p);
-            vec2 f = fract(p);
-            f = f * f * (3.0 - 2.0 * f);
-            return mix(
-              mix(hash2(i), hash2(i + vec2(1.0, 0.0)), f.x),
-              mix(hash2(i + vec2(0.0, 1.0)), hash2(i + vec2(1.0, 1.0)), f.x),
-              f.y
-            );
-          }
-          
-          void main() {
-            vec2 uv = gl_FragCoord.xy / u_resolution;
-            float time = u_time;
-            
-            // Space background
-            vec3 color = vec3(0.01, 0.0, 0.04);
-            
-            // Stars
-            float starVal = hash2(floor(uv * 200.0));
-            if (starVal > 0.97) {
-              float twinkle = 0.5 + 0.5 * sin(time * 3.0 + starVal * 10.0);
-              color += vec3(0.9, 0.95, 1.0) * twinkle;
-            }
-            
-            // Earth at bottom
-            vec2 earthCenter = vec2(0.5, 0.12);
-            float earthDist = length(uv - earthCenter);
-            if (earthDist < 0.15) {
-              float landNoise = noise(uv * 15.0);
-              vec3 earthBase = mix(vec3(0.1, 0.25, 0.7), vec3(0.15, 0.4, 0.25), landNoise);
-              color = mix(color, earthBase, 0.9);
-            }
-            
-            // UFO 1 - main invasion ship
-            vec2 ufo1 = vec2(0.5, mod(time * 0.08, 1.1));
-            float d1 = length(uv - ufo1);
-            float ufo1Shape = 1.0 - smoothstep(0.0, 0.015, d1 - 0.025);
-            ufo1Shape += 1.0 - smoothstep(0.0, 0.01, length((uv - ufo1 - vec2(0.0, -0.01)) * vec2(1.0, 1.5)) - 0.008);
-            if (ufo1Shape > 0.0) {
-              color += vec3(0.2, 1.0, 0.3) * ufo1Shape * (0.7 + 0.3 * sin(time * 8.0));
-            }
-            
-            // UFO beam from main ship
-            if (ufo1.y > 0.2) {
-              float beamX = abs(uv.x - ufo1.x);
-              float beamY = uv.y - ufo1.y;
-              if (beamY > 0.0 && beamY < 0.3 && beamX < 0.008) {
-                float beamPulse = 0.4 + 0.6 * sin(time * 10.0 + uv.y * 40.0);
-                color += vec3(0.4, 1.0, 0.2) * beamPulse * 0.5;
-              }
-            }
-            
-            // UFO 2 - left
-            vec2 ufo2 = vec2(0.25, mod(time * 0.06 + 0.3, 1.1));
-            float d2 = length(uv - ufo2);
-            float ufo2Shape = 1.0 - smoothstep(0.0, 0.012, d2 - 0.02);
-            ufo2Shape += 1.0 - smoothstep(0.0, 0.008, length((uv - ufo2 - vec2(0.0, -0.008)) * vec2(1.0, 1.5)) - 0.006);
-            if (ufo2Shape > 0.0) {
-              color += vec3(0.3, 0.9, 0.4) * ufo2Shape * (0.6 + 0.4 * sin(time * 6.0 + 1.0));
-            }
-            
-            // UFO 3 - right
-            vec2 ufo3 = vec2(0.75, mod(time * 0.07 + 0.6, 1.1));
-            float d3 = length(uv - ufo3);
-            float ufo3Shape = 1.0 - smoothstep(0.0, 0.012, d3 - 0.02);
-            ufo3Shape += 1.0 - smoothstep(0.0, 0.008, length((uv - ufo3 - vec2(0.0, -0.008)) * vec2(1.0, 1.5)) - 0.006);
-            if (ufo3Shape > 0.0) {
-              color += vec3(0.25, 0.85, 0.35) * ufo3Shape * (0.6 + 0.4 * sin(time * 7.0 + 2.0));
-            }
-            
-            // Scanning beams from top
-            float beam1X = abs(uv.x - 0.2 - sin(time * 1.5) * 0.05);
-            if (beam1X < 0.006 && uv.y > 0.1) {
-              float beamFade = (0.3 + 0.2 * sin(time * 6.0 + uv.y * 25.0)) * (1.0 - uv.y);
-              color += vec3(0.15, 0.9, 0.2) * beamFade;
-            }
-            
-            float beam2X = abs(uv.x - 0.5 - sin(time * 1.8 + 1.0) * 0.05);
-            if (beam2X < 0.006 && uv.y > 0.1) {
-              float beamFade = (0.3 + 0.2 * sin(time * 5.5 + uv.y * 25.0)) * (1.0 - uv.y);
-              color += vec3(0.15, 0.9, 0.2) * beamFade;
-            }
-            
-            float beam3X = abs(uv.x - 0.8 - sin(time * 1.2 + 2.0) * 0.05);
-            if (beam3X < 0.006 && uv.y > 0.1) {
-              float beamFade = (0.3 + 0.2 * sin(time * 7.0 + uv.y * 25.0)) * (1.0 - uv.y);
-              color += vec3(0.15, 0.9, 0.2) * beamFade;
-            }
-            
-            // Abduction spiral at center
-            vec2 abductCenter = vec2(0.5, 0.35);
-            float abductDist = length(uv - abductCenter);
-            if (abductDist < 0.12) {
-              float angle = atan(uv.y - abductCenter.y, uv.x - abductCenter.x);
-              float spiral = sin(angle * 5.0 + time * 4.0) * 0.5 + 0.5;
-              float pulse = 0.5 + 0.5 * sin(time * 9.0);
-              float intensity = (1.0 - abductDist / 0.12) * spiral * pulse;
-              color += vec3(0.35, 1.0, 0.15) * intensity * 0.4;
-            }
-            
-            // Mouse UFO
-            vec2 mouseUV = u_mouse;
-            float mouseDist = length(uv - mouseUV);
-            float mouseUfo = 1.0 - smoothstep(0.0, 0.015, mouseDist - 0.02);
-            mouseUfo += 1.0 - smoothstep(0.0, 0.01, length((uv - mouseUV - vec2(0.0, -0.01)) * vec2(1.0, 1.5)) - 0.008);
-            if (mouseUfo > 0.0) {
-              color += vec3(0.0, 0.7, 1.0) * mouseUfo * 0.6;
-            }
-            
-            // Vignette
-            float vignette = 1.0 - length((uv - 0.5) * 1.3);
-            color *= vignette;
-            
-            gl_FragColor = vec4(color, 1.0);
-          }
-        `;
+        var fs = [
+          'precision mediump float;',
+          'uniform float u_time;',
+          'uniform vec2 u_resolution;',
+          'uniform vec2 u_mouse;',
+          '',
+          'void main() {',
+          '  vec2 uv = gl_FragCoord.xy / u_resolution;',
+          '  float t = u_time;',
+          '',
+          '  vec3 c = vec3(0.01, 0.0, 0.04);',
+          '',
+          '  // stars',
+          '  float sx = floor(uv.x * 150.0);',
+          '  float sy = floor(uv.y * 150.0);',
+          '  float sv = fract(sin(sx * 127.1 + sy * 311.7) * 43758.5);',
+          '  if (sv > 0.97) {',
+          '    c += vec3(0.9, 0.95, 1.0) * (0.5 + 0.5 * sin(t * 3.0 + sv * 10.0));',
+          '  }',
+          '',
+          '  // earth',
+          '  vec2 ec = vec2(0.5, 0.12);',
+          '  float ed = length(uv - ec);',
+          '  if (ed < 0.15) {',
+          '    c = mix(c, vec3(0.1, 0.25, 0.7), 0.85);',
+          '  }',
+          '',
+          '  // ufo 1 center',
+          '  vec2 u1 = vec2(0.5, mod(t * 0.08, 1.1));',
+          '  float d1 = length(uv - u1);',
+          '  if (d1 < 0.04) {',
+          '    c += vec3(0.2, 1.0, 0.3) * (0.7 + 0.3 * sin(t * 8.0));',
+          '  }',
+          '',
+          '  // beam from ufo1',
+          '  if (abs(uv.x - u1.x) < 0.008 && uv.y > u1.y && uv.y < u1.y + 0.3) {',
+          '    float bp = 0.4 + 0.6 * sin(t * 10.0 + uv.y * 40.0);',
+          '    c += vec3(0.4, 1.0, 0.2) * bp * 0.5;',
+          '  }',
+          '',
+          '  // ufo 2 left',
+          '  vec2 u2 = vec2(0.25, mod(t * 0.06 + 0.3, 1.1));',
+          '  if (length(uv - u2) < 0.03) {',
+          '    c += vec3(0.3, 0.9, 0.4) * (0.6 + 0.4 * sin(t * 6.0));',
+          '  }',
+          '',
+          '  // ufo 3 right',
+          '  vec2 u3 = vec2(0.75, mod(t * 0.07 + 0.6, 1.1));',
+          '  if (length(uv - u3) < 0.03) {',
+          '    c += vec3(0.25, 0.85, 0.35) * (0.6 + 0.4 * sin(t * 7.0));',
+          '  }',
+          '',
+          '  // scan beam 1',
+          '  float bx1 = 0.2 + sin(t * 1.5) * 0.05;',
+          '  if (abs(uv.x - bx1) < 0.006 && uv.y > 0.1) {',
+          '    c += vec3(0.15, 0.9, 0.2) * (0.3 + 0.2 * sin(t * 6.0 + uv.y * 25.0)) * (1.0 - uv.y);',
+          '  }',
+          '',
+          '  // scan beam 2',
+          '  float bx2 = 0.5 + sin(t * 1.8 + 1.0) * 0.05;',
+          '  if (abs(uv.x - bx2) < 0.006 && uv.y > 0.1) {',
+          '    c += vec3(0.15, 0.9, 0.2) * (0.3 + 0.2 * sin(t * 5.5 + uv.y * 25.0)) * (1.0 - uv.y);',
+          '  }',
+          '',
+          '  // scan beam 3',
+          '  float bx3 = 0.8 + sin(t * 1.2 + 2.0) * 0.05;',
+          '  if (abs(uv.x - bx3) < 0.006 && uv.y > 0.1) {',
+          '    c += vec3(0.15, 0.9, 0.2) * (0.3 + 0.2 * sin(t * 7.0 + uv.y * 25.0)) * (1.0 - uv.y);',
+          '  }',
+          '',
+          '  // abduction spiral',
+          '  vec2 ac = vec2(0.5, 0.35);',
+          '  float ad = length(uv - ac);',
+          '  if (ad < 0.12) {',
+          '    float ang = atan(uv.y - ac.y, uv.x - ac.x);',
+          '    float sp = sin(ang * 5.0 + t * 4.0) * 0.5 + 0.5;',
+          '    float pu = 0.5 + 0.5 * sin(t * 9.0);',
+          '    c += vec3(0.35, 1.0, 0.15) * (1.0 - ad / 0.12) * sp * pu * 0.4;',
+          '  }',
+          '',
+          '  // mouse ufo',
+          '  vec2 mu = u_mouse;',
+          '  if (length(uv - mu) < 0.04) {',
+          '    c += vec3(0.0, 0.7, 1.0) * 0.6;',
+          '  }',
+          '',
+          '  // vignette',
+          '  c *= 1.0 - length((uv - 0.5) * 1.3);',
+          '',
+          '  gl_FragColor = vec4(c, 1.0);',
+          '}'
+        ].join('\n');
 
-        function createShader(type, source) {
-          const shader = gl.createShader(type);
-          gl.shaderSource(shader, source);
-          gl.compileShader(shader);
-          if (!gl.getShaderParameter(shader, gl.COMPILE_STATUS)) {
-            console.error('Shader compile error:', gl.getShaderInfoLog(shader));
-            gl.deleteShader(shader);
+        function mkShader(type, src) {
+          var s = gl.createShader(type);
+          gl.shaderSource(s, src);
+          gl.compileShader(s);
+          if (!gl.getShaderParameter(s, gl.COMPILE_STATUS)) {
+            console.error('GLSL compile:', gl.getShaderInfoLog(s));
+            gl.deleteShader(s);
             return null;
           }
-          return shader;
+          return s;
         }
 
-        const vertexShader = createShader(gl.VERTEX_SHADER, vs);
-        const fragmentShader = createShader(gl.FRAGMENT_SHADER, fs);
-        
-        if (!vertexShader || !fragmentShader) return;
+        var vshader = mkShader(gl.VERTEX_SHADER, vs);
+        var fshader = mkShader(gl.FRAGMENT_SHADER, fs);
+        if (!vshader || !fshader) return;
 
-        const prog = gl.createProgram();
-        gl.attachShader(prog, vertexShader);
-        gl.attachShader(prog, fragmentShader);
+        var prog = gl.createProgram();
+        gl.attachShader(prog, vshader);
+        gl.attachShader(prog, fshader);
         gl.linkProgram(prog);
-        
         if (!gl.getProgramParameter(prog, gl.LINK_STATUS)) {
-          console.error('Program link error:', gl.getProgramInfoLog(prog));
+          console.error('GLSL link:', gl.getProgramInfoLog(prog));
           return;
         }
-        
         gl.useProgram(prog);
 
-        const buf = gl.createBuffer();
+        var buf = gl.createBuffer();
         gl.bindBuffer(gl.ARRAY_BUFFER, buf);
         gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1, 1,-1, -1,1, 1,1]), gl.STATIC_DRAW);
-        const pos = gl.getAttribLocation(prog, 'a_position');
+        var pos = gl.getAttribLocation(prog, 'a_position');
         gl.enableVertexAttribArray(pos);
         gl.vertexAttribPointer(pos, 2, gl.FLOAT, false, 0, 0);
 
-        const uTime = gl.getUniformLocation(prog, 'u_time');
-        const uRes = gl.getUniformLocation(prog, 'u_resolution');
-        const uMouse = gl.getUniformLocation(prog, 'u_mouse');
+        var uTime = gl.getUniformLocation(prog, 'u_time');
+        var uRes = gl.getUniformLocation(prog, 'u_resolution');
+        var uMouse = gl.getUniformLocation(prog, 'u_mouse');
 
-        let mouse = { x: canvas.width / 2, y: canvas.height / 2 };
-        window.addEventListener('mousemove', (event) => {
-          const rect = canvas.getBoundingClientRect();
-          if (rect.width && rect.height) {
-            mouse.x = (event.clientX - rect.left) * canvas.width / rect.width;
-            mouse.y = (1.0 - (event.clientY - rect.top) / rect.height) * canvas.height;
+        var mx = canvas.width / 2;
+        var my = canvas.height / 2;
+        window.addEventListener('mousemove', function(e) {
+          var r = canvas.getBoundingClientRect();
+          if (r.width && r.height) {
+            mx = (e.clientX - r.left) * canvas.width / r.width;
+            my = (1.0 - (e.clientY - r.top) / r.height) * canvas.height;
           }
         });
 
@@ -433,7 +396,7 @@ const ogImage = new URL(image, Astro.url).href;
           gl.viewport(0, 0, canvas.width, canvas.height);
           if (uTime) gl.uniform1f(uTime, t * 0.001);
           if (uRes) gl.uniform2f(uRes, canvas.width, canvas.height);
-          if (uMouse) gl.uniform2f(uMouse, mouse.x, mouse.y);
+          if (uMouse) gl.uniform2f(uMouse, mx, my);
           gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
           requestAnimationFrame(render);
         }
