@@ -33,17 +33,29 @@ import { articles } from "../../lib/list";
     <link rel="canonical" href={`${GLOBAL.rootUrl}/blog`} />
   </Fragment>
   <Section class="my-8">
+    <!-- Header section with gradient accent -->
     <div class="flex items-center gap-4 pt-8 pb-16">
-      <h1 class="font-display text-3xl sm:text-4xl leading-loose">{GLOBAL.articlesName}</h1>
+      <div class="h-px flex-1 bg-gradient-to-r from-transparent via-[var(--electric-blue)] to-transparent opacity-50"></div>
     </div>
-    <ul>
+    <h1 
+      class="text-4xl sm:text-5xl mb-4 text-center font-bold animate-on-scroll"
+      style="font-family: 'Geist', system-ui, sans-serif; color: var(--on-surface);"
+    >
+      {GLOBAL.articlesName}
+    </h1>
+    <p class="text-center mb-16 animate-on-scroll stagger-1" style="color: var(--on-surface-variant);">
+      {GLOBAL.blogShortDescription}
+    </p>
+    
+    <!-- Articles grid -->
+    <ul class="grid gap-6 md:grid-cols-2">
       {
-        articles.map((project) => (
-          <li>
+        articles.map((project, index) => (
+          <li class="animate-on-scroll" style={`animation-delay: ${index * 0.1}s;`}>
             <ArticleSnippet
               title={project.title}
               description={project.description}
-              duration={`${project.time} min`}
+              duration={`${project.time} min read`}
               url={project.filename}
               timestamp={project.timestamp}
             />
