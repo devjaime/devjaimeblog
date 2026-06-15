@@ -222,7 +222,7 @@ const ogImage = new URL(image, Astro.url).href;
       });
     </script>
 
-    <!-- Neural WebGL Shader Animation -->
+    <!-- UFO Invasion WebGL Shader -->
     <script>
       (function() {
         const canvas = document.getElementById('neural-shader');
@@ -258,30 +258,144 @@ uniform vec2 u_resolution;
 uniform vec2 u_mouse;
 varying vec2 v_texCoord;
 
+// Hash function for randomness
+float hash(float n) { return fract(sin(n) * 43758.5453123); }
+float hash2(vec2 p) { return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453123; }
+
+// Smooth noise
+float noise(vec2 p) {
+  vec2 i = floor(p);
+  vec2 f = fract(p);
+  f = f * f * (3.0 - 2.0 * f);
+  float a = hash2(i);
+  float b = hash2(i + vec2(1.0, 0.0));
+  float c = hash2(i + vec2(0.0, 1.0));
+  float d = hash2(i + vec2(1.0, 1.0));
+  return mix(mix(a, b, f.x), mix(c, d, f.x), f.y);
+}
+
+// UFO body - classic saucer shape
+float ufo(vec2 p, vec2 center, float size, float time) {
+  vec2 d = (p - center) / size;
+  // Saucer body - ellipse
+  float body = 1.0 - smoothstep(0.3, 0.35, length(d * vec2(1.0, 0.5)));
+  body += 1.0 - smoothstep(0.15, 0.2, length(d * vec2(1.0, 1.5)) - 0.1);
+  // Dome
+  float dome = 1.0 - smoothstep(0.08, 0.12, length((d - vec2(0.0, -0.05)) * vec2(1.0, 1.2)));
+  return clamp(body + dome * 0.8, 0.0, 1.0);
+}
+
+// Beam of light from UFO
+float beam(vec2 p, vec2 center, float size, float time) {
+  vec2 d = (p - center) / size;
+  float beamWidth = 0.02 + 0.01 * sin(time * 5.0);
+  float beamLength = 0.4 + 0.1 * sin(time * 3.0);
+  float beam = 1.0 - smoothstep(0.0, beamWidth, abs(d.x)) * smoothstep(0.0, beamLength, -d.y);
+  beam *= smoothstep(-0.5, -0.1, d.y);
+  return beam * (0.5 + 0.5 * sin(time * 8.0 + p.y * 20.0));
+}
+
+// Stars background
+float stars(vec2 p, float time) {
+  float s = 0.0;
+  for (float i = 1.0; i < 4.0; i++) {
+    vec2 grid = floor(p * i * 50.0);
+    float star = step(0.97, hash2(grid));
+    float twinkle = 0.5 + 0.5 * sin(time * 3.0 + hash2(grid) * 6.28);
+    s += star * twinkle / i;
+  }
+  return s;
+}
+
+// Earth circle
+float earth(vec2 p, vec2 center, float size) {
+  float d = length(p - center) / size;
+  float e = 1.0 - smoothstep(0.9, 1.0, d);
+  // Continents (simplified)
+  vec2 landP = (p - center) / size * 3.0;
+  float land = noise(landP * 2.0);
+  land = smoothstep(0.4, 0.6, land);
+  return e * (0.3 + land * 0.7);
+}
+
 void main() {
     vec2 uv = v_texCoord;
     vec2 mouse = u_mouse / u_resolution;
+    float time = u_time;
     
-    // Create a flowing neural-like background
-    float color = 0.0;
-    color += sin(uv.x * 10.0 + u_time * 0.5) * 0.5;
-    color += sin(uv.y * 8.0 + u_time * 0.3) * 0.5;
+    // Space background - deep black with blue tint
+    vec3 space = vec3(0.01, 0.0, 0.05);
     
-    // Add some noise and flow
-    vec2 flow = vec2(
-        sin(u_time * 0.2 + uv.y * 5.0),
-        cos(u_time * 0.2 + uv.x * 5.0)
-    ) * 0.1;
+    // Stars
+    float starField = stars(uv, time);
+    space += vec3(0.8, 0.9, 1.0) * starField;
     
-    uv += flow;
+    // Earth at bottom
+    vec2 earthCenter = vec2(0.5, 0.15);
+    float earthDisc = earth(uv, earthCenter, 0.25);
+    vec3 earthColor = mix(vec3(0.1, 0.3, 0.8), vec3(0.2, 0.5, 0.3), noise(uv * 10.0));
+    space = mix(space, earthColor, earthDisc);
     
-    float pulse = 0.5 + 0.5 * sin(u_time * 0.5);
-    vec3 color1 = vec3(0.05, 0.1, 0.2); // Deep Blue
-    vec3 color2 = vec3(0.1, 0.05, 0.2); // Deep Violet
-    vec3 accent = vec3(0.0, 0.5, 1.0);  // Electric Blue
+    // UFO invasion - multiple UFOs
+    vec3 ufoColor = vec3(0.2, 1.0, 0.3); // Alien green
+    vec3 beamColor = vec3(0.5, 1.0, 0.2); // Green beam
+    vec3 finalColor = space;
     
-    vec3 finalColor = mix(color1, color2, uv.y + color * 0.2);
-    finalColor += accent * (0.1 / length(uv - mouse)) * pulse; // Mouse glow
+    // Multiple UFOs at different positions
+    for (float i = 0.0; i < 12.0; i++) {
+      float seed = i * 1.234;
+      float speed = 0.1 + hash(seed) * 0.15;
+      
+      // UFO position - moving down and slightly sideways
+      float xPos = 0.1 + hash(seed + 1.0) * 0.8;
+      float yPos = mod(hash(seed + 2.0) * 0.5 + time * speed * 0.1, 1.2);
+      vec2 ufoCenter = vec2(xPos, 1.1 - yPos);
+      
+      float ufoSize = 0.03 + hash(seed + 3.0) * 0.02;
+      
+      // Draw UFO
+      float u = ufo(uv, ufoCenter, ufoSize, time);
+      if (u > 0.0) {
+        // UFO glow
+        vec3 glow = ufoColor * u * (0.8 + 0.2 * sin(time * 10.0 + i));
+        finalColor += glow;
+        
+        // Beam only for lower UFOs
+        if (yPos > 0.3) {
+          float b = beam(uv, ufoCenter, ufoSize, time + i);
+          finalColor += beamColor * b * 0.6;
+        }
+      }
+    }
+    
+    // Scanning beams from above - wider, more dramatic
+    for (float i = 0.0; i < 5.0; i++) {
+      float xPos = 0.1 + i * 0.2;
+      float scan = 0.02 * sin(time * 2.0 + i) + 0.01;
+      float beamH = 0.7 + 0.1 * sin(time + i);
+      vec2 beamCenter = vec2(xPos, 1.0);
+      float b = 1.0 - smoothstep(0.0, scan, abs(uv.x - beamCenter.x));
+      b *= smoothstep(0.0, beamH, 1.0 - uv.y);
+      b *= (0.3 + 0.2 * sin(time * 5.0 + uv.y * 30.0));
+      finalColor += vec3(0.1, 0.8, 0.2) * b * 0.4;
+    }
+    
+    // Abduction effect - swirling beam at center
+    vec2 abductPos = vec2(0.5, 0.3);
+    float abductDist = length(uv - abductPos);
+    float abduct = exp(-abductDist * 5.0) * (0.5 + 0.5 * sin(time * 10.0));
+    float spiral = sin(atan(uv.y - abductPos.y, uv.x - abductPos.x) * 6.0 + time * 5.0);
+    abduct *= spiral * 0.5 + 0.5;
+    finalColor += vec3(0.3, 1.0, 0.1) * abduct * 0.3;
+    
+    // Mouse interaction - UFO follows mouse slightly
+    vec2 mouseUV = mouse;
+    float mouseUfo = ufo(uv, mouseUV, 0.05, time);
+    finalColor += vec3(0.0, 0.8, 1.0) * mouseUfo * 0.5;
+    
+    // Vignette - darker edges
+    float vignette = 1.0 - length((uv - 0.5) * 1.2);
+    finalColor *= vignette;
     
     gl_FragColor = vec4(finalColor, 1.0);
 }`;
