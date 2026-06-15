@@ -1,21 +1,20 @@
 ---
-filename: '2026-06-15-proyecto-alfa1-plan-de-supervivencia-y-preservacion-de-identidad'
-layout: '../../layouts/BlogLayout.astro'
-timestamp: '2026-06-15T00:07:00-0300'
-title: 'Proyecto Alfa1 — Plan de Supervivencia y Preservación de Identidad'
-description: 'He creado un proyecto personal llamado Alfa1 que contempla guardar información sobre quién soy, mi historia, manuales de supervivencia para guerras nucleares, desastres apocalípticos, invasiones alienígenas, terremotos extremos y más. El objetivo: tener suficiente información almacenada para sobrevivir y dejar evidencia de mi existencia para futuras generaciones.'
-publishDate: '2026-06-15T00:07:00-0300'
+filename: "2026-06-15-proyecto-alfa1-plan-de-supervivencia-y-preservacion-de-identidad"
+layout: "../../layouts/BlogLayout.astro"
+
+timestamp: "2026-06-15T08:00:00-0300"
+title: "Proyecto Alfa1 — Plan de Supervivencia y Preservación de Identidad"
+description: "Proyecto Alfa1 — Plan de Supervivencia y Preservación de Identidad"
+publishDate: "2026-06-15T08:00:00-0300"
 author:
-  name: 'Jaime Hernandez'
-  url: 'https://devjaime.cl'
+  name: "Jaime Hernandez"
+  url: "https://devjaime.cl"
 tags:
-  - "Alfa1"
-  - "Supervivencia"
-  - "Preparación"
-  - "Plan de Emergencia"
-  - "Preservación de Identidad"
-category: 'Personal'
+  - "Blog"
+category: "Blog"
 draft: false
+time: 15
+featured: false
 ---
 
 # Proyecto Alfa1 — Plan de Supervivencia y Preservación de Identidad
