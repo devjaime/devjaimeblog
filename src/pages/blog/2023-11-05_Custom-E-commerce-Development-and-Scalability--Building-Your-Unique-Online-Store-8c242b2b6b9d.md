@@ -1,5 +1,6 @@
 ---
-filename: '2023-11-05_Custom-E-commerce-Development-and-Scalability--Building-Your-Unique-Online-Store-8c242b2b6b9d'
+
+filename: '2023-11-05-Custom-E-commerce-Development-and-Scalability--Building-Your-Unique-Online-Store-8c242b2b6b9d'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2023-11-05T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 

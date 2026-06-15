@@ -1,5 +1,6 @@
 ---
-filename: '2022-04-11_Certificaciones-gratuitas-a2bdc684ac61'
+
+filename: '2022-04-11-Certificaciones-gratuitas-a2bdc684ac61'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2022-04-11T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 Certificaciones gratuitas

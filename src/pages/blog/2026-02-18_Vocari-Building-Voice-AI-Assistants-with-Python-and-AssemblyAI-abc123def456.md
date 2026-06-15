@@ -1,5 +1,6 @@
 ---
-filename: '2026-02-18_Vocari-Building-Voice-AI-Assistants-with-Python-and-AssemblyAI-abc123def456'
+
+filename: '2026-02-18-Vocari-Building-Voice-AI-Assistants-with-Python-and-AssemblyAI-abc123def456'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2026-02-18T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 Vocari: Building Voice AI Assistants with Python and AssemblyAI

@@ -1,5 +1,5 @@
 ---
-filename:  + post_filename + 
+filename: '2026-06-12-gcp-ai-microservices-report'
 layout: "../../layouts/BlogLayout.astro"
 
 timestamp:  + now + 

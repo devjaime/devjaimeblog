@@ -1,5 +1,6 @@
 ---
-filename: '2022-05-01_Como-empezar-en-el-An-lisis-de-datos-con-Python-1bdaf79e8ccb'
+
+filename: '2022-05-01-Como-empezar-en-el-An-lisis-de-datos-con-Python-1bdaf79e8ccb'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2022-05-01T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 Como empezar en el Análisis de datos con Python

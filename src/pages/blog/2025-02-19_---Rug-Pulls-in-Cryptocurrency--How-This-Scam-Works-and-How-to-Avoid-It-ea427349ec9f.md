@@ -1,5 +1,6 @@
 ---
-filename: "_Rug-Pulls-in-Cryptocurrency-How-This-Scam-Works-and-How-to-Avoid-It"
+
+filename: "-Rug-Pulls-in-Cryptocurrency-How-This-Scam-Works-and-How-to-Avoid-It"
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2025-02-19T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 🚨 Rug Pulls in Cryptocurrency: How This Scam Works and How to Avoid It

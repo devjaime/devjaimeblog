@@ -1,5 +1,6 @@
 ---
-filename: '2024-08-28_Haystack--Construyendo-Aplicaciones-de-IA-con-Componentes-Modulares-02d1ae93a849'
+
+filename: '2024-08-28-Haystack--Construyendo-Aplicaciones-de-IA-con-Componentes-Modulares-02d1ae93a849'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2024-08-28T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 Haystack: Construyendo Aplicaciones de IA con Componentes Modulares

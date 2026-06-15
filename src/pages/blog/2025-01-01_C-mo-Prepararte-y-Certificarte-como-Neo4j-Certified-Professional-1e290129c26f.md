@@ -1,5 +1,6 @@
 ---
-filename: '2025-01-01_C-mo-Prepararte-y-Certificarte-como-Neo4j-Certified-Professional-1e290129c26f'
+
+filename: '2025-01-01-C-mo-Prepararte-y-Certificarte-como-Neo4j-Certified-Professional-1e290129c26f'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2025-01-01T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 Cómo Prepararte y Certificarte como Neo4j Certified Professional

@@ -1,5 +1,6 @@
 ---
-filename: '2025-08-03_Como-construir-agentes-efectivos-segun-Anthropic-con-ejemplos-concretos'
+
+filename: '2025-08-03-Como-construir-agentes-efectivos-segun-Anthropic-con-ejemplos-concretos'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2025-08-03T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 *Este artículo fue escrito el 3 de agosto de 2025 y refleja las mejores prácticas actuales para el desarrollo de agentes inteligentes según la metodología de Anthropic.* 

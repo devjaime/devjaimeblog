@@ -1,5 +1,6 @@
 ---
-filename: '2025-03-30_BFF-Golang-Parte3'
+
+filename: '2025-03-30-BFF-Golang-Parte3'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2025-03-30T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 Con esto, tu BFF en Go está listo para producción: documentado, seguro y desplegable en la nube 🚀
 

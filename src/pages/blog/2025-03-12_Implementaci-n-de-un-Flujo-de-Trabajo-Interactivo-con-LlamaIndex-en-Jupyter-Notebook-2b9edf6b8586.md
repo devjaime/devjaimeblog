@@ -1,5 +1,6 @@
 ---
-filename: '2025-03-12_Implementaci-n-de-un-Flujo-de-Trabajo-Interactivo-con-LlamaIndex-en-Jupyter-Notebook-2b9edf6b8586'
+
+filename: '2025-03-12-Implementaci-n-de-un-Flujo-de-Trabajo-Interactivo-con-LlamaIndex-en-Jupyter-Notebook-2b9edf6b8586'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2025-03-12T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 Implementación de un Flujo de Trabajo Interactivo con LlamaIndex en Jupyter Notebook

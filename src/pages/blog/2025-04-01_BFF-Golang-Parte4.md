@@ -1,5 +1,6 @@
 ---
-filename: '2025-04-01_BFF-Golang-Parte4'
+
+filename: '2025-04-01-BFF-Golang-Parte4'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2025-04-01T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 Sígueme en [codeIA.cl](https://codeia.cl) para más contenido práctico de arquitectura con Go y microservicios. ¿Quieres una Parte 5 enfocada en monitoreo avanzado o feature flags? ¡Te leo!
 

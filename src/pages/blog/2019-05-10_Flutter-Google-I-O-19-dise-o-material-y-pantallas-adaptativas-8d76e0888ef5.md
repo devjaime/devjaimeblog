@@ -1,5 +1,6 @@
 ---
-filename: '2019-05-10_Flutter-Google-I-O-19-dise-o-material-y-pantallas-adaptativas-8d76e0888ef5'
+
+filename: '2019-05-10-Flutter-Google-I-O-19-dise-o-material-y-pantallas-adaptativas-8d76e0888ef5'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2019-05-10T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 Flutter Google I/O’19 diseño material y pantallas adaptativas

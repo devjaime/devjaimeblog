@@ -1,5 +1,6 @@
 ---
-filename: '2024-12-19_AI-Agent-Develop--Agentes-Inteligentes-con-LangChain-y-LangGraph-3226c5971fa2'
+
+filename: '2024-12-19-AI-Agent-Develop--Agentes-Inteligentes-con-LangChain-y-LangGraph-3226c5971fa2'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2024-12-19T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 AI Agent Develop: Agentes Inteligentes con LangChain y LangGraph

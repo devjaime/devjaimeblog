@@ -1,5 +1,6 @@
 ---
-filename: '2023-11-05_What-is-Kafka-and-How-to-Implement-it-in-NestJS-8036b06701d0'
+
+filename: '2023-11-05-What-is-Kafka-and-How-to-Implement-it-in-NestJS-8036b06701d0'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2023-11-05T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 What is Kafka and How to Implement it in NestJS

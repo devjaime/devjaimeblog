@@ -1,5 +1,6 @@
 ---
-filename: '2026-04-01_humanloop-game-mcp'
+
+filename: '2026-04-01-humanloop-game-mcp'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2026-04-01T08:00:00-0300'
@@ -16,5 +17,6 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 *¿Quieres implementar esto en tu negocio? Contáctame: [hsjhernandez@gmail.com](mailto:hsjhernandez@gmail.com)*

@@ -1,5 +1,6 @@
 ---
-filename: '2026-03-30_Diario-Automatico'
+
+filename: '2026-03-30-Diario-Automatico'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2026-03-30T08:00:00-0300'
@@ -16,5 +17,6 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 *Generado automáticamente el 2026-03-30 03:30:04*

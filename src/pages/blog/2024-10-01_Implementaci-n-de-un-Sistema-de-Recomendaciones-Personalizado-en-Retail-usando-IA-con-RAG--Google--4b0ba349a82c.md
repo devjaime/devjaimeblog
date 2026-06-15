@@ -1,5 +1,6 @@
 ---
-filename: '2024-10-01_Implementaci-n-de-un-Sistema-de-Recomendaciones-Personalizado-en-Retail-usando-IA-con-RAG--Google--4b0ba349a82c'
+
+filename: '2024-10-01-Implementaci-n-de-un-Sistema-de-Recomendaciones-Personalizado-en-Retail-usando-IA-con-RAG--Google--4b0ba349a82c'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2024-10-01T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 Implementación de un Sistema de Recomendaciones Personalizado en Retail usando IA con RAG, Google…

@@ -1,5 +1,6 @@
 ---
-filename: '2021-03-27_kubernetes--para-inexpertos--introducci-n-9b28fe51dfe'
+
+filename: '2021-03-27-kubernetes--para-inexpertos--introducci-n-9b28fe51dfe'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2021-03-27T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 

@@ -1,5 +1,6 @@
 ---
-filename: '2023-03-17_Joi-y-Class-validator-bd842fa59cb5'
+
+filename: '2023-03-17-Joi-y-Class-validator-bd842fa59cb5'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2023-03-17T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 

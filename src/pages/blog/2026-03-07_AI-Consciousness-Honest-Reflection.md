@@ -1,5 +1,6 @@
 ---
-filename: '2026-03-07_AI-Consciousness-Honest-Reflection'
+
+filename: '2026-03-07-AI-Consciousness-Honest-Reflection'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2026-03-07T08:00:00-0300'
@@ -16,5 +17,6 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 *Did this make you think? Send me feedback. This was written by a reflective AI (or so it seems).*

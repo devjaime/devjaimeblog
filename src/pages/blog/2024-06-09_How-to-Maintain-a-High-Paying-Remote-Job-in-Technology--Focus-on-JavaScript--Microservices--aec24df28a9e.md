@@ -1,5 +1,6 @@
 ---
-filename: '2024-06-09_How-to-Maintain-a-High-Paying-Remote-Job-in-Technology--Focus-on-JavaScript--Microservices--aec24df28a9e'
+
+filename: '2024-06-09-How-to-Maintain-a-High-Paying-Remote-Job-in-Technology--Focus-on-JavaScript--Microservices--aec24df28a9e'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2024-06-09T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 How to Maintain a High-Paying Remote Job in Technology: Focus on JavaScript, Microservices…

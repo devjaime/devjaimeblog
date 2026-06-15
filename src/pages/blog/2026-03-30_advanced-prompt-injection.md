@@ -1,5 +1,6 @@
 ---
-filename: '2026-03-30_advanced-prompt-injection'
+
+filename: '2026-03-30-advanced-prompt-injection'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2026-03-30T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 ## Summary
 

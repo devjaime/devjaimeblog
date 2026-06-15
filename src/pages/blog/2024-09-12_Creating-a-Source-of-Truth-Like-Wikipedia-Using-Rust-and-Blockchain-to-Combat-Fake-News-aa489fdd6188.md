@@ -1,5 +1,6 @@
 ---
-filename: '2024-09-12_Creating-a-Source-of-Truth-Like-Wikipedia-Using-Rust-and-Blockchain-to-Combat-Fake-News-aa489fdd6188'
+
+filename: '2024-09-12-Creating-a-Source-of-Truth-Like-Wikipedia-Using-Rust-and-Blockchain-to-Combat-Fake-News-aa489fdd6188'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2024-09-12T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 Creating a Source of Truth Like Wikipedia Using Rust and Blockchain to Combat Fake News

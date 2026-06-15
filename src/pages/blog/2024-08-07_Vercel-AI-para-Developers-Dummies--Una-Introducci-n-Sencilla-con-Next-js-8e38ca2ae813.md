@@ -1,5 +1,6 @@
 ---
-filename: '2024-08-07_Vercel-AI-para-Developers-Dummies--Una-Introducci-n-Sencilla-con-Next-js-8e38ca2ae813'
+
+filename: '2024-08-07-Vercel-AI-para-Developers-Dummies--Una-Introducci-n-Sencilla-con-Next-js-8e38ca2ae813'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2024-08-07T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 

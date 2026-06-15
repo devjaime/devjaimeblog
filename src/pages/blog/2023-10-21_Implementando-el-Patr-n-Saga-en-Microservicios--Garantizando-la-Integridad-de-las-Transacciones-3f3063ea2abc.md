@@ -1,5 +1,6 @@
 ---
-filename: '2023-10-21_Implementando-el-Patr-n-Saga-en-Microservicios--Garantizando-la-Integridad-de-las-Transacciones-3f3063ea2abc'
+
+filename: '2023-10-21-Implementando-el-Patr-n-Saga-en-Microservicios--Garantizando-la-Integridad-de-las-Transacciones-3f3063ea2abc'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2023-10-21T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 Implementando el Patrón Saga en Microservicios: Garantizando la Integridad de las Transacciones

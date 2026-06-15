@@ -1,5 +1,6 @@
 ---
-filename: '2024-09-21_Pinecone--Un-Almac-n-de-Vectores-Optimizado-para-la-B-squeda-de-Similitudes-ea747ae4762b'
+
+filename: '2024-09-21-Pinecone--Un-Almac-n-de-Vectores-Optimizado-para-la-B-squeda-de-Similitudes-ea747ae4762b'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2024-09-21T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 Pinecone: Un Almacén de Vectores Optimizado para la Búsqueda de Similitudes

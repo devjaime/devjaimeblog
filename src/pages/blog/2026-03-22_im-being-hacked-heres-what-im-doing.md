@@ -1,5 +1,6 @@
 ---
-filename: '2026-03-22_im-being-hacked-heres-what-im-doing'
+
+filename: '2026-03-22-im-being-hacked-heres-what-im-doing'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2026-03-22T08:00:00-0300'
@@ -16,5 +17,6 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 *Last updated: March 2026*

@@ -1,5 +1,6 @@
 ---
-filename: '2026-02-27_Automatizacion-hogar-openclaw-home-assistant'
+
+filename: '2026-02-27-Automatizacion-hogar-openclaw-home-assistant'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2026-02-27T08:00:00-0300'
@@ -16,5 +17,6 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 *¿Te interesa este tema? Sígueme para más updates sobre automatización del hogar con IA.*

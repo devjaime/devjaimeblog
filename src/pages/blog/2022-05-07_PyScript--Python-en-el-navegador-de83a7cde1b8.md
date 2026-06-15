@@ -1,5 +1,6 @@
 ---
-filename: '2022-05-07_PyScript--Python-en-el-navegador-de83a7cde1b8'
+
+filename: '2022-05-07-PyScript--Python-en-el-navegador-de83a7cde1b8'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2022-05-07T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 PyScript: Python en el navegador

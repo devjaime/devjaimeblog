@@ -1,5 +1,6 @@
 ---
-filename: '2023-05-25_Explorando-Qwik--Un-Nuevo-Marco-para-el-Desarrollo-Web-de-Alta-Velocidad-30a9b0753932'
+
+filename: '2023-05-25-Explorando-Qwik--Un-Nuevo-Marco-para-el-Desarrollo-Web-de-Alta-Velocidad-30a9b0753932'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2023-05-25T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 

@@ -1,5 +1,6 @@
 ---
-filename: "_LangChain-vs-LlamaIndex_Qu-herramienta-de-IA-deber-as-usar"
+
+filename: "-LangChain-vs-LlamaIndex-Qu-herramienta-de-IA-deber-as-usar"
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2024-09-23T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 💡 LangChain vs. LlamaIndex: ¿Qué herramienta de IA deberías usar?

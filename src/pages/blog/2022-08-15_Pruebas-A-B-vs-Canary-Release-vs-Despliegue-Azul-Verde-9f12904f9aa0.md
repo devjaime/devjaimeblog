@@ -1,5 +1,6 @@
 ---
-filename: '2022-08-15_Pruebas-A-B-vs-Canary-Release-vs-Despliegue-Azul-Verde-9f12904f9aa0'
+
+filename: '2022-08-15-Pruebas-A-B-vs-Canary-Release-vs-Despliegue-Azul-Verde-9f12904f9aa0'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2022-08-15T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 Pruebas A/B vs Canary Release vs Despliegue Azul Verde

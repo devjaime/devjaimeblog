@@ -1,5 +1,6 @@
 ---
-filename: '2025-04-19_json-ai-inspector'
+
+filename: '2025-04-19-json-ai-inspector'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2025-04-19T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 ## 🚀 Dale una oportunidad
 

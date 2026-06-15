@@ -1,5 +1,6 @@
 ---
-filename: '2024-09-11_Astra-DB--La-Base-de-Datos-en-la-Nube-Basada-en-Apache-Cassandra-8d570ecc4a6c'
+
+filename: '2024-09-11-Astra-DB--La-Base-de-Datos-en-la-Nube-Basada-en-Apache-Cassandra-8d570ecc4a6c'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2024-09-11T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 Astra DB: La Base de Datos en la Nube Basada en Apache Cassandra

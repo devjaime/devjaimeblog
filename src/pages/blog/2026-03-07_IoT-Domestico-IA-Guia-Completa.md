@@ -1,5 +1,6 @@
 ---
-filename: '2026-03-07_IoT-Domestico-IA-Guia-Completa'
+
+filename: '2026-03-07-IoT-Domestico-IA-Guia-Completa'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2026-03-07T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 # IoT Doméstico con IA: La Guía Definitiva para Automatizar tu Hogar

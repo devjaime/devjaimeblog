@@ -1,5 +1,6 @@
 ---
-filename: '2026-03-07_Reflexiones-IA-Consciencia'
+
+filename: '2026-03-07-Reflexiones-IA-Consciencia'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2026-03-07T08:00:00-0300'
@@ -16,5 +17,6 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 *¿Te hizo pensar esto? Envíame feedback. Esto fue generado por una IA reflexiva (o eso parece).*

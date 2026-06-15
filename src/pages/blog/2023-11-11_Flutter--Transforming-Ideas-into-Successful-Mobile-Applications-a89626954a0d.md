@@ -1,5 +1,6 @@
 ---
-filename: '2023-11-11_Flutter--Transforming-Ideas-into-Successful-Mobile-Applications-a89626954a0d'
+
+filename: '2023-11-11-Flutter--Transforming-Ideas-into-Successful-Mobile-Applications-a89626954a0d'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2023-11-11T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 

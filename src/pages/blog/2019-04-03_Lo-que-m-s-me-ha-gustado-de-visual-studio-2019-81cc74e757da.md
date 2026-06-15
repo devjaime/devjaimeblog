@@ -1,5 +1,6 @@
 ---
-filename: '2019-04-03_Lo-que-m-s-me-ha-gustado-de-visual-studio-2019-81cc74e757da'
+
+filename: '2019-04-03-Lo-que-m-s-me-ha-gustado-de-visual-studio-2019-81cc74e757da'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2019-04-03T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 

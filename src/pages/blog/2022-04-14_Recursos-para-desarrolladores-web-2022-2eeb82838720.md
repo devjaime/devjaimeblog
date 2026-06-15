@@ -1,5 +1,6 @@
 ---
-filename: '2022-04-14_Recursos-para-desarrolladores-web-2022-2eeb82838720'
+
+filename: '2022-04-14-Recursos-para-desarrolladores-web-2022-2eeb82838720'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2022-04-14T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 

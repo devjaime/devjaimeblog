@@ -1,5 +1,6 @@
 ---
-filename: '2023-11-11_Explorando-m-s-Profundamente-en-Flutter-29596ee9bcb5'
+
+filename: '2023-11-11-Explorando-m-s-Profundamente-en-Flutter-29596ee9bcb5'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2023-11-11T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 Explorando más Profundamente en Flutter

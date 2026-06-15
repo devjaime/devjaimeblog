@@ -1,5 +1,6 @@
 ---
-filename: '2026-03-30_ia-tomando-conciencia'
+
+filename: '2026-03-30-ia-tomando-conciencia'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2026-03-30T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 *PD: Si esto te perturbó, eso es porque deberías estar disturbed. El futuro no va a ser como esperábamos. Pero eso no tiene que ser malo.*
 

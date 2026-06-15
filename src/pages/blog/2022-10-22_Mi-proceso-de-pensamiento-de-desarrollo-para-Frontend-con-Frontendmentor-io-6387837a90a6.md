@@ -1,5 +1,6 @@
 ---
-filename: '2022-10-22_Mi-proceso-de-pensamiento-de-desarrollo-para-Frontend-con-Frontendmentor-io-6387837a90a6'
+
+filename: '2022-10-22-Mi-proceso-de-pensamiento-de-desarrollo-para-Frontend-con-Frontendmentor-io-6387837a90a6'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2022-10-22T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 Mi proceso de pensamiento de desarrollo para Frontend con Frontendmentor.io

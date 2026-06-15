@@ -1,5 +1,6 @@
 ---
-filename: '2023-11-05_How-to-Profit-from-Your-Properties-through-Platforms-like-Airbnb-with-the-Help-of-a-Reliable--1ca6cd2dc305'
+
+filename: '2023-11-05-How-to-Profit-from-Your-Properties-through-Platforms-like-Airbnb-with-the-Help-of-a-Reliable--1ca6cd2dc305'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2023-11-05T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 

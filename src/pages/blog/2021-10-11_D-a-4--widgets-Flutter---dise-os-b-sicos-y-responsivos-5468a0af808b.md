@@ -1,5 +1,6 @@
 ---
-filename: "D-a-4-widgets-Flutter_dise-os-b-sicos-y-responsivos"
+
+filename: "D-a-4-widgets-Flutter-dise-os-b-sicos-y-responsivos"
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2021-10-11T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 Día 4: widgets Flutter + diseños básicos y responsivos

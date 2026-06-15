@@ -1,5 +1,6 @@
 ---
-filename: '2022-04-25_Que-es-Vite-y-como-funciona-m-s-rapido-que-webpack-132f45efa4e4'
+
+filename: '2022-04-25-Que-es-Vite-y-como-funciona-m-s-rapido-que-webpack-132f45efa4e4'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2022-04-25T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 Que es Vite y como funciona más rapido que webpack

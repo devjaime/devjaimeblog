@@ -1,5 +1,6 @@
 ---
-filename: '2024-08-10_Manejo-de-Fechas-y-Horas-en-Golang-a9770422e4da'
+
+filename: '2024-08-10-Manejo-de-Fechas-y-Horas-en-Golang-a9770422e4da'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2024-08-10T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 Manejo de Fechas y Horas en Golang

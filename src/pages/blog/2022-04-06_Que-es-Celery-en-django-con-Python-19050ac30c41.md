@@ -1,5 +1,6 @@
 ---
-filename: '2022-04-06_Que-es-Celery-en-django-con-Python-19050ac30c41'
+
+filename: '2022-04-06-Que-es-Celery-en-django-con-Python-19050ac30c41'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2022-04-06T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 

@@ -1,5 +1,6 @@
 ---
-filename: '2020-12-06_Mi-primer-API-en-Golang-9461996753dc'
+
+filename: '2020-12-06-Mi-primer-API-en-Golang-9461996753dc'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2020-12-06T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 Mi primer API en Golang

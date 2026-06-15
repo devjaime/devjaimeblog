@@ -1,5 +1,6 @@
 ---
-filename: '2023-03-17_Que-es-Lens-Kubernetes-d1822b55e132'
+
+filename: '2023-03-17-Que-es-Lens-Kubernetes-d1822b55e132'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2023-03-17T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 Que es Lens Kubernetes

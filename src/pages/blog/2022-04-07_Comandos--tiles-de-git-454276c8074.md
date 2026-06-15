@@ -1,5 +1,6 @@
 ---
-filename: '2022-04-07_Comandos--tiles-de-git-454276c8074'
+
+filename: '2022-04-07-Comandos--tiles-de-git-454276c8074'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2022-04-07T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 

@@ -1,5 +1,6 @@
 ---
-filename: '2019-04-19_D-a-3-Geocoding-XamarinForms-con-Api-XamarinEssentials-f8b8b8f37c5d'
+
+filename: '2019-04-19-D-a-3-Geocoding-XamarinForms-con-Api-XamarinEssentials-f8b8b8f37c5d'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2019-04-19T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 Día 3 Geocoding XamarinForms con Api XamarinEssentials

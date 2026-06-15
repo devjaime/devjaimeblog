@@ -1,5 +1,6 @@
 ---
-filename: '2025-04-16_ai-code-assistants'
+
+filename: '2025-04-16-ai-code-assistants'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2025-04-16T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 💬 Si te interesa implementar estas herramientas en tu flujo de trabajo, conversemos en [codeia.cl](https://codeia.cl)
 

@@ -1,5 +1,6 @@
 ---
-filename: '2025-04-12_Vectorizacion-AutoRAG'
+
+filename: '2025-04-12-Vectorizacion-AutoRAG'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2025-04-12T08:00:00-0300'
@@ -16,5 +17,6 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 ¿Quieres probar esto en tu empresa? Agenda una demo o escribe a contacto@codeia.cl 🚀

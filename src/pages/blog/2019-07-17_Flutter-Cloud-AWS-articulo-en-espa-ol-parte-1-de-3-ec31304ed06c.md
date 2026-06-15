@@ -1,5 +1,6 @@
 ---
-filename: '2019-07-17_Flutter-Cloud-AWS-articulo-en-espa-ol-parte-1-de-3-ec31304ed06c'
+
+filename: '2019-07-17-Flutter-Cloud-AWS-articulo-en-espa-ol-parte-1-de-3-ec31304ed06c'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2019-07-17T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 Flutter Cloud AWS articulo en español parte 1 de 3

@@ -1,5 +1,6 @@
 ---
-filename: '2023-11-12_Crafting-the-Ultimate-Guide-on-Writing-a-Microservices-Architecture-Design-Doc--Crucial-Steps-for--ba9271330787'
+
+filename: '2023-11-12-Crafting-the-Ultimate-Guide-on-Writing-a-Microservices-Architecture-Design-Doc--Crucial-Steps-for--ba9271330787'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2023-11-12T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 Crafting the Ultimate Guide on Writing a Microservices Architecture Design Doc: Crucial Steps for…

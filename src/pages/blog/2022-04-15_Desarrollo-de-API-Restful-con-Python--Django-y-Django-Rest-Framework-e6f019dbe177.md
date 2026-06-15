@@ -1,5 +1,6 @@
 ---
-filename: '2022-04-15_Desarrollo-de-API-Restful-con-Python--Django-y-Django-Rest-Framework-e6f019dbe177'
+
+filename: '2022-04-15-Desarrollo-de-API-Restful-con-Python--Django-y-Django-Rest-Framework-e6f019dbe177'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2022-04-15T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 

@@ -1,5 +1,6 @@
 ---
-filename: '2023-11-11_Flutter--Transformando-Ideas-en-Aplicaciones-M-viles-Exitosas-6bf89b040e8e'
+
+filename: '2023-11-11-Flutter--Transformando-Ideas-en-Aplicaciones-M-viles-Exitosas-6bf89b040e8e'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2023-11-11T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 Flutter: Transformando Ideas en Aplicaciones Móviles Exitosas

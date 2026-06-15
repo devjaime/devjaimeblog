@@ -1,5 +1,6 @@
 ---
-filename: '2025-05-18_ai-browser-agents'
+
+filename: '2025-05-18-ai-browser-agents'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2025-05-18T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 ## 🙋‍♂️ ¿Tienes dudas o ideas?
 

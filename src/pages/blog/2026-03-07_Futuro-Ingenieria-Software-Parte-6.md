@@ -1,5 +1,6 @@
 ---
-filename: '2026-03-07_Futuro-Ingenieria-Software-Parte-6'
+
+filename: '2026-03-07-Futuro-Ingenieria-Software-Parte-6'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2026-03-07T08:00:00-0300'
@@ -16,5 +17,6 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 *¿Qué opinas del futuro del dinero? Comenta.*

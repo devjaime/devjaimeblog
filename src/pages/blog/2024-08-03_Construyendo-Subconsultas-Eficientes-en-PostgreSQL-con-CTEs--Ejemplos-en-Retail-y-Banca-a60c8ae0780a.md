@@ -1,5 +1,6 @@
 ---
-filename: '2024-08-03_Construyendo-Subconsultas-Eficientes-en-PostgreSQL-con-CTEs--Ejemplos-en-Retail-y-Banca-a60c8ae0780a'
+
+filename: '2024-08-03-Construyendo-Subconsultas-Eficientes-en-PostgreSQL-con-CTEs--Ejemplos-en-Retail-y-Banca-a60c8ae0780a'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2024-08-03T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 Construyendo Subconsultas Eficientes en PostgreSQL con CTEs: Ejemplos en Retail y Banca

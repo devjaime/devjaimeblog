@@ -1,5 +1,6 @@
 ---
-filename: '2024-09-28_El-Futuro-de-la-IA--Competir-con-las-Big-Tech-y-las-Nuevas-Tendencias-58582a61f1a5'
+
+filename: '2024-09-28-El-Futuro-de-la-IA--Competir-con-las-Big-Tech-y-las-Nuevas-Tendencias-58582a61f1a5'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2024-09-28T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 El Futuro de la IA: Competir con las Big Tech y las Nuevas Tendencias

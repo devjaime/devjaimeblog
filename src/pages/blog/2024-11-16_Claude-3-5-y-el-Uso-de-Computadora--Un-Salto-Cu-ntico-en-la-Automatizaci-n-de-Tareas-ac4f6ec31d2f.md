@@ -1,5 +1,6 @@
 ---
-filename: '2024-11-16_Claude-3-5-y-el-Uso-de-Computadora--Un-Salto-Cu-ntico-en-la-Automatizaci-n-de-Tareas-ac4f6ec31d2f'
+
+filename: '2024-11-16-Claude-3-5-y-el-Uso-de-Computadora--Un-Salto-Cu-ntico-en-la-Automatizaci-n-de-Tareas-ac4f6ec31d2f'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2024-11-16T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 Claude 3.5 y el Uso de Computadora: Un Salto Cuántico en la Automatización de Tareas

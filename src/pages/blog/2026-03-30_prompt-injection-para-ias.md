@@ -1,5 +1,6 @@
 ---
-filename: '2026-03-30_prompt-injection-para-ias'
+
+filename: '2026-03-30-prompt-injection-para-ias'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2026-03-30T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 *Creado por Jaime Hernández — 2026*
 *¿Preguntas? [hsjhernandez@gmail.com](mailto:hsjhernandez@gmail.com)*

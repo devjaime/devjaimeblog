@@ -1,5 +1,6 @@
 ---
-filename: '2026-02-18_HITL-in-AI-The-Power-of-Human-in-the-Loop-Machine-Learning-def456ghi789'
+
+filename: '2026-02-18-HITL-in-AI-The-Power-of-Human-in-the-Loop-Machine-Learning-def456ghi789'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2026-02-18T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 HITL in AI: The Power of Human-in-the-Loop Machine Learning

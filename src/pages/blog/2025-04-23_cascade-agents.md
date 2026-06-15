@@ -1,5 +1,6 @@
 ---
-filename: '2025-04-23_cascade-agents'
+
+filename: '2025-04-23-cascade-agents'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2025-04-23T08:00:00-0300'
@@ -16,5 +17,6 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 **#CascadeAgents #AI #LangChain #RetailTech #PropTech #DevOps #AgileAI #LangGraph #HumanCenteredAI**

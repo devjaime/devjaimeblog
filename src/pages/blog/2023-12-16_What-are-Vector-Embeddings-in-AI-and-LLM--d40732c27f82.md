@@ -1,5 +1,6 @@
 ---
-filename: '2023-12-16_What-are-Vector-Embeddings-in-AI-and-LLM--d40732c27f82'
+
+filename: '2023-12-16-What-are-Vector-Embeddings-in-AI-and-LLM--d40732c27f82'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2023-12-16T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 What are Vector Embeddings in AI and LLM?

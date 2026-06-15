@@ -1,5 +1,6 @@
 ---
-filename: '2026-03-17_dashboard_status'
+
+filename: '2026-03-17-dashboard-status'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2026-03-17T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 *Análisis generado automáticamente el 2026-03-17*

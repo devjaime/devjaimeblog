@@ -1,5 +1,6 @@
 ---
-filename: '2025-04-07_Langflow-Launch-Week'
+
+filename: '2025-04-07-Langflow-Launch-Week'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2025-04-07T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 ## 🔗 Enlaces por día
 

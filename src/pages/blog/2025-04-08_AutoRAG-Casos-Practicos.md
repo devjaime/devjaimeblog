@@ -1,5 +1,6 @@
 ---
-filename: '2025-04-08_AutoRAG-Casos-Practicos'
+
+filename: '2025-04-08-AutoRAG-Casos-Practicos'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2025-04-08T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 ## 💡 Conclusión
 

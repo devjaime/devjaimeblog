@@ -1,5 +1,6 @@
 ---
-filename: '2026-05-30_minimax-openclaw-agents-avanzados'
+
+filename: '2026-05-30-minimax-openclaw-agents-avanzados'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2026-05-30T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 *¿Ya estás usando agentes en tu workflow? ¿Cuál ha sido tu experiencia? Compartamos ideas.*
 

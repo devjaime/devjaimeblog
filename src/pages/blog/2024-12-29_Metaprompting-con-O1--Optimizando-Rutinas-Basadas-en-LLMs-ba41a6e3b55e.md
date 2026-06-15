@@ -1,5 +1,6 @@
 ---
-filename: '2024-12-29_Metaprompting-con-O1--Optimizando-Rutinas-Basadas-en-LLMs-ba41a6e3b55e'
+
+filename: '2024-12-29-Metaprompting-con-O1--Optimizando-Rutinas-Basadas-en-LLMs-ba41a6e3b55e'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2024-12-29T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 Metaprompting con O1: Optimizando Rutinas Basadas en LLMs

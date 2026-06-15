@@ -1,5 +1,6 @@
 ---
-filename: '2019-04-20_D-a-4-Geolocation-XamarinForms-con-Api-XamarinEssentials-fe79dbb3c9e5'
+
+filename: '2019-04-20-D-a-4-Geolocation-XamarinForms-con-Api-XamarinEssentials-fe79dbb3c9e5'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2019-04-20T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 Día 4 Geolocation XamarinForms con Api XamarinEssentials

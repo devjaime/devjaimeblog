@@ -1,5 +1,6 @@
 ---
-filename: "El-desarrollo-m-vil-nativo-est-muerto_83f3638de3de"
+
+filename: "El-desarrollo-m-vil-nativo-est-muerto-83f3638de3de"
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2018-09-02T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 El desarrollo móvil nativo está muerto!! 

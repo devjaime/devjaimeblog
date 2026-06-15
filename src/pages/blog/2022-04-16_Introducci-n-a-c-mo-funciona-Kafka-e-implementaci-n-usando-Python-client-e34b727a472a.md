@@ -1,5 +1,6 @@
 ---
-filename: '2022-04-16_Introducci-n-a-c-mo-funciona-Kafka-e-implementaci-n-usando-Python-client-e34b727a472a'
+
+filename: '2022-04-16-Introducci-n-a-c-mo-funciona-Kafka-e-implementaci-n-usando-Python-client-e34b727a472a'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2022-04-16T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 

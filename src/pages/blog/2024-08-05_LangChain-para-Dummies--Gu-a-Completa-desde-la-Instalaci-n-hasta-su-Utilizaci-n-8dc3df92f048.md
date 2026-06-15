@@ -1,5 +1,6 @@
 ---
-filename: '2024-08-05_LangChain-para-Dummies--Gu-a-Completa-desde-la-Instalaci-n-hasta-su-Utilizaci-n-8dc3df92f048'
+
+filename: '2024-08-05-LangChain-para-Dummies--Gu-a-Completa-desde-la-Instalaci-n-hasta-su-Utilizaci-n-8dc3df92f048'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2024-08-05T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 

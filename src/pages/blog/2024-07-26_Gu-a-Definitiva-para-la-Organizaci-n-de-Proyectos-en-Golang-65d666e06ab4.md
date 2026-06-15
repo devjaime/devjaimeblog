@@ -1,5 +1,6 @@
 ---
-filename: '2024-07-26_Gu-a-Definitiva-para-la-Organizaci-n-de-Proyectos-en-Golang-65d666e06ab4'
+
+filename: '2024-07-26-Gu-a-Definitiva-para-la-Organizaci-n-de-Proyectos-en-Golang-65d666e06ab4'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2024-07-26T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 Guía Definitiva para la Organización de Proyectos en Golang

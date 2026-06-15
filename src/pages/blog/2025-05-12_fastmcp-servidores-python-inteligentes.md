@@ -1,5 +1,6 @@
 ---
-filename: '2025-05-12_fastmcp-servidores-python-inteligentes'
+
+filename: '2025-05-12-fastmcp-servidores-python-inteligentes'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2025-05-12T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 ## 📎 Recursos Recomendados
 

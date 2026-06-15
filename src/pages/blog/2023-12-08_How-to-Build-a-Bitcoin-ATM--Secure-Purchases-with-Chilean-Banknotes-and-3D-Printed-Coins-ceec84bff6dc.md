@@ -1,5 +1,6 @@
 ---
-filename: '2023-12-08_How-to-Build-a-Bitcoin-ATM--Secure-Purchases-with-Chilean-Banknotes-and-3D-Printed-Coins-ceec84bff6dc'
+
+filename: '2023-12-08-How-to-Build-a-Bitcoin-ATM--Secure-Purchases-with-Chilean-Banknotes-and-3D-Printed-Coins-ceec84bff6dc'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2023-12-08T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 How to Build a Bitcoin ATM: Secure Purchases with Chilean Banknotes and 3D Printed Coins

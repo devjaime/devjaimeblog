@@ -1,5 +1,6 @@
 ---
-filename: '2025-04-13_Entrena-tu-LLM'
+
+filename: '2025-04-13-Entrena-tu-LLM'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2025-04-13T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 Si te interesa aplicar esto en tu startup, crear un chatbot propio o entrenar en datos privados, contáctame y lo armamos juntos. ✍️
 

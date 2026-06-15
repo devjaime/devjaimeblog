@@ -1,5 +1,6 @@
 ---
-filename: "Enhancing-SQL-Query-Generation-with-Large-Language-Models-LLMs_My-Learning-Journey"
+
+filename: "Enhancing-SQL-Query-Generation-with-Large-Language-Models-LLMs-My-Learning-Journey"
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2024-08-16T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 Enhancing SQL Query Generation with Large Language Models (LLMs): My Learning Journey

@@ -1,5 +1,6 @@
 ---
-filename: '2023-10-14_Entendiendo-el-Patr-n-Adaptador-en-TypeScript-con-Pruebas-Unitarias-9604f3209baa'
+
+filename: '2023-10-14-Entendiendo-el-Patr-n-Adaptador-en-TypeScript-con-Pruebas-Unitarias-9604f3209baa'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2023-10-14T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 

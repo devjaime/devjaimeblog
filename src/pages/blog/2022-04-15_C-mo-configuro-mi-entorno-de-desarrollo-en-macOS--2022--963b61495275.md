@@ -1,5 +1,6 @@
 ---
-filename: '2022-04-15_C-mo-configuro-mi-entorno-de-desarrollo-en-macOS--2022--963b61495275'
+
+filename: '2022-04-15-C-mo-configuro-mi-entorno-de-desarrollo-en-macOS--2022--963b61495275'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2022-04-15T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 Cómo configuro mi entorno de desarrollo en macOS (2022)

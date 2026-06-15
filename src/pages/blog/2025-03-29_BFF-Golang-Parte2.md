@@ -1,5 +1,6 @@
 ---
-filename: '2025-03-29_BFF-Golang-Parte2'
+
+filename: '2025-03-29-BFF-Golang-Parte2'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2025-03-29T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 ¿Te gustó esta segunda parte? Comenta o escribeme para incluir una tercera parte. 🚀
 

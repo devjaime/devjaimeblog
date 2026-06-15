@@ -1,5 +1,6 @@
 ---
-filename: '2023-11-11_Exploring-Deeper-into-Flutter-93f86d8c7cab'
+
+filename: '2023-11-11-Exploring-Deeper-into-Flutter-93f86d8c7cab'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2023-11-11T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 Exploring Deeper into Flutter

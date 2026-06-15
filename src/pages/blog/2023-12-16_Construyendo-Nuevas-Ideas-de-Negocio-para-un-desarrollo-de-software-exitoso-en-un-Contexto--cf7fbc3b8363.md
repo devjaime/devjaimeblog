@@ -1,5 +1,6 @@
 ---
-filename: '2023-12-16_Construyendo-Nuevas-Ideas-de-Negocio-para-un-desarrollo-de-software-exitoso-en-un-Contexto--cf7fbc3b8363'
+
+filename: '2023-12-16-Construyendo-Nuevas-Ideas-de-Negocio-para-un-desarrollo-de-software-exitoso-en-un-Contexto--cf7fbc3b8363'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2023-12-16T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 Construyendo Nuevas Ideas de Negocio para un desarrollo de software exitoso en un Contexto…

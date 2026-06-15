@@ -1,5 +1,6 @@
 ---
-filename: '2023-04-11_Ruta-de-aprendizaje-para-las-certificaciones-GCP-5cf74c463589'
+
+filename: '2023-04-11-Ruta-de-aprendizaje-para-las-certificaciones-GCP-5cf74c463589'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2023-04-11T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 Ruta de aprendizaje para las certificaciones GCP

@@ -1,5 +1,6 @@
 ---
-filename: '2024-06-09_C-mo-Mantenerse-Trabajando-Remotamente-con-un-Buen-Sueldo-en-Tecnolog-a--Enfoque-en-JavaScript--5f0c0309c649'
+
+filename: '2024-06-09-C-mo-Mantenerse-Trabajando-Remotamente-con-un-Buen-Sueldo-en-Tecnolog-a--Enfoque-en-JavaScript--5f0c0309c649'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2024-06-09T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 Cómo Mantenerse Trabajando Remotamente con un Buen Sueldo en Tecnología: Enfoque en JavaScript…

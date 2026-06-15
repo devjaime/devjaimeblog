@@ -1,5 +1,6 @@
 ---
-filename: '2024-12-17_Introducci-n-a-la-Seguridad-en-el-Mundo-de-la-IA--Protegiendo-el-Futuro-Inteligente-fd385b35e71a'
+
+filename: '2024-12-17-Introducci-n-a-la-Seguridad-en-el-Mundo-de-la-IA--Protegiendo-el-Futuro-Inteligente-fd385b35e71a'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2024-12-17T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 Introducción a la Seguridad en el Mundo de la IA: Protegiendo el Futuro Inteligente

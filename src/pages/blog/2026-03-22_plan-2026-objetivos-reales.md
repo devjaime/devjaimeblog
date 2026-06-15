@@ -1,5 +1,6 @@
 ---
-filename: '2026-03-22_plan-2026-objetivos-reales'
+
+filename: '2026-03-22-plan-2026-objetivos-reales'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2026-03-22T08:00:00-0300'
@@ -16,5 +17,6 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 *¿Tienes un plan 2026? Cuéntame qué estás construyendo.*

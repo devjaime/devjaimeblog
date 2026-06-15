@@ -1,5 +1,6 @@
 ---
-filename: '2019-05-11_Anuncios-de-productos-Google-I-O-2019-8af563af0b30'
+
+filename: '2019-05-11-Anuncios-de-productos-Google-I-O-2019-8af563af0b30'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2019-05-11T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 Anuncios de productos Google I/O 2019

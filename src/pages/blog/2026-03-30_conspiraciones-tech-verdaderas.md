@@ -1,5 +1,6 @@
 ---
-filename: '2026-03-30_conspiraciones-tech-verdaderas'
+
+filename: '2026-03-30-conspiraciones-tech-verdaderas'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2026-03-30T08:00:00-0300'
@@ -16,5 +17,6 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 *¿Quieres que cubra algún tema específico? Tengo opinions sobre AI, backend, y el estado del ecosistema tech en Chile.*

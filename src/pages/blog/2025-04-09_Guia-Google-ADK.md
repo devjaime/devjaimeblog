@@ -1,5 +1,6 @@
 ---
-filename: '2025-04-09_Guia-Google-ADK'
+
+filename: '2025-04-09-Guia-Google-ADK'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2025-04-09T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 🎯 **Conclusión:** Google ADK es una herramienta poderosa para cualquier desarrollador o empresa que quiera construir agentes de IA modernos, seguros y funcionales. Desde un bot simple hasta un sistema multiagente complejo, puedes empezar hoy y escalar sin fricciones.

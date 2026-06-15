@@ -1,5 +1,6 @@
 ---
-filename: '2025-01-10_Passkey-Authentication--A-Modern-Security-Solution-for-Apps-6141fc898a73'
+
+filename: '2025-01-10-Passkey-Authentication--A-Modern-Security-Solution-for-Apps-6141fc898a73'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2025-01-10T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 Passkey Authentication: A Modern Security Solution for Apps

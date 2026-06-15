@@ -1,5 +1,6 @@
 ---
-filename: '2022-04-13_C-mo-usar-la-biblioteca-Rich-con-Python-db09f1752c94'
+
+filename: '2022-04-13-C-mo-usar-la-biblioteca-Rich-con-Python-db09f1752c94'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2022-04-13T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 Cómo usar la biblioteca Rich con Python

@@ -1,5 +1,6 @@
 ---
-filename: '2023-11-11_Cutting-Edge-Web-Development-with-Next-js--Turning-Ideas-into-Reality-0468321b7a63'
+
+filename: '2023-11-11-Cutting-Edge-Web-Development-with-Next-js--Turning-Ideas-into-Reality-0468321b7a63'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2023-11-11T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 

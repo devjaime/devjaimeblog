@@ -1,5 +1,6 @@
 ---
-filename: '2023-03-18_Que-es-kafka-y-como-implementarlo-en-nestjs-657e60468356'
+
+filename: '2023-03-18-Que-es-kafka-y-como-implementarlo-en-nestjs-657e60468356'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2023-03-18T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 

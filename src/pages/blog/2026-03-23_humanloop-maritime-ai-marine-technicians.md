@@ -1,5 +1,6 @@
 ---
-filename: '2026-03-23_humanloop-maritime-ai-marine-technicians'
+
+filename: '2026-03-23-humanloop-maritime-ai-marine-technicians'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2026-03-23T08:00:00-0300'
@@ -16,5 +17,6 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 *Project in active development. Follow along as we build the future of marine technical services.*

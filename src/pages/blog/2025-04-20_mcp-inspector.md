@@ -1,5 +1,6 @@
 ---
-filename: '2025-04-20_mcp-inspector'
+
+filename: '2025-04-20-mcp-inspector'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2025-04-20T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 ## 🧩 Reflexión final

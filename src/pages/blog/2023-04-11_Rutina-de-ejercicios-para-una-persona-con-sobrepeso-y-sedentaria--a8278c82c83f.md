@@ -1,5 +1,6 @@
 ---
-filename: '2023-04-11_Rutina-de-ejercicios-para-una-persona-con-sobrepeso-y-sedentaria--a8278c82c83f'
+
+filename: '2023-04-11-Rutina-de-ejercicios-para-una-persona-con-sobrepeso-y-sedentaria--a8278c82c83f'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2023-04-11T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 Rutina de ejercicios para una persona con sobrepeso y sedentaria:

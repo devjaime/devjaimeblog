@@ -1,5 +1,6 @@
 ---
-filename: '2026-03-09_spec-driven_development_openspec_vs_speckit'
+
+filename: '2026-03-09-spec-driven-development-openspec-vs-speckit'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2026-03-09T08:00:00-0300'
@@ -16,5 +17,6 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 *¿Te ha gustado este análisis? ¿Tienes experiencia con alguna de estas herramientas? Déjame tus comentarios.*

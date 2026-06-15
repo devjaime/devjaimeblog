@@ -1,5 +1,6 @@
 ---
-filename: '2019-03-10_Publicaci-n-de-una-app-Flutter-en-google-play-store-57b07092092c'
+
+filename: '2019-03-10-Publicaci-n-de-una-app-Flutter-en-google-play-store-57b07092092c'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2019-03-10T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 Publicación de una app Flutter en google play store

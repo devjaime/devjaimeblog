@@ -1,5 +1,6 @@
 ---
-filename: '2023-11-12_Simplificando-la-Vida-Diaria-con-Automatizaci-n-y-Python--Un-Viaje-por-la-Inteligencia-Artificial-99e2a684cb63'
+
+filename: '2023-11-12-Simplificando-la-Vida-Diaria-con-Automatizaci-n-y-Python--Un-Viaje-por-la-Inteligencia-Artificial-99e2a684cb63'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2023-11-12T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 

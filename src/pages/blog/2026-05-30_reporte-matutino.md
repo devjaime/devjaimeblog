@@ -1,5 +1,6 @@
 ---
-filename: '2026-05-30_reporte-matutino'
+
+filename: '2026-05-30-reporte-matutino'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2026-05-30T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 *Generado automáticamente por tu asistente IA - 6:00 AM*
 *Fecha próximo reporte: Domingo 31 Mayo 2026*

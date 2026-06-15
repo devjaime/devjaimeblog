@@ -1,5 +1,6 @@
 ---
-filename: '2019-04-17_D-a-uno-Xamarin-Essential-Acelerometro-517507ef7615'
+
+filename: '2019-04-17-D-a-uno-Xamarin-Essential-Acelerometro-517507ef7615'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2019-04-17T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 Día uno Xamarin Essential Acelerometro

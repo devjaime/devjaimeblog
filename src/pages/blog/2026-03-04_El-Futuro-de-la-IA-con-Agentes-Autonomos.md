@@ -1,5 +1,6 @@
 ---
-filename: '2026-03-04_El-Futuro-de-la-IA-con-Agentes-Autonomos'
+
+filename: '2026-03-04-El-Futuro-de-la-IA-con-Agentes-Autonomos'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2026-03-04T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 *¿Ya estás usando agentes autónomos? Cuéntame en los comentarios o contáctame directamente.*
 

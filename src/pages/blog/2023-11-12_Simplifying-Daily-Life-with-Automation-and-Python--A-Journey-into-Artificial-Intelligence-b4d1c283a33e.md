@@ -1,5 +1,6 @@
 ---
-filename: '2023-11-12_Simplifying-Daily-Life-with-Automation-and-Python--A-Journey-into-Artificial-Intelligence-b4d1c283a33e'
+
+filename: '2023-11-12-Simplifying-Daily-Life-with-Automation-and-Python--A-Journey-into-Artificial-Intelligence-b4d1c283a33e'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2023-11-12T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 Simplifying Daily Life with Automation and Python: A Journey into Artificial Intelligence

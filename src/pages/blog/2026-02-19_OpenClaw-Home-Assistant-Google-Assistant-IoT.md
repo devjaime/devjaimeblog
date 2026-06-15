@@ -1,5 +1,6 @@
 ---
-filename: '2026-02-19_OpenClaw-Home-Assistant-Google-Assistant-IoT'
+
+filename: '2026-02-19-OpenClaw-Home-Assistant-Google-Assistant-IoT'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2026-02-19T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 **Recursos adicionales:**

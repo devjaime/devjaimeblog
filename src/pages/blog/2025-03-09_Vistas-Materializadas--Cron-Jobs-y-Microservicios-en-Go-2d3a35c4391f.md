@@ -1,5 +1,6 @@
 ---
-filename: '2025-03-09_Vistas-Materializadas--Cron-Jobs-y-Microservicios-en-Go-2d3a35c4391f'
+
+filename: '2025-03-09-Vistas-Materializadas--Cron-Jobs-y-Microservicios-en-Go-2d3a35c4391f'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2025-03-09T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 Vistas Materializadas, Cron Jobs y Microservicios en Go

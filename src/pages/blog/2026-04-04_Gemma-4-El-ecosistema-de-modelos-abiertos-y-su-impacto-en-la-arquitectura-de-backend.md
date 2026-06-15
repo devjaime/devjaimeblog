@@ -1,5 +1,6 @@
 ---
-filename: '2026-04-04_Gemma-4-El-ecosistema-de-modelos-abiertos-y-su-impacto-en-la-arquitectura-de-backend'
+
+filename: '2026-04-04-Gemma-4-El-ecosistema-de-modelos-abiertos-y-su-impacto-en-la-arquitectura-de-backend'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2026-04-04T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 *¿Ya estás usando modelos open weights en producción? Cuéntame tu experiencia en los comentarios.*

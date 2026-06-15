@@ -1,5 +1,6 @@
 ---
-filename: '2021-04-02_Aceptar-pagos-de-criptomonedas-para-tu-ecommerce-con-CoinBase-Commerce-a8f4bc4ea272'
+
+filename: '2021-04-02-Aceptar-pagos-de-criptomonedas-para-tu-ecommerce-con-CoinBase-Commerce-a8f4bc4ea272'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2021-04-02T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 Aceptar pagos de criptomonedas para tu ecommerce con CoinBase Commerce

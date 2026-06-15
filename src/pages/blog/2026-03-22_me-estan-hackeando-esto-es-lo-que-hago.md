@@ -1,5 +1,6 @@
 ---
-filename: '2026-03-22_me-estan-hackeando-esto-es-lo-que-hago'
+
+filename: '2026-03-22-me-estan-hackeando-esto-es-lo-que-hago'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2026-03-22T08:00:00-0300'
@@ -16,5 +17,6 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 *Última actualización: Marzo 2026*

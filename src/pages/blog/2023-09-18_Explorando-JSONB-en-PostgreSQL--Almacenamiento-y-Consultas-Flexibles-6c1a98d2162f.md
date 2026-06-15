@@ -1,5 +1,6 @@
 ---
-filename: '2023-09-18_Explorando-JSONB-en-PostgreSQL--Almacenamiento-y-Consultas-Flexibles-6c1a98d2162f'
+
+filename: '2023-09-18-Explorando-JSONB-en-PostgreSQL--Almacenamiento-y-Consultas-Flexibles-6c1a98d2162f'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2023-09-18T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 

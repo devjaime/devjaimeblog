@@ -1,5 +1,6 @@
 ---
-filename: '2019-04-03_Visual-Studio-2019-algunos-detalles-interesantes-db20d60a36f4'
+
+filename: '2019-04-03-Visual-Studio-2019-algunos-detalles-interesantes-db20d60a36f4'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2019-04-03T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 Visual Studio 2019 algunos detalles interesantes

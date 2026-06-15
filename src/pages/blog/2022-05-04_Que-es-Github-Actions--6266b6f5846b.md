@@ -1,5 +1,6 @@
 ---
-filename: '2022-05-04_Que-es-Github-Actions--6266b6f5846b'
+
+filename: '2022-05-04-Que-es-Github-Actions--6266b6f5846b'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2022-05-04T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 Que es Github Actions?

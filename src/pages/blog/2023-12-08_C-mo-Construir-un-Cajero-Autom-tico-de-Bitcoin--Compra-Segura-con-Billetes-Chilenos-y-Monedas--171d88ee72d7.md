@@ -1,5 +1,6 @@
 ---
-filename: '2023-12-08_C-mo-Construir-un-Cajero-Autom-tico-de-Bitcoin--Compra-Segura-con-Billetes-Chilenos-y-Monedas--171d88ee72d7'
+
+filename: '2023-12-08-C-mo-Construir-un-Cajero-Autom-tico-de-Bitcoin--Compra-Segura-con-Billetes-Chilenos-y-Monedas--171d88ee72d7'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2023-12-08T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 Cómo Construir un Cajero Automático de Bitcoin: Compra Segura con Billetes Chilenos y Monedas…

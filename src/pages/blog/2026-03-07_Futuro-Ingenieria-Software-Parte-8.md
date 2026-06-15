@@ -1,5 +1,6 @@
 ---
-filename: '2026-03-07_Futuro-Ingenieria-Software-Parte-8'
+
+filename: '2026-03-07-Futuro-Ingenieria-Software-Parte-8'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2026-03-07T08:00:00-0300'
@@ -16,5 +17,6 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 *¿En qué nivel de acceso estás? Comparte tu realidad.*

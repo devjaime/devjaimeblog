@@ -1,5 +1,6 @@
 ---
-filename: '2026-02-20_Vocari-Cl-Videos-Explicativos'
+
+filename: '2026-02-20-Vocari-Cl-Videos-Explicativos'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2026-02-20T08:00:00-0300'
@@ -16,5 +17,6 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 *¿Te gustaría ver una demo personalizada de Vocari.cl para tu colegio? Contáctanos en hola@vocari.cl*

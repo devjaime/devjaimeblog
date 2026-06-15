@@ -1,5 +1,6 @@
 ---
-filename: '2024-10-01_Reflection-Agents--Mejorando-la-inteligencia-artificial-mediante-la-autorreflexi-n-ef6dff638423'
+
+filename: '2024-10-01-Reflection-Agents--Mejorando-la-inteligencia-artificial-mediante-la-autorreflexi-n-ef6dff638423'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2024-10-01T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 

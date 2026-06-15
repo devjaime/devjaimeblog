@@ -1,5 +1,6 @@
 ---
-filename: '2025-03-28_BFF-Golang-OpenAPI'
+
+filename: '2025-03-28-BFF-Golang-OpenAPI'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2025-03-28T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 ## ✨ Estructura del Proyecto
 

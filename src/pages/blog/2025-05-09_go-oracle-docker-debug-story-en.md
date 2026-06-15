@@ -1,5 +1,6 @@
 ---
-filename: '2025-05-09_go-oracle-docker-debug-story-en'
+
+filename: '2025-05-09-go-oracle-docker-debug-story-en'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2025-05-09T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 ## 🧠 Want the full working repo?
 

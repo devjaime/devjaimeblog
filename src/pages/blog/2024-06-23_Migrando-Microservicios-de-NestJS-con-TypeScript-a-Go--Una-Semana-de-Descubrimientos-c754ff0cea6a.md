@@ -1,5 +1,6 @@
 ---
-filename: '2024-06-23_Migrando-Microservicios-de-NestJS-con-TypeScript-a-Go--Una-Semana-de-Descubrimientos-c754ff0cea6a'
+
+filename: '2024-06-23-Migrando-Microservicios-de-NestJS-con-TypeScript-a-Go--Una-Semana-de-Descubrimientos-c754ff0cea6a'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2024-06-23T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 Migrando Microservicios de NestJS con TypeScript a Go: Una Semana de Descubrimientos

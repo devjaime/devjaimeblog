@@ -1,5 +1,6 @@
 ---
-filename: '2023-10-07_Utilizando-Query-Builder-y-Query-Runner-en-NestJS-para-una-Interacci-n-Eficiente-con-Bases-de-Datos-953fa226955b'
+
+filename: '2023-10-07-Utilizando-Query-Builder-y-Query-Runner-en-NestJS-para-una-Interacci-n-Eficiente-con-Bases-de-Datos-953fa226955b'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2023-10-07T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 

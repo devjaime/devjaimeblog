@@ -1,5 +1,6 @@
 ---
-filename: '2024-08-08_RAG-for-Dummies--Una-Gu-a-Sencilla-para-Entender-la-Generaci-n-Aumentada-por-Recuperaci-n-294b71a28e15'
+
+filename: '2024-08-08-RAG-for-Dummies--Una-Gu-a-Sencilla-para-Entender-la-Generaci-n-Aumentada-por-Recuperaci-n-294b71a28e15'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2024-08-08T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 

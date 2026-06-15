@@ -1,5 +1,6 @@
 ---
-filename: '2020-12-06_My-first-API-in-Golang-ea9c3e707e13'
+
+filename: '2020-12-06-My-first-API-in-Golang-ea9c3e707e13'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2020-12-06T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 My first API in Golang

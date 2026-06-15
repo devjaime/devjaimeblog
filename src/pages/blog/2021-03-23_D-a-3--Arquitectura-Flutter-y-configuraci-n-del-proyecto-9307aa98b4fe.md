@@ -1,5 +1,6 @@
 ---
-filename: '2021-03-23_D-a-3--Arquitectura-Flutter-y-configuraci-n-del-proyecto-9307aa98b4fe'
+
+filename: '2021-03-23-D-a-3--Arquitectura-Flutter-y-configuraci-n-del-proyecto-9307aa98b4fe'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2021-03-23T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 Día 3: Arquitectura Flutter y configuración del proyecto

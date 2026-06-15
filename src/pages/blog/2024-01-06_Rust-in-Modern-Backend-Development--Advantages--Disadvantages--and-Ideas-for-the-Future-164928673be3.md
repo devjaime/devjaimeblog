@@ -1,5 +1,6 @@
 ---
-filename: '2024-01-06_Rust-in-Modern-Backend-Development--Advantages--Disadvantages--and-Ideas-for-the-Future-164928673be3'
+
+filename: '2024-01-06-Rust-in-Modern-Backend-Development--Advantages--Disadvantages--and-Ideas-for-the-Future-164928673be3'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2024-01-06T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 Rust in Modern Backend Development: Advantages, Disadvantages, and Ideas for the Future

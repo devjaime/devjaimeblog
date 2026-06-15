@@ -1,5 +1,6 @@
 ---
-filename: '2025-01-08_Inteligencia-Artificial-Generativa--Casos-de-Uso-T-cnicos-y-Aplicaciones-Reales-59f94d4aaa42'
+
+filename: '2025-01-08-Inteligencia-Artificial-Generativa--Casos-de-Uso-T-cnicos-y-Aplicaciones-Reales-59f94d4aaa42'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2025-01-08T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 Inteligencia Artificial Generativa: Casos de Uso Técnicos y Aplicaciones Reales

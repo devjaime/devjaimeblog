@@ -1,5 +1,6 @@
 ---
-filename: '2018-06-21_Azure-CLI-usando-una-Mac-f2c620ae436f'
+
+filename: '2018-06-21-Azure-CLI-usando-una-Mac-f2c620ae436f'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2018-06-21T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 Azure CLI usando una Mac

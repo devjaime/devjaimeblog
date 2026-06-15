@@ -1,5 +1,6 @@
 ---
-filename: '2019-09-06_MicroFrontEnd-4eecf1498cd1'
+
+filename: '2019-09-06-MicroFrontEnd-4eecf1498cd1'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2019-09-06T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 MicroFrontEnd

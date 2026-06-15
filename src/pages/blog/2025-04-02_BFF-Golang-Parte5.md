@@ -1,5 +1,6 @@
 ---
-filename: '2025-04-02_BFF-Golang-Parte5'
+
+filename: '2025-04-02-BFF-Golang-Parte5'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2025-04-02T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 ## 🚀 Cierre
 

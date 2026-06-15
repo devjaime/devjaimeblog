@@ -1,5 +1,6 @@
 ---
-filename: '2023-03-17_Como-obtener-la-certificaci-n-AWS-Cloud-Practitioner-f029fea2f1df'
+
+filename: '2023-03-17-Como-obtener-la-certificaci-n-AWS-Cloud-Practitioner-f029fea2f1df'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2023-03-17T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 Como obtener la certificación AWS Cloud Practitioner

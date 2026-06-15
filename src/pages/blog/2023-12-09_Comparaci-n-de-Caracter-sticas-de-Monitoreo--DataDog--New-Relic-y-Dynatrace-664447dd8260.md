@@ -1,5 +1,6 @@
 ---
-filename: '2023-12-09_Comparaci-n-de-Caracter-sticas-de-Monitoreo--DataDog--New-Relic-y-Dynatrace-664447dd8260'
+
+filename: '2023-12-09-Comparaci-n-de-Caracter-sticas-de-Monitoreo--DataDog--New-Relic-y-Dynatrace-664447dd8260'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2023-12-09T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 

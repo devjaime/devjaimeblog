@@ -1,5 +1,6 @@
 ---
-filename: '2026-03-22_gpt-54-mini-nano-agents-economicos'
+
+filename: '2026-03-22-gpt-54-mini-nano-agents-economicos'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2026-03-22T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 # HERRAMIENTA DE LA SEMANA
 

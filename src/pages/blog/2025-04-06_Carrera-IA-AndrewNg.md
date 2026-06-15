@@ -1,5 +1,6 @@
 ---
-filename: '2025-04-06_Carrera-IA-AndrewNg'
+
+filename: '2025-04-06-Carrera-IA-AndrewNg'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2025-04-06T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 ¿Te gustaría que prepare una guía paso a paso para tu carrera en IA? Escríbeme o únete a la comunidad de [codeIA.cl](https://codeia.cl) 🤝✨
 

@@ -1,5 +1,6 @@
 ---
-filename: '2025-05-01_kaggle-ia-generativa'
+
+filename: '2025-05-01-kaggle-ia-generativa'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2025-05-01T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 ## ¿Qué es Kaggle y por qué es relevante en 2025?

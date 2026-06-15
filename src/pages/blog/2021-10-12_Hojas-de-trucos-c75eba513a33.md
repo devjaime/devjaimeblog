@@ -1,5 +1,6 @@
 ---
-filename: '2021-10-12_Hojas-de-trucos-c75eba513a33'
+
+filename: '2021-10-12-Hojas-de-trucos-c75eba513a33'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2021-10-12T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 Hojas de trucos

@@ -1,5 +1,6 @@
 ---
-filename: "Que-es-Cookiecutter-Django_9d51d68950bc"
+
+filename: "Que-es-Cookiecutter-Django-9d51d68950bc"
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2022-04-05T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 Que es Cookiecutter Django ?

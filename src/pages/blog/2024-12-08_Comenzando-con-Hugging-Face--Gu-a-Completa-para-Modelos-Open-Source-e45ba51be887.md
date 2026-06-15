@@ -1,5 +1,6 @@
 ---
-filename: '2024-12-08_Comenzando-con-Hugging-Face--Gu-a-Completa-para-Modelos-Open-Source-e45ba51be887'
+
+filename: '2024-12-08-Comenzando-con-Hugging-Face--Gu-a-Completa-para-Modelos-Open-Source-e45ba51be887'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2024-12-08T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 Comenzando con Hugging Face: Guía Completa para Modelos Open Source

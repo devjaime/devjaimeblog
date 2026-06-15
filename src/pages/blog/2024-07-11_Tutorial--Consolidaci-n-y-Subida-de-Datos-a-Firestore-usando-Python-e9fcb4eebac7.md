@@ -1,5 +1,6 @@
 ---
-filename: '2024-07-11_Tutorial--Consolidaci-n-y-Subida-de-Datos-a-Firestore-usando-Python-e9fcb4eebac7'
+
+filename: '2024-07-11-Tutorial--Consolidaci-n-y-Subida-de-Datos-a-Firestore-usando-Python-e9fcb4eebac7'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2024-07-11T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 Tutorial: Consolidación y Subida de Datos a Firestore usando Python

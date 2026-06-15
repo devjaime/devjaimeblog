@@ -1,5 +1,6 @@
 ---
-filename: '2026-03-09_openclaw_dashboard_analysis'
+
+filename: '2026-03-09-openclaw-dashboard-analysis'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2026-03-09T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 *Análisis generado el 9 de Marzo de 2026*
 

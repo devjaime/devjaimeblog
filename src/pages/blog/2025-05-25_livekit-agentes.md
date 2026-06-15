@@ -1,5 +1,6 @@
 ---
-filename: '2025-05-25_livekit-agentes'
+
+filename: '2025-05-25-livekit-agentes'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2025-05-25T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 ## 🔨 Cómo construir un agente con LiveKit paso a paso (Repositorio oficial)
 

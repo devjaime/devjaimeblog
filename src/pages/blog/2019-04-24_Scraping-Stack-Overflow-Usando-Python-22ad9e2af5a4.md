@@ -1,5 +1,6 @@
 ---
-filename: '2019-04-24_Scraping-Stack-Overflow-Usando-Python-22ad9e2af5a4'
+
+filename: '2019-04-24-Scraping-Stack-Overflow-Usando-Python-22ad9e2af5a4'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2019-04-24T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 Scraping Stack Overflow Usando Python

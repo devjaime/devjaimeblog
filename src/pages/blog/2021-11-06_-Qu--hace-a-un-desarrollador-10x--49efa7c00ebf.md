@@ -1,5 +1,6 @@
 ---
-filename: '2021-11-06_-Qu--hace-a-un-desarrollador-10x--49efa7c00ebf'
+
+filename: '2021-11-06--Qu--hace-a-un-desarrollador-10x--49efa7c00ebf'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2021-11-06T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 

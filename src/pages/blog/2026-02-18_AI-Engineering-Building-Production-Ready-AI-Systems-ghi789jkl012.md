@@ -1,5 +1,6 @@
 ---
-filename: '2026-02-18_AI-Engineering-Building-Production-Ready-AI-Systems-ghi789jkl012'
+
+filename: '2026-02-18-AI-Engineering-Building-Production-Ready-AI-Systems-ghi789jkl012'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2026-02-18T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 AI Engineering: Building Production-Ready AI Systems

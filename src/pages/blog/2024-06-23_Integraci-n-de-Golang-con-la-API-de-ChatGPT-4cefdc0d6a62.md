@@ -1,5 +1,6 @@
 ---
-filename: '2024-06-23_Integraci-n-de-Golang-con-la-API-de-ChatGPT-4cefdc0d6a62'
+
+filename: '2024-06-23-Integraci-n-de-Golang-con-la-API-de-ChatGPT-4cefdc0d6a62'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2024-06-23T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 

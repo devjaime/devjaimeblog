@@ -1,5 +1,6 @@
 ---
-filename: '2021-03-21_Dart-Null-Safety--una-gu-a-para-los-tipos-que-no-aceptan-valores-nulos-44767a116da0'
+
+filename: '2021-03-21-Dart-Null-Safety--una-gu-a-para-los-tipos-que-no-aceptan-valores-nulos-44767a116da0'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2021-03-21T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 

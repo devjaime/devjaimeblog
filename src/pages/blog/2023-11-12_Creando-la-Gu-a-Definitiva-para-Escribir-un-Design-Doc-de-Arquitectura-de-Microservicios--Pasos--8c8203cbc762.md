@@ -1,5 +1,6 @@
 ---
-filename: '2023-11-12_Creando-la-Gu-a-Definitiva-para-Escribir-un-Design-Doc-de-Arquitectura-de-Microservicios--Pasos--8c8203cbc762'
+
+filename: '2023-11-12-Creando-la-Gu-a-Definitiva-para-Escribir-un-Design-Doc-de-Arquitectura-de-Microservicios--Pasos--8c8203cbc762'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2023-11-12T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 

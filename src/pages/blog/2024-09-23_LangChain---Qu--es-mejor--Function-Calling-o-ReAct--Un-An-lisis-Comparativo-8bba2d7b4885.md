@@ -1,5 +1,6 @@
 ---
-filename: "LangChain_Qu-es-mejor-Function-Calling-o-ReAct-Un-An-lisis-Comparativo"
+
+filename: "LangChain-Qu-es-mejor-Function-Calling-o-ReAct-Un-An-lisis-Comparativo"
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2024-09-23T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 LangChain: ¿Qué es mejor, Function Calling o ReAct? Un Análisis Comparativo

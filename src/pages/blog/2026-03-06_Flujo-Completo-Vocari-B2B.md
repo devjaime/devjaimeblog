@@ -1,5 +1,6 @@
 ---
-filename: '2026-03-06_Flujo-Completo-Vocari-B2B'
+
+filename: '2026-03-06-Flujo-Completo-Vocari-B2B'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2026-03-06T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 *¿Quieres probar Vocari.cl? Visita [vocari.cl](https://vocari.cl) y realiza el test vocacional gratuitamente.*

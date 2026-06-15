@@ -1,5 +1,6 @@
 ---
-filename: '2026-02-20_Vocari-Cl-Plataforma-Orientacion-Vocacional-IA-Chile'
+
+filename: '2026-02-20-Vocari-Cl-Plataforma-Orientacion-Vocacional-IA-Chile'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2026-02-20T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 *¿Quieres probar Vocari.cl? Visita [vocari.cl](https://vocari.cl) y realiza el test vocacional gratuitamente.*
 

@@ -1,5 +1,6 @@
 ---
-filename: '2026-03-24_free-apis-for-your-projects'
+
+filename: '2026-03-24-free-apis-for-your-projects'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2026-03-24T08:00:00-0300'
@@ -16,5 +17,6 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 *This list is updated regularly. Last update: March 2026*

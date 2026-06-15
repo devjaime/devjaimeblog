@@ -1,5 +1,6 @@
 ---
-filename: '2024-12-20_C-mo-Funciona-el-Modelo-O1--Principios--Ejemplos-Reales-y-C-digo-Funcional-670e2d94c708'
+
+filename: '2024-12-20-C-mo-Funciona-el-Modelo-O1--Principios--Ejemplos-Reales-y-C-digo-Funcional-670e2d94c708'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2024-12-20T08:00:00-0300'
@@ -16,6 +17,7 @@ draft: false
 time: 15
 featured: false
 ---
+
 
 
 Cómo Funciona el Modelo O1: Principios, Ejemplos Reales y Código Funcional
