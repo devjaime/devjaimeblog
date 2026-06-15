@@ -12,22 +12,25 @@ const { url, external, class: className } = Astro.props;
 <a
   href={url}
   class:list={[
-    "zag-offset underline font-medium flex items-center focus:outline-2 focus:outline-offset-2 focus:outline-zag-dark dark:focus:outline-zag-light transition-all duration-300 ease-out hover:text-emerald-600 dark:hover:text-emerald-400",
+    "underline underline-offset-4 font-medium flex items-center focus:outline-2 focus:outline-offset-2 transition-all duration-300 ease-out hover:text-[var(--electric-blue)]",
     className,
   ]}
   target={external ? "_blank" : "_self"}
+  rel={external ? "noopener noreferrer" : undefined}
   aria-label={Astro.props["aria-label"]}
+  style="color: var(--primary);"
 >
   <slot />
   {
     external ? (
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        class="w-6 h-6"
+        class="w-6 h-6 ml-1"
         viewBox="0 0 512 512"
+        style="color: var(--on-surface-variant);"
       >
         <path
-          class="zag-fill zag-transition"
+          fill="currentColor"
           fill-rule="evenodd"
           d="M362.666 149.333V320H320l-.001-97.831l-154.51 154.51l-30.169-30.17L289.829 192h-97.83v-42.666z"
         />
