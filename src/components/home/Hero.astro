@@ -7,18 +7,6 @@ import { GLOBAL } from "../../lib/variables";
     <!-- Desktop Layout -->
     <div class="lg:flex flex-col items-center gap-12">
       
-      <!-- Profile Image - SIMPLIFIED -->
-      <div class="profile-container">
-        <img
-          src={GLOBAL.profileImage}
-          alt={GLOBAL.profileAlt}
-          class="profile-image rounded-full w-80 h-80 xl:w-96 xl:h-96 object-cover shadow-2xl border-4 border-zag-light/20 dark:border-zag-dark/20 z-10"
-          loading="eager"
-          width="384"
-          height="384"
-        />
-      </div>
-
       <!-- Content - SIMPLIFIED -->
       <div class="content-container text-center flex-1 max-w-4xl">
         
@@ -74,11 +62,6 @@ import { GLOBAL } from "../../lib/variables";
     align-items: center;
   }
 
-  .profile-container {
-    display: flex;
-    justify-content: center;
-  }
-
   .hero-title {
     margin-bottom: 1.5rem;
   }
@@ -99,11 +82,6 @@ import { GLOBAL } from "../../lib/variables";
     .hero-section {
       min-height: auto;
       padding: 2rem 0;
-    }
-
-    .profile-image {
-      width: 10rem;
-      height: 10rem;
     }
 
     .hero-title {
