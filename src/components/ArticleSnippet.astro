@@ -13,17 +13,35 @@ export type Props = {
 const { title, description, url, duration, timestamp } = Astro.props;
 ---
 
-<div class="zag-text zag-transition flex flex-col gap-3 pb-8">
-  <Anchor url={url} class="text-xl">
-    {title}
-  </Anchor>
-  <p class="">
-    {description}
-  </p>
-  <div
-    class="zag-muted zag-transition flex justify-between items-center"
+<div class="animate-on-scroll">
+  <article 
+    class="glass-card p-6 flex flex-col gap-3 transition-all duration-300"
   >
-    {timestamp ? <p>{processArticleDate(timestamp)}</p> : null}
-    {duration ? <p>{duration}</p> : null}
-  </div>
+    <Anchor url={url} class="text-xl font-semibold" style="font-family: 'Geist', system-ui, sans-serif; color: var(--on-surface);">
+      {title}
+    </Anchor>
+    <p style="color: var(--on-surface-variant);">
+      {description}
+    </p>
+    <div 
+      class="flex justify-between items-center text-sm"
+      style="color: var(--on-surface-variant);"
+    >
+      {timestamp ? <p>{processArticleDate(timestamp)}</p> : null}
+      {duration ? (
+        <span class="label-caps">{duration}</span>
+      ) : null}
+    </div>
+    <!-- Accent line on hover -->
+    <div 
+      class="h-0.5 w-0 transition-all duration-300 mt-2"
+      style="background: linear-gradient(90deg, var(--electric-blue), var(--neural-violet));"
+    ></div>
+  </article>
 </div>
+
+<style>
+  article:hover div:last-child {
+    width: 100%;
+  }
+</style>
