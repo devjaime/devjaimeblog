@@ -1,9 +1,7 @@
 ---
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
-import AIParticles from "../components/AIParticles.astro";
 import ChatWidget from "../components/ChatWidget.astro";
-// import LandingGame from "../components/LandingGame.astro"; // Disabled for direct navigation
 import "../styles/global.css";
 
 export interface Props {
@@ -37,7 +35,7 @@ const ogImage = new URL(image, Astro.url).href;
 ---
 
 <!doctype html>
-<html lang="es" class="scroll-smooth">
+<html lang="es" class="scroll-smooth dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -94,9 +92,17 @@ const ogImage = new URL(image, Astro.url).href;
     <link rel="preconnect" href="https://giscus.app" />
     <link rel="dns-prefetch" href="https://gc.zgo.at" />
     
-    <!-- Fonts -->
+    <!-- Fonts - Geist, Inter, JetBrains Mono -->
     <link
-      href="https://fonts.bunny.net/css?family=ibm-plex-mono:400,400i,500,500i,600,600i,700,700i&display=swap"
+      href="https://fonts.bunny.net/css?family=geist:400,500,600,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.bunny.net/css?family=inter:400,500,600"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.bunny.net/css?family=jetbrains-mono:400,450"
       rel="stylesheet"
     />
     
@@ -137,9 +143,8 @@ const ogImage = new URL(image, Astro.url).href;
     <!-- Generator -->
     <meta name="generator" content={Astro.generator} />
     
-    <!-- Theme Color -->
-    <meta name="theme-color" content="#10b981" media="(prefers-color-scheme: light)" />
-    <meta name="theme-color" content="#065f46" media="(prefers-color-scheme: dark)" />
+    <!-- Theme Color - Dark Mode -->
+    <meta name="theme-color" content="#131313" />
     
     <!-- Additional meta tags -->
     <meta name="keywords" content="Jaime Hernández, software engineer, AI, artificial intelligence, Golang, Python, backend development, cloud computing, microservices, PostgreSQL, LangChain, Chile, Latin America" />
@@ -154,14 +159,9 @@ const ogImage = new URL(image, Astro.url).href;
     <script data-goatcounter="https://devjaime.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
   </head>
-  <body class="zag-bg zag-text zag-transition font-mono antialiased">
-    <!-- Landing Game disabled for direct navigation -->
-    <!-- <LandingGame /> -->
-    
-    <!-- AI Particles disabled for faster loading -->
-    <!-- <AIParticles /> -->
-    
-    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-emerald-600 text-white px-4 py-2 rounded-md z-50">
+  <body class="antialiased min-h-screen" style="background-color: var(--surface); color: var(--on-surface);">
+    <!-- Skip to main content -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-[var(--electric-blue)] text-white px-4 py-2 rounded-md z-50">
       Skip to main content
     </a>
     
@@ -183,7 +183,7 @@ const ogImage = new URL(image, Astro.url).href;
         data-reactions-enabled="1"
         data-emit-metadata="0"
         data-input-position="bottom"
-        data-theme="preferred_color_scheme"
+        data-theme="dark"
         data-lang="es"
         crossorigin="anonymous"
         async>
@@ -192,9 +192,8 @@ const ogImage = new URL(image, Astro.url).href;
     
     <Footer />
 
-    <!-- AI Animation Scripts -->
+    <!-- Scroll-triggered animations -->
     <script>
-      // Scroll-triggered animations
       function initScrollAnimations() {
         const observerOptions = {
           threshold: 0.1,
@@ -215,26 +214,8 @@ const ogImage = new URL(image, Astro.url).href;
         });
       }
 
-      // AI Glow effects on hover
-      function initAIGlowEffects() {
-        const aiElements = document.querySelectorAll('.ai-glow, .ai-card, .ai-button');
-        
-        aiElements.forEach(element => {
-          const el = element as HTMLElement;
-          el.addEventListener('mouseenter', () => {
-            el.style.transform = 'scale(1.02)';
-          });
-          
-          el.addEventListener('mouseleave', () => {
-            el.style.transform = 'scale(1)';
-          });
-        });
-      }
-
-      // Initialize all AI effects
       document.addEventListener('DOMContentLoaded', () => {
         initScrollAnimations();
-        initAIGlowEffects();
       });
     </script>
     {import.meta.env.DEV && <ChatWidget />}
