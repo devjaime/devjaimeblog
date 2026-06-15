@@ -245,172 +245,167 @@ const ogImage = new URL(image, Astro.url).href;
         const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
         if (!gl) return;
 
-        const vs = `attribute vec2 a_position;
-varying vec2 v_texCoord;
-void main() {
-  v_texCoord = a_position * 0.5 + 0.5;
-  gl_Position = vec4(a_position, 0.0, 1.0);
-}`;
+        const vs = `
+          attribute vec2 a_position;
+          void main() {
+            gl_Position = vec4(a_position, 0.0, 1.0);
+          }
+        `;
 
-        const fs = `precision highp float;
-uniform float u_time;
-uniform vec2 u_resolution;
-uniform vec2 u_mouse;
-varying vec2 v_texCoord;
+        const fs = `
+          precision mediump float;
+          uniform float u_time;
+          uniform vec2 u_resolution;
+          uniform vec2 u_mouse;
+          
+          float hash(float n) { return fract(sin(n) * 43758.5453); }
+          float hash2(vec2 p) { return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453; }
+          
+          float noise(vec2 p) {
+            vec2 i = floor(p);
+            vec2 f = fract(p);
+            f = f * f * (3.0 - 2.0 * f);
+            return mix(
+              mix(hash2(i), hash2(i + vec2(1.0, 0.0)), f.x),
+              mix(hash2(i + vec2(0.0, 1.0)), hash2(i + vec2(1.0, 1.0)), f.x),
+              f.y
+            );
+          }
+          
+          void main() {
+            vec2 uv = gl_FragCoord.xy / u_resolution;
+            float time = u_time;
+            
+            // Space background
+            vec3 color = vec3(0.01, 0.0, 0.04);
+            
+            // Stars
+            float starVal = hash2(floor(uv * 200.0));
+            if (starVal > 0.97) {
+              float twinkle = 0.5 + 0.5 * sin(time * 3.0 + starVal * 10.0);
+              color += vec3(0.9, 0.95, 1.0) * twinkle;
+            }
+            
+            // Earth at bottom
+            vec2 earthCenter = vec2(0.5, 0.12);
+            float earthDist = length(uv - earthCenter);
+            if (earthDist < 0.15) {
+              float landNoise = noise(uv * 15.0);
+              vec3 earthBase = mix(vec3(0.1, 0.25, 0.7), vec3(0.15, 0.4, 0.25), landNoise);
+              color = mix(color, earthBase, 0.9);
+            }
+            
+            // UFO 1 - main invasion ship
+            vec2 ufo1 = vec2(0.5, mod(time * 0.08, 1.1));
+            float d1 = length(uv - ufo1);
+            float ufo1Shape = 1.0 - smoothstep(0.0, 0.015, d1 - 0.025);
+            ufo1Shape += 1.0 - smoothstep(0.0, 0.01, length((uv - ufo1 - vec2(0.0, -0.01)) * vec2(1.0, 1.5)) - 0.008);
+            if (ufo1Shape > 0.0) {
+              color += vec3(0.2, 1.0, 0.3) * ufo1Shape * (0.7 + 0.3 * sin(time * 8.0));
+            }
+            
+            // UFO beam from main ship
+            if (ufo1.y > 0.2) {
+              float beamX = abs(uv.x - ufo1.x);
+              float beamY = uv.y - ufo1.y;
+              if (beamY > 0.0 && beamY < 0.3 && beamX < 0.008) {
+                float beamPulse = 0.4 + 0.6 * sin(time * 10.0 + uv.y * 40.0);
+                color += vec3(0.4, 1.0, 0.2) * beamPulse * 0.5;
+              }
+            }
+            
+            // UFO 2 - left
+            vec2 ufo2 = vec2(0.25, mod(time * 0.06 + 0.3, 1.1));
+            float d2 = length(uv - ufo2);
+            float ufo2Shape = 1.0 - smoothstep(0.0, 0.012, d2 - 0.02);
+            ufo2Shape += 1.0 - smoothstep(0.0, 0.008, length((uv - ufo2 - vec2(0.0, -0.008)) * vec2(1.0, 1.5)) - 0.006);
+            if (ufo2Shape > 0.0) {
+              color += vec3(0.3, 0.9, 0.4) * ufo2Shape * (0.6 + 0.4 * sin(time * 6.0 + 1.0));
+            }
+            
+            // UFO 3 - right
+            vec2 ufo3 = vec2(0.75, mod(time * 0.07 + 0.6, 1.1));
+            float d3 = length(uv - ufo3);
+            float ufo3Shape = 1.0 - smoothstep(0.0, 0.012, d3 - 0.02);
+            ufo3Shape += 1.0 - smoothstep(0.0, 0.008, length((uv - ufo3 - vec2(0.0, -0.008)) * vec2(1.0, 1.5)) - 0.006);
+            if (ufo3Shape > 0.0) {
+              color += vec3(0.25, 0.85, 0.35) * ufo3Shape * (0.6 + 0.4 * sin(time * 7.0 + 2.0));
+            }
+            
+            // Scanning beams from top
+            float beam1X = abs(uv.x - 0.2 - sin(time * 1.5) * 0.05);
+            if (beam1X < 0.006 && uv.y > 0.1) {
+              float beamFade = (0.3 + 0.2 * sin(time * 6.0 + uv.y * 25.0)) * (1.0 - uv.y);
+              color += vec3(0.15, 0.9, 0.2) * beamFade;
+            }
+            
+            float beam2X = abs(uv.x - 0.5 - sin(time * 1.8 + 1.0) * 0.05);
+            if (beam2X < 0.006 && uv.y > 0.1) {
+              float beamFade = (0.3 + 0.2 * sin(time * 5.5 + uv.y * 25.0)) * (1.0 - uv.y);
+              color += vec3(0.15, 0.9, 0.2) * beamFade;
+            }
+            
+            float beam3X = abs(uv.x - 0.8 - sin(time * 1.2 + 2.0) * 0.05);
+            if (beam3X < 0.006 && uv.y > 0.1) {
+              float beamFade = (0.3 + 0.2 * sin(time * 7.0 + uv.y * 25.0)) * (1.0 - uv.y);
+              color += vec3(0.15, 0.9, 0.2) * beamFade;
+            }
+            
+            // Abduction spiral at center
+            vec2 abductCenter = vec2(0.5, 0.35);
+            float abductDist = length(uv - abductCenter);
+            if (abductDist < 0.12) {
+              float angle = atan(uv.y - abductCenter.y, uv.x - abductCenter.x);
+              float spiral = sin(angle * 5.0 + time * 4.0) * 0.5 + 0.5;
+              float pulse = 0.5 + 0.5 * sin(time * 9.0);
+              float intensity = (1.0 - abductDist / 0.12) * spiral * pulse;
+              color += vec3(0.35, 1.0, 0.15) * intensity * 0.4;
+            }
+            
+            // Mouse UFO
+            vec2 mouseUV = u_mouse;
+            float mouseDist = length(uv - mouseUV);
+            float mouseUfo = 1.0 - smoothstep(0.0, 0.015, mouseDist - 0.02);
+            mouseUfo += 1.0 - smoothstep(0.0, 0.01, length((uv - mouseUV - vec2(0.0, -0.01)) * vec2(1.0, 1.5)) - 0.008);
+            if (mouseUfo > 0.0) {
+              color += vec3(0.0, 0.7, 1.0) * mouseUfo * 0.6;
+            }
+            
+            // Vignette
+            float vignette = 1.0 - length((uv - 0.5) * 1.3);
+            color *= vignette;
+            
+            gl_FragColor = vec4(color, 1.0);
+          }
+        `;
 
-// Hash function for randomness
-float hash(float n) { return fract(sin(n) * 43758.5453123); }
-float hash2(vec2 p) { return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453123; }
+        function createShader(type, source) {
+          const shader = gl.createShader(type);
+          gl.shaderSource(shader, source);
+          gl.compileShader(shader);
+          if (!gl.getShaderParameter(shader, gl.COMPILE_STATUS)) {
+            console.error('Shader compile error:', gl.getShaderInfoLog(shader));
+            gl.deleteShader(shader);
+            return null;
+          }
+          return shader;
+        }
 
-// Smooth noise
-float noise(vec2 p) {
-  vec2 i = floor(p);
-  vec2 f = fract(p);
-  f = f * f * (3.0 - 2.0 * f);
-  float a = hash2(i);
-  float b = hash2(i + vec2(1.0, 0.0));
-  float c = hash2(i + vec2(0.0, 1.0));
-  float d = hash2(i + vec2(1.0, 1.0));
-  return mix(mix(a, b, f.x), mix(c, d, f.x), f.y);
-}
-
-// UFO body - classic saucer shape
-float ufo(vec2 p, vec2 center, float size, float time) {
-  vec2 d = (p - center) / size;
-  // Saucer body - ellipse
-  float body = 1.0 - smoothstep(0.3, 0.35, length(d * vec2(1.0, 0.5)));
-  body += 1.0 - smoothstep(0.15, 0.2, length(d * vec2(1.0, 1.5)) - 0.1);
-  // Dome
-  float dome = 1.0 - smoothstep(0.08, 0.12, length((d - vec2(0.0, -0.05)) * vec2(1.0, 1.2)));
-  return clamp(body + dome * 0.8, 0.0, 1.0);
-}
-
-// Beam of light from UFO
-float beam(vec2 p, vec2 center, float size, float time) {
-  vec2 d = (p - center) / size;
-  float beamWidth = 0.02 + 0.01 * sin(time * 5.0);
-  float beamLength = 0.4 + 0.1 * sin(time * 3.0);
-  float beam = 1.0 - smoothstep(0.0, beamWidth, abs(d.x)) * smoothstep(0.0, beamLength, -d.y);
-  beam *= smoothstep(-0.5, -0.1, d.y);
-  return beam * (0.5 + 0.5 * sin(time * 8.0 + p.y * 20.0));
-}
-
-// Stars background
-float stars(vec2 p, float time) {
-  float s = 0.0;
-  for (float i = 1.0; i < 4.0; i++) {
-    vec2 grid = floor(p * i * 50.0);
-    float star = step(0.97, hash2(grid));
-    float twinkle = 0.5 + 0.5 * sin(time * 3.0 + hash2(grid) * 6.28);
-    s += star * twinkle / i;
-  }
-  return s;
-}
-
-// Earth circle
-float earth(vec2 p, vec2 center, float size) {
-  float d = length(p - center) / size;
-  float e = 1.0 - smoothstep(0.9, 1.0, d);
-  // Continents (simplified)
-  vec2 landP = (p - center) / size * 3.0;
-  float land = noise(landP * 2.0);
-  land = smoothstep(0.4, 0.6, land);
-  return e * (0.3 + land * 0.7);
-}
-
-void main() {
-    vec2 uv = v_texCoord;
-    vec2 mouse = u_mouse / u_resolution;
-    float time = u_time;
-    
-    // Space background - deep black with blue tint
-    vec3 space = vec3(0.01, 0.0, 0.05);
-    
-    // Stars
-    float starField = stars(uv, time);
-    space += vec3(0.8, 0.9, 1.0) * starField;
-    
-    // Earth at bottom
-    vec2 earthCenter = vec2(0.5, 0.15);
-    float earthDisc = earth(uv, earthCenter, 0.25);
-    vec3 earthColor = mix(vec3(0.1, 0.3, 0.8), vec3(0.2, 0.5, 0.3), noise(uv * 10.0));
-    space = mix(space, earthColor, earthDisc);
-    
-    // UFO invasion - multiple UFOs
-    vec3 ufoColor = vec3(0.2, 1.0, 0.3); // Alien green
-    vec3 beamColor = vec3(0.5, 1.0, 0.2); // Green beam
-    vec3 finalColor = space;
-    
-    // Multiple UFOs at different positions
-    for (float i = 0.0; i < 12.0; i++) {
-      float seed = i * 1.234;
-      float speed = 0.1 + hash(seed) * 0.15;
-      
-      // UFO position - moving down and slightly sideways
-      float xPos = 0.1 + hash(seed + 1.0) * 0.8;
-      float yPos = mod(hash(seed + 2.0) * 0.5 + time * speed * 0.1, 1.2);
-      vec2 ufoCenter = vec2(xPos, 1.1 - yPos);
-      
-      float ufoSize = 0.03 + hash(seed + 3.0) * 0.02;
-      
-      // Draw UFO
-      float u = ufo(uv, ufoCenter, ufoSize, time);
-      if (u > 0.0) {
-        // UFO glow
-        vec3 glow = ufoColor * u * (0.8 + 0.2 * sin(time * 10.0 + i));
-        finalColor += glow;
+        const vertexShader = createShader(gl.VERTEX_SHADER, vs);
+        const fragmentShader = createShader(gl.FRAGMENT_SHADER, fs);
         
-        // Beam only for lower UFOs
-        if (yPos > 0.3) {
-          float b = beam(uv, ufoCenter, ufoSize, time + i);
-          finalColor += beamColor * b * 0.6;
-        }
-      }
-    }
-    
-    // Scanning beams from above - wider, more dramatic
-    for (float i = 0.0; i < 5.0; i++) {
-      float xPos = 0.1 + i * 0.2;
-      float scan = 0.02 * sin(time * 2.0 + i) + 0.01;
-      float beamH = 0.7 + 0.1 * sin(time + i);
-      vec2 beamCenter = vec2(xPos, 1.0);
-      float b = 1.0 - smoothstep(0.0, scan, abs(uv.x - beamCenter.x));
-      b *= smoothstep(0.0, beamH, 1.0 - uv.y);
-      b *= (0.3 + 0.2 * sin(time * 5.0 + uv.y * 30.0));
-      finalColor += vec3(0.1, 0.8, 0.2) * b * 0.4;
-    }
-    
-    // Abduction effect - swirling beam at center
-    vec2 abductPos = vec2(0.5, 0.3);
-    float abductDist = length(uv - abductPos);
-    float abduct = exp(-abductDist * 5.0) * (0.5 + 0.5 * sin(time * 10.0));
-    float spiral = sin(atan(uv.y - abductPos.y, uv.x - abductPos.x) * 6.0 + time * 5.0);
-    abduct *= spiral * 0.5 + 0.5;
-    finalColor += vec3(0.3, 1.0, 0.1) * abduct * 0.3;
-    
-    // Mouse interaction - UFO follows mouse slightly
-    vec2 mouseUV = mouse;
-    float mouseUfo = ufo(uv, mouseUV, 0.05, time);
-    finalColor += vec3(0.0, 0.8, 1.0) * mouseUfo * 0.5;
-    
-    // Vignette - darker edges
-    float vignette = 1.0 - length((uv - 0.5) * 1.2);
-    finalColor *= vignette;
-    
-    gl_FragColor = vec4(finalColor, 1.0);
-}`;
-
-        function cs(type, src) {
-          const s = gl.createShader(type);
-          gl.shaderSource(s, src);
-          gl.compileShader(s);
-          return s;
-        }
+        if (!vertexShader || !fragmentShader) return;
 
         const prog = gl.createProgram();
-        gl.attachShader(prog, cs(gl.VERTEX_SHADER, vs));
-        gl.attachShader(prog, cs(gl.FRAGMENT_SHADER, fs));
+        gl.attachShader(prog, vertexShader);
+        gl.attachShader(prog, fragmentShader);
         gl.linkProgram(prog);
+        
+        if (!gl.getProgramParameter(prog, gl.LINK_STATUS)) {
+          console.error('Program link error:', gl.getProgramInfoLog(prog));
+          return;
+        }
+        
         gl.useProgram(prog);
 
         const buf = gl.createBuffer();
@@ -428,15 +423,13 @@ void main() {
         window.addEventListener('mousemove', (event) => {
           const rect = canvas.getBoundingClientRect();
           if (rect.width && rect.height) {
-            const nx = (event.clientX - rect.left) / rect.width;
-            const ny = 1.0 - (event.clientY - rect.top) / rect.height;
-            mouse.x = nx * canvas.width;
-            mouse.y = ny * canvas.height;
+            mouse.x = (event.clientX - rect.left) * canvas.width / rect.width;
+            mouse.y = (1.0 - (event.clientY - rect.top) / rect.height) * canvas.height;
           }
         });
 
         function render(t) {
-          if (typeof ResizeObserver === 'undefined') syncSize();
+          syncSize();
           gl.viewport(0, 0, canvas.width, canvas.height);
           if (uTime) gl.uniform1f(uTime, t * 0.001);
           if (uRes) gl.uniform2f(uRes, canvas.width, canvas.height);
