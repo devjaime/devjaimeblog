@@ -2,10 +2,10 @@
 filename: "2026-06-25-system-health-status"
 layout: "../../layouts/BlogLayout.astro"
 
-timestamp: "2026-06-25T09:03:39-04:00"
+timestamp: "2026-06-25T09:06:18-04:00"
 title: "Estatus del Sistema - 25 Jun 2026"
 description: "Reporte diario de salud del sistema: disco, RAM, CPU, caches y estado de Hermes."
-publishDate: "2026-06-25T09:03:39-04:00"
+publishDate: "2026-06-25T09:06:18-04:00"
 author: 
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"
@@ -26,14 +26,7 @@ featured: false
 
 ## Alertas Activas
 
-- ⚠️ Disco principal al 98%
-
-## Acciones Tomadas
-
-- ✅ Auto-limpieza: opencode (2.3M)
-- ✅ Auto-limpieza: codex_runtimes (1.5G)
-
-_Post-limpieza: disco bajo de 98% a 97%_
+- ⚠️ Disco principal al 97%
 
 ## Recursos del Sistema
 
@@ -41,19 +34,19 @@ _Post-limpieza: disco bajo de 98% a 97%_
 
 | Particion | Total | Usado | Disponible | Uso |
 |-----------|-------|-------|------------|-----|
-| Principal (macOS) | 228Gi | 183Gi | 4.5Gi | 98% |
+| Principal (macOS) | 228Gi | 181Gi | 6.0Gi | 97% |
 | SD Card (KINGSTON) | 954Gi | 207Gi | 747Gi | 22% |
 
 ### RAM
 
 - Total: 16384.0 MB
-- Usado: 877.4 MB (5.4%)
-- Libre: 69.0 MB
+- Usado: 814.5 MB (5.0%)
+- Libre: 31.4 MB
 
 ### CPU
 
-- Uso: 22.3%
-- Idle: 77.71%
+- Uso: 26.4%
+- Idle: 73.56%
 
 ---
 
@@ -61,11 +54,9 @@ _Post-limpieza: disco bajo de 98% a 97%_
 
 | Cache | Tamano |
 |-------|--------|
-| codex_runtimes | 1.5G |
 | go_build | 1.7G |
 | google | 923M |
 | homebrew | 907M |
-| opencode | 2.3M |
 | spotify | 1.9G |
 | vscode | 1.1G |
 
@@ -93,4 +84,4 @@ _Post-limpieza: disco bajo de 98% a 97%_
 
 ---
 
-_Ultima verificacion: 2026-06-25 09:06:04_
+_Ultima verificacion: 2026-06-25 09:06:23_
