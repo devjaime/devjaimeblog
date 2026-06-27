@@ -1,0 +1,93 @@
+---
+import { GLOBAL } from "../../lib/variables";
+
+const techCategories = [
+  {
+    name: "Languages",
+    icon: "💻",
+    items: GLOBAL.skills.languages,
+    color: "blue"
+  },
+  {
+    name: "AI & Agents",
+    icon: "🤖",
+    items: GLOBAL.skills.ai,
+    color: "violet"
+  },
+  {
+    name: "Cloud & DevOps",
+    icon: "☁️",
+    items: GLOBAL.skills.cloud,
+    color: "blue"
+  },
+  {
+    name: "Frameworks",
+    icon: "🔧",
+    items: GLOBAL.skills.frameworks,
+    color: "violet"
+  },
+  {
+    name: "Databases",
+    icon: "🗄️",
+    items: GLOBAL.skills.databases,
+    color: "blue"
+  },
+  {
+    name: "Tools",
+    icon: "🛠️",
+    items: GLOBAL.skills.tools,
+    color: "violet"
+  }
+];
+---
+
+<section class="tech-stack-section py-16">
+  <div class="container mx-auto px-4 max-w-7xl">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl xl:text-4xl font-display font-bold mb-4 gradient-text">
+        Tech Stack
+      </h2>
+      <p class="text-lg max-w-2xl mx-auto" style="color: var(--on-surface-variant);">
+        Technologies I use to build production-ready AI systems and scalable applications
+      </p>
+    </div>
+    
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+      {techCategories.map((category) => (
+        <div class="tech-card animate-on-scroll">
+          <div class="tech-card-icon">{category.icon}</div>
+          <div class="tech-card-name">{category.name}</div>
+          <div class="flex flex-wrap gap-1 justify-center mt-2">
+            {category.items.slice(0, 4).map((item) => (
+              <span 
+                class={`text-xs px-2 py-0.5 rounded-full ${category.color === 'violet' ? 'skill-pill violet text-xs' : 'skill-pill text-xs'}`}
+                style="font-size: 0.6875rem;"
+              >
+                {item}
+              </span>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+    
+    <!-- Detailed skills grid -->
+    <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {techCategories.map((category) => (
+        <div class="glass-card p-6 animate-on-scroll">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="text-2xl">{category.icon}</span>
+            <h3 class="text-lg font-semibold" style="color: var(--on-surface);">{category.name}</h3>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            {category.items.map((item) => (
+              <span class={`skill-pill ${category.color === 'violet' ? 'violet' : ''}`}>
+                {item}
+              </span>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

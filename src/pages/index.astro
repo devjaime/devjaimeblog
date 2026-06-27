@@ -4,6 +4,7 @@ import Section from "../components/common/Section.astro";
 import Hero from "../components/home/Hero.astro";
 import FeaturedProjects from "../components/home/FeaturedProjects.astro";
 import FeaturedArticles from "../components/home/FeaturedArticles.astro";
+import TechStack from "../components/home/TechStack.astro";
 import { GLOBAL } from "../lib/variables";
 import { featuredArticles, featuredProjects } from "../lib/featured";
 ---
@@ -17,6 +18,10 @@ import { featuredArticles, featuredProjects } from "../lib/featured";
 >
   <Section class="my-16">
     <Hero />
+  </Section>
+
+  <Section>
+    <TechStack />
   </Section>
 
   <Section>

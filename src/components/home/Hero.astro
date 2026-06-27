@@ -1,32 +1,80 @@
 ---
 import { GLOBAL } from "../../lib/variables";
+
+const typingTexts = [
+  "AI Agent Architect",
+  "LangChain & LangGraph Expert",
+  "RAG Systems Designer",
+  "Automation Engineer",
+  "GCP & Python Developer"
+];
+
+const stats = [
+  { value: "8+", label: "Years Experience" },
+  { value: "50+", label: "Projects Delivered" },
+  { value: "20+", label: "AI Agents Built" },
+  { value: "99.9%", label: "Uptime SLA" }
+];
+
+const primarySkills = ["Go", "Python", "LangChain", "LangGraph", "GCP", "Docker", "Kubernetes", "PostgreSQL"];
+const secondarySkills = ["CrewAI", "Claude API", "Ollama", "MCP", "RAG", "FastAPI", "n8n", "Redis"];
 ---
 
 <section class="hero-section">
   <div class="container mx-auto px-4 py-16 max-w-7xl">
-    <!-- Desktop Layout -->
     <div class="lg:flex flex-col items-center gap-12">
-      
-      <!-- Content - SIMPLIFIED -->
       <div class="content-container text-center flex-1 max-w-4xl">
         
-        <h1 class="hero-title text-4xl xl:text-5xl 2xl:text-6xl font-display font-bold mb-6">
+        <!-- Name -->
+        <h1 class="hero-title text-4xl xl:text-5xl 2xl:text-6xl font-display font-bold mb-4">
           {GLOBAL.username}
         </h1>
 
-        <h2 class="hero-subtitle text-xl xl:text-2xl 2xl:text-3xl font-mono font-medium mb-6 text-zag-text">
-          {GLOBAL.shortDescription}
-        </h2>
+        <!-- Typing Animation Role -->
+        <div class="typewriter-container mb-6 h-12 flex items-center justify-center">
+          <span class="typewriter-text text-xl xl:text-2xl 2xl:text-3xl font-mono font-medium" style="color: var(--electric-blue);"></span>
+          <span class="typewriter-cursor" style="border-right: 2px solid var(--electric-blue);"></span>
+        </div>
 
-        <p class="hero-description text-lg xl:text-xl 2xl:text-2xl zag-muted mb-12 leading-relaxed">
+        <!-- Tagline -->
+        <p class="hero-description text-lg xl:text-xl 2xl:text-2xl mb-8 leading-relaxed" style="color: var(--on-surface-variant);">
           {GLOBAL.heroDescription}
         </p>
 
+        <!-- Stats Row -->
+        <div class="stats-row grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
+          {stats.map((stat) => (
+            <div class="stat-card">
+              <span class="stat-value text-2xl xl:text-3xl font-bold gradient-text">{stat.value}</span>
+              <span class="stat-label text-xs xl:text-sm mt-1" style="color: var(--on-surface-variant);">{stat.label}</span>
+            </div>
+          ))}
+        </div>
+
+        <!-- Skills Pills - Primary -->
+        <div class="skills-section mb-6">
+          <p class="skills-label text-xs font-semibold mb-3 uppercase tracking-wider" style="color: var(--on-surface-variant);">Tech Stack</p>
+          <div class="skills-pills flex flex-wrap gap-2 justify-center">
+            {primarySkills.map((skill, index) => (
+              <span class="skill-pill" style={`animation-delay: ${index * 0.05}s`}>{skill}</span>
+            ))}
+          </div>
+        </div>
+
+        <!-- Skills Pills - Secondary (AI Focus) -->
+        <div class="skills-section mb-10">
+          <div class="skills-pills flex flex-wrap gap-2 justify-center">
+            {secondarySkills.map((skill, index) => (
+              <span class="skill-pill violet" style={`animation-delay: ${(index + primarySkills.length) * 0.05}s`}>{skill}</span>
+            ))}
+          </div>
+        </div>
+
         <!-- Action buttons -->
-        <div class="hero-buttons flex flex-wrap gap-6 justify-center">
+        <div class="hero-buttons flex flex-wrap gap-4 justify-center">
           <a 
             href={GLOBAL.linkedinProfile} 
-            class="bg-green-500 text-white px-6 py-3 xl:px-8 xl:py-4 rounded-lg font-medium flex items-center gap-2 hover:bg-green-600 text-base xl:text-lg"
+            class="btn-primary flex items-center gap-2 text-base xl:text-lg px-6 py-3"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn Profile"
@@ -39,7 +87,8 @@ import { GLOBAL } from "../../lib/variables";
           
           <a 
             href={GLOBAL.githubProfile} 
-            class="border-2 border-green-500 text-green-500 px-6 py-3 xl:px-8 xl:py-4 rounded-lg font-medium flex items-center gap-2 hover:text-white hover:bg-green-500 text-base xl:text-lg"
+            class="border-2 flex items-center gap-2 text-base xl:text-lg px-6 py-3 rounded-lg font-medium hover:text-white transition-all"
+            style="border-color: var(--electric-blue); color: var(--electric-blue);"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub Repository"
@@ -57,43 +106,120 @@ import { GLOBAL } from "../../lib/variables";
 
 <style>
   .hero-section {
-    min-height: 70vh;
+    min-height: 85vh;
     display: flex;
     align-items: center;
   }
 
   .hero-title {
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
   }
 
-  .hero-subtitle {
-    margin-bottom: 1.5rem;
+  .typewriter-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 3rem;
   }
 
-  .hero-description {
-    margin-bottom: 2rem;
+  .typewriter-text {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: none;
+    animation: typewriter-cursor 1s step-end infinite;
   }
 
-  .hero-buttons {
-    margin-top: 1.5rem;
+  .typewriter-cursor {
+    display: inline-block;
+    width: 3px;
+    height: 1.5em;
+    margin-left: 4px;
+    animation: blink 1s step-end infinite;
+    vertical-align: text-bottom;
+  }
+
+  .stats-row {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .stat-value {
+    line-height: 1.2;
+  }
+
+  .skills-section {
+    width: 100%;
+  }
+
+  .skills-label {
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  .skill-pill {
+    opacity: 0;
+    animation: fadeSlideIn 0.4s ease forwards;
+  }
+
+  @keyframes fadeSlideIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 
   @media (max-width: 1024px) {
     .hero-section {
       min-height: auto;
-      padding: 2rem 0;
+      padding: 3rem 0;
     }
 
     .hero-title {
-      font-size: 2rem;
+      font-size: 2.5rem;
     }
 
-    .hero-subtitle {
+    .typewriter-text {
       font-size: 1.125rem;
-    }
-
-    .hero-description {
-      font-size: 1rem;
     }
   }
 </style>
+
+<script define:vars={{ typingTexts }}>
+  const textElement = document.querySelector('.typewriter-text');
+  let textIndex = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+  let typeSpeed = 100;
+
+  function type() {
+    const currentText = typingTexts[textIndex];
+    
+    if (isDeleting) {
+      textElement.textContent = currentText.substring(0, charIndex - 1);
+      charIndex--;
+      typeSpeed = 50;
+    } else {
+      textElement.textContent = currentText.substring(0, charIndex + 1);
+      charIndex++;
+      typeSpeed = 100;
+    }
+
+    if (!isDeleting && charIndex === currentText.length) {
+      isDeleting = true;
+      typeSpeed = 2000;
+    } else if (isDeleting && charIndex === 0) {
+      isDeleting = false;
+      textIndex = (textIndex + 1) % typingTexts.length;
+      typeSpeed = 500;
+    }
+
+    setTimeout(type, typeSpeed);
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    setTimeout(type, 500);
+  });
+</script>
