@@ -1,0 +1,129 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Section from "../components/common/Section.astro";
+import { GLOBAL } from "../lib/variables";
+---
+
+<Layout
+  title="Servicios de Consultoría IA • AI Consultant"
+  description="Servicios de consultoría en inteligencia artificial: agentes autónomos, automatización inteligente, arquitectura RAG y consultoría LLM."
+  type="website"
+>
+  <Section class="my-16">
+    <div class="max-w-5xl mx-auto">
+      
+      <!-- Hero -->
+      <div class="text-center mb-16">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">{GLOBAL.servicesTitle}</h1>
+        <p class="text-xl zag-muted max-w-2xl mx-auto">{GLOBAL.servicesShortDescription}</p>
+      </div>
+
+      <!-- Services Grid -->
+      <div class="grid md:grid-cols-2 gap-8 mb-16">
+        {GLOBAL.services.map(service => (
+          <div class="bg-zag-light-bg dark:bg-zag-dark-bg p-8 rounded-lg hover:shadow-lg transition-shadow">
+            <div class="text-5xl mb-4">{service.icon}</div>
+            <h3 class="text-2xl font-bold mb-3">{service.title}</h3>
+            <p class="zag-muted leading-relaxed">{service.description}</p>
+          </div>
+        ))}
+      </div>
+
+      <!-- Process Section -->
+      <div class="mb-16">
+        <h2 class="text-3xl font-bold mb-8 text-center">Cómo Trabajo</h2>
+        
+        <div class="grid md:grid-cols-4 gap-6">
+          <div class="text-center">
+            <div class="w-12 h-12 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">1</div>
+            <h3 class="font-semibold mb-2">Diagnóstico</h3>
+            <p class="text-sm zag-muted">Análisis de procesos y detección de oportunidades de automatización.</p>
+          </div>
+          
+          <div class="text-center">
+            <div class="w-12 h-12 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">2</div>
+            <h3 class="font-semibold mb-2">Diseño</h3>
+            <p class="text-sm zag-muted">Arquitectura de agentes y flujos de trabajo optimizados.</p>
+          </div>
+          
+          <div class="text-center">
+            <div class="w-12 h-12 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">3</div>
+            <h3 class="font-semibold mb-2">Implementación</h3>
+            <p class="text-sm zag-muted">Desarrollo e integración con tus sistemas existentes.</p>
+          </div>
+          
+          <div class="text-center">
+            <div class="w-12 h-12 bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">4</div>
+            <h3 class="font-semibold mb-2">Optimización</h3>
+            <p class="text-sm zag-muted">Monitoreo continuo y mejora de rendimiento.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Technologies -->
+      <div class="mb-16">
+        <h2 class="text-2xl font-bold mb-8 text-center">Tecnologías</h2>
+        
+        <div class="space-y-6">
+          <div>
+            <h3 class="font-semibold mb-3">Frameworks de IA</h3>
+            <div class="flex flex-wrap gap-2">
+              {GLOBAL.skills.ai.map(skill => (
+                <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full text-sm">
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
+          
+          <div>
+            <h3 class="font-semibold mb-3">Lenguajes & Databases</h3>
+            <div class="flex flex-wrap gap-2">
+              {[...GLOBAL.skills.languages, ...GLOBAL.skills.databases].map(skill => (
+                <span class="px-3 py-1 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 rounded-full text-sm">
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
+          
+          <div>
+            <h3 class="font-semibold mb-3">Cloud & DevOps</h3>
+            <div class="flex flex-wrap gap-2">
+              {GLOBAL.skills.cloud.map(skill => (
+                <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full text-sm">
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="text-center bg-zag-light-bg dark:bg-zag-dark-bg p-12 rounded-lg">
+        <h2 class="text-3xl font-bold mb-4">¿Listo para automatizar con IA?</h2>
+        <p class="text-lg zag-muted mb-8 max-w-xl mx-auto">
+          Agenda una consulta y descubre cómo los agentes autónomos pueden transformar tu negocio.
+        </p>
+        <div class="flex justify-center gap-4 flex-wrap">
+          <a 
+            href={GLOBAL.linkedinProfile}
+            class="px-8 py-4 bg-emerald-500 text-white rounded-lg font-medium hover:bg-emerald-600 transition-colors"
+            target="_blank"
+            rel="noopener"
+          >
+            Contactar por LinkedIn
+          </a>
+          <a 
+            href="/contact"
+            class="px-8 py-4 border-2 border-emerald-500 text-emerald-500 rounded-lg font-medium hover:bg-emerald-500 hover:text-white transition-colors"
+          >
+            Formulario de Contacto
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </Section>
+</Layout>

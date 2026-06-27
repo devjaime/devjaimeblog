@@ -6,39 +6,43 @@ export const GLOBAL = {
   fullName: "Jaime Hernández",
   rootUrl: "https://jaimehernandez.dev",
   
-  // Spanish content
-  shortDescription: "AI & Software Engineer | Founder de Vocari.cl | Cloud, Backend & Automatización",
-  longDescription: "Ingeniero de software chileno especializado en inteligencia artificial, computación en la nube y desarrollo backend. Con experiencia en Golang, PostgreSQL, LangChain y microservicios, crea soluciones escalables impulsadas por IA. Founder de Vocari.cl, apasionado por la automatización y las tecnologías emergentes.",
-  heroDescription: "Ingeniero de software especializado en inteligencia artificial, desarrollo backend y arquitecturas en la nube. Founder de Vocari.cl, apasionado por crear soluciones escalables y automatizadas.",
-  connectButton: "Contactar",
-  viewCodeButton: "Ver GitHub",
-  profileAlt: "Jaime Hernández - Software Engineer especializado en IA",
+  // Spanish content - AI Consultant positioning
+  shortDescription: "AI Consultant | AI Agent Architect | Automatización Inteligente",
+  longDescription: "Consultor de IA especializado en diseñar e implementar agentes autónomos, pipelines de automatización y sistemas inteligentes para empresas. Con experiencia probada en LangGraph, CrewAI, LangChain y arquitecturas LLM en producción. Transformo procesos manuales en flujos automatizados impulsados por IA.",
+  heroDescription: "Consultor de IA especializado en agentes autónomos, automatización inteligente y arquitecturas LLM. Ayuda a empresas a implementar soluciones de IA que reducen costos y escalan operaciones.",
+  connectButton: "Consultar",
+  viewCodeButton: "Ver Proyectos",
+  profileAlt: "Jaime Hernández - AI Consultant especializado en agentes autónomos y automatización",
 
-  // SEO Keywords
+  // SEO Keywords - AI Consultant focused
   keywords: [
     "Jaime Hernández",
-    "software engineer",
-    "AI",
+    "AI Consultant",
+    "Consultor IA",
     "inteligencia artificial",
+    "AI Agent",
+    "agentes autónomos",
+    "automatización",
+    "LangChain",
+    "LangGraph",
+    "CrewAI",
+    "LLM",
+    "RAG",
+    "Chile",
+    "Latinoamérica",
+    "AI automation",
+    "artificial intelligence",
     "Golang",
     "Python",
     "backend development",
     "cloud computing",
     "microservices",
     "PostgreSQL",
-    "LangChain",
-    "Chile",
-    "Latinoamérica",
-    "Vocari",
-    "machine learning",
-    "web scraping",
-    "automatización",
-    "AWS",
-    "Azure",
     "GCP",
-    "Flutter",
-    "TypeScript",
-    "Node.js"
+    "AWS",
+    "Vocari",
+    "AI implementation",
+    "business automation"
   ],
 
   // Social media links
@@ -74,27 +78,55 @@ export const GLOBAL = {
     about: "/about",
     projects: "/projects",
     blog: "/blog",
+    services: "/services",
+    contact: "/contact",
     cv: "/cv",
   },
 
   // External links
   youtubeChannel: "https://m.youtube.com/devjaime",
 
-  // Skills and expertise
+  // Skills and expertise - AI Consultant focus
   skills: {
-    languages: ["Go", "Python", "TypeScript", "JavaScript", "Dart"],
+    languages: ["Go", "Python", "TypeScript", "JavaScript"],
     databases: ["PostgreSQL", "Redis", "MongoDB", "Oracle"],
     cloud: ["GCP", "AWS", "Azure", "Docker", "Kubernetes"],
-    frameworks: ["Next.js", "React", "Node.js", "FastAPI", "Flutter"],
-    ai: ["LangChain", "LangGraph", "CrewAI", "Claude API", "Ollama", "MCP"],
+    frameworks: ["Next.js", "React", "Node.js", "FastAPI"],
+    ai: ["LangChain", "LangGraph", "CrewAI", "Claude API", "Ollama", "MCP", "n8n"],
     tools: ["Git", "VS Code", "Postman", "Jupyter", "n8n"]
   },
 
-  // Experience highlights
+  // Experience highlights - AI Consultant positioning
   experience: {
-    currentRole: "Founder de Vocari.cl",
+    currentRole: "AI Consultant & Agent Architect",
     yearsOfExperience: "8+ años",
-    focusAreas: ["Inteligencia Artificial", "Desarrollo Backend", "Arquitectura en la Nube"],
+    focusAreas: ["Agentes Autónomos", "Automatización IA", "Arquitectura LLM"],
     location: "Chile, Latinoamérica"
-  }
+  },
+
+  // Services section
+  servicesTitle: "Servicios de Consultoría IA",
+  servicesShortDescription: "Implementación de soluciones de inteligencia artificial para negocios.",
+  services: [
+    {
+      title: "Agentes Autónomos",
+      description: "Diseño e implementación de agentes IA que automatizan tareas complejas y procesos de negocio.",
+      icon: "🤖"
+    },
+    {
+      title: "Automatización Inteligente",
+      description: "Transforma flujos de trabajo manuales en procesos automatizados impulsados por IA.",
+      icon: "⚡"
+    },
+    {
+      title: "Arquitectura RAG",
+      description: "Sistemas de Retrieval-Augmented Generation para información en tiempo real.",
+      icon: "📚"
+    },
+    {
+      title: "Consultoría LLM",
+      description: "Evaluación y selección del mejor modelo de lenguaje para tu caso de uso.",
+      icon: "💡"
+    }
+  ]
 };
