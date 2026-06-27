@@ -26,25 +26,25 @@ const secondarySkills = ["CrewAI", "Claude API", "Ollama", "MCP", "RAG", "FastAP
       <div class="content-container text-center flex-1 max-w-4xl">
         
         <!-- Name -->
-        <h1 class="hero-title text-4xl xl:text-5xl 2xl:text-6xl font-display font-bold mb-4">
+        <h1 class="hero-title text-4xl xl:text-5xl 2xl:text-6xl font-display font-bold mb-4 animate-on-scroll">
           {GLOBAL.username}
         </h1>
 
         <!-- Typing Animation Role -->
-        <div class="typewriter-container mb-6 h-12 flex items-center justify-center">
+        <div class="typewriter-container mb-6 h-12 flex items-center justify-center animate-on-scroll stagger-1">
           <span class="typewriter-text text-xl xl:text-2xl 2xl:text-3xl font-mono font-medium" style="color: var(--accent);"></span>
           <span class="typewriter-cursor" style="border-right: 2px solid var(--accent);"></span>
         </div>
 
         <!-- Tagline -->
-        <p class="hero-description text-lg xl:text-xl 2xl:text-2xl mb-8 leading-relaxed" style="color: var(--on-surface-variant);">
+        <p class="hero-description text-lg xl:text-xl 2xl:text-2xl mb-8 leading-relaxed animate-on-scroll stagger-2" style="color: var(--on-surface-variant);">
           {GLOBAL.heroDescription}
         </p>
 
         <!-- Stats Row -->
         <div class="stats-row grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
-          {stats.map((stat) => (
-            <div class="stat-card">
+          {stats.map((stat, index) => (
+            <div class="stat-card animate-on-scroll" style={`animation-delay: ${(index + 3) * 0.1}s;`}>
               <span class="stat-value text-2xl xl:text-3xl font-bold gradient-text">{stat.value}</span>
               <span class="stat-label text-xs xl:text-sm mt-1" style="color: var(--on-surface-variant);">{stat.label}</span>
             </div>
@@ -52,7 +52,7 @@ const secondarySkills = ["CrewAI", "Claude API", "Ollama", "MCP", "RAG", "FastAP
         </div>
 
         <!-- Skills Pills - Primary -->
-        <div class="skills-section mb-6">
+        <div class="skills-section mb-6 animate-on-scroll stagger-3">
           <p class="skills-label text-xs font-semibold mb-3 uppercase tracking-wider" style="color: var(--on-surface-variant);">Tech Stack</p>
           <div class="skills-pills flex flex-wrap gap-2 justify-center">
             {primarySkills.map((skill, index) => (
@@ -62,7 +62,7 @@ const secondarySkills = ["CrewAI", "Claude API", "Ollama", "MCP", "RAG", "FastAP
         </div>
 
         <!-- Skills Pills - Secondary (AI Focus) -->
-        <div class="skills-section mb-10">
+        <div class="skills-section mb-10 animate-on-scroll stagger-4">
           <div class="skills-pills flex flex-wrap gap-2 justify-center">
             {secondarySkills.map((skill, index) => (
               <span class="skill-pill violet" style={`animation-delay: ${(index + primarySkills.length) * 0.05}s`}>{skill}</span>
@@ -71,7 +71,7 @@ const secondarySkills = ["CrewAI", "Claude API", "Ollama", "MCP", "RAG", "FastAP
         </div>
 
         <!-- Action buttons -->
-        <div class="hero-buttons flex flex-wrap gap-4 justify-center">
+        <div class="hero-buttons flex flex-wrap gap-4 justify-center animate-on-scroll stagger-5">
           <a 
             href={GLOBAL.linkedinProfile} 
             class="btn-primary flex items-center gap-2 text-base xl:text-lg px-6 py-3"

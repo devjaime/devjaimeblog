@@ -44,7 +44,7 @@ const techCategories = [
 <section class="tech-stack-section py-16">
   <div class="container mx-auto px-4 max-w-7xl">
     <div class="text-center mb-12">
-      <h2 class="text-3xl xl:text-4xl font-display font-bold mb-4 gradient-text" style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif;">
+      <h2 class="text-3xl xl:text-4xl font-display font-bold mb-4 gradient-text" style="font-family: 'Manrope', system-ui, sans-serif;">
         Tech Stack
       </h2>
       <p class="text-lg max-w-2xl mx-auto" style="color: var(--on-surface-variant);">
@@ -52,34 +52,25 @@ const techCategories = [
       </p>
     </div>
     
-    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
-      {techCategories.map((category) => (
-        <div class="tech-card animate-on-scroll">
-          <div class="tech-card-icon">{category.icon}</div>
-          <div class="tech-card-name">{category.name}</div>
-          <div class="flex flex-wrap gap-1 justify-center mt-2">
-            {category.items.slice(0, 4).map((item) => (
-              <span 
-                class={`text-xs px-2 py-0.5 rounded-full ${category.color === 'violet' ? 'skill-pill violet text-xs' : 'skill-pill text-xs'}`}
-                style="font-size: 0.6875rem;"
-              >
-                {item}
-              </span>
-            ))}
-          </div>
+    <!-- Compact grid of tech cards -->
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 mb-12">
+      {techCategories.map((category, categoryIndex) => (
+        <div class="tech-card-mini animate-on-scroll" style={`animation-delay: ${categoryIndex * 0.1}s;`}>
+          <span class="tech-card-mini-icon">{category.icon}</span>
+          <span class="tech-card-mini-name">{category.name}</span>
         </div>
       ))}
     </div>
     
     <!-- Detailed skills grid -->
-    <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      {techCategories.map((category) => (
-        <div class="glass-card p-6 animate-on-scroll">
-          <div class="flex items-center gap-3 mb-4">
-            <span class="text-2xl">{category.icon}</span>
-            <h3 class="text-lg font-semibold" style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; color: var(--on-surface);">{category.name}</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {techCategories.map((category, index) => (
+        <div class="tech-category-card animate-on-scroll" style={`animation-delay: ${index * 0.1}s;`}>
+          <div class="tech-category-header">
+            <span class="tech-category-icon">{category.icon}</span>
+            <h3 class="tech-category-name">{category.name}</h3>
           </div>
-          <div class="flex flex-wrap gap-2">
+          <div class="tech-category-items">
             {category.items.map((item) => (
               <span class={`skill-pill ${category.color === 'violet' ? 'violet' : ''}`}>
                 {item}
@@ -91,3 +82,101 @@ const techCategories = [
     </div>
   </div>
 </section>
+
+<style>
+  .tech-card-mini {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1.25rem 1rem;
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 16px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(79, 70, 229, 0.04), 0 8px 24px rgba(0, 0, 0, 0.04);
+  }
+
+  .tech-card-mini:hover {
+    transform: translateY(-4px) scale(1.02);
+    border-color: rgba(79, 70, 229, 0.2);
+    box-shadow: 0 8px 24px rgba(79, 70, 229, 0.1), 0 16px 48px rgba(0, 0, 0, 0.08);
+  }
+
+  .tech-card-mini-icon {
+    font-size: 2rem;
+    line-height: 1;
+  }
+
+  .tech-card-mini-name {
+    font-family: 'Manrope', system-ui, sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--on-surface);
+    text-align: center;
+    letter-spacing: -0.01em;
+  }
+
+  .tech-category-card {
+    position: relative;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--outline-variant);
+    border-radius: 16px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04), 0 4px 12px rgba(0, 0, 0, 0.03);
+    overflow: hidden;
+  }
+
+  .tech-category-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--electric-blue), var(--neural-violet));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .tech-category-card:hover {
+    border-color: rgba(79, 70, 229, 0.2);
+    box-shadow: 0 8px 32px rgba(79, 70, 229, 0.12), 0 16px 48px rgba(0, 0, 0, 0.06);
+    transform: translateY(-4px);
+  }
+
+  .tech-category-card:hover::before {
+    opacity: 1;
+  }
+
+  .tech-category-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .tech-category-icon {
+    font-size: 1.75rem;
+    line-height: 1;
+  }
+
+  .tech-category-name {
+    font-family: 'Manrope', system-ui, sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--on-surface);
+    letter-spacing: -0.01em;
+  }
+
+  .tech-category-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+</style>

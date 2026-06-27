@@ -8,40 +8,148 @@ export type Props = {
   url: string;
   duration?: string;
   timestamp?: string;
+  tags?: string[];
 };
 
-const { title, description, url, duration, timestamp } = Astro.props;
+const { title, description, url, duration, timestamp, tags } = Astro.props;
 ---
 
-<div class="animate-on-scroll">
-  <article 
-    class="glass-card p-6 flex flex-col gap-3 transition-all duration-300"
-  >
-    <Anchor url={url} class="text-xl font-semibold" style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; color: var(--on-surface);">
+<div class="article-snippet-wrapper animate-on-scroll">
+  <article class="article-snippet-card">
+    <Anchor url={url} class="article-snippet-title">
       {title}
     </Anchor>
-    <p style="color: var(--on-surface-variant);">
+    <p class="article-snippet-description">
       {description}
     </p>
-    <div 
-      class="flex justify-between items-center text-sm"
-      style="color: var(--on-surface-variant);"
-    >
-      {timestamp ? <p>{processArticleDate(timestamp)}</p> : null}
-      {duration ? (
-        <span class="label-caps">{duration}</span>
-      ) : null}
+    {tags && tags.length > 0 && (
+      <div class="article-snippet-tags">
+        {tags.slice(0, 3).map((tag) => (
+          <span class="article-snippet-tag">{tag}</span>
+        ))}
+      </div>
+    )}
+    <div class="article-snippet-meta">
+      {timestamp && <span class="article-snippet-date">{processArticleDate(timestamp)}</span>}
+      {duration && <span class="article-snippet-duration">{duration}</span>}
     </div>
-    <!-- Accent line on hover -->
-    <div 
-      class="h-0.5 w-0 transition-all duration-300 mt-2"
-      style="background: linear-gradient(90deg, var(--accent), #6366F1);"
-    ></div>
+    <div class="article-snippet-accent"></div>
   </article>
 </div>
 
 <style>
-  article:hover div:last-child {
-    width: 100%;
+  .article-snippet-wrapper {
+    height: 100%;
+  }
+
+  .article-snippet-card {
+    position: relative;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--outline-variant);
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04), 0 4px 12px rgba(0, 0, 0, 0.03);
+    overflow: hidden;
+  }
+
+  .article-snippet-card:hover {
+    border-color: rgba(79, 70, 229, 0.2);
+    box-shadow: 0 4px 20px rgba(79, 70, 229, 0.1), 0 8px 32px rgba(0, 0, 0, 0.06);
+    transform: translateY(-4px);
+  }
+
+  .article-snippet-card:hover .article-snippet-accent {
+    width: 4px;
+  }
+
+  .article-snippet-accent {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 0;
+    background: linear-gradient(180deg, var(--accent), #6366F1);
+    transition: width 0.3s ease;
+    border-radius: 12px 0 0 12px;
+  }
+
+  .article-snippet-title {
+    font-family: 'Manrope', system-ui, sans-serif;
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--on-surface);
+    line-height: 1.3;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    transition: color 0.2s ease;
+  }
+
+  .article-snippet-title:hover {
+    color: var(--accent);
+  }
+
+  .article-snippet-description {
+    font-family: 'Figtree', system-ui, sans-serif;
+    font-size: 0.875rem;
+    color: var(--on-surface-variant);
+    line-height: 1.6;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    flex-grow: 1;
+  }
+
+  .article-snippet-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.375rem;
+  }
+
+  .article-snippet-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.6875rem;
+    font-weight: 500;
+    padding: 0.25rem 0.5rem;
+    border-radius: 9999px;
+    background: rgba(79, 70, 229, 0.08);
+    border: 1px solid rgba(79, 70, 229, 0.12);
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+
+  .article-snippet-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--outline-variant);
+  }
+
+  .article-snippet-date {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--on-surface-variant);
+  }
+
+  .article-snippet-duration {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.6875rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--on-surface-variant);
   }
 </style>

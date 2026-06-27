@@ -39,7 +39,7 @@ import { articles } from "../../lib/list";
     </div>
     <h1 
       class="text-4xl sm:text-5xl mb-4 text-center font-bold animate-on-scroll"
-      style="font-family: 'Geist', system-ui, sans-serif; color: var(--on-surface);"
+      style="font-family: 'Manrope', system-ui, sans-serif; color: var(--on-surface);"
     >
       {GLOBAL.articlesName}
     </h1>
@@ -58,6 +58,7 @@ import { articles } from "../../lib/list";
               duration={`${project.time} min read`}
               url={project.filename}
               timestamp={project.timestamp}
+              tags={project.tags}
             />
           </li>
         ))

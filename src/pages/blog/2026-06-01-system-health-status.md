@@ -3,7 +3,7 @@ filename: '2026-06-01-system-health-status'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2026-06-01T08:00:00-0300'
-title: '2026 06 01 System Health Status'
+title: 'System Health Status Report'
 description: '_Ultima verificacion: 2026-06-01 09:01:30_'
 publishDate: '2026-06-01T08:00:00-0300'
 author:

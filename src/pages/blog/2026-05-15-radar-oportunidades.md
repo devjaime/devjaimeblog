@@ -3,7 +3,7 @@ filename: '2026-05-15-radar-oportunidades'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2026-05-15T08:00:00-0300'
-title: '2026 05 15 Radar Oportunidades'
+title: 'Radar de Oportunidades - Mayo 2026'
 description: '*🤖 Generado automáticamente | 2026-05-15 09:01:44*'
 publishDate: '2026-05-15T08:00:00-0300'
 author:

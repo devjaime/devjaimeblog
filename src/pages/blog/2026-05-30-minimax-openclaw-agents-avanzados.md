@@ -3,7 +3,7 @@ filename: '2026-05-30-minimax-openclaw-agents-avanzados'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2026-05-30T08:00:00-0300'
-title: '2026 05 30 Minimax Openclaw Agents Avanzados'
+title: 'Minimax + OpenClaw Agents Avanzados'
 description: '*¿Ya estás usando agentes en tu workflow? ¿Cuál ha sido tu experiencia? Compartamos ideas.*'
 publishDate: '2026-05-30T08:00:00-0300'
 author:

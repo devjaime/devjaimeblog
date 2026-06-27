@@ -3,7 +3,7 @@ filename: '2026-06-07-gcp-ai-microservices-report'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2026-06-07T08:00:00-0300'
-title: '2026 06 07 Gcp Ai Microservices Report'
+title: 'GCP AI Microservices Report - Jun 2026'
 description: '_Este informe es generado automaticamente por Hermes Agent. Schedule: diario 08:00 CLT._'
 publishDate: '2026-06-07T08:00:00-0300'
 author:
