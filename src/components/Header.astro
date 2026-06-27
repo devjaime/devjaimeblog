@@ -1,14 +1,13 @@
 ---
 import { GLOBAL } from "../lib/variables";
 import Anchor from "./common/Anchor.astro";
-import ThemeToggle from "./ThemeToggle.astro";
 ---
 
 <header 
   class="glass-strong sticky top-0 w-full z-50"
   role="banner"
 >
-  <div class="container max-w-2xl">
+  <div class="container max-w-5xl">
     <!-- Mobile menu button -->
     <div class="sm:hidden relative z-50 py-4 flex items-center justify-between">
       <button 
@@ -21,8 +20,8 @@ import ThemeToggle from "./ThemeToggle.astro";
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="32"
-          height="32"
+          width="28"
+          height="28"
           viewBox="0 0 512 512"
           aria-hidden="true"
         >
@@ -35,24 +34,24 @@ import ThemeToggle from "./ThemeToggle.astro";
       
       <!-- Status badge on mobile -->
       <div class="status-badge text-xs">
-        Available for Projects
+        Disponible
       </div>
     </div>
     
     <!-- Navigation -->
     <nav
       id="main-navigation"
-      class="fixed sm:relative inset-x-0 top-0 h-auto sm:px-4 flex justify-between flex-col gap-8 py-4 text-xl sm:flex-row max-w-2xl mx-auto sm:pt-4"
+      class="fixed sm:relative inset-x-0 top-0 h-auto sm:px-4 flex justify-between flex-col gap-8 py-4 text-base sm:flex-row max-w-5xl mx-auto sm:pt-4"
       role="navigation"
-      aria-label="Main navigation"
+      aria-label="Navegación principal"
     >
       <div
         class="flex flex-col font-medium gap-4 sm:flex-row px-4 sm:px-0 mt-16 sm:mt-0"
-        style="font-family: 'Geist', system-ui, sans-serif;"
+        style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif;"
       >
       {Object.entries(GLOBAL.menu).map(([key, url]) => (
         <Anchor url={url} aria-current={Astro.url.pathname === url ? "page" : undefined}>
-          {key === "home" ? "Home" : key === "about" ? "About" : key === "projects" ? "Projects" : key === "services" ? "Services" : key === "contact" ? "Contact" : key === "cv" ? "CV" : "Blog"}
+          {key === "home" ? "Inicio" : key === "about" ? "Sobre Mí" : key === "projects" ? "Proyectos" : key === "services" ? "Servicios" : key === "contact" ? "Contacto" : key === "cv" ? "CV" : "Blog"}
         </Anchor>
       ))}
       </div>
@@ -60,19 +59,19 @@ import ThemeToggle from "./ThemeToggle.astro";
       <div class="flex gap-4 justify-between px-4 sm:px-0 items-center">
         <!-- Status badge on desktop -->
         <div class="status-badge hidden sm:inline-flex">
-          Available for Projects
+          Disponible para Proyectos
         </div>
         
         {GLOBAL.githubProfile && (
           <Anchor 
             url={GLOBAL.githubProfile} 
-            aria-label="devjaime's GitHub repository"
+            aria-label="GitHub de devjaime"
             class="hover:scale-110 transition-transform"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="32"
-              height="32"
+              width="26"
+              height="26"
               viewBox="0 0 24 24"
               aria-hidden="true"
               style="color: var(--on-surface);"
@@ -84,7 +83,27 @@ import ThemeToggle from "./ThemeToggle.astro";
             </svg>
           </Anchor>
         )}
-        <ThemeToggle />
+        {GLOBAL.linkedinProfile && (
+          <Anchor 
+            url={GLOBAL.linkedinProfile} 
+            aria-label="LinkedIn de devjaime"
+            class="hover:scale-110 transition-transform"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="26"
+              height="26"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+              style="color: var(--on-surface);"
+            >
+              <path
+                fill="currentColor"
+                d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11.12 19h-3.08v-9h3.08v9zm-1.54-10.29c-.99 0-1.79-.8-1.79-1.79s.8-1.79 1.79-1.79 1.79.8 1.79 1.79-.8 1.79-1.79 1.79zm13.16 10.29h-3.08v-4.89c0-1.16-.02-2.64-1.61-2.64s-1.86 1.26-1.86 2.57v4.96h-3.08v-9h2.96v1.23h.04c.41-.78 1.4-1.6 2.88-1.6 3.08 0 3.65 2.03 3.65 4.66v4.71z"
+              ></path>
+            </svg>
+          </Anchor>
+        )}
       </div>
     </nav>
   </div>

@@ -9,14 +9,13 @@ type Props = {
 }
 
 const { featuredArticles } = Astro.props;
-console.log(featuredArticles);
 ---
 
-<div class="flex justify-between items-center w-full">
-  <h3 class="font-display text-lg sm:text-xl leading-loose">{GLOBAL.articlesName}</h3>
-  <Anchor url="/blog" class="text-base">{GLOBAL.viewAll}</Anchor>
+<div class="flex justify-between items-center w-full mb-8">
+  <h3 class="font-display text-xl sm:text-2xl font-bold" style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif;">{GLOBAL.articlesName}</h3>
+  <Anchor url="/blog" class="text-base font-medium" style="color: var(--accent);">{GLOBAL.viewAll}</Anchor>
 </div>
-<ul class="my-8">
+<ul class="my-4 grid gap-4">
   {
     (featuredArticles.length === 0 && <p>{GLOBAL.noArticles}</p>) ||
       featuredArticles.map((article) => (

@@ -11,11 +11,11 @@ type Props = {
 const { featuredProjects } = Astro.props;
 ---
 
-<div class="flex justify-between items-center w-full">
-  <h3 class="font-display text-lg sm:text-xl leading-loose">{GLOBAL.projectsName}</h3>
-  <Anchor url="/projects" class="text-base">{GLOBAL.viewAll}</Anchor>
+<div class="flex justify-between items-center w-full mb-8">
+  <h3 class="font-display text-xl sm:text-2xl font-bold" style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif;">{GLOBAL.projectsName}</h3>
+  <Anchor url="/projects" class="text-base font-medium" style="color: var(--accent);">{GLOBAL.viewAll}</Anchor>
 </div>
-<ul class="my-8">
+<ul class="my-4">
   {
     (featuredProjects.length === 0 && <p>{GLOBAL.noProjects}</p>) ||
       featuredProjects.map((project) => (

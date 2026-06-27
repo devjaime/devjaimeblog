@@ -13,22 +13,22 @@ export type Props = {
 const { title, description, url, githubUrl, liveUrl, tags } = Astro.props;
 ---
 
-<div class="flex flex-col gap-3 pb-8 animate-on-scroll ai-card">
+<div class="flex flex-col gap-3 pb-8 animate-on-scroll project-card">
   <div class="flex flex-col gap-3 sm:flex-row sm:justify-between">
-    <Anchor url={url} class="text-xl" style="color: var(--on-surface);">
+    <Anchor url={url} class="text-xl font-semibold" style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; color: var(--on-surface);">
       {title}
     </Anchor>
     <div class="flex gap-3">
       {
         githubUrl ? (
-          <Anchor url={githubUrl} class="text-sm font-medium" external style="color: var(--electric-blue);">
+          <Anchor url={githubUrl} class="text-sm font-medium" external style="color: var(--accent);">
             GitHub
           </Anchor>
         ) : null
       }
       {
         liveUrl ? (
-          <Anchor url={liveUrl} class="text-sm font-medium" external style="color: var(--neural-violet);">
+          <Anchor url={liveUrl} class="text-sm font-medium" external style="color: var(--secondary);">
             Live
           </Anchor>
         ) : null
@@ -43,7 +43,7 @@ const { title, description, url, githubUrl, liveUrl, tags } = Astro.props;
       tags.map((tag) => (
         <span 
           class="px-2 py-1 text-xs font-semibold rounded"
-          style="background: rgba(59, 130, 246, 0.1); color: var(--primary); border: 1px solid rgba(59, 130, 246, 0.3);"
+          style="background: rgba(79, 70, 229, 0.08); color: var(--primary); border: 1px solid rgba(79, 70, 229, 0.15);"
         >
           {tag}
         </span>
@@ -53,11 +53,11 @@ const { title, description, url, githubUrl, liveUrl, tags } = Astro.props;
 </div>
 
 <style>
-  .ai-card {
+  .project-card {
     transition: all 0.3s ease;
   }
   
-  .ai-card:hover {
+  .project-card:hover {
     transform: translateX(4px);
   }
 </style>

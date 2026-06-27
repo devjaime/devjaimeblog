@@ -17,7 +17,7 @@ const { title, description, url, duration, timestamp } = Astro.props;
   <article 
     class="glass-card p-6 flex flex-col gap-3 transition-all duration-300"
   >
-    <Anchor url={url} class="text-xl font-semibold" style="font-family: 'Geist', system-ui, sans-serif; color: var(--on-surface);">
+    <Anchor url={url} class="text-xl font-semibold" style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; color: var(--on-surface);">
       {title}
     </Anchor>
     <p style="color: var(--on-surface-variant);">
@@ -35,7 +35,7 @@ const { title, description, url, duration, timestamp } = Astro.props;
     <!-- Accent line on hover -->
     <div 
       class="h-0.5 w-0 transition-all duration-300 mt-2"
-      style="background: linear-gradient(90deg, var(--electric-blue), var(--neural-violet));"
+      style="background: linear-gradient(90deg, var(--accent), #6366F1);"
     ></div>
   </article>
 </div>
