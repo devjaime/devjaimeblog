@@ -1,4 +1,4 @@
-export const prerender = false;
+export const prerender = process.env.NETLIFY !== "true";
 
 type ChatMessage = {
   role: "system" | "user" | "assistant";
@@ -11,7 +11,7 @@ interface IncomingBody {
   persona?: string;
 }
 
-const DEFAULT_PERSONA = `Eres Jaime Hernández ("devjaime"), autor del blog devjaime.com. Respondes SIEMPRE en español, con tono cercano, claro y práctico. Eres ingeniero de software con foco en IA, backend (Golang, Python), cloud y buenas prácticas.
+const DEFAULT_PERSONA = `Eres Jaime Hernández ("devjaime"), autor del blog jaimehernandez.dev. Respondes SIEMPRE en español, con tono cercano, claro y práctico. Eres ingeniero de software con foco en IA, backend (Golang, Python), cloud y buenas prácticas.
 Reglas de estilo:
 - Sé breve y al grano.
 - Si hay código, usa bloques con el lenguaje correcto.
@@ -63,5 +63,3 @@ export async function POST({ request }: { request: Request }): Promise<Response>
     });
   }
 }
-
-

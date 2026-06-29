@@ -5,64 +5,161 @@ import ArticleSnippet from "../../components/ArticleSnippet.astro";
 import Section from "../../components/common/Section.astro";
 import { articles } from "../../lib/list";
 
+const [latestArticle, ...otherArticles] = articles;
+const topics = ["AI Agents", "RAG", "Go", "GCP", "Backend", "Career"];
 ---
 
-<Layout>
-  <Fragment slot="head">
-    <title>{GLOBAL.blogTitle} • {GLOBAL.username}</title>
-    <meta
-      name="description"
-      content={GLOBAL.blogLongDescription}
-    />
-    <meta property="og:title" content={`${GLOBAL.blogTitle} • ${GLOBAL.username}`} />
-    <meta
-      property="og:description"
-      content={GLOBAL.blogShortDescription}
-    />
-    <meta property="og:image" content={`${GLOBAL.rootUrl}/${GLOBAL.profileImage}`} />
-    <meta property="og:url" content={`${GLOBAL.rootUrl}/blog`} />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content={`${GLOBAL.blogTitle} • ${GLOBAL.username}`} />
-    <meta
-      name="twitter:description"
-      content={GLOBAL.blogShortDescription}
-    />
-    <meta name="twitter:image" content={`${GLOBAL.rootUrl}/${GLOBAL.profileImage}`} />
-    <meta http-equiv="content-language" content="en" />
-    <meta name="language" content="English" />
-    <link rel="canonical" href={`${GLOBAL.rootUrl}/blog`} />
-  </Fragment>
-  <Section class="my-8">
-    <!-- Header section with gradient accent -->
-    <div class="flex items-center gap-4 pt-8 pb-16">
-      <div class="h-px flex-1 bg-gradient-to-r from-transparent via-[var(--electric-blue)] to-transparent opacity-50"></div>
-    </div>
-    <h1 
-      class="text-4xl sm:text-5xl mb-4 text-center font-bold animate-on-scroll"
-      style="font-family: 'Manrope', system-ui, sans-serif; color: var(--on-surface);"
-    >
-      {GLOBAL.articlesName}
-    </h1>
-    <p class="text-center mb-16 animate-on-scroll stagger-1" style="color: var(--on-surface-variant);">
-      {GLOBAL.blogShortDescription}
-    </p>
-    
-    <!-- Articles grid -->
-    <ul class="grid gap-6 md:grid-cols-2">
-      {
-        articles.map((project, index) => (
-          <li class="animate-on-scroll" style={`animation-delay: ${index * 0.1}s;`}>
-            <ArticleSnippet
-              title={project.title}
-              description={project.description}
-              duration={`${project.time} min read`}
-              url={project.filename}
-              timestamp={project.timestamp}
-              tags={project.tags}
-            />
-          </li>
-        ))
-      }
+<Layout
+  title={`${GLOBAL.blogTitle} • ${GLOBAL.username}`}
+  description={GLOBAL.blogLongDescription}
+  canonical={`${GLOBAL.rootUrl}/blog`}
+  type="website"
+>
+  <Section class="blog-page">
+    <header class="blog-hero">
+      <p class="eyebrow">devjaime / blog</p>
+      <h1>Notas de ingeniería para construir IA real, no solo demos.</h1>
+      <p>{GLOBAL.blogShortDescription}</p>
+      <div class="topic-row">
+        {topics.map((topic) => <span>{topic}</span>)}
+      </div>
+    </header>
+
+    {latestArticle && (
+      <article class="latest-article">
+        <div>
+          <p class="eyebrow">Último artículo</p>
+          <a href={latestArticle.filename}><h2>{latestArticle.title}</h2></a>
+          <p>{latestArticle.description}</p>
+        </div>
+        <div class="latest-meta">
+          <span>{latestArticle.time} min</span>
+          <span>{new Date(latestArticle.timestamp).toLocaleDateString("es-CL", { year: "numeric", month: "long", day: "numeric" })}</span>
+        </div>
+      </article>
+    )}
+
+    <ul class="articles-grid">
+      {otherArticles.map((article) => (
+        <li>
+          <ArticleSnippet
+            title={article.title}
+            description={article.description}
+            duration={`${article.time} min`}
+            url={article.filename}
+            timestamp={article.timestamp}
+            tags={article.tags}
+          />
+        </li>
+      ))}
     </ul>
   </Section>
 </Layout>
+
+<style>
+  .blog-page {
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+  }
+
+  .blog-hero {
+    max-width: 860px;
+    margin-bottom: 2rem;
+  }
+
+  .eyebrow,
+  .topic-row span,
+  .latest-meta {
+    color: var(--primary);
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0;
+  }
+
+  h1 {
+    margin: 0.4rem 0 1rem;
+    font-size: clamp(2.8rem, 7vw, 5.2rem);
+    line-height: 1;
+    letter-spacing: 0;
+  }
+
+  .blog-hero p:not(.eyebrow),
+  .latest-article p:not(.eyebrow) {
+    color: var(--on-surface-variant);
+    font-size: 1.08rem;
+  }
+
+  .topic-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .topic-row span {
+    border: 1px solid var(--surface-stroke);
+    border-radius: 999px;
+    background: #fff;
+    padding: 0.4rem 0.7rem;
+    color: var(--on-surface-variant);
+  }
+
+  .latest-article {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 2rem;
+    border: 1px solid var(--surface-stroke);
+    border-radius: 8px;
+    background: #fff;
+    padding: clamp(1.2rem, 4vw, 2rem);
+    margin: 2.5rem 0 1.25rem;
+  }
+
+  .latest-article a {
+    color: var(--on-surface);
+    text-decoration: none;
+  }
+
+  .latest-article h2 {
+    margin: 0.5rem 0 0.9rem;
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    letter-spacing: 0;
+  }
+
+  .latest-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    min-width: 170px;
+    color: var(--on-surface-variant);
+    text-align: right;
+  }
+
+  .articles-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  @media (max-width: 980px) {
+    .articles-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 680px) {
+    .latest-article,
+    .articles-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .latest-meta {
+      text-align: left;
+    }
+  }
+</style>

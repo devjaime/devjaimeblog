@@ -1,226 +1,222 @@
 ---
 import { GLOBAL } from "../../lib/variables";
 
-const typingTexts = [
-  "AI Agent Architect",
-  "LangChain & LangGraph Expert",
-  "RAG Systems Designer",
-  "Automation Engineer",
-  "GCP & Python Developer"
-];
-
-const stats = [
-  { value: "8+", label: "Años de Experiencia" },
-  { value: "50+", label: "Proyectos Entregados" },
-  { value: "20+", label: "Agentes IA Construidos" },
-  { value: "99.9%", label: "SLA de Disponibilidad" }
-];
-
-const primarySkills = ["Go", "Python", "LangChain", "LangGraph", "GCP", "Docker", "Kubernetes", "PostgreSQL"];
-const secondarySkills = ["CrewAI", "Claude API", "Ollama", "MCP", "RAG", "FastAPI", "n8n", "Redis"];
+const focusAreas = ["Backend Engineering", "AI Agents", "RAG Systems", "Cloud & Data", "Developer Tools"];
+const systemNodes = ["Vocari", "Agentes", "RAG", "GCP", "Go APIs", "BigQuery"];
 ---
 
-<section class="hero-section">
-  <div class="container mx-auto px-4 py-16 max-w-7xl">
-    <div class="lg:flex flex-col items-center gap-12">
-      <div class="content-container text-center flex-1 max-w-4xl">
-        
-        <!-- Name -->
-        <h1 class="hero-title text-4xl xl:text-5xl 2xl:text-6xl font-display font-bold mb-4 animate-on-scroll">
-          {GLOBAL.username}
-        </h1>
+<section class="hero-shell">
+  <div class="hero-copy">
+    <p class="eyebrow">devjaime · AI & Software Engineering from Chile</p>
+    <h1>Construyo sistemas inteligentes que escalan.</h1>
+    <p class="hero-lead">{GLOBAL.heroDescription}</p>
 
-        <!-- Typing Animation Role -->
-        <div class="typewriter-container mb-6 h-12 flex items-center justify-center animate-on-scroll stagger-1">
-          <span class="typewriter-text text-xl xl:text-2xl 2xl:text-3xl font-mono font-medium" style="color: var(--accent);"></span>
-          <span class="typewriter-cursor" style="border-right: 2px solid var(--accent);"></span>
+    <div class="hero-actions" aria-label="Acciones principales">
+      <a href="/blog" class="btn-primary">Leer artículos</a>
+      <a href="/projects" class="btn-secondary">Ver proyectos</a>
+      <a href="/contact" class="btn-quiet">Trabajemos juntos</a>
+    </div>
+
+    <nav class="hero-links" aria-label="Enlaces de devjaime">
+      <a href={GLOBAL.githubProfile} target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href={GLOBAL.linkedinProfile} target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href={GLOBAL.youtubeChannel} target="_blank" rel="noopener noreferrer">YouTube</a>
+      <a href="/blog">Blog</a>
+      <a href="/contact">Contacto</a>
+    </nav>
+  </div>
+
+  <div class="system-board" aria-label="Mapa visual de sistemas que construye devjaime">
+    <div class="board-header">
+      <span>Production AI System</span>
+      <span>Chile / LatAm</span>
+    </div>
+    <div class="board-grid">
+      {systemNodes.map((node, index) => (
+        <div class:list={["node-card", index === 0 && "node-card-featured"]}>
+          <span class="node-index">0{index + 1}</span>
+          <strong>{node}</strong>
         </div>
-
-        <!-- Tagline -->
-        <p class="hero-description text-lg xl:text-xl 2xl:text-2xl mb-8 leading-relaxed animate-on-scroll stagger-2" style="color: var(--on-surface-variant);">
-          {GLOBAL.heroDescription}
-        </p>
-
-        <!-- Stats Row -->
-        <div class="stats-row grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
-          {stats.map((stat, index) => (
-            <div class="stat-card animate-on-scroll" style={`animation-delay: ${(index + 3) * 0.1}s;`}>
-              <span class="stat-value text-2xl xl:text-3xl font-bold gradient-text">{stat.value}</span>
-              <span class="stat-label text-xs xl:text-sm mt-1" style="color: var(--on-surface-variant);">{stat.label}</span>
-            </div>
-          ))}
-        </div>
-
-        <!-- Skills Pills - Primary -->
-        <div class="skills-section mb-6 animate-on-scroll stagger-3">
-          <p class="skills-label text-xs font-semibold mb-3 uppercase tracking-wider" style="color: var(--on-surface-variant);">Tech Stack</p>
-          <div class="skills-pills flex flex-wrap gap-2 justify-center">
-            {primarySkills.map((skill, index) => (
-              <span class="skill-pill" style={`animation-delay: ${index * 0.05}s`}>{skill}</span>
-            ))}
-          </div>
-        </div>
-
-        <!-- Skills Pills - Secondary (AI Focus) -->
-        <div class="skills-section mb-10 animate-on-scroll stagger-4">
-          <div class="skills-pills flex flex-wrap gap-2 justify-center">
-            {secondarySkills.map((skill, index) => (
-              <span class="skill-pill violet" style={`animation-delay: ${(index + primarySkills.length) * 0.05}s`}>{skill}</span>
-            ))}
-          </div>
-        </div>
-
-        <!-- Action buttons -->
-        <div class="hero-buttons flex flex-wrap gap-4 justify-center animate-on-scroll stagger-5">
-          <a 
-            href={GLOBAL.linkedinProfile} 
-            class="btn-primary flex items-center gap-2 text-base xl:text-lg px-6 py-3"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Perfil LinkedIn"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11.12 19h-3.08v-9h3.08v9zm-1.54-10.29c-.99 0-1.79-.8-1.79-1.79s.8-1.79 1.79-1.79 1.79.8 1.79 1.79-.8 1.79-1.79 1.79zm13.16 10.29h-3.08v-4.89c0-1.16-.02-2.64-1.61-2.64s-1.86 1.26-1.86 2.57v4.96h-3.08v-9h2.96v1.23h.04c.41-.78 1.4-1.6 2.88-1.6 3.08 0 3.65 2.03 3.65 4.66v4.71z"/>
-            </svg>
-            {GLOBAL.connectButton}
-          </a>
-          
-          <a 
-            href={GLOBAL.githubProfile} 
-            class="btn-secondary flex items-center gap-2 text-base xl:text-lg px-6 py-3 rounded-lg font-medium hover:opacity-90 transition-all"
-            style="border-color: var(--accent); color: var(--accent);"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Repositorio GitHub"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.10-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.10 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"/>
-            </svg>
-            {GLOBAL.viewCodeButton}
-          </a>
-        </div>
-      </div>
+      ))}
+    </div>
+    <div class="terminal-card">
+      <span>$ deploy ai-workflow --with-observability</span>
+      <span>checks: retrieval, latency, cost, human-review</span>
     </div>
   </div>
 </section>
 
+<div class="authority-strip" aria-label="Pilares técnicos">
+  {focusAreas.map((area) => <span>{area}</span>)}
+</div>
+
 <style>
-  .hero-section {
-    min-height: 85vh;
+  .hero-shell {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.9fr);
+    gap: clamp(2rem, 6vw, 5rem);
+    align-items: center;
+    padding: clamp(4rem, 10vw, 7rem) 0 2rem;
+  }
+
+  .eyebrow {
+    margin-bottom: 1rem;
+    color: var(--primary);
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0;
+  }
+
+  h1 {
+    max-width: 820px;
+    font-size: clamp(3rem, 8vw, 5.8rem);
+    line-height: 0.98;
+    letter-spacing: 0;
+  }
+
+  .hero-lead {
+    max-width: 720px;
+    margin-top: 1.5rem;
+    font-size: clamp(1.08rem, 2vw, 1.35rem);
+    color: var(--on-surface-variant);
+  }
+
+  .hero-actions,
+  .hero-links {
     display: flex;
+    flex-wrap: wrap;
+    gap: 0.85rem;
+    margin-top: 2rem;
     align-items: center;
   }
 
-  .hero-title {
-    margin-bottom: 0.5rem;
-    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  .hero-links {
+    margin-top: 1.35rem;
+    gap: 1rem;
+    font-size: 0.95rem;
   }
 
-  .typewriter-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 3rem;
+  .hero-links a,
+  .btn-quiet {
+    color: var(--on-surface);
+    text-decoration: underline;
+    text-decoration-color: var(--outline);
+    text-underline-offset: 0.3em;
   }
 
-  .typewriter-text {
+  .system-board {
+    position: relative;
+    border: 1px solid var(--surface-stroke);
+    border-radius: 8px;
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.78), rgba(255, 255, 255, 0.48)),
+      repeating-linear-gradient(90deg, transparent, transparent 39px, rgba(37, 99, 235, 0.05) 40px),
+      repeating-linear-gradient(0deg, transparent, transparent 39px, rgba(15, 23, 42, 0.04) 40px);
+    box-shadow: 0 24px 70px rgba(15, 23, 42, 0.08);
+    padding: 1rem;
     overflow: hidden;
-    white-space: nowrap;
-    border-right: none;
-    animation: typewriter-cursor 1s step-end infinite;
   }
 
-  .typewriter-cursor {
-    display: inline-block;
-    width: 3px;
-    height: 1.5em;
-    margin-left: 4px;
-    animation: blink 1s step-end infinite;
-    vertical-align: text-bottom;
+  .system-board::after {
+    content: "";
+    position: absolute;
+    inset: 18% 12%;
+    border: 1px solid rgba(6, 182, 212, 0.28);
+    transform: rotate(-8deg);
+    pointer-events: none;
   }
 
-  .stats-row {
-    max-width: 600px;
-    margin: 0 auto;
+  .board-header,
+  .terminal-card {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    color: var(--on-surface-variant);
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    font-size: 0.72rem;
   }
 
-  .stat-value {
-    line-height: 1.2;
+  .board-grid {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.85rem;
+    margin: 1rem 0;
   }
 
-  .skills-section {
-    width: 100%;
+  .node-card {
+    min-height: 92px;
+    border: 1px solid var(--surface-stroke);
+    border-radius: 8px;
+    background: rgba(250, 250, 247, 0.86);
+    padding: 0.9rem;
   }
 
-  .skills-label {
-    font-family: 'JetBrains Mono', monospace;
+  .node-card-featured {
+    background: var(--primary);
+    color: var(--on-primary);
   }
 
-  .skill-pill {
-    opacity: 0;
-    animation: fadeSlideIn 0.4s ease forwards;
+  .node-index {
+    display: block;
+    margin-bottom: 1.4rem;
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    font-size: 0.72rem;
+    opacity: 0.7;
   }
 
-  @keyframes fadeSlideIn {
-    from {
-      opacity: 0;
-      transform: translateY(10px);
+  .terminal-card {
+    position: relative;
+    z-index: 1;
+    flex-direction: column;
+    border: 1px solid rgba(15, 23, 42, 0.12);
+    border-radius: 8px;
+    background: #0f172a;
+    color: #dbeafe;
+    padding: 1rem;
+  }
+
+  .authority-strip {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    border-block: 1px solid var(--surface-stroke);
+    margin-bottom: 3rem;
+  }
+
+  .authority-strip span {
+    padding: 1rem 0.75rem;
+    color: var(--on-surface-variant);
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    font-size: 0.78rem;
+    text-align: center;
+  }
+
+  @media (max-width: 860px) {
+    .hero-shell {
+      grid-template-columns: 1fr;
+      padding-top: 3rem;
     }
-    to {
-      opacity: 1;
-      transform: translateY(0);
+
+    .authority-strip {
+      grid-template-columns: 1fr 1fr;
     }
   }
 
-  @media (max-width: 1024px) {
-    .hero-section {
-      min-height: auto;
-      padding: 3rem 0;
+  @media (max-width: 520px) {
+    h1 {
+      font-size: 3rem;
     }
 
-    .hero-title {
-      font-size: 2.5rem;
+    .board-grid,
+    .authority-strip {
+      grid-template-columns: 1fr;
     }
 
-    .typewriter-text {
-      font-size: 1.125rem;
+    .system-board {
+      padding: 0.8rem;
     }
   }
 </style>
-
-<script define:vars={{ typingTexts }}>
-  const textElement = document.querySelector('.typewriter-text');
-  let textIndex = 0;
-  let charIndex = 0;
-  let isDeleting = false;
-  let typeSpeed = 100;
-
-  function type() {
-    const currentText = typingTexts[textIndex];
-    
-    if (isDeleting) {
-      textElement.textContent = currentText.substring(0, charIndex - 1);
-      charIndex--;
-      typeSpeed = 50;
-    } else {
-      textElement.textContent = currentText.substring(0, charIndex + 1);
-      charIndex++;
-      typeSpeed = 100;
-    }
-
-    if (!isDeleting && charIndex === currentText.length) {
-      isDeleting = true;
-      typeSpeed = 2000;
-    } else if (isDeleting && charIndex === 0) {
-      isDeleting = false;
-      textIndex = (textIndex + 1) % typingTexts.length;
-      typeSpeed = 500;
-    }
-
-    setTimeout(type, typeSpeed);
-  }
-
-  document.addEventListener('DOMContentLoaded', () => {
-    setTimeout(type, 500);
-  });
-</script>

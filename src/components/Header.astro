@@ -1,153 +1,155 @@
 ---
 import { GLOBAL } from "../lib/variables";
-import Anchor from "./common/Anchor.astro";
+
+const labels: Record<string, string> = {
+  home: "Inicio",
+  about: "Sobre mí",
+  projects: "Proyectos",
+  blog: "Blog",
+  services: "Servicios",
+  contact: "Contacto",
+  cv: "CV",
+};
 ---
 
-<header 
-  class="glass-strong sticky top-0 w-full z-50"
-  role="banner"
->
-  <div class="container max-w-5xl">
-    <!-- Mobile menu button -->
-    <div class="sm:hidden relative z-50 py-4 flex items-center justify-between">
-      <button 
-        class="transition-transform hover:scale-110"
-        aria-label="Toggle navigation menu"
-        aria-expanded="false"
-        aria-controls="main-navigation"
-        id="menu-toggle"
-        style="color: var(--on-surface);"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="28"
-          height="28"
-          viewBox="0 0 512 512"
-          aria-hidden="true"
-        >
-          <path 
-            fill="currentColor" 
-            d="M80 96h352v32H80zm0 144h352v32H80zm0 144h352v32H80z"
-          ></path>
-        </svg>
-      </button>
-      
-      <!-- Status badge on mobile -->
-      <div class="status-badge text-xs">
-        Disponible
-      </div>
-    </div>
-    
-    <!-- Navigation -->
-    <nav
-      id="main-navigation"
-      class="fixed sm:relative inset-x-0 top-0 h-auto sm:px-4 flex justify-between flex-col gap-8 py-4 text-base sm:flex-row max-w-5xl mx-auto sm:pt-4"
-      role="navigation"
-      aria-label="Navegación principal"
+<header class="site-header" role="banner">
+  <div class="header-inner">
+    <a href="/" class="brand" aria-label="Ir al inicio">
+      <strong>devjaime</strong>
+      <span>AI & Software Engineering</span>
+    </a>
+
+    <button
+      class="menu-button"
+      aria-label="Abrir navegación"
+      aria-expanded="false"
+      aria-controls="main-navigation"
+      id="menu-toggle"
     >
-      <div
-        class="flex flex-col font-medium gap-4 sm:flex-row px-4 sm:px-0 mt-16 sm:mt-0"
-        style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif;"
-      >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav id="main-navigation" class="main-nav" aria-label="Navegación principal">
       {Object.entries(GLOBAL.menu).map(([key, url]) => (
-        <Anchor url={url} aria-current={Astro.url.pathname === url ? "page" : undefined}>
-          {key === "home" ? "Inicio" : key === "about" ? "Sobre Mí" : key === "projects" ? "Proyectos" : key === "services" ? "Servicios" : key === "contact" ? "Contacto" : key === "cv" ? "CV" : "Blog"}
-        </Anchor>
+        <a href={url} aria-current={Astro.url.pathname === url ? "page" : undefined}>{labels[key] ?? key}</a>
       ))}
-      </div>
-      
-      <div class="flex gap-4 justify-between px-4 sm:px-0 items-center">
-        <!-- Status badge on desktop -->
-        <div class="status-badge hidden sm:inline-flex">
-          Disponible para Proyectos
-        </div>
-        
-        {GLOBAL.githubProfile && (
-          <Anchor 
-            url={GLOBAL.githubProfile} 
-            aria-label="GitHub de devjaime"
-            class="hover:scale-110 transition-transform"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="26"
-              height="26"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-              style="color: var(--on-surface);"
-            >
-              <path
-                fill="currentColor"
-                d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.10-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.10 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"
-              ></path>
-            </svg>
-          </Anchor>
-        )}
-        {GLOBAL.linkedinProfile && (
-          <Anchor 
-            url={GLOBAL.linkedinProfile} 
-            aria-label="LinkedIn de devjaime"
-            class="hover:scale-110 transition-transform"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="26"
-              height="26"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-              style="color: var(--on-surface);"
-            >
-              <path
-                fill="currentColor"
-                d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11.12 19h-3.08v-9h3.08v9zm-1.54-10.29c-.99 0-1.79-.8-1.79-1.79s.8-1.79 1.79-1.79 1.79.8 1.79 1.79-.8 1.79-1.79 1.79zm13.16 10.29h-3.08v-4.89c0-1.16-.02-2.64-1.61-2.64s-1.86 1.26-1.86 2.57v4.96h-3.08v-9h2.96v1.23h.04c.41-.78 1.4-1.6 2.88-1.6 3.08 0 3.65 2.03 3.65 4.66v4.71z"
-              ></path>
-            </svg>
-          </Anchor>
-        )}
-      </div>
     </nav>
   </div>
 </header>
 
-<script>
+<script is:inline>
   const button = document.querySelector("#menu-toggle");
   const nav = document.querySelector("#main-navigation");
-  let isOpen = false;
 
-  function updateNavState() {
-    const isMobile = window.matchMedia("(max-width: 640px)").matches;
-    if (isMobile) {
-      (nav as HTMLElement)!.style.transform = isOpen ? "translateY(0)" : "translateY(-100%)";
-      button!.setAttribute("aria-expanded", isOpen.toString());
-    } else {
-      (nav as HTMLElement)!.style.transform = "translateY(0)";
-      isOpen = false;
-      button!.setAttribute("aria-expanded", "false");
-    }
-  }
-
-  function toggleNav() {
-    isOpen = !isOpen;
-    updateNavState();
-  }
-
-  function closeNavOnEscape(event: KeyboardEvent) {
-    if (event.key === "Escape" && isOpen) {
-      toggleNav();
-    }
-  }
-
-  function closeNavOnClickOutside(event: MouseEvent) {
-    const target = event.target as Element;
-    if (isOpen && !nav!.contains(target) && !button!.contains(target)) {
-      toggleNav();
-    }
-  }
-
-  button?.addEventListener("click", toggleNav);
-  window.addEventListener("resize", updateNavState);
-  document.addEventListener("keydown", closeNavOnEscape);
-  document.addEventListener("click", closeNavOnClickOutside);
-
-  updateNavState();
+  button?.addEventListener("click", () => {
+    const expanded = button.getAttribute("aria-expanded") === "true";
+    button.setAttribute("aria-expanded", String(!expanded));
+    nav?.classList.toggle("is-open", !expanded);
+  });
 </script>
+
+<style>
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    border-bottom: 1px solid var(--surface-stroke);
+    background: rgba(250, 250, 247, 0.9);
+    backdrop-filter: blur(18px);
+  }
+
+  .header-inner {
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: 0.9rem 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+
+  .brand {
+    color: var(--on-surface);
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+  }
+
+  .brand strong {
+    font-family: 'Manrope', system-ui, sans-serif;
+    font-size: 1.05rem;
+    letter-spacing: 0;
+  }
+
+  .brand span {
+    color: var(--on-surface-variant);
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    font-size: 0.68rem;
+  }
+
+  .main-nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .main-nav a {
+    color: var(--on-surface-variant);
+    font-size: 0.92rem;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .main-nav a:hover,
+  .main-nav a[aria-current="page"] {
+    color: var(--primary);
+  }
+
+  .menu-button {
+    display: none;
+    width: 42px;
+    height: 42px;
+    border: 1px solid var(--surface-stroke);
+    border-radius: 8px;
+    background: #fff;
+    padding: 0.65rem;
+  }
+
+  .menu-button span {
+    display: block;
+    height: 2px;
+    background: var(--on-surface);
+    margin: 5px 0;
+  }
+
+  @media (max-width: 760px) {
+    .menu-button {
+      display: block;
+    }
+
+    .main-nav {
+      position: absolute;
+      inset: 100% 1rem auto 1rem;
+      display: none;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0;
+      border: 1px solid var(--surface-stroke);
+      border-radius: 8px;
+      background: #fff;
+      padding: 0.5rem;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.1);
+    }
+
+    .main-nav.is-open {
+      display: flex;
+    }
+
+    .main-nav a {
+      padding: 0.8rem;
+    }
+  }
+</style>

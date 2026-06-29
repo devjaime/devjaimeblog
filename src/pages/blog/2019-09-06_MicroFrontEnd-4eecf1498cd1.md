@@ -231,6 +231,7 @@ Habiendo tomado todas las molestias de dividir nuestra aplicación en bases de c
 
 Uno de los enfoques más simples para componer aplicaciones en el navegador es el humilde iframe. Por su naturaleza, los iframes facilitan la creación de una página a partir de subpáginas independientes. También ofrecen un buen grado de aislamiento en términos de estilo y variables globales que no interfieren entre sí.
 
+```html
 <html>  
   <head>  
     <title>Feed me!</title>  
@@ -252,6 +253,7 @@ Uno de los enfoques más simples para componer aplicaciones en el navegador es e
     </script>  
   </body>  
 </html>
+```
 
 Al igual que con el [lado](https://martinfowler.com/articles/micro-frontends.html#Server-sideTemplateComposition) del [servidor incluye la opción](https://martinfowler.com/articles/micro-frontends.html#Server-sideTemplateComposition) , crear una página con iframes no es una técnica nueva y quizás no parezca tan emocionante. Pero si volvemos a visitar los principales beneficios de las micro frontends [enumeradas anteriormente](https://martinfowler.com/articles/micro-frontends.html#Benefits) , los iframes se ajustan en su mayoría, siempre y cuando tengamos cuidado sobre cómo dividimos la aplicación y estructuramos nuestros equipos.
 
@@ -261,6 +263,7 @@ A menudo vemos mucha reticencia a elegir iframes. Si bien parte de esa reticenci
 
 El siguiente enfoque que describiremos es probablemente el más flexible, y el que vemos que los equipos adoptan con mayor frecuencia. Cada micro frontend se incluye en la página usando una `<script>`etiqueta, y al cargarlo expone una función global como su punto de entrada. La aplicación contenedor luego determina qué micro frontend se debe montar y llama a la función relevante para decirle a un micro frontend cuándo y dónde renderizarse.
 
+```html
 <html>  
   <head>  
     <title>Feed me!</title>  
@@ -291,6 +294,7 @@ El siguiente enfoque que describiremos es probablemente el más flexible, y el q
     </script>  
   </body>  
 </html>
+```
 
 Lo anterior es obviamente un ejemplo primitivo, pero demuestra la técnica básica. A diferencia de la integración en tiempo de construcción, podemos implementar cada uno de los `bundle.js`archivos de forma independiente. Y a diferencia de los iframes, tenemos total flexibilidad para construir integraciones entre nuestras micro interfaces como nos guste. Podríamos extender el código anterior de muchas maneras, por ejemplo, para descargar solo cada paquete de JavaScript según sea necesario, o para pasar datos dentro y fuera cuando se procesa un micro frontend.
 
@@ -300,6 +304,7 @@ La flexibilidad de este enfoque, combinado con la capacidad de implementación i
 
 Una variación del enfoque anterior es que cada micro frontend defina un elemento HTML personalizado para que el contenedor cree una instancia, en lugar de definir una función global para que el contenedor llame.
 
+```html
 <html>  
   <head>  
     <title>Feed me!</title>  
@@ -332,6 +337,7 @@ Una variación del enfoque anterior es que cada micro frontend defina un element
     </script>  
   </body>  
 </html>
+```
 
 El resultado final aquí es bastante similar al ejemplo anterior, la principal diferencia es que está optando por hacer las cosas ‘a la manera del componente web’. Si le gustan las especificaciones del componente web y le gusta la idea de usar las capacidades que proporciona el navegador, entonces esta es una buena opción. Si prefiere definir su propia interfaz entre la aplicación contenedor y las micro interfaces, entonces puede preferir el ejemplo anterior.
 
@@ -535,6 +541,7 @@ Por lo general, en las aplicaciones React.js, la llamada a `ReactDOM.render`esta
 
 Si bien ya hemos visto cómo se llama a esta función cuando el micro frontend está integrado en toda la aplicación contenedor, uno de los criterios más importantes para el éxito aquí es que podemos desarrollar y ejecutar los micro frontends de forma independiente. Por lo tanto, cada micro interfaz también tiene el suyo propio `index.html`con un script en línea para representar la aplicación en un modo "independiente", fuera del contenedor:
 
+```html
 <html lang="en">  
   <head>  
     <title>Restaurant order</title>  
@@ -548,6 +555,7 @@ Si bien ya hemos visto cómo se llama a esta función cuando el micro frontend e
     </script>  
   </body>  
 </html>
+```
 
 ![](https://cdn-images-1.medium.com/max/800/0*Yb6GfkHwHmsCyvOD.png)
 

@@ -1,53 +1,52 @@
-/* Vocari Light Mode Design System */
+/* Editorial AI Engineer design system */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  /* Vocari Color Palette */
-  --bg: #FAF8FF;
-  --text: #131B2E;
-  --accent: #4F46E5;
-  --nav: #56566A;
+  --bg: #FAFAF7;
+  --text: #171717;
+  --accent: #2563EB;
+  --nav: #52525B;
   --white-glass: rgba(255, 255, 255, 0.75);
   --white-glass-border: rgba(255, 255, 255, 0.5);
   
   /* Surface Colors - Light */
-  --surface: #FAF8FF;
-  --surface-dim: #F4F2F8;
-  --surface-bright: #EDEAFA;
+  --surface: #FAFAF7;
+  --surface-dim: #F3F2EC;
+  --surface-bright: #FFFFFF;
   --surface-container-lowest: #FFFFFF;
-  --surface-container-low: #FAF8FF;
-  --surface-container: #F4F2F8;
-  --surface-container-high: #EDEAFA;
-  --surface-container-highest: #E5E1F5;
+  --surface-container-low: #FAFAF7;
+  --surface-container: #F3F2EC;
+  --surface-container-high: #ECEAE2;
+  --surface-container-highest: #E4E1D7;
   
   /* Text Colors */
-  --on-surface: #131B2E;
-  --on-surface-variant: #56566A;
+  --on-surface: #171717;
+  --on-surface-variant: #52525B;
   
   /* Primary - Indigo */
-  --primary: #4F46E5;
+  --primary: #2563EB;
   --on-primary: #FFFFFF;
-  --primary-container: #E0E4FF;
-  --on-primary-container: #131B2E;
+  --primary-container: #DBEAFE;
+  --on-primary-container: #172554;
   
   /* Secondary */
-  --secondary: #7C7DA5;
+  --secondary: #0F766E;
   --on-secondary: #FFFFFF;
-  --secondary-container: #E8E8F5;
-  --on-secondary-container: #131B2E;
+  --secondary-container: #CCFBF1;
+  --on-secondary-container: #134E4A;
   
   /* Accent Colors */
-  --electric-blue: #4F46E5;
-  --neural-violet: #7C7DA5;
-  --tertiary: #0EA5E9;
+  --electric-blue: #2563EB;
+  --neural-violet: #0F766E;
+  --tertiary: #06B6D4;
   --success-green: #10B981;
   
   /* Outline & Borders */
-  --outline: #C5C4D6;
-  --outline-variant: #E5E1F5;
-  --surface-stroke: #E5E1F5;
+  --outline: #C9C7BC;
+  --outline-variant: #E3E0D4;
+  --surface-stroke: #E3E0D4;
   
   /* AI Glow Effects - Subtle for light mode */
   --ai-glow-color: #4F46E5;
@@ -126,7 +125,7 @@
       font-family: 'Manrope', system-ui, sans-serif;
       font-weight: 700;
       line-height: 1.15;
-      letter-spacing: -0.02em;
+      letter-spacing: 0;
       color: var(--on-surface);
     }
 
@@ -134,14 +133,14 @@
       font-size: 52px;
       font-weight: 800;
       line-height: 1.1;
-      letter-spacing: -0.03em;
+      letter-spacing: 0;
     }
 
     h2 {
       font-size: 36px;
       font-weight: 700;
       line-height: 1.2;
-      letter-spacing: -0.02em;
+      letter-spacing: 0;
     }
 
     h3 {
@@ -271,7 +270,7 @@
 
   /* Gradient text */
   .gradient-text {
-    background: linear-gradient(135deg, var(--accent), #6366F1);
+    background: var(--primary);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -326,18 +325,19 @@
 
   /* Button effects */
   .btn-primary {
-    background: linear-gradient(135deg, var(--accent), #6366F1);
+    background: var(--primary);
     color: var(--on-primary);
     padding: 0.625rem 1.25rem;
-    border-radius: var(--rounded);
+    border-radius: 8px;
     font-weight: 600;
-    transition: all 0.3s ease;
+    transition: background 0.18s ease, transform 0.18s ease;
     border: none;
-    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    font-family: 'Manrope', system-ui, sans-serif;
   }
 
   .btn-primary:hover {
-    box-shadow: 0 4px 16px rgba(79, 70, 229, 0.3);
+    background: #1d4ed8;
+    box-shadow: 0 10px 24px rgba(37, 99, 235, 0.18);
     transform: translateY(-2px);
     color: var(--on-primary);
   }
@@ -346,11 +346,11 @@
     background: transparent;
     color: var(--accent);
     padding: 0.625rem 1.25rem;
-    border-radius: var(--rounded);
+    border-radius: 8px;
     font-weight: 600;
-    transition: all 0.3s ease;
-    border: 2px solid var(--accent);
-    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    transition: background 0.18s ease, transform 0.18s ease;
+    border: 1px solid var(--accent);
+    font-family: 'Manrope', system-ui, sans-serif;
   }
 
   .btn-secondary:hover {
@@ -364,7 +364,7 @@
     font-size: 12px;
     font-weight: 500;
     line-height: 16px;
-    letter-spacing: 0.05em;
+    letter-spacing: 0;
     text-transform: uppercase;
     color: var(--on-surface-variant);
   }
@@ -434,7 +434,7 @@
     border: 1px solid rgba(16, 185, 129, 0.25);
     color: #10B981;
     text-transform: uppercase;
-    letter-spacing: 0.03em;
+    letter-spacing: 0;
   }
 
   .status-badge::before {
@@ -481,7 +481,52 @@
     font-size: 0.6875rem;
     color: var(--on-surface-variant);
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0;
+  }
+
+  .article-prose {
+    max-width: 74ch;
+    margin: 0 auto;
+    color: var(--on-surface);
+  }
+
+  .article-prose :where(h1, h2, h3, h4) {
+    margin-top: 2.2em;
+    margin-bottom: 0.65em;
+    letter-spacing: 0;
+  }
+
+  .article-prose :where(p, ul, ol, blockquote, pre) {
+    margin-top: 1.1rem;
+    margin-bottom: 1.1rem;
+  }
+
+  .article-prose :where(p, li) {
+    color: var(--on-surface);
+    font-size: 1.02rem;
+    line-height: 1.8;
+  }
+
+  .article-prose :where(a) {
+    color: var(--primary);
+    font-weight: 700;
+  }
+
+  .article-prose :where(strong) {
+    color: var(--on-surface);
+  }
+
+  .article-prose :where(blockquote) {
+    border-left: 3px solid var(--secondary);
+    background: var(--surface-container);
+    border-radius: 0 8px 8px 0;
+    color: var(--on-surface-variant);
+    padding: 0.75rem 1rem;
+  }
+
+  .article-prose :where(img, iframe) {
+    border-radius: 8px;
+    max-width: 100%;
   }
 }
 
@@ -570,9 +615,38 @@
 
 /* Simple mesh gradient background */
 .mesh-background {
-  background: 
-    radial-gradient(at 40% 20%, rgba(79, 70, 229, 0.05) 0px, transparent 50%),
-    radial-gradient(at 80% 0%, rgba(124, 125, 165, 0.05) 0px, transparent 50%),
-    radial-gradient(at 0% 50%, rgba(79, 70, 229, 0.03) 0px, transparent 50%),
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.72), rgba(250, 250, 247, 0.96)),
+    radial-gradient(at 72% 8%, rgba(37, 99, 235, 0.08) 0, transparent 34%),
     var(--bg);
+}
+
+.zag-muted {
+  color: var(--on-surface-variant);
+}
+
+.bg-zag-light-bg,
+.bg-zag-dark-bg,
+.-zag-bg {
+  background: #fff;
+  border: 1px solid var(--surface-stroke);
+}
+
+.-zag-text {
+  color: var(--primary);
+}
+
+.zag-transition {
+  transition: border-color 0.18s ease, color 0.18s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
 }

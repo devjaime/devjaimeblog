@@ -1,6 +1,5 @@
 ---
 import { processArticleDate } from "../lib/utils";
-import Anchor from "./common/Anchor.astro";
 
 export type Props = {
   title: string;
@@ -14,142 +13,72 @@ export type Props = {
 const { title, description, url, duration, timestamp, tags } = Astro.props;
 ---
 
-<div class="article-snippet-wrapper animate-on-scroll">
-  <article class="article-snippet-card">
-    <Anchor url={url} class="article-snippet-title">
-      {title}
-    </Anchor>
-    <p class="article-snippet-description">
-      {description}
-    </p>
-    {tags && tags.length > 0 && (
-      <div class="article-snippet-tags">
-        {tags.slice(0, 3).map((tag) => (
-          <span class="article-snippet-tag">{tag}</span>
-        ))}
-      </div>
-    )}
-    <div class="article-snippet-meta">
-      {timestamp && <span class="article-snippet-date">{processArticleDate(timestamp)}</span>}
-      {duration && <span class="article-snippet-duration">{duration}</span>}
-    </div>
-    <div class="article-snippet-accent"></div>
-  </article>
-</div>
+<article class="article-snippet-card">
+  <div>
+    {tags && tags.length > 0 && <p class="article-category">{tags[0]}</p>}
+    <a href={url} class="article-snippet-title">{title}</a>
+  </div>
+  <p class="article-snippet-description">{description}</p>
+  <div class="article-snippet-meta">
+    {timestamp && <span>{processArticleDate(timestamp)}</span>}
+    {duration && <span>{duration}</span>}
+  </div>
+</article>
 
 <style>
-  .article-snippet-wrapper {
-    height: 100%;
-  }
-
   .article-snippet-card {
-    position: relative;
     height: 100%;
-    background: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    border: 1px solid var(--outline-variant);
-    border-radius: 12px;
-    padding: 1.5rem;
+    border: 1px solid var(--surface-stroke);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.72);
+    padding: 1.2rem;
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
-    transition: all 0.3s ease;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04), 0 4px 12px rgba(0, 0, 0, 0.03);
-    overflow: hidden;
+    gap: 0.85rem;
+    transition: border-color 0.18s ease, background 0.18s ease;
   }
 
   .article-snippet-card:hover {
-    border-color: rgba(79, 70, 229, 0.2);
-    box-shadow: 0 4px 20px rgba(79, 70, 229, 0.1), 0 8px 32px rgba(0, 0, 0, 0.06);
-    transform: translateY(-4px);
+    border-color: rgba(37, 99, 235, 0.42);
+    background: #ffffff;
   }
 
-  .article-snippet-card:hover .article-snippet-accent {
-    width: 4px;
-  }
-
-  .article-snippet-accent {
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 0;
-    background: linear-gradient(180deg, var(--accent), #6366F1);
-    transition: width 0.3s ease;
-    border-radius: 12px 0 0 12px;
+  .article-category,
+  .article-snippet-meta {
+    color: var(--on-surface-variant);
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0;
   }
 
   .article-snippet-title {
-    font-family: 'Manrope', system-ui, sans-serif;
-    font-size: 1.125rem;
-    font-weight: 700;
+    display: block;
     color: var(--on-surface);
-    line-height: 1.3;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    transition: color 0.2s ease;
+    font-family: 'Manrope', system-ui, sans-serif;
+    font-size: 1.08rem;
+    font-weight: 800;
+    line-height: 1.25;
+    text-decoration: none;
   }
 
   .article-snippet-title:hover {
-    color: var(--accent);
+    color: var(--primary);
   }
 
   .article-snippet-description {
-    font-family: 'Figtree', system-ui, sans-serif;
-    font-size: 0.875rem;
     color: var(--on-surface-variant);
+    font-size: 0.95rem;
     line-height: 1.6;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    flex-grow: 1;
-  }
-
-  .article-snippet-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.375rem;
-  }
-
-  .article-snippet-tag {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.6875rem;
-    font-weight: 500;
-    padding: 0.25rem 0.5rem;
-    border-radius: 9999px;
-    background: rgba(79, 70, 229, 0.08);
-    border: 1px solid rgba(79, 70, 229, 0.12);
-    color: var(--primary);
-    text-transform: uppercase;
-    letter-spacing: 0.03em;
+    flex: 1;
   }
 
   .article-snippet-meta {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-top: auto;
-    padding-top: 0.5rem;
-    border-top: 1px solid var(--outline-variant);
-  }
-
-  .article-snippet-date {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.75rem;
-    font-weight: 500;
-    color: var(--on-surface-variant);
-  }
-
-  .article-snippet-duration {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.6875rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: var(--on-surface-variant);
+    gap: 1rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--surface-stroke);
   }
 </style>

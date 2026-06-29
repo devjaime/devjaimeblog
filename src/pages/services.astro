@@ -2,128 +2,195 @@
 import Layout from "../layouts/Layout.astro";
 import Section from "../components/common/Section.astro";
 import { GLOBAL } from "../lib/variables";
+
+const process = [
+  ["Diagnóstico", "Entender proceso, datos, restricciones, costo operativo y riesgo antes de proponer IA."],
+  ["Arquitectura", "Diseñar APIs, agentes, RAG, colas, monitoreo y puntos de control humano."],
+  ["Implementación", "Construir integraciones incrementales con pruebas, trazabilidad y operación real."],
+  ["Mejora", "Medir calidad, latencia, costos y feedback para iterar con evidencia."]
+];
 ---
 
 <Layout
-  title="Servicios de Consultoría IA • AI Consultant"
-  description="Servicios de consultoría en inteligencia artificial: agentes autónomos, automatización inteligente, arquitectura RAG y consultoría LLM."
+  title={`${GLOBAL.servicesTitle} • ${GLOBAL.username}`}
+  description={GLOBAL.servicesShortDescription}
+  canonical={`${GLOBAL.rootUrl}/services`}
   type="website"
 >
-  <Section class="my-16">
-    <div class="max-w-5xl mx-auto">
-      
-      <!-- Hero -->
-      <div class="text-center mb-16">
-        <h1 class="text-4xl md:text-5xl font-bold mb-4">{GLOBAL.servicesTitle}</h1>
-        <p class="text-xl zag-muted max-w-2xl mx-auto">{GLOBAL.servicesShortDescription}</p>
-      </div>
+  <Section class="services-page">
+    <header class="page-hero">
+      <p class="eyebrow">Consultoría técnica</p>
+      <h1>IA aplicada con criterio de backend, datos y operación.</h1>
+      <p>{GLOBAL.servicesShortDescription}</p>
+    </header>
 
-      <!-- Services Grid -->
-      <div class="grid md:grid-cols-2 gap-8 mb-16">
-        {GLOBAL.services.map(service => (
-          <div class="bg-zag-light-bg dark:bg-zag-dark-bg p-8 rounded-lg hover:shadow-lg transition-shadow">
-            <div class="text-5xl mb-4">{service.icon}</div>
-            <h3 class="text-2xl font-bold mb-3">{service.title}</h3>
-            <p class="zag-muted leading-relaxed">{service.description}</p>
-          </div>
-        ))}
-      </div>
-
-      <!-- Process Section -->
-      <div class="mb-16">
-        <h2 class="text-3xl font-bold mb-8 text-center">Cómo Trabajo</h2>
-        
-        <div class="grid md:grid-cols-4 gap-6">
-          <div class="text-center">
-            <div class="w-12 h-12 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">1</div>
-            <h3 class="font-semibold mb-2">Diagnóstico</h3>
-            <p class="text-sm zag-muted">Análisis de procesos y detección de oportunidades de automatización.</p>
-          </div>
-          
-          <div class="text-center">
-            <div class="w-12 h-12 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">2</div>
-            <h3 class="font-semibold mb-2">Diseño</h3>
-            <p class="text-sm zag-muted">Arquitectura de agentes y flujos de trabajo optimizados.</p>
-          </div>
-          
-          <div class="text-center">
-            <div class="w-12 h-12 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">3</div>
-            <h3 class="font-semibold mb-2">Implementación</h3>
-            <p class="text-sm zag-muted">Desarrollo e integración con tus sistemas existentes.</p>
-          </div>
-          
-          <div class="text-center">
-            <div class="w-12 h-12 bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">4</div>
-            <h3 class="font-semibold mb-2">Optimización</h3>
-            <p class="text-sm zag-muted">Monitoreo continuo y mejora de rendimiento.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Technologies -->
-      <div class="mb-16">
-        <h2 class="text-2xl font-bold mb-8 text-center">Tecnologías</h2>
-        
-        <div class="space-y-6">
-          <div>
-            <h3 class="font-semibold mb-3">Frameworks de IA</h3>
-            <div class="flex flex-wrap gap-2">
-              {GLOBAL.skills.ai.map(skill => (
-                <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full text-sm">
-                  {skill}
-                </span>
-              ))}
-            </div>
-          </div>
-          
-          <div>
-            <h3 class="font-semibold mb-3">Lenguajes & Databases</h3>
-            <div class="flex flex-wrap gap-2">
-              {[...GLOBAL.skills.languages, ...GLOBAL.skills.databases].map(skill => (
-                <span class="px-3 py-1 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 rounded-full text-sm">
-                  {skill}
-                </span>
-              ))}
-            </div>
-          </div>
-          
-          <div>
-            <h3 class="font-semibold mb-3">Cloud & DevOps</h3>
-            <div class="flex flex-wrap gap-2">
-              {GLOBAL.skills.cloud.map(skill => (
-                <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full text-sm">
-                  {skill}
-                </span>
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- CTA -->
-      <div class="text-center bg-zag-light-bg dark:bg-zag-dark-bg p-12 rounded-lg">
-        <h2 class="text-3xl font-bold mb-4">¿Listo para automatizar con IA?</h2>
-        <p class="text-lg zag-muted mb-8 max-w-xl mx-auto">
-          Agenda una consulta y descubre cómo los agentes autónomos pueden transformar tu negocio.
-        </p>
-        <div class="flex justify-center gap-4 flex-wrap">
-          <a 
-            href={GLOBAL.linkedinProfile}
-            class="px-8 py-4 bg-emerald-500 text-white rounded-lg font-medium hover:bg-emerald-600 transition-colors"
-            target="_blank"
-            rel="noopener"
-          >
-            Contactar por LinkedIn
-          </a>
-          <a 
-            href="/contact"
-            class="px-8 py-4 border-2 border-emerald-500 text-emerald-500 rounded-lg font-medium hover:bg-emerald-500 hover:text-white transition-colors"
-          >
-            Formulario de Contacto
-          </a>
-        </div>
-      </div>
-
+    <div class="services-grid">
+      {GLOBAL.services.map((service) => (
+        <article class="service-card">
+          <span>{service.icon}</span>
+          <h2>{service.title}</h2>
+          <p>{service.description}</p>
+        </article>
+      ))}
     </div>
+
+    <section class="process-section">
+      <div>
+        <p class="eyebrow">Cómo trabajo</p>
+        <h2>Primero sistemas, después modelos.</h2>
+      </div>
+      <ol>
+        {process.map(([title, text]) => (
+          <li>
+            <strong>{title}</strong>
+            <p>{text}</p>
+          </li>
+        ))}
+      </ol>
+    </section>
+
+    <section class="cta-panel">
+      <div>
+        <p class="eyebrow">Disponible para colaboración</p>
+        <h2>Si tienes un proceso complejo, partamos por hacerlo observable.</h2>
+        <p>La mejor IA para negocio suele empezar con buenos datos, límites claros y una integración que el equipo pueda mantener.</p>
+      </div>
+      <a href={GLOBAL.linkedinProfile} target="_blank" rel="noopener noreferrer" class="btn-primary">Contactar por LinkedIn</a>
+    </section>
   </Section>
 </Layout>
+
+<style>
+  .services-page {
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+  }
+
+  .page-hero {
+    max-width: 860px;
+    margin-bottom: 2.5rem;
+  }
+
+  .eyebrow {
+    color: var(--primary);
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0;
+  }
+
+  h1 {
+    margin: 0.4rem 0 1rem;
+    font-size: clamp(2.7rem, 7vw, 5rem);
+    line-height: 1;
+    letter-spacing: 0;
+  }
+
+  .page-hero p:not(.eyebrow),
+  .service-card p,
+  .process-section p,
+  .cta-panel p {
+    color: var(--on-surface-variant);
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  .service-card {
+    border: 1px solid var(--surface-stroke);
+    border-radius: 8px;
+    background: #fff;
+    padding: 1.25rem;
+  }
+
+  .service-card span {
+    color: var(--primary);
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    font-size: 0.78rem;
+    font-weight: 800;
+  }
+
+  .service-card h2 {
+    margin: 1.4rem 0 0.75rem;
+    font-size: 1.18rem;
+    letter-spacing: 0;
+  }
+
+  .process-section,
+  .cta-panel {
+    display: grid;
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+    gap: 2rem;
+    border-top: 1px solid var(--surface-stroke);
+    margin-top: 4rem;
+    padding-top: 2rem;
+  }
+
+  .process-section h2,
+  .cta-panel h2 {
+    font-size: clamp(1.9rem, 4vw, 3rem);
+    letter-spacing: 0;
+  }
+
+  ol {
+    display: grid;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    counter-reset: step;
+  }
+
+  li {
+    counter-increment: step;
+    border: 1px solid var(--surface-stroke);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 1rem;
+  }
+
+  li::before {
+    content: "0" counter(step);
+    display: block;
+    margin-bottom: 0.7rem;
+    color: var(--primary);
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    font-size: 0.72rem;
+    font-weight: 800;
+  }
+
+  .cta-panel {
+    align-items: center;
+    border: 1px solid var(--surface-stroke);
+    border-radius: 8px;
+    background: #0f172a;
+    padding: clamp(1.25rem, 4vw, 2rem);
+  }
+
+  .cta-panel h2,
+  .cta-panel p {
+    color: #f8fafc;
+  }
+
+  .cta-panel .eyebrow {
+    color: #67e8f9;
+  }
+
+  @media (max-width: 980px) {
+    .services-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 720px) {
+    .services-grid,
+    .process-section,
+    .cta-panel {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

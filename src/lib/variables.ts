@@ -2,17 +2,17 @@
 
 export const GLOBAL = {
   // Site metadata
-  username: "Jaime",
+  username: "devjaime",
   fullName: "Jaime Hernández",
   rootUrl: "https://jaimehernandez.dev",
   
-  // Spanish content - AI Consultant positioning
-  shortDescription: "AI Consultant | AI Agent Architect | Automatización Inteligente",
-  longDescription: "Consultor de IA especializado en diseñar e implementar agentes autónomos, pipelines de automatización y sistemas inteligentes para empresas. Con experiencia probada en LangGraph, CrewAI, LangChain y arquitecturas LLM en producción. Transformo procesos manuales en flujos automatizados impulsados por IA.",
-  heroDescription: "Consultor de IA especializado en agentes autónomos, automatización inteligente y arquitecturas LLM. Ayuda a empresas a implementar soluciones de IA que reducen costos y escalan operaciones.",
-  connectButton: "Consultar",
-  viewCodeButton: "Ver Proyectos",
-  profileAlt: "Jaime Hernández - AI Consultant especializado en agentes autónomos y automatización",
+  // Spanish content - senior AI/software engineer positioning
+  shortDescription: "AI & Software Engineering from Chile",
+  longDescription: "Blog y portfolio de Jaime Hernández, backend engineer en Falabella y constructor de sistemas de IA en producción desde Chile: agentes, RAG, microservicios, GCP, Go y Python.",
+  heroDescription: "Soy Jaime Hernández, backend engineer en Falabella y builder de Vocari. Diseño backends, agentes, RAG pipelines y plataformas cloud para convertir tecnología compleja en impacto real.",
+  connectButton: "Trabajemos juntos",
+  viewCodeButton: "Ver proyectos",
+  profileAlt: "Jaime Hernández - AI and Software Engineer from Chile",
 
   // SEO Keywords - AI Consultant focused
   keywords: [
@@ -51,8 +51,8 @@ export const GLOBAL = {
   linkedinProfile: "https://www.linkedin.com/in/devjaime/",
 
   // Common text names used throughout the site
-  articlesName: "Artículos",
-  projectsName: "Proyectos",
+  articlesName: "Escritura técnica",
+  projectsName: "Casos y proyectos",
   viewAll: "Ver Todos",
 
   // Common descriptions used throughout the site
@@ -60,14 +60,14 @@ export const GLOBAL = {
   noProjects: "No hay proyectos destacados aún.",
 
   // Blog metadata
-  blogTitle: "Mis Artículos y Reflexiones",
-  blogShortDescription: "Sabiduría práctica, pensamientos sin filtro y opiniones sobre tecnología.",
-  blogLongDescription: "Desarrollo web, tendencias tecnológicas y ocasionalmente errores de programación. Artículos técnicos sobre IA, backend y desarrollo de software.",
+  blogTitle: "Escritura técnica",
+  blogShortDescription: "Notas de ingeniería sobre IA aplicada, backend, cloud, agentes, RAG y carrera técnica en LatAm.",
+  blogLongDescription: "Artículos técnicos de Jaime Hernández sobre sistemas de IA en producción, agentes, RAG, Go, Python, GCP, microservicios, automatización y aprendizaje profesional.",
 
   // Project metadata
-  projectsTitle: "Proyectos y Código",
-  projectShortDescription: "Una lista de mis proyectos de desarrollo web y herramientas.",
-  projectLongDescription: "Todos mis proyectos, incluyendo aplicaciones frontend y full-stack. Desde soluciones de IA hasta aplicaciones web modernas.",
+  projectsTitle: "Casos y proyectos",
+  projectShortDescription: "Sistemas, experimentos y productos donde IA, backend y cloud se encuentran con problemas reales.",
+  projectLongDescription: "Proyectos de Jaime Hernández: Vocari, plataformas con agentes, RAG, microservicios, automatizaciones Python y herramientas developer.",
 
   // Profile image
   profileImage: "devjaime.webp",
@@ -84,49 +84,49 @@ export const GLOBAL = {
   },
 
   // External links
-  youtubeChannel: "https://m.youtube.com/devjaime",
+  youtubeChannel: "https://www.youtube.com/@devjaime",
 
   // Skills and expertise - AI Consultant focus
   skills: {
     languages: ["Go", "Python", "TypeScript", "JavaScript"],
     databases: ["PostgreSQL", "Redis", "MongoDB", "Oracle"],
     cloud: ["GCP", "AWS", "Azure", "Docker", "Kubernetes"],
-    frameworks: ["Next.js", "React", "Node.js", "FastAPI"],
-    ai: ["LangChain", "LangGraph", "CrewAI", "Claude API", "Ollama", "MCP", "n8n"],
-    tools: ["Git", "VS Code", "Postman", "Jupyter", "n8n"]
+    frameworks: ["Astro", "Next.js", "React", "Node.js", "FastAPI", "NestJS"],
+    ai: ["LangChain", "LangGraph", "LlamaIndex", "MCP", "RAG", "Vertex AI", "Claude API", "n8n"],
+    tools: ["Git", "Grafana", "Datadog", "Lens", "Jupyter", "Postman"]
   },
 
   // Experience highlights - AI Consultant positioning
   experience: {
-    currentRole: "AI Consultant & Agent Architect",
-    yearsOfExperience: "8+ años",
-    focusAreas: ["Agentes Autónomos", "Automatización IA", "Arquitectura LLM"],
+    currentRole: "Backend Engineer & AI Builder",
+    yearsOfExperience: "18+ años",
+    focusAreas: ["Backend productivo", "Agentes IA", "RAG y automatización"],
     location: "Chile, Latinoamérica"
   },
 
   // Services section
-  servicesTitle: "Servicios de Consultoría IA",
-  servicesShortDescription: "Implementación de soluciones de inteligencia artificial para negocios.",
+  servicesTitle: "Consultoría técnica",
+  servicesShortDescription: "Ayudo a equipos a llevar IA, automatización y backend cloud desde el prototipo hasta producción.",
   services: [
     {
-      title: "Agentes Autónomos",
-      description: "Diseño e implementación de agentes IA que automatizan tareas complejas y procesos de negocio.",
-      icon: "🤖"
+      title: "Arquitectura de agentes IA",
+      description: "Diseño de flujos con herramientas, memoria, evaluación y límites operativos para agentes útiles en negocio.",
+      icon: "AI"
     },
     {
-      title: "Automatización Inteligente",
-      description: "Transforma flujos de trabajo manuales en procesos automatizados impulsados por IA.",
-      icon: "⚡"
+      title: "RAG y conocimiento empresarial",
+      description: "Pipelines de recuperación, chunking, evaluación y observabilidad para usar conocimiento interno con criterio.",
+      icon: "RAG"
     },
     {
-      title: "Arquitectura RAG",
-      description: "Sistemas de Retrieval-Augmented Generation para información en tiempo real.",
-      icon: "📚"
+      title: "Backend cloud y datos",
+      description: "Microservicios, Pub/Sub, BigQuery, APIs y jobs confiables para que la IA tenga sistemas sólidos debajo.",
+      icon: "GCP"
     },
     {
-      title: "Consultoría LLM",
-      description: "Evaluación y selección del mejor modelo de lenguaje para tu caso de uso.",
-      icon: "💡"
+      title: "Automatización aplicada",
+      description: "Integración de n8n, Python y APIs para reducir trabajo manual sin perder trazabilidad ni control humano.",
+      icon: "OPS"
     }
   ]
 };

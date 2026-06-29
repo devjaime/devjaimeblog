@@ -1,33 +1,160 @@
 ---
 import type { ArticleFrontmatter } from "../../lib/types";
 import { GLOBAL } from "../../lib/variables";
-import ArticleSnippet from "../ArticleSnippet.astro";
 import Anchor from "../common/Anchor.astro";
+import ArticleSnippet from "../ArticleSnippet.astro";
 
 type Props = {
   featuredArticles: Array<ArticleFrontmatter>;
 }
 
 const { featuredArticles } = Astro.props;
+const [leadArticle, ...restArticles] = featuredArticles;
 ---
 
-<div class="flex justify-between items-center w-full mb-8">
-  <h3 class="font-display text-xl sm:text-2xl font-bold" style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif;">{GLOBAL.articlesName}</h3>
-  <Anchor url="/blog" class="text-base font-medium" style="color: var(--accent);">{GLOBAL.viewAll}</Anchor>
-</div>
-<ul class="my-4 grid gap-4">
-  {
-    (featuredArticles.length === 0 && <p>{GLOBAL.noArticles}</p>) ||
-      featuredArticles.map((article) => (
-        <li>
-          <ArticleSnippet
-            title={article.title}
-            description={article.description}
-            url={article.filename}
-            timestamp={article.timestamp}
-            duration={`${article.time} min`}
-          />
-        </li>
-      ))
+<section class="editorial-section">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">Writing</p>
+      <h2>{GLOBAL.articlesName}</h2>
+      <p>Ensayos prácticos sobre IA aplicada, backend, agentes y la realidad de construir software desde LatAm.</p>
+    </div>
+    <Anchor url="/blog" class="view-link">{GLOBAL.viewAll}</Anchor>
+  </div>
+
+  {featuredArticles.length === 0 ? (
+    <p>{GLOBAL.noArticles}</p>
+  ) : (
+    <div class="featured-writing-grid">
+      {leadArticle && (
+        <article class="lead-article">
+          <p class="article-kicker">{leadArticle.tags?.[0] ?? "AI Engineering"}</p>
+          <a href={leadArticle.filename}>
+            <h3>{leadArticle.title}</h3>
+          </a>
+          <p>{leadArticle.description}</p>
+          <div class="meta-row">
+            <span>{leadArticle.time} min</span>
+            <span>{new Date(leadArticle.timestamp).getFullYear()}</span>
+          </div>
+        </article>
+      )}
+
+      <ul class="article-list">
+        {restArticles.slice(0, 4).map((article) => (
+          <li>
+            <ArticleSnippet
+              title={article.title}
+              description={article.description}
+              url={article.filename}
+              timestamp={article.timestamp}
+              duration={`${article.time} min`}
+              tags={article.tags}
+            />
+          </li>
+        ))}
+      </ul>
+    </div>
+  )}
+</section>
+
+<style>
+  .editorial-section {
+    padding: 4rem 0;
   }
-</ul>
+
+  .section-heading {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .eyebrow,
+  .article-kicker,
+  .meta-row {
+    color: var(--primary);
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0;
+  }
+
+  h2 {
+    margin: 0.25rem 0 0.75rem;
+    font-size: clamp(2rem, 4vw, 3.4rem);
+    letter-spacing: 0;
+  }
+
+  .section-heading p:not(.eyebrow) {
+    max-width: 680px;
+    color: var(--on-surface-variant);
+  }
+
+  .featured-writing-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    gap: 1.25rem;
+  }
+
+  .lead-article {
+    min-height: 460px;
+    border: 1px solid var(--surface-stroke);
+    border-radius: 8px;
+    background: #ffffff;
+    padding: clamp(1.25rem, 4vw, 2rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+
+  .lead-article h3 {
+    margin: 1rem 0;
+    font-size: clamp(1.9rem, 4vw, 3rem);
+    letter-spacing: 0;
+  }
+
+  .lead-article a {
+    color: var(--on-surface);
+    text-decoration: none;
+  }
+
+  .lead-article p:not(.article-kicker) {
+    color: var(--on-surface-variant);
+    font-size: 1.05rem;
+  }
+
+  .meta-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    color: var(--on-surface-variant);
+  }
+
+  .article-list {
+    display: grid;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  @media (max-width: 860px) {
+    .section-heading,
+    .featured-writing-grid {
+      display: block;
+    }
+
+    .view-link {
+      display: inline-flex;
+      margin-top: 1rem;
+    }
+
+    .lead-article {
+      min-height: auto;
+      margin-bottom: 1rem;
+    }
+  }
+</style>

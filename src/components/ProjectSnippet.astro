@@ -1,6 +1,4 @@
 ---
-import Anchor from "./common/Anchor.astro";
-
 export type Props = {
   title: string;
   description: string;
@@ -13,51 +11,83 @@ export type Props = {
 const { title, description, url, githubUrl, liveUrl, tags } = Astro.props;
 ---
 
-<div class="flex flex-col gap-3 pb-8 animate-on-scroll project-card">
-  <div class="flex flex-col gap-3 sm:flex-row sm:justify-between">
-    <Anchor url={url} class="text-xl font-semibold" style="font-family: 'Plus Jakarta Sans', system-ui, sans-serif; color: var(--on-surface);">
-      {title}
-    </Anchor>
-    <div class="flex gap-3">
-      {
-        githubUrl ? (
-          <Anchor url={githubUrl} class="text-sm font-medium" external style="color: var(--accent);">
-            GitHub
-          </Anchor>
-        ) : null
-      }
-      {
-        liveUrl ? (
-          <Anchor url={liveUrl} class="text-sm font-medium" external style="color: var(--secondary);">
-            Live
-          </Anchor>
-        ) : null
-      }
+<article class="project-row">
+  <a href={url} class="project-title">{title}</a>
+  <p>{description}</p>
+  <div class="project-meta">
+    <div class="tag-list">
+      {tags.slice(0, 5).map((tag) => <span>{tag}</span>)}
+    </div>
+    <div class="project-links">
+      {githubUrl && <a href={githubUrl} target="_blank" rel="noopener noreferrer">GitHub</a>}
+      {liveUrl && <a href={liveUrl} target="_blank" rel="noopener noreferrer">Live</a>}
     </div>
   </div>
-  <p class="text-base leading-relaxed" style="color: var(--on-surface-variant);">
-    {description}
-  </p>
-  <div class="flex flex-wrap gap-2">
-    {
-      tags.map((tag) => (
-        <span 
-          class="px-2 py-1 text-xs font-semibold rounded"
-          style="background: rgba(79, 70, 229, 0.08); color: var(--primary); border: 1px solid rgba(79, 70, 229, 0.15);"
-        >
-          {tag}
-        </span>
-      ))
-    }
-  </div>
-</div>
+</article>
 
 <style>
-  .project-card {
-    transition: all 0.3s ease;
+  .project-row {
+    display: grid;
+    grid-template-columns: minmax(180px, 0.42fr) minmax(0, 0.8fr) minmax(220px, 0.5fr);
+    gap: 1.5rem;
+    align-items: start;
+    border-bottom: 1px solid var(--surface-stroke);
+    padding: 1.35rem 0;
   }
-  
-  .project-card:hover {
-    transform: translateX(4px);
+
+  .project-title {
+    color: var(--on-surface);
+    font-family: 'Manrope', system-ui, sans-serif;
+    font-size: 1.15rem;
+    font-weight: 800;
+    line-height: 1.25;
+    text-decoration: none;
+  }
+
+  .project-title:hover {
+    color: var(--primary);
+  }
+
+  p {
+    color: var(--on-surface-variant);
+    margin: 0;
+  }
+
+  .project-meta,
+  .tag-list,
+  .project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+  }
+
+  .project-meta {
+    justify-content: space-between;
+  }
+
+  .tag-list span {
+    border: 1px solid rgba(37, 99, 235, 0.16);
+    border-radius: 999px;
+    color: var(--primary);
+    background: rgba(37, 99, 235, 0.05);
+    padding: 0.3rem 0.5rem;
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    font-size: 0.68rem;
+  }
+
+  .project-links a {
+    color: var(--on-surface);
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration-color: var(--outline);
+  }
+
+  @media (max-width: 900px) {
+    .project-row {
+      grid-template-columns: 1fr;
+      gap: 0.75rem;
+    }
   }
 </style>

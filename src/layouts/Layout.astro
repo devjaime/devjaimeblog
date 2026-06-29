@@ -1,7 +1,6 @@
 ---
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
-import ChatWidget from "../components/ChatWidget.astro";
 import "../styles/global.css";
 
 export interface Props {
@@ -117,7 +116,7 @@ const ogImage = new URL(image, Astro.url).href;
       "author": {
         "@type": "Person",
         "name": author,
-        "url": "https://devjaime.com",
+        "url": "https://jaimehernandez.dev",
         "sameAs": [
           "https://github.com/devjaime/",
           "https://twitter.com/hsjhernandez",
@@ -127,7 +126,7 @@ const ogImage = new URL(image, Astro.url).href;
       "publisher": {
         "@type": "Organization",
         "name": "devjaime",
-        "url": "https://devjaime.com"
+        "url": "https://jaimehernandez.dev"
       },
       ...(type === "article" && {
         "datePublished": publishedTime,
@@ -144,7 +143,7 @@ const ogImage = new URL(image, Astro.url).href;
     <meta name="generator" content={Astro.generator} />
     
     <!-- Theme Color - Light Mode -->
-    <meta name="theme-color" content="#FAF8FF" />
+    <meta name="theme-color" content="#FAFAF7" />
     
     <!-- Additional meta tags -->
     <meta name="keywords" content="Jaime Hernández, software engineer, AI, artificial intelligence, Golang, Python, backend development, cloud computing, microservices, PostgreSQL, LangChain, Chile, Latin America" />
@@ -193,7 +192,7 @@ const ogImage = new URL(image, Astro.url).href;
     <Footer />
 
     <!-- Scroll-triggered animations -->
-    <script>
+    <script is:inline>
       function initScrollAnimations() {
         const observerOptions = {
           threshold: 0.1,
@@ -218,6 +217,5 @@ const ogImage = new URL(image, Astro.url).href;
         initScrollAnimations();
       });
     </script>
-    {import.meta.env.DEV && <ChatWidget />}
   </body>
 </html>
