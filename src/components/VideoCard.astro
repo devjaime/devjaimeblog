@@ -1,0 +1,130 @@
+---
+import type { Video } from "../data/videos";
+import type { Locale } from "../i18n/ui";
+import { ui } from "../i18n/ui";
+
+type Props = {
+  video: Video;
+  lang?: Locale;
+};
+
+const { video, lang = "es" } = Astro.props;
+const date = new Date(`${video.date}T00:00:00`);
+const url = `https://www.youtube.com/watch?v=${video.youtubeId}`;
+const thumbnail = `https://img.youtube.com/vi/${video.youtubeId}/mqdefault.jpg`;
+---
+
+<article class="video-card">
+  <a class="video-thumb" href={url} target="_blank" rel="noopener noreferrer" aria-label={`${ui[lang].videos.watch}: ${video.title}`}>
+    <img src={thumbnail} alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" width="320" height="180" />
+    <span>{ui[lang].videos.watch}</span>
+  </a>
+  <div class="video-body">
+    <div class="video-meta">
+      <span>{video.tags[0] ?? "Video"}</span>
+      <time datetime={video.date}>{date.toLocaleDateString(lang === "en" ? "en-US" : "es-CL", { year: "numeric", month: "short", day: "numeric" })}</time>
+    </div>
+    <h3><a href={url} target="_blank" rel="noopener noreferrer">{video.title}</a></h3>
+    <p>{video.description}</p>
+    <div class="video-tags">
+      {video.tags.slice(0, 3).map((tag) => <span>{tag}</span>)}
+    </div>
+  </div>
+</article>
+
+<style>
+  .video-card {
+    height: 100%;
+    border: 1px solid var(--surface-stroke);
+    border-radius: 8px;
+    background: #fff;
+    overflow: hidden;
+  }
+
+  .video-thumb {
+    position: relative;
+    display: block;
+    aspect-ratio: 16 / 9;
+    background: var(--surface-container);
+    text-decoration: none;
+    overflow: hidden;
+  }
+
+  .video-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: saturate(0.92);
+    transition: transform 0.2s ease;
+  }
+
+  .video-thumb:hover img {
+    transform: scale(1.03);
+  }
+
+  .video-thumb span {
+    position: absolute;
+    left: 0.75rem;
+    bottom: 0.75rem;
+    border-radius: 999px;
+    background: rgba(15, 23, 42, 0.9);
+    color: #fff;
+    padding: 0.4rem 0.65rem;
+    font-size: 0.78rem;
+    font-weight: 800;
+  }
+
+  .video-body {
+    padding: 1rem;
+  }
+
+  .video-meta,
+  .video-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    color: var(--on-surface-variant);
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .video-meta {
+    justify-content: space-between;
+    margin-bottom: 0.85rem;
+  }
+
+  h3 {
+    font-size: 1.05rem;
+    line-height: 1.25;
+    letter-spacing: 0;
+  }
+
+  h3 a {
+    color: var(--on-surface);
+    text-decoration: none;
+  }
+
+  h3 a:hover {
+    color: var(--primary);
+  }
+
+  p {
+    margin-top: 0.7rem;
+    color: var(--on-surface-variant);
+    font-size: 0.94rem;
+  }
+
+  .video-tags {
+    margin-top: 1rem;
+  }
+
+  .video-tags span {
+    border: 1px solid rgba(37, 99, 235, 0.16);
+    border-radius: 999px;
+    color: var(--primary);
+    background: rgba(37, 99, 235, 0.05);
+    padding: 0.28rem 0.5rem;
+  }
+</style>

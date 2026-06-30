@@ -4,31 +4,40 @@ import Section from "../components/common/Section.astro";
 import Hero from "../components/home/Hero.astro";
 import FeaturedProjects from "../components/home/FeaturedProjects.astro";
 import FeaturedArticles from "../components/home/FeaturedArticles.astro";
+import FeaturedVideos from "../components/home/FeaturedVideos.astro";
 import TechStack from "../components/home/TechStack.astro";
-import { GLOBAL } from "../lib/variables";
+import { ui } from "../i18n/ui";
 import { featuredArticles, featuredProjects } from "../lib/featured";
+
+const lang = "es";
+const meta = ui[lang].meta;
 ---
 
 <Layout
-  title={`${GLOBAL.username} • ${GLOBAL.shortDescription}`}
-  description={GLOBAL.longDescription}
-  image={`${GLOBAL.rootUrl}/devjaime.webp`}
-  canonical={GLOBAL.rootUrl}
+  title={meta.title}
+  description={meta.description}
+  image="/devjaime.webp"
+  canonical="/"
   type="website"
+  lang={lang}
 >
   <Section class="my-16">
-    <Hero />
+    <Hero lang={lang} />
   </Section>
 
   <Section>
-    <TechStack />
+    <TechStack lang={lang} />
   </Section>
 
   <Section>
-    <FeaturedProjects featuredProjects={featuredProjects} />
+    <FeaturedProjects featuredProjects={featuredProjects} lang={lang} />
   </Section>
 
   <Section>
-    <FeaturedArticles featuredArticles={featuredArticles} />
+    <FeaturedVideos lang={lang} />
+  </Section>
+
+  <Section>
+    <FeaturedArticles featuredArticles={featuredArticles} lang={lang} />
   </Section>
 </Layout>

@@ -6,21 +6,21 @@ import Layout from "../../layouts/Layout.astro";
 import { GLOBAL } from "../../lib/variables";
 import { ui } from "../../i18n/ui";
 
-const lang = "es";
+const lang = "en";
 const t = ui[lang].projects;
 ---
 
 <Layout
-  title={`${GLOBAL.projectsTitle} • ${GLOBAL.username}`}
-  description={GLOBAL.projectLongDescription}
-  canonical={`${GLOBAL.rootUrl}/projects`}
+  title={`Projects • ${GLOBAL.username}`}
+  description={t.intro}
+  canonical="/en/projects"
   type="website"
   lang={lang}
 >
   <Section class="projects-page">
     <header class="page-hero">
       <p class="eyebrow">{t.eyebrow}</p>
-      <h1>Proyectos donde pruebo, construyo y documento sistemas inteligentes.</h1>
+      <h1>Projects where I test, build and document intelligent systems.</h1>
       <p>{t.intro}</p>
     </header>
 

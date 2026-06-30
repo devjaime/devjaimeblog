@@ -1,3 +1,55 @@
+export type EditorialType =
+  | "article"
+  | "note"
+  | "case-study"
+  | "agentic-status"
+  | "changelog"
+  | "experiment";
+
+export type EditorialSource = "human" | "agentic" | "hybrid";
+
+export type ReviewStatus = "draft" | "reviewed" | "published";
+
+export type EditorialOrigin = {
+  commitSha?: string;
+  branch?: string;
+  generatedBy?: string;
+  agentName?: string;
+  workflow?: string;
+  runId?: string;
+};
+
+export type EditorialMetrics = {
+  commits?: number;
+  filesChanged?: number;
+  insertions?: number;
+  deletions?: number;
+  postsUpdated?: number;
+  buildStatus?: string;
+  lighthousePerformance?: number;
+  lighthouseAccessibility?: number;
+  lighthouseBestPractices?: number;
+  lighthouseSEO?: number;
+  readingTime?: number;
+  wordCount?: number;
+  videosEmbedded?: number;
+  internalLinks?: number;
+  externalLinks?: number;
+};
+
+export type EditorialMeta = {
+  pubDate?: string;
+  updatedDate?: string;
+  lang?: "es" | "en";
+  type?: EditorialType;
+  source?: EditorialSource;
+  author?: string | { name?: string; url?: string };
+  authorHandle?: string;
+  reviewStatus?: ReviewStatus;
+  origin?: EditorialOrigin;
+  metrics?: EditorialMetrics;
+};
+
 export type ProjectFrontmatter = {
   /**
    * The title of the project
@@ -43,7 +95,7 @@ export type ProjectFrontmatter = {
   filename: string;
 };
 
-export type ArticleFrontmatter = {
+export type ArticleFrontmatter = EditorialMeta & {
   /**
    * The title of the article
    */
@@ -74,6 +126,11 @@ export type ArticleFrontmatter = {
    * The timestamp the article was published in W3C format
    */
   timestamp: string;
+
+  publishDate?: string;
+  modifiedDate?: string;
+  category?: string;
+  draft?: boolean;
 
   /**
    * The URL of the article on the website

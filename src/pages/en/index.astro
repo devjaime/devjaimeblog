@@ -1,0 +1,43 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Section from "../../components/common/Section.astro";
+import Hero from "../../components/home/Hero.astro";
+import FeaturedProjects from "../../components/home/FeaturedProjects.astro";
+import FeaturedArticles from "../../components/home/FeaturedArticles.astro";
+import FeaturedVideos from "../../components/home/FeaturedVideos.astro";
+import TechStack from "../../components/home/TechStack.astro";
+import { ui } from "../../i18n/ui";
+import { featuredArticles, featuredProjects } from "../../lib/featured";
+
+const lang = "en";
+const meta = ui[lang].meta;
+---
+
+<Layout
+  title={meta.title}
+  description={meta.description}
+  image="/devjaime.webp"
+  canonical="/en"
+  type="website"
+  lang={lang}
+>
+  <Section class="my-16">
+    <Hero lang={lang} />
+  </Section>
+
+  <Section>
+    <TechStack lang={lang} />
+  </Section>
+
+  <Section>
+    <FeaturedProjects featuredProjects={featuredProjects} lang={lang} />
+  </Section>
+
+  <Section>
+    <FeaturedVideos lang={lang} />
+  </Section>
+
+  <Section>
+    <FeaturedArticles featuredArticles={featuredArticles} lang={lang} />
+  </Section>
+</Layout>

@@ -1,33 +1,18 @@
 ---
-import { GLOBAL } from "../../lib/variables";
+import { ui, type Locale } from "../../i18n/ui";
 
-const capabilities = [
-  {
-    title: "Backend productivo",
-    text: "Microservicios, APIs y flujos transaccionales con Go, Node/NestJS, Kubernetes y observabilidad.",
-    items: ["Go", "NestJS", "Pub/Sub", "Kubernetes", "Datadog"]
-  },
-  {
-    title: "IA aplicada",
-    text: "Agentes, RAG y automatizaciones conectadas a sistemas reales, con evaluación y control humano.",
-    items: ["LangGraph", "LlamaIndex", "MCP", "RAGAS", "n8n"]
-  },
-  {
-    title: "Cloud y datos",
-    text: "Pipelines, BigQuery, PostgreSQL y arquitectura cloud para que la IA tenga datos confiables.",
-    items: ["GCP", "BigQuery", "PostgreSQL", "Python", "FastAPI"]
-  }
-];
+const { lang = "es" } = Astro.props as { lang?: Locale };
+const stack = ui[lang].stack;
 ---
 
 <section class="capabilities-section">
   <div class="section-heading">
-    <p class="eyebrow">Stack con intención</p>
-    <h2>Ingeniería para sistemas que viven en producción.</h2>
+    <p class="eyebrow">{stack.eyebrow}</p>
+    <h2>{stack.title}</h2>
   </div>
 
   <div class="capability-grid">
-    {capabilities.map((capability) => (
+    {stack.capabilities.map((capability) => (
       <article class="capability-card">
         <h3>{capability.title}</h3>
         <p>{capability.text}</p>

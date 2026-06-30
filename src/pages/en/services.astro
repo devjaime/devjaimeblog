@@ -1,45 +1,53 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Section from "../components/common/Section.astro";
-import { GLOBAL } from "../lib/variables";
+import Layout from "../../layouts/Layout.astro";
+import Section from "../../components/common/Section.astro";
+import { GLOBAL } from "../../lib/variables";
+import { ui } from "../../i18n/ui";
 
-const process = [
-  ["Diagnóstico", "Entender proceso, datos, restricciones, costo operativo y riesgo antes de proponer IA."],
-  ["Arquitectura", "Diseñar APIs, agentes, RAG, colas, monitoreo y puntos de control humano."],
-  ["Implementación", "Construir integraciones incrementales con pruebas, trazabilidad y operación real."],
-  ["Mejora", "Medir calidad, latencia, costos y feedback para iterar con evidencia."]
+const lang = "en";
+const t = ui[lang].services;
+const services = [
+  ["AI agent architecture", "Business-oriented agent flows with tools, memory, evaluation and operational boundaries.", "AI"],
+  ["RAG and enterprise knowledge", "Retrieval pipelines, chunking, evaluation and observability for using internal knowledge responsibly.", "RAG"],
+  ["Cloud backend and data", "Microservices, Pub/Sub, BigQuery, APIs and reliable jobs underneath AI workflows.", "GCP"],
+  ["Applied automation", "n8n, Python and API integrations to reduce manual work while preserving traceability and human control.", "OPS"],
 ];
-const lang = "es";
+const process = [
+  ["Diagnosis", "Understand the process, data, constraints, operating cost and risk before proposing AI."],
+  ["Architecture", "Design APIs, agents, RAG, queues, monitoring and human checkpoints."],
+  ["Implementation", "Build incremental integrations with testing, traceability and real operations in mind."],
+  ["Improvement", "Measure quality, latency, cost and feedback to iterate with evidence."],
+];
 ---
 
 <Layout
-  title={`${GLOBAL.servicesTitle} • ${GLOBAL.username}`}
-  description={GLOBAL.servicesShortDescription}
-  canonical={`${GLOBAL.rootUrl}/services`}
+  title={`${t.eyebrow} • ${GLOBAL.username}`}
+  description={t.intro}
+  canonical="/en/services"
   type="website"
   lang={lang}
 >
   <Section class="services-page">
     <header class="page-hero">
-      <p class="eyebrow">Consultoría técnica</p>
-      <h1>IA aplicada con criterio de backend, datos y operación.</h1>
-      <p>{GLOBAL.servicesShortDescription}</p>
+      <p class="eyebrow">{t.eyebrow}</p>
+      <h1>{t.title}</h1>
+      <p>{t.intro}</p>
     </header>
 
     <div class="services-grid">
-      {GLOBAL.services.map((service) => (
+      {services.map(([title, description, icon]) => (
         <article class="service-card">
-          <span>{service.icon}</span>
-          <h2>{service.title}</h2>
-          <p>{service.description}</p>
+          <span>{icon}</span>
+          <h2>{title}</h2>
+          <p>{description}</p>
         </article>
       ))}
     </div>
 
     <section class="process-section">
       <div>
-        <p class="eyebrow">Cómo trabajo</p>
-        <h2>Primero sistemas, después modelos.</h2>
+        <p class="eyebrow">How I work</p>
+        <h2>{t.processTitle}</h2>
       </div>
       <ol>
         {process.map(([title, text]) => (
@@ -53,11 +61,11 @@ const lang = "es";
 
     <section class="cta-panel">
       <div>
-        <p class="eyebrow">Disponible para colaboración</p>
-        <h2>Si tienes un proceso complejo, partamos por hacerlo observable.</h2>
-        <p>La mejor IA para negocio suele empezar con buenos datos, límites claros y una integración que el equipo pueda mantener.</p>
+        <p class="eyebrow">Available for selected collaboration</p>
+        <h2>If the workflow is complex, start by making it observable.</h2>
+        <p>The best business AI usually starts with good data, clear limits and integrations the team can maintain.</p>
       </div>
-      <a href={GLOBAL.linkedinProfile} target="_blank" rel="noopener noreferrer" class="btn-primary">Contactar por LinkedIn</a>
+      <a href={GLOBAL.linkedinProfile} target="_blank" rel="noopener noreferrer" class="btn-primary">{t.contact}</a>
     </section>
   </Section>
 </Layout>

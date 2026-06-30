@@ -1,0 +1,82 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Section from "../common/Section.astro";
+import VideoCard from "../VideoCard.astro";
+import { videos } from "../../data/videos";
+import { ui, type Locale } from "../../i18n/ui";
+
+const { lang = "es" } = Astro.props as { lang?: Locale };
+const t = ui[lang].videos;
+const canonical = lang === "en" ? "/en/videos" : "/videos";
+---
+
+<Layout
+  title={`${t.title} • devjaime`}
+  description={t.intro}
+  canonical={canonical}
+  type="website"
+  lang={lang}
+>
+  <Section class="videos-page">
+    <header class="page-hero">
+      <p class="eyebrow">{t.eyebrow}</p>
+      <h1>{t.title}</h1>
+      <p>{t.intro}</p>
+    </header>
+
+    <div class="video-grid">
+      {videos.map((video) => <VideoCard video={video} lang={lang} />)}
+    </div>
+  </Section>
+</Layout>
+
+<style>
+  .videos-page {
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+  }
+
+  .page-hero {
+    max-width: 860px;
+    margin-bottom: 2.5rem;
+  }
+
+  .eyebrow {
+    color: var(--primary);
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0;
+  }
+
+  h1 {
+    margin: 0.4rem 0 1rem;
+    font-size: clamp(2.7rem, 7vw, 5rem);
+    line-height: 1;
+    letter-spacing: 0;
+  }
+
+  .page-hero p:not(.eyebrow) {
+    color: var(--on-surface-variant);
+    font-size: 1.08rem;
+  }
+
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  @media (max-width: 980px) {
+    .video-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 680px) {
+    .video-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

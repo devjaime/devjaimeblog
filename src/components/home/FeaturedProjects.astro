@@ -1,28 +1,30 @@
 ---
 import type { ProjectFrontmatter } from "../../lib/types";
-import { GLOBAL } from "../../lib/variables";
+import { routes, ui, type Locale } from "../../i18n/ui";
 import Anchor from "../common/Anchor.astro";
 import ProjectSnippet from "../ProjectSnippet.astro";
 
 type Props = {
   featuredProjects: Array<ProjectFrontmatter>;
+  lang?: Locale;
 }
 
-const { featuredProjects } = Astro.props;
+const { featuredProjects, lang = "es" } = Astro.props;
+const t = ui[lang].projects;
 ---
 
 <section class="projects-section">
   <div class="section-heading">
     <div>
-      <p class="eyebrow">Case studies</p>
-      <h2>{GLOBAL.projectsName}</h2>
-      <p>Productos, experimentos y herramientas donde el aprendizaje técnico se conecta con usuarios, datos y operación.</p>
+      <p class="eyebrow">{t.eyebrow}</p>
+      <h2>{t.title}</h2>
+      <p>{t.intro}</p>
     </div>
-    <Anchor url="/projects" class="view-link">{GLOBAL.viewAll}</Anchor>
+    <Anchor url={routes[lang].projects} class="view-link">{t.viewAll}</Anchor>
   </div>
 
   <ul class="project-list">
-    {(featuredProjects.length === 0 && <p>{GLOBAL.noProjects}</p>) ||
+    {(featuredProjects.length === 0 && <p>No projects yet.</p>) ||
       featuredProjects.slice(0, 4).map((project) => (
         <li>
           <ProjectSnippet

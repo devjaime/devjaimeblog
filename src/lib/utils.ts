@@ -93,5 +93,9 @@ export const generateSourceUrl = (
   sourceUrl: string,
   contentType: "projects" | "blog",
 ) => {
-  return `${GLOBAL.rootUrl}/${contentType}/${sourceUrl}`;
+  const slug = sourceUrl
+    .replace(/^https?:\/\/[^/]+\/?/, "")
+    .replace(new RegExp(`^/?${contentType}/`), "")
+    .replace(/^\/+/, "");
+  return `${GLOBAL.rootUrl}/${contentType}/${slug}`;
 };

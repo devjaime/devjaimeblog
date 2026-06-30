@@ -1,5 +1,4 @@
 ---
-import Layout from "../layouts/Layout.astro";
 const siteUrl = "https://jaimehernandez.dev";
 
 // Get all blog posts
@@ -21,9 +20,18 @@ const projectUrls = projects.map(project => ({
 const allUrls = [
   { url: siteUrl, lastmod: new Date().toISOString(), priority: "1.0" },
   { url: `${siteUrl}/about`, lastmod: new Date().toISOString(), priority: "0.9" },
+  { url: `${siteUrl}/en/about`, lastmod: new Date().toISOString(), priority: "0.8" },
   { url: `${siteUrl}/cv`, lastmod: new Date().toISOString(), priority: "0.9" },
   { url: `${siteUrl}/blog`, lastmod: new Date().toISOString(), priority: "0.9" },
+  { url: `${siteUrl}/en/blog`, lastmod: new Date().toISOString(), priority: "0.8" },
   { url: `${siteUrl}/projects`, lastmod: new Date().toISOString(), priority: "0.8" },
+  { url: `${siteUrl}/en/projects`, lastmod: new Date().toISOString(), priority: "0.7" },
+  { url: `${siteUrl}/videos`, lastmod: new Date().toISOString(), priority: "0.8" },
+  { url: `${siteUrl}/en/videos`, lastmod: new Date().toISOString(), priority: "0.7" },
+  { url: `${siteUrl}/services`, lastmod: new Date().toISOString(), priority: "0.8" },
+  { url: `${siteUrl}/en/services`, lastmod: new Date().toISOString(), priority: "0.7" },
+  { url: `${siteUrl}/contact`, lastmod: new Date().toISOString(), priority: "0.7" },
+  { url: `${siteUrl}/en/contact`, lastmod: new Date().toISOString(), priority: "0.6" },
   ...blogUrls,
   ...projectUrls
 ];

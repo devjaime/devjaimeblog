@@ -78,6 +78,7 @@ export const GLOBAL = {
     about: "/about",
     projects: "/projects",
     blog: "/blog",
+    videos: "/videos",
     services: "/services",
     contact: "/contact",
     cv: "/cv",

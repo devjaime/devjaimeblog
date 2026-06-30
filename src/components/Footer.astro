@@ -1,20 +1,26 @@
 ---
 import { GLOBAL } from "../lib/variables";
+import { routes, ui, type Locale } from "../i18n/ui";
 
 const year = new Date().getFullYear();
+const { lang = "es" } = Astro.props as { lang?: Locale };
+const footerText =
+  lang === "en"
+    ? "Building intelligent systems from Chile for real-world teams and workflows."
+    : "Construyendo sistemas inteligentes desde Chile para equipos y flujos reales.";
 ---
 
 <footer class="site-footer">
   <div class="footer-inner">
     <div>
       <strong>devjaime</strong>
-      <p>Construyendo sistemas inteligentes que escalan desde Chile para LatAm.</p>
+      <p>{footerText}</p>
     </div>
-    <nav aria-label="Enlaces sociales">
+    <nav aria-label={lang === "en" ? "Social links" : "Enlaces sociales"}>
       <a href={GLOBAL.githubProfile} target="_blank" rel="noopener noreferrer">GitHub</a>
       <a href={GLOBAL.linkedinProfile} target="_blank" rel="noopener noreferrer">LinkedIn</a>
       <a href={GLOBAL.youtubeChannel} target="_blank" rel="noopener noreferrer">YouTube</a>
-      <a href="/contact">Contacto</a>
+      <a href={routes[lang].contact}>{ui[lang].nav.contact}</a>
     </nav>
   </div>
   <p class="copyright">&copy; {year} Jaime Hernández · AI & Software Engineering</p>

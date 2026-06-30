@@ -18,6 +18,11 @@ category: "System Health"
 draft: false
 time: 5
 featured: false
+lang: es
+type: agentic-status
+source: agentic
+authorHandle: devjaime
+reviewStatus: reviewed
 ---
 
 # Estatus del Sistema - 29 Jun 2026

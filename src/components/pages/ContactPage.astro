@@ -1,0 +1,166 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Section from "../common/Section.astro";
+import { ui, type Locale } from "../../i18n/ui";
+import { GLOBAL } from "../../lib/variables";
+
+const { lang = "es" } = Astro.props as { lang?: Locale };
+const t = ui[lang].contact;
+const canonical = lang === "en" ? "/en/contact" : "/contact";
+const copy = {
+  es: {
+    eyebrow: "devjaime / contacto",
+    contacts: [
+      ["LinkedIn", GLOBAL.linkedinProfile, "Consultoría, colaboración técnica y oportunidades profesionales."],
+      ["GitHub", GLOBAL.githubProfile, "Código, proyectos y experimentos abiertos."],
+      ["YouTube", GLOBAL.youtubeChannel, "Demos, agentes, RAG y construcción de productos IA."],
+      ["Email", "mailto:contacto@jaimehernandez.dev", "Propuestas formales y conversaciones de proyecto."],
+    ],
+    panelTitle: "IA útil empieza por entender el sistema que ya existe.",
+    panelText: "Cuéntame qué proceso quieres mejorar, qué datos tienes y dónde hoy se atasca la operación.",
+  },
+  en: {
+    eyebrow: "devjaime / contact",
+    contacts: [
+      ["LinkedIn", GLOBAL.linkedinProfile, "Consulting, technical collaboration and professional opportunities."],
+      ["GitHub", GLOBAL.githubProfile, "Code, projects and open experiments."],
+      ["YouTube", GLOBAL.youtubeChannel, "Demos, agents, RAG and AI product building."],
+      ["Email", "mailto:contacto@jaimehernandez.dev", "Formal proposals and project conversations."],
+    ],
+    panelTitle: "Useful AI starts by understanding the system that already exists.",
+    panelText: "Tell me what workflow you want to improve, what data you have and where operations get stuck today.",
+  },
+} as const;
+const page = copy[lang];
+---
+
+<Layout
+  title={`${t.title} • devjaime`}
+  description={t.intro}
+  canonical={canonical}
+  type="website"
+  lang={lang}
+>
+  <Section class="contact-page">
+    <header class="page-hero">
+      <p class="eyebrow">{page.eyebrow}</p>
+      <h1>{t.title}</h1>
+      <p>{t.intro}</p>
+    </header>
+
+    <div class="contact-grid">
+      {page.contacts.map(([label, href, text]) => (
+        <a href={href} class="contact-card" target={href.startsWith("mailto:") ? undefined : "_blank"} rel={href.startsWith("mailto:") ? undefined : "noopener noreferrer"}>
+          <span>{label}</span>
+          <p>{text}</p>
+        </a>
+      ))}
+    </div>
+
+    <section class="availability-panel">
+      <p class="eyebrow">{t.availability}</p>
+      <h2>{page.panelTitle}</h2>
+      <p>{page.panelText}</p>
+    </section>
+  </Section>
+</Layout>
+
+<style>
+  .contact-page {
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+  }
+
+  .page-hero {
+    max-width: 860px;
+    margin-bottom: 2.5rem;
+  }
+
+  .eyebrow {
+    color: var(--primary);
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0;
+  }
+
+  h1 {
+    margin: 0.4rem 0 1rem;
+    font-size: clamp(2.7rem, 7vw, 5rem);
+    line-height: 1;
+    letter-spacing: 0;
+  }
+
+  .page-hero p,
+  .contact-card p,
+  .availability-panel p:not(.eyebrow) {
+    color: var(--on-surface-variant);
+    font-size: 1.05rem;
+  }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  .contact-card {
+    min-height: 180px;
+    border: 1px solid var(--surface-stroke);
+    border-radius: 8px;
+    background: #fff;
+    padding: 1.25rem;
+    color: var(--on-surface);
+    text-decoration: none;
+  }
+
+  .contact-card:hover {
+    border-color: rgba(37, 99, 235, 0.42);
+  }
+
+  .contact-card span {
+    color: var(--primary);
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    font-size: 0.78rem;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+
+  .availability-panel {
+    border: 1px solid var(--surface-stroke);
+    border-radius: 8px;
+    background: #0f172a;
+    margin-top: 4rem;
+    padding: clamp(1.25rem, 4vw, 2rem);
+  }
+
+  .availability-panel h2 {
+    max-width: 780px;
+    margin: 0.4rem 0 1rem;
+    color: #f8fafc;
+    font-size: clamp(1.9rem, 4vw, 3rem);
+    letter-spacing: 0;
+  }
+
+  .availability-panel p:not(.eyebrow) {
+    max-width: 680px;
+    color: #dbeafe;
+  }
+
+  .availability-panel .eyebrow {
+    color: #67e8f9;
+  }
+
+  @media (max-width: 980px) {
+    .contact-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 640px) {
+    .contact-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

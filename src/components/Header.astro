@@ -1,27 +1,23 @@
 ---
-import { GLOBAL } from "../lib/variables";
+import { getAlternatePath, routeKeys, routes, ui, type Locale } from "../i18n/ui";
 
-const labels: Record<string, string> = {
-  home: "Inicio",
-  about: "Sobre mí",
-  projects: "Proyectos",
-  blog: "Blog",
-  services: "Servicios",
-  contact: "Contacto",
-  cv: "CV",
-};
+const { lang = "es" } = Astro.props as { lang?: Locale };
+const labels = ui[lang].nav;
+const currentPath = Astro.url.pathname;
+const otherLang = lang === "es" ? "en" : "es";
+const otherPath = getAlternatePath(currentPath, otherLang);
 ---
 
 <header class="site-header" role="banner">
   <div class="header-inner">
-    <a href="/" class="brand" aria-label="Ir al inicio">
+    <a href={routes[lang].home} class="brand" aria-label={lang === "en" ? "Go to home" : "Ir al inicio"}>
       <strong>devjaime</strong>
       <span>AI & Software Engineering</span>
     </a>
 
     <button
       class="menu-button"
-      aria-label="Abrir navegación"
+      aria-label={lang === "en" ? "Open navigation" : "Abrir navegación"}
       aria-expanded="false"
       aria-controls="main-navigation"
       id="menu-toggle"
@@ -31,10 +27,11 @@ const labels: Record<string, string> = {
       <span></span>
     </button>
 
-    <nav id="main-navigation" class="main-nav" aria-label="Navegación principal">
-      {Object.entries(GLOBAL.menu).map(([key, url]) => (
-        <a href={url} aria-current={Astro.url.pathname === url ? "page" : undefined}>{labels[key] ?? key}</a>
+    <nav id="main-navigation" class="main-nav" aria-label={lang === "en" ? "Main navigation" : "Navegación principal"}>
+      {routeKeys.map((key) => (
+        <a href={routes[lang][key]} aria-current={currentPath === routes[lang][key] ? "page" : undefined}>{labels[key]}</a>
       ))}
+      <a class="language-link" href={otherPath} hreflang={otherLang}>{otherLang.toUpperCase()}</a>
     </nav>
   </div>
 </header>
@@ -106,6 +103,16 @@ const labels: Record<string, string> = {
   .main-nav a:hover,
   .main-nav a[aria-current="page"] {
     color: var(--primary);
+  }
+
+  .language-link {
+    border: 1px solid var(--surface-stroke);
+    border-radius: 999px;
+    padding: 0.35rem 0.6rem;
+    background: #fff;
+    color: var(--on-surface);
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    font-size: 0.75rem;
   }
 
   .menu-button {

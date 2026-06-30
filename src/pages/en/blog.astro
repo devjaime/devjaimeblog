@@ -7,7 +7,7 @@ import { editorialLabels, isAgenticEntry, isEditorialArticle } from "../../lib/e
 import { ui } from "../../i18n/ui";
 import { articles } from "../../lib/list";
 
-const lang = "es";
+const lang = "en";
 const t = ui[lang].blogPage;
 const localizedArticles = articles.filter((article) => article.lang === lang);
 const editorialArticles = localizedArticles.filter(isEditorialArticle);
@@ -16,9 +16,9 @@ const [latestArticle, ...otherArticles] = editorialArticles;
 ---
 
 <Layout
-  title={`${GLOBAL.blogTitle} • ${GLOBAL.username}`}
-  description={GLOBAL.blogLongDescription}
-  canonical={`${GLOBAL.rootUrl}/blog`}
+  title={`Blog • ${GLOBAL.username}`}
+  description={t.intro}
+  canonical="/en/blog"
   type="website"
   lang={lang}
 >
@@ -27,6 +27,7 @@ const [latestArticle, ...otherArticles] = editorialArticles;
       <p class="eyebrow">{t.eyebrow}</p>
       <h1>{t.title}</h1>
       <p>{t.intro}</p>
+      <p class="language-note">{ui[lang].writing.noteSpanish}</p>
       <div class="topic-row">
         {t.topics.map((topic) => <span>{topic}</span>)}
       </div>
@@ -42,14 +43,14 @@ const [latestArticle, ...otherArticles] = editorialArticles;
         <div class="latest-meta">
           <span>{editorialLabels[lang][latestArticle.source ?? "human"]}</span>
           <span>{latestArticle.time} min</span>
-          <span>{new Date(latestArticle.timestamp).toLocaleDateString("es-CL", { year: "numeric", month: "long", day: "numeric" })}</span>
+          <span>{new Date(latestArticle.timestamp).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}</span>
         </div>
       </article>
     )}
 
     <div class="list-heading">
       <h2>{editorialLabels[lang].humanSection}</h2>
-      <p>Textos escritos o editados manualmente por Jaime/devjaime.</p>
+      <p>Articles written or manually edited by Jaime/devjaime.</p>
     </div>
 
     <ul class="articles-grid">
@@ -135,6 +136,12 @@ const [latestArticle, ...otherArticles] = editorialArticles;
   .latest-article p:not(.eyebrow) {
     color: var(--on-surface-variant);
     font-size: 1.08rem;
+  }
+
+  .language-note {
+    border-left: 3px solid var(--primary);
+    margin-top: 1.25rem;
+    padding-left: 1rem;
   }
 
   .topic-row {

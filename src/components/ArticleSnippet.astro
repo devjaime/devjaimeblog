@@ -1,5 +1,7 @@
 ---
 import { processArticleDate } from "../lib/utils";
+import { editorialLabels, formatEditorialSource, hasOperationalMetrics } from "../lib/editorial";
+import type { EditorialMetrics, EditorialSource, EditorialType, ReviewStatus } from "../lib/types";
 
 export type Props = {
   title: string;
@@ -8,17 +10,41 @@ export type Props = {
   duration?: string;
   timestamp?: string;
   tags?: string[];
+  lang?: "es" | "en";
+  type?: EditorialType;
+  source?: EditorialSource;
+  reviewStatus?: ReviewStatus;
+  metrics?: EditorialMetrics;
 };
 
-const { title, description, url, duration, timestamp, tags } = Astro.props;
+const { title, description, url, duration, timestamp, tags, lang = "es", type, source, reviewStatus, metrics } = Astro.props;
+const sourceLabel = formatEditorialSource(source, lang);
+const statusLabel = reviewStatus ? editorialLabels[lang][reviewStatus] : undefined;
+const hasMetrics = hasOperationalMetrics(metrics);
 ---
 
-<article class="article-snippet-card">
+<article class:list={["article-snippet-card", source === "agentic" && "article-snippet-card-agentic", source === "hybrid" && "article-snippet-card-hybrid"]}>
   <div>
+    <div class="article-badges">
+      <span class:list={["source-badge", source === "agentic" && "source-badge-agentic"]}>{sourceLabel}</span>
+      {type && <span>{type}</span>}
+      {statusLabel && <span>{statusLabel}</span>}
+    </div>
     {tags && tags.length > 0 && <p class="article-category">{tags[0]}</p>}
     <a href={url} class="article-snippet-title">{title}</a>
   </div>
   <p class="article-snippet-description">{description}</p>
+  {hasMetrics && (
+    <dl class="metric-row" aria-label={lang === "en" ? "Available metrics" : "Métricas disponibles"}>
+      {metrics?.commits !== undefined && <><dt>Commits</dt><dd>{metrics.commits}</dd></>}
+      {metrics?.filesChanged !== undefined && <><dt>Files</dt><dd>{metrics.filesChanged}</dd></>}
+      {metrics?.buildStatus && <><dt>Build</dt><dd>{metrics.buildStatus}</dd></>}
+      {metrics?.lighthouseSEO !== undefined && <><dt>SEO</dt><dd>{metrics.lighthouseSEO}</dd></>}
+    </dl>
+  )}
+  {source === "agentic" && !hasMetrics && (
+    <p class="metric-empty">{editorialLabels[lang].noVerifiedMetrics}</p>
+  )}
   <div class="article-snippet-meta">
     {timestamp && <span>{processArticleDate(timestamp)}</span>}
     {duration && <span>{duration}</span>}
@@ -43,14 +69,50 @@ const { title, description, url, duration, timestamp, tags } = Astro.props;
     background: #ffffff;
   }
 
+  .article-snippet-card-agentic {
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.82), rgba(245, 248, 255, 0.72));
+    border-color: rgba(37, 99, 235, 0.22);
+  }
+
+  .article-snippet-card-hybrid {
+    border-color: rgba(15, 118, 110, 0.24);
+  }
+
   .article-category,
-  .article-snippet-meta {
+  .article-snippet-meta,
+  .article-badges,
+  .metric-row {
     color: var(--on-surface-variant);
     font-family: 'JetBrains Mono', ui-monospace, monospace;
     font-size: 0.72rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0;
+  }
+
+  .article-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .article-badges span {
+    border: 1px solid var(--surface-stroke);
+    border-radius: 999px;
+    background: #fff;
+    padding: 0.25rem 0.45rem;
+  }
+
+  .source-badge {
+    color: var(--secondary);
+  }
+
+  .source-badge-agentic {
+    color: var(--primary);
+    background: rgba(37, 99, 235, 0.06);
+    border-color: rgba(37, 99, 235, 0.18);
   }
 
   .article-snippet-title {
@@ -80,5 +142,32 @@ const { title, description, url, duration, timestamp, tags } = Astro.props;
     gap: 1rem;
     padding-top: 0.75rem;
     border-top: 1px solid var(--surface-stroke);
+  }
+
+  .metric-row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.35rem 0.7rem;
+    border-top: 1px solid var(--surface-stroke);
+    padding-top: 0.75rem;
+  }
+
+  .metric-row dt {
+    color: var(--on-surface-variant);
+  }
+
+  .metric-row dd {
+    color: var(--on-surface);
+    margin: 0;
+    text-align: right;
+  }
+
+  .metric-empty {
+    border-top: 1px solid var(--surface-stroke);
+    padding-top: 0.75rem;
+    color: var(--on-surface-variant);
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    font-size: 0.72rem;
+    text-transform: uppercase;
   }
 </style>

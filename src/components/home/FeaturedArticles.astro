@@ -1,29 +1,31 @@
 ---
 import type { ArticleFrontmatter } from "../../lib/types";
-import { GLOBAL } from "../../lib/variables";
+import { routes, ui, type Locale } from "../../i18n/ui";
 import Anchor from "../common/Anchor.astro";
 import ArticleSnippet from "../ArticleSnippet.astro";
 
 type Props = {
   featuredArticles: Array<ArticleFrontmatter>;
+  lang?: Locale;
 }
 
-const { featuredArticles } = Astro.props;
+const { featuredArticles, lang = "es" } = Astro.props;
+const t = ui[lang].writing;
 const [leadArticle, ...restArticles] = featuredArticles;
 ---
 
 <section class="editorial-section">
   <div class="section-heading">
     <div>
-      <p class="eyebrow">Writing</p>
-      <h2>{GLOBAL.articlesName}</h2>
-      <p>Ensayos prácticos sobre IA aplicada, backend, agentes y la realidad de construir software desde LatAm.</p>
+      <p class="eyebrow">{t.eyebrow}</p>
+      <h2>{t.title}</h2>
+      <p>{t.intro}</p>
     </div>
-    <Anchor url="/blog" class="view-link">{GLOBAL.viewAll}</Anchor>
+    <Anchor url={routes[lang].blog} class="view-link">{t.viewAll}</Anchor>
   </div>
 
   {featuredArticles.length === 0 ? (
-    <p>{GLOBAL.noArticles}</p>
+    <p>No articles yet.</p>
   ) : (
     <div class="featured-writing-grid">
       {leadArticle && (
@@ -50,6 +52,11 @@ const [leadArticle, ...restArticles] = featuredArticles;
               timestamp={article.timestamp}
               duration={`${article.time} min`}
               tags={article.tags}
+              lang={lang}
+              type={article.type}
+              source={article.source}
+              reviewStatus={article.reviewStatus}
+              metrics={article.metrics}
             />
           </li>
         ))}

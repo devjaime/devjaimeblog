@@ -1,35 +1,38 @@
 ---
+import { routes, ui, type Locale } from "../../i18n/ui";
 import { GLOBAL } from "../../lib/variables";
 
-const focusAreas = ["Backend Engineering", "AI Agents", "RAG Systems", "Cloud & Data", "Developer Tools"];
-const systemNodes = ["Vocari", "Agentes", "RAG", "GCP", "Go APIs", "BigQuery"];
+const { lang = "es" } = Astro.props as { lang?: Locale };
+const t = ui[lang];
+const systemNodes = ["Agent", "Retriever", "Vector DB", "API", "BigQuery", "Cloud Run"];
 ---
 
 <section class="hero-shell">
   <div class="hero-copy">
-    <p class="eyebrow">devjaime · AI & Software Engineering from Chile</p>
-    <h1>Construyo sistemas inteligentes que escalan.</h1>
-    <p class="hero-lead">{GLOBAL.heroDescription}</p>
+    <p class="eyebrow">{t.hero.eyebrow}</p>
+    <h1>{t.hero.title}</h1>
+    <p class="hero-lead">{t.hero.subtitle}</p>
 
     <div class="hero-actions" aria-label="Acciones principales">
-      <a href="/blog" class="btn-primary">Leer artículos</a>
-      <a href="/projects" class="btn-secondary">Ver proyectos</a>
-      <a href="/contact" class="btn-quiet">Trabajemos juntos</a>
+      <a href={routes[lang].blog} class="btn-primary">{t.hero.ctas.articles}</a>
+      <a href={routes[lang].videos} class="btn-secondary">{t.hero.ctas.videos}</a>
+      <a href={routes[lang].projects} class="btn-secondary">{t.hero.ctas.projects}</a>
+      <a href={routes[lang].contact} class="btn-quiet">{t.hero.ctas.contact}</a>
     </div>
 
     <nav class="hero-links" aria-label="Enlaces de devjaime">
       <a href={GLOBAL.githubProfile} target="_blank" rel="noopener noreferrer">GitHub</a>
       <a href={GLOBAL.linkedinProfile} target="_blank" rel="noopener noreferrer">LinkedIn</a>
       <a href={GLOBAL.youtubeChannel} target="_blank" rel="noopener noreferrer">YouTube</a>
-      <a href="/blog">Blog</a>
-      <a href="/contact">Contacto</a>
+      <a href={routes[lang].blog}>Blog</a>
+      <a href={routes[lang].contact}>{t.nav.contact}</a>
     </nav>
   </div>
 
   <div class="system-board" aria-label="Mapa visual de sistemas que construye devjaime">
     <div class="board-header">
-      <span>Production AI System</span>
-      <span>Chile / LatAm</span>
+      <span>{t.hero.boardTitle}</span>
+      <span>{t.hero.boardRegion}</span>
     </div>
     <div class="board-grid">
       {systemNodes.map((node, index) => (
@@ -40,14 +43,14 @@ const systemNodes = ["Vocari", "Agentes", "RAG", "GCP", "Go APIs", "BigQuery"];
       ))}
     </div>
     <div class="terminal-card">
-      <span>$ deploy ai-workflow --with-observability</span>
-      <span>checks: retrieval, latency, cost, human-review</span>
+      <span>{t.hero.terminal}</span>
+      <span>{t.hero.checks}</span>
     </div>
   </div>
 </section>
 
 <div class="authority-strip" aria-label="Pilares técnicos">
-  {focusAreas.map((area) => <span>{area}</span>)}
+  {t.authority.map((area) => <span>{area}</span>)}
 </div>
 
 <style>
@@ -207,7 +210,7 @@ const systemNodes = ["Vocari", "Agentes", "RAG", "GCP", "Go APIs", "BigQuery"];
 
   @media (max-width: 520px) {
     h1 {
-      font-size: 3rem;
+      font-size: 2.55rem;
     }
 
     .board-grid,

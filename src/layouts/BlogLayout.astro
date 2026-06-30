@@ -3,8 +3,8 @@ import Section from "../components/common/Section.astro";
 import type { ArticleFrontmatter } from "../lib/types";
 import {
   processArticleDate,
-  generateSourceUrl,
 } from "../lib/utils";
+import { editorialLabels, formatEditorialSource, normalizeEditorial, visibleOperationalMetrics } from "../lib/editorial";
 import { GLOBAL } from "../lib/variables";
 import type { MarkdownLayoutProps } from "astro";
 import Prose from "../components/Prose.astro";
@@ -12,9 +12,14 @@ import Layout from "./Layout.astro";
 
 type Props = MarkdownLayoutProps<ArticleFrontmatter>;
 
-const { frontmatter } = Astro.props;
+const { frontmatter: rawFrontmatter } = Astro.props;
+const frontmatter = normalizeEditorial(rawFrontmatter);
 const articleDate = processArticleDate(frontmatter.timestamp);
-const sourceUrl = generateSourceUrl(frontmatter.filename, "blog");
+const sourceUrl = new URL(Astro.url.pathname, GLOBAL.rootUrl).href;
+const lang = frontmatter.lang ?? "es";
+const sourceLabel = formatEditorialSource(frontmatter.source, lang);
+const reviewLabel = frontmatter.reviewStatus ? editorialLabels[lang][frontmatter.reviewStatus] : undefined;
+const visibleMetrics = visibleOperationalMetrics(frontmatter.metrics);
 ---
 
 <Layout
@@ -25,9 +30,15 @@ const sourceUrl = generateSourceUrl(frontmatter.filename, "blog");
   publishedTime={frontmatter.timestamp}
   modifiedTime={frontmatter.timestamp}
   tags={frontmatter.tags}
+  lang={lang}
 >
   <Section class="pt-8">
     <header class="article-header">
+      <div class="editorial-row" aria-label={lang === "en" ? "Editorial metadata" : "Metadatos editoriales"}>
+        <span class:list={["source-badge", frontmatter.source === "agentic" && "source-badge-agentic"]}>{sourceLabel}</span>
+        {frontmatter.type && <span>{frontmatter.type}</span>}
+        {reviewLabel && <span>{reviewLabel}</span>}
+      </div>
       <h1
         class="text-3xl sm:text-5xl leading-tight mb-6"
         style="font-family: 'Manrope', system-ui, sans-serif; color: var(--on-surface); letter-spacing: 0;"
@@ -38,6 +49,23 @@ const sourceUrl = generateSourceUrl(frontmatter.filename, "blog");
         <span class="label-caps">{articleDate}</span>
         <span class="label-caps">{frontmatter.time} min read</span>
       </div>
+      {frontmatter.source === "agentic" && (
+        <p class="agentic-note">
+          {lang === "en"
+            ? "Agentic entry: generated from a technical workflow and separated from manually edited essays. Metrics are shown only when present in source metadata."
+            : "Entrada agentica: generada desde un flujo técnico y separada de los ensayos editados manualmente. Las métricas solo se muestran cuando existen en la metadata fuente."}
+        </p>
+      )}
+      {visibleMetrics.length > 0 && (
+        <dl class="metrics-panel">
+          {visibleMetrics.map(([key, value]) => (
+            <>
+              <dt>{key}</dt>
+              <dd>{String(value)}</dd>
+            </>
+          ))}
+        </dl>
+      )}
     </header>
     
     <!-- Article content -->
@@ -65,5 +93,73 @@ const sourceUrl = generateSourceUrl(frontmatter.filename, "blog");
     border-bottom: 1px solid var(--surface-stroke);
     margin-bottom: 3rem;
     padding: 3rem 0 2rem;
+  }
+
+  .editorial-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    margin-bottom: 1rem;
+    color: var(--on-surface-variant);
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .editorial-row span {
+    border: 1px solid var(--surface-stroke);
+    border-radius: 999px;
+    background: #fff;
+    padding: 0.3rem 0.55rem;
+  }
+
+  .source-badge {
+    color: var(--secondary);
+  }
+
+  .source-badge-agentic {
+    color: var(--primary);
+    border-color: rgba(37, 99, 235, 0.18);
+    background: rgba(37, 99, 235, 0.06);
+  }
+
+  .agentic-note {
+    border-left: 3px solid var(--primary);
+    margin-top: 1.25rem;
+    padding-left: 1rem;
+    color: var(--on-surface-variant);
+  }
+
+  .metrics-panel {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.5rem;
+    margin-top: 1.25rem;
+  }
+
+  .metrics-panel dt,
+  .metrics-panel dd {
+    border: 1px solid var(--surface-stroke);
+    background: #fff;
+    margin: 0;
+    padding: 0.55rem;
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    font-size: 0.72rem;
+  }
+
+  .metrics-panel dt {
+    color: var(--on-surface-variant);
+  }
+
+  .metrics-panel dd {
+    color: var(--on-surface);
+    font-weight: 800;
+  }
+
+  @media (max-width: 720px) {
+    .metrics-panel {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
   }
 </style>

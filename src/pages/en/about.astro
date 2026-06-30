@@ -1,40 +1,38 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Section from "../components/common/Section.astro";
-import { GLOBAL } from "../lib/variables";
+import Layout from "../../layouts/Layout.astro";
+import Section from "../../components/common/Section.astro";
+import { GLOBAL } from "../../lib/variables";
+import { ui } from "../../i18n/ui";
 
+const lang = "en";
+const t = ui[lang].about;
 const experience = [
-  ["2023 - hoy", "Backend Engineer, Falabella", "Microservicios para flujos contables y conciliación en IKEA Chile/Colombia con Go, GCP, BigQuery, Pub/Sub, Kubernetes, Grafana y Datadog."],
-  ["2024 - 2025", "Founder & CTO, codeIA.cl", "Estrategia y construcción de soluciones IA, automatización, RAG, LangChain y Vercel AI para clientes en Chile y LatAm."],
-  ["2022 - 2023", "Full-Stack Developer, Continuum HQ", "Aplicaciones clínicas con React, Node.js, AWS Lambda y arquitectura hexagonal."],
-  ["2021 - 2022", "Backend Engineer, Cornershop by Uber", "APIs y servicios con Python, Django REST Framework y arquitectura hexagonal para dominios de negocio."],
-  ["2006 - 2021", "Software Engineer / Consultant", "Trayectoria en retail, salud, minería, logística y telecomunicaciones con .NET, JavaScript, Python, Angular, mobile y sistemas empresariales."]
+  ["2023 - now", "Backend Engineer, Falabella", "Microservices for accounting and reconciliation flows for IKEA Chile/Colombia with Go, GCP, BigQuery, Pub/Sub, Kubernetes, Grafana and Datadog."],
+  ["2024 - 2025", "Founder & CTO, codeIA.cl", "Strategy and implementation of AI, automation, RAG, LangChain and Vercel AI solutions for teams in Chile and LatAm."],
+  ["2022 - 2023", "Full-Stack Developer, Continuum HQ", "Clinical applications with React, Node.js, AWS Lambda and hexagonal architecture."],
+  ["2021 - 2022", "Backend Engineer, Cornershop by Uber", "APIs and services with Python, Django REST Framework and hexagonal architecture for business domains."],
+  ["2006 - 2021", "Software Engineer / Consultant", "Work across retail, healthcare, mining, logistics and telecom with .NET, JavaScript, Python, Angular, mobile and enterprise systems."],
 ];
-const lang = "es";
 ---
 
 <Layout
-  title={`Sobre ${GLOBAL.fullName} • ${GLOBAL.username}`}
-  description="Jaime Hernández es backend engineer y AI builder en Chile, especializado en agentes, RAG, microservicios, GCP, Go y Python."
-  canonical={`${GLOBAL.rootUrl}/about`}
+  title={`About ${GLOBAL.fullName} • ${GLOBAL.username}`}
+  description={t.intro}
+  canonical="/en/about"
   type="website"
   lang={lang}
 >
   <Section class="about-page">
     <header class="page-hero">
-      <p class="eyebrow">Sobre devjaime</p>
-      <h1>Ingeniería backend, IA aplicada y una carrera construida en producción.</h1>
-      <p>
-        Soy Jaime Hernández, ingeniero de software e IA de Chile. Trabajo en backend para sistemas críticos y construyo proyectos como Vocari para llevar IA útil a problemas reales de LatAm.
-      </p>
+      <p class="eyebrow">About devjaime</p>
+      <h1>{t.title}</h1>
+      <p>{t.intro}</p>
     </header>
 
     <section class="bio-grid">
       <div>
-        <h2>Mi foco</h2>
-        <p>
-          Me interesa la IA que se integra con datos, procesos y equipos reales: agentes con herramientas, RAG evaluable, automatizaciones con trazabilidad y backends que soporten operación.
-        </p>
+        <h2>{t.focusTitle}</h2>
+        <p>{t.focus}</p>
       </div>
       <div class="fact-list">
         <span>Chile / LatAm</span>
@@ -45,8 +43,8 @@ const lang = "es";
     </section>
 
     <section class="timeline">
-      <p class="eyebrow">Trayectoria</p>
-      <h2>De sistemas empresariales a IA de producción.</h2>
+      <p class="eyebrow">Experience</p>
+      <h2>{t.journey}</h2>
       <div class="timeline-list">
         {experience.map(([period, role, text]) => (
           <article>
@@ -59,10 +57,10 @@ const lang = "es";
     </section>
 
     <section class="connect-panel">
-      <h2>Estoy construyendo en público.</h2>
-      <p>Escribo sobre lo que aprendo implementando backends, agentes, RAG, automatización y productos IA como Vocari.</p>
+      <h2>{t.ctaTitle}</h2>
+      <p>{t.ctaText}</p>
       <div>
-        <a href="/blog" class="btn-primary">Leer artículos</a>
+        <a href="/en/blog" class="btn-primary">Read articles</a>
         <a href={GLOBAL.linkedinProfile} target="_blank" rel="noopener noreferrer" class="btn-secondary">LinkedIn</a>
       </div>
     </section>
