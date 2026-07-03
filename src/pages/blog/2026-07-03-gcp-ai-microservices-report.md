@@ -1,11 +1,11 @@
 ---
-filename:  + post_filename + 
+filename: 2026-07-03-gcp-ai-microservices-report
 layout: "../../layouts/BlogLayout.astro"
 
-timestamp:  + now + 
-title: "Informe GCP + AI + Microservicios - 03 Jul 2026"
+timestamp: 2026-07-03T08:04:18-04:00
+title: "Informe GCP + AI + Microservicios - 03 Jul 2026
 description: "Reporte diario de tendencias en Google Cloud Platform, inteligencia artificial y microservicios. Comparativa con AWS y Azure."
-publishDate:  + now + 
+publishDate: 2026-07-03T08:04:18-04:00
 author: 
   name: "Jaime Hernandez"
   url: "https://devjaime.cl"
