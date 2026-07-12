@@ -28,8 +28,10 @@ const slugFromFile = (file?: string) => cleanSlug(file?.split("/").pop());
 const SHORT_AI_POST_MIN_LENGTH = 40;
 const SHORT_AI_POST_MAX_LENGTH = 300;
 
-const mapArticle = (data: { frontmatter: ArticleFrontmatter; file?: string; content?: string }) => {
-  const slug = cleanSlug(data.frontmatter.filename) ?? slugFromFile(data.file) ?? data.frontmatter.filename;
+const mapArticle = (data: { frontmatter: ArticleFrontmatter; file?: string; url?: string; content?: string }) => {
+  // Astro routes Markdown files from their physical filename. Prefer that
+  // value over a legacy frontmatter filename, which can differ by _ vs -.
+  const slug = cleanSlug(data.url) ?? slugFromFile(data.file) ?? cleanSlug(data.frontmatter.filename) ?? data.frontmatter.filename;
   const shortDescription = getShortDescription(data.frontmatter.description);
   const bodyTextLength = getMarkdownBodyTextLength(data.content);
   const isShortAiPost =
