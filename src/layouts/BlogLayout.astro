@@ -69,7 +69,13 @@ const visibleMetrics = visibleOperationalMetrics(frontmatter.metrics);
     </header>
     
     <!-- Article content -->
-    <article class="animate-on-scroll stagger-2">
+    <!--
+      Article content must remain visible without JavaScript. Previously this used
+      `animate-on-scroll`, whose base CSS sets opacity to 0 until the client-side
+      observer runs. When that observer did not initialize, every post rendered
+      an empty body.
+    -->
+    <article>
       <Prose>
         <slot />
       </Prose>
