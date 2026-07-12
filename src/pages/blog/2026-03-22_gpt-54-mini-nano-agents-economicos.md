@@ -4,7 +4,7 @@ filename: '2026-03-22-gpt-54-mini-nano-agents-economicos'
 layout: '../../layouts/BlogLayout.astro'
 
 timestamp: '2026-03-22T08:00:00-0300'
-title: 'Gpt 54 Mini Nano Agents Economicos'
+title: 'Zvec: SQLite para búsqueda vectorial local'
 description: 'Si la infraestructura RAG ha sido un obstáculo para usted, esto cambia las cosas.'
 publishDate: '2026-03-22T08:00:00-0300'
 author:
