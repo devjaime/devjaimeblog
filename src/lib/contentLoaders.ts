@@ -1,6 +1,6 @@
 import type { ArticleFrontmatter, ProjectFrontmatter } from "./types";
 import { dateFromPath, normalizeEditorial } from "./editorial";
-import { getShortDescription, processContentInDir } from "./utils";
+import { getMarkdownBodyTextLength, getShortDescription, processContentInDir } from "./utils";
 
 // Internal caches to avoid hitting the filesystem / import.meta.glob twice
 let _articlesCache: ArticleFrontmatter[] | null = null;
@@ -25,9 +25,15 @@ const cleanSlug = (value?: string) => {
 
 const slugFromFile = (file?: string) => cleanSlug(file?.split("/").pop());
 
-const mapArticle = (data: { frontmatter: ArticleFrontmatter; file?: string }) => {
+const SHORT_AI_POST_MIN_LENGTH = 40;
+const SHORT_AI_POST_MAX_LENGTH = 300;
+
+const mapArticle = (data: { frontmatter: ArticleFrontmatter; file?: string; content?: string }) => {
   const slug = cleanSlug(data.frontmatter.filename) ?? slugFromFile(data.file) ?? data.frontmatter.filename;
   const shortDescription = getShortDescription(data.frontmatter.description);
+  const bodyTextLength = getMarkdownBodyTextLength(data.content);
+  const isShortAiPost =
+    bodyTextLength >= SHORT_AI_POST_MIN_LENGTH && bodyTextLength < SHORT_AI_POST_MAX_LENGTH;
   return normalizeEditorial({
     ...data.frontmatter,
     title: data.frontmatter.title,
@@ -37,6 +43,9 @@ const mapArticle = (data: { frontmatter: ArticleFrontmatter; file?: string }) =>
     featured: data.frontmatter.featured,
     timestamp: data.frontmatter.timestamp ?? dateFromPath(slug) ?? "",
     filename: `/blog/${slug}`,
+    // Short automated notes are kept accessible but visibly separated from
+    // manually written editorial articles.
+    source: isShortAiPost ? "agentic" : data.frontmatter.source,
   } as ArticleFrontmatter);
 };
 
