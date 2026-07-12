@@ -23,7 +23,7 @@ const statusLabel = reviewStatus ? editorialLabels[lang][reviewStatus] : undefin
 const hasMetrics = hasOperationalMetrics(metrics);
 ---
 
-<article class:list={["article-snippet-card", source === "agentic" && "article-snippet-card-agentic", source === "hybrid" && "article-snippet-card-hybrid"]}>
+<article class:list={["article-snippet-card", source === "human" && "article-snippet-card-human", source === "agentic" && "article-snippet-card-agentic", source === "hybrid" && "article-snippet-card-hybrid"]}>
   <div>
     <div class="article-badges">
       <span class:list={["source-badge", source === "agentic" && "source-badge-agentic"]}>{sourceLabel}</span>
@@ -61,12 +61,18 @@ const hasMetrics = hasOperationalMetrics(metrics);
     display: flex;
     flex-direction: column;
     gap: 0.85rem;
-    transition: border-color 0.18s ease, background 0.18s ease;
+    transition: border-color 0.18s ease, background 0.18s ease, box-shadow 0.18s ease, transform 0.18s ease;
   }
 
   .article-snippet-card:hover {
     border-color: rgba(37, 99, 235, 0.42);
     background: #ffffff;
+    box-shadow: 0 10px 24px rgba(23, 23, 23, 0.08);
+    transform: translateY(-3px);
+  }
+
+  .article-snippet-card-human {
+    border-color: rgba(15, 118, 110, 0.2);
   }
 
   .article-snippet-card-agentic {
@@ -109,10 +115,46 @@ const hasMetrics = hasOperationalMetrics(metrics);
     color: var(--secondary);
   }
 
+  .source-badge::before {
+    content: "";
+    display: inline-block;
+    width: 0.42rem;
+    height: 0.42rem;
+    margin-right: 0.35rem;
+    border-radius: 999px;
+    background: currentColor;
+    vertical-align: 0.04rem;
+  }
+
   .source-badge-agentic {
     color: var(--primary);
     background: rgba(37, 99, 235, 0.06);
     border-color: rgba(37, 99, 235, 0.18);
+  }
+
+  .source-badge-agentic::before {
+    animation: ai-signal 1.8s ease-in-out infinite;
+  }
+
+  @keyframes ai-signal {
+    50% {
+      box-shadow: 0 0 0 0.28rem rgba(37, 99, 235, 0);
+      opacity: 0.7;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .article-snippet-card {
+      transition: none;
+    }
+
+    .article-snippet-card:hover {
+      transform: none;
+    }
+
+    .source-badge-agentic::before {
+      animation: none;
+    }
   }
 
   .article-snippet-title {

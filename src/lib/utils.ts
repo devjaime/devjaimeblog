@@ -5,6 +5,7 @@ type MarkdownData<T extends object> = {
   frontmatter: T;
   file: string;
   url: string;
+  content?: string;
 };
 
 
@@ -28,6 +29,7 @@ export const processContentInDir = async <T extends object, K>(
     .filter((file: string) => file.endsWith(".md"))
     .map((file) => file.split(".")[0]);
   const readMdFileContent = async (file: string) => {
+    const contentText = await fs.readFile(`${dir}/src/pages/${contentType}/${file}.md`, "utf8");
     if (contentType === "projects") {
       const content = import.meta
         .glob(`/src/pages/projects/*.md`)
@@ -37,7 +39,7 @@ export const processContentInDir = async <T extends object, K>(
         file: string;
         url: string;
       };
-      return processFn(data);
+      return processFn({ ...data, content: contentText });
     } else {
       const content = import.meta
         .glob(`/src/pages/blog/*.md`)
@@ -47,7 +49,7 @@ export const processContentInDir = async <T extends object, K>(
         file: string;
         url: string;
       };
-      return processFn(data);
+      return processFn({ ...data, content: contentText });
     }
   };
   return await Promise.all(markdownFiles.map(readMdFileContent));
@@ -68,6 +70,27 @@ export const getShortDescription = (content: string | undefined | null, maxLengt
   const splitByWord = content.split(" ");
   const length = splitByWord.length;
   return length > maxLength ? splitByWord.slice(0, maxLength).join(" ") + "..." : content;
+};
+
+/**
+ * Returns the readable character count of a Markdown document body. This is
+ * intentionally based on rendered text rather than file size so frontmatter
+ * and Markdown syntax do not make a short note appear to be a full article.
+ */
+export const getMarkdownBodyTextLength = (content: string | undefined | null) => {
+  if (!content) return 0;
+
+  const frontmatterEnd = content.indexOf("\n---", 3);
+  const body = frontmatterEnd === -1 ? content : content.slice(frontmatterEnd + 4);
+
+  return body
+    .replace(/```/g, " ")
+    .replace(/!\[[^\]]*\]\([^)]*\)/g, " ")
+    .replace(/\[([^\]]+)\]\([^)]*\)/g, "$1")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/[>#*_`|~-]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim().length;
 };
 
 /**

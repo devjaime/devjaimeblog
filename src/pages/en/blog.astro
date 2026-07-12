@@ -11,7 +11,7 @@ const lang = "en";
 const t = ui[lang].blogPage;
 const localizedArticles = articles.filter((article) => article.lang === lang);
 const editorialArticles = localizedArticles.filter(isEditorialArticle);
-const agenticEntries = localizedArticles.filter(isAgenticEntry).slice(0, 12);
+const agenticEntries = localizedArticles.filter(isAgenticEntry);
 const [latestArticle, ...otherArticles] = editorialArticles;
 ---
 
