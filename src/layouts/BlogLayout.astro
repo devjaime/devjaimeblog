@@ -1,9 +1,8 @@
 ---
 import Section from "../components/common/Section.astro";
+import fs from "node:fs/promises";
 import type { ArticleFrontmatter } from "../lib/types";
-import {
-  processArticleDate,
-} from "../lib/utils";
+import { getMarkdownBodyTextLength, processArticleDate } from "../lib/utils";
 import { editorialLabels, formatEditorialSource, normalizeEditorial, visibleOperationalMetrics } from "../lib/editorial";
 import { GLOBAL } from "../lib/variables";
 import type { MarkdownLayoutProps } from "astro";
@@ -13,7 +12,14 @@ import Layout from "./Layout.astro";
 type Props = MarkdownLayoutProps<ArticleFrontmatter>;
 
 const { frontmatter: rawFrontmatter } = Astro.props;
-const frontmatter = normalizeEditorial(rawFrontmatter);
+const articlePath = `${process.cwd()}/src/pages${decodeURIComponent(Astro.url.pathname)}.md`;
+const articleContent = await fs.readFile(articlePath, "utf8").catch(() => undefined);
+const bodyTextLength = getMarkdownBodyTextLength(articleContent);
+const isShortAiPost = bodyTextLength >= 40 && bodyTextLength < 300;
+const frontmatter = normalizeEditorial({
+  ...rawFrontmatter,
+  source: isShortAiPost ? "agentic" : rawFrontmatter.source,
+});
 const articleDate = processArticleDate(frontmatter.timestamp);
 const sourceUrl = new URL(Astro.url.pathname, GLOBAL.rootUrl).href;
 const lang = frontmatter.lang ?? "es";
