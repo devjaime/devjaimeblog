@@ -10,6 +10,24 @@ export type Video = {
 
 const videoCatalog = [
   {
+    title: "Futuro laboral 2030: nuevas funciones de Vocari con IA",
+    description: "Presentación de las nuevas funciones de Vocari para analizar los cambios del mercado laboral, identificar habilidades y construir rutas de desarrollo profesional con apoyo de IA.",
+    date: "2026-07-19",
+    youtubeId: "PWyWNcWXePU",
+    tags: ["Vocari", "Future of Work", "AI"],
+    featured: true,
+    lang: "es",
+  },
+  {
+    title: "Mi stack de agentes de IA: Hermes Agent + OpenClaw como sistema operativo personal",
+    description: "Recorrido por un sistema personal de agentes con Hermes Agent y OpenClaw para automatizar proyectos, monitoreo, tareas del hogar y flujos de trabajo desde un Mac Mini.",
+    date: "2026-07-16",
+    youtubeId: "3cGb6i2yrcM",
+    tags: ["Hermes Agent", "OpenClaw", "AI Agents"],
+    featured: true,
+    lang: "es",
+  },
+  {
     title: "Google ADK en acción — Lo que aprendí construyendo agentes de IA con Python",
     description: "Exploración práctica de Google ADK para construir agentes IA con Python y aprendizajes de implementación.",
     date: "2026-04-06",
