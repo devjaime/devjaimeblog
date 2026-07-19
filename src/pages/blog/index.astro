@@ -156,21 +156,21 @@ const [latestArticle, ...otherArticles] = editorialArticles;
     display: grid;
     grid-template-columns: minmax(0, 1fr) auto;
     gap: 2rem;
-    border: 1px solid #242424;
+    border: 1px solid var(--surface-stroke);
     border-radius: 12px;
-    background: var(--editorial-ink);
+    background: #fff;
     padding: clamp(1.2rem, 4vw, 2rem);
     margin: 2.5rem 0 1.25rem;
   }
 
   .latest-article a {
-    color: var(--editorial-paper);
+    color: var(--on-surface);
     text-decoration: none;
   }
 
   .latest-article h2 {
     margin: 0.5rem 0 0.9rem;
-    color: var(--editorial-paper);
+    color: var(--on-surface);
     font-family: 'Instrument Serif', Georgia, serif;
     font-size: clamp(2.4rem, 5vw, 4.3rem);
     font-weight: 400;
@@ -183,16 +183,16 @@ const [latestArticle, ...otherArticles] = editorialArticles;
     flex-direction: column;
     gap: 0.5rem;
     min-width: 170px;
-    color: var(--editorial-violet);
+    color: var(--on-surface-variant);
     text-align: right;
   }
 
   .latest-article p:not(.eyebrow) {
-    color: #bdbdb7;
+    color: var(--on-surface-variant);
   }
 
   .latest-article .eyebrow {
-    color: var(--editorial-yellow);
+    color: var(--primary);
   }
 
   .articles-grid {

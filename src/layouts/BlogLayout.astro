@@ -101,17 +101,17 @@ const visibleMetrics = visibleOperationalMetrics(frontmatter.metrics);
 
 <style>
   .article-header {
-    border: 1px solid #242424;
+    border: 1px solid var(--surface-stroke);
     border-radius: 12px;
-    background: var(--editorial-ink);
+    background: #fff;
     margin-bottom: 3rem;
     padding: clamp(1.5rem, 5vw, 3.5rem);
-    color: var(--editorial-paper);
+    color: var(--on-surface);
   }
 
   .article-header h1 {
     max-width: 980px;
-    color: var(--editorial-paper);
+    color: var(--on-surface);
     font-family: 'Instrument Serif', Georgia, serif;
     font-size: clamp(3rem, 7vw, 6.25rem);
     font-weight: 400;
@@ -125,7 +125,7 @@ const visibleMetrics = visibleOperationalMetrics(frontmatter.metrics);
     flex-wrap: wrap;
     gap: 0.45rem;
     margin-bottom: 1rem;
-    color: var(--editorial-yellow);
+    color: var(--on-surface-variant);
     font-family: 'JetBrains Mono', ui-monospace, monospace;
     font-size: 0.72rem;
     font-weight: 700;
@@ -134,27 +134,27 @@ const visibleMetrics = visibleOperationalMetrics(frontmatter.metrics);
   }
 
   .editorial-row span {
-    border: 1px solid #393939;
+    border: 1px solid var(--surface-stroke);
     border-radius: 999px;
-    background: #151515;
+    background: var(--surface-container-lowest);
     padding: 0.3rem 0.55rem;
   }
 
   .source-badge {
-    color: var(--editorial-yellow);
+    color: var(--secondary);
   }
 
   .source-badge-agentic {
-    color: var(--editorial-violet);
-    border-color: rgba(185, 161, 255, 0.35);
-    background: rgba(185, 161, 255, 0.08);
+    color: var(--primary);
+    border-color: rgba(37, 99, 235, 0.18);
+    background: rgba(37, 99, 235, 0.06);
   }
 
   .agentic-note {
-    border-left: 3px solid var(--editorial-violet);
+    border-left: 3px solid var(--primary);
     margin-top: 1.25rem;
     padding-left: 1rem;
-    color: #bdbdb7;
+    color: var(--on-surface-variant);
   }
 
   .metrics-panel {
@@ -166,8 +166,8 @@ const visibleMetrics = visibleOperationalMetrics(frontmatter.metrics);
 
   .metrics-panel dt,
   .metrics-panel dd {
-    border: 1px solid #393939;
-    background: #151515;
+    border: 1px solid var(--surface-stroke);
+    background: var(--surface-container-lowest);
     margin: 0;
     padding: 0.55rem;
     font-family: 'JetBrains Mono', ui-monospace, monospace;
@@ -175,11 +175,11 @@ const visibleMetrics = visibleOperationalMetrics(frontmatter.metrics);
   }
 
   .metrics-panel dt {
-    color: #a5a5a0;
+    color: var(--on-surface-variant);
   }
 
   .metrics-panel dd {
-    color: var(--editorial-yellow);
+    color: var(--on-surface);
     font-weight: 800;
   }
 
