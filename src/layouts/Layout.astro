@@ -143,7 +143,11 @@ const structuredData = {
     <link rel="preconnect" href="https://giscus.app" />
     <link rel="dns-prefetch" href="https://gc.zgo.at" />
     
-    <!-- Fonts - Manrope (headings) + Figtree (body) + JetBrains Mono -->
+    <!-- Fonts - editorial display + sans body + technical mono -->
+    <link
+      href="https://fonts.bunny.net/css?family=instrument-serif:400"
+      rel="stylesheet"
+    />
     <link
       href="https://fonts.bunny.net/css?family=manrope:400,500,600,700,800"
       rel="stylesheet"
@@ -158,7 +162,7 @@ const structuredData = {
     />
     
     <!-- Structured Data -->
-    <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
+    <script is:inline type="application/ld+json" set:html={JSON.stringify(structuredData)} />
     
     <!-- Generator -->
     <meta name="generator" content={Astro.generator} />
@@ -176,7 +180,7 @@ const structuredData = {
     <slot name="head" />
     
     <!-- Analytics -->
-    <script data-goatcounter="https://devjaime.goatcounter.com/count"
+    <script is:inline data-goatcounter="https://devjaime.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
   </head>
   <body class="antialiased min-h-screen mesh-background" style="background-color: var(--surface); color: var(--on-surface);">
@@ -193,7 +197,7 @@ const structuredData = {
     
     <!-- Comments - Only load on blog posts -->
     {Astro.url.pathname.includes('/blog/') && (
-      <script src="https://giscus.app/client.js"
+      <script is:inline src="https://giscus.app/client.js"
         data-repo="devjaime/devjaimeblog"
         data-repo-id="R_kgDOOJEERg"
         data-category="Q&A"

@@ -8,6 +8,15 @@ type MarkdownData<T extends object> = {
   content?: string;
 };
 
+type MarkdownModule<T extends object> = {
+  frontmatter: T;
+  file: string;
+  url: string;
+};
+
+const projectModules = import.meta.glob<MarkdownModule<object>>("/src/pages/projects/*.md");
+const blogModules = import.meta.glob<MarkdownModule<object>>("/src/pages/blog/*.md");
+
 
 /**
  * This function processes the content of a directory and returns an array of processed content.
@@ -27,30 +36,18 @@ export const processContentInDir = async <T extends object, K>(
   const files = await fs.readdir(dir + `/src/pages/${contentType}`);
   const markdownFiles = files
     .filter((file: string) => file.endsWith(".md"))
-    .map((file) => file.split(".")[0]);
+    .map((file) => file.replace(/\.md$/, ""));
   const readMdFileContent = async (file: string) => {
     const contentText = await fs.readFile(`${dir}/src/pages/${contentType}/${file}.md`, "utf8");
-    if (contentType === "projects") {
-      const content = import.meta
-        .glob(`/src/pages/projects/*.md`)
-        [`/src/pages/projects/${file}.md`]();
-      const data = (await content) as {
-        frontmatter: T;
-        file: string;
-        url: string;
-      };
-      return processFn({ ...data, content: contentText });
-    } else {
-      const content = import.meta
-        .glob(`/src/pages/blog/*.md`)
-        [`/src/pages/blog/${file}.md`]();
-      const data = (await content) as {
-        frontmatter: T;
-        file: string;
-        url: string;
-      };
-      return processFn({ ...data, content: contentText });
+    const modulePath = `/src/pages/${contentType}/${file}.md`;
+    const loadModule = (contentType === "projects" ? projectModules : blogModules)[modulePath];
+
+    if (!loadModule) {
+      throw new Error(`Markdown module not found: ${modulePath}`);
     }
+
+    const data = (await loadModule()) as MarkdownModule<T>;
+    return processFn({ ...data, content: contentText });
   };
   return await Promise.all(markdownFiles.map(readMdFileContent));
 };
@@ -98,12 +95,17 @@ export const getMarkdownBodyTextLength = (content: string | undefined | null) =>
  * @param timestamp the timestamp to process
  * @returns a string representing the processed timestamp
  */
-export const processArticleDate = (timestamp: string) => {
+export const processArticleDate = (timestamp: string, lang: "es" | "en" = "es") => {
   const date = new Date(timestamp);
-  const monthSmall = date.toLocaleString("default", { month: "short" });
-  const day = date.getDate();
-  const year = date.getFullYear();
-  return `${monthSmall} ${day}, ${year}`;
+  if (Number.isNaN(date.getTime())) {
+    return lang === "en" ? "Date unavailable" : "Fecha no disponible";
+  }
+  return new Intl.DateTimeFormat(lang === "en" ? "en-US" : "es-CL", {
+    day: "numeric",
+    month: "short",
+    year: "numeric",
+    timeZone: "UTC",
+  }).format(date);
 };
 
 /**

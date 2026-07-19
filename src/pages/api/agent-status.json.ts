@@ -21,8 +21,6 @@ export const GET: APIRoute = async () => {
     }
     
     const data = fs.readFileSync(statusFile, "utf-8");
-    const status = JSON.parse(data);
-    
     return new Response(data, {
       status: 200,
       headers: {

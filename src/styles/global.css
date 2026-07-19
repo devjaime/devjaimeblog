@@ -7,6 +7,10 @@
   --bg: #FAFAF7;
   --text: #171717;
   --accent: #2563EB;
+  --editorial-ink: #080808;
+  --editorial-paper: #FAFAF7;
+  --editorial-yellow: #FFD84D;
+  --editorial-violet: #B9A1FF;
   --nav: #52525B;
   --white-glass: rgba(255, 255, 255, 0.75);
   --white-glass-border: rgba(255, 255, 255, 0.5);
@@ -66,6 +70,17 @@
   --gutter: 24px;
   --margin-desktop: 64px;
   --margin-mobile: 20px;
+}
+
+::selection {
+  background: var(--editorial-yellow);
+  color: var(--editorial-ink);
+}
+
+.font-editorial {
+  font-family: 'Instrument Serif', Georgia, serif;
+  font-weight: 400;
+  letter-spacing: -0.035em;
 }
 
 @layer base {

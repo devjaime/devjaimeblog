@@ -46,7 +46,7 @@ const hasMetrics = hasOperationalMetrics(metrics);
     <p class="metric-empty">{editorialLabels[lang].noVerifiedMetrics}</p>
   )}
   <div class="article-snippet-meta">
-    {timestamp && <span>{processArticleDate(timestamp)}</span>}
+    {timestamp && <span>{processArticleDate(timestamp, lang)}</span>}
     {duration && <span>{duration}</span>}
   </div>
 </article>
