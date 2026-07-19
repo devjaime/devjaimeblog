@@ -156,22 +156,26 @@ const [latestArticle, ...otherArticles] = editorialArticles;
     display: grid;
     grid-template-columns: minmax(0, 1fr) auto;
     gap: 2rem;
-    border: 1px solid var(--surface-stroke);
-    border-radius: 8px;
-    background: #fff;
+    border: 1px solid #242424;
+    border-radius: 12px;
+    background: var(--editorial-ink);
     padding: clamp(1.2rem, 4vw, 2rem);
     margin: 2.5rem 0 1.25rem;
   }
 
   .latest-article a {
-    color: var(--on-surface);
+    color: var(--editorial-paper);
     text-decoration: none;
   }
 
   .latest-article h2 {
     margin: 0.5rem 0 0.9rem;
-    font-size: clamp(1.8rem, 4vw, 3rem);
-    letter-spacing: 0;
+    color: var(--editorial-paper);
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-size: clamp(2.4rem, 5vw, 4.3rem);
+    font-weight: 400;
+    line-height: 0.98;
+    letter-spacing: -0.035em;
   }
 
   .latest-meta {
@@ -179,8 +183,16 @@ const [latestArticle, ...otherArticles] = editorialArticles;
     flex-direction: column;
     gap: 0.5rem;
     min-width: 170px;
-    color: var(--on-surface-variant);
+    color: var(--editorial-violet);
     text-align: right;
+  }
+
+  .latest-article p:not(.eyebrow) {
+    color: #bdbdb7;
+  }
+
+  .latest-article .eyebrow {
+    color: var(--editorial-yellow);
   }
 
   .articles-grid {

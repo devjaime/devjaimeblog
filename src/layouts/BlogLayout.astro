@@ -20,9 +20,9 @@ const frontmatter = normalizeEditorial({
   ...rawFrontmatter,
   source: isShortAiPost ? "agentic" : rawFrontmatter.source,
 });
-const articleDate = processArticleDate(frontmatter.timestamp);
-const sourceUrl = new URL(Astro.url.pathname, GLOBAL.rootUrl).href;
 const lang = frontmatter.lang ?? "es";
+const articleDate = processArticleDate(frontmatter.timestamp, lang);
+const sourceUrl = new URL(Astro.url.pathname, GLOBAL.rootUrl).href;
 const sourceLabel = formatEditorialSource(frontmatter.source, lang);
 const reviewLabel = frontmatter.reviewStatus ? editorialLabels[lang][frontmatter.reviewStatus] : undefined;
 const visibleMetrics = visibleOperationalMetrics(frontmatter.metrics);
@@ -47,7 +47,6 @@ const visibleMetrics = visibleOperationalMetrics(frontmatter.metrics);
       </div>
       <h1
         class="text-3xl sm:text-5xl leading-tight mb-6"
-        style="font-family: 'Manrope', system-ui, sans-serif; color: var(--on-surface); letter-spacing: 0;"
       >
         {frontmatter.title}
       </h1>
@@ -102,9 +101,23 @@ const visibleMetrics = visibleOperationalMetrics(frontmatter.metrics);
 
 <style>
   .article-header {
-    border-bottom: 1px solid var(--surface-stroke);
+    border: 1px solid #242424;
+    border-radius: 12px;
+    background: var(--editorial-ink);
     margin-bottom: 3rem;
-    padding: 3rem 0 2rem;
+    padding: clamp(1.5rem, 5vw, 3.5rem);
+    color: var(--editorial-paper);
+  }
+
+  .article-header h1 {
+    max-width: 980px;
+    color: var(--editorial-paper);
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-size: clamp(3rem, 7vw, 6.25rem);
+    font-weight: 400;
+    line-height: 0.93;
+    letter-spacing: -0.04em;
+    text-wrap: balance;
   }
 
   .editorial-row {
@@ -112,35 +125,36 @@ const visibleMetrics = visibleOperationalMetrics(frontmatter.metrics);
     flex-wrap: wrap;
     gap: 0.45rem;
     margin-bottom: 1rem;
-    color: var(--on-surface-variant);
+    color: var(--editorial-yellow);
     font-family: 'JetBrains Mono', ui-monospace, monospace;
     font-size: 0.72rem;
     font-weight: 700;
     text-transform: uppercase;
+    letter-spacing: 0.08em;
   }
 
   .editorial-row span {
-    border: 1px solid var(--surface-stroke);
+    border: 1px solid #393939;
     border-radius: 999px;
-    background: #fff;
+    background: #151515;
     padding: 0.3rem 0.55rem;
   }
 
   .source-badge {
-    color: var(--secondary);
+    color: var(--editorial-yellow);
   }
 
   .source-badge-agentic {
-    color: var(--primary);
-    border-color: rgba(37, 99, 235, 0.18);
-    background: rgba(37, 99, 235, 0.06);
+    color: var(--editorial-violet);
+    border-color: rgba(185, 161, 255, 0.35);
+    background: rgba(185, 161, 255, 0.08);
   }
 
   .agentic-note {
-    border-left: 3px solid var(--primary);
+    border-left: 3px solid var(--editorial-violet);
     margin-top: 1.25rem;
     padding-left: 1rem;
-    color: var(--on-surface-variant);
+    color: #bdbdb7;
   }
 
   .metrics-panel {
@@ -152,8 +166,8 @@ const visibleMetrics = visibleOperationalMetrics(frontmatter.metrics);
 
   .metrics-panel dt,
   .metrics-panel dd {
-    border: 1px solid var(--surface-stroke);
-    background: #fff;
+    border: 1px solid #393939;
+    background: #151515;
     margin: 0;
     padding: 0.55rem;
     font-family: 'JetBrains Mono', ui-monospace, monospace;
@@ -161,11 +175,11 @@ const visibleMetrics = visibleOperationalMetrics(frontmatter.metrics);
   }
 
   .metrics-panel dt {
-    color: var(--on-surface-variant);
+    color: #a5a5a0;
   }
 
   .metrics-panel dd {
-    color: var(--on-surface);
+    color: var(--editorial-yellow);
     font-weight: 800;
   }
 

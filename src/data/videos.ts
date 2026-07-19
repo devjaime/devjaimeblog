@@ -8,7 +8,7 @@ export type Video = {
   lang?: "es" | "en";
 };
 
-export const videos: Video[] = [
+const videoCatalog = [
   {
     title: "Google ADK en acción — Lo que aprendí construyendo agentes de IA con Python",
     description: "Exploración práctica de Google ADK para construir agentes IA con Python y aprendizajes de implementación.",
@@ -95,6 +95,10 @@ export const videos: Video[] = [
     tags: ["Roadmap", "AI Engineering", "GenAI"],
     lang: "es",
   },
-].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+] satisfies Video[];
+
+export const videos: Video[] = videoCatalog.toSorted(
+  (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
+);
 
 export const featuredVideos = videos.filter((video) => video.featured).slice(0, 6);

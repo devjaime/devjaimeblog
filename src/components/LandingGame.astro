@@ -88,7 +88,6 @@
   const finalReveal = document.getElementById('final-reveal')!;
   const loadingBar = document.getElementById('loading-bar')!;
   const loadingText = document.getElementById('loading-text')!;
-  const player = document.getElementById('player')!;
   const obstacle = document.getElementById('obstacle')!;
   const terminalContent = document.getElementById('terminal-content')!;
 
@@ -121,8 +120,11 @@
     loadingBar.style.width = progress + '%';
     
     if (progress >= 20 && msgIndex < messages.length) {
-      loadingText.textContent = messages[msgIndex];
-      msgIndex++;
+      const message = messages[msgIndex];
+      if (message) {
+        loadingText.textContent = message;
+        msgIndex++;
+      }
     }
     
     if (progress >= 100) {
@@ -171,6 +173,7 @@
       }
       
       const conv = aiConversations[convIndex];
+      if (!conv) return;
       const line = document.createElement('div');
       line.className = 'text-slate-300';
       line.innerHTML = `<span class="text-emerald-400">${conv.from}:</span> ${conv.text}`;

@@ -25,13 +25,16 @@ const ufHistory = [
   { fecha: "2026-02", valor: 38400 },
   { fecha: "2026-03", valor: 38500 },
   { fecha: "2026-04", valor: 38500 },
-];
+] as const;
+const firstUf = ufHistory[0];
+const currentUf = ufHistory.at(-1) ?? firstUf;
+const previousUf = ufHistory.at(-2) ?? currentUf;
 
 // Plusvalía calculada
 const plusvaliaUF = propiedad.valorActualUF - propiedad.precioCompraUF;
 const plusvaliaPorcentaje = ((plusvaliaUF / propiedad.precioCompraUF) * 100).toFixed(1);
-const valorActualCLP = propiedad.valorActualUF * ufHistory[ufHistory.length - 1].valor;
-const precioCompraCLP = propiedad.precioCompraUF * ufHistory[0].valor;
+const valorActualCLP = propiedad.valorActualUF * currentUf.valor;
+const precioCompraCLP = propiedad.precioCompraUF * firstUf.valor;
 
 // Rentabilidad bruta anual
 const arriendoAnualCLP = propiedad.arriendoMensualCLP * 12;
@@ -57,10 +60,10 @@ const mantenciones = [
 ];
 
 // UF actual
-const ufActual = ufHistory[ufHistory.length - 1].valor;
+const ufActual = currentUf.valor;
 const ufCambio = ufHistory.length > 1 
-  ? ((ufActual - ufHistory[ufHistory.length - 2].valor) / ufHistory[ufHistory.length - 2].valor * 100).toFixed(2)
-  : 0;
+  ? ((ufActual - previousUf.valor) / previousUf.valor * 100).toFixed(2)
+  : "0";
 
 // Timeline
 const timeline = [

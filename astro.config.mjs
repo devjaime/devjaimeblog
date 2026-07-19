@@ -9,8 +9,9 @@ const adapter = isNetlify ? (await import("@astrojs/netlify")).default() : undef
 export default defineConfig({
   site: "https://jaimehernandez.dev",
   trailingSlash: "never",
-  output: isNetlify ? "server" : "static",
-  adapter,
+  ...(adapter
+    ? { output: "server", adapter }
+    : { output: "static" }),
   build: {
     inlineStylesheets: "auto",
   },
