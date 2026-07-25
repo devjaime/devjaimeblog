@@ -4,7 +4,7 @@ layout: "../../layouts/BlogLayout.astro"
 
 timestamp: "2026-07-25T18:45:00-04:00"
 publishDate: "2026-07-25T18:45:00-04:00"
-modifiedDate: "2026-07-25T18:45:00-04:00"
+modifiedDate: "2026-07-25T19:45:00-04:00"
 title: "PLAI Week 2026: la IA en retail está pasando de la conversación a la acción"
 description: "Una mirada pública a las herramientas, patrones técnicos y decisiones de negocio que están definiendo el futuro de la inteligencia artificial aplicada al retail."
 author:
@@ -22,7 +22,7 @@ tags:
   - "Estrategia de Negocio"
 category: "AI Engineering"
 draft: false
-time: 8
+time: 10
 featured: false
 lang: es
 type: article
@@ -45,6 +45,56 @@ Y pasa a ser:
 > ¿Qué decisión mejora, qué trabajo elimina y qué resultado permite alcanzar?
 
 Esta es mi lectura pública de la experiencia: una reflexión sobre el futuro de la IA en retail, las herramientas técnicas que hoy permiten construirlo y la disciplina de negocio necesaria para convertir prototipos en capacidades reales.
+
+## Presentación visual: competencia, arquitectura y visión
+
+Esta galería reúne un extracto público de las dos presentaciones que dieron origen a esta reflexión. La selección conserva las ideas sobre innovación, arquitectura, equipos y negocio, pero excluye métricas simuladas, nombres internos y detalles operacionales que no corresponde publicar.
+
+<presentation-gallery aria-label="Presentación visual sobre PLAI Week 2026 y la IA aplicada al retail">
+  <figure data-presentation-slide>
+    <img src="/images/plai-week-2026/plai-week-portada.png" alt="Portada de PLAI Week 2026: señales del futuro de la IA aplicada al retail" width="1280" height="720" loading="eager" decoding="async" />
+    <figcaption>PLAI Week 2026 — señales del futuro de la IA aplicada al retail.</figcaption>
+  </figure>
+  <figure data-presentation-slide>
+    <img src="/images/plai-week-2026/plai-week-laboratorio.png" alt="PLAI Week como laboratorio para acelerar el aprendizaje en inteligencia artificial" width="1280" height="720" loading="lazy" decoding="async" />
+    <figcaption>Innovación a escala: convertir prototipos en hipótesis sobre el futuro del retail.</figcaption>
+  </figure>
+  <figure data-presentation-slide>
+    <img src="/images/plai-week-2026/smart-replenishment-pitch-portada.png" alt="Portada del concepto Smart Replenishment Agent sobre Google Cloud" width="1280" height="720" loading="lazy" decoding="async" />
+    <figcaption>El concepto presentado: reposición inteligente impulsada por IA generativa sobre Google Cloud.</figcaption>
+  </figure>
+  <figure data-presentation-slide>
+    <img src="/images/plai-week-2026/plai-week-entrada-accion.png" alt="Patrón de producto que transforma una entrada natural mediante IA en una acción utilizable" width="1280" height="720" loading="lazy" decoding="async" />
+    <figcaption>El patrón que se repite: entrada natural, comprensión mediante IA y acción utilizable.</figcaption>
+  </figure>
+  <figure data-presentation-slide>
+    <img src="/images/plai-week-2026/plai-week-senales-futuro.png" alt="Señales para el futuro de la IA que conecta comprensión y operación" width="1280" height="720" loading="lazy" decoding="async" />
+    <figcaption>Agentes, datos, confianza y capacidades reutilizables como base del futuro.</figcaption>
+  </figure>
+  <figure data-presentation-slide>
+    <img src="/images/plai-week-2026/plai-week-arquitectura.png" alt="Arquitectura confiable con ingesta multimodal, mapeo semántico, reglas, revisión humana y acción" width="1280" height="720" loading="lazy" decoding="async" />
+    <figcaption>Arquitectura confiable: IA para comprender, reglas para validar y personas para decidir.</figcaption>
+  </figure>
+  <figure data-presentation-slide>
+    <img src="/images/plai-week-2026/plai-week-equipos.png" alt="Capacidades de equipos de excelencia para descubrir, construir y compartir soluciones de IA" width="1280" height="720" loading="lazy" decoding="async" />
+    <figcaption>Equipos multidisciplinarios alineados por una meta común.</figcaption>
+  </figure>
+  <figure data-presentation-slide>
+    <img src="/images/plai-week-2026/plai-week-liderazgo.png" alt="Liderazgo en inteligencia artificial para conectar negocio, tecnología, equipo y resultados" width="1280" height="720" loading="lazy" decoding="async" />
+    <figcaption>Liderar IA es organizar inteligencia colectiva para crear valor.</figcaption>
+  </figure>
+  <figure data-presentation-slide>
+    <img src="/images/plai-week-2026/plai-week-mirada-futuro.png" alt="Conclusión sobre la IA aplicada al retail pasando de la promesa a la acción" width="1280" height="720" loading="lazy" decoding="async" />
+    <figcaption>La IA aplicada al retail ya está pasando de la promesa a la acción.</figcaption>
+  </figure>
+  <div class="presentation-gallery-controls" data-presentation-controls>
+    <button type="button" data-presentation-previous aria-label="Ver diapositiva anterior">← Anterior</button>
+    <span class="presentation-gallery-status" data-presentation-status aria-live="polite">1 / 9</span>
+    <button type="button" data-presentation-next aria-label="Ver diapositiva siguiente">Siguiente →</button>
+  </div>
+</presentation-gallery>
+
+<script type="module" src="/scripts/presentation-gallery.js"></script>
 
 ## El patrón más importante: de una entrada natural a una acción
 
