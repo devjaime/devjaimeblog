@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<script>(function(){try{var s=JSON.parse(localStorage.getItem('srAgentSettings')||'{}');if(s.darkMode){document.documentElement.classList.add('dark-theme');}}catch(e){console.warn('No se pudo leer la configuración guardada', e);}})();</script>
+<meta name="viewport" content="width=1920, initial-scale=1.0" />
+<title>Detalle de SKU · Smart Replenishment Agent</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%231A73E8'/%3E%3Cpath d='M6 13l3 3 9-9' stroke='white' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..500,0..1,-50..200" />
+<script src="./assets/js/vendor/chart.umd.min.js"></script>
+<link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+<body>
+
+<div class="app-shell" id="appShell">
+
+  <!-- ============ TOP HEADER ============ -->
+  <header class="topbar">
+    <div class="topbar-left">
+      <button class="icon-btn" id="menuToggle" aria-label="Alternar menú">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+      <div class="brand">
+        <span class="brand-icon material-symbols-outlined">smart_toy</span>
+        <span class="brand-name">Smart Replenishment <strong>Agent</strong></span>
+      </div>
+      <span class="status-pill status-online">
+        <span class="status-dot"></span> Operativo
+      </span>
+    </div>
+
+    <div class="topbar-right">
+      <div class="last-sync">
+        <span class="material-symbols-outlined">sync</span>
+        <span>Última actualización: <strong>hace 4 min</strong></span>
+      </div>
+
+      <div class="user-menu-wrap">
+        <button class="icon-btn" id="notifBtn" aria-label="Notificaciones" aria-haspopup="true" aria-expanded="false">
+          <span class="material-symbols-outlined">notifications</span>
+          <span class="notif-dot" id="notifDot"></span>
+        </button>
+        <div class="notif-dropdown" id="notifDropdown" role="menu" aria-label="Notificaciones">
+          <div class="notif-dropdown-header"><span>Notificaciones</span><small>Últimas 24 h</small></div>
+          <div class="notif-item">
+            <span class="material-symbols-outlined" style="color:var(--red);">warning</span>
+            <div><div class="notif-item-title">128 SKU superaron el umbral de riesgo de quiebre</div><div class="notif-item-meta">Hace 12 min</div></div>
+          </div>
+          <div class="notif-item">
+            <span class="material-symbols-outlined" style="color:var(--purple);">trending_up</span>
+            <div><div class="notif-item-title">Nueva tendencia detectada: #Gorpcore (+340%)</div><div class="notif-item-meta">Hace 1 hora</div></div>
+          </div>
+          <div class="notif-item">
+            <span class="material-symbols-outlined">summarize</span>
+            <div><div class="notif-item-title">Resumen semanal disponible</div><div class="notif-item-meta">Ayer</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="user-menu-wrap">
+        <button class="user-chip" id="userChip" aria-haspopup="true" aria-expanded="false">
+            <span class="avatar">PD</span>
+          <span class="user-meta">
+            <span class="user-name">Planner Demo</span>
+            <span class="user-role">Planificación de inventario</span>
+          </span>
+          <span class="material-symbols-outlined">expand_more</span>
+        </button>
+        <div class="user-dropdown" id="userDropdown">
+          <a href="./configuracion.html" class="user-dropdown-item"><span class="material-symbols-outlined">settings</span>Configuración</a>
+          <a href="./index.html#demoNotice" class="user-dropdown-item"><span class="material-symbols-outlined">help</span>Acerca de la demo</a>
+          <div class="user-dropdown-divider"></div>
+          <a href="./login.html" class="user-dropdown-item user-dropdown-danger"><span class="material-symbols-outlined">logout</span>Cerrar sesión</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="app-body">
+
+    <!-- ============ SIDEBAR ============ -->
+    <aside class="sidebar" id="sidebar" aria-label="Navegación principal">
+      <nav class="side-nav" aria-label="Menú de secciones">
+        <a href="./index.html" class="side-nav-item" data-nav>
+          <span class="material-symbols-outlined">dashboard</span><span class="side-nav-label">Resumen</span>
+        </a>
+        <a href="./index.html#panel-flow" class="side-nav-item" data-nav>
+          <span class="material-symbols-outlined">device_hub</span><span class="side-nav-label">Flujo de Datos</span>
+        </a>
+        <a href="./index.html#panel-decision" class="side-nav-item" data-nav>
+          <span class="material-symbols-outlined">route</span><span class="side-nav-label">Mapa de Decisión</span>
+        </a>
+        <a href="./index.html#panel-scope" class="side-nav-item" data-nav>
+          <span class="material-symbols-outlined">layers</span><span class="side-nav-label">Surtido y Reposición</span>
+        </a>
+        <a href="./index.html#panel-forecast" class="side-nav-item" data-nav>
+          <span class="material-symbols-outlined">query_stats</span><span class="side-nav-label">Forecast SKU-Local</span>
+        </a>
+        <a href="./index.html#panel-trends" class="side-nav-item" data-nav>
+          <span class="material-symbols-outlined">trending_up</span><span class="side-nav-label">Tendencias</span>
+        </a>
+        <a href="./index.html#panel-table" class="side-nav-item active" data-nav>
+          <span class="material-symbols-outlined">inventory_2</span><span class="side-nav-label">Reposición</span>
+        </a>
+        <a href="./index.html#panel-approval" class="side-nav-item" data-nav>
+          <span class="material-symbols-outlined">fact_check</span><span class="side-nav-label">Aprobaciones</span>
+        </a>
+        <a href="./index.html#panel-kpis" class="side-nav-item" data-nav>
+          <span class="material-symbols-outlined">insights</span><span class="side-nav-label">Reportes</span>
+        </a>
+        <a href="./configuracion.html" class="side-nav-item" data-nav>
+          <span class="material-symbols-outlined">settings</span><span class="side-nav-label">Configuración</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="model-status">
+          <span class="material-symbols-outlined">psychology</span>
+          <div>
+            <span class="model-status-title">Vertex AI Agent</span>
+            <span class="model-status-sub">Modelo activo · v2.3.1</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ============ MAIN CONTENT ============ -->
+    <main class="main-content" id="top">
+
+      <nav class="breadcrumb" aria-label="Ruta de navegación">
+        <a href="./index.html">Resumen</a>
+        <span class="material-symbols-outlined">chevron_right</span>
+        <a href="./index.html#panel-table">Reposición</a>
+        <span class="material-symbols-outlined">chevron_right</span>
+        <span id="breadcrumbCurrent">Detalle de SKU</span>
+      </nav>
+
+      <section class="panel">
+        <div class="sku-header">
+          <div class="sku-header-left">
+            <div class="sku-thumb"><span class="material-symbols-outlined">inventory_2</span></div>
+            <div>
+              <div class="sku-title-row">
+                <h1 id="skuTitle">Producto</h1>
+                <span class="priority-pill" id="skuPriorityPill"></span>
+                <span class="badge badge-info" id="skuStatusBadge">Pendiente de aprobación</span>
+              </div>
+              <p class="sku-sub" id="skuSubtitle">Tienda · SKU</p>
+              <div class="sku-meta-chips" id="skuMetaChips"></div>
+            </div>
+          </div>
+          <div class="sku-header-actions">
+            <button class="btn btn-outline-danger" id="skuReject"><span class="material-symbols-outlined">cancel</span>Rechazar</button>
+            <button class="btn btn-primary" id="skuApprove"><span class="material-symbols-outlined">check_circle</span>Aprobar orden</button>
+          </div>
+        </div>
+
+        <div class="stat-grid">
+          <div class="stat-card">
+            <span class="stat-card-label">Stock Actual</span>
+            <span class="stat-card-value" id="statStock">—</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-card-label">Demanda Proyectada (7 días)</span>
+            <span class="stat-card-value" id="statDemand">—</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-card-label">Pedido Sugerido</span>
+            <span class="stat-card-value text-success" id="statOrder">—</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-card-label">Confianza del Modelo IA</span>
+            <span class="stat-card-value" id="statConfidence">—</span>
+          </div>
+        </div>
+      </section>
+
+      <div class="detail-layout">
+
+        <!-- ============ COLUMNA IZQUIERDA ============ -->
+        <div>
+          <section class="panel">
+            <div class="panel-header">
+              <div>
+                <h2>Evolución de Stock vs. Demanda</h2>
+                <p class="panel-subtitle">Últimos 14 días · quiebre proyectado si no se ejecuta la reposición.</p>
+              </div>
+            </div>
+            <div class="chart-legend">
+              <span class="legend-item"><i class="legend-dot legend-views"></i>Stock disponible</span>
+              <span class="legend-item"><i class="legend-dot legend-shares"></i>Demanda diaria</span>
+            </div>
+            <div class="chart-canvas-wrap" style="height: 260px;">
+              <canvas id="skuHistoryChart"></canvas>
+            </div>
+          </section>
+
+          <section class="panel">
+            <div class="panel-header">
+              <div>
+                <h2><span class="material-symbols-outlined" style="vertical-align:middle;color:var(--primary);font-size:18px;">lightbulb</span> Razón de la recomendación</h2>
+              </div>
+            </div>
+            <ul class="reason-list" id="skuReasons"></ul>
+          </section>
+
+          <section class="panel">
+            <div class="panel-header">
+              <div>
+                <h2>Actividad y trazabilidad</h2>
+                <p class="panel-subtitle">Historial de esta orden, de la recomendación de IA al despacho en tienda.</p>
+              </div>
+            </div>
+            <div class="timeline" id="skuTimeline"></div>
+          </section>
+        </div>
+
+        <!-- ============ COLUMNA DERECHA ============ -->
+        <div>
+          <section class="panel confidence-section">
+            <div class="panel-header" style="width:100%;">
+              <div>
+                <h2><span class="material-symbols-outlined" style="vertical-align:middle;color:var(--primary);font-size:18px;">psychology</span> Nivel de Confianza IA</h2>
+              </div>
+            </div>
+            <div class="confidence-gauge">
+              <canvas id="skuConfidenceChart" width="180" height="180"></canvas>
+              <div class="confidence-value" id="skuConfidenceValue">—</div>
+            </div>
+          </section>
+
+          <section class="panel">
+            <div class="panel-header">
+              <div><h2>Variables consideradas</h2></div>
+            </div>
+            <div class="chip-group" id="skuVariables"></div>
+          </section>
+
+          <section class="panel">
+            <div class="panel-header">
+              <div><h2>Información del producto</h2></div>
+            </div>
+            <div class="field-row">
+              <div class="field-row-info"><span class="field-row-title">SKU</span></div>
+              <div class="field-row-control mono" id="infoSku">—</div>
+            </div>
+            <div class="field-row">
+              <div class="field-row-info"><span class="field-row-title">Talla</span></div>
+              <div class="field-row-control" id="infoSize">—</div>
+            </div>
+            <div class="field-row">
+              <div class="field-row-info"><span class="field-row-title">Color</span></div>
+              <div class="field-row-control" id="infoColor">—</div>
+            </div>
+            <div class="field-row">
+              <div class="field-row-info"><span class="field-row-title">Tienda</span></div>
+              <div class="field-row-control" id="infoStore">—</div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <footer class="app-footer">
+        Smart Replenishment Lab · Demostración conceptual · Todos los datos, identidades y resultados son simulados
+      </footer>
+
+    </main>
+  </div>
+</div>
+
+<div class="toast" id="toast">
+  <span class="material-symbols-outlined">check_circle</span>
+  <span id="toastMessage">Cambios guardados correctamente</span>
+</div>
+
+<script src="./assets/js/state.js"></script>
+<script src="./assets/js/data.js"></script>
+<script src="./assets/js/shell.js"></script>
+<script src="./assets/js/sku-detail.js"></script>
+</body>
+</html>

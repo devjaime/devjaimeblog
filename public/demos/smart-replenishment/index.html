@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<script>(function(){try{var s=JSON.parse(localStorage.getItem('srAgentSettings')||'{}');if(s.darkMode){document.documentElement.classList.add('dark-theme');}}catch(e){console.warn('No se pudo leer la configuración guardada', e);}})();</script>
+<meta name="viewport" content="width=1920, initial-scale=1.0" />
+<title>Smart Replenishment Lab · Demo pública</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%231A73E8'/%3E%3Cpath d='M6 13l3 3 9-9' stroke='white' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..500,0..1,-50..200" />
+<script src="./assets/js/vendor/chart.umd.min.js"></script>
+<link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+<body>
+
+<div class="app-shell" id="appShell">
+
+  <!-- ============ TOP HEADER ============ -->
+  <header class="topbar">
+    <div class="topbar-left">
+      <button class="icon-btn" id="menuToggle" aria-label="Alternar menú">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+      <div class="brand">
+        <span class="brand-icon material-symbols-outlined">smart_toy</span>
+        <span class="brand-name">Smart Replenishment <strong>Agent</strong></span>
+      </div>
+      <span class="status-pill status-online">
+        <span class="status-dot"></span> Operativo
+      </span>
+    </div>
+
+    <div class="topbar-right">
+      <div class="last-sync">
+        <span class="material-symbols-outlined">sync</span>
+        <span>Última actualización: <strong>hace 4 min</strong></span>
+      </div>
+
+      <button class="icon-btn" id="bqToggleBtn" aria-label="BigQuery Live" title="BigQuery Live Streaming">
+        <span class="material-symbols-outlined">storage</span>
+      </button>
+
+      <button class="btn btn-primary btn-sm" id="autoDemoBtn">
+        <span class="material-symbols-outlined">play_circle</span> <span id="demoBtnLabel">Demo Auto</span>
+      </button>
+
+      <label class="selector">
+        <span class="material-symbols-outlined">storefront</span>
+        <select aria-label="Selector de tienda" id="storeSelect">
+          <option value="todas">Todas las tiendas</option>
+          <option value="Parque Arauco" selected>Parque Arauco</option>
+          <option value="Alto Las Condes">Alto Las Condes</option>
+          <option value="Plaza Vespucio">Plaza Vespucio</option>
+          <option value="Costanera Center">Costanera Center</option>
+          <option value="Mall Plaza Egaña">Mall Plaza Egaña</option>
+        </select>
+      </label>
+
+      <label class="selector">
+        <span class="material-symbols-outlined">map</span>
+        <select aria-label="Selector de región">
+          <option selected>Región Metropolitana</option>
+          <option>Valparaíso</option>
+          <option>Biobío</option>
+          <option>Los Lagos</option>
+          <option>Antofagasta</option>
+        </select>
+      </label>
+
+      <div class="user-menu-wrap">
+        <button class="icon-btn" id="notifBtn" aria-label="Notificaciones" aria-haspopup="true" aria-expanded="false">
+          <span class="material-symbols-outlined">notifications</span>
+          <span class="notif-dot" id="notifDot"></span>
+        </button>
+        <div class="notif-dropdown" id="notifDropdown" role="menu" aria-label="Notificaciones">
+          <div class="notif-dropdown-header"><span>Notificaciones</span><small>Últimas 24 h</small></div>
+          <div class="notif-item">
+            <span class="material-symbols-outlined" style="color:var(--red);">warning</span>
+            <div><div class="notif-item-title">128 SKU superaron el umbral de riesgo de quiebre</div><div class="notif-item-meta">Hace 12 min</div></div>
+          </div>
+          <div class="notif-item">
+            <span class="material-symbols-outlined" style="color:var(--purple);">trending_up</span>
+            <div><div class="notif-item-title">Nueva tendencia detectada: #Gorpcore (+340%)</div><div class="notif-item-meta">Hace 1 hora</div></div>
+          </div>
+          <div class="notif-item">
+            <span class="material-symbols-outlined">summarize</span>
+            <div><div class="notif-item-title">Resumen semanal disponible</div><div class="notif-item-meta">Ayer</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="user-menu-wrap">
+        <button class="user-chip" id="userChip" aria-haspopup="true" aria-expanded="false">
+          <span class="avatar">PD</span>
+          <span class="user-meta">
+            <span class="user-name">Planner Demo</span>
+            <span class="user-role">Planificación de inventario</span>
+          </span>
+          <span class="material-symbols-outlined">expand_more</span>
+        </button>
+        <div class="user-dropdown" id="userDropdown">
+          <a href="./configuracion.html" class="user-dropdown-item"><span class="material-symbols-outlined">settings</span>Configuración</a>
+          <a href="#demoNotice" class="user-dropdown-item"><span class="material-symbols-outlined">help</span>Acerca de la demo</a>
+          <div class="user-dropdown-divider"></div>
+          <a href="./login.html" class="user-dropdown-item user-dropdown-danger"><span class="material-symbols-outlined">logout</span>Cerrar sesión</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ MISSION CONTROL BAR ============ -->
+  <div class="mission-control" id="missionControl">
+    <div class="mission-control-head">
+      <span class="material-symbols-outlined mission-control-icon">terminal</span>
+      <span class="mission-control-title">Mission Control</span>
+      <span class="badge badge-success" id="mcStatus" style="font-size:10px;padding:2px 8px;">Initializing</span>
+    </div>
+    <div class="mission-control-stream" id="mcStream">
+      <div class="mc-event"><span class="mc-event-badge" style="background:#5f6368;">SYS</span><span class="mc-event-label">System initializing...</span><span class="mc-event-desc">Loading simulation engine</span><span class="mc-event-time">--:--:--</span></div>
+    </div>
+  </div>
+
+  <!-- ============ SYSTEM HEALTH BAR ============ -->
+  <div class="system-health-bar">
+    <div class="session-badge">
+      <span class="material-symbols-outlined">timer</span>
+      <span>Sesi&oacute;n: <strong id="sessionTime">00:00</strong></span>
+    </div>
+    <div class="health-item">
+      <span class="material-symbols-outlined">memory</span>
+      <span>CPU</span>
+      <span class="health-value" id="healthCpu">--</span>
+    </div>
+    <div class="health-item">
+      <span class="material-symbols-outlined">storage</span>
+      <span>Mem</span>
+      <span class="health-value" id="healthMemory">--</span>
+    </div>
+    <div class="health-item">
+      <span class="material-symbols-outlined">timeline</span>
+      <span>Lat</span>
+      <span class="health-value" id="healthLatency">--</span>
+    </div>
+    <div class="health-item">
+      <span class="material-symbols-outlined">speed</span>
+      <span>T/p</span>
+      <span class="health-value" id="healthThroughput">--</span>
+    </div>
+  </div>
+
+  <div class="app-body">
+
+    <!-- ============ SIDEBAR ============ -->
+    <aside class="sidebar" id="sidebar" aria-label="Navegación principal">
+      <nav class="side-nav" aria-label="Menú de secciones">
+        <a href="#top" class="side-nav-item active" data-nav>
+          <span class="material-symbols-outlined">dashboard</span><span class="side-nav-label">Vista General</span>
+        </a>
+        <a href="#pipeline-step1" class="side-nav-item" data-nav>
+          <span class="material-symbols-outlined">hub</span><span class="side-nav-label">1. Fuentes e Ingesta</span>
+        </a>
+        <a href="#pipeline-step3" class="side-nav-item" data-nav>
+          <span class="material-symbols-outlined">psychology</span><span class="side-nav-label">2. Procesamiento IA</span>
+        </a>
+        <a href="#pipeline-step4" class="side-nav-item" data-nav>
+          <span class="material-symbols-outlined">account_tree</span><span class="side-nav-label">3. Outputs</span>
+        </a>
+        <a href="#pipeline-step5" class="side-nav-item" data-nav>
+          <span class="material-symbols-outlined">fact_check</span><span class="side-nav-label">4. Ejecución</span>
+        </a>
+        <a href="./configuracion.html" class="side-nav-item" data-nav>
+          <span class="material-symbols-outlined">settings</span><span class="side-nav-label">Configuración</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="model-status">
+          <span class="material-symbols-outlined">psychology</span>
+          <div>
+            <span class="model-status-title">Vertex AI Agent</span>
+            <span class="model-status-sub">Modelo activo · v2.3.1</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ============ MAIN CONTENT ============ -->
+    <main class="main-content" id="top">
+
+      <!-- ============ PIPELINE STEPS BAR (sticky) ============ -->
+      <div class="pipeline-bar" id="pipelineBar">
+        <div class="pipeline-step active" data-step="0" data-ready="true">
+          <span class="pipeline-step-num">0</span>
+          <span class="pipeline-step-label">Resumen</span>
+        </div>
+        <span class="pipeline-connector"></span>
+        <div class="pipeline-step" data-step="1" data-ready="true">
+          <span class="pipeline-step-num">1</span>
+          <span class="pipeline-step-label">Fuentes e Ingesta</span>
+        </div>
+        <span class="pipeline-connector"></span>
+        <div class="pipeline-step" data-step="2" data-ready="false">
+          <span class="pipeline-step-num">2</span>
+          <span class="pipeline-step-label">Procesamiento IA</span>
+        </div>
+        <span class="pipeline-connector"></span>
+        <div class="pipeline-step" data-step="3" data-ready="false">
+          <span class="pipeline-step-num">3</span>
+          <span class="pipeline-step-label">Outputs</span>
+        </div>
+        <span class="pipeline-connector"></span>
+        <div class="pipeline-step" data-step="4" data-ready="false">
+          <span class="pipeline-step-num">4</span>
+          <span class="pipeline-step-label">Ejecución</span>
+        </div>
+      </div>
+
+      <!-- ============ STEP 0: RESUMEN + KPIs ============ -->
+      <section class="pipeline-section" id="pipeline-step0">
+        <div class="pipeline-section-intro">
+          <div>
+            <h1>Pipeline de Reposición Inteligente</h1>
+            <p class="page-subtitle">Flujo completo desde la ingesta de datos hasta el despacho en tienda — Región Metropolitana</p>
+          </div>
+        </div>
+
+        <div class="kpi-strip">
+          <div class="kpi-strip-item">
+            <span class="kpi-strip-icon" style="background:var(--red-container);color:var(--red);"><span class="material-symbols-outlined">warning</span></span>
+            <div>
+              <span class="kpi-strip-value">128 <small>SKU</small></span>
+              <span class="kpi-strip-label">Riesgo de Quiebre <span class="trend-bad">↑14%</span></span>
+            </div>
+          </div>
+          <div class="kpi-strip-item">
+            <span class="kpi-strip-icon" style="background:var(--primary-container);color:var(--primary);"><span class="material-symbols-outlined">assignment</span></span>
+            <div>
+              <span class="kpi-strip-value" id="kpiOrdenesGeneradas">457</span>
+              <span class="kpi-strip-label">Órdenes Sugeridas</span>
+            </div>
+          </div>
+          <div class="kpi-strip-item">
+            <span class="kpi-strip-icon" style="background:var(--green-container);color:var(--green);"><span class="material-symbols-outlined">payments</span></span>
+            <div>
+              <span class="kpi-strip-value" id="kpiStockRecuperado">$125M</span>
+              <span class="kpi-strip-label">Stock Recuperable</span>
+            </div>
+          </div>
+          <div class="kpi-strip-item">
+            <span class="kpi-strip-icon" style="background:#e8f5e9;color:#2e7d32;"><span class="material-symbols-outlined">shield</span></span>
+            <div>
+              <span class="kpi-strip-value" id="kpiVentasProtegidas">$34.2M</span>
+              <span class="kpi-strip-label">Ventas Protegidas</span>
+            </div>
+          </div>
+          <div class="kpi-strip-item">
+            <span class="kpi-strip-icon" style="background:#fde7f3;color:#9c1063;"><span class="material-symbols-outlined">trending_up</span></span>
+            <div>
+              <span class="kpi-strip-value">+23%</span>
+              <span class="kpi-strip-label">Impacto TikTok</span>
+            </div>
+          </div>
+          <div class="kpi-strip-item">
+            <span class="kpi-strip-icon" style="background:var(--purple-container);color:var(--purple);"><span class="material-symbols-outlined">psychology</span></span>
+            <div>
+              <span class="kpi-strip-value" id="kpiConfianzaIA">94.8%</span>
+              <span class="kpi-strip-label">Confianza IA</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mini pipeline overview -->
+        <div class="pipeline-overview">
+          <div class="pipeline-overview-node" style="border-color:var(--primary);">
+            <span class="material-symbols-outlined">dns</span>
+            <strong>Datos</strong>
+            <small>SAP · WMS · POS · RRSS</small>
+          </div>
+          <span class="pipeline-overview-arrow"><span class="material-symbols-outlined">arrow_forward</span></span>
+          <div class="pipeline-overview-node" style="border-color:var(--purple);">
+            <span class="material-symbols-outlined">verified_user</span>
+            <strong>Seguridad</strong>
+            <small>Cloud DLP · Secret Manager</small>
+          </div>
+          <span class="pipeline-overview-arrow"><span class="material-symbols-outlined">arrow_forward</span></span>
+          <div class="pipeline-overview-node pipeline-overview-node-ia">
+            <span class="material-symbols-outlined">smart_toy</span>
+            <strong>Vertex AI</strong>
+            <small>Predicción · Decisión</small>
+            <span class="badge badge-success" style="position:absolute;top:-10px;right:-10px;font-size:9px;">Activo</span>
+          </div>
+          <span class="pipeline-overview-arrow pipeline-overview-arrow-split">
+            <span class="material-symbols-outlined">call_split</span>
+          </span>
+          <div class="pipeline-overview-branches">
+            <div class="pipeline-overview-node" style="border-color:var(--amber);background:#fef7e0;">
+              <span class="material-symbols-outlined">description</span>
+              <strong>Forecast</strong>
+              <small>Allocation · Compras</small>
+            </div>
+            <div class="pipeline-overview-node" style="border-color:var(--green);background:var(--green-container);">
+              <span class="material-symbols-outlined">inventory_2</span>
+              <strong>Reposición</strong>
+              <small>Órdenes · Operación de inventario</small>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- pipeline connector arrow -->
+      <div class="pipeline-section-connector"><span class="material-symbols-outlined">expand_more</span><span>1. Fuentes e Ingesta</span></div>
+
+      <!-- ============ STEP 1: DATA SOURCES + INGESTION ============ -->
+      <section class="pipeline-section" id="pipeline-step1">
+        <div class="pipeline-section-header">
+          <span class="pipeline-section-step">Paso 1</span>
+          <h2>Fuentes de Datos e Ingesta Segura</h2>
+          <p class="pipeline-section-desc">Los datos viajan desde los sistemas transaccionales, segmentos agregados de clientes y fuentes externas a través de una capa de seguridad obligatoria antes de tocar el data lake analítico — sin PII en ninguna etapa.</p>
+        </div>
+
+        <div class="sources-grid">
+          <div class="pipeline-card source-card">
+            <div class="source-card-head"><span class="material-symbols-outlined">table</span><span class="source-card-name">fact_sales</span></div>
+            <span class="source-card-detail">Venta diaria histórica por SKU × tienda (retail_lab.demo_inventory)</span>
+            <span class="source-card-badge">Batch nocturno</span>
+          </div>
+          <div class="pipeline-card source-card">
+            <div class="source-card-head"><span class="material-symbols-outlined">table</span><span class="source-card-name">allocation_input</span></div>
+            <span class="source-card-detail">Forecast servido: store_id, state_id, item_id, venta_proy [lo–hi], profundidad_4w</span>
+            <span class="source-card-badge">Batch nocturno</span>
+          </div>
+          <div class="pipeline-card source-card">
+            <div class="source-card-head"><span class="material-symbols-outlined">table</span><span class="source-card-name">sku_local_forecast_4w</span></div>
+            <span class="source-card-detail">Forecast crudo por SKU-local y semana con intervalo de confianza</span>
+            <span class="source-card-badge">Batch nocturno</span>
+          </div>
+          <div class="pipeline-card source-card">
+            <div class="source-card-head"><span class="material-symbols-outlined">dns</span><span class="source-card-name">dim_products / dim_stores</span></div>
+            <span class="source-card-detail">Maestro: descripción, categoría, departamento, tienda/estado, zona</span>
+            <span class="source-card-badge">Batch nocturno</span>
+          </div>
+          <div class="pipeline-card source-card">
+            <div class="source-card-head"><span class="material-symbols-outlined">warehouse</span><span class="source-card-name">SAP/WMS Inventory</span></div>
+            <span class="source-card-detail">Stock en tienda, bodega, tránsito y Centros de Distribución</span>
+            <span class="source-card-badge">Batch nocturno</span>
+          </div>
+          <div class="pipeline-card source-card">
+            <div class="source-card-head"><span class="material-symbols-outlined">groups</span><span class="source-card-name">Segmentos anónimos</span></div>
+            <span class="source-card-detail">Segmento poder adquisitivo, afinidad categoría, frecuencia de compra por zona — SIN PII</span>
+            <span class="source-card-badge">Agregado</span>
+          </div>
+          <div class="pipeline-card source-card">
+            <div class="source-card-head"><span class="material-symbols-outlined">tag</span><span class="source-card-name">TikTok / Instagram API</span></div>
+            <span class="source-card-detail">Trending saves, shares, views acceleration, UGC volume, search volume, shopping tags</span>
+            <span class="source-card-badge">Streaming c/6h</span>
+          </div>
+          <div class="pipeline-card source-card">
+            <div class="source-card-head"><span class="material-symbols-outlined">cloud</span><span class="source-card-name">Clima API</span></div>
+            <span class="source-card-detail">Pronóstico mediano plazo para categorías estacionales</span>
+            <span class="source-card-badge">Streaming diario</span>
+          </div>
+        </div>
+
+        <!-- Flow: Sources → Ingestion -->
+        <div class="flow-connector-row">
+          <span class="flow-connector-arrow"><span class="material-symbols-outlined">arrow_downward</span></span>
+          <span class="flow-connector-label">Cloud DLP sanitiza PII · Secret Manager gestiona credenciales</span>
+        </div>
+
+        <div class="ingestion-row">
+          <div class="pipeline-card ingestion-card">
+            <span class="material-symbols-outlined" style="color:var(--amber);">verified_user</span>
+            <div><strong>Cloud DLP</strong><small>Detección y anonimización de PII, tarjetas, RUT</small></div>
+          </div>
+          <div class="pipeline-card ingestion-card">
+            <span class="material-symbols-outlined" style="color:var(--primary);">key</span>
+            <div><strong>Secret Manager</strong><small>Gestión de credenciales de APIs externas</small></div>
+          </div>
+          <div class="pipeline-card ingestion-card ingestion-card-accent">
+            <span class="material-symbols-outlined" style="color:var(--purple);">storage</span>
+            <div><strong>Pub/Sub + Dataflow</strong><small>Colas de datos transitorios + procesamiento streaming</small></div>
+          </div>
+        </div>
+
+        <!-- Ingestion Live Stream -->
+        <div class="ingestion-stream" id="ingestionStream"></div>
+
+        <!-- Trends inline -->
+        <details class="pipeline-details">
+          <summary class="pipeline-details-summary">
+            <span class="material-symbols-outlined">trending_up</span>
+            <span>Señales de tendencias en vivo (TikTok · Instagram)</span>
+            <span class="badge badge-info">Últimos 30 días</span>
+          </summary>
+          <div class="pipeline-details-body">
+            <div class="trends-layout">
+              <div class="card trends-chart-card">
+                <div class="chart-legend">
+                  <span class="legend-item"><i class="legend-dot legend-views"></i>Views</span>
+                  <span class="legend-item"><i class="legend-dot legend-saves"></i>Saves</span>
+                  <span class="legend-item"><i class="legend-dot legend-shares"></i>Shares</span>
+                  <span class="chart-range">Últimos 30 días</span>
+                </div>
+                <div class="chart-canvas-wrap">
+                  <canvas id="trendsChart"></canvas>
+                </div>
+              </div>
+              <div class="card top-trends-card">
+                <h3>Top Tendencias Detectadas</h3>
+                <ol class="trend-list" id="topTrendsList"></ol>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <div class="step-actions" id="step1Actions">
+          <button class="btn btn-primary" id="btnStep1">
+            <span class="material-symbols-outlined">cloud_download</span> Ingestar datos
+          </button>
+          <span class="step-action-hint">Conecta las 8 fuentes y ejecuta DLP + Secret Manager</span>
+        </div>
+      </section>
+
+      <!-- pipeline connector arrow -->
+      <div class="pipeline-section-connector"><span class="material-symbols-outlined">expand_more</span><span>2. Procesamiento IA</span></div>
+
+      <!-- ============ STEP 2: IA PROCESSING ============ -->
+      <section class="pipeline-section" id="pipeline-step3">
+        <div class="pipeline-section-header">
+          <span class="pipeline-section-step">Paso 2</span>
+          <h2>Procesamiento IA: BigQuery + Vertex AI</h2>
+          <p class="pipeline-section-desc">Los datos estandarizados se transforman en features de Machine Learning y alimentan el motor de predicción y decisión. La arquitectura Medallion (Bronce → Plata → Oro) gobierna el flujo.</p>
+        </div>
+
+        <!-- Medallion + Vertex AI row -->
+        <div class="ia-flow-row">
+          <div class="pipeline-card ia-card">
+            <div class="ia-card-head"><span class="material-symbols-outlined">layers</span><strong>BigQuery Medallion</strong></div>
+            <div class="ia-card-steps">
+              <span class="ia-card-step">Bronce<small>Crudo</small></span>
+              <span class="material-symbols-outlined">arrow_forward</span>
+              <span class="ia-card-step">Plata<small>Estandarizado</small></span>
+              <span class="material-symbols-outlined">arrow_forward</span>
+              <span class="ia-card-step ia-card-step-active">Oro<small>Features ML</small></span>
+            </div>
+            <div class="ia-card-features">
+              <span class="chip-tag">indice_demanda_local_7dias</span>
+              <span class="chip-tag">score_tendencia_rrss</span>
+              <span class="chip-tag">riesgo_obsolescencia_sku</span>
+              <span class="chip-tag">coeficiente_spillover</span>
+              <span class="chip-tag">stock_seguridad_dinamico</span>
+            </div>
+          </div>
+
+          <span class="flow-connector-arrow"><span class="material-symbols-outlined">arrow_forward</span></span>
+
+          <div class="pipeline-card ia-card ia-card-accent">
+            <div class="ia-card-head"><span class="material-symbols-outlined">smart_toy</span><strong>Vertex AI Agent</strong><span class="badge badge-success">Activo v2.3.1</span></div>
+            <p class="ia-card-desc">Motor de predicción de demanda y generación de órdenes de reposición. Procesamiento cada 15 minutos en pipelines de Vertex AI Pipelines.</p>
+          </div>
+        </div>
+
+        <!-- Vertex AI Pipeline Visualization -->
+        <div class="vertex-panel" id="vertexPanel">
+          <div class="vertex-panel-head">
+            <span class="material-symbols-outlined" style="color:var(--purple);">smart_toy</span>
+            <span>Vertex AI Agent · Pipeline en Ejecución</span>
+            <span class="vertex-panel-pct" id="vertexProgressLabel">0%</span>
+          </div>
+          <div class="vertex-progress-track"><div class="vertex-progress-fill" id="vertexProgressBar">0%</div></div>
+          <div class="vertex-nodes" id="vertexNodes"></div>
+        </div>
+
+        <!-- 4 Modules of Processing -->
+        <h3 style="font-size:14px;font-weight:700;color:var(--text-primary);margin-bottom:12px;">Módulos de Procesamiento</h3>
+        <div class="ia-modules-grid">
+          <div class="ia-module-card">
+            <div class="ia-module-head"><span class="material-symbols-outlined">inventory</span>Inventario Omnicanal y Riesgo</div>
+            <p class="ia-module-desc">Calcula inventario neto real, detecta dark stores / ship-from-store por comuna, y bloquea SKU obsoletos automáticamente.</p>
+            <p class="ia-module-detail">Stock real = Tienda + Bodega + Tránsito − Bloqueos. Si la tienda opera como dark store para su comuna, aumenta requerimiento.</p>
+          </div>
+          <div class="ia-module-card">
+            <div class="ia-module-head"><span class="material-symbols-outlined">map</span>Demanda Geo-Espacial (Spillover)</div>
+            <p class="ia-module-desc">Modela el efecto derrame: si un producto se agota en Tienda A y los clientes migran a Tienda B, compensa el stock en Tienda B.</p>
+            <p class="ia-module-detail">Usa state_id como proxy de zona/cluster (oriente vs. poniente). Coeficiente de spillover entrenado por ML.</p>
+          </div>
+          <div class="ia-module-card">
+            <div class="ia-module-head"><span class="material-symbols-outlined">cycle</span>Ciclo de Vida y Atributos</div>
+            <p class="ia-module-desc">Clasifica cada SKU según su ciclo: <strong>Atemporal</strong> (reposición continua), <strong>Estacional</strong> (agresivo al inicio, decay antes del cambio), <strong>Moda/Tendencia</strong> (modulado por RRSS), <strong>Obsoleto</strong> (bloqueo + liquidación).</p>
+            <p class="ia-module-detail">Desglose de pedidos respetando curvas de talla/color específicas de cada tienda.</p>
+          </div>
+          <div class="ia-module-card">
+            <div class="ia-module-head"><span class="material-symbols-outlined">insights</span>Inteligencia de Mercado y Perfilado</div>
+            <p class="ia-module-desc">Cruza afinidad agregada y anonimizada de segmentos con picos de tendencias en RRSS.</p>
+            <p class="ia-module-detail">Si un producto se vuelve viral, anticipa el quiebre y genera una sugerencia extraordinaria para tiendas con afinidad de segmento.</p>
+          </div>
+        </div>
+
+        <!-- 6-step Decision Flow -->
+        <h3 style="font-size:14px;font-weight:700;color:var(--text-primary);margin-bottom:12px;">Flujo de Decisión (por Facility + SKU)</h3>
+        <div class="decision-flow-vertical">
+          <div class="decision-flow-step">
+            <span class="decision-flow-num">1</span>
+            <span class="material-symbols-outlined">calculate</span>
+            <div class="decision-flow-body">
+              <strong>Predicción Base</strong>
+              <small>Proyecta venta próximos N días usando historial local + estacionalidad + allocation_input / sku_local_forecast_4w</small>
+            </div>
+          </div>
+          <div class="decision-flow-step">
+            <span class="decision-flow-num">2</span>
+            <span class="material-symbols-outlined">trending_up</span>
+            <div class="decision-flow-body">
+              <strong>Modificador de Tendencia (±%)</strong>
+              <small>Ajusta al alza si RRSS positivas + afinidad de segmento alta; a la baja si existe riesgo de obsolescencia</small>
+            </div>
+          </div>
+          <div class="decision-flow-step">
+            <span class="decision-flow-num">3</span>
+            <span class="material-symbols-outlined">swap_horiz</span>
+            <div class="decision-flow-body">
+              <strong>Balanceo Espacial</strong>
+              <small>Verifica si la tienda debe absorber demanda de tiendas vecinas o despachos web locales (ship-from-store)</small>
+            </div>
+          </div>
+          <div class="decision-flow-step">
+            <span class="decision-flow-num">4</span>
+            <span class="material-symbols-outlined">difference</span>
+            <div class="decision-flow-body">
+              <strong>Cálculo de Brecha</strong>
+              <small>Requerido = Predicción + StockSeguridad − StockActual (tienda + bodega)</small>
+            </div>
+          </div>
+          <div class="decision-flow-step">
+            <span class="decision-flow-num">5</span>
+            <span class="material-symbols-outlined">fact_check</span>
+            <div class="decision-flow-body">
+              <strong>Validación de Restricciones</strong>
+              <small>Cruza contra assortment plan (SKU autorizado), capacidad física, unidades mínimas de despacho (MOQ)</small>
+            </div>
+          </div>
+          <div class="decision-flow-step">
+            <span class="decision-flow-num">6</span>
+            <span class="material-symbols-outlined">assignment</span>
+            <div class="decision-flow-body">
+              <strong>Emisión de Orden</strong>
+              <small>Output estructurado con cantidades exactas, desglosado por talla/color, con prioridad de envío</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- Key Formulas -->
+        <details class="pipeline-details">
+          <summary class="pipeline-details-summary">
+            <span class="material-symbols-outlined">functions</span>
+            <span>Fórmulas clave del motor de decisión</span>
+            <span class="badge badge-info">SS · ROP · OQ · Trend Score</span>
+          </summary>
+          <div class="pipeline-details-body">
+            <div class="formulas-grid">
+              <div class="formula-card">
+                <div class="formula-card-head"><span class="material-symbols-outlined">shield</span>Stock de Seguridad Dinámico</div>
+                <div class="formula-math">SS = z × σ<sub>d</sub> × √L</div>
+                <p class="formula-desc"><strong>z</strong> = factor de nivel de servicio (dinámico según criticidad) · <strong>σ<sub>d</sub></strong> = desviación estándar de demanda localizada por tienda × SKU · <strong>L</strong> = lead time desde CD a tienda</p>
+              </div>
+              <div class="formula-card">
+                <div class="formula-card-head"><span class="material-symbols-outlined">flag</span>Punto de Reorden (ROP)</div>
+                <div class="formula-math">ROP = d̅ × L + SS</div>
+                <p class="formula-desc"><strong>d̅</strong> = demanda diaria promedio (predicha por ML, no promedio histórico) · <strong>L</strong> = lead time · <strong>SS</strong> = Stock de Seguridad</p>
+              </div>
+              <div class="formula-card">
+                <div class="formula-card-head"><span class="material-symbols-outlined">shopping_cart</span>Cantidad de Orden (OQ)</div>
+                <div class="formula-math">OQ = max(0, ceil((Pred + SS − Stock) / MOQ)) × MOQ</div>
+                <p class="formula-desc"><strong>Pred</strong> = Predicción de demanda · <strong>Stock</strong> = Stock actual (tienda + bodega) · <strong>MOQ</strong> = Cantidad mínima de pedido (caja/empaque)</p>
+              </div>
+              <div class="formula-card">
+                <div class="formula-card-head"><span class="material-symbols-outlined">trending_up</span>Score de Tendencia RRSS</div>
+                <div class="formula-math">score = 0.40×saves + 0.30×views_acc + 0.20×ugc + 0.10×search</div>
+                <p class="formula-desc">Aplica curva de decaimiento temporal (3–14 días de relevancia). Normalizado contra el volumen histórico del SKU.</p>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <div class="step-actions" id="step2Actions">
+          <button class="btn btn-primary" id="btnStep2" disabled>
+            <span class="material-symbols-outlined">smart_toy</span> Ejecutar Pipeline IA
+          </button>
+          <span class="step-action-hint">Ejecuta Medallion, 4 m\u00f3dulos y genera predicciones en Vertex AI</span>
+        </div>
+
+        <!-- Decision map case study -->
+        <div class="ia-case-study" style="margin-top:18px;">
+          <div class="ia-case-study-header">
+            <span class="material-symbols-outlined">route</span>
+            <span>Mapa de Decisión en vivo: caso <strong>#Gorpcore</strong></span>
+            <span class="badge badge-neutral">Trazabilidad completa</span>
+          </div>
+          <div class="decision-map">
+            <div class="decision-node">
+              <div class="decision-icon"><span class="material-symbols-outlined">tag</span></div>
+              <h4>Tendencia TikTok</h4>
+              <p class="decision-metric">#Gorpcore</p>
+              <p class="decision-desc">+340% menciones en 7 días</p>
+            </div>
+            <span class="decision-arrow material-symbols-outlined">arrow_forward</span>
+            <div class="decision-node">
+              <div class="decision-icon"><span class="material-symbols-outlined">trending_up</span></div>
+              <h4>↑ Demanda</h4>
+              <p class="decision-metric">+18%</p>
+              <p class="decision-desc">Búsquedas outdoor</p>
+            </div>
+            <span class="decision-arrow material-symbols-outlined">arrow_forward</span>
+            <div class="decision-node">
+              <div class="decision-icon"><span class="material-symbols-outlined">history</span></div>
+              <h4>Historial</h4>
+              <p class="decision-metric">0.82</p>
+              <p class="decision-desc">Correlación temporada</p>
+            </div>
+            <span class="decision-arrow material-symbols-outlined">arrow_forward</span>
+            <div class="decision-node">
+              <div class="decision-icon"><span class="material-symbols-outlined">inventory_2</span></div>
+              <h4>Stock</h4>
+              <p class="decision-metric">2.3 días</p>
+              <p class="decision-desc">Cobertura actual</p>
+            </div>
+            <span class="decision-arrow material-symbols-outlined">arrow_forward</span>
+            <div class="decision-node decision-node-warning">
+              <div class="decision-icon"><span class="material-symbols-outlined">warning</span></div>
+              <h4>Quiebre</h4>
+              <p class="decision-metric">Día 4</p>
+              <p class="decision-desc">Proyectado sin acción</p>
+            </div>
+            <span class="decision-arrow material-symbols-outlined">arrow_forward</span>
+            <div class="decision-node">
+              <div class="decision-icon"><span class="material-symbols-outlined">calculate</span></div>
+              <h4>24 unid.</h4>
+              <p class="decision-metric">Óptimo</p>
+              <p class="decision-desc">MOQ + capacidad</p>
+            </div>
+            <span class="decision-arrow material-symbols-outlined">arrow_forward</span>
+            <div class="decision-node decision-node-success">
+              <div class="decision-icon"><span class="material-symbols-outlined">fact_check</span></div>
+              <h4>Propuesta</h4>
+              <p class="decision-metric">94%</p>
+              <p class="decision-desc">Confianza del modelo</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- pipeline connector arrow with split -->
+      <div class="pipeline-section-connector pipeline-section-connector-split">
+        <span class="material-symbols-outlined">call_split</span>
+        <span>3. Outputs — Forecast + Reposición</span>
+      </div>
+
+      <!-- ============ STEP 3: OUTPUTS (FORECAST + REPOSICIÓN SIDE BY SIDE) ============ -->
+      <section class="pipeline-section pipeline-section-outputs" id="pipeline-step4">
+        <div class="pipeline-section-header">
+          <span class="pipeline-section-step">Paso 3</span>
+          <h2>Outputs del Motor IA</h2>
+          <p class="pipeline-section-desc">El mismo modelo Vertex AI genera dos salidas con distintos dueños y niveles de autonomía.</p>
+        </div>
+
+        <!-- Output: Forecast SKU-Local -->
+        <div class="output-column output-column-forecast">
+          <div class="output-column-head">
+            <span class="material-symbols-outlined">query_stats</span>
+            <div>
+              <h3>Forecast SKU-Local</h3>
+              <small>Para Compras / Planning · Distribución Inicial (Ebook)</small>
+            </div>
+            <span class="badge badge-info">Sin aprobación</span>
+          </div>
+
+          <div class="forecast-report-intro" style="margin-bottom:12px;">
+            <p>A continuación se presenta el informe proyectado de ventas e insumos de distribución inicial (allocation) por <strong>SKU-Tienda</strong> a 4 semanas. La estimación utiliza curvas de venta históricas consolidadas en <code>allocation_input</code> y <code>sku_local_forecast_4w</code>, distinguiendo patrones por zona/cluster físico para asegurar óptima profundidad sin sobreinventariar.</p>
+          </div>
+
+            <div class="forecast-toolbar" style="margin-bottom:10px;">
+              <label class="selector" style="flex:1;">
+                <span class="material-symbols-outlined">category</span>
+                <select id="forecastCategorySelect" aria-label="Categoría">
+                  <option value="Outdoor y Trekking" selected>Outdoor y Trekking</option>
+                  <option value="Calzado Running">Calzado Running</option>
+                </select>
+              </label>
+              <label class="selector" style="flex:1;">
+                <span class="material-symbols-outlined">explore</span>
+                <select id="forecastZoneSelect" aria-label="Zona">
+                  <option value="todas" selected>Todas las zonas</option>
+                  <option value="Oriente">Oriente</option>
+                  <option value="Poniente">Poniente</option>
+                </select>
+              </label>
+              <div class="step-actions" style="flex-shrink:0;">
+                <button class="btn btn-primary btn-sm" id="generateForecastBtn">
+                  <span class="material-symbols-outlined">bolt</span><span id="generateForecastLabel"> Generar</span>
+                </button>
+              </div>
+            </div>
+
+          <div class="table-wrapper" id="forecastReportContainer">
+            <table class="data-table forecast-table" id="forecastTable">
+              <thead>
+                <tr>
+                  <th>SKU-Local (store|item)</th>
+                  <th>Descripción</th>
+                  <th>Zona (store/state)</th>
+                  <th>Semana</th>
+                  <th>Venta proy [lo–hi]</th>
+                  <th>Profundidad 4s</th>
+                  <th>Confianza</th>
+                </tr>
+              </thead>
+              <tbody id="forecastTableBody"></tbody>
+            </table>
+          </div>
+
+          <div class="forecast-action-banner" style="margin-top:10px;">
+            <span class="material-symbols-outlined">rocket_launch</span>
+            <div>
+              <strong>Acción sugerida (Insumo para Ebook / Compras &amp; Planning):</strong>
+              <p id="forecastActionText">—</p>
+            </div>
+            <button class="btn btn-primary btn-sm" id="sendToComprasBtn"><span class="material-symbols-outlined">send</span> Enviar a Compras</button>
+          </div>
+          <p class="forecast-disclaimer" style="margin-top:8px;">Insumo directo para el Ebook — no requiere aprobación humana.</p>
+        </div>
+
+        <!-- Output connector -->
+        <div style="display:flex;flex-direction:column;align-items:center;gap:4px;padding:10px 0;color:var(--primary);font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.04em;">
+          <span class="material-symbols-outlined" style="font-size:22px;">expand_more</span>
+        </div>
+
+        <!-- Output: Órdenes de Reposición -->
+        <div class="output-column output-column-replenish">
+          <div class="output-column-head">
+            <span class="material-symbols-outlined">inventory_2</span>
+            <div>
+              <h3>Órdenes de Reposición</h3>
+              <small>Para planificación · Pedido sugerido por SKU × Tienda × Talla/Color</small>
+            </div>
+            <span class="badge badge-neutral">Requiere aprobación</span>
+            </div>
+
+            <div class="table-toolbar" style="margin-bottom:10px;">
+              <div class="search-box" style="width:auto;flex:1;">
+                <span class="material-symbols-outlined">search</span>
+                <label for="tableSearch" class="sr-only">Buscar</label>
+                <input type="text" id="tableSearch" placeholder="Buscar por tienda, SKU o producto…" aria-label="Buscar" />
+              </div>
+              <div class="priority-filters" id="priorityFilters">
+                <button class="chip chip-active" data-priority="todas">Todas</button>
+                <button class="chip chip-danger" data-priority="alta">🔴 Alta</button>
+                <button class="chip chip-warning" data-priority="media">🟡 Media</button>
+                <button class="chip chip-success" data-priority="baja">🟢 Baja</button>
+              </div>
+            </div>
+
+            <div class="step-actions" style="margin-bottom:12px;">
+              <button class="btn btn-primary btn-sm" id="btnStep3Replenish" disabled>
+                <span class="material-symbols-outlined">inventory_2</span> Generar órdenes
+              </button>
+              <span class="step-action-hint">Procesa demanda, spillover y ciclo de vida para emitir órdenes</span>
+            </div>
+
+            <div class="table-wrapper">
+            <table class="data-table" id="replenishTable">
+              <thead>
+                <tr>
+                  <th>Prioridad</th>
+                  <th>Tienda</th>
+                  <th>SKU</th>
+                  <th>Producto</th>
+                  <th>Talla</th>
+                  <th>Color</th>
+                  <th class="sortable" data-sort="numeric">Stock</th>
+                  <th class="sortable" data-sort="numeric">Demanda</th>
+                  <th class="sortable" data-sort="numeric">Pedido</th>
+                  <th class="sortable" data-sort="numeric">Confianza</th>
+                  <th>Justificación</th>
+                </tr>
+              </thead>
+              <tbody id="replenishTableBody"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- pipeline connector arrow -->
+      <div class="pipeline-section-connector"><span class="material-symbols-outlined">expand_more</span><span>4. Ejecución</span></div>
+
+      <!-- ============ STEP 4: EXECUTION ============ -->
+      <section class="pipeline-section" id="pipeline-step5">
+        <div class="pipeline-section-header">
+          <span class="pipeline-section-step">Paso 4</span>
+          <h2>Ejecución: Aprobación y Despacho</h2>
+          <p class="pipeline-section-desc" id="approvalSubtitle">Selecciona una fila de la tabla de Reposición para ver su estado — de la recomendación de IA al despacho en tienda.</p>
+        </div>
+
+        <div class="approval-flow" id="approvalFlow">
+          <div class="approval-step is-done">
+            <div class="approval-icon"><span class="material-symbols-outlined">smart_toy</span></div>
+            <span class="approval-label">IA genera recomendación</span>
+            <span class="approval-status status-done">Completado</span>
+          </div>
+          <div class="approval-connector is-done"></div>
+
+          <div class="approval-step is-current" id="approvalStepReview">
+            <div class="approval-icon"><span class="material-symbols-outlined">person</span></div>
+            <span class="approval-label">Planner revisa</span>
+            <span class="approval-status status-current">En curso</span>
+          </div>
+          <div class="approval-connector" id="approvalConnector1"></div>
+
+          <div class="approval-step is-branch" id="approvalStepDecision">
+            <div class="approval-icon-group">
+              <div class="approval-icon success"><span class="material-symbols-outlined">check_circle</span></div>
+              <div class="approval-icon danger"><span class="material-symbols-outlined">cancel</span></div>
+            </div>
+            <span class="approval-label">Aprobar / Rechazar</span>
+            <span class="approval-status status-pending">Pendiente</span>
+          </div>
+          <div class="approval-connector" id="approvalConnector2"></div>
+
+          <div class="approval-step" id="approvalStepOrder">
+            <div class="approval-icon"><span class="material-symbols-outlined">receipt_long</span></div>
+            <span class="approval-label">Generar Orden SAP/WMS</span>
+            <span class="approval-status status-pending">Pendiente</span>
+          </div>
+          <div class="approval-connector" id="approvalConnector3"></div>
+
+          <div class="approval-step" id="approvalStepPicking">
+            <div class="approval-icon"><span class="material-symbols-outlined">package_2</span></div>
+            <span class="approval-label">Picking CD</span>
+            <span class="approval-status status-pending">Pendiente</span>
+          </div>
+          <div class="approval-connector" id="approvalConnector4"></div>
+
+          <div class="approval-step" id="approvalStepDispatch">
+            <div class="approval-icon"><span class="material-symbols-outlined">storefront</span></div>
+            <span class="approval-label">Despacho Tienda</span>
+            <span class="approval-status status-pending">Pendiente</span>
+          </div>
+        </div>
+
+        <div class="step-actions" id="step4Actions">
+          <button class="btn btn-primary" id="btnStep4" disabled>
+            <span class="material-symbols-outlined">fact_check</span> Avanzar flujo
+          </button>
+          <span class="step-action-hint">Procesa aprobaciones y avanza al siguiente estado del flujo</span>
+        </div>
+      </section>
+
+      <footer class="app-footer">
+        <span id="demoNotice">Smart Replenishment Lab · Demostración conceptual · Todos los datos, identidades y resultados son simulados</span>
+      </footer>
+
+    </main>
+
+    <!-- ============ PANEL 6: DRAWER EXPLICABLE DE IA ============ -->
+    <aside class="ai-drawer" id="aiDrawer" aria-hidden="true" aria-label="Panel de detalle explicable de IA">
+      <div class="ai-drawer-header">
+        <div>
+          <span class="ai-drawer-eyebrow">Detalle explicable de IA</span>
+          <h3 id="drawerProductTitle">Selecciona una fila de la tabla</h3>
+        </div>
+        <button class="icon-btn" id="closeDrawerBtn" aria-label="Cerrar panel">
+          <span class="material-symbols-outlined">close</span>
+        </button>
+      </div>
+
+      <div class="ai-drawer-body">
+        <section>
+          <h4><span class="material-symbols-outlined">lightbulb</span>Razón de la recomendación</h4>
+          <ul class="reason-list" id="drawerReasons"></ul>
+        </section>
+
+        <section>
+          <h4><span class="material-symbols-outlined">tune</span>Variables consideradas</h4>
+          <div class="chip-group" id="drawerVariables"></div>
+        </section>
+
+        <section class="confidence-section">
+          <h4><span class="material-symbols-outlined">psychology</span>Nivel de confianza</h4>
+          <div class="confidence-gauge">
+            <canvas id="confidenceChart" width="180" height="180"></canvas>
+            <div class="confidence-value" id="confidenceValue">—</div>
+          </div>
+        </section>
+      </div>
+
+      <div class="ai-drawer-actions">
+        <a href="#" id="drawerViewDetail" class="btn btn-outline"><span class="material-symbols-outlined">open_in_new</span>Ver ficha completa</a>
+        <button class="btn btn-outline-danger" id="drawerRejectBtn"><span class="material-symbols-outlined">cancel</span>Rechazar</button>
+        <button class="btn btn-primary" id="drawerApproveBtn"><span class="material-symbols-outlined">check_circle</span>Aprobar orden</button>
+      </div>
+    </aside>
+    <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+  </div>
+</div>
+
+<!-- ============ BIGQUERY LIVE PANEL ============ -->
+<div class="bq-overlay" id="bqOverlay">
+  <div class="bq-panel" id="bqPanelContainer">
+    <div class="bq-panel-head">
+      <span class="material-symbols-outlined">storage</span>
+      <span>BigQuery Live Streaming</span>
+      <button class="icon-btn" id="bqCloseBtn" aria-label="Cerrar panel BigQuery"><span class="material-symbols-outlined">close</span></button>
+    </div>
+    <div class="bq-panel-body" id="bqPanel">
+      <div class="bq-dataset"><div class="bq-dataset-name"><span class="material-symbols-outlined" style="color:#a05c1a;">layers</span>Dataset Bronze</div></div>
+      <div class="bq-dataset"><div class="bq-dataset-name"><span class="material-symbols-outlined" style="color:#5f6368;">layers</span>Dataset Silver</div></div>
+      <div class="bq-dataset"><div class="bq-dataset-name"><span class="material-symbols-outlined" style="color:#1a73e8;">layers</span>Dataset Gold</div></div>
+    </div>
+    <div class="bq-panel-footer">
+      <span class="bq-pulse"></span>
+      <span>Streaming activo · actualizando cada 2.5s</span>
+    </div>
+  </div>
+</div>
+
+<!-- ============ SAP SIMULATION MODAL ============ -->
+<div class="modal-overlay" id="sapModal">
+  <div class="modal-box modal-sap">
+    <div class="modal-head">
+      <span class="material-symbols-outlined" style="color:var(--purple);">dns</span>
+      <span>SAP ERP · Creando Orden de Reposición</span>
+    </div>
+    <div class="sap-modal-body">
+      <div class="sap-log"><div class="sap-log-line">Inicializando conexión SAP...</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ WMS SIMULATION MODAL ============ -->
+<div class="modal-overlay" id="wmsModal">
+  <div class="modal-box modal-wms">
+    <div class="modal-head">
+      <span class="material-symbols-outlined" style="color:var(--amber);">package_2</span>
+      <span>WMS · Picking en Centro de Distribución</span>
+    </div>
+    <div class="wms-modal-body">
+      <div class="wms-info-grid"></div>
+      <div class="wms-progress"><div class="wms-progress-bar"><div class="wms-progress-fill" style="width:0%;"></div></div><span class="wms-progress-label">0%</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ LOGISTICS FLOW ============ -->
+<div class="logistics-flow" id="logisticsFlow">
+  <div class="logistics-flow-head">
+    <span class="material-symbols-outlined" style="color:var(--primary);">route</span>
+    <span>Flujo Logístico</span>
+  </div>
+  <div class="logistics-steps" id="logisticsSteps"></div>
+</div>
+
+<div class="toast" id="toast">
+  <span class="material-symbols-outlined">check_circle</span>
+  <span id="toastMessage">Archivo exportado correctamente</span>
+</div>
+
+<script src="./assets/js/state.js"></script>
+<script src="./assets/js/data.js"></script>
+<script src="./assets/js/forecast-data.js"></script>
+<script src="./assets/js/shell.js"></script>
+<script src="./assets/js/simulation-engine.js"></script>
+<script src="./assets/js/app.js"></script>
+<script src="./assets/js/forecast.js"></script>
+<script src="./assets/js/pipeline.js"></script>
+<script>
+// Initialize simulation engine when page is ready
+document.addEventListener('DOMContentLoaded', function() {
+  if (window.SRSim) {
+    setTimeout(function() { SRSim.start(); }, 1500);
+  }
+  // BigQuery toggle
+  var bqBtn = document.getElementById('bqToggleBtn');
+  var bqOverlay = document.getElementById('bqOverlay');
+  var bqClose = document.getElementById('bqCloseBtn');
+  if (bqBtn && bqOverlay) {
+    bqBtn.addEventListener('click', function() { bqOverlay.classList.toggle('open'); });
+    if (bqClose) bqClose.addEventListener('click', function() { bqOverlay.classList.remove('open'); });
+  }
+  // Auto Demo button
+  var demoBtn = document.getElementById('autoDemoBtn');
+  var demoLabel = document.getElementById('demoBtnLabel');
+  if (demoBtn) {
+    demoBtn.addEventListener('click', function() {
+      if (window.SRSim) {
+        SRSim.startAutoDemo();
+        demoBtn.classList.add('demo-running');
+        if (demoLabel) demoLabel.textContent = 'Demo en curso...';
+        // Reset after demo completes
+        setTimeout(function() {
+          demoBtn.classList.remove('demo-running');
+          if (demoLabel) demoLabel.textContent = 'Demo Auto';
+        }, 95000);
+      }
+    });
+  }
+});
+</script>
+</body>
+</html>

@@ -756,3 +756,60 @@ presentation-gallery figcaption {
     transition-duration: 0.01ms !important;
   }
 }
+
+.article-callout {
+  display: block;
+  margin: 1.75rem 0;
+  padding: 1rem 1.15rem;
+  border: 1px solid var(--surface-stroke);
+  border-left: 4px solid var(--primary);
+  border-radius: 0 10px 10px 0;
+  background: var(--surface-container-lowest);
+}
+
+.interactive-demo,
+.article-video {
+  width: min(96vw, 1280px);
+  margin: 1.5rem 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  border: 1px solid var(--surface-stroke);
+  border-radius: 12px;
+  background: #0b1016;
+  box-shadow: 0 16px 48px rgb(0 0 0 / 18%);
+}
+
+.interactive-demo__notice {
+  padding: 0.65rem 1rem;
+  background: var(--surface-container-lowest);
+  color: var(--on-surface-variant);
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.76rem;
+  text-align: center;
+}
+
+.interactive-demo iframe {
+  display: block;
+  width: 100%;
+  height: min(76vh, 860px);
+  border: 0;
+  background: #fff;
+}
+
+.article-video video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #0b1016;
+}
+
+@media (max-width: 720px) {
+  .interactive-demo,
+  .article-video {
+    width: calc(100vw - 1rem);
+  }
+
+  .interactive-demo iframe {
+    height: 70vh;
+  }
+}
