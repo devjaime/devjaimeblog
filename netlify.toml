@@ -14,6 +14,14 @@
     Referrer-Policy = "strict-origin-when-cross-origin"
     Permissions-Policy = "camera=(), microphone=(), geolocation=()"
 
+# La demo se incrusta únicamente desde una página del mismo sitio.
+# Esta regla específica sustituye el DENY global sin permitir framing externo.
+[[headers]]
+  for = "/demos/smart-replenishment/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    Content-Security-Policy = "frame-ancestors 'self'"
+
 [[headers]]
   for = "/sitemap.xml"
   [headers.values]
