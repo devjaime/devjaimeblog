@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<script>(function(){try{var s=JSON.parse(localStorage.getItem('srAgentSettings')||'{}');if(s.darkMode){document.documentElement.classList.add('dark-theme');}}catch(e){console.warn('No se pudo leer la configuración guardada', e);}})();</script>
+<meta name="viewport" content="width=1920, initial-scale=1.0" />
+<title>Configuración · Smart Replenishment Agent</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%231A73E8'/%3E%3Cpath d='M6 13l3 3 9-9' stroke='white' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..500,0..1,-50..200" />
+<link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+<body>
+
+<div class="app-shell" id="appShell">
+
+  <!-- ============ TOP HEADER ============ -->
+  <header class="topbar">
+    <div class="topbar-left">
+      <button class="icon-btn" id="menuToggle" aria-label="Alternar menú">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+      <div class="brand">
+        <span class="brand-icon material-symbols-outlined">smart_toy</span>
+        <span class="brand-name">Smart Replenishment <strong>Agent</strong></span>
+      </div>
+      <span class="status-pill status-online">
+        <span class="status-dot"></span> Operativo
+      </span>
+    </div>
+
+    <div class="topbar-right">
+      <div class="last-sync">
+        <span class="material-symbols-outlined">sync</span>
+        <span>Última actualización: <strong>hace 4 min</strong></span>
+      </div>
+
+      <div class="user-menu-wrap">
+        <button class="icon-btn" id="notifBtn" aria-label="Notificaciones" aria-haspopup="true" aria-expanded="false">
+          <span class="material-symbols-outlined">notifications</span>
+          <span class="notif-dot" id="notifDot"></span>
+        </button>
+        <div class="notif-dropdown" id="notifDropdown" role="menu" aria-label="Notificaciones">
+          <div class="notif-dropdown-header"><span>Notificaciones</span><small>Últimas 24 h</small></div>
+          <div class="notif-item">
+            <span class="material-symbols-outlined" style="color:var(--red);">warning</span>
+            <div><div class="notif-item-title">128 SKU superaron el umbral de riesgo de quiebre</div><div class="notif-item-meta">Hace 12 min</div></div>
+          </div>
+          <div class="notif-item">
+            <span class="material-symbols-outlined" style="color:var(--purple);">trending_up</span>
+            <div><div class="notif-item-title">Nueva tendencia detectada: #Gorpcore (+340%)</div><div class="notif-item-meta">Hace 1 hora</div></div>
+          </div>
+          <div class="notif-item">
+            <span class="material-symbols-outlined">summarize</span>
+            <div><div class="notif-item-title">Resumen semanal disponible</div><div class="notif-item-meta">Ayer</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="user-menu-wrap">
+        <button class="user-chip" id="userChip" aria-haspopup="true" aria-expanded="false">
+            <span class="avatar">PD</span>
+          <span class="user-meta">
+            <span class="user-name">Planner Demo</span>
+            <span class="user-role">Planificación de inventario</span>
+          </span>
+          <span class="material-symbols-outlined">expand_more</span>
+        </button>
+        <div class="user-dropdown" id="userDropdown">
+          <a href="./configuracion.html" class="user-dropdown-item"><span class="material-symbols-outlined">settings</span>Configuración</a>
+          <a href="./index.html#demoNotice" class="user-dropdown-item"><span class="material-symbols-outlined">help</span>Acerca de la demo</a>
+          <div class="user-dropdown-divider"></div>
+          <a href="./login.html" class="user-dropdown-item user-dropdown-danger"><span class="material-symbols-outlined">logout</span>Cerrar sesión</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="app-body">
+
+    <!-- ============ SIDEBAR ============ -->
+    <aside class="sidebar" id="sidebar" aria-label="Navegación principal">
+      <nav class="side-nav" aria-label="Menú de secciones">
+        <a href="./index.html" class="side-nav-item" data-nav>
+          <span class="material-symbols-outlined">dashboard</span><span class="side-nav-label">Resumen</span>
+        </a>
+        <a href="./index.html#panel-flow" class="side-nav-item" data-nav>
+          <span class="material-symbols-outlined">device_hub</span><span class="side-nav-label">Flujo de Datos</span>
+        </a>
+        <a href="./index.html#panel-decision" class="side-nav-item" data-nav>
+          <span class="material-symbols-outlined">route</span><span class="side-nav-label">Mapa de Decisión</span>
+        </a>
+        <a href="./index.html#panel-scope" class="side-nav-item" data-nav>
+          <span class="material-symbols-outlined">layers</span><span class="side-nav-label">Surtido y Reposición</span>
+        </a>
+        <a href="./index.html#panel-forecast" class="side-nav-item" data-nav>
+          <span class="material-symbols-outlined">query_stats</span><span class="side-nav-label">Forecast SKU-Local</span>
+        </a>
+        <a href="./index.html#panel-trends" class="side-nav-item" data-nav>
+          <span class="material-symbols-outlined">trending_up</span><span class="side-nav-label">Tendencias</span>
+        </a>
+        <a href="./index.html#panel-table" class="side-nav-item" data-nav>
+          <span class="material-symbols-outlined">inventory_2</span><span class="side-nav-label">Reposición</span>
+        </a>
+        <a href="./index.html#panel-approval" class="side-nav-item" data-nav>
+          <span class="material-symbols-outlined">fact_check</span><span class="side-nav-label">Aprobaciones</span>
+        </a>
+        <a href="./index.html#panel-kpis" class="side-nav-item" data-nav>
+          <span class="material-symbols-outlined">insights</span><span class="side-nav-label">Reportes</span>
+        </a>
+        <a href="./configuracion.html" class="side-nav-item active" data-nav>
+          <span class="material-symbols-outlined">settings</span><span class="side-nav-label">Configuración</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="model-status">
+          <span class="material-symbols-outlined">psychology</span>
+          <div>
+            <span class="model-status-title">Vertex AI Agent</span>
+            <span class="model-status-sub">Modelo activo · v2.3.1</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ============ MAIN CONTENT ============ -->
+    <main class="main-content" id="top">
+
+      <div class="page-toolbar">
+        <div>
+          <h1>Configuración</h1>
+          <p class="page-subtitle">Administra la plataforma, el modelo de IA, las integraciones y los permisos de usuario.</p>
+        </div>
+        <div class="toolbar-chips">
+          <button class="btn btn-primary btn-sm" id="saveSettingsBtn"><span class="material-symbols-outlined">save</span> Guardar cambios</button>
+        </div>
+      </div>
+
+      <div class="settings-layout">
+
+        <!-- ============ SUB-NAV ============ -->
+        <nav class="settings-nav" id="settingsNav" aria-label="Secciones de configuración">
+          <button class="settings-nav-item active" data-section="general"><span class="material-symbols-outlined">tune</span>General</button>
+          <button class="settings-nav-item" data-section="modelo"><span class="material-symbols-outlined">psychology</span>Modelo de IA</button>
+          <button class="settings-nav-item" data-section="notificaciones"><span class="material-symbols-outlined">notifications</span>Notificaciones</button>
+          <button class="settings-nav-item" data-section="integraciones"><span class="material-symbols-outlined">hub</span>Integraciones</button>
+          <button class="settings-nav-item" data-section="usuarios"><span class="material-symbols-outlined">group</span>Usuarios y Permisos</button>
+        </nav>
+
+        <!-- ============ GENERAL ============ -->
+        <div class="settings-panel active" data-panel="general">
+          <section class="panel">
+            <div class="panel-header"><div><h2>Preferencias generales</h2><p class="panel-subtitle">Configuración base de la organización en la plataforma.</p></div></div>
+
+            <div class="field-row">
+              <div class="field-row-info"><span class="field-row-title">Nombre de la organización</span><p class="field-row-desc">Se muestra en reportes exportados y en el encabezado de la plataforma.</p></div>
+              <div class="field-row-control">
+                <div class="form-input-group"><input type="text" id="settingOrgName" value="Retail AI Lab" aria-label="Nombre de la organización" /></div>
+              </div>
+            </div>
+
+            <div class="field-row">
+              <div class="field-row-info"><span class="field-row-title">Región por defecto</span><p class="field-row-desc">Región utilizada al iniciar sesión, editable desde el encabezado.</p></div>
+              <div class="field-row-control">
+                <select class="form-select-plain" id="settingDefaultRegion" aria-label="Región por defecto">
+                  <option selected>Región Metropolitana</option>
+                  <option>Valparaíso</option>
+                  <option>Biobío</option>
+                  <option>Los Lagos</option>
+                  <option>Antofagasta</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field-row">
+              <div class="field-row-info"><span class="field-row-title">Idioma de la plataforma</span><p class="field-row-desc">Idioma utilizado en la interfaz y en las notificaciones.</p></div>
+              <div class="field-row-control">
+                <select class="form-select-plain" id="settingLanguage" aria-label="Idioma de la plataforma">
+                  <option selected>Español (Chile)</option>
+                  <option>English</option>
+                  <option>Português (Brasil)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field-row">
+              <div class="field-row-info"><span class="field-row-title">Zona horaria</span><p class="field-row-desc">Utilizada para los reportes programados y timestamps.</p></div>
+              <div class="field-row-control">
+                <select class="form-select-plain" id="settingTimezone" aria-label="Zona horaria">
+                  <option selected>América/Santiago (GMT-4)</option>
+                  <option>América/Lima (GMT-5)</option>
+                  <option>América/Bogotá (GMT-5)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field-row">
+              <div class="field-row-info"><span class="field-row-title">Modo oscuro</span><p class="field-row-desc">Reduce el brillo de la interfaz en ambientes con poca luz.</p></div>
+              <div class="field-row-control">
+                <label class="toggle-switch"><input type="checkbox" id="settingDarkMode" aria-label="Activar modo oscuro" /><span class="toggle-slider"></span></label>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- ============ MODELO DE IA ============ -->
+        <div class="settings-panel" data-panel="modelo">
+          <section class="panel">
+            <div class="panel-header"><div><h2>Configuración del modelo de IA</h2><p class="panel-subtitle">Parámetros del Vertex AI Agent que genera las recomendaciones de reposición.</p></div></div>
+
+            <div class="field-row">
+              <div class="field-row-info"><span class="field-row-title">Umbral mínimo de confianza</span><p class="field-row-desc">Sugerencias por debajo de este umbral se marcan para revisión manual obligatoria.</p></div>
+              <div class="field-row-control">
+                <div class="range-row">
+                  <input type="range" id="confidenceThreshold" min="50" max="99" value="85" aria-label="Umbral mínimo de confianza" />
+                  <span class="range-row-value" id="confidenceThresholdValue">85%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="field-row">
+              <div class="field-row-info"><span class="field-row-title">Frecuencia de ejecución del pipeline</span><p class="field-row-desc">Cada cuánto se reprocesan los datos de ventas, stock y tendencias.</p></div>
+              <div class="field-row-control">
+                <select class="form-select-plain" id="settingPipelineFrequency" aria-label="Frecuencia de ejecución del pipeline">
+                  <option selected>Cada 15 minutos</option>
+                  <option>Cada 30 minutos</option>
+                  <option>Cada hora</option>
+                  <option>Diario</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field-row">
+              <div class="field-row-info"><span class="field-row-title">Modo de aprobación</span><p class="field-row-desc">Define si las órdenes de alta confianza pueden ejecutarse sin revisión manual.</p></div>
+              <div class="field-row-control">
+                <select class="form-select-plain" id="settingApprovalMode" aria-label="Modo de aprobación">
+                  <option selected>Requiere aprobación manual siempre</option>
+                  <option>Auto-aprobar sobre el umbral de confianza</option>
+                </select>
+              </div>
+            </div>
+          </section>
+
+          <section class="panel">
+            <div class="panel-header"><div><h2>Fuentes de datos activas</h2><p class="panel-subtitle">Orígenes de datos que alimentan el pipeline de BigQuery.</p></div></div>
+
+            <div class="field-row">
+              <div class="field-row-info"><span class="field-row-title">SAP ERP</span><p class="field-row-desc">Ventas, stock y maestro de SKU.</p></div>
+              <div class="field-row-control"><label class="toggle-switch"><input type="checkbox" id="settingSourceSap" checked aria-label="Activar SAP ERP como fuente de datos" /><span class="toggle-slider"></span></label></div>
+            </div>
+            <div class="field-row">
+              <div class="field-row-info"><span class="field-row-title">WMS</span><p class="field-row-desc">Inventario de centros de distribución.</p></div>
+              <div class="field-row-control"><label class="toggle-switch"><input type="checkbox" id="settingSourceWms" checked aria-label="Activar WMS como fuente de datos" /><span class="toggle-slider"></span></label></div>
+            </div>
+            <div class="field-row">
+              <div class="field-row-info"><span class="field-row-title">POS Tiendas</span><p class="field-row-desc">Venta en línea y en sala por tienda.</p></div>
+              <div class="field-row-control"><label class="toggle-switch"><input type="checkbox" id="settingSourcePos" checked aria-label="Activar POS Tiendas como fuente de datos" /><span class="toggle-slider"></span></label></div>
+            </div>
+            <div class="field-row">
+              <div class="field-row-info"><span class="field-row-title">TikTok Trends API</span><p class="field-row-desc">Señales sociales: views, saves y shares por hashtag.</p></div>
+              <div class="field-row-control"><label class="toggle-switch"><input type="checkbox" id="settingSourceTiktok" checked aria-label="Activar TikTok Trends API como fuente de datos" /><span class="toggle-slider"></span></label></div>
+            </div>
+          </section>
+        </div>
+
+        <!-- ============ NOTIFICACIONES ============ -->
+        <div class="settings-panel" data-panel="notificaciones">
+          <section class="panel">
+            <div class="panel-header"><div><h2>Notificaciones</h2><p class="panel-subtitle">Elige cómo y cuándo quieres que te avisemos.</p></div></div>
+
+            <div class="field-row">
+              <div class="field-row-info"><span class="field-row-title">Alertas de riesgo de quiebre por email</span><p class="field-row-desc">Se envía un correo cuando un SKU supera el umbral de riesgo crítico.</p></div>
+              <div class="field-row-control"><label class="toggle-switch"><input type="checkbox" id="settingNotifRisk" checked aria-label="Activar alertas de riesgo de quiebre por email" /><span class="toggle-slider"></span></label></div>
+            </div>
+            <div class="field-row">
+              <div class="field-row-info"><span class="field-row-title">Resumen semanal por email</span><p class="field-row-desc">KPIs ejecutivos y órdenes generadas durante la semana.</p></div>
+              <div class="field-row-control"><label class="toggle-switch"><input type="checkbox" id="settingNotifWeekly" checked aria-label="Activar resumen semanal por email" /><span class="toggle-slider"></span></label></div>
+            </div>
+            <div class="field-row">
+              <div class="field-row-info"><span class="field-row-title">Notificaciones push en el navegador</span><p class="field-row-desc">Avisos en tiempo real mientras la plataforma está abierta.</p></div>
+              <div class="field-row-control"><label class="toggle-switch"><input type="checkbox" id="settingNotifPush" aria-label="Activar notificaciones push en el navegador" /><span class="toggle-slider"></span></label></div>
+            </div>
+            <div class="field-row">
+              <div class="field-row-info"><span class="field-row-title">Integración con Slack</span><p class="field-row-desc">Alertas críticas al canal #reposicion-alertas.</p></div>
+              <div class="field-row-control"><label class="toggle-switch"><input type="checkbox" id="settingNotifSlack" checked aria-label="Activar integración con Slack para alertas críticas" /><span class="toggle-slider"></span></label></div>
+            </div>
+            <div class="field-row">
+              <div class="field-row-info"><span class="field-row-title">Correo de notificaciones</span><p class="field-row-desc">Dirección donde se reciben los avisos configurados arriba.</p></div>
+              <div class="field-row-control">
+                <div class="form-input-group"><span class="material-symbols-outlined">mail</span><input type="email" id="settingNotifEmail" value="demo@example.com" aria-label="Correo de notificaciones" /></div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- ============ INTEGRACIONES ============ -->
+        <div class="settings-panel" data-panel="integraciones">
+          <section class="panel">
+            <div class="panel-header"><div><h2>Integraciones</h2><p class="panel-subtitle">Conexiones activas con sistemas internos y APIs externas.</p></div></div>
+
+            <div class="integration-grid">
+              <div class="integration-card">
+                <div class="integration-card-head">
+                  <div class="integration-icon"><span class="material-symbols-outlined">dns</span></div>
+                  <span class="integration-name">SAP ERP</span>
+                </div>
+                <span class="integration-status"><span class="status-dot"></span>Conectado</span>
+                <button class="btn btn-outline btn-sm">Configurar</button>
+              </div>
+              <div class="integration-card">
+                <div class="integration-card-head">
+                  <div class="integration-icon"><span class="material-symbols-outlined">warehouse</span></div>
+                  <span class="integration-name">WMS</span>
+                </div>
+                <span class="integration-status"><span class="status-dot"></span>Conectado</span>
+                <button class="btn btn-outline btn-sm">Configurar</button>
+              </div>
+              <div class="integration-card">
+                <div class="integration-card-head">
+                  <div class="integration-icon"><span class="material-symbols-outlined">point_of_sale</span></div>
+                  <span class="integration-name">POS Tiendas</span>
+                </div>
+                <span class="integration-status"><span class="status-dot"></span>Conectado</span>
+                <button class="btn btn-outline btn-sm">Configurar</button>
+              </div>
+              <div class="integration-card">
+                <div class="integration-card-head">
+                  <div class="integration-icon"><span class="material-symbols-outlined">tag</span></div>
+                  <span class="integration-name">TikTok Trends API</span>
+                </div>
+                <span class="integration-status"><span class="status-dot"></span>Conectado</span>
+                <button class="btn btn-outline btn-sm">Configurar</button>
+              </div>
+              <div class="integration-card">
+                <div class="integration-card-head">
+                  <div class="integration-icon"><span class="material-symbols-outlined">apps</span></div>
+                  <span class="integration-name">Google Workspace</span>
+                </div>
+                <span class="integration-status"><span class="status-dot"></span>Conectado</span>
+                <button class="btn btn-outline btn-sm">Configurar</button>
+              </div>
+              <div class="integration-card">
+                <div class="integration-card-head">
+                  <div class="integration-icon"><span class="material-symbols-outlined">tag</span></div>
+                  <span class="integration-name">Slack</span>
+                </div>
+                <span class="integration-status" id="slackStatus"><span class="status-dot" style="background:var(--text-tertiary);box-shadow:none;"></span>No conectado</span>
+                <button class="btn btn-primary btn-sm" id="slackConnectBtn">Conectar</button>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- ============ USUARIOS Y PERMISOS ============ -->
+        <div class="settings-panel" data-panel="usuarios">
+          <section class="panel">
+            <div class="panel-header">
+              <div><h2>Usuarios y permisos</h2><p class="panel-subtitle">Quién tiene acceso a la plataforma y qué puede hacer.</p></div>
+              <button class="btn btn-primary btn-sm" id="inviteUserBtn"><span class="material-symbols-outlined">person_add</span>Invitar usuario</button>
+            </div>
+
+            <div class="table-wrapper">
+              <table class="data-table users-table">
+                <thead>
+                  <tr><th>Usuario</th><th>Rol</th><th>Estado</th><th>Última conexión</th></tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="user-cell"><span class="avatar">PD</span>Planner Demo</span></td>
+                    <td>Planner Senior</td>
+                    <td><span class="badge badge-success">Activo</span></td>
+                    <td>Hace 4 min</td>
+                  </tr>
+                  <tr>
+                    <td><span class="user-cell"><span class="avatar">JP</span>Javier Pérez</span></td>
+                    <td>Administrador</td>
+                    <td><span class="badge badge-success">Activo</span></td>
+                    <td>Hace 1 hora</td>
+                  </tr>
+                  <tr>
+                    <td><span class="user-cell"><span class="avatar">CS</span>Camila Silva</span></td>
+                    <td>Aprobador</td>
+                    <td><span class="badge badge-success">Activo</span></td>
+                    <td>Hace 3 horas</td>
+                  </tr>
+                  <tr>
+                    <td><span class="user-cell"><span class="avatar">RT</span>Rodrigo Torres</span></td>
+                    <td>Visualizador</td>
+                    <td><span class="badge badge-neutral">Invitado</span></td>
+                    <td>Sin conexión</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </div>
+
+      </div>
+
+      <footer class="app-footer">
+        Smart Replenishment Lab · Demostración conceptual · Todos los datos, identidades y resultados son simulados
+      </footer>
+
+    </main>
+  </div>
+</div>
+
+<div class="toast" id="toast">
+  <span class="material-symbols-outlined">check_circle</span>
+  <span id="toastMessage">Cambios guardados correctamente</span>
+</div>
+
+<script src="./assets/js/state.js"></script>
+<script src="./assets/js/shell.js"></script>
+<script src="./assets/js/configuracion.js"></script>
+</body>
+</html>
