@@ -5,6 +5,8 @@ import { getMarkdownBodyTextLength, getShortDescription, processContentInDir } f
 // Internal caches to avoid hitting the filesystem / import.meta.glob twice
 let _articlesCache: ArticleFrontmatter[] | null = null;
 let _projectsCache: ProjectFrontmatter[] | null = null;
+let _articlesPromise: Promise<ArticleFrontmatter[]> | null = null;
+let _projectsPromise: Promise<ProjectFrontmatter[]> | null = null;
 
 type ArticleRecord = ArticleFrontmatter & { timestamp: string };
 type ProjectRecord = ProjectFrontmatter & { timestamp: string };
@@ -68,22 +70,34 @@ const mapProject = (data: { frontmatter: ProjectFrontmatter; file?: string }) =>
 
 export const loadArticles = async () => {
   if (_articlesCache) return _articlesCache;
-  const loaded = await processContentInDir<ArticleFrontmatter, ArticleFrontmatter>(
-    "blog",
-    mapArticle,
-  );
-  _articlesCache = sortByTimestampDesc(loaded as ArticleRecord[]);
-  return _articlesCache;
+  if (!_articlesPromise) {
+    _articlesPromise = processContentInDir<ArticleFrontmatter, ArticleFrontmatter>("blog", mapArticle)
+      .then((loaded) => {
+        _articlesCache = sortByTimestampDesc(loaded as ArticleRecord[]);
+        return _articlesCache;
+      })
+      .catch((error) => {
+        _articlesPromise = null;
+        throw error;
+      });
+  }
+  return _articlesPromise;
 };
 
 export const loadProjects = async () => {
   if (_projectsCache) return _projectsCache;
-  const loaded = await processContentInDir<ProjectFrontmatter, ProjectFrontmatter>(
-    "projects",
-    mapProject,
-  );
-  _projectsCache = sortByTimestampDesc(loaded as ProjectRecord[]);
-  return _projectsCache;
+  if (!_projectsPromise) {
+    _projectsPromise = processContentInDir<ProjectFrontmatter, ProjectFrontmatter>("projects", mapProject)
+      .then((loaded) => {
+        _projectsCache = sortByTimestampDesc(loaded as ProjectRecord[]);
+        return _projectsCache;
+      })
+      .catch((error) => {
+        _projectsPromise = null;
+        throw error;
+      });
+  }
+  return _projectsPromise;
 };
 
 export const loadFeaturedArticles = async () => {

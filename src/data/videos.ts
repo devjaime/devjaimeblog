@@ -4,11 +4,22 @@ export type Video = {
   date: string;
   youtubeId: string;
   tags: string[];
+  githubUrl?: string;
   featured?: boolean;
   lang?: "es" | "en";
 };
 
 const videoCatalog = [
+  {
+    title: "Control Propiedades + Hermes Agents: gestión inmobiliaria con IA, alertas y automatización",
+    description: "Plataforma PropTech para centralizar propiedades, contratos, arrendatarios, pagos, documentos, mantenciones y alertas. Su arquitectura con Next.js, Go, PostgreSQL, MinIO, Docker y PWA prepara datos y APIs para que Hermes Agents detecte atrasos, vencimientos y reajustes, revise documentos y genere resúmenes y recomendaciones.",
+    date: "2026-07-25",
+    youtubeId: "AITdNAwfPSc",
+    tags: ["Hermes Agents", "PropTech", "Full Stack", "Next.js", "React", "Go", "PostgreSQL", "Docker", "PWA", "AI Agents"],
+    githubUrl: "https://github.com/devjaime/control-propiedades",
+    featured: true,
+    lang: "es",
+  },
   {
     title: "Futuro laboral 2030: nuevas funciones de Vocari con IA",
     description: "Presentación de las nuevas funciones de Vocari para analizar los cambios del mercado laboral, identificar habilidades y construir rutas de desarrollo profesional con apoyo de IA.",

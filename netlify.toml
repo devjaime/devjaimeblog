@@ -38,6 +38,11 @@
     Content-Type = "text/plain"
 
 [[headers]]
+  for = "/llm.txt"
+  [headers.values]
+    Content-Type = "text/plain"
+
+[[headers]]
   for = "*.css"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"

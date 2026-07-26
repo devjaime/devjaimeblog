@@ -29,6 +29,11 @@ const thumbnail = `https://img.youtube.com/vi/${video.youtubeId}/mqdefault.jpg`;
     <div class="video-tags">
       {video.tags.slice(0, 3).map((tag) => <span>{tag}</span>)}
     </div>
+    {video.githubUrl && (
+      <a class="source-link" href={video.githubUrl} target="_blank" rel="noopener noreferrer">
+        {lang === "en" ? "View source code" : "Ver código fuente"} →
+      </a>
+    )}
   </div>
 </article>
 
@@ -126,5 +131,18 @@ const thumbnail = `https://img.youtube.com/vi/${video.youtubeId}/mqdefault.jpg`;
     color: var(--primary);
     background: rgba(37, 99, 235, 0.05);
     padding: 0.28rem 0.5rem;
+  }
+
+  .source-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--primary);
+    font-size: 0.82rem;
+    font-weight: 800;
+    text-decoration: none;
+  }
+
+  .source-link:hover {
+    text-decoration: underline;
   }
 </style>

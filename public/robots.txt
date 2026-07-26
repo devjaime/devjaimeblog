@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://jaimehernandez.dev/sitemap.xml
+Sitemap: https://jaimehernandez.dev/sitemap-index.xml
 
 # Crawl-delay for polite crawling
 Crawl-delay: 1
