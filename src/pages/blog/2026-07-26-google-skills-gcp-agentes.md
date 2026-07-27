@@ -109,21 +109,19 @@ También debes reiniciar o abrir una nueva sesión de tu agente después de inst
 
 El caso consiste en una plataforma de pedidos consumida desde Flutter y un frontend web:
 
-```text
-Flutter / Web
-      │ HTTPS + identidad de usuario
-      ▼
-Cloud Run: orders-api
-      │ publica order.created
-      ▼
-Pub/Sub ──────► Cloud Run: event-worker ──────► BigQuery
-   │                         │
-   │                         └───────────────► Cloud Storage
-   │
-   └────────► dead-letter topic
+<pre class="architecture-diagram" aria-label="Arquitectura de Flutter y servicios de Google Cloud"><code><span class="diagram-client">Flutter / Web</span>
+      <span class="diagram-flow">│ HTTPS + identidad de usuario</span>
+      <span class="diagram-flow">▼</span>
+<span class="diagram-run">Cloud Run: orders-api</span>
+      <span class="diagram-flow">│ publica order.created</span>
+      <span class="diagram-flow">▼</span>
+<span class="diagram-pubsub">Pub/Sub</span> <span class="diagram-flow">──────►</span> <span class="diagram-run">Cloud Run: event-worker</span> <span class="diagram-flow">──────►</span> <span class="diagram-data">BigQuery</span>
+   <span class="diagram-flow">│                         │</span>
+   <span class="diagram-flow">│                         └───────────────►</span> <span class="diagram-storage">Cloud Storage</span>
+   <span class="diagram-flow">│</span>
+   <span class="diagram-flow">└────────►</span> <span class="diagram-error">dead-letter topic</span>
 
-Cloud Scheduler ── OIDC ──► Cloud Run Job / endpoint privado
-```
+<span class="diagram-scheduler">Cloud Scheduler</span> <span class="diagram-flow">── OIDC ──►</span> <span class="diagram-run">Cloud Run Job / endpoint privado</span></code></pre>
 
 Es una arquitectura didáctica, no una receta universal. Antes de construirla habría que conocer volumen, latencia, residencia de datos, SLA, presupuesto, modelo de identidad, recuperación, observabilidad y costo aceptable. La skill de arquitectura insiste correctamente en descubrir esos requisitos antes de elegir productos.
 
