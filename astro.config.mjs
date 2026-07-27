@@ -15,6 +15,11 @@ export default defineConfig({
   build: {
     inlineStylesheets: "auto",
   },
+  markdown: {
+    shikiConfig: {
+      theme: "github-dark-high-contrast",
+    },
+  },
   integrations: [sitemap()],
   vite: {},
 });
