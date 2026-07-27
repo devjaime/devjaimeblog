@@ -22,6 +22,13 @@
     X-Frame-Options = "SAMEORIGIN"
     Content-Security-Policy = "frame-ancestors 'self'"
 
+# La demo de Google Skills también se incrusta desde un artículo del mismo sitio.
+[[headers]]
+  for = "/demos/google-skills-gcp/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    Content-Security-Policy = "frame-ancestors 'self'"
+
 [[headers]]
   for = "/sitemap.xml"
   [headers.values]

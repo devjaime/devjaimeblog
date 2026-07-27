@@ -15,6 +15,11 @@ export default defineConfig({
   build: {
     inlineStylesheets: "auto",
   },
+  markdown: {
+    shikiConfig: {
+      theme: "dracula",
+    },
+  },
   integrations: [sitemap()],
   vite: {},
 });
