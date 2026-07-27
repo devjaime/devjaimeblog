@@ -515,10 +515,10 @@
   }
 
   .article-prose :where(pre.astro-code) {
-    border-color: #3d444d;
-    background-color: #0a0c10 !important;
-    color: #f0f3f6 !important;
-    box-shadow: 0 10px 28px rgba(10, 12, 16, 0.16);
+    border-color: #44475a;
+    background-color: #282a36 !important;
+    color: #f8f8f2 !important;
+    box-shadow: 0 10px 28px rgba(40, 42, 54, 0.2);
     padding: 1.15rem 1.25rem;
   }
 
