@@ -251,21 +251,6 @@ Usaría las skills dentro de este ciclo:
 
 La skill `gcloud` es especialmente estricta: exige consultar la ayuda del subcomando exacto, evita listas sin filtro o límite, conserva `--project`, usa ejecución no interactiva y prohíbe operaciones destructivas autónomas. Es una restricción saludable para un agente con terminal.
 
-## Qué mostraría en el video
-
-La demostración debe enseñar el cambio de comportamiento, no únicamente la instalación:
-
-1. abrir el repositorio y explicar la anatomía de `SKILL.md`;
-2. instalar un conjunto pequeño;
-3. lanzar un prompt impreciso y mostrar por qué faltan requisitos;
-4. usar el prompt estructurado de arquitectura;
-5. recorrer la demo interactiva;
-6. abrir un microservicio y mostrar las verificaciones de Cloud Run;
-7. explicar el vacío de Pub/Sub/Scheduler y cómo se completa con fuentes oficiales;
-8. cerrar con IAM, evidencia y autorización antes de ejecutar.
-
-Preparé un guion detallado dentro del repositorio del sitio para que la grabación sea reproducible.
-
 ## Mi evaluación
 
 `google/skills` es valioso por tres razones: convierte documentación en procedimientos activables, incorpora guardrails que un prompt genérico suele olvidar y mantiene las instrucciones cerca de referencias y scripts versionados.
